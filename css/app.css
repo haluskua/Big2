@@ -1,0 +1,24 @@
+/* BASE STYLES */
+body {
+  background: green;
+  color: white;
+  font-size: 26px; }
+
+h1 {
+  font-family: Georgia, Times, serif; }
+
+h2, h3 {
+  font-family: Helvetica, Arial, sans-serif; }
+
+/* LAYOUT */
+#header {
+  border: solid 1px black;
+  padding: 40px; }
+
+/* MODULES */
+.box {
+  height: 100px;
+  width: 100px;
+  background: yellow; }
+
+/*# sourceMappingURL=app.css.map */
