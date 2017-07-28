@@ -1,13 +1,24 @@
+/*  Requirements    */
 const gulp = require('gulp');
-const gulp = require('gulp-autoprefixer');
+const autoprefixer = require('gulp-autoprefixer');
+const sass = require('gulp-sass');
 
 
-gulp.task('autoprefix', function() {
-  return gulp.src('./css/*.css')
-  .pipe(autoprefixer({
-    browsers: ['last 2 versions']
-  }))
-  .pipe(gulp.dest('dist/main.css'));
+//SASS COMPILER
+gulp.task('sass', function () {
+  return gulp.src('./sass/*.sass')
+    .pipe(sass())
+    .pipe(gulp.dest('Css'));
 });
 
-gulp.task('defaul', ['autoprefix']);
+//AUTOPREFIXER
+gulp.task('autoprefix', function() {
+  return gulp.src('./Css/*.css')
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions']
+  }))
+    .pipe(gulp.dest('dist'));
+});
+
+
+gulp.task('default', ['sass', 'autoprefix']);

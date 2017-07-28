@@ -1,6 +1,6 @@
 /* BASE STYLES */
 body {
-  background: green;
+  background: pink;
   color: white;
   font-size: 26px; }
 
@@ -15,10 +15,14 @@ h2, h3 {
   border: solid 1px black;
   padding: 40px; }
 
+.sect-title {
+  display: flex;
+  justify-content: center; }
+
 /* MODULES */
 .box {
+  display: flex;
+  justify-content: flex-end;
   height: 100px;
   width: 100px;
   background: yellow; }
-
-/*# sourceMappingURL=app.css.map */

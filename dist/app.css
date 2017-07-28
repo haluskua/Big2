@@ -1,0 +1,36 @@
+/* BASE STYLES */
+body {
+  background: pink;
+  color: white;
+  font-size: 26px; }
+
+h1 {
+  font-family: Georgia, Times, serif; }
+
+h2, h3 {
+  font-family: Helvetica, Arial, sans-serif; }
+
+/* LAYOUT */
+#header {
+  border: solid 1px black;
+  padding: 40px; }
+
+.sect-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+/* MODULES */
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 100px;
+  width: 100px;
+  background: yellow; }
