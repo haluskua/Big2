@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Yantramanav");
+@import url("https://fonts.googleapis.com/css?family=Yellowtail");
 /* BASE STYLES */
 body {
   background-image: url(../images/meri.png);
@@ -48,7 +50,7 @@ h2, h3 {
     margin: auto;
     color: black;
     font-size: 0.5em;
-    font-family: cutive-mono;
+    font-family: "Yantramanav", sans-serif;
   }
   .hetpage-li {
     -webkit-box-sizing: border-box;
