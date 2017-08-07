@@ -34,53 +34,77 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100vw;
     height: auto;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .hetpage .parent-hetpage {
-    padding: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: auto;
-    height: auto;
-    color: #1a6d8e;
-    font-size: 0.9em;
-    font-family: "Yantramanav", sans-serif;
+    margin: 0 auto;
   }
-  .hetpage .parent-hetpage .hetpage-li {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
+  .hetpage .parent-hetpage #name {
+    margin: 13px 13px 13px 10px;
+    color: black;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    font-family: "Amatic SC", cursive;
+    font-size: 0.8em;
+  }
+  .hetpage .parent-hetpage #thin {
+    font-size: 1.9em;
+    font-family: "Cabin Sketch", cursive;
+    letter-spacing: 0.02em;
+    font-weight: bolder;
+    font-style: italic;
+    color: black;
+    margin: 0 auto;
+    text-transform: lowercase;
+    text-shadow: #955623 0 0 3px;
+  }
+  .hetpage .parent-hetpage #thin #bulgeword {
+    font-family: "Cabin Sketch", cursive;
+    color: #0c5f80;
+    font-size: 1.5em;
+    font-style: normal;
+    text-shadow: #955623 0 0 4px;
   }
   .hetpage .parent-hetpage .hetpage-li:nth-child(2) {
-    height: 53px;
+    margin: 0 auto;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .hetpage .parent-hetpage .hetpage-li:nth-child(2) .hetpage-li:nth-child(3) #hetinfo {
-    font-weight: lighter;
-    color: green;
+  .hetpage .parent-hetpage .hetpage-li:nth-child(3) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .hetpage .parent-hetpage .hetpage-li:nth-child(2) #thin {
-    font-size: 2.5em;
-    font-family: "Amatic SC", cursive;
-    letter-spacing: 0.03em;
-    font-weight: bolder;
-    color: black;
-  }
-  .hetpage .parent-hetpage .hetpage-li:nth-child(2) #bulgeword {
-    font-family: "Cabin Sketch", cursive;
+  .hetpage .parent-hetpage .hetpage-li:nth-child(3) #hetinfo {
     color: #955623;
-    font-size: 1.4em;
+    margin: 0 auto;
+    font-family: "Amatic SC", cursive;
+    font-size: 1.3em;
   }
   .hetpage .parent-hetpage .coa-link {
     color: #1a6d8e;
@@ -88,30 +112,86 @@ h2, h3 {
     text-transform: capitalize;
     font-family: "Amatic SC", cursive;
   }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .hetpage {
-    width: 100vw;
+  .hetpage #nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 1px solid black;
+    background-image: url(../dist/imgs/1920.png);
     height: auto;
-    color: pink;
   }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .hetpage {
-    width: 100vw;
-    height: 120px;
-    border: solid 1px black;
-    color: pink;
-    background-color: pink;
+  .hetpage #nav .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+  }
+  .hetpage #nav #navtabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-decoration: none;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0;
+    margin: 0 auto;
+    background-color: black;
+    opacity: 0.6;
+  }
+  .hetpage #nav #navtabs #home {
+    background-color: green;
+  }
+  .hetpage #nav #navtabs li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 6px;
+  }
+  .hetpage #nav #navtabs li .icon {
+    padding: 0 0 0 30px;
+    border-radius: 4.3px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 2px;
+  }
+  .hetpage #nav #navtabs li .icon.info {
+    background-image: url(../dist/imgs/icontest.png);
+  }
+  .hetpage #nav #navtabs li .icon.graphic {
+    background-image: url(../dist/imgs/icontest.png);
+  }
+  .hetpage #nav #navtabs li .icon.web {
+    background-image: url(../dist/imgs/icontest.png);
+  }
+  .hetpage #nav #navtabs li .icon.music {
+    background-image: url(../dist/imgs/icontest.png);
+  }
+  .hetpage #nav #navtabs li .icon.film {
+    background-image: url(../dist/imgs/icontest.png);
+  }
+  .hetpage #nav #navtabs li .icon.Photograhy {
+    background-image: url(../dist/imgs/icontest.png);
+  }
+  .hetpage #navtexts {
+    color: white;
+    font-size: 1em;
+    border-radius: 2.2px;
+    border: 1px solid white;
+    padding: 2px;
   }
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1680px) {
   .hetpage {
-    width: 100vw;
-    height: 120px;
     border: solid 1px black;
     color: pink;
   }
@@ -130,38 +210,27 @@ h2, h3 {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   body {
     z-index: -99999;
-    background-image: url(../dist/imgs/1920.png);
+    background-image: url(../dist/imgs/meri.jpg);
+    overflow-x: scroll;
   }
   body main {
     width: 100vw;
-    height: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    height: 100vh;
   }
-  body #nelann {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    padding: 7.5%;
-    margin: auto;
+  body main #main-section {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    overflow: scroll;
+  }
+  body main #main-section #nelann {
+    padding: 6.5%;
     height: auto;
     color: black;
     font-family: "Cutive Mono", monospace;
     font-size: 0.85em;
+    border: 2px solid pink;
   }
 }
 
 /* MODULES */
-.box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 800px;
-  width: 800px;
-  border: 11px solid black;
-  background: yellow;
-}

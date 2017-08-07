@@ -1,44 +1,61 @@
 
+
 @media screen and (min-width: 320px) and (max-width: 767px)
+
   .hetpage
     display: flex
+    flex-direction: column
     width: 100vw
     height: auto
     flex: 1
+    // background-image: url(../dist/imgs/promo4.png)
+    background-size: contain
+    background-repeat: no-repeat
 
     .parent-hetpage
-      padding: none
       display: flex
-      flex-wrap: wrap
       flex-direction: column
-      margin: auto
-      height: auto
-      color: $deep-blue
-      font-size: $font-size-Mh1
-      font-family: $font-stack-old-style
+      margin: 0 auto
 
-      .hetpage-li
-        box-sizing: border-box
-        flex-basis: auto
+      #name
+        margin: 13px 13px 13px 10px
+        color: $night
+        align-self: flex-end
+        font-family: $font-stack-thin
+        font-size: 0.8em
 
-      .hetpage-li:nth-child(2)
-        height: 53px
-
-        .hetpage-li:nth-child(3) #hetinfo
-          font-weight: lighter
-          color: green
-
-        #thin
-          font-size: $font-size-h1 +1.2
-          font-family: $font-stack-thin
-          letter-spacing: 0.03em
-          font-weight: bolder
-          color: $night
+      #thin
+        font-size: $font-size-h1 +0.6
+        font-family: $font-stack-character
+        letter-spacing: 0.02em
+        font-weight: bolder
+        font-style: italic
+        color: $night
+        margin: 0 auto
+        text-transform: lowercase
+        text-shadow: ($treebark 0 0 3px)
 
         #bulgeword
           font-family: $font-stack-character
+          color: $dark-blue
+          font-size: $font-size-h1 +0.2
+          font-style: normal
+          text-shadow: ($treebark 0 0 4px)
+
+      .hetpage-li:nth-child(2)
+        margin: 0 auto
+        width: 100vw
+        display: flex
+        justify-content: center
+
+      .hetpage-li:nth-child(3)
+        display: flex
+        justify-content: center
+        #hetinfo
           color: $treebark
-          font-size: $font-size-h1 +0.1
+          margin: 0 auto
+          font-family: $font-stack-thin
+          font-size: $font-size-h1
 
       .coa-link
         color: $deep-blue
@@ -46,24 +63,72 @@
         text-transform: capitalize
         font-family: $font-stack-thin
 
-@media screen and (min-width: 768px) and (max-width: 1023px)
-  .hetpage
-    width: 100vw
-    height: auto
-    color: $brand-color
+    // navbar
+    #nav
+      display: flex
+      flex: 1
+      justify-content: center
+      border: 1px solid $night
+      background-image: url(../dist/imgs/1920.png)
+      height: auto
 
-@media screen and (min-width: 1024px) and (max-width: 1279px)
-  .hetpage
-    width: 100vw
-    height: 120px
-    border: solid 1px black
-    color: $brand-color
-    background-color: pink
+      .navbar
+        display: flex
+        margin: auto
+
+      #navtabs
+        display: flex
+        flex-wrap: wrap
+        text-decoration: none
+        justify-content: flex-start
+        padding: 0
+        margin: 0 auto
+        background-color: $night
+        opacity: 0.6
+
+        #home
+          background-color: green
+
+        li
+          display: flex
+          padding: 6px
+
+          .icon
+            padding: 0 0 0 30px
+            // background-color: white
+            border-radius: 4.3px 
+
+            //icon styles
+            background-size: contain
+            background-repeat: no-repeat
+            background-position: 2px
+
+            &.info
+              background-image: url(../dist/imgs/icontest.png)
+            &.graphic
+              background-image: url(../dist/imgs/icontest.png)
+            &.web
+              background-image: url(../dist/imgs/icontest.png)
+            &.music
+              background-image: url(../dist/imgs/icontest.png)
+            &.film
+              background-image: url(../dist/imgs/icontest.png)
+            &.Photograhy
+              background-image: url(../dist/imgs/icontest.png)
+
+
+    #navtexts
+      color: white
+      font-size: 1em
+      border-radius: 2.2px
+      border: 1px solid white
+      padding: 2px
+
+
 
 @media screen and (min-width: 1280px) and (max-width: 1680px)
   .hetpage
-    width: 100vw
-    height: 120px
+
     border: solid 1px black
     color: $brand-color
 
