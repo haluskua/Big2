@@ -122,8 +122,7 @@ h2, h3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border: 1px solid black;
-    background-image: url(../dist/imgs/1920.png);
+    border: 1px solid gray;
     height: auto;
   }
   .hetpage #nav .navbar {
@@ -144,49 +143,72 @@ h2, h3 {
             justify-content: flex-start;
     padding: 0;
     margin: 0 auto;
-    background-color: black;
-    opacity: 0.6;
+    opacity: 0.8;
   }
   .hetpage #nav #navtabs #home {
-    background-color: green;
+    background-color: red;
+    padding: 0 26px 0 26px;
   }
   .hetpage #nav #navtabs li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 6px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: auto;
+    width: auto;
+    background-color: black;
   }
-  .hetpage #nav #navtabs li .icon {
-    padding: 0 0 0 30px;
-    border-radius: 4.3px;
-    background-size: contain;
+  .hetpage #nav #navtabs li a {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    margin-left: 4px;
+    background-size: 22px;
     background-repeat: no-repeat;
-    background-position: 2px;
+    background-position: 1.1px;
   }
-  .hetpage #nav #navtabs li .icon.info {
-    background-image: url(../dist/imgs/icontest.png);
+  .hetpage #nav #navtabs li a.brand {
+    background-image: url(../dist/imgs/testicons.png);
+    opacity: 0.6;
   }
-  .hetpage #nav #navtabs li .icon.graphic {
-    background-image: url(../dist/imgs/icontest.png);
+  .hetpage #nav #navtabs li a.grafix {
+    background-image: url(../dist/imgs/testicons.png);
+    opacity: 0.6;
   }
-  .hetpage #nav #navtabs li .icon.web {
-    background-image: url(../dist/imgs/icontest.png);
+  .hetpage #nav #navtabs li a.web {
+    background-image: url(../dist/imgs/testicons.png);
+    opacity: 0.6;
   }
-  .hetpage #nav #navtabs li .icon.music {
-    background-image: url(../dist/imgs/icontest.png);
+  .hetpage #nav #navtabs li a.snaps {
+    background-image: url(../dist/imgs/testicons.png);
+    opacity: 0.6;
   }
-  .hetpage #nav #navtabs li .icon.film {
-    background-image: url(../dist/imgs/icontest.png);
+  .hetpage #nav #navtabs li a.music {
+    background-image: url(../dist/imgs/testicons.png);
+    opacity: 0.6;
   }
-  .hetpage #nav #navtabs li .icon.Photograhy {
-    background-image: url(../dist/imgs/icontest.png);
+  .hetpage #nav #navtabs li a.film {
+    background-image: url(../dist/imgs/testicons.png);
+    opacity: 0.6;
   }
-  .hetpage #navtexts {
-    color: white;
-    font-size: 1em;
-    border-radius: 2.2px;
-    border: 1px solid white;
-    padding: 2px;
+  .hetpage #nav #navtabs li a.info {
+    background-image: url(../dist/imgs/testicons.png);
+    opacity: 0.6;
+  }
+  .hetpage #nav #navtabs li a:hover {
+    background-color: #955623;
+    color: #1a6d8e;
+  }
+  .hetpage #nav #navtexts {
+    color: #ecc382;
+    font-size: 1.2em;
+    font-family: "Amatic SC", cursive;
+    margin-left: 26px;
   }
 }
 

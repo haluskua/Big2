@@ -68,8 +68,8 @@
       display: flex
       flex: 1
       justify-content: center
-      border: 1px solid $night
-      background-image: url(../dist/imgs/1920.png)
+      border: 1px solid gray
+      // background-image: url(../dist/imgs/1920.png)
       height: auto
 
       .navbar
@@ -83,47 +83,68 @@
         justify-content: flex-start
         padding: 0
         margin: 0 auto
-        background-color: $night
-        opacity: 0.6
+        // background-color: #384038
+        opacity: 0.8
 
         #home
-          background-color: green
+          background-color: red
+          padding: 0 26px 0 26px
 
         li
           display: flex
-          padding: 6px
+          justify-content: space-between
+          height: auto
+          width: auto
+          background-color: $night
 
-          .icon
-            padding: 0 0 0 30px
-            // background-color: white
-            border-radius: 4.3px 
+          a
+            justify-content: space-between
+            height: 100%
+            width: 100%
+            text-decoration: none
+            margin-left: 4px
+
+            // border: 1px solid #968d6b
+
 
             //icon styles
-            background-size: contain
+            background-size: 22px
             background-repeat: no-repeat
-            background-position: 2px
+            background-position: 1.1px
+            // border: 1px solid red
 
-            &.info
-              background-image: url(../dist/imgs/icontest.png)
-            &.graphic
-              background-image: url(../dist/imgs/icontest.png)
+            &.brand
+              background-image: url(../dist/imgs/testicons.png)
+              opacity: 0.6
+
+            &.grafix
+              background-image: url(../dist/imgs/testicons.png)
+              opacity: 0.6
             &.web
-              background-image: url(../dist/imgs/icontest.png)
+              background-image: url(../dist/imgs/testicons.png)
+              opacity: 0.6
+            &.snaps
+              background-image: url(../dist/imgs/testicons.png)
+              opacity: 0.6
             &.music
-              background-image: url(../dist/imgs/icontest.png)
+              background-image: url(../dist/imgs/testicons.png)
+              opacity: 0.6
             &.film
-              background-image: url(../dist/imgs/icontest.png)
-            &.Photograhy
-              background-image: url(../dist/imgs/icontest.png)
+              background-image: url(../dist/imgs/testicons.png)
+              opacity: 0.6
+            &.info
+              background-image: url(../dist/imgs/testicons.png)
+              opacity: 0.6
 
+            &:hover
+              background-color: $treebark
+              color: $deep-blue
 
-    #navtexts
-      color: white
-      font-size: 1em
-      border-radius: 2.2px
-      border: 1px solid white
-      padding: 2px
-
+      #navtexts
+        color: #ecc382
+        font-size: 1.2em
+        font-family: $font-stack-thin
+        margin-left: 26px
 
 
 @media screen and (min-width: 1280px) and (max-width: 1680px)
