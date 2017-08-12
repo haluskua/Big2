@@ -1,5 +1,4 @@
 
-
 @media screen and (min-width: 320px) and (max-width: 767px)
 
   .hetpage
@@ -8,8 +7,8 @@
     width: 100vw
     height: auto
     flex: 1
-    // background-image: url(../dist/imgs/promo4.png)
-    background-size: contain
+    background-image: url(../dist/imgs/hero.png)
+    background-size: cover
     background-repeat: no-repeat
 
     .parent-hetpage
@@ -25,22 +24,23 @@
         font-size: 0.8em
 
       #thin
-        font-size: $font-size-h1 +0.6
+        font-size: $font-size-h1 +1
         font-family: $font-stack-character
         letter-spacing: 0.02em
         font-weight: bolder
         font-style: italic
         color: $night
         margin: 0 auto
-        text-transform: lowercase
-        text-shadow: ($treebark 0 0 3px)
+        text-transform: normal
+        // text-shadow: ($treebark 0 0 3px)
 
         #bulgeword
           font-family: $font-stack-character
-          color: $dark-blue
-          font-size: $font-size-h1 +0.2
+          color: #c4dae0
+          font-size: $font-size-h1 +0.6
           font-style: normal
-          text-shadow: ($treebark 0 0 4px)
+          font-weight: bolder
+          // text-shadow: ($treebark 0 0 4px)
 
       .hetpage-li:nth-child(2)
         margin: 0 auto
@@ -51,100 +51,124 @@
       .hetpage-li:nth-child(3)
         display: flex
         justify-content: center
+
         #hetinfo
-          color: $treebark
+          color: $night
           margin: 0 auto
-          font-family: $font-stack-thin
-          font-size: $font-size-h1
+          font-family: $font-stack-franklyn
+          font-size: $font-size-Mh2 +0.1
+          text-transform: capitalize
+          font-weight: 600
+          letter-spacing: 0.6px
 
       .coa-link
         color: $deep-blue
         font-size: $font-size-Mh2
         text-transform: capitalize
         font-family: $font-stack-thin
+        display: none
 
     // navbar
     #nav
       display: flex
-      flex: 1
       justify-content: center
-      border: 1px solid gray
       // background-image: url(../dist/imgs/1920.png)
+      // background-size: contain
+      // background-repeat: no-repeat
+      padding: 5px
       height: auto
+      width: auto
 
       .navbar
         display: flex
         margin: auto
 
+
       #navtabs
         display: flex
         flex-wrap: wrap
-        text-decoration: none
-        justify-content: flex-start
-        padding: 0
-        margin: 0 auto
-        // background-color: #384038
-        opacity: 0.8
+        background-color: #fbffff
+        background-image: url(../dist/imgs/1920.png)
+        background-size: auto
+        background-repeat: repeat-y
+        border: 1.6px solid #dbe2e8
+        padding: 4px
+        width: auto
+        border-radius: 3px
+
 
         #home
-          background-color: red
-          padding: 0 26px 0 26px
+          display: flex
+          height: auto
+          width: auto
+
+          a
+            margin: auto
+            height: 100%
+
+            #home-nav
+              color: white
+              font-size: 0.93em
+              letter-spacing: 0.03em
+              font-family: $font-stack
+              margin: 0 8px 0 28px
+
+
 
         li
           display: flex
-          justify-content: space-between
           height: auto
-          width: auto
-          background-color: $night
+          width: 62px
+          background-color: $nav-tabs
+          margin: 1.4px 3px
+          border-radius: 1.5px
+          opacity: 1
 
           a
-            justify-content: space-between
-            height: 100%
             width: 100%
+            height: 96%
             text-decoration: none
-            margin-left: 4px
-
-            // border: 1px solid #968d6b
-
+            padding: 2px 0 2px 0
+            margin: auto
 
             //icon styles
-            background-size: 22px
+            background-size: 17px
             background-repeat: no-repeat
-            background-position: 1.1px
-            // border: 1px solid red
+            background-position: 3px 3px
 
             &.brand
               background-image: url(../dist/imgs/testicons.png)
-              opacity: 0.6
 
             &.grafix
               background-image: url(../dist/imgs/testicons.png)
-              opacity: 0.6
+
             &.web
               background-image: url(../dist/imgs/testicons.png)
-              opacity: 0.6
+
             &.snaps
               background-image: url(../dist/imgs/testicons.png)
-              opacity: 0.6
+
             &.music
               background-image: url(../dist/imgs/testicons.png)
-              opacity: 0.6
+
             &.film
               background-image: url(../dist/imgs/testicons.png)
-              opacity: 0.6
+
             &.info
               background-image: url(../dist/imgs/testicons.png)
-              opacity: 0.6
+
 
             &:hover
-              background-color: $treebark
-              color: $deep-blue
+              background-color: #00820e
+              // border-radius: 0 0 3px 3px
 
       #navtexts
-        color: #ecc382
-        font-size: 1.2em
+        color: white
+        font-size: 0.93em
+        letter-spacing: 0.03em
         font-family: $font-stack-thin
         margin-left: 26px
+
 
 
 @media screen and (min-width: 1280px) and (max-width: 1680px)
