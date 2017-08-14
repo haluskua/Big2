@@ -6,22 +6,6 @@
 @import url("https://fonts.googleapis.com/css?family=Franklin+Gothic");
 @import url("https://fonts.googleapis.com/css?family=Audiowide");
 /* BASE STYLES */
-body {
-  background-image: url(../images/meri.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: fixed;
-  top: 0px;
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  z-index: -9000;
-  z-index-background: green;
-  z-index-color: red;
-  z-index-font-size: 26px;
-}
-
 h1 {
   font-family: Georgia, Times, serif;
 }
@@ -246,18 +230,18 @@ h2, h3 {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   body {
     z-index: -99999;
-    background-image: url(../dist/imgs/meri.jpg);
-    overflow-x: scroll;
+    overflow-y: scroll;
   }
   body main {
-    width: 100vw;
-    height: 100vh;
+    width: auto;
+    height: auto;
+    position: relative;
   }
   body main #main-section {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    overflow: scroll;
+    position: relative;
   }
   body main #main-section #nelann {
     padding: 6.5%;
