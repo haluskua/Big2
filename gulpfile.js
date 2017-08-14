@@ -53,7 +53,7 @@ gulp.task('imageMin', function() {
 gulp.task('copyHtml', function () {
  return gulp.src('./**.html')
   //comment out the bottom-line to get normal html
-    .pipe(htmlmin({collapseWhitespace: true})) 
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('dist'));
 });
 
@@ -65,6 +65,3 @@ gulp.task('copyHtml', function () {
 });
 
   gulp.task('default', ['sass', 'scripts', 'imageMin', 'watch:sass', 'copyHtml', 'server']);
- 
-
-
