@@ -1,20 +1,19 @@
 
 @media screen and (min-width: 320px) and (max-width: 767px)
-
   .hetpage
     display: flex
     flex-direction: column
-    width: 100vw
+    width: 100%
     height: auto
     flex: 1
-    background-image: url(../dist/imgs/sunset.png)
-    background-size: cover
-    background-repeat: no-repeat
+    @include backImage(../dist/imgs/1920.png)
 
     .parent-hetpage
       display: flex
       flex-direction: column
       margin: 0 auto
+      width: auto
+      height: auto
 
       #name
         margin: 10px
@@ -22,7 +21,6 @@
         font-family: $font-stack-audio
         font-size: 0.67em
         // display: none
-
       #thin
         font-size: $font-size-h1 +1
         font-family: $font-stack-character
@@ -34,10 +32,11 @@
         text-transform: normal
         // text-shadow: ($treebark 0 0 3px)
 
+
         #bulgeword
           font-family: $font-stack-audio
           color: #441928
-          font-size: $font-size-h1 +0.2
+          font-size: $font-size-h1
           font-style: normal
           font-weight: 600
           // text-shadow: ($treebark 0 0 4px)
@@ -81,7 +80,6 @@
         display: flex
         margin: auto
 
-
       #navtabs
         display: flex
         flex-wrap: wrap
@@ -114,8 +112,6 @@
               margin: 0 8px 0 28px
               text-align: center
 
-
-
         li
           display: flex
           background-color: $nav-tabs
@@ -131,6 +127,8 @@
             padding: 3.5px
             margin: auto
 
+
+
             //icon styles
             background-size: 17px
             background-repeat: no-repeat
@@ -138,25 +136,18 @@
 
             &.brand
               background-image: url(../dist/imgs/testicons.png)
-
             &.grafix
               background-image: url(../dist/imgs/testicons.png)
-
             &.web
               background-image: url(../dist/imgs/testicons.png)
-
             &.snaps
               background-image: url(../dist/imgs/testicons.png)
-
             &.music
               background-image: url(../dist/imgs/testicons.png)
-
             &.film
               background-image: url(../dist/imgs/testicons.png)
-
             &.info
               background-image: url(../dist/imgs/testicons.png)
-
 
             &:hover
               background-color: #1b7979
@@ -171,16 +162,16 @@
 
 
 
-@media screen and (min-width: 1280px) and (max-width: 1680px)
-  .hetpage
-
-    border: solid 1px black
-    color: $brand-color
-
-@media screen and (min-width: 1681px) and (max-width: 1920px)
-  .hetpage
-    width: 100vw
-    height: 120px
-    border: solid 1px black
-    color: $bg-color
-    background-color: orange
+// @media screen and (min-width: 1280px) and (max-width: 1680px)
+//   .hetpage
+//
+//     border: solid 1px black
+//     color: $brand-color
+//
+// @media screen and (min-width: 1681px) and (max-width: 1920px)
+//   .hetpage
+//     width: 100vw
+//     height: 120px
+//     border: solid 1px black
+//     color: $bg-color
+//     background-color: orange

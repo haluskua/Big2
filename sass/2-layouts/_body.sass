@@ -3,20 +3,27 @@
   body
     z-index: -99999
     overflow-y: scroll
+    width: 100%
+    position: relative
+    height: 100%
+    margin: 0 auto
     main
       width: auto
       height: auto
       position: relative
 
-
       #main-section
+        display: flex
+        flex-direction: column
         justify-content: space-between
         position: relative
+        width: 100%
+
 
         #nelann
-          padding: 6.5%
           height: auto
           color: $night
           font-family: $font-stack-paragraph
           font-size: $font-size-Mparagraphs
           border: 2px solid pink
+          flex: 1
