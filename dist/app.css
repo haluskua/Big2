@@ -16,6 +16,16 @@ h2, h3 {
 
 /* LAYOUT */
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .navbar.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  .shifted {
+    margin-top: 74px;
+  }
   .hetpage {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -29,10 +39,6 @@ h2, h3 {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    background: url("../dist/imgs/portrait.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   .hetpage .parent-hetpage {
     display: -webkit-box;
@@ -53,7 +59,7 @@ h2, h3 {
     font-size: 0.67em;
   }
   .hetpage .parent-hetpage #thin {
-    font-size: 2.3em;
+    font-size: 1.8em;
     font-family: "Cabin Sketch", cursive;
     letter-spacing: 0.02em;
     font-weight: bolder;
@@ -106,26 +112,14 @@ h2, h3 {
     font-family: "Amatic SC", cursive;
     display: none;
   }
-  .hetpage #navtabs.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    opacity: 1;
-    z-index: 9999;
-    border: 0.6px solid #deaa5c;
-  }
-  .hetpage .shifted {
-    margin-top: 75px;
-  }
   .hetpage #nav {
     height: auto;
+    margin: 0 auto;
   }
   .hetpage #nav .navbar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: auto;
   }
   .hetpage #nav #navtabs {
     display: -webkit-box;
@@ -211,6 +205,7 @@ h2, h3 {
   }
   .hetpage #nav #navtabs li a.info {
     background-image: url(../dist/imgs/testicons.png);
+    margin: 0 auto;
   }
   .hetpage #nav #navtabs li a:hover {
     background-color: #1b7979;
@@ -235,11 +230,21 @@ h2, h3 {
     margin: 0 auto;
   }
   body main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     width: auto;
     height: auto;
     position: relative;
   }
-  body main #main-section {
+  body main section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -255,9 +260,31 @@ h2, h3 {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin-top: 12px;
+    background-color: pink;
+    position: relative;
   }
-  body main #main-section #nelann {
+  body main section #section_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    border: 2px solid blue;
+  }
+  body main section #section_box .title {
+    margin: 5px 0;
+    -ms-flex-item-align: center;
+        align-self: center;
+    padding: 0;
+    line-height: 100%;
+  }
+  body main section #section_box #nelann {
     height: auto;
     color: black;
     font-family: "Cutive Mono", monospace;
@@ -265,13 +292,8 @@ h2, h3 {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    padding: 0 20px;
-  }
-  body main #main-section .title {
-    margin: 5px 0 5px 0;
-    -ms-flex-item-align: center;
-        align-self: center;
-    padding: 0;
+    border: 0.5px dotted gray;
+    padding: 10px 20px;
   }
 }
 

@@ -1,15 +1,25 @@
 // @import "bower_components/breakpoint-sass/stylesheets/breakpoint"
 
 @media screen and (min-width: 320px) and (max-width: 767px)
+
+  .navbar.sticky
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 100
+
+  .shifted
+    margin-top: 74px
+
   .hetpage
     display: flex
     flex-direction: column
     width: 100%
     height: auto
     flex: 1
-    @include backImage('../dist/imgs/portrait.jpg')
-    background-size: cover
-
+    // @include backImage('../dist/imgs/portrait.jpg')
+    // background-size: cover
     .parent-hetpage
       display: flex
       flex-direction: column
@@ -24,7 +34,7 @@
         font-size: 0.67em
         // display: none
       #thin
-        font-size: $font-size-h1 +1
+        font-size: $font-size-h1 +0.5
         font-family: $font-stack-character
         letter-spacing: 0.02em
         font-weight: bolder
@@ -33,7 +43,6 @@
         margin: 0 auto
         text-transform: normal
         // text-shadow: ($treebark 0 0 3px)
-
 
         #bulgeword
           font-family: $font-stack-audio
@@ -65,8 +74,6 @@
           #mini-desc
             font-family: $font-stack-thin
 
-
-
       .coa-link
         color: $deep-blue
         font-size: $font-size-Mh2
@@ -75,25 +82,12 @@
         display: none
 
     // navbar
-
-    #navtabs.sticky
-      position: fixed
-      top: 0
-      left: 0
-      width: 100%
-      opacity: 1
-      z-index: 9999
-      border: 0.6px solid #deaa5c
-
-    .shifted
-      margin-top: 75px
-
     #nav
       height: auto
+      margin: 0 auto
 
       .navbar
         display: flex
-        margin: auto
 
       #navtabs
         display: flex
@@ -166,7 +160,7 @@
               background-image: url(../dist/imgs/testicons.png)
             &.info
               background-image: url(../dist/imgs/testicons.png)
-
+              margin: 0 auto
             &:hover
               background-color: #1b7979
               height: auto

@@ -8,32 +8,47 @@
     position: relative
     height: 100%
     margin: 0 auto
+    //
+    // .shifted
+    //   margin-top: 78px
 
     main
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
       width: auto
       height: auto
       position: relative
 
-      #main-section
+      section
         display: flex
         flex-direction: column
         justify-content: space-between
         position: relative
         width: 100%
         align-items: flex-start
-        margin-top: 12px
+        // margin-top: 49px
+        background-color: pink
+        position: relative
 
+        #section_box
+          display: flex
+          flex-direction: column
+          justify-content: center
+          position: relative
+          border: 2px solid blue
 
-        #nelann
-          height: auto
-          color: $night
-          font-family: $font-stack-paragraph
-          font-size: $font-size-Mparagraphs
-          flex: 1
-          // border-top: 0.5px dotted gray
-          padding: 0 20px
+          .title
+            margin: 5px 0
+            align-self: center
+            padding: 0
+            line-height: 100%
 
-        .title
-          margin: 5px 0 5px 0
-          align-self: center
-          padding: 0
+          #nelann
+            height: auto
+            color: $night
+            font-family: $font-stack-paragraph
+            font-size: $font-size-Mparagraphs
+            flex: 1
+            border: 0.5px dotted gray
+            padding: 10px 20px
