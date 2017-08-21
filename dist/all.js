@@ -1,1 +1,1 @@
-console.log("this is file 55500"),console.log("this is file 2"),console.log("test dodge 2");
+$(window).scroll(function(){$(this).scrollTop()>107?$("#navtabs").addClass("sticky"):$("#navtabs").removeClass("sticky")}),$(document).ready(function(){$("p").click(function(){$(this).hide()})}),console.log("this is file 2"),console.log("test dodge 2");

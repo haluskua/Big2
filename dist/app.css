@@ -16,6 +16,213 @@ h2, h3 {
 
 /* LAYOUT */
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .hetpage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background: url("../dist/imgs/portrait.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .hetpage .parent-hetpage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+  }
+  .hetpage .parent-hetpage #name {
+    margin: 10px;
+    color: black;
+    font-family: "Audiowide";
+    font-size: 0.67em;
+  }
+  .hetpage .parent-hetpage #thin {
+    font-size: 2.3em;
+    font-family: "Cabin Sketch", cursive;
+    letter-spacing: 0.02em;
+    font-weight: bolder;
+    font-style: italic;
+    color: black;
+    margin: 0 auto;
+    text-transform: normal;
+  }
+  .hetpage .parent-hetpage #thin #bulgeword {
+    font-family: "Audiowide";
+    color: #441928;
+    font-size: 1.3em;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .hetpage .parent-hetpage .hetpage-li:nth-child(2) {
+    margin: 0 auto;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hetpage .parent-hetpage .hetpage-li:nth-child(3) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hetpage .parent-hetpage .hetpage-li:nth-child(3) #hetinfo {
+    color: #3b4d65;
+    margin: 0 auto;
+    font-family: "Franklin Gothic", serif;
+    font-size: 0.9em;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+  }
+  .hetpage .parent-hetpage .hetpage-li:nth-child(3) #hetinfo #mini-desc {
+    font-family: "Amatic SC", cursive;
+  }
+  .hetpage .parent-hetpage .coa-link {
+    color: #1a6d8e;
+    font-size: 0.8em;
+    text-transform: capitalize;
+    font-family: "Amatic SC", cursive;
+    display: none;
+  }
+  .hetpage .sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+    z-index: 9999;
+    border: 0.6px solid #deaa5c;
+  }
+  .hetpage #nav {
+    height: auto;
+  }
+  .hetpage #nav .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+  }
+  .hetpage #nav #navtabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background-color: #fbffff;
+    background-image: url(../dist/imgs/polygons.png);
+    background-size: auto;
+    background-repeat: repeat-y;
+    padding: 5px;
+    width: auto;
+    border-radius: 3px;
+    margin: 0;
+  }
+  .hetpage #nav #navtabs #home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+    background-color: #bf3428;
+    width: 120px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin: 3px;
+  }
+  .hetpage #nav #navtabs #home a {
+    margin: auto;
+    height: 75%;
+  }
+  .hetpage #nav #navtabs #home a #home-nav {
+    color: white;
+    font-size: 0.93em;
+    letter-spacing: 0.03em;
+    font-family: "Audiowide";
+    margin: 0 8px 0 28px;
+    text-align: center;
+  }
+  .hetpage #nav #navtabs li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: rgba(21, 16, 18, 0.83);
+    border-radius: 1.5px;
+    opacity: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 3px;
+  }
+  .hetpage #nav #navtabs li a {
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    text-decoration: none;
+    padding: 3.5px;
+    margin: auto;
+    background-size: 17px;
+    background-repeat: no-repeat;
+    background-position: 3px;
+  }
+  .hetpage #nav #navtabs li a.brand {
+    background-image: url(../dist/imgs/testicons.png);
+  }
+  .hetpage #nav #navtabs li a.grafix {
+    background-image: url(../dist/imgs/testicons.png);
+  }
+  .hetpage #nav #navtabs li a.web {
+    background-image: url(../dist/imgs/testicons.png);
+  }
+  .hetpage #nav #navtabs li a.snaps {
+    background-image: url(../dist/imgs/testicons.png);
+  }
+  .hetpage #nav #navtabs li a.music {
+    background-image: url(../dist/imgs/testicons.png);
+  }
+  .hetpage #nav #navtabs li a.film {
+    background-image: url(../dist/imgs/testicons.png);
+  }
+  .hetpage #nav #navtabs li a.info {
+    background-image: url(../dist/imgs/testicons.png);
+  }
+  .hetpage #nav #navtabs li a:hover {
+    background-color: #1b7979;
+    height: auto;
+  }
+  .hetpage #nav #navtexts {
+    color: white;
+    font-size: 0.93em;
+    letter-spacing: 0.11em;
+    font-family: "Amatic SC", cursive;
+    margin-left: 26px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
   body {
     z-index: -99999;
     overflow-y: scroll;
@@ -42,16 +249,26 @@ h2, h3 {
             justify-content: space-between;
     position: relative;
     width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 12px;
   }
   body main #main-section #nelann {
     height: auto;
     color: black;
     font-family: "Cutive Mono", monospace;
     font-size: 0.85em;
-    border: 2px solid pink;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    padding: 0 20px;
+  }
+  body main #main-section .title {
+    margin: 5px 0 5px 0;
+    -ms-flex-item-align: center;
+        align-self: center;
+    padding: 0;
   }
 }
 

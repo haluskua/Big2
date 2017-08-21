@@ -1,3 +1,4 @@
+// @import "bower_components/breakpoint-sass/stylesheets/breakpoint"
 
 @media screen and (min-width: 320px) and (max-width: 767px)
   .hetpage
@@ -6,7 +7,8 @@
     width: 100%
     height: auto
     flex: 1
-    @include backImage(../dist/imgs/1920.png)
+    @include backImage('../dist/imgs/portrait.jpg')
+    background-size: cover
 
     .parent-hetpage
       display: flex
@@ -73,6 +75,16 @@
         display: none
 
     // navbar
+
+    .sticky
+      position: fixed
+      top: 0
+      left: 0
+      width: 100%
+      opacity: 1
+      z-index: 9999
+      border: 0.6px solid #deaa5c
+
     #nav
       height: auto
 
@@ -87,10 +99,11 @@
         background-image: url(../dist/imgs/polygons.png)
         background-size: auto
         background-repeat: repeat-y
-        border: 1.6px solid #dbe2e8
+        // border: 1.6px solid #deaa5c
         padding: 5px
         width: auto
         border-radius: 3px
+        margin: 0
 
         #home
           display: flex
@@ -103,6 +116,9 @@
           a
             margin: auto
             height: 75%
+            // @include breakpoint(max-width $small)
+            //   font-size: 1.2em
+            //   color purple
 
             #home-nav
               color: white
@@ -111,6 +127,7 @@
               font-family: $font-stack-audio
               margin: 0 8px 0 28px
               text-align: center
+
 
         li
           display: flex
@@ -126,8 +143,6 @@
             text-decoration: none
             padding: 3.5px
             margin: auto
-
-
 
             //icon styles
             background-size: 17px
@@ -159,7 +174,6 @@
         letter-spacing: 0.11em
         font-family: $font-stack-thin
         margin-left: 26px
-
 
 
 // @media screen and (min-width: 1280px) and (max-width: 1680px)
