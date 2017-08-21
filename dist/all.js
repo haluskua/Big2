@@ -1,1 +1,1 @@
-$(window).scroll(function(){$(this).scrollTop()>107?$("#navtabs").addClass("sticky"):$("#navtabs").removeClass("sticky")}),$(document).ready(function(){$("p").click(function(){$(this).hide()})}),console.log("this is file 2"),console.log("test dodge 2");
+jQuery(document).ready(function(s){var o=s("#navtabs").offset().top;s(window).scroll(function(){s(window).scrollTop()>o?(s("#navtabs").addClass("sticky"),s("#nav").addClass("shifted")):(s("#navtabs").removeClass("sticky"),s("#nav").removeClass("shifted"))})}),console.log("this is file 2"),console.log("test dodge 2");

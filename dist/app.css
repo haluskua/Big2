@@ -106,7 +106,7 @@ h2, h3 {
     font-family: "Amatic SC", cursive;
     display: none;
   }
-  .hetpage .sticky {
+  .hetpage #navtabs.sticky {
     position: fixed;
     top: 0;
     left: 0;
@@ -114,6 +114,9 @@ h2, h3 {
     opacity: 1;
     z-index: 9999;
     border: 0.6px solid #deaa5c;
+  }
+  .hetpage .shifted {
+    margin-top: 75px;
   }
   .hetpage #nav {
     height: auto;
