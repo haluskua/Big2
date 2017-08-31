@@ -1,188 +1,193 @@
 // @import "bower_components/breakpoint-sass/stylesheets/breakpoint"
 
-@media screen and (min-width: 320px) and (max-width: 767px)
+  // Everything up to and including the mobile landscape width
+// @mixin mobile-landscape-and-below
 
-  .navbar.sticky
-    position: fixed
-    top: 0
-    left: 0
-    width: 100%
-    z-index: 100
 
-  .shifted
-    margin-top: 74px
+@media screen and (min-width:180px) and (max-width: 420px)
 
   .hetpage
     display: flex
     flex-direction: column
+		justify-content: space-between
     width: 100%
     height: auto
     flex: 1
-    // @include backImage('../dist/imgs/portrait.jpg')
-    // background-size: cover
-    .parent-hetpage
-      display: flex
-      flex-direction: column
-      margin: 0 auto
-      width: auto
-      height: auto
+		border: 1px solid red
+    background-image: url(../dist/imgs/1920.png)
+		background-size: contain
 
-      #name
-        margin: 10px
-        color: $night
-        font-family: $font-stack-audio
-        font-size: 0.67em
-        // display: none
-      #thin
-        font-size: $font-size-h1 +0.5
-        font-family: $font-stack-character
-        letter-spacing: 0.02em
-        font-weight: bolder
-        font-style: italic
-        color: $night
-        margin: 0 auto
-        text-transform: normal
-        // text-shadow: ($treebark 0 0 3px)
+	  .parent-hetpage
+	    display: flex
+	    flex-direction: column
+	    margin: 0 auto
+	    width: auto
+	    height: auto
 
-        #bulgeword
-          font-family: $font-stack-audio
-          color: #441928
-          font-size: $font-size-h1
-          font-style: normal
-          font-weight: 600
-          // text-shadow: ($treebark 0 0 4px)
+	    #name
+	      margin: 10px
+	      color: $night
+	      font-family: $font-stack-audio
+	      font-size: 0.67em
 
-      .hetpage-li:nth-child(2)
-        margin: 0 auto
-        width: 100vw
-        display: flex
-        justify-content: center
+	    #thin
+	      font-size: $font-size-h1 +0.5
+	      font-family: $font-stack-character
+	      letter-spacing: 0.02em
+	      font-weight: bolder
+	      font-style: italic
+	      color: $night
+	      margin: 0 auto
+	      text-transform: normal
 
-      .hetpage-li:nth-child(3)
-        display: flex
-        justify-content: center
+	    #hetinfo
+	      color: #3b4d65
+	      margin: 0 auto
+	      font-family: $font-stack-franklyn
+	      font-size: $font-size-Mh2 +0.1
+	      text-transform: capitalize
+	      font-weight: 600
+	      letter-spacing: 0.6px
 
-        #hetinfo
-          color: #3b4d65
-          margin: 0 auto
-          font-family: $font-stack-franklyn
-          font-size: $font-size-Mh2 +0.1
-          text-transform: capitalize
-          font-weight: 600
-          letter-spacing: 0.6px
+	    .hetpage-li:nth-child(2)
+	      margin: 0 auto
+	      width: 100vw
+	      display: flex
+	      justify-content: center
 
-          #mini-desc
-            font-family: $font-stack-thin
+	    .hetpage-li:nth-child(3)
+	      display: flex
+	      justify-content: center
 
-      .coa-link
-        color: $deep-blue
-        font-size: $font-size-Mh2
-        text-transform: capitalize
-        font-family: $font-stack-thin
-        display: none
+			    #mini-desc
+			      font-family: $font-stack-thin
 
-    // navbar
-    #nav
-      height: auto
-      margin: 0 auto
+			    #bulgeword
+			      font-family: $font-stack-audio
+			      color: #441928
+			      font-size: $font-size-Mh2
+			      font-style: normal
+			      font-weight: 600
+			    // text-shadow: ($treebark 0 0 4px)
 
-      .navbar
-        display: flex
+			    .coa-link
+			      color: $deep-blue
+			      font-size: $font-size-Mh2
+			      text-transform: capitalize
+			      font-family: $font-stack-thin
+			      display: none
 
-      #navtabs
-        display: flex
-        flex-wrap: wrap
-        background-color: #fbffff
-        background-image: url(../dist/imgs/polygons.png)
-        background-size: auto
-        background-repeat: repeat-y
-        // border: 1.6px solid #deaa5c
-        padding: 5px
-        width: auto
-        border-radius: 3px
-        margin: 0
+  // navbar
+	  #nav
+	    height: auto
+	    margin: 0 auto
 
-        #home
-          display: flex
-          height: auto
-          background-color: rgb(191, 52, 40)
-          width: 120px
-          flex-grow: 1
-          margin: 3px
+	    .navbar
+	      display: flex
 
-          a
-            margin: auto
-            height: 75%
-            // @include breakpoint(max-width $small)
-            //   font-size: 1.2em
-            //   color purple
+		    #navtabs
+		      display: flex
+		      flex-wrap: wrap
+		      background-color: #fbffff
+		      background-image: url(../dist/imgs/polygons.png)
+		      background-size: auto
+		      background-repeat: repeat-y
+		      // border: 1.6px solid #deaa5c
+		      padding: 5px
+		      width: auto
+		      border-radius: 3px
+		      margin: 0
 
-            #home-nav
-              color: white
-              font-size: 0.93em
-              letter-spacing: 0.03em
-              font-family: $font-stack-audio
-              margin: 0 8px 0 28px
-              text-align: center
+		      #home
+		        display: flex
+		        height: auto
+		        background-color: rgb(191, 52, 40)
+		        width: 120px
+		        flex-grow: 1
+		        margin: 3px
 
+		        a
+		          margin: auto
+		          height: 75%
+		          // @include breakpoint(max-width $small)
+		          //   font-size: 1.2em
+		          //   color purple
 
-        li
-          display: flex
-          background-color: $nav-tabs
-          border-radius: 1.5px
-          opacity: 1
-          flex-grow: 1
-          flex-wrap: wrap
-          margin: 3px
-
-          a
-            flex-grow: 2
-            text-decoration: none
-            padding: 3.5px
-            margin: auto
-
-            //icon styles
-            background-size: 17px
-            background-repeat: no-repeat
-            background-position: 3px
-
-            &.brand
-              background-image: url(../dist/imgs/testicons.png)
-            &.grafix
-              background-image: url(../dist/imgs/testicons.png)
-            &.web
-              background-image: url(../dist/imgs/testicons.png)
-            &.snaps
-              background-image: url(../dist/imgs/testicons.png)
-            &.music
-              background-image: url(../dist/imgs/testicons.png)
-            &.film
-              background-image: url(../dist/imgs/testicons.png)
-            &.info
-              background-image: url(../dist/imgs/testicons.png)
-              margin: 0 auto
-            &:hover
-              background-color: #1b7979
-              height: auto
-
-      #navtexts
-        color: white
-        font-size: 0.93em
-        letter-spacing: 0.11em
-        font-family: $font-stack-thin
-        margin-left: 26px
+		          #home-nav
+		            color: white
+		            font-size: 0.93em
+		            letter-spacing: 0.03em
+		            font-family: $font-stack-audio
+		            margin: 0 8px 0 28px
+		            text-align: center
 
 
-// @media screen and (min-width: 1280px) and (max-width: 1680px)
-//   .hetpage
-//
-//     border: solid 1px black
-//     color: $brand-color
-//
-// @media screen and (min-width: 1681px) and (max-width: 1920px)
-//   .hetpage
-//     width: 100vw
-//     height: 120px
-//     border: solid 1px black
-//     color: $bg-color
-//     background-color: orange
+		      li
+		        display: flex
+		        background-color: $nav-tabs
+		        border-radius: 1.5px
+		        opacity: 1
+		        flex-grow: 1
+		        flex-wrap: wrap
+		        margin: 3px
+
+		        a
+		          flex-grow: 2
+		          text-decoration: none
+		          padding: 3.5px
+		          margin: auto
+
+		          //icon styles
+		          background-size: 17px
+		          background-repeat: no-repeat
+		          background-position: 3px
+
+		          &.brand
+		            background-image: url(../dist/imgs/testicons.png)
+		          &.grafix
+		            background-image: url(../dist/imgs/testicons.png)
+		          &.web
+		            background-image: url(../dist/imgs/testicons.png)
+		          &.snaps
+		            background-image: url(../dist/imgs/testicons.png)
+		          &.music
+		            background-image: url(../dist/imgs/testicons.png)
+		          &.film
+		            background-image: url(../dist/imgs/testicons.png)
+		          &.info
+		            background-image: url(../dist/imgs/testicons.png)
+		            margin: 0 auto
+		          &:hover
+		            background-color: #1b7979
+		            height: auto
+
+		    #navtexts
+		      color: white
+		      font-size: 0.93em
+		      letter-spacing: 0.11em
+		      font-family: $font-stack-thin
+		      margin-left: 26px
+
+	  .navbar.sticky
+	    position: fixed
+	    top: 0
+	    left: 0
+	    width: 100%
+	    z-index: 100
+
+		  // .shifted
+		  //   margin-top: 74px
+
+	// @media screen and (min-width: 1280px) and (max-width: 1680px)
+	//   .hetpage
+	//
+	//     border: solid 1px black
+	//     color: $brand-color
+	//
+	// @media screen and (min-width: 1681px) and (max-width: 1920px)
+	//   .hetpage
+	//     width: 100vw
+	//     height: 120px
+	//     border: solid 1px black
+	//     color: $bg-color
+	//     background-color: orange

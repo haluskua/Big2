@@ -15,17 +15,7 @@ h2, h3 {
 }
 
 /* LAYOUT */
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .navbar.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-  }
-  .shifted {
-    margin-top: 74px;
-  }
+@media screen and (min-width: 180px) and (max-width: 420px) {
   .hetpage {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -34,13 +24,9 @@ h2, h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
-    height: auto;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
   }
-  .hetpage .parent-hetpage {
+  border: 1px solid red;
+  .parent-hetpage {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -52,13 +38,13 @@ h2, h3 {
     width: auto;
     height: auto;
   }
-  .hetpage .parent-hetpage #name {
+  .parent-hetpage #name {
     margin: 10px;
     color: black;
     font-family: "Audiowide";
     font-size: 0.67em;
   }
-  .hetpage .parent-hetpage #thin {
+  .parent-hetpage #thin {
     font-size: 1.8em;
     font-family: "Cabin Sketch", cursive;
     letter-spacing: 0.02em;
@@ -68,14 +54,14 @@ h2, h3 {
     margin: 0 auto;
     text-transform: normal;
   }
-  .hetpage .parent-hetpage #thin #bulgeword {
+  .parent-hetpage #thin #bulgeword {
     font-family: "Audiowide";
     color: #441928;
-    font-size: 1.3em;
+    font-size: 0.8em;
     font-style: normal;
     font-weight: 600;
   }
-  .hetpage .parent-hetpage .hetpage-li:nth-child(2) {
+  .parent-hetpage .hetpage-li:nth-child(2) {
     margin: 0 auto;
     width: 100vw;
     display: -webkit-box;
@@ -85,7 +71,7 @@ h2, h3 {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .hetpage .parent-hetpage .hetpage-li:nth-child(3) {
+  .parent-hetpage .hetpage-li:nth-child(3) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -93,7 +79,7 @@ h2, h3 {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .hetpage .parent-hetpage .hetpage-li:nth-child(3) #hetinfo {
+  .parent-hetpage .hetpage-li:nth-child(3) #hetinfo {
     color: #3b4d65;
     margin: 0 auto;
     font-family: "Franklin Gothic", serif;
@@ -102,26 +88,26 @@ h2, h3 {
     font-weight: 600;
     letter-spacing: 0.6px;
   }
-  .hetpage .parent-hetpage .hetpage-li:nth-child(3) #hetinfo #mini-desc {
+  .parent-hetpage .hetpage-li:nth-child(3) #hetinfo #mini-desc {
     font-family: "Amatic SC", cursive;
   }
-  .hetpage .parent-hetpage .coa-link {
+  .parent-hetpage .coa-link {
     color: #1a6d8e;
     font-size: 0.8em;
     text-transform: capitalize;
     font-family: "Amatic SC", cursive;
     display: none;
   }
-  .hetpage #nav {
+  #nav {
     height: auto;
     margin: 0 auto;
   }
-  .hetpage #nav .navbar {
+  #nav .navbar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .hetpage #nav #navtabs {
+  #nav #navtabs {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -136,7 +122,7 @@ h2, h3 {
     border-radius: 3px;
     margin: 0;
   }
-  .hetpage #nav #navtabs #home {
+  #nav #navtabs #home {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -148,11 +134,11 @@ h2, h3 {
             flex-grow: 1;
     margin: 3px;
   }
-  .hetpage #nav #navtabs #home a {
+  #nav #navtabs #home a {
     margin: auto;
     height: 75%;
   }
-  .hetpage #nav #navtabs #home a #home-nav {
+  #nav #navtabs #home a #home-nav {
     color: white;
     font-size: 0.93em;
     letter-spacing: 0.03em;
@@ -160,7 +146,7 @@ h2, h3 {
     margin: 0 8px 0 28px;
     text-align: center;
   }
-  .hetpage #nav #navtabs li {
+  #nav #navtabs li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -174,7 +160,7 @@ h2, h3 {
         flex-wrap: wrap;
     margin: 3px;
   }
-  .hetpage #nav #navtabs li a {
+  #nav #navtabs li a {
     -webkit-box-flex: 2;
         -ms-flex-positive: 2;
             flex-grow: 2;
@@ -185,38 +171,48 @@ h2, h3 {
     background-repeat: no-repeat;
     background-position: 3px;
   }
-  .hetpage #nav #navtabs li a.brand {
+  #nav #navtabs li a.brand {
     background-image: url(../dist/imgs/testicons.png);
   }
-  .hetpage #nav #navtabs li a.grafix {
+  #nav #navtabs li a.grafix {
     background-image: url(../dist/imgs/testicons.png);
   }
-  .hetpage #nav #navtabs li a.web {
+  #nav #navtabs li a.web {
     background-image: url(../dist/imgs/testicons.png);
   }
-  .hetpage #nav #navtabs li a.snaps {
+  #nav #navtabs li a.snaps {
     background-image: url(../dist/imgs/testicons.png);
   }
-  .hetpage #nav #navtabs li a.music {
+  #nav #navtabs li a.music {
     background-image: url(../dist/imgs/testicons.png);
   }
-  .hetpage #nav #navtabs li a.film {
+  #nav #navtabs li a.film {
     background-image: url(../dist/imgs/testicons.png);
   }
-  .hetpage #nav #navtabs li a.info {
+  #nav #navtabs li a.info {
     background-image: url(../dist/imgs/testicons.png);
     margin: 0 auto;
   }
-  .hetpage #nav #navtabs li a:hover {
+  #nav #navtabs li a:hover {
     background-color: #1b7979;
     height: auto;
   }
-  .hetpage #nav #navtexts {
+  #nav #navtexts {
     color: white;
     font-size: 0.93em;
     letter-spacing: 0.11em;
     font-family: "Amatic SC", cursive;
     margin-left: 26px;
+  }
+  .navbar.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  .shifted {
+    margin-top: 74px;
   }
 }
 
