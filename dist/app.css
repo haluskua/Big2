@@ -15,38 +15,83 @@ h2, h3 {
 }
 
 /* LAYOUT */
+<<<<<<< Updated upstream
 @media screen and (min-width: 180px) and (max-width: 420px) {
+=======
+@media screen and (min-width: 320px) and (max-width: 767px) {
+>>>>>>> Stashed changes
   .hetpage {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+<<<<<<< Updated upstream
+=======
+    background: url("../dist/imgs/1920.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    height: 33.33%;
+    margin: 0 auto;
+>>>>>>> Stashed changes
   }
   border: 1px solid red;
   .parent-hetpage {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 0 auto;
-    width: auto;
-    height: auto;
+    height: 100vh;
   }
+<<<<<<< Updated upstream
   .parent-hetpage #name {
     margin: 10px;
-    color: black;
-    font-family: "Audiowide";
-    font-size: 0.67em;
+=======
+  .hetpage .parent-hetpage .hetpage-li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: red;
   }
+  .hetpage .parent-hetpage .hetpage-li #hetinfo {
+>>>>>>> Stashed changes
+    color: black;
+    color-margin: 0 auto;
+    color-font-family: "Amatic SC", cursive;
+    color-font-size: 3.8em;
+    color-text-transform: capitalize;
+    color-font-weight: 600;
+    color-letter-spacing: 0.6px;
+  }
+  .hetpage .parent-hetpage .hetpage-li #hetinfo #mini-desc {
+    font-family: "Amatic SC", cursive;
+  }
+<<<<<<< Updated upstream
   .parent-hetpage #thin {
+=======
+  .hetpage .parent-hetpage .hetpage-li #thin {
+>>>>>>> Stashed changes
     font-size: 1.8em;
-    font-family: "Cabin Sketch", cursive;
+    font-family: "Audiowide";
     letter-spacing: 0.02em;
     font-weight: bolder;
     font-style: italic;
@@ -54,6 +99,7 @@ h2, h3 {
     margin: 0 auto;
     text-transform: normal;
   }
+<<<<<<< Updated upstream
   .parent-hetpage #thin #bulgeword {
     font-family: "Audiowide";
     color: #441928;
@@ -103,26 +149,43 @@ h2, h3 {
     margin: 0 auto;
   }
   #nav .navbar {
+=======
+  .hetpage .parent-hetpage .hetpage-li #thin #bulgeword {
+    font-family: "Audiowide";
+    color: #441928;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .navbar {
+>>>>>>> Stashed changes
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+<<<<<<< Updated upstream
   #nav #navtabs {
+=======
+  #navtabs {
+>>>>>>> Stashed changes
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    background-color: #fbffff;
-    background-image: url(../dist/imgs/polygons.png);
-    background-size: auto;
+    background-image: url(../dist/imgs/sunset.png);
+    background-size: cover;
     background-repeat: repeat-y;
     padding: 5px;
     width: auto;
     border-radius: 3px;
     margin: 0;
   }
+<<<<<<< Updated upstream
   #nav #navtabs #home {
+=======
+  #navtabs #home {
+>>>>>>> Stashed changes
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -134,11 +197,20 @@ h2, h3 {
             flex-grow: 1;
     margin: 3px;
   }
+<<<<<<< Updated upstream
   #nav #navtabs #home a {
+=======
+  #navtabs #home a {
+>>>>>>> Stashed changes
     margin: auto;
     height: 75%;
+    color: purple;
   }
+<<<<<<< Updated upstream
   #nav #navtabs #home a #home-nav {
+=======
+  #navtabs #home a #home-nav {
+>>>>>>> Stashed changes
     color: white;
     font-size: 0.93em;
     letter-spacing: 0.03em;
@@ -146,7 +218,11 @@ h2, h3 {
     margin: 0 8px 0 28px;
     text-align: center;
   }
+<<<<<<< Updated upstream
   #nav #navtabs li {
+=======
+  #navtabs li {
+>>>>>>> Stashed changes
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -160,7 +236,11 @@ h2, h3 {
         flex-wrap: wrap;
     margin: 3px;
   }
+<<<<<<< Updated upstream
   #nav #navtabs li a {
+=======
+  #navtabs li a {
+>>>>>>> Stashed changes
     -webkit-box-flex: 2;
         -ms-flex-positive: 2;
             flex-grow: 2;
@@ -171,6 +251,7 @@ h2, h3 {
     background-repeat: no-repeat;
     background-position: 3px;
   }
+<<<<<<< Updated upstream
   #nav #navtabs li a.brand {
     background-image: url(../dist/imgs/testicons.png);
   }
@@ -198,6 +279,35 @@ h2, h3 {
     height: auto;
   }
   #nav #navtexts {
+=======
+  #navtabs li a.brand {
+    background-image: url(../dist/imgs/testicons.png);
+  }
+  #navtabs li a.grafix {
+    background-image: url(../dist/imgs/testicons.png);
+  }
+  #navtabs li a.web {
+    background-image: url(../dist/imgs/testicons.png);
+  }
+  #navtabs li a.snaps {
+    background-image: url(../dist/imgs/testicons.png);
+  }
+  #navtabs li a.music {
+    background-image: url(../dist/imgs/testicons.png);
+  }
+  #navtabs li a.film {
+    background-image: url(../dist/imgs/testicons.png);
+  }
+  #navtabs li a.info {
+    background-image: url(../dist/imgs/testicons.png);
+    margin: 0 auto;
+  }
+  #navtabs li a:hover {
+    background-color: #1b7979;
+    height: auto;
+  }
+  #navtexts {
+>>>>>>> Stashed changes
     color: white;
     font-size: 0.93em;
     letter-spacing: 0.11em;
