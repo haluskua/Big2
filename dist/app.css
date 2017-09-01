@@ -127,7 +127,6 @@ h2, h3 {
     background-image: url(../dist/imgs/hero.png);
     background-size: cover;
     background-repeat: repeat-y;
-    border: 1.6px solid #deaa5c;
     padding: 5px;
     width: auto;
     border-radius: 3px;
@@ -169,7 +168,7 @@ h2, h3 {
             flex-grow: 1;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 3px;
+    margin: 2.5px;
     border: 0.7px solid white;
     border-height: auto;
   }
@@ -178,7 +177,7 @@ h2, h3 {
         -ms-flex-positive: 1;
             flex-grow: 1;
     text-decoration: none;
-    padding: 5px;
+    padding: 3.6px;
     margin: auto;
     background-size: 17px;
     background-repeat: no-repeat;
@@ -224,6 +223,15 @@ h2, h3 {
   }
   .shifted {
     margin-top: 74px;
+  }
+  #navtabs li a {
+    width: 60px;
+  }
+  #navtabs li a:hover {
+    border: 0.7px solid white;
+  }
+  #navtabs li {
+    border: 0.7px solid gray;
   }
 }
 
