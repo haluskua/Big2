@@ -4,14 +4,14 @@ $(document).ready(function() {
 
 
     //Get the header height
-    var headerHeight = $('#navtabs').outerHeight();
+    var headerHeight = $('.navbar').outerHeight();
 
     $('.icon').click(function(e) {
       //getting the href attribute
     var linkHref = $(this).attr('href');
     $('html, body').animate({
       scrollTop: $(linkHref).offset().top - headerHeight
-    }, 1060);
+    }, 1222);
     e.preventDefault();
   });
 
@@ -24,11 +24,11 @@ $(document).ready(function() {
   /*changing between classes */
     if (scrollTop > stickyNavTop) {
       $('.navbar').addClass('sticky');
-      $('.hetpage').addClass('shifted');
+      $('.parent-hetpage').addClass('shifted');
     } else {
         /*restoring back to normal */
       $('.navbar').removeClass('sticky');
-      $('.hetpage').removeClass('shifted');
+      $('.parent-hetpage').removeClass('shifted');
     }
   });
 });
