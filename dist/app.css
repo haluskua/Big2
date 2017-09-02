@@ -73,7 +73,7 @@ h2, h3 {
   }
   .hetpage .parent-hetpage .hetpage-li #hetinfo #mini-desc {
     font-family: "Cutive Mono", monospace;
-    font-size: 1em;
+    font-size: 0.99em;
     color: #907449;
   }
   .hetpage .parent-hetpage .hetpage-li #thin {
@@ -83,12 +83,12 @@ h2, h3 {
     font-weight: bolder;
     color: #000000;
     margin: 0 auto;
-    letter-spacing: 0.07em;
+    letter-spacing: 0.02em;
   }
   .hetpage .parent-hetpage .hetpage-li #thin #bulgeword {
     font-family: "Cabin Sketch", Garamond;
-    color: #6b9000;
-    font-size: 0.79em;
+    color: #865913;
+    font-size: 0.93em;
     font-style: normal;
     font-weight: 600;
   }
@@ -99,7 +99,7 @@ h2, h3 {
     margin: 10.7px 0 -34.5px 0px;
     color: #b98c38;
     font-family: "Cutive Mono", monospace;
-    font-size: 3.2em;
+    font-size: 3.1em;
   }
   .hetpage .landing-page {
     display: -webkit-box;
@@ -205,7 +205,7 @@ h2, h3 {
     background-image: url(../dist/imgs/testicons.png);
   }
   #navtabs li a:hover {
-    background-color: #8aa952;
+    background-color: #d2bc81;
   }
   #navtexts {
     color: white;
