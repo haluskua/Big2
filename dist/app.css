@@ -83,12 +83,12 @@ h2, h3 {
     font-weight: bolder;
     color: #000000;
     margin: 0 auto;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.07em;
   }
   .hetpage .parent-hetpage .hetpage-li #thin #bulgeword {
-    font-family: "Playfair";
-    color: #5a5a5a;
-    font-size: 0.71em;
+    font-family: "Cabin Sketch", Garamond;
+    color: #6b9000;
+    font-size: 0.79em;
     font-style: normal;
     font-weight: 600;
   }
@@ -96,10 +96,10 @@ h2, h3 {
     letter-spacing: normal;
   }
   .hetpage .hetpage-li #landing-title {
-    margin: 22.8px 0 -34.5px 0px;
+    margin: 10.7px 0 -34.5px 0px;
     color: #b98c38;
     font-family: "Cutive Mono", monospace;
-    font-size: 3em;
+    font-size: 3.2em;
   }
   .hetpage .landing-page {
     display: -webkit-box;
@@ -205,7 +205,7 @@ h2, h3 {
     background-image: url(../dist/imgs/testicons.png);
   }
   #navtabs li a:hover {
-    background-color: #bf9664;
+    background-color: #8aa952;
   }
   #navtexts {
     color: white;
