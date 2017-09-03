@@ -5,12 +5,14 @@
 	#folders-container
 		display: flex
 		flex-wrap: wrap
-		justify-content: space-between
-		width: 92%
+		justify-content: space-around
+		width: 100vw
 		height: auto
 		margin: 0 auto
 		padding: 0
-		border: 2px solid green
+		background-image: url('../dist/imgs/polygons.png')
+		background-repeat: no-repeat
+		background-size: cover
 
 		.nav-folders
 			display: flex
@@ -20,43 +22,74 @@
 			width: auto
 			margin: 0 auto
 			padding: 0
-			// border: 1px solid red
+
+	#arrows
+		display: flex
+		justify-content: space-around
+		width: 40%
+		height: auto
+		margin: 0 auto
+		.back
+			background-image: url('../dist/imgs/back.png')
+			background-repeat: no-repeat
+			background-size: cover
+			width: 65px
+			height: 45px
+			z-index: 9999
+		.forward
+			background-image: url('../dist/imgs/forward.png')
+			background-repeat: no-repeat
+			background-size: cover
+			width: 65px
+			height: 45px
+			z-index: 9999
 
 	.hamburger-menu
 		display: flex
 		flex-direction: column
 		justify-content: space-between
 		width: 50px
-		height: 80px
-		// background-color: #404040
-		background: url('../dist/imgs/icontest.png') no-repeat center
+		height: 74px
+		background: url('../dist/imgs/icontest.png') no-repeat
+		background-position: bottom
+		overflow: hidden
 		margin: 0 auto
 		cursor: pointer
 		text-align: center
 		font-family: $font-stack-audio
-		text-decoration: underline 0.5px dotted #907449
+		text-decoration: none
 		color: #907449
 		font-size: 0.79em
+		// line-height: 80px
+
 		.nav-archives
+			padding-top: 6px
+			z-index: 9999
 
 	.hetpage
 		display: flex
-		justify-content: center
-		flex-direction: column
 		@include backImage('../dist/imgs/1920.png')
 		background-size: cover
 		background-repeat: no-repeat
+		overflow: hidden
+		width: 100vw
 		height: 100vh
-		width: 100%
-		border: 1.4px solid #fdecde
-
 
 		.parent-hetpage
 			display: flex
-			justify-content: space-between
 			flex-direction: column
+			justify-content: space-between
+			width: auto
 			margin: 0 auto
-			height: 100vh
+			height: 86vh
+
+			#nav
+				display: flex
+				justify-content: space-between
+				flex-direction: column
+				margin: 0 auto
+				height: 70px
+				width: 100vw
 
 			.hetpage-li
 				display: flex
@@ -99,7 +132,7 @@
 		    margin: 10.7px 0 -34.5px 0px
 		    color: #b98c38
 		    font-family: $font-stack-paragraph
-		    font-size: 3.1em
+		    font-size: 2.88em
 				letter-spacing: normal
 			    // display: none
 
@@ -107,11 +140,8 @@
 		 display: flex
 		 justify-content: flex-end
 		 flex-direction: column
-		 height: 80%
+		 height: 85%
 
-	 #nav
-		height: 20%
-		margin: 0 auto
 
 	.navbar
 	  display: flex
@@ -121,7 +151,7 @@
 	  flex-wrap: wrap
 	  background-image: url(../dist/imgs/hero.png)
 	  background-size: cover
-	  background-repeat: repeat-y
+	  background-repeat: no-repeat
 	  padding: 5px
 	  width: auto
 	  border-radius: 3px
@@ -190,15 +220,27 @@
 	  font-family: $font-stack-old-style
 	  margin-left: 22px
 
- .navbar.sticky
+ #nav.sticky
 	 position: fixed
 	 top: 0
 	 left: 0
 	 width: 100%
-	 z-index: 100
+	 height: 0px
+	 line-height: 84px
+	 z-index: 9999
 
- .shifted
-	 margin-top: 76px
+ #folders-container.reduced
+	 height: auto
+	 padding-top: 0
+	 background-image: url('../dist/imgs/1920.png')
+	 background-size: cover
+	 background-repeat: no-repeat
+
+
+
+
+.parent-hetpage.shifted
+ margin-top: 0px
  #navtabs
 	 li
 		 border: 2px solid #b98c38
