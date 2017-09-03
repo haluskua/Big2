@@ -2,6 +2,43 @@
 
 @media screen and (max-width: 480px)
 
+	#folders-container
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		width: 92%
+		height: auto
+		margin: 0 auto
+		padding: 0
+		border: 2px solid green
+
+		.nav-folders
+			display: flex
+			flex-direction: column
+			align-content: space-between
+			height: auto
+			width: auto
+			margin: 0 auto
+			padding: 0
+			// border: 1px solid red
+
+	.hamburger-menu
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		width: 50px
+		height: 80px
+		// background-color: #404040
+		background: url('../dist/imgs/icontest.png') no-repeat center
+		margin: 0 auto
+		cursor: pointer
+		text-align: center
+		font-family: $font-stack-audio
+		text-decoration: underline 0.5px dotted #907449
+		color: #907449
+		font-size: 0.79em
+		.nav-archives
+
 	.hetpage
 		display: flex
 		justify-content: center
@@ -82,7 +119,7 @@
 	#navtabs
 	  display: flex
 	  flex-wrap: wrap
-	  background-image: url(../dist/imgs/sunset.png)
+	  background-image: url(../dist/imgs/hero.png)
 	  background-size: cover
 	  background-repeat: repeat-y
 	  padding: 5px
@@ -96,7 +133,6 @@
 	    // background-color: #c16408
 	    width: 120px
 	    flex-grow: 1
-	    margin: 3px
 
 	    a
 	      margin: 0 auto
@@ -118,7 +154,6 @@
 	    opacity: 1
 	    flex-grow: 1
 	    flex-wrap: wrap
-	    margin: 2.5px
 
 	    a
 	      flex-grow: 1
@@ -166,6 +201,7 @@
 	 margin-top: 76px
  #navtabs
 	 li
+		 border: 2px solid #b98c38
 		 a
 			 width: 63px
 			 font-size: 0.96em

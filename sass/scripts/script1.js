@@ -34,6 +34,16 @@ $(document).ready(function() {
 });
 
 
+
+// hamburger menu
+
+// $(document).ready(function() {
+//   $('#hamburger'). on('click' function(){
+//     $('.hetpage').toggleClass('open');
+//   });
+// });
+
+
     // jQuery(document).ready(function($) {
     //
     //   /* Stick navigation to the top of the page */
