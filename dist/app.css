@@ -86,8 +86,8 @@ h2, h3 {
     letter-spacing: 0.02em;
   }
   .hetpage .parent-hetpage .hetpage-li #thin #bulgeword {
-    font-family: "Cabin Sketch", Garamond;
-    color: #865913;
+    font-family: "Amatic SC", cursive;
+    color: #634517;
     font-size: 0.93em;
     font-style: normal;
     font-weight: 600;
@@ -125,7 +125,7 @@ h2, h3 {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    background-image: url(../dist/imgs/hero.png);
+    background-image: url(../dist/imgs/sunset.png);
     background-size: cover;
     background-repeat: repeat-y;
     padding: 5px;
@@ -169,8 +169,6 @@ h2, h3 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: 2.5px;
-    border: 0.7px solid white;
-    border-height: auto;
   }
   #navtabs li a {
     -webkit-box-flex: 1;
@@ -205,14 +203,14 @@ h2, h3 {
     background-image: url(../dist/imgs/testicons.png);
   }
   #navtabs li a:hover {
-    background-color: #d2bc81;
+    background-color: #f9970a;
+    height: auto;
   }
   #navtexts {
     color: white;
-    font-size: 0.93em;
-    letter-spacing: 0.11em;
-    font-family: "Amatic SC", cursive;
-    margin-left: 26px;
+    letter-spacing: 0.04em;
+    font-family: "Yantramanav", sans-serif;
+    margin-left: 22px;
   }
   .navbar.sticky {
     position: fixed;
@@ -222,19 +220,11 @@ h2, h3 {
     z-index: 100;
   }
   .shifted {
-    margin-top: 74px;
+    margin-top: 76px;
   }
   #navtabs li a {
-    width: 60px;
-  }
-  #navtabs li a:hover {
-    border: 0.7px solid white;
-  }
-  #navtabs li avisited {
-    background-color: black;
-  }
-  #navtabs li {
-    border: 0.7px solid gray;
+    width: 63px;
+    font-size: 0.96em;
   }
 }
 
