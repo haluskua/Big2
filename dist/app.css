@@ -26,10 +26,11 @@ h2, h3 {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    width: 100vw;
-    height: auto;
+    width: 84vw;
+    height: 100%;
     margin: 0 auto;
     padding: 0;
+    border-radius: 21px;
     background-image: url("../dist/imgs/sunset2.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -88,7 +89,7 @@ h2, h3 {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 50px;
-    height: 74px;
+    height: 100px;
     background: url("../dist/imgs/icontest.png") no-repeat;
     background-position: bottom;
     overflow: hidden;
@@ -99,9 +100,9 @@ h2, h3 {
     text-decoration: none;
     color: #907449;
     font-size: 0.79em;
+    line-height: 68px;
   }
   .hamburger-menu .nav-archives {
-    padding-top: 6px;
     z-index: 9999;
   }
   .hetpage {
@@ -125,7 +126,7 @@ h2, h3 {
             justify-content: space-between;
     width: auto;
     margin: 0 auto;
-    height: 86vh;
+    height: 75vh;
   }
   .hetpage .parent-hetpage #nav {
     display: -webkit-box;
@@ -139,7 +140,7 @@ h2, h3 {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0 auto;
-    height: 70px;
+    height: 111px;
     width: 100vw;
   }
   .hetpage .parent-hetpage .hetpage-li {
@@ -161,7 +162,7 @@ h2, h3 {
   }
   .hetpage .parent-hetpage .hetpage-li #hetinfo #mini-desc {
     font-family: "Cutive Mono", monospace;
-    font-size: 0.99em;
+    font-size: 1.08em;
     color: #907449;
   }
   .hetpage .parent-hetpage .hetpage-li #thin {
@@ -184,9 +185,9 @@ h2, h3 {
     letter-spacing: normal;
   }
   .hetpage .hetpage-li #landing-title {
-    margin: 10.7px 0 -34.5px 0px;
+    margin: 10.7px 0 -33.5px 0px;
     color: #b98c38;
-    font-family: "Cutive Mono", monospace;
+    font-family: "Audiowide";
     font-size: 2.88em;
   }
   .hetpage .landing-page {
@@ -200,7 +201,7 @@ h2, h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 52%;
+    height: 45%;
   }
   .hetpage .logo-home {
     display: -webkit-box;
@@ -329,12 +330,14 @@ h2, h3 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 0px;
-    line-height: 84px;
+    line-height: 110px;
     z-index: 9999;
   }
   #folders-container.reduced {
     height: auto;
+    width: 100%;
+    border-radius: 21px;
+    border-bottom: 0.5px solid gray;
     padding-top: 0;
     background-image: url("../dist/imgs/1920.png");
     background-size: cover;
