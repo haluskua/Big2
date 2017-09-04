@@ -10,9 +10,10 @@
 		height: auto
 		margin: 0 auto
 		padding: 0
-		background-image: url('../dist/imgs/polygons.png')
+		background-image: url('../dist/imgs/sunset2.png')
 		background-repeat: no-repeat
 		background-size: cover
+		background-position: right
 
 		.nav-folders
 			display: flex
@@ -68,9 +69,10 @@
 
 	.hetpage
 		display: flex
-		@include backImage('../dist/imgs/1920.png')
-		background-size: cover
-		background-repeat: no-repeat
+		// background: url('../dist/imgs/1920.png')
+		// background-size: contain
+		// background-position: top
+		// background-repeat: no-repeat
 		overflow: hidden
 		width: 100vw
 		height: 100vh
@@ -94,6 +96,7 @@
 			.hetpage-li
 				display: flex
 				justify-content: center
+
 
 				#hetinfo
 					color: black
@@ -140,8 +143,26 @@
 		 display: flex
 		 justify-content: flex-end
 		 flex-direction: column
-		 height: 85%
+		 height: 52%
 
+	 .logo-home
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			width: auto
+			height: 166px
+			background: url('../dist/imgs/newlogo.png') no-repeat
+			background-position: center
+			background-size: cover
+			overflow: hidden
+			margin: 0 auto
+			cursor: pointer
+			text-align: center
+			font-family: $font-stack-audio
+			text-decoration: none
+			color: #907449
+			font-size: 0.79em
+			z-index: 99999
 
 	.navbar
 	  display: flex

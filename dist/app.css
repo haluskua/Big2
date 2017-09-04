@@ -30,9 +30,10 @@ h2, h3 {
     height: auto;
     margin: 0 auto;
     padding: 0;
-    background-image: url("../dist/imgs/polygons.png");
+    background-image: url("../dist/imgs/sunset2.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: right;
   }
   #folders-container .nav-folders {
     display: -webkit-box;
@@ -107,11 +108,6 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background: url("../dist/imgs/1920.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-repeat: no-repeat;
     overflow: hidden;
     width: 100vw;
     height: 100vh;
@@ -204,7 +200,33 @@ h2, h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 85%;
+    height: 52%;
+  }
+  .hetpage .logo-home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: auto;
+    height: 166px;
+    background: url("../dist/imgs/newlogo.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0 auto;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Audiowide";
+    text-decoration: none;
+    color: #907449;
+    font-size: 0.79em;
+    z-index: 99999;
   }
   .navbar {
     display: -webkit-box;
