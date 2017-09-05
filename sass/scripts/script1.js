@@ -2,7 +2,6 @@
 
 $(document).ready(function() {
 
-
     //Get the header height
     var headerHeight = $('#nav').outerHeight();
 
@@ -11,7 +10,7 @@ $(document).ready(function() {
     var linkHref = $(this).attr('href');
     $('html, body').animate({
       scrollTop: $(linkHref).offset().top - headerHeight
-    }, 1555);
+    }, 1755);
     e.preventDefault();
   });
 
@@ -33,6 +32,12 @@ $(document).ready(function() {
       $('#folders-container').removeClass('reduced');
     }
   });
+  
+// togging the menu log button on landing page
+    $(".home-logo").on("click", function() {
+      $(".nav-folders").toggle(1000);
+    });
+
 });
 
 
@@ -40,8 +45,8 @@ $(document).ready(function() {
 // hamburger menu
 
 // $(document).ready(function() {
-//   $('#hamburger'). on('click' function(){
-//     $('.hetpage').toggleClass('open');
+//   $('.home-logo'). on('click' function(){
+//     $('.#folders-container').toggleClass('open');
 //   });
 // });
 

@@ -26,7 +26,7 @@ h2, h3 {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    width: 71vw;
+    width: auto;
     height: 76%;
     margin: 0 auto;
     padding: 0;
@@ -42,10 +42,27 @@ h2, h3 {
             flex-direction: column;
     -ms-flex-line-pack: justify;
         align-content: space-between;
+    height: 102px;
+    width: 61px;
+    margin: 0 auto;
+    padding: 0;
+    display: none;
+  }
+  #folders-container .home-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
     height: auto;
     width: auto;
     margin: 0 auto;
     padding: 0;
+    cursor: pointer;
   }
   #arrows {
     display: -webkit-box;
@@ -85,7 +102,7 @@ h2, h3 {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 64px;
-    height: 92px;
+    height: 98px;
     background: url("../dist/imgs/archive-icons-mobile.png") no-repeat;
     background-position: bottom;
     overflow: hidden;
@@ -234,6 +251,7 @@ h2, h3 {
     background-position: center;
     background-size: cover;
     overflow: hidden;
+    cursor: pointer;
     margin: 0 auto;
     cursor: pointer;
     text-align: center;
