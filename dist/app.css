@@ -26,8 +26,8 @@ h2, h3 {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    width: 84vw;
-    height: 72%;
+    width: 71vw;
+    height: 76%;
     margin: 0 auto;
     padding: 0;
     border-radius: 21px;
@@ -84,9 +84,9 @@ h2, h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 43px;
-    height: 100px;
-    background: url("../dist/imgs/archive-icons.png") no-repeat;
+    width: 64px;
+    height: 92px;
+    background: url("../dist/imgs/archive-icons-mobile.png") no-repeat;
     background-position: bottom;
     overflow: hidden;
     margin: 0 auto;
@@ -96,7 +96,7 @@ h2, h3 {
     text-decoration: none;
     color: #907449;
     font-size: 0.79em;
-    line-height: 68px;
+    line-height: 28px;
   }
   .hamburger-menu .nav-archives {
     z-index: 9999;
@@ -123,7 +123,7 @@ h2, h3 {
             justify-content: space-between;
     width: auto;
     margin: 0 auto;
-    height: 75vh;
+    height: 80vh;
   }
   .hetpage .parent-hetpage .bio {
     display: -webkit-box;
@@ -154,7 +154,7 @@ h2, h3 {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0 auto;
-    height: 111px;
+    height: 225px;
     width: 100vw;
   }
   .hetpage .parent-hetpage .hetpage-li {
@@ -190,7 +190,7 @@ h2, h3 {
   }
   .hetpage .parent-hetpage .hetpage-li #thin #bulgeword {
     font-family: "Amatic SC", cursive;
-    color: #6f6a61;
+    color: #988561;
     font-size: 0.93em;
     font-style: normal;
     font-weight: 600;
@@ -215,7 +215,7 @@ h2, h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 45%;
+    height: 73%;
   }
   .hetpage .logo-home {
     display: -webkit-box;
@@ -229,7 +229,7 @@ h2, h3 {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: auto;
-    height: 166px;
+    height: 182px;
     background: url("../dist/imgs/newlogo.png") no-repeat;
     background-position: center;
     background-size: cover;
@@ -350,12 +350,10 @@ h2, h3 {
   #folders-container.reduced {
     height: auto;
     width: 100%;
-    border-radius: 21px;
+    border-radius: 0 0 21px;
     border-bottom: 0.5px solid gray;
     padding-top: 0;
-    background-image: url("../dist/imgs/1920.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: black;
   }
 }
 
