@@ -109,6 +109,7 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    background-color: black;
     overflow: hidden;
     width: 100vw;
     height: 100vh;
