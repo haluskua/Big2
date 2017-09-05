@@ -15,7 +15,7 @@ const livereload = require('gulp-livereload');
 const reload = browserSync.reload;
 
 //browsersynck
-gulp.task('server', function(){
+gulp.task('browser-sync', function(){
   browserSync.init({
     server: './'
   });
@@ -30,6 +30,7 @@ gulp.task('sass', function () {
     }))
     .pipe(concat('app.css'))
     .pipe(gulp.dest('dist'))
+    .pipe(browserSync.stream());
 });
 
 //MINIFY js file
@@ -57,10 +58,10 @@ gulp.task('copyHtml', function () {
 });
 
 
- gulp.task('watch:sass', function(){
+ gulp.task('watch', ['browser-sync', 'sass'], function(){
   gulp.watch('sass/**/*.sass', ['sass']);
   gulp.watch('sass/scripts/*.js', ['scripts']);
    gulp.src('./*.html').on('change', reload);
 });
 
-  gulp.task('default', ['sass', 'scripts', 'imageMin', 'watch:sass', 'copyHtml', 'server']);
+  gulp.task('default', ['browser-sync', 'sass', 'scripts', 'imageMin', 'copyHtml', 'watch']);
