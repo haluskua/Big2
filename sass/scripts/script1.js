@@ -32,12 +32,23 @@ $(document).ready(function() {
       $('#folders-container').removeClass('reduced');
     }
   });
-  
-// togging the menu log button on landing page
-    $(".home-logo").on("click", function() {
-      $(".nav-folders").toggle(1000);
-    });
 
+// togging the menu log button on landing page
+    // $(".home-logo").on("click", function() {
+    //   $(".nav-folders").toggle(1000);
+    //   $(".nav-folders").removeAtt("display");
+    // });
+
+    // $(".home-logo").on("click", function() {
+    //   $(".nav-folders").toggle(1000);
+    // });
+
+
+// slideToggle
+
+    $(".home-logo").click(function(){
+      $(".nav-folders").slideToggle(2000);
+    });
 });
 
 
