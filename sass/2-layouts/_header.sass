@@ -1,7 +1,5 @@
 
-
-@media screen and (max-width: 480px)
-
+@include phone
 	#folders-container
 		display: flex
 		flex-wrap: wrap
@@ -93,6 +91,11 @@
 		overflow: hidden
 		width: 100vw
 		height: 100vh
+		@include tablet
+			.hetpage
+				width: 100vw
+				height: 30vh
+				background-color: red
 
 		.parent-hetpage
 			display: flex
@@ -112,6 +115,7 @@
 					color: #b3b8b9
 					width: 88vw
 					text-align: justify
+
 			#nav
 				display: flex
 				justify-content: space-between
@@ -156,6 +160,7 @@
 			     font-weight: 600
 					 letter-spacing: 0.02em
 
+
 		.hetpage-li
 
 		  #landing-title
@@ -171,6 +176,7 @@
 		 justify-content: flex-end
 		 flex-direction: column
 		 height: 73%
+
 
 	 .logo-home
 			display: flex
@@ -191,6 +197,7 @@
 			color: #907449
 			font-size: 0.79em
 			z-index: 99999
+
 
 	.navbar
 	  display: flex
@@ -225,6 +232,7 @@
 	        font-family: $font-stack-audio
 	        margin: 0 8px 0 28px
 	        text-align: center
+
 
 	  li
 	    display: flex
@@ -263,6 +271,7 @@
 	        background-color: #f9970a
 	        height: auto
 
+
 	#navtexts
 	  color: white
 	  letter-spacing: 0.04em
@@ -291,10 +300,10 @@
 	li
 		display: flex
 
-.parent-hetpage.shifted
- margin-top: 0px
- #navtabs
-	 li
+	.parent-hetpage.shifted
+	 margin-top: 0px
+	 #navtabs
+		 li
 		 border: 2px solid #b98c38
 		 a
 			 width: 63px

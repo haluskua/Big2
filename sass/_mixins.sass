@@ -2,3 +2,14 @@
   background: url($image)
   background-size: cover
   background-repeat: no-repeat
+
+
+
+@mixin phone
+  @media only screen and (max-width:480px)
+    @content
+
+
+@mixin tablet
+  @media only screen and (max-width:768px)
+    @content
