@@ -6,10 +6,13 @@
 
 
 @mixin phone
-  @media only screen and (max-width:480px)
+  @media only screen and (min-width: 100px)
     @content
 
-
 @mixin tablet
-  @media only screen and (max-width:768px)
+  @media only screen and (min-width: 481px)
+    @content
+
+@mixin desktop
+  @media only screen and (min-width: 765px)
     @content

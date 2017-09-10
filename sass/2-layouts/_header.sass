@@ -1,4 +1,5 @@
 
+
 @include phone
 	#folders-container
 		display: flex
@@ -9,10 +10,10 @@
 		margin: 0 auto
 		padding: 0
 		border-radius: 21px
-		// background-image: url('../dist/imgs/sunset2.png')
-		// background-repeat: no-repeat
-		// background-size: cover
-		// background-position: right
+		@include tablet
+			width: 90vw
+			justify-content: space-between
+
 
 
 		.nav-folders
@@ -78,24 +79,23 @@
 		position: relative
 
 		.nav-archives
-			z-index: 9999
 
-	.hetpage
-		display: flex
-		background-color: black
-
-		// background: url('../dist/imgs/1920.png')
-		// background-size: contain
-		// background-position: top
-		// background-repeat: no-repeat
-		overflow: hidden
-		width: 100vw
-		height: 100vh
-		@include tablet
-			.hetpage
-				width: 100vw
-				height: 30vh
+	@include phone
+		.hetpage
+			display: flex
+			background-color: black
+			overflow: hidden
+			width: 100vw
+			height: 100vh
+			@include tablet
+				@include backImage ('../dist/imgs/1920.png')
+				justify-content: center
+				flex-grow: 1
+				height: 100vh
 				background-color: red
+				@include desktop
+					display: flex
+					background-color: green
 
 		.parent-hetpage
 			display: flex
@@ -104,6 +104,8 @@
 			width: auto
 			margin: 0 auto
 			height: 80vh
+			@include tablet
+				height: 84vh
 			.bio
 				display: flex
 				justify-content: center
@@ -115,6 +117,12 @@
 					color: #b3b8b9
 					width: 88vw
 					text-align: justify
+					@include tablet
+						color: #2b1b03
+						padding-top: 0
+						margin-top: 0
+						font-family: $font-stack-old-style
+
 
 			#nav
 				display: flex
@@ -159,6 +167,8 @@
 			     font-style: normal
 			     font-weight: 600
 					 letter-spacing: 0.02em
+					 @include tablet
+						 color
 
 
 		.hetpage-li
@@ -169,6 +179,10 @@
 		    font-family: $font-stack-audio
 		    font-size: 2.88em
 				letter-spacing: normal
+				@include tablet
+					margin: 0 auto
+					padding: 0
+
 			    // display: none
 
 	 .landing-page
@@ -176,6 +190,11 @@
 		 justify-content: flex-end
 		 flex-direction: column
 		 height: 73%
+		 @include tablet
+			justify-content: space-between
+			height: 50vh
+
+
 
 
 	 .logo-home
