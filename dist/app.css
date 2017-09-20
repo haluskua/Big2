@@ -57,8 +57,8 @@ h2, h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 90vw;
-    height: 76%;
+    width: 100vw;
+    height: auto;
     margin: 0 auto;
     padding: 0;
     border-radius: 21px;
@@ -82,14 +82,14 @@ h2, h3 {
             flex-direction: column;
     -ms-flex-line-pack: justify;
         align-content: space-between;
-    height: 102px;
+    height: 30px;
     width: 61px;
     margin: 0 auto;
     padding: 0;
     display: none;
     position: relative;
   }
-  #folders-container .home-logo {
+  #folders-container #home-logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -99,11 +99,14 @@ h2, h3 {
             flex-direction: column;
     -ms-flex-line-pack: justify;
         align-content: space-between;
-    height: auto;
-    width: auto;
+    height: 200px;
+    width: 100vw;
     margin: 0 auto;
     padding: 0;
     cursor: pointer;
+    background: url("../dist/imgs/newlogo.png") center no-repeat;
+    background-size: contain;
+    z-index: 999999;
   }
   #arrows {
     display: -webkit-box;
@@ -142,20 +145,19 @@ h2, h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 64px;
-    height: 98px;
-    background: url("../dist/imgs/archive-icons-mobile.png") no-repeat;
-    background-position: bottom;
-    overflow: hidden;
+    width: 60px;
+    height: 36px;
     margin: 0 auto;
     cursor: pointer;
     text-align: center;
     font-family: "Audiowide";
     text-decoration: none;
-    color: #907449;
+    color: #ae8950;
     font-size: 0.79em;
-    line-height: 44px;
+    line-height: 28px;
     position: relative;
+    border: 0.85px solid;
+    border-radius: 5px;
   }
 }
 
@@ -179,6 +181,7 @@ h2, h3 {
     overflow: hidden;
     width: 100vw;
     height: 100vh;
+    margin: 0 auto;
   }
 }
 
@@ -221,7 +224,7 @@ h2, h3 {
             justify-content: space-between;
     width: auto;
     margin: 0 auto;
-    height: 80vh;
+    height: 66vh;
   }
 }
 
@@ -243,14 +246,15 @@ h2, h3 {
         -ms-flex-pack: center;
             justify-content: center;
     width: auto;
-    height: 7%;
+    height: 0%;
   }
   .parent-hetpage .bio .intro {
     font-family: "Amatic SC", cursive;
-    font-size: 1.35em;
-    color: #b3b8b9;
-    width: 88vw;
-    text-align: justify;
+    font-size: 1.15em;
+    color: #1f2121;
+    width: 84vw;
+    height: auto;
+    margin: 0 auto;
   }
 }
 
@@ -272,9 +276,9 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -311,13 +315,14 @@ h2, h3 {
   }
   .parent-hetpage .hetpage-li #hetinfo #mini-desc {
     font-family: "Cutive Mono", monospace;
-    font-size: .88em;
+    font-size: .9em;
     line-height: 7px;
     text-align: justify;
   }
   .parent-hetpage .hetpage-li #hetinfo a {
     text-decoration: none;
     color: #907449;
+    cursor: pointer;
   }
   .parent-hetpage .hetpage-li #thin {
     font-size: 2.3em;
@@ -374,10 +379,37 @@ h2, h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 73%;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    height: 60vh;
+    height: 8vh;
+  }
+  .mobile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 61px;
+    height: 22px;
+    margin-top: 22px;
+    border: 0.5px solid #ae8950;
+    border-radius: 3px;
+    position: absolute;
+  }
+  .mobile-menu .menu {
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Cutive Mono", monospace;
+    letter-spacing: 0.06em;
+    color: #ae8950;
+    line-height: 21px;
   }
   .logo-home {
     display: -webkit-box;
@@ -392,8 +424,7 @@ h2, h3 {
             justify-content: space-between;
     width: auto;
     height: 182px;
-    background: url("../dist/imgs/nlsmall4.png") no-repeat;
-    background-position: center;
+    background: url("../dist/imgs/nlsmall5.png") no-repeat;
     background-size: cover;
     overflow: hidden;
     cursor: pointer;
@@ -420,7 +451,7 @@ h2, h3 {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    background-image: url(../dist/imgs/hero.png);
+    background-image: url("../dist/imgs/hero.png");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 5px;
@@ -516,12 +547,8 @@ h2, h3 {
   #folders-container.reduced {
     height: auto;
     width: 100%;
-    border-radius: 0 0 21px;
-    border-bottom: 0.5px solid gray;
     padding-top: 0px;
-    background-image: url("../dist/imgs/1920.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: white;
   }
   li {
     display: -webkit-box;

@@ -49,16 +49,16 @@ $(document).ready(function() {
 // slideToggle
 
     $(".home-logo").click(function(){
-      $(".nav-folders").slideToggle(2000);
+      $(".nav-folders").slideToggle(1400);
     });
 
-    $("#mini-desc").click(function(){
-      $(".nav-folders").slideToggle(2000);
+    $(".mobile-menu").click(function(){
+      $(".nav-folders").slideToggle(1400);
     });
 
       $("#folders-container").on("click") , (function () {
 
-        $("#folders-container").toggle(2000)
+        $("#folders-container").toggle(1400)
 
       });
 
