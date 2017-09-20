@@ -31,6 +31,8 @@ $(document).ready(function() {
       $('.parent-hetpage').removeClass('shifted');
       $('#folders-container').removeClass('reduced');
     }
+
+
   });
 
 // togging the menu log button on landing page
@@ -38,7 +40,7 @@ $(document).ready(function() {
     //   $(".nav-folders").toggle(1000);
     //   $(".nav-folders").removeAtt("display");
     // });
-
+    //
     // $(".home-logo").on("click", function() {
     //   $(".nav-folders").toggle(1000);
     // });
@@ -49,7 +51,50 @@ $(document).ready(function() {
     $(".home-logo").click(function(){
       $(".nav-folders").slideToggle(2000);
     });
+
+    $("#mini-desc").click(function(){
+      $(".nav-folders").slideToggle(2000);
+    });
+
+      $("#folders-container").on("click") , (function () {
+
+        $("#folders-container").toggle(2000)
+
+      });
+
+      function responsive_layout (){
+
+        if($(window).innerWidth() > 480) {
+            $("#folders-container").addClass ("folders-container2");
+          }else{
+              $("#folders-container").removeClass ("folders-container2");
+            }
+      }
+
+
+      window.onresize = responsive_layout;
+
 });
+
+
+
+
+
+
+
+
+
+//
+//
+// $(document).ready(function () {
+//
+//   $("#folders-container").on("click") , function () {
+//
+//     $("#folders-container").toggle()
+//
+//   });
+//
+// });
 
 
 
@@ -62,26 +107,6 @@ $(document).ready(function() {
 // });
 
 
-    // jQuery(document).ready(function($) {
-    //
-    //   /* Stick navigation to the top of the page */
-    //   var stickyNavTop = $('.navbar').offset().top;
-    //
-    //   $(window).scroll(function() {
-    //     var scrollTop = $(window).scrollTop();
-    //
-    //   /*changing between classes */
-    //     if (scrollTop > stickyNavTop) {
-    //       $('.navbar').addClass('sticky');
-    //       $('main').addClass('shifted');
-    //     } else {
-    //         /*restoring back to normal */
-    //       $('.navbar').removeClass('sticky');
-    //       $('main').removeClass('shifted');
-    //     }
-    //   });
-    // });
-//
 //   // smooth scrolling:
 //   $(document).ready(function() {
 //      function filter(string) {

@@ -1,3 +1,28 @@
+// function responsive_layout (){
+//
+//   if($(window).innerWidth() >480) {
+//       $("#folders-container")addClass (".folders-container2");
+//     }else{
+//         $("#folders-container")removeClass (".folders-container2");
+//       }
+// }
+//
+//
+// window.onresize = responsive_layout;
+//
+//
+//
+// $(document).ready(function () {
+//
+//   $("#folders-container").on("click") , function () {
+//
+//     $("#folders-container").toggle()
+//
+//   });
+//
+// });
+
+
 
 
 // hamburger menu

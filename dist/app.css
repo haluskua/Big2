@@ -18,15 +18,46 @@ h2, h3 {
 
 /* LAYOUT */
 @media only screen and (min-width: 100px) {
+  .folders-container2 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 100px) and (min-width: 481px) {
+  .folders-container2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 74vw;
+    height: 90px;
+    margin: 0 auto;
+    padding: 0;
+    background-image: url("../dist/imgs/1920.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 100px) and (min-width: 481px) and (min-width: 765px) {
+  .folders-container2 {
+    background-color: white;
+  }
+}
+
+@media only screen and (min-width: 100px) {
   #folders-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 90vw;
     height: 76%;
     margin: 0 auto;
     padding: 0;
@@ -36,10 +67,7 @@ h2, h3 {
 
 @media only screen and (min-width: 100px) and (min-width: 481px) {
   #folders-container {
-    width: 90vw;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    display: none;
   }
 }
 
@@ -131,12 +159,23 @@ h2, h3 {
   }
 }
 
+@media only screen and (min-width: 100px) and (min-width: 481px) {
+  .hamburger-menu {
+    background: url("../dist/imgs/archive-icons.png");
+    background-position: bottom;
+    overflow: hidden;
+    margin: 0 auto;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    line-height: 114px;
+  }
+}
+
 @media only screen and (min-width: 100px) and (min-width: 100px) {
   .hetpage {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: black;
     overflow: hidden;
     width: 100vw;
     height: 100vh;
@@ -145,9 +184,6 @@ h2, h3 {
 
 @media only screen and (min-width: 100px) and (min-width: 100px) and (min-width: 481px) {
   .hetpage {
-    background: url("../dist/imgs/1920.png");
-    background-size: cover;
-    background-repeat: no-repeat;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -155,7 +191,10 @@ h2, h3 {
         -ms-flex-positive: 1;
             flex-grow: 1;
     height: 100vh;
-    background-color: red;
+    background-image: url("../dist/imgs/1920.png");
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
   }
 }
 
@@ -189,6 +228,9 @@ h2, h3 {
 @media only screen and (min-width: 100px) and (min-width: 100px) and (min-width: 481px) {
   .parent-hetpage {
     height: 84vh;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0;
   }
 }
 
@@ -214,10 +256,14 @@ h2, h3 {
 
 @media only screen and (min-width: 100px) and (min-width: 100px) and (min-width: 481px) {
   .parent-hetpage .bio .intro {
-    color: #2b1b03;
+    color: #b47809;
     padding-top: 0;
     margin-top: 0;
     font-family: "Yantramanav", sans-serif;
+    font-size: 1.1em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -234,9 +280,18 @@ h2, h3 {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0 auto;
-    height: 225px;
+    height: auto;
     width: 100vw;
   }
+}
+
+@media only screen and (min-width: 100px) and (min-width: 100px) and (min-width: 481px) {
+  .parent-hetpage #nav {
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 100px) and (min-width: 100px) {
   .parent-hetpage .hetpage-li {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -256,7 +311,12 @@ h2, h3 {
   }
   .parent-hetpage .hetpage-li #hetinfo #mini-desc {
     font-family: "Cutive Mono", monospace;
-    font-size: 1.08em;
+    font-size: .88em;
+    line-height: 7px;
+    text-align: justify;
+  }
+  .parent-hetpage .hetpage-li #hetinfo a {
+    text-decoration: none;
     color: #907449;
   }
   .parent-hetpage .hetpage-li #thin {
@@ -271,10 +331,19 @@ h2, h3 {
   .parent-hetpage .hetpage-li #thin #bulgeword {
     font-family: "Amatic SC", cursive;
     color: #988561;
-    font-size: 0.93em;
+    font-size: 0.73em;
     font-style: normal;
     font-weight: 600;
   }
+}
+
+@media only screen and (min-width: 100px) and (min-width: 100px) and (min-width: 481px) {
+  .parent-hetpage .hetpage-li #thin {
+    color: black;
+  }
+}
+
+@media only screen and (min-width: 100px) and (min-width: 100px) {
   .hetpage-li {
     letter-spacing: normal;
   }
@@ -298,18 +367,17 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     height: 73%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    height: 50vh;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 60vh;
   }
   .logo-home {
     display: -webkit-box;
@@ -324,7 +392,7 @@ h2, h3 {
             justify-content: space-between;
     width: auto;
     height: 182px;
-    background: url("../dist/imgs/newlogo.png") no-repeat;
+    background: url("../dist/imgs/nlsmall4.png") no-repeat;
     background-position: center;
     background-size: cover;
     overflow: hidden;
@@ -451,7 +519,9 @@ h2, h3 {
     border-radius: 0 0 21px;
     border-bottom: 0.5px solid gray;
     padding-top: 0px;
-    background-color: black;
+    background-image: url("../dist/imgs/1920.png");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   li {
     display: -webkit-box;
