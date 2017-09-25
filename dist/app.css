@@ -54,11 +54,14 @@ h2, h3 {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 100vw;
-    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: auto;
+    height: 100vh;
     margin: 0 auto;
     padding: 0;
     border-radius: 21px;
@@ -80,16 +83,16 @@ h2, h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-line-pack: justify;
-        align-content: space-between;
-    height: 30px;
-    width: 61px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: auto;
     margin: 0 auto;
     padding: 0;
     display: none;
     position: relative;
   }
-  #folders-container #home-logo {
+  #home-logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -99,40 +102,17 @@ h2, h3 {
             flex-direction: column;
     -ms-flex-line-pack: justify;
         align-content: space-between;
-    height: 200px;
+    height: 36vh;
     width: 100vw;
     margin: 0 auto;
     padding: 0;
-    cursor: pointer;
-    background: url("../dist/imgs/newlogo.png") center no-repeat;
-    background-size: contain;
-    z-index: 999999;
   }
-  #arrows {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: 40%;
-    height: auto;
-    margin: 0 auto;
-  }
-  #arrows .back {
-    background-image: url("../dist/imgs/back.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 65px;
-    height: 45px;
-    z-index: 9999;
-  }
-  #arrows .forward {
-    background-image: url("../dist/imgs/forward.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 65px;
-    height: 45px;
-    z-index: 9999;
+  #home-logo .imgslider {
+    height: 33vh;
+    width: 80vw;
+    position: absolute;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   .hamburger-menu {
     display: -webkit-box;
@@ -145,19 +125,22 @@ h2, h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 60px;
-    height: 36px;
-    margin: 0 auto;
+    height: 38px;
+    font-size: 1em;
+    line-height: 43px;
+    margin: 1.5px auto;
     cursor: pointer;
     text-align: center;
     font-family: "Audiowide";
     text-decoration: none;
+    background-color: rgba(63, 62, 78, 0.21);
     color: #ae8950;
-    font-size: 0.79em;
-    line-height: 28px;
     position: relative;
-    border: 0.85px solid;
-    border-radius: 5px;
+    border-bottom: 0.85px solid;
+    border-radius: 1px;
+  }
+  .hamburger-menu:active {
+    background-color: rgba(224, 228, 228, 0.76);
   }
 }
 
@@ -178,10 +161,19 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     overflow: hidden;
     width: 100vw;
     height: 100vh;
     margin: 0 auto;
+    background: url("../dist/imgs/nlsmall5.png") top no-repeat;
+    background-size: cover;
   }
 }
 
@@ -211,6 +203,58 @@ h2, h3 {
 }
 
 @media only screen and (min-width: 100px) and (min-width: 100px) {
+  .hetpage .haus {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 11vw;
+    height: 31px;
+    margin-left: 12px;
+    margin-bottom: 24px;
+    border-radius: 0.3px;
+    border-bottom: 0.9px solid #ae8950;
+    text-align: center;
+    z-index: 9999;
+  }
+  .hetpage .haus .main-menu {
+    width: 100vw;
+    height: 100vh;
+    text-decoration: none;
+    font-size: 1.66em;
+    font-family: "Cutive Mono", monospace;
+    letter-spacing: 0.03em;
+    color: #ae8950;
+    line-height: 34px;
+    cursor: pointer;
+  }
+  .mobile-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100vw;
+    height: 46vh;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: rgba(5, 4, 30, 0.9);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 999999;
+    border: 1px solid gray;
+    position: absolute;
+    display: none;
+  }
+  .mobile-container .nav-archives {
+    width: 33vw;
+  }
+  .mobile-container #menu-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 43vh;
+    width: 90px;
+    position: absolute;
+  }
   .parent-hetpage {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -219,18 +263,17 @@ h2, h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: auto;
-    margin: 0 auto;
-    height: 66vh;
+    height: 84vh;
+    position: absolute;
   }
 }
 
 @media only screen and (min-width: 100px) and (min-width: 100px) and (min-width: 481px) {
   .parent-hetpage {
-    height: 84vh;
+    height: 63vh;
     width: 100vw;
     margin: 0 auto;
     padding: 0;
@@ -246,7 +289,7 @@ h2, h3 {
         -ms-flex-pack: center;
             justify-content: center;
     width: auto;
-    height: 0%;
+    height: 20vh;
   }
   .parent-hetpage .bio .intro {
     font-family: "Amatic SC", cursive;
@@ -268,30 +311,6 @@ h2, h3 {
     font-weight: bolder;
     text-transform: uppercase;
     letter-spacing: 0.04em;
-  }
-}
-
-@media only screen and (min-width: 100px) and (min-width: 100px) {
-  .parent-hetpage #nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 0 auto;
-    height: auto;
-    width: 100vw;
-  }
-}
-
-@media only screen and (min-width: 100px) and (min-width: 100px) and (min-width: 481px) {
-  .parent-hetpage #nav {
-    height: auto;
   }
 }
 
@@ -381,7 +400,7 @@ h2, h3 {
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    height: 8vh;
+    height: 10vh;
   }
   .mobile-menu {
     display: -webkit-box;
@@ -396,12 +415,32 @@ h2, h3 {
             justify-content: center;
     width: 61px;
     height: 22px;
-    margin-top: 22px;
     border: 0.5px solid #ae8950;
-    border-radius: 3px;
+    border-radius: 1px;
     position: absolute;
+    z-index: 99999;
   }
-  .mobile-menu .menu {
+  .exit-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 61px;
+    height: 22px;
+    border: 0.5px solid #ae8950;
+    border-radius: 1px;
+    position: absolute;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    z-index: 99999;
+  }
+  .menu {
     width: auto;
     height: auto;
     text-decoration: none;
@@ -410,6 +449,19 @@ h2, h3 {
     letter-spacing: 0.06em;
     color: #ae8950;
     line-height: 21px;
+  }
+  #nav {
+    height: 45vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .logo-home {
     display: -webkit-box;
@@ -423,12 +475,10 @@ h2, h3 {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: auto;
-    height: 182px;
-    background: url("../dist/imgs/nlsmall5.png") no-repeat;
-    background-size: cover;
+    height: 100vh;
+    background: url("../dist/imgs/newlogo.png") no-repeat;
+    background-size: contain;
     overflow: hidden;
-    cursor: pointer;
-    margin: 0 auto;
     cursor: pointer;
     text-align: center;
     font-family: "Audiowide";
@@ -538,17 +588,27 @@ h2, h3 {
   }
   #nav.sticky {
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
+    height: 92px;
     line-height: 110px;
     z-index: 9999;
+    background-color: rgba(5, 4, 30, 0.9);
   }
   #folders-container.reduced {
-    height: auto;
-    width: 100%;
-    padding-top: 0px;
-    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   li {
     display: -webkit-box;

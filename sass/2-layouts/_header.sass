@@ -21,9 +21,10 @@
 	#folders-container
 		display: flex
 		flex-wrap: wrap
-		justify-content: space-between
-		width: 100vw
-		height: auto
+		flex-direction: column
+		justify-content: space-around
+		width: auto
+		height: 100vh
 		margin: 0 auto
 		padding: 0
 		border-radius: 21px
@@ -34,66 +35,47 @@
 		.nav-folders
 			display: flex
 			flex-direction: column
-			align-content: space-between
-			height: 30px
-			width: 61px
+			justify-content: space-between
+			height: auto
+			// width: 33vw
 			margin: 0 auto
 			padding: 0
 			display: none
 			position: relative
 
-		#home-logo
-			display: flex
-			flex-direction: column
-			align-content: space-between
-			height: 200px
-			width: 100vw
-			margin: 0 auto
-			padding: 0
-			cursor: pointer
-			background: url('../dist/imgs/newlogo.png') center no-repeat
-			background-size: contain
-			z-index: 999999
-
-	#arrows
+	#home-logo
 		display: flex
-		justify-content: space-around
-		width: 40%
-		height: auto
+		flex-direction: column
+		align-content: space-between
+		height: 36vh
+		width: 100vw
 		margin: 0 auto
-		.back
-			background-image: url('../dist/imgs/back.png')
-			background-repeat: no-repeat
-			background-size: cover
-			width: 65px
-			height: 45px
-			z-index: 9999
-		.forward
-			background-image: url('../dist/imgs/forward.png')
-			background-repeat: no-repeat
-			background-size: cover
-			width: 65px
-			height: 45px
-			z-index: 9999
+		padding: 0
+		.imgslider
+			height: 33vh
+			width: 80vw
+			position: absolute
+			align-self: center
 
 	.hamburger-menu
 		display: flex
 		flex-direction: column
 		justify-content: space-between
-		width: 60px
-		height: 36px
-		margin: 0 auto
+		height: 38px
+		font-size: 1em
+		line-height: 43px
+		margin: 1.5px auto
 		cursor: pointer
 		text-align: center
 		font-family: $font-stack-audio
 		text-decoration: none
-		// background-color: #988561
+		background-color: rgba(63, 62, 78, 0.21)
 		color: #ae8950
-		font-size: 0.79em
-		line-height: 28px
 		position: relative
-		border: 0.85px solid
-		border-radius: 5px
+		border-bottom: 0.85px solid
+		border-radius: 1px
+		&:active
+			background-color: rgba(224, 228, 228, 0.76)
 		@include tablet
 			background: url('../dist/imgs/archive-icons.png')
 			background-position: bottom
@@ -106,11 +88,14 @@
 	@include phone
 		.hetpage
 			display: flex
-			// background-color: black
+			flex-direction: column
+			justify-content: flex-end
 			overflow: hidden
 			width: 100vw
 			height: 100vh
 			margin: 0 auto
+			background: url('../dist/imgs/nlsmall5.png') top no-repeat
+			background-size: cover
 			@include tablet
 				justify-content: center
 				flex-grow: 1
@@ -122,16 +107,60 @@
 				@include desktop
 					display: flex
 					background-color: green
+			.haus
+				align-self: flex-start
+				width: 11vw
+				height: 31px
+				margin-left: 12px
+				margin-bottom: 24px
+				border-radius: 0.3px
+				border-bottom: 0.9px solid #ae8950
+				text-align: center
+				z-index: 9999
+				.main-menu
+					width: 100vw
+					height: 100vh
+					text-decoration: none
+					font-size: 1.66em
+					font-family: $font-stack-paragraph
+					letter-spacing: 0.03em
+					color: #ae8950
+					line-height: 34px
+					cursor: pointer
+
+		.mobile-container
+			display: flex
+			width: 100vw
+			height: 46vh
+			justify-content: space-between
+			// background-image: url('../dist/imgs/hero.png')
+			background-color: rgba(5,4,30, 0.9)
+			background-repeat: no-repeat
+			background-position: center
+			background-size: cover
+			z-index: 999999
+			border: 1px solid gray
+			position: absolute
+			display: none
+			.nav-archives
+				width: 33vw
+			#menu-buttons
+				display: flex
+				height: 43vh
+				width: 90px
+				position: absolute
+
 
 		.parent-hetpage
 			display: flex
 			flex-direction: column
-			justify-content: space-between
+			justify-content: space-around
 			width: auto
-			margin: 0 auto
-			height: 66vh
+			height: 84vh
+			position: absolute
+
 			@include tablet
-				height: 84vh
+				height: 63vh
 				width: 100vw
 				margin: 0 auto
 				padding: 0
@@ -139,7 +168,7 @@
 				display: flex
 				justify-content: center
 				width: auto
-				height: 0%
+				height: 20vh
 				.intro
 					font-family: $font-stack-thin
 					font-size: $font-size-Mparagraphs +0.3
@@ -156,18 +185,6 @@
 						font-weight: bolder
 						text-transform: uppercase
 						letter-spacing: 0.04em
-
-
-			#nav
-				display: flex
-				justify-content: center
-				flex-direction: column
-				margin: 0 auto
-				height: auto
-				width: 100vw
-				// background: url('../dist/imgs/1920.png') center no-repeat
-				@include tablet
-					height: auto
 
 			.hetpage-li
 				display: flex
@@ -233,7 +250,7 @@
 		 flex-direction: column
 		 @include tablet
 			justify-content: space-around
-			height: 8vh
+			height: 10vh
 
 		.mobile-menu
 			display: flex
@@ -241,39 +258,50 @@
 			justify-content: center
 			width: 61px
 			height: 22px
-			margin-top: 22px
-			// background-color: #988561
 			border: 0.5px solid #ae8950
-			border-radius: 3px
+			border-radius: 1px
 			position: absolute
-			.menu
-				width: auto
-				height: auto
-				text-decoration: none
-				text-align: center
-				font-family: $font-stack-paragraph
-				letter-spacing: 0.06em
-				color: #ae8950
-				line-height: 21px
-				&:hover
-					// background-color: gray
-					// color: red
-				&:visited
-					// background-color: red
-
-
+			z-index: 99999
+		.exit-menu
+			display: flex
+			flex-direction: column
+			justify-content: center
+			width: 61px
+			height: 22px
+			border: 0.5px solid #ae8950
+			border-radius: 1px
+			position: absolute
+			align-self: flex-end
+			z-index: 99999
+		.menu
+			width: auto
+			height: auto
+			text-decoration: none
+			text-align: center
+			font-family: $font-stack-paragraph
+			letter-spacing: 0.06em
+			color: #ae8950
+			line-height: 21px
+			&:hover
+				// background-color: gray
+				// color: red
+			&:visited
+				// background-color: red
+		#nav
+		  height: 45vh
+		  display: flex
+		  justify-content: center
+		  flex-direction: column
 
 	 .logo-home
 			display: flex
 			flex-direction: column
 			justify-content: space-between
 			width: auto
-			height: 182px
-			background: url('../dist/imgs/nlsmall5.png') no-repeat
-			background-size: cover
+			height: 100vh
+			background: url('../dist/imgs/newlogo.png') no-repeat
+			background-size: contain
 			overflow: hidden
-			cursor: pointer
-			margin: 0 auto
 			cursor: pointer
 			text-align: center
 			font-family: $font-stack-audio
@@ -364,18 +392,25 @@
 
  #nav.sticky
 	 position: fixed
+	 display: flex
 	 top: 0
 	 left: 0
-	 width: 100%
+	 width: 100vw
+	 height: 92px
 	 line-height: 110px
 	 z-index: 9999
+	 background-color: rgba(5, 4, 30, 0.9)
 
 
  #folders-container.reduced
-	 height: auto
-	 width: 100%
-	 padding-top: 0px
-	 background-color: white
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		// border: 1px solid gray
+    height: 24px
+    width: 62vw
+    padding: 31px 0 24px 0
+    background-color: rgba(5, 4, 30, 0.9)
 	li
 		display: flex
 
