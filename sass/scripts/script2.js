@@ -34,11 +34,13 @@ function checkSize(){
           $('#nav').addClass('sticky');
           $('.parent-hetpage').addClass('shifted');
           $('#folders-container').addClass('reduced');
+          // $('.nav-folders').addClass('topnav');
         } else {
             /*restoring back to normal */
           $('#nav').removeClass('sticky');
           $('.parent-hetpage').removeClass('shifted');
           $('#folders-container').removeClass('reduced');
+          // $('.nav-folders').removeClass('topnav');
         }
       });
 

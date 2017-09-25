@@ -22,9 +22,9 @@
 		display: flex
 		flex-wrap: wrap
 		flex-direction: column
-		justify-content: space-around
-		width: auto
-		height: 100vh
+		justify-content: space-between
+		width: 90vw
+		height: 24vh
 		margin: 0 auto
 		padding: 0
 		border-radius: 21px
@@ -108,15 +108,23 @@
 					display: flex
 					background-color: green
 			.haus
-				align-self: flex-start
-				width: 11vw
-				height: 31px
-				margin-left: 12px
+				display: flex
+				justify-content: flex-start
+				width: 100vw
+				height: 34px
 				margin-bottom: 24px
 				border-radius: 0.3px
 				border-bottom: 0.9px solid #ae8950
 				text-align: center
+				background-color: rgba(5, 4, 30, 0.9)
 				z-index: 9999
+				position: fixed
+				.haus-menu
+					font-family: $font-stack-audio
+					color: white
+					align-self: center
+					margin: 0 8px 0 8px
+
 				.main-menu
 					width: 100vw
 					height: 100vh
@@ -127,6 +135,7 @@
 					color: #ae8950
 					line-height: 34px
 					cursor: pointer
+					text-align: left
 
 		.mobile-container
 			display: flex
@@ -404,13 +413,13 @@
 
  #folders-container.reduced
 		display: flex
-		flex-direction: row
 		flex-wrap: wrap
-		// border: 1px solid gray
+		justify-content: center
     height: 24px
-    width: 62vw
+    width: 100vw
     padding: 31px 0 24px 0
     background-color: rgba(5, 4, 30, 0.9)
+		margin: 0
 	li
 		display: flex
 
@@ -422,3 +431,10 @@
 		 a
 			 width: 63px
 			 font-size: 0.96em
+	// .topnav
+	// 	display: flex
+	// 	flex-direction: row
+	// 	flex-wrap: wrap
+	// 	background-color: green
+	// 	width: 90vw
+	// 	position: relative
