@@ -22,9 +22,9 @@
 		display: flex
 		flex-wrap: wrap
 		flex-direction: column
-		justify-content: space-between
-		width: 90vw
-		height: 24vh
+		justify-content: space-around
+		width: 100vw
+		height: 17vh
 		margin: 0 auto
 		padding: 0
 		border-radius: 21px
@@ -61,10 +61,10 @@
 		display: flex
 		flex-direction: column
 		justify-content: space-between
-		height: 38px
+		height: 42px
 		font-size: 1em
-		line-height: 43px
-		margin: 1.5px auto
+		line-height: 45px
+		// margin: 1.5px auto
 		cursor: pointer
 		text-align: center
 		font-family: $font-stack-audio
@@ -72,7 +72,7 @@
 		background-color: rgba(63, 62, 78, 0.21)
 		color: #ae8950
 		position: relative
-		border-bottom: 0.85px solid
+		border: 0.85px solid
 		border-radius: 1px
 		&:active
 			background-color: rgba(224, 228, 228, 0.76)
@@ -140,7 +140,7 @@
 		.mobile-container
 			display: flex
 			width: 100vw
-			height: 46vh
+			height: 33vh
 			justify-content: space-between
 			// background-image: url('../dist/imgs/hero.png')
 			background-color: rgba(5,4,30, 0.9)
@@ -155,7 +155,9 @@
 				width: 33vw
 			#menu-buttons
 				display: flex
-				height: 43vh
+				flex-direction: column
+				justify-content: flex-end
+				height: 32vh
 				width: 90px
 				position: absolute
 
@@ -272,16 +274,15 @@
 			position: absolute
 			z-index: 99999
 		.exit-menu
-			display: flex
-			flex-direction: column
-			justify-content: center
+			margin: 0 0 22px 8px
 			width: 61px
 			height: 22px
 			border: 0.5px solid #ae8950
 			border-radius: 1px
 			position: absolute
-			align-self: flex-end
 			z-index: 99999
+			text-align: center
+			// align-self: flex-end
 		.menu
 			width: auto
 			height: auto
@@ -297,7 +298,7 @@
 			&:visited
 				// background-color: red
 		#nav
-		  height: 45vh
+		  height: 28vh
 		  display: flex
 		  justify-content: center
 		  flex-direction: column
@@ -411,19 +412,21 @@
 	 background-color: rgba(5, 4, 30, 0.9)
 
 
- #folders-container.reduced
+ .reduced
 		display: flex
 		flex-wrap: wrap
 		justify-content: center
-    height: 24px
-    width: 100vw
-    padding: 31px 0 24px 0
-    background-color: rgba(5, 4, 30, 0.9)
+    // height: 22px
+    // width: 100vw
+    // padding: 31px 0 24px 0
+    // background-color: rgba(5, 4, 30, 0.9)
 		margin: 0
 	li
 		display: flex
+		// background-color: green
 
-	.parent-hetpage.shifted
+
+	.shifted
 	 margin-top: 0px
 	 #navtabs
 		 li
@@ -431,10 +434,3 @@
 		 a
 			 width: 63px
 			 font-size: 0.96em
-	// .topnav
-	// 	display: flex
-	// 	flex-direction: row
-	// 	flex-wrap: wrap
-	// 	background-color: green
-	// 	width: 90vw
-	// 	position: relative

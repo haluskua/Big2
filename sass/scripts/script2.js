@@ -1,6 +1,4 @@
 
-
-
 $(document).ready(function(){
   //rund test initial page livereload
   checkSize();
@@ -11,20 +9,7 @@ $(document).ready(function(){
 //function to the css rule
 function checkSize(){
   if ($(".hetpage").css("width") < "480px"){
-    // once width of header is greater than 480 then jqery runs
-        //Get the header height
-        var headerHeight = $('#nav').outerHeight();
-        $('.hamburger-menu').click(function(e) {
-          //getting the href attribute
-        var linkHref = $(this).attr('href');
-        $('html, body').animate({
-          scrollTop: $(linkHref).offset().top - headerHeight
-        }, 1755);
-        e.preventDefault();
-      });
-
-      /* Stick navigation to the top of the page */
-      var stickyNavTop = $('#nav').offset().top;
+    // once width of header is less than 480 then jqery runs
 
       $(window).scroll(function() {
         var scrollTop = $(window).scrollTop();
@@ -32,17 +17,30 @@ function checkSize(){
       /*changing between classes */
         if (scrollTop > stickyNavTop) {
           $('#nav').addClass('sticky');
-          $('.parent-hetpage').addClass('shifted');
+          // $('.parent-hetpage').addClass('shifted');
           $('#folders-container').addClass('reduced');
-          // $('.nav-folders').addClass('topnav');
         } else {
             /*restoring back to normal */
           $('#nav').removeClass('sticky');
-          $('.parent-hetpage').removeClass('shifted');
+          // $('.parent-hetpage').removeClass('shifted');
           $('#folders-container').removeClass('reduced');
-          // $('.nav-folders').removeClass('topnav');
         }
       });
+
+      //Get the header height
+      var headerHeight = $('#folders-container').outerHeight();
+      /* Stick navigation to the top of the page */
+
+      $('.hamburger-menu').click(function(e) {
+        //getting the href attribute
+      var linkHref = $(this).attr('href');
+      $('html, body').animate({
+        scrollTop: $(linkHref).offset().top - headerHeight
+      }, 1000);
+      e.preventDefault();
+    });
+
+    var stickyNavTop = $('.nav-folders').offset().top;
 
 //show menu bar onclick on main logo
     $(".haus").click(function(){
