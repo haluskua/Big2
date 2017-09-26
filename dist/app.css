@@ -125,21 +125,25 @@ h2, h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 42px;
-    font-size: 1em;
-    line-height: 45px;
+    height: 41px;
+    font-size: 0.8em;
+    line-height: 42px;
+    width: 32vw;
     cursor: pointer;
     text-align: center;
     font-family: "Audiowide";
     text-decoration: none;
-    background-color: rgba(63, 62, 78, 0.21);
+    background-color: rgba(164, 156, 72, 0.21);
     color: #ae8950;
     position: relative;
-    border: 0.85px solid;
+    border: 0.85px solid #000000;
     border-radius: 1px;
   }
   .hamburger-menu:active {
-    background-color: rgba(224, 228, 228, 0.76);
+    background-color: #353d4f;
+  }
+  .hamburger-menu:focus {
+    color: #abb3c8;
   }
 }
 
@@ -227,7 +231,7 @@ h2, h3 {
     margin: 0 8px 0 8px;
   }
   .hetpage .haus .main-menu {
-    width: 100vw;
+    width: 24vw;
     height: 100vh;
     text-decoration: none;
     font-size: 1.66em;
@@ -243,7 +247,7 @@ h2, h3 {
     display: -ms-flexbox;
     display: flex;
     width: 100vw;
-    height: 33vh;
+    height: 23vh;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -253,7 +257,7 @@ h2, h3 {
     background-size: cover;
     z-index: 999999;
     border: 1px solid gray;
-    position: absolute;
+    position: fixed;
     display: none;
   }
   .mobile-container .nav-archives {
@@ -270,7 +274,7 @@ h2, h3 {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    height: 32vh;
+    height: 22vh;
     width: 90px;
     position: absolute;
   }
@@ -460,7 +464,7 @@ h2, h3 {
     line-height: 21px;
   }
   #nav {
-    height: 28vh;
+    height: 17vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -595,7 +599,7 @@ h2, h3 {
     font-family: "Yantramanav", sans-serif;
     margin-left: 22px;
   }
-  #nav.sticky {
+  .mobile-container.sticky {
     position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -603,10 +607,9 @@ h2, h3 {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 92px;
+    height: 103px;
     line-height: 110px;
     z-index: 9999;
-    background-color: rgba(5, 4, 30, 0.9);
   }
   .reduced {
     display: -webkit-box;

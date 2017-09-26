@@ -61,21 +61,24 @@
 		display: flex
 		flex-direction: column
 		justify-content: space-between
-		height: 42px
-		font-size: 1em
-		line-height: 45px
+		height: 41px
+		font-size: 0.8em
+		line-height: 42px
 		// margin: 1.5px auto
+		width: 32vw
 		cursor: pointer
 		text-align: center
 		font-family: $font-stack-audio
 		text-decoration: none
-		background-color: rgba(63, 62, 78, 0.21)
+		background-color: rgba(164, 156, 72, 0.21)
 		color: #ae8950
 		position: relative
-		border: 0.85px solid
+		border: 0.85px solid #000000
 		border-radius: 1px
 		&:active
-			background-color: rgba(224, 228, 228, 0.76)
+			background-color: #353d4f
+		&:focus
+			color: #abb3c8
 		@include tablet
 			background: url('../dist/imgs/archive-icons.png')
 			background-position: bottom
@@ -126,7 +129,7 @@
 					margin: 0 8px 0 8px
 
 				.main-menu
-					width: 100vw
+					width: 24vw
 					height: 100vh
 					text-decoration: none
 					font-size: 1.66em
@@ -140,7 +143,7 @@
 		.mobile-container
 			display: flex
 			width: 100vw
-			height: 33vh
+			height: 23vh
 			justify-content: space-between
 			// background-image: url('../dist/imgs/hero.png')
 			background-color: rgba(5,4,30, 0.9)
@@ -149,7 +152,7 @@
 			background-size: cover
 			z-index: 999999
 			border: 1px solid gray
-			position: absolute
+			position: fixed
 			display: none
 			.nav-archives
 				width: 33vw
@@ -157,7 +160,7 @@
 				display: flex
 				flex-direction: column
 				justify-content: flex-end
-				height: 32vh
+				height: 22vh
 				width: 90px
 				position: absolute
 
@@ -298,7 +301,7 @@
 			&:visited
 				// background-color: red
 		#nav
-		  height: 28vh
+		  height: 17vh
 		  display: flex
 		  justify-content: center
 		  flex-direction: column
@@ -341,11 +344,9 @@
 	    // background-color: #c16408
 	    width: 120px
 	    flex-grow: 1
-
 	    a
 	      margin: 0 auto
 	      height: 75%
-
 
 	      #home-nav
 	        color: white
@@ -354,8 +355,6 @@
 	        font-family: $font-stack-audio
 	        margin: 0 8px 0 28px
 	        text-align: center
-
-
 	  li
 	    display: flex
 	    background-color: hsla(16, 96%, 9%, 0.92)
@@ -400,16 +399,16 @@
 	  font-family: $font-stack-old-style
 	  margin-left: 22px
 
- #nav.sticky
+ .mobile-container.sticky
 	 position: fixed
 	 display: flex
 	 top: 0
 	 left: 0
 	 width: 100vw
-	 height: 92px
+	 height: 103px
 	 line-height: 110px
 	 z-index: 9999
-	 background-color: rgba(5, 4, 30, 0.9)
+	//  background-color: rgba(5, 4, 30, 0.9)
 
 
  .reduced
