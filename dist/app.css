@@ -214,33 +214,54 @@ h2, h3 {
         -ms-flex-pack: start;
             justify-content: flex-start;
     width: 100vw;
-    height: 34px;
-    margin-bottom: 24px;
+    height: 45px;
     border-radius: 0.3px;
     border-bottom: 0.9px solid #ae8950;
-    text-align: center;
     background-color: rgba(5, 4, 30, 0.9);
     z-index: 9999;
     position: fixed;
   }
-  .hetpage .haus .haus-menu {
+  .hetpage .haus ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 31vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .hetpage .haus ul li {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 7vh;
+  }
+  .hetpage .haus ul li .haus-menu {
     font-family: "Audiowide";
     color: white;
+    font-size: 1.1em;
     -ms-flex-item-align: center;
         align-self: center;
-    margin: 0 8px 0 8px;
   }
-  .hetpage .haus .main-menu {
-    width: 24vw;
-    height: 100vh;
+  .hetpage .haus ul li .main-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: auto;
     text-decoration: none;
-    font-size: 1.66em;
+    font-size: 2.6em;
     font-family: "Cutive Mono", monospace;
     letter-spacing: 0.03em;
     color: #ae8950;
-    line-height: 34px;
+    -ms-flex-item-align: center;
+        align-self: center;
     cursor: pointer;
-    text-align: left;
+    width: 11vw;
   }
   .mobile-container {
     display: -webkit-box;
@@ -452,16 +473,6 @@ h2, h3 {
     position: absolute;
     z-index: 99999;
     text-align: center;
-  }
-  .menu {
-    width: auto;
-    height: auto;
-    text-decoration: none;
-    text-align: center;
-    font-family: "Cutive Mono", monospace;
-    letter-spacing: 0.06em;
-    color: #ae8950;
-    line-height: 21px;
   }
   #nav {
     height: 17vh;

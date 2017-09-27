@@ -114,31 +114,40 @@
 				display: flex
 				justify-content: flex-start
 				width: 100vw
-				height: 34px
-				margin-bottom: 24px
+				height: 45px
 				border-radius: 0.3px
 				border-bottom: 0.9px solid #ae8950
-				text-align: center
 				background-color: rgba(5, 4, 30, 0.9)
 				z-index: 9999
 				position: fixed
-				.haus-menu
-					font-family: $font-stack-audio
-					color: white
-					align-self: center
-					margin: 0 8px 0 8px
+				ul
+					display: flex
+					justify-content: space-between
+					width: 31vw
+					height: auto
+					margin: 0
+					padding: 0
+					li
+						justify-content: center
+						height: 7vh
+						.haus-menu
+							font-family: $font-stack-audio
+							color: white
+							font-size: 1.1em
+							align-self: center
+						.main-menu
+							display: flex
+							justify-content: space-around
+							height: auto
+							text-decoration: none
+							font-size: 2.6em
+							font-family: $font-stack-paragraph
+							letter-spacing: 0.03em
+							color: #ae8950
+							align-self: center
+							cursor: pointer
+							width: 11vw
 
-				.main-menu
-					width: 24vw
-					height: 100vh
-					text-decoration: none
-					font-size: 1.66em
-					font-family: $font-stack-paragraph
-					letter-spacing: 0.03em
-					color: #ae8950
-					line-height: 34px
-					cursor: pointer
-					text-align: left
 
 		.mobile-container
 			display: flex
@@ -286,20 +295,6 @@
 			z-index: 99999
 			text-align: center
 			// align-self: flex-end
-		.menu
-			width: auto
-			height: auto
-			text-decoration: none
-			text-align: center
-			font-family: $font-stack-paragraph
-			letter-spacing: 0.06em
-			color: #ae8950
-			line-height: 21px
-			&:hover
-				// background-color: gray
-				// color: red
-			&:visited
-				// background-color: red
 		#nav
 		  height: 17vh
 		  display: flex

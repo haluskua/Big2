@@ -56,22 +56,22 @@ function checkSize(){
 
 
   }else{
-    var headerHeight = 10;
+
+    var headerHeight = 8;
+
     $('.hamburger-menu').click(function(e) {
 
         var linkHref = $(this).attr('href');
         $('html, body').animate({
           scrollTop: $(linkHref).offset().top - headerHeight
-        }, 1000);
+        }, 800);
         e.preventDefault();
       });
 
         //show menu bar onclick on main logo
-        $(".haus").click(function(){
+        $(".haus-menu").click(function(){
           $(".mobile-container").show(500);
           $(".nav-folders").show(900);
-        });
-        $(".menu").click(function(){
           $("#folders-container").show(800);
           $(".exit-menu").show(800);
         });
