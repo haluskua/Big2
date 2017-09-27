@@ -214,12 +214,12 @@ h2, h3 {
         -ms-flex-pack: start;
             justify-content: flex-start;
     width: 100vw;
-    height: 45px;
     border-radius: 0.3px;
     border-bottom: 0.9px solid #ae8950;
     background-color: rgba(5, 4, 30, 0.9);
     z-index: 9999;
     position: fixed;
+    padding-bottom: 10px;
   }
   .hetpage .haus ul {
     display: -webkit-box;
@@ -228,7 +228,7 @@ h2, h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 31vw;
+    width: 94vw;
     height: auto;
     margin: 0;
     padding: 0;
@@ -245,6 +245,7 @@ h2, h3 {
     font-size: 1.1em;
     -ms-flex-item-align: center;
         align-self: center;
+    margin-left: 11px;
   }
   .hetpage .haus ul li .main-menu {
     display: -webkit-box;
@@ -278,6 +279,7 @@ h2, h3 {
     background-size: cover;
     z-index: 999999;
     border: 1px solid gray;
+    padding-bottom: 12px;
     position: fixed;
     display: none;
   }
@@ -295,9 +297,9 @@ h2, h3 {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    height: 22vh;
+    height: 21vh;
     width: 90px;
-    position: absolute;
+    position: fixed;
   }
   .parent-hetpage {
     display: -webkit-box;
@@ -466,13 +468,15 @@ h2, h3 {
   }
   .exit-menu {
     margin: 0 0 22px 8px;
-    width: 61px;
-    height: 22px;
+    width: 40px;
+    color: #a5916f;
+    height: 21px;
     border: 0.5px solid #ae8950;
     border-radius: 1px;
     position: absolute;
     z-index: 99999;
     text-align: center;
+    line-height: 20px;
   }
   #nav {
     height: 17vh;
