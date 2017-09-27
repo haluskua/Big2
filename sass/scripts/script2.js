@@ -4,7 +4,6 @@ $(document).ready(function(){
   checkSize();
   //run test on resize of the window
   $(window).resize(checkSize);
-});
 
 //function to the css rule
 function checkSize(){
@@ -82,5 +81,9 @@ function checkSize(){
         $('.main-menu').on("click", function(){
           $("#menu-buttons").show(1000);
         });
-  }
-}
+    }
+
+    //animating backgroundimage on landing page
+
+    }
+  });

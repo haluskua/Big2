@@ -20,12 +20,11 @@
 
 	#folders-container
 		display: flex
-		flex-wrap: wrap
-		flex-direction: column
+		flex-flow: nowrap
 		justify-content: space-around
 		width: 100vw
-		height: 17vh
-		margin: 0 auto
+		height: 8vh
+		margin: auto
 		padding: 0
 		border-radius: 21px
 		// background-color: #988561
@@ -34,12 +33,7 @@
 
 		.nav-folders
 			display: flex
-			flex-direction: column
-			justify-content: space-between
-			height: auto
-			// width: 33vw
-			margin: 0 auto
-			padding: 0
+			height: 50vh
 			display: none
 			position: relative
 
@@ -61,11 +55,10 @@
 		display: flex
 		flex-direction: column
 		justify-content: space-between
-		height: 41px
+		height: 25px
 		font-size: 0.8em
-		line-height: 42px
-		// margin: 1.5px auto
-		width: 32vw
+		line-height: 25px
+		width: 25vw
 		cursor: pointer
 		text-align: center
 		font-family: $font-stack-audio
@@ -133,7 +126,7 @@
 						.haus-menu
 							font-family: $font-stack-audio
 							color: white
-							font-size: 1.1em
+							font-size: 1.08em
 							align-self: center
 							margin-left: 11px
 						.main-menu
@@ -153,16 +146,16 @@
 		.mobile-container
 			display: flex
 			width: 100vw
-			height: 23vh
+			// height: 23vh
 			justify-content: space-between
 			// background-image: url('../dist/imgs/hero.png')
 			background-color: rgba(5,4,30, 0.9)
-			background-repeat: no-repeat
-			background-position: center
-			background-size: cover
+			// background-repeat: no-repeat
+			// background-position: center
+			// background-size: cover
 			z-index: 999999
 			border: 1px solid gray
-			padding-bottom: 12px
+			// padding-bottom: 12px
 			position: fixed
 			display: none
 
@@ -300,10 +293,7 @@
 			text-align: center
 			line-height: 20px
 		#nav
-		  height: 17vh
-		  display: flex
-		  justify-content: center
-		  flex-direction: column
+
 
 	 .logo-home
 			display: flex
