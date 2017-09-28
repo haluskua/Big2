@@ -52,13 +52,10 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-flow: nowrap;
-        flex-flow: nowrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 100vw;
-    height: 8vh;
-    margin: auto;
+    margin: 0 auto;
     padding: 0;
     border-radius: 21px;
   }
@@ -75,7 +72,9 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 50vh;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
     display: none;
     position: relative;
   }
@@ -112,25 +111,22 @@ h2, h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 25px;
-    font-size: 0.8em;
-    line-height: 25px;
-    width: 25vw;
+    line-height: 41px;
+    width: 32vw;
     cursor: pointer;
     text-align: center;
     font-family: "Audiowide";
     text-decoration: none;
-    background-color: rgba(164, 156, 72, 0.21);
-    color: #ae8950;
-    position: relative;
-    border: 0.85px solid #000000;
-    border-radius: 1px;
+    background-color: #353d4f;
+    color: #bababa;
+    border: 0.85px solid #9cab92;
   }
   .hamburger-menu:active {
     background-color: #353d4f;
   }
   .hamburger-menu:focus {
-    color: #abb3c8;
+    color: #b19768;
+    background-color: #40311c;
   }
 }
 
@@ -200,13 +196,11 @@ h2, h3 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    width: 100vw;
     border-radius: 0.3px;
     border-bottom: 0.9px solid #ae8950;
-    background-color: rgba(5, 4, 30, 0.9);
+    background-color: #353d4f;
     z-index: 9999;
     position: fixed;
-    padding-bottom: 10px;
   }
   .hetpage .haus ul {
     display: -webkit-box;
@@ -215,7 +209,7 @@ h2, h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 94vw;
+    width: 100vw;
     height: auto;
     margin: 0;
     padding: 0;
@@ -224,15 +218,14 @@ h2, h3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 7vh;
   }
   .hetpage .haus ul li .haus-menu {
     font-family: "Audiowide";
     color: white;
-    font-size: 1.08em;
+    font-size: 1.1em;
     -ms-flex-item-align: center;
         align-self: center;
-    margin-left: 11px;
+    padding-left: 10px;
   }
   .hetpage .haus ul li .main-menu {
     display: -webkit-box;
@@ -251,6 +244,9 @@ h2, h3 {
     cursor: pointer;
     width: 11vw;
   }
+}
+
+@media only screen and (min-width: 100px) and (min-width: 100px) {
   .mobile-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -259,7 +255,9 @@ h2, h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background-color: rgba(5, 4, 30, 0.9);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     z-index: 999999;
     border: 1px solid gray;
     position: fixed;
@@ -267,21 +265,6 @@ h2, h3 {
   }
   .mobile-container .nav-archives {
     width: 33vw;
-  }
-  .mobile-container #menu-buttons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    height: 21vh;
-    width: 90px;
-    position: fixed;
   }
   .parent-hetpage {
     display: -webkit-box;
@@ -449,16 +432,26 @@ h2, h3 {
     z-index: 99999;
   }
   .exit-menu {
-    margin: 0 0 22px 8px;
-    width: 40px;
-    color: #a5916f;
-    height: 21px;
-    border: 0.5px solid #ae8950;
-    border-radius: 1px;
-    position: absolute;
-    z-index: 99999;
-    text-align: center;
-    line-height: 20px;
+    background-color: #353d4f;
+    width: 9vw;
+    border-radius: 0 0 15px 0;
+  }
+  .exit-menu .menu {
+    color: #bababa;
+    font-size: 2.2em;
+    text-decoration: none;
+  }
+  #nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .logo-home {
     display: -webkit-box;

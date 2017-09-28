@@ -20,20 +20,19 @@
 
 	#folders-container
 		display: flex
-		flex-flow: nowrap
-		justify-content: space-around
+		flex-wrap: wrap
 		width: 100vw
-		height: 8vh
-		margin: auto
+		margin: 0 auto
 		padding: 0
 		border-radius: 21px
-		// background-color: #988561
 		@include tablet
 			display: none
 
 		.nav-folders
 			display: flex
-			height: 50vh
+			height: auto
+			margin: 0 auto
+			padding: 0
 			display: none
 			position: relative
 
@@ -55,23 +54,23 @@
 		display: flex
 		flex-direction: column
 		justify-content: space-between
-		height: 25px
-		font-size: 0.8em
-		line-height: 25px
-		width: 25vw
+		line-height: 41px
+		width: 32vw
 		cursor: pointer
 		text-align: center
 		font-family: $font-stack-audio
 		text-decoration: none
-		background-color: rgba(164, 156, 72, 0.21)
-		color: #ae8950
-		position: relative
-		border: 0.85px solid #000000
-		border-radius: 1px
+		// background-color: rgba(164, 156, 72, 0.21)
+		background-color: #353d4f
+		color: #bababa
+		border: 0.85px solid #9cab92
 		&:active
 			background-color: #353d4f
 		&:focus
-			color: #abb3c8
+			color: #b19768
+			background-color: #40311c
+	    // background-color: rgba(5, 4, 30, 0.9)
+			// background-color: #5d677d
 		@include tablet
 			background: url('../dist/imgs/archive-icons.png')
 			background-position: bottom
@@ -106,29 +105,26 @@
 			.haus
 				display: flex
 				justify-content: flex-start
-				width: 100vw
 				border-radius: 0.3px
 				border-bottom: 0.9px solid #ae8950
-				background-color: rgba(5, 4, 30, 0.9)
+				background-color: #353d4f
 				z-index: 9999
 				position: fixed
-				padding-bottom: 10px
 				ul
 					display: flex
 					justify-content: space-between
-					width: 94vw
+					width: 100vw
 					height: auto
 					margin: 0
 					padding: 0
 					li
 						justify-content: center
-						height: 7vh
 						.haus-menu
 							font-family: $font-stack-audio
 							color: white
-							font-size: 1.08em
+							font-size: 1.1em
 							align-self: center
-							margin-left: 11px
+							padding-left: 10px
 						.main-menu
 							display: flex
 							justify-content: space-around
@@ -142,33 +138,24 @@
 							cursor: pointer
 							width: 11vw
 
-
+	@include phone
 		.mobile-container
 			display: flex
 			width: 100vw
-			// height: 23vh
 			justify-content: space-between
 			// background-image: url('../dist/imgs/hero.png')
-			background-color: rgba(5,4,30, 0.9)
-			// background-repeat: no-repeat
-			// background-position: center
-			// background-size: cover
+			background-repeat: no-repeat
+			background-position: center
+			background-size: cover
 			z-index: 999999
 			border: 1px solid gray
-			// padding-bottom: 12px
 			position: fixed
 			display: none
 
 			.nav-archives
 				width: 33vw
-			#menu-buttons
-				display: flex
-				flex-direction: column
-				justify-content: flex-end
-				height: 21vh
-				width: 90px
-				position: fixed
 
+			#menu-buttons
 
 		.parent-hetpage
 			display: flex
@@ -282,18 +269,19 @@
 			position: absolute
 			z-index: 99999
 		.exit-menu
-			margin: 0 0 22px 8px
-			width: 40px
-			color: #a5916f
-			height: 21px
-			border: 0.5px solid #ae8950
-			border-radius: 1px
-			position: absolute
-			z-index: 99999
-			text-align: center
-			line-height: 20px
-		#nav
+			background-color: #353d4f
+			width: 9vw
+			border-radius: 0 0 15px 0
 
+			.menu
+				color: #bababa
+				font-size: 2.2em
+				text-decoration: none
+
+		#nav
+		  display: flex
+		  justify-content: center
+		  flex-direction: column
 
 	 .logo-home
 			display: flex

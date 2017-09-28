@@ -71,8 +71,8 @@ function checkSize(){
         $(".haus-menu").click(function(){
           $(".mobile-container").show(500);
           $(".nav-folders").show(900);
-          $("#folders-container").show(800);
           $(".exit-menu").show(800);
+          $(".haus").hide(1000);
         });
     //exit menu bar onclick
         $(".exit-menu").on("click", function(){
@@ -81,9 +81,9 @@ function checkSize(){
         $('.main-menu').on("click", function(){
           $("#menu-buttons").show(1000);
         });
-    }
-
-    //animating backgroundimage on landing page
-
+        $(".menu").on("click", function(){
+          $(".haus").show(500);
+        });
+      }
     }
   });
