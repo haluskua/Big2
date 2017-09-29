@@ -4,13 +4,13 @@
   background-repeat: no-repeat
 
 
-
 @mixin phone
-  @media only screen and (min-width: 100px)
+  @media all and (min-width: 1em) and (orientation: portrait)
     @content
 
 @mixin tablet
-  @media only screen and (min-width: 481px)
+  @media only screen and (min-width: 481px) and (orientation: portrait)
+
     @content
 
 @mixin desktop

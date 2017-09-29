@@ -69,9 +69,9 @@ function checkSize(){
 
         //show menu bar onclick on main logo
         $(".haus-menu").click(function(){
-          $(".mobile-container").show(500);
-          $(".nav-folders").show(900);
-          $(".exit-menu").show(800);
+          $(".mobile-container").show();
+          $(".nav-folders").show();
+          $(".exit-menu").show();
           $(".haus").hide(1000);
         });
     //exit menu bar onclick

@@ -17,66 +17,29 @@ h2, h3 {
 }
 
 /* LAYOUT */
-@media only screen and (min-width: 100px) {
+@media all and (min-width: 1em) and (orientation: portrait) {
   .folders-container2 {
     display: none;
   }
-}
-
-@media only screen and (min-width: 100px) and (min-width: 481px) {
-  .folders-container2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: 74vw;
-    height: 90px;
-    margin: 0 auto;
-    padding: 0;
-    background-image: url("../dist/imgs/1920.png");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-  }
-}
-
-@media only screen and (min-width: 100px) and (min-width: 481px) and (min-width: 765px) {
-  .folders-container2 {
-    background-color: white;
-  }
-}
-
-@media only screen and (min-width: 100px) {
   #folders-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 100vw;
-    margin: 0 auto;
+    width: 100%;
+    margin: auto;
     padding: 0;
     border-radius: 21px;
   }
-}
-
-@media only screen and (min-width: 100px) and (min-width: 481px) {
-  #folders-container {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 100px) {
   #folders-container .nav-folders {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     height: auto;
-    margin: 0 auto;
+    margin: 0.3px;
     padding: 0;
     display: none;
-    position: relative;
   }
   #home-logo {
     display: -webkit-box;
@@ -86,19 +49,11 @@ h2, h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-line-pack: justify;
-        align-content: space-between;
-    height: 36vh;
-    width: 100vw;
-    margin: 0 auto;
-    padding: 0;
+    height: 30%;
   }
   #home-logo .imgslider {
-    height: 33vh;
-    width: 80vw;
-    position: absolute;
-    -ms-flex-item-align: center;
-        align-self: center;
+    width: 80%;
+    position: relative;
   }
   .hamburger-menu {
     display: -webkit-box;
@@ -111,38 +66,24 @@ h2, h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    line-height: 41px;
-    width: 32vw;
+    line-height: 38px;
     cursor: pointer;
     text-align: center;
     font-family: "Audiowide";
     text-decoration: none;
-    background-color: #353d4f;
+    background-color: #29334a;
     color: #bababa;
-    border: 0.85px solid #9cab92;
   }
   .hamburger-menu:active {
     background-color: #353d4f;
   }
   .hamburger-menu:focus {
-    color: #b19768;
-    background-color: #40311c;
+    color: white;
+    background-color: #923624;
   }
 }
 
-@media only screen and (min-width: 100px) and (min-width: 481px) {
-  .hamburger-menu {
-    background: url("../dist/imgs/archive-icons.png");
-    background-position: bottom;
-    overflow: hidden;
-    margin: 0 auto;
-    cursor: pointer;
-    background-repeat: no-repeat;
-    line-height: 114px;
-  }
-}
-
-@media only screen and (min-width: 100px) and (min-width: 100px) {
+@media all and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) {
   .hetpage {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -161,34 +102,6 @@ h2, h3 {
     background: url("../dist/imgs/nlsmall5.png") top no-repeat;
     background-size: cover;
   }
-}
-
-@media only screen and (min-width: 100px) and (min-width: 100px) and (min-width: 481px) {
-  .hetpage {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    height: 100vh;
-    background-image: url("../dist/imgs/1920.png");
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
-  }
-}
-
-@media only screen and (min-width: 100px) and (min-width: 100px) and (min-width: 481px) and (min-width: 765px) {
-  .hetpage {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    background-color: green;
-  }
-}
-
-@media only screen and (min-width: 100px) and (min-width: 100px) {
   .hetpage .haus {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -197,7 +110,6 @@ h2, h3 {
         -ms-flex-pack: start;
             justify-content: flex-start;
     border-radius: 0.3px;
-    border-bottom: 0.9px solid #ae8950;
     background-color: #353d4f;
     z-index: 9999;
     position: fixed;
@@ -220,6 +132,9 @@ h2, h3 {
             justify-content: center;
   }
   .hetpage .haus ul li .haus-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     font-family: "Audiowide";
     color: white;
     font-size: 1.1em;
@@ -246,12 +161,12 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 100px) and (min-width: 100px) {
+@media all and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) {
   .mobile-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100vw;
+    width: 100%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -274,24 +189,13 @@ h2, h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: auto;
-    height: 84vh;
-    position: absolute;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
   }
-}
-
-@media only screen and (min-width: 100px) and (min-width: 100px) and (min-width: 481px) {
-  .parent-hetpage {
-    height: 63vh;
-    width: 100vw;
-    margin: 0 auto;
-    padding: 0;
-  }
-}
-
-@media only screen and (min-width: 100px) and (min-width: 100px) {
   .parent-hetpage .bio {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -299,33 +203,16 @@ h2, h3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: auto;
-    height: 20vh;
+    height: 30%;
   }
   .parent-hetpage .bio .intro {
     font-family: "Amatic SC", cursive;
     font-size: 1.15em;
     color: #1f2121;
-    width: 84vw;
-    height: auto;
-    margin: 0 auto;
+    width: 75%;
+    height: 100%;
+    margin: auto;
   }
-}
-
-@media only screen and (min-width: 100px) and (min-width: 100px) and (min-width: 481px) {
-  .parent-hetpage .bio .intro {
-    color: #b47809;
-    padding-top: 0;
-    margin-top: 0;
-    font-family: "Yantramanav", sans-serif;
-    font-size: 1.1em;
-    font-weight: bolder;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-  }
-}
-
-@media only screen and (min-width: 100px) and (min-width: 100px) {
   .parent-hetpage .hetpage-li {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -370,15 +257,6 @@ h2, h3 {
     font-style: normal;
     font-weight: 600;
   }
-}
-
-@media only screen and (min-width: 100px) and (min-width: 100px) and (min-width: 481px) {
-  .parent-hetpage .hetpage-li #thin {
-    color: black;
-  }
-}
-
-@media only screen and (min-width: 100px) and (min-width: 100px) {
   .hetpage-li {
     letter-spacing: normal;
   }
@@ -390,28 +268,17 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 100px) and (min-width: 100px) and (min-width: 481px) {
-  .hetpage-li {
-    margin: 0 auto;
-    padding: 0;
-  }
-}
-
-@media only screen and (min-width: 100px) and (min-width: 100px) {
+@media all and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) {
   .landing-page {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    height: 10vh;
   }
   .mobile-menu {
     display: -webkit-box;
@@ -454,32 +321,16 @@ h2, h3 {
             flex-direction: column;
   }
   .logo-home {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: auto;
-    height: 100vh;
+    height: 100%;
     background: url("../dist/imgs/newlogo.png") no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     overflow: hidden;
-    cursor: pointer;
-    text-align: center;
-    font-family: "Audiowide";
-    text-decoration: none;
-    color: #907449;
-    font-size: 0.79em;
     z-index: 99999;
   }
 }
 
-@media only screen and (min-width: 100px) {
+@media all and (min-width: 1em) and (orientation: portrait) {
   .navbar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -616,7 +467,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 100px) {
+@media all and (min-width: 1em) and (orientation: portrait) {
   body {
     overflow-y: scroll;
     width: 100%;
