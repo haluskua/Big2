@@ -38,7 +38,7 @@
 	#home-logo
 		display: flex
 		flex-direction: column
-		height: 30%
+		height: 43%
 
 		.imgslider
 			width: 80%
@@ -76,13 +76,13 @@
 		.hetpage
 			display: flex
 			flex-direction: column
-			justify-content: flex-end
+			justify-content: space-around
 			overflow: hidden
 			width: 100vw
 			height: 100vh
 			margin: 0 auto
 			background: url('../dist/imgs/nlsmall5.png') top no-repeat
-			background-size: cover
+			background-size: auto
 			@include tablet
 				justify-content: center
 				flex-grow: 1
@@ -94,41 +94,50 @@
 				@include desktop
 					display: flex
 					background-color: green
-			.haus
-				display: flex
-				justify-content: flex-start
-				border-radius: 0.3px
-				background-color: #353d4f
-				z-index: 9999
-				position: fixed
-				ul
+			@include phone
+				.haus
 					display: flex
-					justify-content: space-between
-					width: 100vw
-					height: auto
-					margin: 0
-					padding: 0
-					li
-						justify-content: center
-						.haus-menu
-							display: flex
-							font-family: $font-stack-audio
-							color: white
-							font-size: 1.1em
-							align-self: center
-							padding-left: 10px
-						.main-menu
-							display: flex
-							justify-content: space-around
-							height: auto
-							text-decoration: none
-							font-size: 2.6em
-							font-family: $font-stack-paragraph
-							letter-spacing: 0.03em
-							color: #ae8950
-							align-self: center
-							cursor: pointer
-							width: 11vw
+					border-radius: 0.3px
+					background-color: #353d4f
+					z-index: 999999
+					position: fixed
+					// height: 60px
+					bottom: 0
+					left: 0
+					width: 100%
+					ul
+						display: flex
+						justify-content: space-between
+						position: relative
+						width: 56%
+						height: auto
+						margin: 0
+						padding: 0
+						li
+							justify-content: center
+							position: relative
+							.haus-menu
+								display: flex
+								font-family: $font-stack-audio
+								color: white
+								font-size: 1.1em
+								align-self: center
+								padding-left: 10px
+							.main-menu
+								display: flex
+								justify-content: space-around
+								height: auto
+								text-decoration: none
+								font-size: 2.6em
+								font-family: $font-stack-paragraph
+								letter-spacing: 0.03em
+								color: #ae8950
+								align-self: center
+								cursor: pointer
+								width: 11%
+								bottom: 0px
+								left: 0px
+
 
 	@include phone
 		.mobile-container
@@ -142,6 +151,8 @@
 			z-index: 999999
 			border: 1px solid gray
 			position: fixed
+			bottom: 0
+			left: 0
 			display: none
 
 			.nav-archives
@@ -149,12 +160,12 @@
 
 			#menu-buttons
 
-		.parent-hetpage
+		.Colsplit-between
 			display: flex
 			flex-direction: column
-			justify-content: center
+			justify-content: flex-end
 			width: 100%
-			height: 100%
+			height: 78%
 			position: relative
 
 			@include tablet
@@ -165,7 +176,7 @@
 			.bio
 				display: flex
 				justify-content: center
-				height: 30%
+				// height: 30%
 				.intro
 					font-family: $font-stack-thin
 					font-size: $font-size-Mparagraphs +0.3
@@ -187,6 +198,13 @@
 				display: flex
 				justify-content: center
 
+			#Colsplit-box1
+				display: flex
+				flex-direction: column
+				justify-content: center
+				height: 80%
+				position: relative
+				// background-color: green
 
 				#hetinfo
 					color: black
@@ -380,6 +398,7 @@
 	li
 		display: flex
 		// background-color: green
+		// width: 100%
 
 
 	.shifted
