@@ -144,7 +144,7 @@ h2, h3 {
     font-size: 1.1em;
     line-height: 48px;
     padding-left: 10px;
-    background-color: gainsboro;
+    background-color: #131426;
     color: #ae8950;
     width: 83px;
   }
@@ -167,7 +167,7 @@ h2, h3 {
     bottom: 0px;
     left: 0px;
     z-index: 99999;
-    background-color: gainsboro;
+    background-color: #131426;
   }
 }
 
@@ -334,6 +334,7 @@ h2, h3 {
     background-color: #353d4f;
     width: 9vw;
     border-radius: 0 0 15px 0;
+    text-align: center;
   }
   .exit-menu .menu {
     color: #bababa;
