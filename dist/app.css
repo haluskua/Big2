@@ -78,8 +78,8 @@ h2, h3 {
     background-color: #353d4f;
   }
   .hamburger-menu:focus {
-    color: white;
-    background-color: #923624;
+    color: #ae8950;
+    background-color: gainsboro;
   }
 }
 
@@ -132,6 +132,8 @@ h2, h3 {
         -ms-flex-pack: center;
             justify-content: center;
     position: relative;
+    width: 81px;
+    height: 100%;
   }
   .hetpage .haus ul li .haus-menu {
     display: -webkit-box;
@@ -140,9 +142,11 @@ h2, h3 {
     font-family: "Audiowide";
     color: white;
     font-size: 1.1em;
-    -ms-flex-item-align: center;
-        align-self: center;
+    line-height: 48px;
     padding-left: 10px;
+    background-color: gainsboro;
+    color: #ae8950;
+    width: 83px;
   }
   .hetpage .haus ul li .main-menu {
     display: -webkit-box;
@@ -159,9 +163,11 @@ h2, h3 {
     -ms-flex-item-align: center;
         align-self: center;
     cursor: pointer;
-    width: 11%;
+    width: 48px;
     bottom: 0px;
     left: 0px;
+    z-index: 99999;
+    background-color: gainsboro;
   }
 }
 
@@ -199,7 +205,7 @@ h2, h3 {
         -ms-flex-pack: start;
             justify-content: flex-start;
     width: 100%;
-    height: 78%;
+    height: 100%;
     position: relative;
   }
   .Colsplit-between .bio {
@@ -209,16 +215,16 @@ h2, h3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 93%;
     margin-top: 15px;
   }
   .Colsplit-between .bio .intro {
     font-family: "Amatic SC", cursive;
     font-size: 1.5em;
     color: #1f2121;
-    width: 72%;
+    width: 73%;
     height: 100%;
     margin: auto;
+    text-align: justify;
   }
   .Colsplit-between .hetpage-li {
     display: -webkit-box;
@@ -239,7 +245,7 @@ h2, h3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 80%;
+    height: 90%;
     position: relative;
   }
   .Colsplit-between #Colsplit-box1 #hetinfo {
@@ -251,8 +257,10 @@ h2, h3 {
     color-font-weight: 600;
     color-letter-spacing: 0.6px;
     border-bottom: 1px dotted orange;
+    text-align: center;
     height: 28px;
-    width: 60%;
+    width: 30%;
+    line-height: 25px;
   }
   .Colsplit-between #Colsplit-box1 #hetinfo #mini-desc {
     font-family: "Cutive Mono", monospace;

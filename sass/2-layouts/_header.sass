@@ -59,8 +59,8 @@
 		&:active
 			background-color: #353d4f
 		&:focus
-			color: white
-			background-color: #923624
+			color: #ae8950
+			background-color: gainsboro
 	    // background-color: rgba(5, 4, 30, 0.9)
 			// background-color: #5d677d
 		@include tablet
@@ -115,13 +115,18 @@
 						li
 							justify-content: center
 							position: relative
+							width: 81px
+							height: 100%
 							.haus-menu
 								display: flex
 								font-family: $font-stack-audio
 								color: white
 								font-size: 1.1em
-								align-self: center
+								line-height: 48px
 								padding-left: 10px
+								background-color: gainsboro
+								color: #ae8950
+								width: 83px
 							.main-menu
 								display: flex
 								justify-content: space-around
@@ -133,9 +138,11 @@
 								color: #ae8950
 								align-self: center
 								cursor: pointer
-								width: 11%
+								width: 48px
 								bottom: 0px
 								left: 0px
+								z-index: 99999
+								background-color: gainsboro
 
 
 	@include phone
@@ -164,7 +171,7 @@
 			flex-direction: column
 			justify-content: flex-start
 			width: 100%
-			height: 78%
+			height: 100%
 			position: relative
 
 			@include tablet
@@ -175,16 +182,17 @@
 			.bio
 				display: flex
 				justify-content: center
-				width: 93%
+				// width: 93%
 				margin-top: 15px
 				// height: 30%
 				.intro
 					font-family: $font-stack-thin
 					font-size: 1.5em
 					color: #1f2121
-					width: 72%
+					width: 73%
 					height: 100%
 					margin: auto
+					text-align: justify
 					@include tablet
 						color: #b47809
 						padding-top: 0
@@ -203,7 +211,7 @@
 				display: flex
 				flex-direction: column
 				justify-content: center
-				height: 80%
+				height: 90%
 				position: relative
 				// background-color: green
 
@@ -216,8 +224,10 @@
 			    font-weight: 600
 			    letter-spacing: 0.6px
 					border-bottom: 1px dotted orange
+					text-align: center
 					height: 28px
-					width: 60%
+					width: 30%
+					line-height: 25px
 
 
 					#mini-desc
