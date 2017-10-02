@@ -68,7 +68,7 @@ function checkSize(){
       });
 
         //show menu bar onclick on main logo
-        $(".haus-menu").click(function(){
+        $(".haus-menu, #hetinfo").click(function(){
           $(".mobile-container").show();
           $(".nav-folders").show();
           $(".exit-menu").show();
@@ -76,7 +76,7 @@ function checkSize(){
         });
     //exit menu bar onclick
         $(".exit-menu").on("click", function(){
-          $(".mobile-container").hide(800);
+          $(".mobile-container").hide(200);
         });
         $('.main-menu').on("click", function(){
           $("#menu-buttons").show(1000);

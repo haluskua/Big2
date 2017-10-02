@@ -80,8 +80,7 @@
 			overflow: hidden
 			width: 100vw
 			height: 100vh
-			margin: 0 auto
-			background: url('../dist/imgs/nlsmall5.png') top no-repeat
+			// background: url('../dist/imgs/nlsmall5.png') top no-repeat
 			background-size: auto
 			@include tablet
 				justify-content: center
@@ -144,12 +143,12 @@
 			display: flex
 			width: 100%
 			justify-content: space-between
-			// background-image: url('../dist/imgs/hero.png')
+			background-image: url('../dist/imgs/1920.png')
 			background-repeat: no-repeat
-			background-position: center
+			background-position: top
 			background-size: cover
 			z-index: 999999
-			border: 1px solid gray
+			// border: 1px solid gray
 			position: fixed
 			bottom: 0
 			left: 0
@@ -163,7 +162,7 @@
 		.Colsplit-between
 			display: flex
 			flex-direction: column
-			justify-content: flex-end
+			justify-content: flex-start
 			width: 100%
 			height: 78%
 			position: relative
@@ -176,12 +175,14 @@
 			.bio
 				display: flex
 				justify-content: center
+				width: 93%
+				margin-top: 15px
 				// height: 30%
 				.intro
 					font-family: $font-stack-thin
-					font-size: $font-size-Mparagraphs +0.3
+					font-size: 1.5em
 					color: #1f2121
-					width: 75%
+					width: 72%
 					height: 100%
 					margin: auto
 					@include tablet
@@ -214,6 +215,10 @@
 			    text-transform: capitalize
 			    font-weight: 600
 			    letter-spacing: 0.6px
+					border-bottom: 1px dotted orange
+					height: 28px
+					width: 60%
+
 
 					#mini-desc
 					 font-family: $font-stack-paragraph
@@ -263,7 +268,6 @@
 		 display: flex
 		 flex-direction: column
 		 justify-content: space-around
-
 
 		.mobile-menu
 			display: flex
@@ -380,7 +384,7 @@
 	 top: 0
 	 left: 0
 	 width: 100vw
-	 height: 103px
+	 height: 100px
 	 line-height: 110px
 	 z-index: 9999
 	//  background-color: rgba(5, 4, 30, 0.9)
@@ -405,7 +409,7 @@
 	 margin-top: 0px
 	 #navtabs
 		 li
-		 border: 2px solid #b98c38
+		//  border: 2px solid #b98c38
 		 a
 			 width: 63px
 			 font-size: 0.96em

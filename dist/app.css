@@ -97,8 +97,6 @@ h2, h3 {
     overflow: hidden;
     width: 100vw;
     height: 100vh;
-    margin: 0 auto;
-    background: url("../dist/imgs/nlsmall5.png") top no-repeat;
     background-size: auto;
   }
 }
@@ -176,11 +174,11 @@ h2, h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    background-image: url("../dist/imgs/1920.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: cover;
     z-index: 999999;
-    border: 1px solid gray;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -197,9 +195,9 @@ h2, h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     width: 100%;
     height: 78%;
     position: relative;
@@ -211,12 +209,14 @@ h2, h3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 93%;
+    margin-top: 15px;
   }
   .Colsplit-between .bio .intro {
     font-family: "Amatic SC", cursive;
-    font-size: 1.15em;
+    font-size: 1.5em;
     color: #1f2121;
-    width: 75%;
+    width: 72%;
     height: 100%;
     margin: auto;
   }
@@ -250,6 +250,9 @@ h2, h3 {
     color-text-transform: capitalize;
     color-font-weight: 600;
     color-letter-spacing: 0.6px;
+    border-bottom: 1px dotted orange;
+    height: 28px;
+    width: 60%;
   }
   .Colsplit-between #Colsplit-box1 #hetinfo #mini-desc {
     font-family: "Cutive Mono", monospace;
@@ -456,7 +459,7 @@ h2, h3 {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 103px;
+    height: 100px;
     line-height: 110px;
     z-index: 9999;
   }
@@ -478,13 +481,6 @@ h2, h3 {
   }
   .shifted {
     margin-top: 0px;
-  }
-  .shifted #navtabs {
-    border: 2px solid #b98c38;
-  }
-  .shifted #navtabs a {
-    width: 63px;
-    font-size: 0.96em;
   }
 }
 
