@@ -78,8 +78,8 @@ h2, h3 {
     background-color: #353d4f;
   }
   .hamburger-menu:focus {
-    color: white;
-    background-color: #ed4001;
+    color: #eeeeee;
+    background-color: #353d4f;
   }
 }
 
@@ -109,10 +109,10 @@ h2, h3 {
     border-radius: 0.3px;
     background-color: #ffe224;
     z-index: 999999;
-    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
+    position: fixed;
   }
   .hetpage .haus ul {
     display: -webkit-box;
@@ -339,14 +339,15 @@ h2, h3 {
   .exit-menu {
     background-color: #353d4f;
     width: 9vw;
-    height: 40px;
+    height: 33px;
     border-radius: 0 0 15px 0;
     text-align: center;
   }
   .exit-menu .menu {
     color: #bababa;
-    font-size: 2.2em;
+    font-size: 2em;
     text-decoration: none;
+    line-height: 24px;
   }
   #nav {
     display: -webkit-box;
