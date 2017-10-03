@@ -23,7 +23,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   .folders-container2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -41,7 +41,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) and (min-width: 765px) {
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) and (min-width: 1024px) and (orientation: landscape) {
   .folders-container2 {
     background-color: white;
   }
@@ -61,7 +61,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   #folders-container {
     display: none;
   }
@@ -87,6 +87,15 @@ h2, h3 {
             flex-direction: column;
     height: 43%;
   }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+  #home-logo {
+    height: 40%;
+  }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) {
   #home-logo .imgslider {
     width: 80%;
     position: relative;
@@ -119,7 +128,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   .hamburger-menu {
     background: url("../dist/imgs/archive-icons.png");
     background-position: bottom;
@@ -149,7 +158,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   .hetpage {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -158,14 +167,10 @@ h2, h3 {
         -ms-flex-positive: 1;
             flex-grow: 1;
     height: 100vh;
-    background-image: url("../dist/imgs/1920.png");
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) and (min-width: 765px) {
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) and (min-width: 1024px) and (orientation: landscape) {
   .hetpage {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -187,6 +192,17 @@ h2, h3 {
     width: 100%;
     position: fixed;
   }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+  .hetpage .haus {
+    top: 0;
+    left: 0;
+    height: 60px;
+  }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) {
   .hetpage .haus ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -273,6 +289,15 @@ h2, h3 {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+  .mobile-container #menu-buttons {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) {
   .Colsplit-between {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -290,11 +315,11 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   .Colsplit-between {
-    height: 63vh;
+    height: 100vh;
     width: 100vw;
-    margin: 0 auto;
+    margin: auto;
     padding: 0;
   }
 }
@@ -308,6 +333,15 @@ h2, h3 {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+  .Colsplit-between .bio {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) {
   .Colsplit-between .bio .intro {
     font-family: "Amatic SC", cursive;
     font-size: 1.5em;
@@ -318,16 +352,14 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   .Colsplit-between .bio .intro {
-    color: #b47809;
+    color: #251202;
     padding-top: 0;
     margin-top: 0;
     font-family: "Yantramanav", sans-serif;
-    font-size: 1.1em;
-    font-weight: bolder;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
+    font-size: 1.67em;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -354,74 +386,7 @@ h2, h3 {
     height: 90%;
     position: relative;
   }
-  .Colsplit-between #Colsplit-box1 #hetinfo {
-    color: black;
-    color-margin: 0 auto;
-    color-font-family: "Amatic SC", cursive;
-    color-font-size: 3.8em;
-    color-text-transform: capitalize;
-    color-font-weight: 600;
-    color-letter-spacing: 0.6px;
-    border-bottom: 1px dotted orange;
-    text-align: center;
-    height: 28px;
-    width: 33%;
-    line-height: 25px;
-  }
-  .Colsplit-between #Colsplit-box1 #hetinfo #mini-desc {
-    font-family: "Cutive Mono", monospace;
-    font-size: .9em;
-    line-height: 7px;
-    text-align: justify;
-  }
-  .Colsplit-between #Colsplit-box1 #hetinfo a {
-    text-decoration: none;
-    color: #907449;
-    cursor: pointer;
-  }
-  .Colsplit-between #Colsplit-box1 #thin {
-    font-family: "Amatic SC", cursive;
-    letter-spacing: 0.03em;
-    font-weight: bolder;
-    color: #000000;
-    margin: 0 auto;
-    letter-spacing: 0.02em;
-  }
-  .Colsplit-between #Colsplit-box1 #thin #bulgeword {
-    font-family: "Amatic SC", cursive;
-    color: #988561;
-    font-style: normal;
-    font-weight: 600;
-  }
-}
-
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  .Colsplit-between #Colsplit-box1 #thin {
-    color: black;
-  }
-}
-
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) {
-  .hetpage-li {
-    letter-spacing: normal;
-  }
-  .hetpage-li #landing-title {
-    margin: 10.7px 0 -33.5px 0px;
-    color: #b98c38;
-    font-family: "Audiowide";
-    font-size: 2.88em;
-  }
-}
-
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  .hetpage-li {
-    margin: 0 auto;
-    padding: 0;
-  }
-}
-
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) {
-  .landing-page {
+  .Colsplit-between #Colsplit-box1 .landing-page {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -438,7 +403,98 @@ h2, h3 {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  background-color: green;
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+  .Colsplit-between #Colsplit-box1 .landing-page {
+    height: 15%;
+  }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) {
+  .Colsplit-between #Colsplit-box1 #hetinfo {
+    color: black;
+    color-margin: 0 auto;
+    color-font-family: "Amatic SC", cursive;
+    color-font-size: 3.8em;
+    color-text-transform: capitalize;
+    color-font-weight: 600;
+    color-letter-spacing: 0.6px;
+    border-bottom: 1px dotted orange;
+    text-align: center;
+    height: 27px;
+    width: 57%;
+    line-height: 25px;
+  }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+  .Colsplit-between #Colsplit-box1 #hetinfo {
+    height: 26px;
+    line-height: 0px;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) {
+  .Colsplit-between #Colsplit-box1 #hetinfo #mini-desc {
+    font-family: "Cutive Mono", monospace;
+    font-size: .9em;
+    line-height: 7px;
+    text-align: justify;
+  }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+  .Colsplit-between #Colsplit-box1 #hetinfo #mini-desc {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) {
+  #thin {
+    font-family: "Amatic SC", cursive;
+    letter-spacing: 0.03em;
+    font-weight: bolder;
+    color: #000000;
+    margin: 0 auto;
+  }
+  #bulgeword {
+    font-family: "Amatic SC", cursive;
+    color: #988561;
+    font-style: normal;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+  #bulgeword {
+    color: #b3790b;
+    font-size: 1.2em;
+    letter-spacing: 0.3em;
+  }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) {
+  .hetpage-li {
+    letter-spacing: normal;
+  }
+  .hetpage-li #landing-title {
+    margin: 10.7px 0 -33.5px 0px;
+    color: #b98c38;
+    font-family: "Audiowide";
+    font-size: 2.88em;
+  }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+  .hetpage-li {
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) {
   .mobile-menu {
     display: -webkit-box;
     display: -ms-flexbox;

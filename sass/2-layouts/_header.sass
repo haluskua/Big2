@@ -39,6 +39,8 @@
 		display: flex
 		flex-direction: column
 		height: 43%
+		@include tablet
+			height: 40%
 
 		.imgslider
 			width: 80%
@@ -86,10 +88,6 @@
 				justify-content: center
 				flex-grow: 1
 				height: 100vh
-				background-image: url('../dist/imgs/1920.png')
-				background-size: contain
-				background-position: top
-				background-repeat: no-repeat
 				@include desktop
 					display: flex
 					background-color: green
@@ -103,6 +101,10 @@
 					left: 0
 					width: 100%
 					position: fixed
+					@include tablet
+						top: 0
+						left: 0
+						height: 60px
 					ul
 						display: flex
 						justify-content: space-between
@@ -164,6 +166,8 @@
 				display: flex
 				width: 100%
 				justify-content: flex-end
+				@include tablet
+					display: none
 
 		.Colsplit-between
 			display: flex
@@ -172,15 +176,16 @@
 			width: 100%
 			height: 100%
 			position: relative
-
 			@include tablet
-				height: 63vh
+				height: 100vh
 				width: 100vw
-				margin: 0 auto
+				margin: auto
 				padding: 0
 			.bio
 				display: flex
 				justify-content: center
+				@include tablet
+					margin-top: 30px
 
 				.intro
 					font-family: $font-stack-thin
@@ -190,14 +195,12 @@
 					height: 100%
 					text-align: justify
 					@include tablet
-						color: #b47809
+						color: #251202
 						padding-top: 0
 						margin-top: 0
 						font-family: $font-stack-old-style
-						font-size: $font-size-Mh2 +0.3
-						font-weight: bolder
-						text-transform: uppercase
-						letter-spacing: 0.04em
+						font-size: 1.67em
+						letter-spacing: 0.02em
 
 			.hetpage-li
 				display: flex
@@ -209,7 +212,17 @@
 				justify-content: center
 				height: 90%
 				position: relative
-				// background-color: green
+				@include tablet
+
+				.landing-page
+					display: flex
+					flex-direction: column
+					justify-content: space-around
+					width: 80%
+					align-self: center
+					align-items: flex-start
+					@include tablet
+						height: 15%
 
 
 				#hetinfo
@@ -222,9 +235,13 @@
 			    letter-spacing: 0.6px
 					border-bottom: 1px dotted orange
 					text-align: center
-					height: 28px
-					width: 33%
+					height: 27px
+					width: 57%
 					line-height: 25px
+					@include tablet
+						height: 26px
+						line-height: 0px
+						width: 100%
 
 
 					#mini-desc
@@ -232,27 +249,27 @@
 					 font-size: .9em
 					 line-height: 7px
 					 text-align: justify
-					a
-						text-decoration: none
-						color: #907449
-						cursor: pointer
-
-			 #thin
-		    font-family: $font-stack-thin
-		    letter-spacing: 0.03em
-		    font-weight: bolder
-		    color: #000000
-		    margin: 0 auto
-		    // text-shadow: rgba(230, 226, 217, 0.95) 0 6px 1px#2d6c86
-
-			   #bulgeword
-			     font-family: $font-stack-thin
-			     color: #988561
-			     font-style: normal
-			     font-weight: 600
-					 letter-spacing: 0.02em
 					 @include tablet
-						 color: black
+						 font-size: 1.5em
+
+		#thin
+			font-family: $font-stack-thin
+			letter-spacing: 0.03em
+			font-weight: bolder
+			color: #000000
+			margin: 0 auto
+			@include tablet
+
+		#bulgeword
+			font-family: $font-stack-thin
+			color: #988561
+			font-style: normal
+			font-weight: 600
+			@include tablet
+				color: #b3790b
+				font-size: 1.2em
+				letter-spacing: 0.3em
+
 
 
 		.hetpage-li
@@ -266,15 +283,6 @@
 				@include tablet
 					margin: 0 auto
 					padding: 0
-
-	 .landing-page
-		 display: flex
-		 flex-direction: column
-		 justify-content: space-around
-		 width: 80%
-		 align-self: center
-		 align-items: flex-start
-		background-color: green
 
 		.mobile-menu
 			display: flex
