@@ -122,7 +122,7 @@ h2, h3 {
         -ms-flex-pack: justify;
             justify-content: space-between;
     position: relative;
-    width: 56%;
+    width: 60%;
     height: auto;
     margin: 0;
     padding: 0;
@@ -152,18 +152,17 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: auto;
     text-decoration: none;
     font-size: 2.6em;
     font-family: "Cutive Mono", monospace;
     letter-spacing: 0.03em;
     color: #ae8950;
-    -ms-flex-item-align: center;
-        align-self: center;
     cursor: pointer;
-    width: 48px;
+    width: 67px;
     bottom: 0px;
     left: 0px;
     z-index: 99999;
@@ -192,6 +191,15 @@ h2, h3 {
   }
   .mobile-container .nav-archives {
     width: 33vw;
+  }
+  .mobile-container #menu-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .Colsplit-between {
     display: -webkit-box;
@@ -259,7 +267,7 @@ h2, h3 {
     border-bottom: 1px dotted orange;
     text-align: center;
     height: 28px;
-    width: 30%;
+    width: 33%;
     line-height: 25px;
   }
   .Colsplit-between #Colsplit-box1 #hetinfo #mini-desc {
@@ -333,6 +341,7 @@ h2, h3 {
   .exit-menu {
     background-color: #353d4f;
     width: 9vw;
+    height: 40px;
     border-radius: 0 0 15px 0;
     text-align: center;
   }
