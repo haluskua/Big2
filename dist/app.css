@@ -399,9 +399,6 @@ h2, h3 {
     width: 80%;
     -ms-flex-item-align: center;
         align-self: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
   }
 }
 
@@ -423,7 +420,7 @@ h2, h3 {
     border-bottom: 1px dotted orange;
     text-align: center;
     height: 27px;
-    width: 57%;
+    width: 45%;
     line-height: 25px;
   }
 }
@@ -436,15 +433,6 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) {
-  .Colsplit-between #Colsplit-box1 #hetinfo #mini-desc {
-    font-family: "Cutive Mono", monospace;
-    font-size: .9em;
-    line-height: 7px;
-    text-align: justify;
-  }
-}
-
 @media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   .Colsplit-between #Colsplit-box1 #hetinfo #mini-desc {
     font-size: 1.5em;
@@ -454,7 +442,7 @@ h2, h3 {
 @media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 1em) and (orientation: portrait) {
   #thin {
     font-family: "Amatic SC", cursive;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.1em;
     font-weight: bolder;
     color: #000000;
     margin: 0 auto;
