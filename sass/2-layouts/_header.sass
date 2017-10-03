@@ -202,7 +202,7 @@
 
 			.hetpage-li
 				display: flex
-				justify-content: center
+				justify-content: flex-start
 
 			#Colsplit-box1
 				display: flex
@@ -250,7 +250,7 @@
 			   #bulgeword
 			     font-family: $font-stack-thin
 			     color: #988561
-			     font-size: 0.73em
+			     font-size: 1.1em
 			     font-style: normal
 			     font-weight: 600
 					 letter-spacing: 0.02em
@@ -270,12 +270,14 @@
 					margin: 0 auto
 					padding: 0
 
-			    // display: none
-	@include phone
 	 .landing-page
 		 display: flex
 		 flex-direction: column
 		 justify-content: space-around
+		 width: 80%
+		 align-self: center
+		 align-items: flex-start
+		background-color: green
 
 		.mobile-menu
 			display: flex
