@@ -27,23 +27,94 @@
         width: 100%
         align-items: flex-start
         position: relative
+        @include tablet
+          display: flex
+          flex-direction: column
+          justify-content: space-around
+          margin: auto
+          border: 1px solid gray
+          height: 100vh
 
         #section_box
           display: flex
           flex-direction: column
           justify-content: center
           position: relative
+          @include tablet
+            width: 100vw
+            display: flex
+            justify-content: center
 
           .title
             align-self: flex-start
             line-height: 30%
             margin: 22px 0 3px 12px
+            @include tablet
+              font-size: 3.5em
+              line-height: 84px
+              align-self: center
+              margin: 0
 
-          #nelann
-            height: auto
-            color: $night
-            font-family: $font-stack-franklyn
-            font-size: $font-size-Mparagraphs
-            flex: 1
-            padding: 5px 10px
-            margin: 8px 0 0 0
+              #art-content
+                display: flex
+                width: 27vw
+                height: 62vh
+
+
+      #art-content
+        @include tablet
+          display: flex
+          justify-content: space-evenly
+          width: 100vw
+          background-color: pink
+          margin: 0
+        #slider1
+          @include tablet
+            width: 71vw
+            background-image: url('../dist/imgs/meri.png')
+            background-position: center
+            background-size: cover
+            height: 62vh
+        #slider2
+          @include tablet
+            display: flex
+            width: 27vw
+            height: 62vh
+            background-color: purple
+
+    #nelann
+      height: auto
+      color: $night
+      font-family: $font-stack-franklyn
+      font-size: $font-size-Mparagraphs
+      flex: 1
+      padding: 5px 10px
+      margin: 8px 0 0 0
+      @include tablet
+        display: flex
+        height: 28vh
+        font-family: $font-stack-paragraph
+        font-size: 1.5em
+        margin: 13px
+
+    #img-container
+      @include tablet
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        width: 100%
+        height: 100%
+        margin: 0
+        padding: 0
+
+
+        .imgs-box
+          @include tablet
+            display: flex
+            justify-content: space-around
+            flex-direction: column
+            height: 24%
+            width: 100%
+            background-image: url('../dist/imgs/1920.png')
+            background-size: cover
+            background-position: center

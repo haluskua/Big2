@@ -12,18 +12,6 @@ function checkSize(){
       $(window).scroll(function() {
         var scrollTop = $(window).scrollTop();
 
-        // scroll eventListen function
-            // var lastScrollTop = outerHeight;
-            // var currentScrollPosition = $(this).scrollTop();
-            //   if (currentScrollPosition === lastScrollTop) {
-            //     alert("you have past the outerheigh");
-            //
-            //   }else {
-            //     ""
-            //   }
-            //   lastScrollTop = currentScrollPosition;
-
-
       /*changing between classes */
         if (scrollTop > stickyNavTop) {
           $('.mobile-container').addClass('sticky');
@@ -42,8 +30,6 @@ function checkSize(){
       /* Stick navigation to the top of the page */
 
       $('.hamburger-menu').click(function(e) {
-        // $("#menu-buttons").hide(800);
-        //getting the href attribute
       var linkHref = $(this).attr('href');
       $('html, body').animate({
         scrollTop: $(linkHref).offset().top - headerHeight
@@ -52,14 +38,11 @@ function checkSize(){
     });
 
     var stickyNavTop = $('.nav-folders').offset().top;
+  }
 
-
-  }else{
-
-    var headerHeight = 8;
+    var headerHeight = 90;
 
     $('.hamburger-menu').click(function(e) {
-
         var linkHref = $(this).attr('href');
         $('html, body').animate({
           scrollTop: $(linkHref).offset().top - headerHeight
@@ -84,6 +67,5 @@ function checkSize(){
         $(".menu").on("click", function(){
           $(".haus").show(500);
         });
-      }
     }
   });
