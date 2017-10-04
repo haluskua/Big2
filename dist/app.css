@@ -766,6 +766,7 @@ h2, h3 {
             justify-content: space-between;
     position: relative;
     width: 100%;
+    height: 100vh;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -803,6 +804,8 @@ h2, h3 {
         -ms-flex-pack: center;
             justify-content: center;
     position: relative;
+    width: 100%;
+    height: 40px;
   }
 }
 
@@ -844,17 +847,43 @@ h2, h3 {
   }
 }
 
+@media only screen and (min-width: 1em) and (orientation: portrait) {
+  body main #art-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 60vh;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 @media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   body main #art-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 100vw;
-    background-color: pink;
-    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) {
+  body main #art-content #slider1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 60vh;
+    width: 66vh;
+    background-image: url("../dist/imgs/goes-around4.png");
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -865,6 +894,19 @@ h2, h3 {
     background-position: center;
     background-size: cover;
     height: 62vh;
+  }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) {
+  body main #art-content #slider2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100vw;
+    border: 2.2px solid #c2dae1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 96%;
   }
 }
 
@@ -905,6 +947,23 @@ h2, h3 {
   }
 }
 
+@media only screen and (min-width: 1em) and (orientation: portrait) {
+  body #img-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 @media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   body #img-container {
     display: -webkit-box;
@@ -924,7 +983,17 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (orientation: portrait) {
+  body #img-container .imgs-box {
+    width: 17vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   body #img-container .imgs-box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -940,6 +1009,18 @@ h2, h3 {
     background-image: url("../dist/imgs/1920.png");
     background-size: cover;
     background-position: center;
+  }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) {
+  body #img-container .imgs-box a {
+    background-image: url("../dist/imgs/goes-around4.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    text-align: center;
   }
 }
 

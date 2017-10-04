@@ -25,6 +25,7 @@
         justify-content: space-between
         position: relative
         width: 100%
+        height: 100vh
         align-items: flex-start
         position: relative
         @include tablet
@@ -40,6 +41,9 @@
           flex-direction: column
           justify-content: center
           position: relative
+          width: 100%
+          height: 40px
+
           @include tablet
             width: 100vw
             display: flex
@@ -60,15 +64,25 @@
                 width: 27vw
                 height: 62vh
 
-
       #art-content
+        display: flex
+        height: 60vh
+        width: 100%
+        flex-direction: column
+        justify-content: space-around
         @include tablet
           display: flex
-          justify-content: space-evenly
+          justify-content: space-around
           width: 100vw
-          background-color: pink
-          margin: 0
+          flex-flow:
+
         #slider1
+          display: flex
+          height: 60vh
+          width: 66vh
+          background-image: url('../dist/imgs/goes-around4.png')
+          background-position: center
+          background-size: cover
           @include tablet
             width: 71vw
             background-image: url('../dist/imgs/meri.png')
@@ -76,6 +90,12 @@
             background-size: cover
             height: 62vh
         #slider2
+          display: flex
+          width: 100vw
+          border: 2.2px solid #c2dae1
+          padding-top: 10px
+          padding-bottom: 10px
+          height: 96%
           @include tablet
             display: flex
             width: 27vw
@@ -98,6 +118,13 @@
         margin: 13px
 
     #img-container
+      display: flex
+      justify-content: space-around
+      width: 100vw
+      margin: 0
+      padding: 0
+      height: 60px
+      align-items: center
       @include tablet
         display: flex
         flex-direction: column
@@ -108,13 +135,25 @@
         padding: 0
 
 
-        .imgs-box
-          @include tablet
-            display: flex
-            justify-content: space-around
-            flex-direction: column
-            height: 24%
-            width: 100%
-            background-image: url('../dist/imgs/1920.png')
-            background-size: cover
-            background-position: center
+      .imgs-box
+        width: 17vw
+        align-items: center
+        height: 100%
+        @include tablet
+          display: flex
+          justify-content: space-around
+          flex-direction: column
+          height: 24%
+          width: 100%
+          background-image: url('../dist/imgs/1920.png')
+          background-size: cover
+          background-position: center
+
+        a
+          background-image: url('../dist/imgs/goes-around4.png')
+          background-position: center
+          background-size: cover
+          background-repeat: no-repeat
+          height: 100%
+          width: 100%
+          text-align: center
