@@ -764,7 +764,6 @@ h2, h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    position: relative;
     width: 100%;
     height: 100vh;
     -webkit-box-align: start;
@@ -788,6 +787,7 @@ h2, h3 {
     margin: auto;
     border: 1px solid gray;
     height: 100vh;
+    width: 100vw;
   }
 }
 
@@ -818,6 +818,7 @@ h2, h3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 25px 0 6px 25px;
   }
 }
 
@@ -826,16 +827,16 @@ h2, h3 {
     -ms-flex-item-align: start;
         align-self: flex-start;
     line-height: 30%;
-    margin: 22px 0 3px 12px;
+    margin: 22px 0 12px 12px;
   }
 }
 
 @media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   body main section #section_box .title {
-    font-size: 3.5em;
+    font-size: 2.68em;
     line-height: 84px;
-    -ms-flex-item-align: center;
-        align-self: center;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     margin: 0;
   }
   body main section #section_box .title #art-content {
@@ -852,7 +853,7 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 60vh;
+    height: 68vh;
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -870,7 +871,13 @@ h2, h3 {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    width: 100vw;
+    width: 98vw;
+    height: 62vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    padding: 10px;
   }
 }
 
@@ -879,21 +886,24 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 60vh;
-    width: 66vh;
+    height: 100vh;
     background-image: url("../dist/imgs/goes-around4.png");
     background-position: center;
     background-size: cover;
+    border: 2.2px solid #c94343;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
 @media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   body main #art-content #slider1 {
-    width: 71vw;
+    width: 80vw;
     background-image: url("../dist/imgs/meri.png");
     background-position: center;
     background-size: cover;
-    height: 62vh;
+    height: 60vh;
   }
 }
 
@@ -904,9 +914,7 @@ h2, h3 {
     display: flex;
     width: 100vw;
     border: 2.2px solid #c2dae1;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    height: 96%;
+    height: 21%;
   }
 }
 
@@ -915,9 +923,14 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 27vw;
-    height: 62vh;
-    background-color: purple;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 17vw;
+    height: 60vh;
+    border: none;
+    padding: 0;
+    background-color: #f4df84;
   }
 }
 
@@ -941,9 +954,9 @@ h2, h3 {
     display: -ms-flexbox;
     display: flex;
     height: 28vh;
-    font-family: "Cutive Mono", monospace;
     font-size: 1.5em;
     margin: 13px;
+    color: #2c1f0b;
   }
 }
 
@@ -978,14 +991,12 @@ h2, h3 {
             justify-content: space-between;
     width: 100%;
     height: 100%;
-    margin: 0;
-    padding: 0;
   }
 }
 
 @media only screen and (min-width: 1em) and (orientation: portrait) {
   body #img-container .imgs-box {
-    width: 17vw;
+    width: 24vw;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1021,6 +1032,13 @@ h2, h3 {
     height: 100%;
     width: 100%;
     text-align: center;
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+  body #img-container .imgs-box a {
+    color: white;
   }
 }
 
