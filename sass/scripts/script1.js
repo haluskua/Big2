@@ -3,13 +3,17 @@
 
 
 
-if (window.devicePixelRatio == 1.5) {
-  alert("This is a high-density screen");
-} else if (window.devicePixelRatio == 0.75) {
-  alert("This is a low-density screen");
-}
 
 
+
+
+// if (window.devicePixelRatio == 1.5) {
+//   alert("This is a high-density screen");
+// } else if (window.devicePixelRatio == 0.75) {
+//   alert("This is a low-density screen");
+// }
+//
+//
 
 //
 //

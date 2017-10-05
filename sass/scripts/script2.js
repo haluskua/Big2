@@ -40,7 +40,7 @@ function checkSize(){
     var stickyNavTop = $('.nav-folders').offset().top;
   }
 
-    var headerHeight = $('#folders-container').outerHeight();
+    var headerHeight = 86;
 
     $('.hamburger-menu').click(function(e) {
         var linkHref = $(this).attr('href');

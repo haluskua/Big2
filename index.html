@@ -4,7 +4,10 @@
   <meta charset="utf-8">
   <title>SASS</title>
   <link rel="stylesheet" href="dist/app.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stlesheet" href="css/jquery.bxslider.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+  </script>
   <script
     src="https://code.jquery.com/jquery-3.2.1.js"
     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
@@ -12,6 +15,7 @@
   </script>
 </head>
   <body>
+
     <!-- //header has 2 children element -->
     <header class="hetpage">
 
@@ -66,96 +70,107 @@
                 <a href="#infor" class="hamburger-menu info">
                   <span class="nav-archives">INFO</span></a></li>
             </ul>
-      </nav>
-    </div>
-
+        </nav>
+      </div>
     </header>
 
     <main>
-
-      <section id="grafix">
-        <div id="section_box">
-          <h3 class="title">Grafix</h3>
-        </div>
-        <div id="art-content">
-          <div id="slider1"></div>
-          <div id="slider2">
-            <ul id="img-container">
-              <li class="imgs-box">
-                <a href="#" class="grafix-img">
-                  <span class="grafix-tag">meri</span></a>
-                </li>
-                <li class="imgs-box">
-                  <a href="#" class="grafix-img">
-                    <span class="grafix-tag">meri</span></a>
-                  </li>
-                  <li class="imgs-box">
-                    <a href="#" class="grafix-img">
-                      <span class="grafix-tag">meri</span></a>
-                    </li>
-                    <li class="imgs-box">
-                      <a href="#" class="grafix-img">
-                        <span class="grafix-tag">meri</span></a>
-                      </li>
-            </ul>
-
-          </div>
-        </div>
-          <p id="nelann">Bada bada bada sectetur adipisicing elit, sed
-          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.
-        </p>
-      </section>
-
-      <section id="web">
-        <div id="section_box">
-          <h3 class="title">Web</h3>
-          <div id="slider">img slider</div>
-          <p id="description">Bada bada bada sectetur adipisicing elit, sed
-          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.</p>
+      <section> <!--background-imag div -->
+        <div id="grafix"><!--opacity box/contains 2 boxes -->
+          <ul id="left-box"><!--leftbox-->
+            <li class="bald-title"><span class="subtitle">one</span></li>
+            <li class="li-grafix"><p class="item-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p></li>
+          </ul>
+          <ul id="right-box"><!--righbox-->
+            <li class="li-grafix"><a href="#" id="img1"></a></li>
+            <li class="li-grafix"><a href="#" id="img2"></a></li>
+            <li class="li-grafix"><a href="#" id="img3"></a></li>
+          </ul>
         </div>
       </section>
 
-      <section id="snaps">
-        <div id="section_box">
-          <h3 class="title">Snaps</h3>
-          <p id="slider">img slider.</p>
-          <p id="nelann">Bada bada bada sectetur adipisicing elit, sed
-          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.</p>
+      <section> <!--background-imag div -->
+        <div id="web"><!--opacity box/contains 2 boxes -->
+          <ul id="left-box"><!--leftbox-->
+            <li class="bald-title"><span class="subtitle">Two</span></li>
+            <li class="li-grafix"><p class="item-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p></li>
+          </ul>
+          <ul id="right-box"><!--righbox-->
+            <li class="li-grafix"><a href="#" id="img1"></a></li>
+            <li class="li-grafix"><a href="#" id="img2"></a></li>
+            <li class="li-grafix"><a href="#" id="img3"></a></li>
+          </ul>
         </div>
       </section>
-      <section id="extras">
-        <div id="section_box">
-          <h3 class="title">Info</h3>
-          <p id="slider">img slider.</p>
-          <p id="nelann">Bada bada bada sectetur adipisicing elit, sed
-          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.</p>
+
+      <section> <!--background-imag div -->
+        <div id="blogs"><!--opacity box/contains 2 boxes -->
+          <ul id="left-box"><!--leftbox-->
+            <li class="bald-title"><span class="subtitle">Three</span></li>
+            <li class="li-grafix"><p class="item-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p></li>
+          </ul>
+          <ul id="right-box"><!--righbox-->
+            <li class="li-grafix"><a href="#" id="img1"></a></li>
+            <li class="li-grafix"><a href="#" id="img2"></a></li>
+            <li class="li-grafix"><a href="#" id="img3"></a></li>
+          </ul>
         </div>
       </section>
-      <section id="info">
-        <div id="section_box">
-          <h3 class="title">Info</h3>
-          <p id="slider">img slider.</p>
-          <p id="nelann">Bada bada bada sectetur adipisicing elit, sed
-          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.</p>
+
+      <section> <!--background-imag div -->
+        <div id="extras"><!--opacity box/contains 2 boxes -->
+          <ul id="left-box"><!--leftbox-->
+            <li class="bald-title"><span class="subtitle">Four</span></li>
+            <li class="li-grafix"><p class="item-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p></li>
+          </ul>
+          <ul id="right-box"><!--righbox-->
+            <li class="li-grafix"><a href="#" id="img1"></a></li>
+            <li class="li-grafix"><a href="#" id="img2"></a></li>
+            <li class="li-grafix"><a href="#" id="img3"></a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section> <!--background-imag div -->
+        <div id="info"><!--opacity box/contains 2 boxes -->
+          <ul id="left-box"><!--leftbox-->
+            <li class="bald-title"><span class="subtitle">Five</span></li>
+            <li class="li-grafix">
+              <p class="item-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </li>
+          </ul>
+          <ul id="right-box"><!--righbox-->
+            <li class="li-grafix"><a href="#" id="img1"></a></li>
+            <li class="li-grafix"><a href="#" id="img2"></a></li>
+            <li class="li-grafix"><a href="#" id="img3"></a></li>
+          </ul>
         </div>
       </section>
 
     </main>
 
   </body>
-
+  <script src="/js/jquery.bxslider.min.js"></script>
   <script type="text/javascript" src="dist/all.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </html>

@@ -18,15 +18,19 @@
       width: auto
       height: auto
       position: relative
+      background-color: white
 
       section
         display: flex
-        flex-direction: column
         justify-content: space-between
+        flex-direction: column
         width: 100%
         height: 100vh
-        align-items: flex-start
         position: relative
+        background-image: url('../dist/imgs/polygons.png')
+        background-position: top
+        background-size: cover
+        background-repeat: repeat-y
         @include tablet
           display: flex
           flex-direction: column
@@ -36,129 +40,44 @@
           height: 100vh
           width: 100vw
 
-        #section_box
-          display: flex
-          flex-direction: column
-          justify-content: center
-          position: relative
-          width: 100%
-          height: 40px
-          @include tablet
-            width: 100vw
-            display: flex
-            justify-content: center
-            padding: 25px 0 6px 25px
-
-          .title
-            align-self: flex-start
-            line-height: 30%
-            margin: 22px 0 12px 12px
-            @include tablet
-              font-size: 2.68em
-              line-height: 84px
-              align-self: flex-start
-              margin: 0
-
-              #art-content
-                display: flex
-                width: 27vw
-                height: 62vh
-
-      #art-content
+      #grafix, #info, #extras, #blogs, #web
         display: flex
-        height: 68vh
-        width: 100%
-        flex-direction: column
-        justify-content: space-around
-        @include tablet
-          display: flex
-          justify-content: space-around
-          width: 98vw
-          height: 62vh
-          flex-flow: row
-          padding: 10px
-
-        #slider1
-          display: flex
-          height: 100vh
-          background-image: url('../dist/imgs/goes-around4.png')
-          background-position: center
-          background-size: cover
-          border: 2.2px solid #c94343
-          align-items: center
-          @include tablet
-            width: 80vw
-            background-image: url('../dist/imgs/meri.png')
-            background-position: center
-            background-size: cover
-            height: 60vh
-
-        #slider2
-          display: flex
-          width: 100vw
-          border: 2.2px solid #c2dae1
-          height: 21%
-          @include tablet
-            display: flex
-            justify-content: space-between
-            width: 17vw
-            height: 60vh
-            border: none
-            padding: 0
-            background-color: #f4df84
-
-    #nelann
-      height: auto
-      color: $night
-      font-family: $font-stack-franklyn
-      font-size: $font-size-Mparagraphs
-      flex: 1
-      padding: 5px 10px
-      margin: 8px 0 0 0
-      @include tablet
-        display: flex
-        height: 28vh
-        font-size: 1.5em
-        margin: 13px
-        color: #2c1f0b
-
-    #img-container
-      display: flex
-      justify-content: space-around
-      width: 100vw
-      margin: 0
-      padding: 0
-      height: 60px
-      align-items: center
-      @include tablet
-        display: flex
-        flex-direction: column
         justify-content: space-between
-        width: 100%
-        height: 100%
+        align-items: flex-start
+        flex-wrap: wrap
+        flex-flow: row
+        width: 100vw
+        height: 96%
+        background-color: rgba(234, 234, 234, 0.26)
+        // border: 2px solid green
 
-      .imgs-box
-        width: 24vw
-        align-items: center
-        height: 100%
-        @include tablet
+        #left-box
+          width: 57%
+          height: 100%
+          border: 1px solid gray
+          margin: 0
+          padding: 0
+
+        #right-box
+          width: 40%
+          height: 100%
+          border: 1px solid pink
+          padding: 0
+          margin: 0
           display: flex
-          justify-content: space-around
           flex-direction: column
-          height: 24%
-          width: 100%
-          background-image: url('../dist/imgs/1920.png')
-          background-size: cover
-          background-position: center
-
-        a
-          background-image: url('../dist/imgs/goes-around4.png')
-          background-position: center
-          background-size: cover
-          background-repeat: no-repeat
+          justify-content: flex-start
+          align-items: flex-end
+          .bald-title
+            width: 100%
+            height: 12vh
+          .li-grafix
+            width: 100%
+            height: 30vh
+            border: 1px solid blue
+        .item-description
+          padding: 10px
+          margin: 0
+        .subtitle
           height: 100%
           width: 100%
-          text-align: center
-          color: white
-          @include tablet
-            color: white
