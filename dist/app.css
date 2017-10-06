@@ -834,9 +834,8 @@ h2, h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
@@ -850,9 +849,28 @@ h2, h3 {
     height: 30vh;
     border: 1px solid blue;
   }
+  body main #grafix #right-box .li-grafix #img1, body main #grafix #right-box .li-grafix #img2, body main #grafix #right-box .li-grafix #img3, body main #info #right-box .li-grafix #img1, body main #info #right-box .li-grafix #img2, body main #info #right-box .li-grafix #img3, body main #extras #right-box .li-grafix #img1, body main #extras #right-box .li-grafix #img2, body main #extras #right-box .li-grafix #img3, body main #blogs #right-box .li-grafix #img1, body main #blogs #right-box .li-grafix #img2, body main #blogs #right-box .li-grafix #img3, body main #web #right-box .li-grafix #img1, body main #web #right-box .li-grafix #img2, body main #web #right-box .li-grafix #img3 {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  body main #grafix #right-box .li-grafix #img1, body main #info #right-box .li-grafix #img1, body main #extras #right-box .li-grafix #img1, body main #blogs #right-box .li-grafix #img1, body main #web #right-box .li-grafix #img1 {
+    background-image: url("../dist/imgs/portrait.jpg");
+  }
+  body main #grafix #right-box .li-grafix #img2, body main #info #right-box .li-grafix #img2, body main #extras #right-box .li-grafix #img2, body main #blogs #right-box .li-grafix #img2, body main #web #right-box .li-grafix #img2 {
+    background-image: url("../dist/imgs/goes-around4.png");
+  }
+  body main #grafix #right-box .li-grafix #img3, body main #info #right-box .li-grafix #img3, body main #extras #right-box .li-grafix #img3, body main #blogs #right-box .li-grafix #img3, body main #web #right-box .li-grafix #img3 {
+    background-image: url("../dist/imgs/meri.png");
+  }
   body main #grafix .item-description, body main #info .item-description, body main #extras .item-description, body main #blogs .item-description, body main #web .item-description {
     padding: 10px;
     margin: 0;
+    font-family: "Yantramanav", sans-serif;
   }
   body main #grafix .subtitle, body main #info .subtitle, body main #extras .subtitle, body main #blogs .subtitle, body main #web .subtitle {
     height: 100%;
