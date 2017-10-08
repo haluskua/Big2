@@ -149,7 +149,7 @@ h2, h3 {
     background-color: #353d4f;
   }
   .hamburger-menu:focus {
-    color: #eeeeee;
+    color: #fffb94;
     background-color: #353d4f;
   }
 }
@@ -830,28 +830,51 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    overflow-y: scroll;
   }
   body main #grafix #right-box .bald-title, body main #info #right-box .bald-title, body main #extras #right-box .bald-title, body main #blogs #right-box .bald-title, body main #web #right-box .bald-title {
     width: 100%;
     height: 12vh;
   }
   body main #grafix #right-box .li-grafix, body main #info #right-box .li-grafix, body main #extras #right-box .li-grafix, body main #blogs #right-box .li-grafix, body main #web #right-box .li-grafix {
-    width: 100%;
-    height: 30vh;
-    border: 1px solid blue;
+    width: 163px;
+    height: 28vh;
+    border: 1px solid #ff008f;
+  }
+  body main #grafix #right-box .li-grafix a, body main #info #right-box .li-grafix a, body main #extras #right-box .li-grafix a, body main #blogs #right-box .li-grafix a, body main #web #right-box .li-grafix a {
+    height: 205px;
+    cursor: pointer;
+    height: 100%;
+  }
+  body main #grafix #right-box .li-grafix a #mobile-box, body main #info #right-box .li-grafix a #mobile-box, body main #extras #right-box .li-grafix a #mobile-box, body main #blogs #right-box .li-grafix a #mobile-box, body main #web #right-box .li-grafix a #mobile-box {
+    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+  }
+  body main #grafix #right-box .li-grafix a #mobile-box .img1-tag, body main #info #right-box .li-grafix a #mobile-box .img1-tag, body main #extras #right-box .li-grafix a #mobile-box .img1-tag, body main #blogs #right-box .li-grafix a #mobile-box .img1-tag, body main #web #right-box .li-grafix a #mobile-box .img1-tag {
+    width: 90%;
+    height: 80%;
+    background-image: url("../dist/imgs/hero.png") center cover no-repeat;
+  }
+  body main #grafix #right-box .li-grafix a #mobile-box p, body main #info #right-box .li-grafix a #mobile-box p, body main #extras #right-box .li-grafix a #mobile-box p, body main #blogs #right-box .li-grafix a #mobile-box p, body main #web #right-box .li-grafix a #mobile-box p {
+    width: 85%;
+    height: 16%;
+    background-color: green;
   }
   body main #grafix #right-box .li-grafix #img1, body main #grafix #right-box .li-grafix #img2, body main #grafix #right-box .li-grafix #img3, body main #info #right-box .li-grafix #img1, body main #info #right-box .li-grafix #img2, body main #info #right-box .li-grafix #img3, body main #extras #right-box .li-grafix #img1, body main #extras #right-box .li-grafix #img2, body main #extras #right-box .li-grafix #img3, body main #blogs #right-box .li-grafix #img1, body main #blogs #right-box .li-grafix #img2, body main #blogs #right-box .li-grafix #img3, body main #web #right-box .li-grafix #img1, body main #web #right-box .li-grafix #img2, body main #web #right-box .li-grafix #img3 {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
     margin: 0;
     padding: 0;
     background-position: center;

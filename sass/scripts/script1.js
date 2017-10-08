@@ -1,5 +1,13 @@
-
-
+    // 
+    //
+    // $(function() {
+    //
+    //   setInterval(function() {
+    //     $('#right-box .li-grafix').animate({'margin-top': '-=100px'}, 1000);
+    //   }, 3000);
+    //
+    //
+    // });
 
 
 

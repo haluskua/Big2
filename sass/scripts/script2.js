@@ -8,6 +8,8 @@ $(document).ready(function(){
 //function to the css rule
 function checkSize(){
   if ($(".hetpage").css("width") > "480px"){
+
+
     // once width of header is less than 480 then jqery runs
       $(window).scroll(function() {
         var scrollTop = $(window).scrollTop();
@@ -17,6 +19,7 @@ function checkSize(){
           $('.mobile-container').addClass('sticky');
           $('#folders-container').addClass('reduced');
           // $('#folders-container').addClass('reduced');
+
         } else {
             /*restoring back to normal */
           $('.mobile-container').removeClass('sticky');
@@ -26,22 +29,22 @@ function checkSize(){
       });
 
       //Get the header height
-      var headerHeight = $('#folders-container').outerHeight();
+      var headerHeight2 = $('.mobile-container').outerHeight();
       /* Stick navigation to the top of the page */
 
       $('.hamburger-menu').click(function(e) {
       var linkHref = $(this).attr('href');
       $('html, body').animate({
-        scrollTop: $(linkHref).offset().top - headerHeight
+        scrollTop: $(linkHref).offset().top - headerHeight2
       }, 1000);
       e.preventDefault();
     });
 
     var stickyNavTop = $('.nav-folders').offset().top;
+
   }
 
-    var headerHeight = 86;
-
+    var headerHeight = 22;
     $('.hamburger-menu').click(function(e) {
         var linkHref = $(this).attr('href');
         $('html, body').animate({
@@ -49,6 +52,8 @@ function checkSize(){
         }, 800);
         e.preventDefault();
       });
+
+
 
         //show menu bar onclick on main logo
         $(".haus-menu, #hetinfo").click(function(){
@@ -67,5 +72,49 @@ function checkSize(){
         $(".menu").on("click", function(){
           $(".haus").show(500);
         });
+
+
+// code for lightbox
+        //
+        // $("img").click(function(){
+        //   $src=$(this).attr("src");
+        //     if(!$("#imgl"))
+        //   });
+        // });
+        //
+
+
+
+
+
+
+
+
+
+        // //onclick function for image gallery
+        // $('#img1').on("click", function() {
+        //     $('#mobile-box').css('display','flex');
+        //     // $('#mobile-box').addClass('.mobile-image-box');
+        // });
+
+
+
+        //
+        //
+        // var height = 600
+        // var animationSpeed = 1000
+        // var pause = 3000;
+        // setInterval(function() {
+        //   $('#right-box .li-grafix').animate({'margin-top': '-='+height}, animationSpeed);
+        // }, pause);
+        //
+        //
+        //
+
+
     }
+
+
+
+
   });

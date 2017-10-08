@@ -65,20 +65,42 @@
           padding: 0
           margin: 0
           display: flex
-          flex-direction: column
+          flex-wrap: wrap
           justify-content: space-around
           align-items: flex-end
+          overflow-y: scroll
           .bald-title
             width: 100%
             height: 12vh
           .li-grafix
             // display: flex
-            width: 100%
-            height: 30vh
-            border: 1px solid blue
-            #img1, #img2, #img3
-              width: 100%
+            width: 163px
+            height: 28vh
+            border: 1px solid #ff008f
+            a
+              height: 205px
+              cursor: pointer
               height: 100%
+
+              #mobile-box
+                display: none
+                display: flex
+                flex-wrap: wrap
+                width: 100vw
+                height: 100vh
+                .img1-tag
+                  width: 90%
+                  height: 80%
+                  background-image: url('../dist/imgs/hero.png') center cover no-repeat
+                p
+                  width: 85%
+                  height: 16%
+                  background-color: green
+
+
+            #img1, #img2, #img3
+              width: 100vw
+              // height: 100%
               margin: 0
               padding: 0
               background-position: center
