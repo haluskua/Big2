@@ -27,10 +27,11 @@
         width: 100%
         height: 100vh
         position: relative
-        // background-image: url('../dist/imgs/polygons.png')
-        // background-position: top
-        // background-size: cover
-        // background-repeat: repeat-y
+        background-image: url('../dist/imgs/polygons.png')
+        background-position: top
+        background-size: cover
+        background-repeat: repeat-y
+        border: 3.5px solid rgba(249, 249, 249, 0.84)
         @include tablet
           display: flex
           flex-direction: column
@@ -49,11 +50,22 @@
           padding: 0
 
           .left-box
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
             width: 100%
-            border: 1px solid green
+            .grafix-infor
+              margin: 10px
+              padding-bottom: 96px
+              color: #544d41
+              font-family: $font-stack-old-style
+              h1
+                font-family: $font-stack-audio
+                letter-spacing: 0.08em
 
           #lb-imgs
-            width: 100%
+            width: 80%
             height: 100%
             overflow: scroll
             display: flex
@@ -61,6 +73,10 @@
             justify-content: space-between
             padding: 0
             margin: auto
+            background-color: rgba(219, 216, 138, 0.14)
+            border: 0.5px solid rgba(254, 255, 160, 0.29)
+
+
 
             #img-list
               display: flex
@@ -69,8 +85,8 @@
               height: 22%
               padding-top: 20px
               margin: auto
+              cursor: pointer
               .img
-                width: 70%
                 height: 100%
                 cursor: pointer
                 position: relative

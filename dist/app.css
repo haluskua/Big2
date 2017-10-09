@@ -768,6 +768,11 @@ h2, h3 {
     width: 100%;
     height: 100vh;
     position: relative;
+    background-image: url("../dist/imgs/polygons.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: repeat-y;
+    border: 3.5px solid rgba(249, 249, 249, 0.84);
   }
 }
 
@@ -803,11 +808,33 @@ h2, h3 {
     padding: 0;
   }
   body main section #grafix .left-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
-    border: 1px solid green;
+  }
+  body main section #grafix .left-box .grafix-infor {
+    margin: 10px;
+    padding-bottom: 96px;
+    color: #544d41;
+    font-family: "Yantramanav", sans-serif;
+  }
+  body main section #grafix .left-box .grafix-infor h1 {
+    font-family: "Audiowide";
+    letter-spacing: 0.08em;
   }
   body main section #grafix #lb-imgs {
-    width: 100%;
+    width: 80%;
     height: 100%;
     overflow: scroll;
     display: -webkit-box;
@@ -820,6 +847,8 @@ h2, h3 {
             justify-content: space-between;
     padding: 0;
     margin: auto;
+    background-color: rgba(219, 216, 138, 0.14);
+    border: 0.5px solid rgba(254, 255, 160, 0.29);
   }
   body main section #grafix #lb-imgs #img-list {
     display: -webkit-box;
@@ -832,9 +861,9 @@ h2, h3 {
     height: 22%;
     padding-top: 20px;
     margin: auto;
+    cursor: pointer;
   }
   body main section #grafix #lb-imgs #img-list .img {
-    width: 70%;
     height: 100%;
     cursor: pointer;
     position: relative;

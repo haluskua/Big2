@@ -79,7 +79,9 @@ function checkSize(){
         $(".img").click(function(){
           $src=$(this).attr("src");
             if(!$("#light-box").length > 0) {
+              //creates a new div and includes lightbox properties
               $("#mygrafix").append("<div id='light-box'><span class='material-icons'>close</span><img src=''></div>");
+        
               $("#light-box").show();
               $("#light-box img").attr("src",$src);
             }else{
