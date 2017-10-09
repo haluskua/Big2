@@ -829,7 +829,7 @@ h2, h3 {
     color: #544d41;
     font-family: "Yantramanav", sans-serif;
   }
-  body main section #grafix .left-box .grafix-infor h1 {
+  body main section #grafix .left-box .grafix-infor #section-title {
     font-family: "Audiowide";
     letter-spacing: 0.08em;
   }
