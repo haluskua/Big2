@@ -75,15 +75,21 @@ function checkSize(){
 
 
 // code for lightbox
-        //
-        // $("img").click(function(){
-        //   $src=$(this).attr("src");
-        //     if(!$("#imgl"))
-        //   });
-        // });
-        //
 
-
+        $(".img").click(function(){
+          $src=$(this).attr("src");
+            if(!$("#light-box").length > 0) {
+              $("#mygrafix").append("<div id='light-box'><span class='material-icons'>close</span><img src=''></div>");
+              $("#light-box").show();
+              $("#light-box img").attr("src",$src);
+            }else{
+              $("#light-box").show();
+              $("#light-box img").attr("src",$src);
+            }
+          });
+          $("#mygrafix").on("click", "#light-box span", function() {
+            $("#light-box").hide();
+          });
 
 
 

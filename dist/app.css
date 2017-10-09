@@ -768,10 +768,6 @@ h2, h3 {
     width: 100%;
     height: 100vh;
     position: relative;
-    background-image: url("../dist/imgs/polygons.png");
-    background-position: top;
-    background-size: cover;
-    background-repeat: repeat-y;
   }
 }
 
@@ -794,110 +790,74 @@ h2, h3 {
 }
 
 @media only screen and (min-width: 1em) and (orientation: portrait) {
-  body main #grafix, body main #info, body main #extras, body main #blogs, body main #web {
+  body main section #grafix {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
-    width: 100vw;
-    height: 96%;
-    background-color: rgba(234, 234, 234, 0.26);
-  }
-  body main #grafix #left-box, body main #info #left-box, body main #extras #left-box, body main #blogs #left-box, body main #web #left-box {
-    width: 57%;
+    width: 100%;
     height: 100%;
-    border: 1px solid gray;
     margin: 0;
     padding: 0;
   }
-  body main #grafix #right-box, body main #info #right-box, body main #extras #right-box, body main #blogs #right-box, body main #web #right-box {
-    width: 40%;
+  body main section #grafix .left-box {
+    width: 100%;
+    border: 1px solid green;
+  }
+  body main section #grafix #lb-imgs {
+    width: 100%;
     height: 100%;
-    border: 1px solid pink;
-    padding: 0;
-    margin: 0;
+    overflow: scroll;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    overflow-y: scroll;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0;
+    margin: auto;
   }
-  body main #grafix #right-box .bald-title, body main #info #right-box .bald-title, body main #extras #right-box .bald-title, body main #blogs #right-box .bald-title, body main #web #right-box .bald-title {
+  body main section #grafix #lb-imgs #img-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
-    height: 12vh;
+    height: 22%;
+    padding-top: 20px;
+    margin: auto;
   }
-  body main #grafix #right-box .li-grafix, body main #info #right-box .li-grafix, body main #extras #right-box .li-grafix, body main #blogs #right-box .li-grafix, body main #web #right-box .li-grafix {
-    width: 163px;
-    height: 28vh;
-    border: 1px solid #ff008f;
-  }
-  body main #grafix #right-box .li-grafix a, body main #info #right-box .li-grafix a, body main #extras #right-box .li-grafix a, body main #blogs #right-box .li-grafix a, body main #web #right-box .li-grafix a {
-    height: 205px;
+  body main section #grafix #lb-imgs #img-list .img {
+    width: 70%;
+    height: 100%;
     cursor: pointer;
-    height: 100%;
+    position: relative;
   }
-  body main #grafix #right-box .li-grafix a #mobile-box, body main #info #right-box .li-grafix a #mobile-box, body main #extras #right-box .li-grafix a #mobile-box, body main #blogs #right-box .li-grafix a #mobile-box, body main #web #right-box .li-grafix a #mobile-box {
-    display: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 100vw;
-    height: 100vh;
-  }
-  body main #grafix #right-box .li-grafix a #mobile-box .img1-tag, body main #info #right-box .li-grafix a #mobile-box .img1-tag, body main #extras #right-box .li-grafix a #mobile-box .img1-tag, body main #blogs #right-box .li-grafix a #mobile-box .img1-tag, body main #web #right-box .li-grafix a #mobile-box .img1-tag {
-    width: 90%;
-    height: 80%;
-    background-image: url("../dist/imgs/hero.png") center cover no-repeat;
-  }
-  body main #grafix #right-box .li-grafix a #mobile-box p, body main #info #right-box .li-grafix a #mobile-box p, body main #extras #right-box .li-grafix a #mobile-box p, body main #blogs #right-box .li-grafix a #mobile-box p, body main #web #right-box .li-grafix a #mobile-box p {
-    width: 85%;
-    height: 16%;
-    background-color: green;
-  }
-  body main #grafix #right-box .li-grafix #img1, body main #grafix #right-box .li-grafix #img2, body main #grafix #right-box .li-grafix #img3, body main #info #right-box .li-grafix #img1, body main #info #right-box .li-grafix #img2, body main #info #right-box .li-grafix #img3, body main #extras #right-box .li-grafix #img1, body main #extras #right-box .li-grafix #img2, body main #extras #right-box .li-grafix #img3, body main #blogs #right-box .li-grafix #img1, body main #blogs #right-box .li-grafix #img2, body main #blogs #right-box .li-grafix #img3, body main #web #right-box .li-grafix #img1, body main #web #right-box .li-grafix #img2, body main #web #right-box .li-grafix #img3 {
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  body main #grafix #right-box .li-grafix #img1, body main #info #right-box .li-grafix #img1, body main #extras #right-box .li-grafix #img1, body main #blogs #right-box .li-grafix #img1, body main #web #right-box .li-grafix #img1 {
-    background-image: url("../dist/imgs/portrait.jpg");
-  }
-  body main #grafix #right-box .li-grafix #img2, body main #info #right-box .li-grafix #img2, body main #extras #right-box .li-grafix #img2, body main #blogs #right-box .li-grafix #img2, body main #web #right-box .li-grafix #img2 {
-    background-image: url("../dist/imgs/goes-around4.png");
-  }
-  body main #grafix #right-box .li-grafix #img3, body main #info #right-box .li-grafix #img3, body main #extras #right-box .li-grafix #img3, body main #blogs #right-box .li-grafix #img3, body main #web #right-box .li-grafix #img3 {
-    background-image: url("../dist/imgs/meri.png");
-  }
-  body main #grafix .item-description, body main #info .item-description, body main #extras .item-description, body main #blogs .item-description, body main #web .item-description {
-    padding: 10px;
-    margin: 0;
-    font-family: "Yantramanav", sans-serif;
-  }
-  body main #grafix .subtitle, body main #info .subtitle, body main #extras .subtitle, body main #blogs .subtitle, body main #web .subtitle {
+  body main #light-box {
+    position: fixed;
     height: 100%;
     width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: 0;
+    color: #fff;
+    z-index: 999999999;
+  }
+  body main #light-box img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 99999;
   }
 }
 
