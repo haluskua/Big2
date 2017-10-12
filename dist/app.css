@@ -749,7 +749,7 @@ h2, h3 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    width: auto;
+    max-width: 100%;
     height: auto;
     position: relative;
     background-color: white;
@@ -765,7 +765,7 @@ h2, h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
+    max-width: 100%;
     height: 100vh;
     position: relative;
     background-image: url("../dist/imgs/polygons.png");
@@ -821,7 +821,7 @@ h2, h3 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
+    width: 68%;
   }
   body main section #grafix .left-box .grafix-infor {
     margin: 10px;
@@ -834,7 +834,7 @@ h2, h3 {
     letter-spacing: 0.08em;
   }
   body main section #grafix #lb-imgs {
-    width: 80%;
+    width: 36%;
     height: 100%;
     overflow: scroll;
     display: -webkit-box;
@@ -849,6 +849,7 @@ h2, h3 {
     margin: auto;
     background-color: rgba(219, 216, 138, 0.14);
     border: 0.5px solid rgba(254, 255, 160, 0.29);
+    overflow-y: scroll;
   }
   body main section #grafix #lb-imgs #img-list {
     display: -webkit-box;
@@ -858,10 +859,10 @@ h2, h3 {
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
-    height: 22%;
-    padding-top: 20px;
+    height: 10%;
     margin: auto;
     cursor: pointer;
+    padding-bottom: 10px;
   }
   body main section #grafix #lb-imgs #img-list .img {
     height: 100%;
@@ -873,7 +874,7 @@ h2, h3 {
     position: fixed;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.98);
     top: 0;
     left: 0;
     color: #fff;

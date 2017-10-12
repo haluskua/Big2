@@ -15,7 +15,7 @@
       display: flex
       flex-direction: column
       justify-content: flex-start
-      width: auto
+      max-width: 100%
       height: auto
       position: relative
       background-color: white
@@ -24,7 +24,7 @@
         display: flex
         justify-content: space-between
         flex-direction: column
-        width: 100%
+        max-width: 100%
         height: 100vh
         position: relative
         background-image: url('../dist/imgs/polygons.png')
@@ -55,7 +55,7 @@
             flex-direction: column
             justify-content: center
             align-items: center
-            width: 100%
+            width: 68%
             .grafix-infor
               margin: 10px
               padding-bottom: 96px
@@ -67,7 +67,7 @@
                 letter-spacing: 0.08em
 
           #lb-imgs
-            width: 80%
+            width: 36%
             height: 100%
             overflow: scroll
             display: flex
@@ -77,15 +77,17 @@
             margin: auto
             background-color: rgba(219, 216, 138, 0.14)
             border: 0.5px solid rgba(254, 255, 160, 0.29)
+            overflow-y: scroll
+
 
             #img-list
               display: flex
               justify-content: center
               width: 100%
-              height: 22%
-              padding-top: 20px
+              height: 10%
               margin: auto
               cursor: pointer
+              padding-bottom: 10px
               .img
                 height: 100%
                 max-width: 100%
@@ -97,7 +99,7 @@
         position: fixed
         height: 100%
         width: 100%
-        background: rgba(0, 0, 0, 0.9)
+        background: rgba(0, 0, 0, 0.98)
         top: 0
         left: 0
         color: #fff
