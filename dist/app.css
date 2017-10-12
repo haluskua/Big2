@@ -150,7 +150,7 @@ h2, h3 {
   }
   .hamburger-menu:focus {
     color: #fffb94;
-    background-color: #353d4f;
+    background-color: #1c1f25;
   }
 }
 
@@ -865,6 +865,7 @@ h2, h3 {
   }
   body main section #grafix #lb-imgs #img-list .img {
     height: 100%;
+    max-width: 100%;
     cursor: pointer;
     position: relative;
   }
@@ -887,7 +888,7 @@ h2, h3 {
     bottom: 0;
     margin: auto;
     z-index: 99999;
-    border: 10px solid #231414;
+    border: 10px solid #000;
   }
 }
 
