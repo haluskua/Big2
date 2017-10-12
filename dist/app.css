@@ -862,7 +862,8 @@ h2, h3 {
     height: 10%;
     margin: auto;
     cursor: pointer;
-    padding-bottom: 10px;
+    border: 1px solid #f1cf8c;
+    margin: 5px 0 5px 0;
   }
   body main section #grafix #lb-imgs #img-list .img {
     height: 100%;
