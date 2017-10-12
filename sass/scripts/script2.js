@@ -85,7 +85,7 @@ function checkSize(){
               $("#light-box").show();
               $("#light-box img").attr("src",$src);
             }else{
-              $("#light-box").show();
+              $("#light-box").hide();
               $("#light-box img").attr("src",$src);
             }
           });
@@ -95,6 +95,7 @@ function checkSize(){
           $("#mygrafix").on("click", "#light-box span", function() {
             $("#light-box").hide();
           });
+
 
 
 
