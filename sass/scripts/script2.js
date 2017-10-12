@@ -85,7 +85,7 @@ function checkSize(){
               $("#light-box").show();
               $("#light-box img").attr("src",$src);
             }else{
-              $("#light-box").hide();
+              $("#light-box").show();
               $("#light-box img").attr("src",$src);
             }
           });
