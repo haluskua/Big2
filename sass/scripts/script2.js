@@ -81,22 +81,27 @@ function checkSize(){
             if(!$("#light-box").length > 0) {
               //creates a new div and includes lightbox properties
               $("#mygrafix").append("<div id='light-box'><span class='material-icons'>close</span><img src=''></div>");
-
               $("#light-box").show();
               $("#light-box img").attr("src",$src);
+
+              $("#light-box").append("<div id='next'<span class ='next'>-></span></div>");
+              $("#light-box").append("<div id='prev'<span class ='prev'><-</span></div>");
+
+
             }else{
               $("#light-box").show();
               $("#light-box img").attr("src",$src);
             }
           });
-          $("#light-box").click(function(){
-            $src=$(this).append("#dive id='charmtag'>kjkjkjkj</>");
-          });
           $("#mygrafix").on("click", "#light-box span", function() {
             $("#light-box").hide();
           });
 
-
+          // $(".next").on('click', function(){
+          //   var currentImg = $(".active");
+          //   var nextImg = currentImg.next();
+          //
+          // });
 
 
 
