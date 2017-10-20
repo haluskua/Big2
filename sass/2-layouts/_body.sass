@@ -7,10 +7,6 @@
     position: relative
     height: 100%
     margin: 0 auto
-    //
-    // .shifted
-    //   margin-top: 78px
-
     main
       display: flex
       flex-direction: column
@@ -20,9 +16,46 @@
       position: relative
       background-color: white
 
+      .slider-inner
+      	width: 90%
+      	position: relative
+      	overflow: hidden
+      	float: left
+      	padding: 3px
+      	border: solid 1px #666
+
+      .slider-inner img
+      	display: none
+      	width: 100%
+      	// height: 300px
+
+      .slider-inner img.active
+      	display: inline-block
+
+      #prext
+        display: flex
+        justify-content: space-around
+        width: 100%
+        height: auto
+
+      .prev,.next
+      	float: left
+      	// margin-top: 240px
+      	cursor: pointer
+
+      .prev
+      	position: relative
+      	margin-right: -45px
+      	z-index: 100
+
+      .next
+      	position: relative
+      	margin-left: -45px
+      	z-index: 100
+
       section
         display: flex
-        justify-content: space-between
+        justify-content: flex-start
         flex-direction: column
         max-width: 100%
         height: 100vh
@@ -44,110 +77,10 @@
 
         #grafix
           display: flex
+          flex-direction: column
           justify-content: space-between
+          align-items: center
           width: 100%
-          height: 100%
+          height: auto
           margin: 0
           padding: 0
-
-          .left-box
-            display: flex
-            flex-direction: column
-            justify-content: center
-            align-items: center
-            width: 68%
-            .grafix-infor
-              margin: 10px
-              padding-bottom: 96px
-              color: #544d41
-              font-family: $font-stack-old-style
-
-              #section-title
-                font-family: $font-stack-audio
-                letter-spacing: 0.08em
-
-          #lb-imgs
-            width: 36%
-            height: 100%
-            overflow: scroll
-            display: flex
-            flex-wrap: wrap
-            justify-content: space-between
-            padding: 0
-            margin: auto
-            background-color: rgba(219, 216, 138, 0.14)
-            border: 0.5px solid rgba(254, 255, 160, 0.29)
-            overflow-y: scroll
-
-
-            #img-list
-              display: flex
-              justify-content: center
-              width: 100%
-              height: 10%
-              margin: auto
-              cursor: pointer
-              border: 1px solid #f1cf8c
-              margin: 5px 0 5px 0
-              .img
-                height: 100%
-                max-width: 100%
-                cursor: pointer
-                position: relative
-
-
-      #light-box
-        position: fixed
-        height: 100%
-        width: 100%
-        background: rgba(0, 0, 0, 0.98)
-        top: 0
-        left: 0
-        color: #fff
-        z-index: 999999999
-
-        img
-         width: 94%
-         position: absolute
-         left: 0
-         right: 0
-         top: 0
-         bottom: 0
-         margin: auto
-         z-index: 99999
-         border: 10px solid #000
-
-        .next
-          z-index: 99999
-          margin: auto
-          position: absolute
-          right: 10px
-          bottom: 91px
-          width: 21%
-          // border: 2px solid #738a8a
-          text-align: center
-          height: 5%
-          line-height: 27px
-          font-size: 2.7em
-          letter-spacing: 0.04em
-          border-radius: 7px
-          color: #738a8a
-          font-family: $font-stack-thin
-
-
-        .prev
-          z-index: 99999
-          margin: auto
-          position: absolute
-          left: 10px
-          bottom: 91px
-          width: 21%
-          // border-bottom: 2px solid #796349
-          text-align: center
-          height: 5%
-          line-height: 27px
-          font-size: 2.7em
-          letter-spacing: 0.04em
-          border-radius: 7px
-          color: #738a8a
-          font-family: $font-stack-thin

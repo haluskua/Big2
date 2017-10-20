@@ -754,13 +754,51 @@ h2, h3 {
     position: relative;
     background-color: white;
   }
+  body main .slider-inner {
+    width: 90%;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    padding: 3px;
+    border: solid 1px #666;
+  }
+  body main .slider-inner img {
+    display: none;
+    width: 100%;
+  }
+  body main .slider-inner img.active {
+    display: inline-block;
+  }
+  body main #prext {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    height: auto;
+  }
+  body main .prev, body main .next {
+    float: left;
+    cursor: pointer;
+  }
+  body main .prev {
+    position: relative;
+    margin-right: -45px;
+    z-index: 100;
+  }
+  body main .next {
+    position: relative;
+    margin-left: -45px;
+    z-index: 100;
+  }
   body main section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -799,130 +837,20 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  body main section #grafix .left-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 68%;
-  }
-  body main section #grafix .left-box .grafix-infor {
-    margin: 10px;
-    padding-bottom: 96px;
-    color: #544d41;
-    font-family: "Yantramanav", sans-serif;
-  }
-  body main section #grafix .left-box .grafix-infor #section-title {
-    font-family: "Audiowide";
-    letter-spacing: 0.08em;
-  }
-  body main section #grafix #lb-imgs {
-    width: 36%;
-    height: 100%;
-    overflow: scroll;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
     padding: 0;
-    margin: auto;
-    background-color: rgba(219, 216, 138, 0.14);
-    border: 0.5px solid rgba(254, 255, 160, 0.29);
-    overflow-y: scroll;
-  }
-  body main section #grafix #lb-imgs #img-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-    height: 10%;
-    margin: auto;
-    cursor: pointer;
-    border: 1px solid #f1cf8c;
-    margin: 5px 0 5px 0;
-  }
-  body main section #grafix #lb-imgs #img-list .img {
-    height: 100%;
-    max-width: 100%;
-    cursor: pointer;
-    position: relative;
-  }
-  body main #light-box {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.98);
-    top: 0;
-    left: 0;
-    color: #fff;
-    z-index: 999999999;
-  }
-  body main #light-box img {
-    width: 94%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    z-index: 99999;
-    border: 10px solid #000;
-  }
-  body main #light-box .next {
-    z-index: 99999;
-    margin: auto;
-    position: absolute;
-    right: 10px;
-    bottom: 91px;
-    width: 21%;
-    text-align: center;
-    height: 5%;
-    line-height: 27px;
-    font-size: 2.7em;
-    letter-spacing: 0.04em;
-    border-radius: 7px;
-    color: #738a8a;
-    font-family: "Amatic SC", cursive;
-  }
-  body main #light-box .prev {
-    z-index: 99999;
-    margin: auto;
-    position: absolute;
-    left: 10px;
-    bottom: 91px;
-    width: 21%;
-    text-align: center;
-    height: 5%;
-    line-height: 27px;
-    font-size: 2.7em;
-    letter-spacing: 0.04em;
-    border-radius: 7px;
-    color: #738a8a;
-    font-family: "Amatic SC", cursive;
   }
 }
 
