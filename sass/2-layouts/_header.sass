@@ -21,6 +21,7 @@
 	#folders-container
 		display: flex
 		flex-wrap: wrap
+		justify-content: space-between
 		width: 100%
 		margin: auto
 		padding: 0
@@ -64,8 +65,8 @@
 		text-align: center
 		font-family: $font-stack-audio
 		text-decoration: none
-		background-color: #ffe224
-		color: #655a5a
+		background-color: #29343a
+		color: white
 		&:active
 			background-color: #353d4f
 		&:focus
@@ -89,7 +90,7 @@
 			overflow: hidden
 			width: 100vw
 			height: 100vh
-			// background: url('../dist/imgs/nlsmall5.png') top no-repeat
+			background: url('../dist/imgs/polygons.png') top no-repeat
 			background-size: auto
 			@include tablet
 				justify-content: center
@@ -98,58 +99,57 @@
 				@include desktop
 					display: flex
 					background-color: green
-			@include phone
-				.haus
+
+	.haus
+		display: flex
+		border-radius: 0.3px
+		background-color: #29343a
+		z-index: 999999
+		top: 0
+		left: 0
+		width: 100%
+		position: fixed
+		@include tablet
+			top: 0
+			left: 0
+			height: 60px
+			display: none
+		ul
+			display: flex
+			justify-content: space-between
+			position: relative
+			width: 60%
+			height: auto
+			margin: 0
+			padding: 0
+			li
+				justify-content: center
+				position: relative
+				width: 81px
+				height: 100%
+				.haus-menu
 					display: flex
-					border-radius: 0.3px
-					background-color: #ffe224
-					z-index: 999999
-					bottom: 0
-					left: 0
-					width: 100%
-					position: fixed
-					@include tablet
-						top: 0
-						left: 0
-						height: 60px
-						display: none
-					ul
-						display: flex
-						justify-content: space-between
-						position: relative
-						width: 60%
-						height: auto
-						margin: 0
-						padding: 0
-						li
-							justify-content: center
-							position: relative
-							width: 81px
-							height: 100%
-							.haus-menu
-								display: flex
-								font-family: $font-stack-audio
-								color: white
-								font-size: 1.1em
-								line-height: 48px
-								padding-left: 10px
-								color: #655a5a
-								width: 83px
-							.main-menu
-								display: flex
-								justify-content: center
-								height: auto
-								text-decoration: none
-								font-size: 2.6em
-								font-family: $font-stack-paragraph
-								letter-spacing: 0.03em
-								color: #ae8950
-								cursor: pointer
-								width: 67px
-								bottom: 0px
-								left: 0px
-								z-index: 99999
-								background-color: #131426
+					font-family: $font-stack-audio
+					color: white
+					font-size: 1.1em
+					line-height: 48px
+					padding-left: 10px
+					width: 83px
+				.main-menu
+					display: flex
+					justify-content: center
+					height: auto
+					text-decoration: none
+					font-size: 2.6em
+					font-family: $font-stack-paragraph
+					letter-spacing: 0.03em
+					color: #ae8950
+					cursor: pointer
+					width: 67px
+					bottom: 0px
+					left: 0px
+					z-index: 99999
+					background-color: #131426
 
 	@include phone
 		.mobile-container

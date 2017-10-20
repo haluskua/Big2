@@ -57,14 +57,14 @@ function checkSize(){
 
         //show menu bar onclick on main logo
         $(".haus-menu, #hetinfo").click(function(){
-          $(".mobile-container").show();
-          $(".nav-folders").show();
-          $(".exit-menu").show();
+          $(".mobile-container").show(900);
+          $(".nav-folders").show(880);
+          $(".exit-menu").show(12000);
           $(".haus").hide(1000);
         });
     //exit menu bar onclick
         $(".exit-menu").on("click", function(){
-          $(".mobile-container").hide(200);
+          $(".mobile-container").hide(500);
         });
         $('.main-menu').on("click", function(){
           $("#menu-buttons").show(1000);
