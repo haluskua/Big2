@@ -1,6 +1,136 @@
 
 
 @include phone
+	.hetpage
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+		overflow: hidden
+		width: 100vw
+		height: 100vh
+		background: url('../dist/imgs/1920.png') top no-repeat
+		background-size: auto
+		@include tablet
+			justify-content: center
+			flex-grow: 1
+			height: 100vh
+			@include desktop
+				display: flex
+				background-color: green
+
+	.Colsplit-between
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		width: 100%
+		height: 76%
+		position: relative
+		@include tablet
+			height: 100vh
+			width: 100vw
+			margin: auto
+			padding: 0
+
+
+	#Colsplit-box1
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		height: 68%
+		position: relative
+		@include tablet
+
+		.landing-page
+			display: flex
+			flex-direction: column
+			justify-content: space-around
+			width: 80%
+			align-self: center
+			margin-top: -20px
+			@include tablet
+				height: 15%
+
+			.hetpage-li
+				display: flex
+				justify-content: center
+				margin: auto
+
+				#thin
+					margin: auto
+					@include tablet
+						background-color: green
+
+					#bulgeword
+						font-family: sans-serif
+						font-weight: lighter
+						font-size: 0.8em
+						color: #7f7a72
+						font-style: normal
+						@include tablet
+							color: #b3790b
+							font-size: 1.2em
+							letter-spacing: 0.3em
+
+				#hetinfo
+					margin: auto
+					border-bottom: 1px dotted orange
+					text-align: center
+					height: 27px
+					line-height: 27px
+					@include tablet
+						height: 26px
+						line-height: 0px
+						width: 100%
+
+					#mini-desc
+						font-size: 0.75em
+						letter-spacing: 0.05em
+						color: #4DB0BF
+						font-family: sans-serif
+						font-weight: lighter
+
+
+		.bio
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			align-items: center
+			@include tablet
+				margin-top: 30px
+			.intro
+				font-family: sans-serif
+				font-size: 0.64em
+				font-style: italic
+				color: #797269
+				height: 45%
+				text-align: justify
+				margin: auto
+				letter-spacing: 0.02em
+				@include tablet
+					color: #251202
+					padding-top: 0
+					margin-top: 0
+					font-family: $font-stack-old-style
+					font-size: 1.67em
+					letter-spacing: 0.02em
+			#my-name
+				color: #5e450d
+				font-family: cursive
+				font-size: 0.97em
+				letter-spacing: 0.02em
+				text-transform: capitalize
+				font-weight: lighter
+				margin: auto
+				height: 45%
+				padding-top: 16px
+				@include tablet
+					margin: 0 auto
+					padding: 0
+	#coa-menu
+		align-self: flex-start
+		margin-left: 30px
+		display: none
+
 	.folders-container2
 		display: none
 		@include tablet
@@ -34,11 +164,12 @@
 			flex-flow: row
 
 		.nav-folders
-			display: flex
 			height: auto
-			margin: 0.3px
-			padding: 0
+			margin: 1.5px
+			padding: 5px
 			display: none
+			width: 100%
+			border-top: 1px solid darkorange
 			@include tablet
 				display: flex
 				justify-content: space-around
@@ -48,30 +179,45 @@
 	#home-logo
 		display: flex
 		flex-direction: column
-		height: 43%
 		@include tablet
 			height: 40%
 
 		.imgslider
 			width: 80%
 			position: relative
+	 .logo-home
+			height: 100%
+			background: url('../dist/imgs/newlogo.png') no-repeat
+			background-size: cover
+			background-position: center
+			overflow: hidden
+			z-index: 99999
+			display: none
+			@include tablet
+				z-index: 999
 
 	.hamburger-menu
 		display: flex
 		flex-direction: column
 		justify-content: space-between
 		line-height: 38px
+		width: 100%
 		cursor: pointer
 		text-align: center
-		font-family: $font-stack-audio
+		font-family: sans-serif
 		text-decoration: none
 		background-color: #29343a
-		color: white
+		color: #4DB0BF
 		&:active
-			background-color: #353d4f
+			color: #ffc47d
 		&:focus
-			color: #fffb94
+			color: #ffc47d
 			background-color: #1c1f25
+		.nav-archives
+			font-size: 0.82em
+			@include tablet
+				width: 16vw
+				border: 1px solid #f4df84
 		@include tablet
 			cursor: pointer
 			line-height: 114px
@@ -82,33 +228,17 @@
 			line-height: 81px
 
 
-	@include phone
-		.hetpage
-			display: flex
-			flex-direction: column
-			justify-content: space-around
-			overflow: hidden
-			width: 100vw
-			height: 100vh
-			background: url('../dist/imgs/polygons.png') top no-repeat
-			background-size: auto
-			@include tablet
-				justify-content: center
-				flex-grow: 1
-				height: 100vh
-				@include desktop
-					display: flex
-					background-color: green
-
 	.haus
 		display: flex
 		border-radius: 0.3px
 		background-color: #29343a
 		z-index: 999999
+		height: 36px
 		top: 0
 		left: 0
 		width: 100%
 		position: fixed
+
 		@include tablet
 			top: 0
 			left: 0
@@ -122,6 +252,7 @@
 			height: auto
 			margin: 0
 			padding: 0
+
 			li
 				justify-content: center
 				position: relative
@@ -130,9 +261,9 @@
 				.haus-menu
 					display: flex
 					font-family: $font-stack-audio
-					color: white
+					color: #ffc47d
 					font-size: 1.1em
-					line-height: 48px
+					line-height: 37px
 					padding-left: 10px
 					width: 83px
 				.main-menu
@@ -140,7 +271,7 @@
 					justify-content: center
 					height: auto
 					text-decoration: none
-					font-size: 2.6em
+					font-size: 1.8em
 					font-family: $font-stack-paragraph
 					letter-spacing: 0.03em
 					color: #ae8950
@@ -151,160 +282,38 @@
 					z-index: 99999
 					background-color: #131426
 
-	@include phone
-		.mobile-container
+	.mobile-container
+		display: flex
+		width: 70%
+		height: auto
+		justify-content: space-between
+		background-color: #29343a
+		z-index: 999999
+		position: fixed
+		top: 0
+		left: 0
+		display: none
+		@include tablet
 			display: flex
 			width: 100%
-			justify-content: space-between
-			background-image: url('../dist/imgs/polygons.png')
-			background-repeat: no-repeat
-			background-position: top
-			background-size: cover
-			z-index: 999999
-			// border: 1px solid gray
+			height: 90px
+			justify-content: space-around
+			align-items: flex-start
+			background-image: none
+			z-index: 9999
 			position: fixed
-			bottom: 0
+			top: 0
 			left: 0
-			display: none
-			@include tablet
+
+
+
+		#menu-buttons
 				display: flex
 				width: 100%
-				height: 90px
-				justify-content: space-around
-				align-items: flex-start
-				// background-color: yellow
-				background-image: none
-				z-index: 9999
-				position: fixed
-				top: 0
-				left: 0
-
-
-			.nav-archives
-				width: 33vw
-				@include tablet
-					width: 16vw
-					border: 1px solid #f4df84
-
-			#menu-buttons
-				display: flex
-				width: 100%
-				justify-content: flex-end
+				justify-content: flex-start
 				@include tablet
 					display: none
 
-		.Colsplit-between
-			display: flex
-			flex-direction: column
-			justify-content: flex-start
-			width: 100%
-			height: 100%
-			position: relative
-			@include tablet
-				height: 100vh
-				width: 100vw
-				margin: auto
-				padding: 0
-			.bio
-				display: flex
-				justify-content: center
-				@include tablet
-					margin-top: 30px
-
-				.intro
-					font-family: $font-stack-thin
-					font-size: 1.5em
-					color: #1f2121
-					width: 73%
-					height: 100%
-					text-align: justify
-					@include tablet
-						color: #251202
-						padding-top: 0
-						margin-top: 0
-						font-family: $font-stack-old-style
-						font-size: 1.67em
-						letter-spacing: 0.02em
-
-			.hetpage-li
-				display: flex
-				justify-content: flex-start
-
-			#Colsplit-box1
-				display: flex
-				flex-direction: column
-				justify-content: center
-				height: 90%
-				position: relative
-				@include tablet
-
-				.landing-page
-					display: flex
-					flex-direction: column
-					justify-content: space-around
-					width: 80%
-					align-self: center
-					// align-items: flex-start
-					@include tablet
-						height: 15%
-
-
-				#hetinfo
-					color: black
-			    margin: 0 auto
-			    font-family: $font-stack-thin
-			    font-size: $font-size-Mh2 +3
-			    text-transform: capitalize
-			    font-weight: 600
-			    letter-spacing: 0.6px
-					border-bottom: 1px dotted orange
-					text-align: center
-					height: 27px
-					width: 45%
-					line-height: 25px
-					@include tablet
-						height: 26px
-						line-height: 0px
-						width: 100%
-
-
-					#mini-desc
-
-					 @include tablet
-						 font-size: 1.5em
-						 letter-spacing: 0.15em
-
-		#thin
-			font-family: $font-stack-thin
-			letter-spacing: 0.1em
-			font-weight: bolder
-			color: #000000
-			margin: 0 auto
-			@include tablet
-
-		#bulgeword
-			font-family: $font-stack-thin
-			color: #988561
-			font-style: normal
-			font-weight: 600
-			@include tablet
-				color: #b3790b
-				font-size: 1.2em
-				letter-spacing: 0.3em
-
-
-
-		.hetpage-li
-
-		  #landing-title
-		    margin: 10.7px 0 -33.5px 0px
-		    color: #b98c38
-		    font-family: $font-stack-audio
-		    font-size: 2.88em
-				letter-spacing: normal
-				@include tablet
-					margin: 0 auto
-					padding: 0
 
 		.mobile-menu
 			display: flex
@@ -316,6 +325,7 @@
 			border-radius: 1px
 			position: absolute
 			z-index: 99999
+
 		.exit-menu
 			background-color: #353d4f
 			width: 9vw
@@ -333,17 +343,6 @@
 
 			@include tablet
 				width: 100%
-
-	 .logo-home
-			height: 100%
-			background: url('../dist/imgs/newlogo.png') no-repeat
-			background-size: cover
-			background-position: center
-			overflow: hidden
-			z-index: 99999
-			@include tablet
-				z-index: 999
-
 
 	.navbar
 	  display: flex
