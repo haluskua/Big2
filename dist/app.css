@@ -203,6 +203,7 @@ h2, h3 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    height: 70px;
   }
 }
 
@@ -222,6 +223,8 @@ h2, h3 {
     text-align: justify;
     margin: auto;
     letter-spacing: 0.02em;
+    margin-top: 120px;
+    position: absolute;
   }
 }
 
@@ -246,7 +249,7 @@ h2, h3 {
     font-weight: lighter;
     margin: auto;
     height: 45%;
-    padding-top: 16px;
+    padding-top: 47px;
   }
 }
 
@@ -358,7 +361,7 @@ h2, h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 50%;
+    height: 70%;
   }
 }
 
@@ -383,7 +386,7 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 84px;
+    margin-top: 70px;
   }
 }
 
