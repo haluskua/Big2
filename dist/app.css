@@ -840,8 +840,7 @@ h2, h3 {
   body main section #grafix .tag-title {
     font-family: sans-serif;
     font-weight: lighter;
-    font-size: 1.2em;
-    color: #d2ad73;
+    color: #58b5cc;
     font-style: normal;
   }
   body main section .slider-inner {
@@ -870,6 +869,7 @@ h2, h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 40%;
   }
   body main section .prev, body main section .next {
     float: left;
