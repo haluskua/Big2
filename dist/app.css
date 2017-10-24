@@ -855,7 +855,70 @@ h2, h3 {
     font-family: serif;
     color: green;
   }
-  body main section #grafix {
+  body main section #grafix, body main section #web, body main section #snaps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  body main section #web {
+    background-color: white;
+  }
+  body main section .tag-title {
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: #58b5cc;
+    font-style: normal;
+    border-bottom: 1px solid;
+  }
+  body main section #snaps {
+    background-image: url("../dist/imgs/polygons.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  body main section #snaps .split-width {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+  body main section #snaps .split-width #left-pane, body main section #snaps .split-width #right-pane {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    overflow-y: scroll;
+  }
+  body main section #snaps .split-width #left-pane #left-pane, body main section #snaps .split-width #right-pane #left-pane {
+    display: none;
+  }
+  body main section #snaps .split-width #left-pane #snap-box, body main section #snaps .split-width #right-pane #snap-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -869,16 +932,25 @@ h2, h3 {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
+    height: 60%;
+    border: 1px solid #5d6d5d;
+    margin: 6px;
+    background-color: rgba(214, 187, 8, 0.86);
   }
-  body main section #grafix .tag-title {
+  body main section #snaps .split-width #left-pane #snap-box img, body main section #snaps .split-width #right-pane #snap-box img {
+    max-width: 100%;
+    max-height: 160px;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-bottom: 12px;
+    scroll-behavior: smooth;
+    border: 1px solid #63616c;
+    padding: 3px;
+  }
+  body main section #snaps .split-width #left-pane span, body main section #snaps .split-width #right-pane span {
     font-family: sans-serif;
-    font-weight: lighter;
-    color: #58b5cc;
-    font-style: normal;
-    border-bottom: 1px solid;
+    font-size: 0.77em;
+    border-top: 1px dotted;
   }
   body main section .slider-inner {
     max-width: 90.4%;
@@ -887,7 +959,7 @@ h2, h3 {
     overflow: hidden;
     float: left;
     padding: 3px;
-    border: solid 1px #666;
+    border: solid 1px #d7e4e6;
   }
   body main section .slider-inner img {
     display: none;
@@ -942,6 +1014,21 @@ h2, h3 {
     text-align: center;
     margin: auto;
     padding-bottom: 8px;
+  }
+  body main section #web-desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    text-align: center;
+    width: 74%;
+    line-height: 23px;
+    border: none;
+    color: #797272;
   }
   body main section #thumbnails {
     display: -webkit-box;
