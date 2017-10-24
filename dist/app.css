@@ -378,7 +378,7 @@ h2, h3 {
   }
   #home-logo .logo-home {
     height: 100%;
-    background: url("../dist/imgs/newlogo.png") no-repeat;
+    background: url("../dist/imgs/nlsmall1.png") no-repeat;
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -843,6 +843,8 @@ h2, h3 {
     width: 86%;
     color: gray;
     line-height: 21px;
+    margin: auto;
+    padding-bottom: 36px;
   }
   body main section #wagai p span {
     font-size: 01.2em;
@@ -859,6 +861,12 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   body main section #wagai #skills-column #skills-set-imgs #flying-skills {
     display: -webkit-box;
@@ -866,13 +874,13 @@ h2, h3 {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    z-index: 9999999;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 999;
     position: relative;
   }
   body main section #wagai #skills-column #skills-set-imgs #flying-skills #pillar {
@@ -889,9 +897,12 @@ h2, h3 {
     line-height: 22px;
     font-family: sans-serif;
     font-weight: lighter;
-    z-index: 9999999;
+    color: #118ead;
+    z-index: 999;
     position: absolute;
     border-bottom: 1px solid gray;
+    padding: 10px;
+    background-color: gainsboro;
   }
   body main section #wagai #skills-column #skills-set-imgs .GD {
     margin-left: 34px;
@@ -902,7 +913,7 @@ h2, h3 {
     top: 26px;
   }
   body main section #wagai #skills-column #skills-set-imgs .Webdev {
-    margin-left: 261px;
+    margin-left: 208px;
     top: 17px;
   }
   body main section #wagai #skills-column #skills-set-imgs .Musician {
@@ -1006,7 +1017,8 @@ h2, h3 {
   body main section #snaps .split-width #left-pane span, body main section #snaps .split-width #right-pane span {
     font-family: sans-serif;
     font-size: 0.77em;
-    border-top: 1px dotted;
+    border-bottom: 1px dotted;
+    line-height: 22px;
   }
   body main section .slider-inner {
     max-width: 90.4%;

@@ -54,6 +54,9 @@
             width: 86%
             color: gray
             line-height: 21px
+            margin: auto
+            padding-bottom: 36px
+
             span
               font-size: 01.2em
               letter-spacing: 0.04em
@@ -69,13 +72,15 @@
 
             #skills-set-imgs
               display: flex
+              justify-content: center
+              align-items: center
 
               #flying-skills
                 display: flex
                 flex-wrap: wrap
-                justify-content: flex-end
-                align-items: center
-                z-index: 9999999
+                justify-content: flex-start
+                align-items: flex-start
+                z-index: 999
                 position: relative
                 #pillar
                   display: flex
@@ -88,9 +93,12 @@
                 line-height: 22px
                 font-family: sans-serif
                 font-weight: lighter
-                z-index: 9999999
+                color: #118ead
+                z-index: 999
                 position: absolute
                 border-bottom: 1px solid gray
+                padding: 10px
+                background-color: gainsboro
               .GD
                 margin-left: 34px
                 top: 80px
@@ -98,7 +106,7 @@
                 margin-left: 119px
                 top: 26px
               .Webdev
-                margin-left: 261px
+                margin-left: 208px
                 top: 17px
               .Musician
                 margin-left: 262px
@@ -171,7 +179,8 @@
               span
                 font-family: sans-serif
                 font-size: 0.77em
-                border-top: 1px dotted
+                border-bottom: 1px dotted
+                line-height: 22px
 
         .slider-inner
         	max-width: 90.4%
