@@ -794,7 +794,6 @@ h2, h3 {
     max-width: 100%;
     height: 100%;
     position: relative;
-    border: 3.5px solid rgba(249, 249, 249, 0.84);
     background-color: black;
   }
 }
@@ -836,24 +835,82 @@ h2, h3 {
     height: 100vh;
     width: 100%;
     margin: auto;
+    overflow: scroll;
   }
   body main section #wagai p {
-    font-size: 1.08em;
+    font-size: 0.88em;
     font-family: sans-serif;
     width: 86%;
-    text-align: justify;
     color: gray;
-    line-height: 23px;
+    line-height: 21px;
+  }
+  body main section #wagai p span {
+    font-size: 01.2em;
+    letter-spacing: 0.04em;
+    font-family: serif;
+    color: green;
   }
   body main section #wagai p .portrait {
     max-width: 130px;
     padding: 12px;
     border: 1px solid gray;
   }
-  body main section #wagai p span {
-    font-size: 0.9em;
-    font-family: serif;
-    color: green;
+  body main section #wagai #skills-column #skills-set-imgs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body main section #wagai #skills-column #skills-set-imgs #flying-skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 9999999;
+    position: relative;
+  }
+  body main section #wagai #skills-column #skills-set-imgs #flying-skills #pillar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body main section #wagai #skills-column #skills-set-imgs .skills1 {
+    max-width: 70px;
+    height: 100vh;
+  }
+  body main section #wagai #skills-column #skills-set-imgs .GD, body main section #wagai #skills-column #skills-set-imgs .Adobe, body main section #wagai #skills-column #skills-set-imgs .Webdev, body main section #wagai #skills-column #skills-set-imgs .Musician {
+    font-size: 0.97em;
+    line-height: 22px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    z-index: 9999999;
+    position: absolute;
+    border-bottom: 1px solid gray;
+  }
+  body main section #wagai #skills-column #skills-set-imgs .GD {
+    margin-left: 34px;
+    top: 80px;
+  }
+  body main section #wagai #skills-column #skills-set-imgs .Adobe {
+    margin-left: 119px;
+    top: 26px;
+  }
+  body main section #wagai #skills-column #skills-set-imgs .Webdev {
+    margin-left: 261px;
+    top: 17px;
+  }
+  body main section #wagai #skills-column #skills-set-imgs .Musician {
+    margin-left: 262px;
+    top: 93px;
+  }
+  body main section #wagai #skills-column .skills-title {
+    border-bottom: 1px solid gray;
   }
   body main section #grafix, body main section #web, body main section #snaps {
     display: -webkit-box;
@@ -933,9 +990,8 @@ h2, h3 {
             align-items: center;
     width: 100%;
     height: 60%;
-    border: 1px solid #5d6d5d;
+    border: 1px solid #cbd1cb;
     margin: 6px;
-    background-color: rgba(214, 187, 8, 0.86);
   }
   body main section #snaps .split-width #left-pane #snap-box img, body main section #snaps .split-width #right-pane #snap-box img {
     max-width: 100%;
