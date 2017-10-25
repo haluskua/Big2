@@ -852,11 +852,15 @@ h2, h3 {
     font-size: 01.7em;
     font-family: sans-serif;
     color: #083f54;
-    line-height: 34px;
+    line-height: 44px;
   }
   body main section #wagai p .portrait {
     max-width: 130px;
     border: 1px solid gray;
+  }
+  body main section #wagai #skills-column {
+    width: 100%;
+    background-color: firebrick;
   }
   body main section #wagai #skills-column #skills-set-imgs {
     display: -webkit-box;
@@ -876,12 +880,9 @@ h2, h3 {
     position: relative;
     margin: 27px;
     padding: 7px;
-    background-color: #29343a;
   }
   body main section #wagai #skills-column #skills-set-imgs #flying-skills #pillar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     width: 68%;
@@ -903,7 +904,7 @@ h2, h3 {
     font-weight: lighter;
     color: #121a1d;
     z-index: 999;
-    border-bottom: 1px solid gray;
+    border-bottom: 2px solid #332020;
     padding: 10px;
     margin-bottom: 17px;
     background-color: #ffd974;
