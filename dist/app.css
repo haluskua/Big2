@@ -307,7 +307,7 @@ h2, h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 100%;
+    width: 70%;
     margin: auto;
     padding: 0;
     border-radius: 21px;
@@ -536,12 +536,12 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 70%;
+    width: 97%;
     height: auto;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background-color: #112029;
+    background-color: rgba(17, 32, 41, 0.86);
     z-index: 999999;
     position: fixed;
     top: 0;
