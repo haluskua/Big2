@@ -501,7 +501,7 @@ h2, h3 {
     display: -ms-flexbox;
     display: flex;
     font-family: "Audiowide";
-    color: #ffc47d;
+    color: #e89e45;
     font-size: 2.2em;
     font-weight: bolder;
     line-height: 37px;
@@ -520,7 +520,7 @@ h2, h3 {
     font-size: 1.8em;
     font-family: "Cutive Mono", monospace;
     letter-spacing: 0.03em;
-    color: #ae8950;
+    color: #e89e45;
     cursor: pointer;
     width: 67px;
     bottom: 0px;
@@ -794,7 +794,11 @@ h2, h3 {
     max-width: 100%;
     height: 100%;
     position: relative;
-    background-color: black;
+    background-image: url("../dist/imgs/polygons.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: repeat-y;
+    border: 3.5px solid rgba(249, 249, 249, 0.84);
     border-top: 1px solid #d6a870;
   }
 }
@@ -832,25 +836,25 @@ h2, h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: #100d0d;
+    background-color: rgba(1, 7, 14, 0.9);
     height: 100vh;
     width: 100%;
     margin: auto;
     overflow: scroll;
   }
   body main section #wagai p {
-    font-size: 1.09em;
+    font-size: 1.07em;
     font-family: sans-serif;
     width: 86%;
-    color: #d2ae5d;
+    color: #59bccc;
     margin: auto;
     padding-bottom: 28px;
-    line-height: 23.98px;
+    line-height: 25px;
   }
   body main section #wagai p span {
-    font-size: 01.55em;
+    font-size: 1.33em;
     font-family: sans-serif;
-    color: #ffe484;
+    color: #e89e45;
     line-height: 44px;
   }
   body main section #wagai p .portrait {
@@ -859,7 +863,6 @@ h2, h3 {
   }
   body main section #wagai #skills-column {
     width: 100%;
-    background-color: #f9df81;
   }
   body main section #wagai #skills-column #skills-set-imgs {
     display: -webkit-box;
@@ -896,16 +899,15 @@ h2, h3 {
     height: 100vh;
   }
   body main section #wagai #skills-column #skills-set-imgs .GD, body main section #wagai #skills-column #skills-set-imgs .Adobe, body main section #wagai #skills-column #skills-set-imgs .Webdev, body main section #wagai #skills-column #skills-set-imgs .Musician {
-    font-size: 0.98em;
+    font-size: 1.08em;
     line-height: 20px;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.09em;
     font-family: sans-serif;
     font-weight: lighter;
-    color: #f7dd80;
-    border-bottom: 2px solid #332020;
+    color: #ffc47d;
+    border-bottom: 1.7px solid #52abb2;
     padding: 10px;
     margin-bottom: 17px;
-    background-color: #c20000;
   }
   body main section #wagai #skills-column .skills-title {
     border-bottom: 1px solid gray;
@@ -938,11 +940,11 @@ h2, h3 {
     text-align: center;
     font-family: sans-serif;
     font-weight: lighter;
-    color: #100c06;
+    color: #f5ffa5;
     font-style: normal;
-    background-color: #ff900b;
+    background-color: #ff5e03;
     font-size: 1.48em;
-    border: 1px solid #f9cd6c;
+    border: 1px solid #ffce93;
   }
   body main section #snaps {
     background-image: url("../dist/imgs/polygons.png");
