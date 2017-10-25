@@ -15,6 +15,7 @@
       height: auto
       position: relative
       background-color: white
+      border-top: 1px solid #fffcf7
 
       section
         display: flex
@@ -52,65 +53,71 @@
             font-size: 0.88em
             font-family: sans-serif
             width: 86%
-            color: gray
-            line-height: 21px
+            color: #5c6c6f
             margin: auto
-            padding-bottom: 36px
+            padding-bottom: 28px
+            letter-spacing: 0.03em
+            line-height: 20.98px
 
             span
-              font-size: 01.2em
-              letter-spacing: 0.04em
-              font-family: serif
-              color: green
+              font-size: 01.7em
+              font-family: sans-serif
+              // font-weight: bold
+              color: #083f54
+              line-height: 34px
 
             .portrait
               max-width: 130px
-              padding: 12px
               border: 1px solid gray
 
           #skills-column
 
             #skills-set-imgs
               display: flex
+              flex-wrap: wrap
               justify-content: center
               align-items: center
 
               #flying-skills
                 display: flex
-                flex-wrap: wrap
-                justify-content: flex-start
-                align-items: flex-start
+                flex-direction: column
+                justify-content: space-between
                 z-index: 999
                 position: relative
+                margin: auto
+                padding: 8px
+                background-color: #29343a
                 #pillar
                   display: flex
+                  justify-content: space-around
+                  width: 68%
+                  align-items: flex-end
+                  position: relative
+                  z-index: 9
               .skills1
                 max-width: 70px
                 height: 100vh
 
               .GD, .Adobe, .Webdev, .Musician
-                font-size: 0.97em
-                line-height: 22px
+                font-size: 0.96em
+                line-height: 20px
+                letter-spacing: 0.08em
                 font-family: sans-serif
                 font-weight: lighter
-                color: #118ead
+                color: #121a1d
                 z-index: 999
-                position: absolute
                 border-bottom: 1px solid gray
                 padding: 10px
-                background-color: gainsboro
-              .GD
-                margin-left: 34px
-                top: 80px
-              .Adobe
-                margin-left: 119px
-                top: 26px
-              .Webdev
-                margin-left: 208px
-                top: 17px
-              .Musician
-                margin-left: 262px
-                top: 93px
+                margin-bottom: 8px
+                background-color: #f1d044
+              // .GD
+              //   top: 80px
+              // .Adobe
+              //   top: 26px
+              // .Webdev
+              //   top: -34px
+              // .Musician
+              //   top: 137px
 
             .skills-title
               border-bottom: 1px solid gray
