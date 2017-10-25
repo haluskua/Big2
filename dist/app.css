@@ -150,7 +150,7 @@ h2, h3 {
     font-family: sans-serif;
     font-weight: lighter;
     font-size: 0.8em;
-    color: #7f7a72;
+    color: #524e48;
     font-style: normal;
   }
 }
@@ -839,14 +839,14 @@ h2, h3 {
     overflow: scroll;
   }
   body main section #wagai p {
-    font-size: 0.88em;
+    font-size: 1em;
     font-family: sans-serif;
     width: 86%;
     color: #5c6c6f;
     margin: auto;
     padding-bottom: 28px;
-    letter-spacing: 0.03em;
-    line-height: 20.98px;
+    letter-spacing: 0.02em;
+    line-height: 23.98px;
   }
   body main section #wagai p span {
     font-size: 01.7em;
@@ -864,12 +864,6 @@ h2, h3 {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   body main section #wagai #skills-column #skills-set-imgs #flying-skills {
     display: -webkit-box;
@@ -879,13 +873,9 @@ h2, h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    z-index: 999;
     position: relative;
-    margin: auto;
-    padding: 8px;
+    margin: 27px;
+    padding: 7px;
     background-color: #29343a;
   }
   body main section #wagai #skills-column #skills-set-imgs #flying-skills #pillar {
@@ -915,8 +905,8 @@ h2, h3 {
     z-index: 999;
     border-bottom: 1px solid gray;
     padding: 10px;
-    margin-bottom: 8px;
-    background-color: #f1d044;
+    margin-bottom: 17px;
+    background-color: #ffd974;
   }
   body main section #wagai #skills-column .skills-title {
     border-bottom: 1px solid gray;
