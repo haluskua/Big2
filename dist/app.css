@@ -836,20 +836,21 @@ h2, h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: rgba(1, 7, 14, 0.9);
+    background-color: rgba(1, 7, 14, 0.93);
     height: 100vh;
     width: 100%;
     margin: auto;
     overflow: scroll;
+    overflow-x: hidden;
   }
   body main section #wagai p {
     font-size: 1.07em;
     font-family: sans-serif;
     width: 86%;
-    color: #59bccc;
+    color: #bdbdbd;
     margin: auto;
     padding-bottom: 28px;
-    line-height: 25px;
+    line-height: 27px;
   }
   body main section #wagai p span {
     font-size: 1.33em;
@@ -933,6 +934,9 @@ h2, h3 {
   }
   body main section #web {
     background-color: white;
+  }
+  body main section #grafix {
+    background-color: #0f161f;
   }
   body main section .tag-title {
     width: 100%;
@@ -1063,7 +1067,6 @@ h2, h3 {
             justify-content: center;
     width: 99%;
     height: auto;
-    border: 1px solid;
   }
   body main section #imgslider-desc p {
     color: #9c9889;
