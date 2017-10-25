@@ -188,6 +188,7 @@ h2, h3 {
     color: #4DB0BF;
     font-family: sans-serif;
     font-weight: lighter;
+    cursor: pointer;
   }
   #Colsplit-box1 .bio {
     display: -webkit-box;
@@ -334,7 +335,7 @@ h2, h3 {
   #folders-container .nav-folders {
     height: auto;
     margin: 1.5px;
-    padding: 5px;
+    padding: 8px;
     display: none;
     width: 100%;
   }
@@ -496,8 +497,8 @@ h2, h3 {
         -ms-flex-pack: center;
             justify-content: center;
     position: relative;
-    width: 81px;
     height: 100%;
+    cursor: pointer;
   }
   .haus ul li .haus-menu {
     display: -webkit-box;
@@ -616,6 +617,7 @@ h2, h3 {
     border: 1px solid #b56e18;
     padding: 0px 46px 0 46px;
     margin: auto;
+    cursor: pointer;
   }
   .mobile-container .exit-menu .menu {
     color: #b56e18;
