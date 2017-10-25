@@ -211,14 +211,15 @@
 		background-color: #29343a
 		color:#eaa11d
 		border: 1px solid
-		border-radius: 6px
+		border-radius: 0 0 15px 15px
 		&:active
 			color: #4DB0BF
 		&:focus
 			color: #4DB0BF
 			background-color: #1c1f25
 		.nav-archives
-			font-size: 0.82em
+			font-size: 0.97em
+			letter-spacing: 0.04em
 			@include tablet
 				width: 16vw
 				border: 1px solid #f4df84
@@ -235,12 +236,14 @@
 		display: flex
 		border-radius: 0.3px
 		background-color: #29343a
+		border-radius: 0 0px 15px 15px
 		z-index: 999999
 		height: 36px
 		top: 0
 		left: 0
 		width: 100%
 		position: fixed
+
 
 		@include tablet
 			top: 0
@@ -296,8 +299,8 @@
 		position: fixed
 		top: 0
 		left: 4px
-		border: 2px solid #4DB0BF
-		border-radius: 0 5px 14px 5px
+		border: 1.5px solid #b56e18
+		border-radius: 0 0px 15px 15px
 		display: none
 		@include tablet
 			display: flex
@@ -333,17 +336,21 @@
 			z-index: 99999
 
 		.exit-menu
-			background-color: #867c6e
 			width: 9vw
 			height: 33px
-			border-radius: 0 0 15px 0
+			border-radius: 0 0 15px 15px
 			text-align: center
+			border: 1px solid #b56e18
+			padding: 0px 46px 0 46px
+			margin: auto
 
 			.menu
-				color: black
+				color: #b56e18
 				font-size: 2em
 				text-decoration: none
 				line-height: 24px
+				// padding: 0 48px 0 48px
+				// padding: 0 48px 0 5px
 
 		#nav
 

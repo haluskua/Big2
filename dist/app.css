@@ -417,7 +417,7 @@ h2, h3 {
     background-color: #29343a;
     color: #eaa11d;
     border: 1px solid;
-    border-radius: 6px;
+    border-radius: 0 0 15px 15px;
   }
   .hamburger-menu:active {
     color: #4DB0BF;
@@ -427,7 +427,8 @@ h2, h3 {
     background-color: #1c1f25;
   }
   .hamburger-menu .nav-archives {
-    font-size: 0.82em;
+    font-size: 0.97em;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -457,6 +458,7 @@ h2, h3 {
     display: flex;
     border-radius: 0.3px;
     background-color: #29343a;
+    border-radius: 0 0px 15px 15px;
     z-index: 999999;
     height: 36px;
     top: 0;
@@ -543,8 +545,8 @@ h2, h3 {
     position: fixed;
     top: 0;
     left: 4px;
-    border: 2px solid #4DB0BF;
-    border-radius: 0 5px 14px 5px;
+    border: 1.5px solid #b56e18;
+    border-radius: 0 0px 15px 15px;
     display: none;
   }
 }
@@ -607,14 +609,16 @@ h2, h3 {
     z-index: 99999;
   }
   .mobile-container .exit-menu {
-    background-color: #867c6e;
     width: 9vw;
     height: 33px;
-    border-radius: 0 0 15px 0;
+    border-radius: 0 0 15px 15px;
     text-align: center;
+    border: 1px solid #b56e18;
+    padding: 0px 46px 0 46px;
+    margin: auto;
   }
   .mobile-container .exit-menu .menu {
-    color: black;
+    color: #b56e18;
     font-size: 2em;
     text-decoration: none;
     line-height: 24px;
@@ -847,7 +851,7 @@ h2, h3 {
     font-size: 1.07em;
     font-family: sans-serif;
     width: 86%;
-    color: #bdbdbd;
+    color: #8a989a;
     margin: auto;
     padding-bottom: 28px;
     line-height: 27px;
@@ -955,6 +959,7 @@ h2, h3 {
     background-color: #b56e18;
     font-size: 1.48em;
     border: 1px solid #ffce93;
+    border-radius: 0 0px 15px 15px;
   }
   body main section #snaps {
     background-image: url("../dist/imgs/polygons.png");

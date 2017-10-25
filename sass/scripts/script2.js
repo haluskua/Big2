@@ -54,7 +54,6 @@ function checkSize(){
       });
 
 
-
         //show menu bar onclick on main logo
         $(".haus-menu, #hetinfo").click(function(){
           $(".mobile-container").show(900);
@@ -69,7 +68,7 @@ function checkSize(){
         $('.main-menu').on("click", function(){
           $("#menu-buttons").show(1000);
         });
-        $(".menu").on("click", function(){
+        $(".exit-menu").on("click", function(){
           $(".haus").show(500);
         });
 
