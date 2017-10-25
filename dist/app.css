@@ -415,8 +415,9 @@ h2, h3 {
     font-family: sans-serif;
     text-decoration: none;
     background-color: #29343a;
-    color: #ffc47d;
+    color: #eaa11d;
     border: 1px solid;
+    border-radius: 6px;
   }
   .hamburger-menu:active {
     color: #4DB0BF;
@@ -537,12 +538,12 @@ h2, h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background-color: #29343a;
+    background-color: #112029;
     z-index: 999999;
     position: fixed;
     top: 0;
     left: 4px;
-    border: 5px solid #221210;
+    border: 2px solid #4DB0BF;
     border-radius: 0 5px 14px 5px;
     display: none;
   }
@@ -798,7 +799,6 @@ h2, h3 {
     background-position: top;
     background-size: cover;
     background-repeat: repeat-y;
-    border: 3.5px solid rgba(249, 249, 249, 0.84);
     border-top: 1px solid #d6a870;
   }
 }
@@ -900,13 +900,13 @@ h2, h3 {
     height: 100vh;
   }
   body main section #wagai #skills-column #skills-set-imgs .GD, body main section #wagai #skills-column #skills-set-imgs .Adobe, body main section #wagai #skills-column #skills-set-imgs .Webdev, body main section #wagai #skills-column #skills-set-imgs .Musician {
-    font-size: 1.08em;
+    font-size: 0.89em;
     line-height: 20px;
-    letter-spacing: 0.09em;
+    letter-spacing: 0.04em;
     font-family: sans-serif;
     font-weight: lighter;
-    color: #ffc47d;
-    border-bottom: 1.7px solid #52abb2;
+    color: #fbd95e;
+    border-bottom: 1.7px solid #d3a436;
     padding: 10px;
     margin-bottom: 17px;
   }
@@ -938,15 +938,21 @@ h2, h3 {
   body main section #grafix {
     background-color: #0f161f;
   }
+  body main section #web {
+    background-color: rgba(1, 16, 31, 0.92);
+  }
+  body main section #snaps {
+    background-color: rgba(37, 37, 37, 0.14);
+  }
   body main section .tag-title {
     width: 100%;
     line-height: 50px;
     text-align: center;
     font-family: sans-serif;
     font-weight: lighter;
-    color: #f5ffa5;
+    color: #fff362;
     font-style: normal;
-    background-color: #ff5e03;
+    background-color: #b56e18;
     font-size: 1.48em;
     border: 1px solid #ffce93;
   }
@@ -1025,7 +1031,7 @@ h2, h3 {
     overflow: hidden;
     float: left;
     padding: 3px;
-    border: solid 1px #d7e4e6;
+    border: solid 1px #d3a436;
   }
   body main section .slider-inner img {
     display: none;
@@ -1093,7 +1099,7 @@ h2, h3 {
     width: 74%;
     line-height: 23px;
     border: none;
-    color: #797272;
+    color: #c28943;
   }
   body main section #thumbnails {
     display: -webkit-box;
