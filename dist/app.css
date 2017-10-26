@@ -896,8 +896,6 @@ h2, h3 {
         -ms-flex-direction: column;
             flex-direction: column;
     position: relative;
-    margin: 27px;
-    padding: 7px;
   }
   body main section #wagai #skills-column #skills-set-imgs #flying-skills #pillar {
     display: none;
