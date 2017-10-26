@@ -416,7 +416,7 @@ h2, h3 {
     font-size: 1.03em;
     font-weight: bold;
     text-decoration: none;
-    border-right: 2.8px solid #ff3853;
+    border-right: 2.8px solid #438506;
     padding-right: 16px;
     color: #230404;
   }
@@ -471,7 +471,7 @@ h2, h3 {
     display: flex;
     border-radius: 0.3px;
     background-color: #29343a;
-    border-bottom: 5px solid green;
+    border-bottom: 5px solid #fdd361;
     z-index: 999999;
     height: 36px;
     top: 0;
@@ -872,9 +872,10 @@ h2, h3 {
     letter-spacing: 0.01em;
   }
   body main section #wagai p span {
-    font-size: 1.33em;
-    font-family: sans-serif;
-    color: green;
+    font-size: 2em;
+    font-family: "Amatic SC", cursive;
+    letter-spacing: 0.02em;
+    color: #438506;
     font-weight: 600;
     line-height: 44px;
   }
@@ -959,7 +960,7 @@ h2, h3 {
     font-size: 1.32em;
     letter-spacing: 0.04em;
     color: #ffeeee;
-    border-bottom: 1.8px solid #b38a69;
+    border-bottom: 2.1px solid #438506;
     border-radius: 0 0px 15px 15px;
     background-color: rgba(255, 31, 62, 0.82);
   }
