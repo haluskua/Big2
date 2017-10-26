@@ -185,7 +185,7 @@ h2, h3 {
   #Colsplit-box1 .landing-page .hetpage-li #hetinfo #mini-desc {
     font-size: 0.75em;
     letter-spacing: 0.05em;
-    color: #ff1f3e;
+    color: #23b0be;
     font-family: sans-serif;
     font-weight: lighter;
     cursor: pointer;
@@ -416,7 +416,6 @@ h2, h3 {
     font-family: sans-serif;
     text-decoration: none;
     background-color: rgba(255, 145, 13, 0.02);
-    color: #0c0400;
   }
   .hamburger-menu:active {
     color: #4DB0BF;
@@ -427,9 +426,10 @@ h2, h3 {
             align-items: flex-start;
     color: #4DB0BF;
     background-color: #fffef2;
-    border-bottom: 2px solid #ff1f3e;
+    border-bottom: 2px solid #23b0be;
     border-radius: 13px;
     padding-left: 20px;
+    font-weight: 600;
   }
   .hamburger-menu .nav-archives {
     font-size: 1.24em;
@@ -437,6 +437,7 @@ h2, h3 {
     font-family: sans-serif;
     text-align: right;
     color: #ff1f3e;
+    color: #0c0400;
   }
 }
 
@@ -621,14 +622,14 @@ h2, h3 {
     height: 33px;
     border-radius: 0 0 15px 15px;
     text-align: center;
-    border: 1px solid #ff1f3e;
+    border: 1px solid #23b0be;
     padding: 0px 46px 0 46px;
     margin: auto;
     cursor: pointer;
     background-color: #1b0f11;
   }
   .mobile-container .exit-menu .menu {
-    color: #b56e18;
+    color: #23b0be;
     font-size: 2em;
     text-decoration: none;
     line-height: 24px;
@@ -870,7 +871,7 @@ h2, h3 {
   body main section #wagai p span {
     font-size: 1.33em;
     font-family: sans-serif;
-    color: #e89e45;
+    color: #23b0be;
     line-height: 44px;
   }
   body main section #wagai p .portrait {
@@ -917,7 +918,7 @@ h2, h3 {
     letter-spacing: 0.04em;
     font-family: sans-serif;
     font-weight: lighter;
-    color: #ff1f3e;
+    color: #29343a;
     border-bottom: 1.7px solid #d3a436;
     padding: 10px;
     margin-bottom: 17px;
@@ -944,30 +945,19 @@ h2, h3 {
     margin: 0;
     padding: 0;
   }
-  body main section #web {
-    background-color: white;
-  }
-  body main section #grafix {
-    background-color: #0f161f;
-  }
-  body main section #web {
-    background-color: rgba(1, 16, 31, 0.92);
-  }
-  body main section #snaps {
-    background-color: rgba(37, 37, 37, 0.14);
-  }
   body main section .tag-title {
     width: 100%;
     line-height: 41px;
     text-align: center;
     font-family: sans-serif;
-    font-weight: normal;
-    color: #ff1f3e;
+    font-weight: 600;
+    color: #0c0400;
     font-style: normal;
-    font-size: 1.33em;
+    font-size: 1.32em;
     border-bottom: 1px solid #c7a377;
     border-radius: 0 0px 15px 15px;
-    letter-spacing: 0.05;
+    background-color: #fbffff;
+    letter-spacing: 0.04em;
   }
   body main section #snaps {
     background-image: url("../dist/imgs/polygons.png");
@@ -1063,7 +1053,7 @@ h2, h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 40%;
+    width: 61%;
   }
   body main section .prev, body main section .next {
     float: left;
@@ -1123,7 +1113,6 @@ h2, h3 {
             justify-content: space-between;
     width: 99%;
     height: auto;
-    border: 1px solid #5d5a5a;
   }
   body main section #thumbnails p {
     width: 50%;
