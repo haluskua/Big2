@@ -185,7 +185,7 @@ h2, h3 {
   #Colsplit-box1 .landing-page .hetpage-li #hetinfo #mini-desc {
     font-size: 0.75em;
     letter-spacing: 0.05em;
-    color: #4DB0BF;
+    color: #ff1f3e;
     font-family: sans-serif;
     font-weight: lighter;
     cursor: pointer;
@@ -409,12 +409,11 @@ h2, h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    line-height: 41px;
-    width: 100%;
+    line-height: 56px;
+    width: 92%;
     cursor: pointer;
     text-align: center;
-    font-family: "Yantramanav", sans-serif;
-    font-weight: bolder;
+    font-family: sans-serif;
     text-decoration: none;
     background-color: rgba(255, 145, 13, 0.02);
     color: #0c0400;
@@ -423,12 +422,21 @@ h2, h3 {
     color: #4DB0BF;
   }
   .hamburger-menu:focus {
-    color: #e4e4e4;
-    background-color: #262b2d;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    color: #4DB0BF;
+    background-color: #fffef2;
+    border-bottom: 2px solid #ff1f3e;
+    border-radius: 13px;
+    padding-left: 20px;
   }
   .hamburger-menu .nav-archives {
-    font-size: 1.1em;
-    letter-spacing: 0.02em;
+    font-size: 1.24em;
+    letter-spacing: 0.04em;
+    font-family: sans-serif;
+    text-align: right;
+    color: #ff1f3e;
   }
 }
 
@@ -504,7 +512,7 @@ h2, h3 {
     display: -ms-flexbox;
     display: flex;
     font-family: "Audiowide";
-    color: #e89e45;
+    color: rgba(245, 245, 245, 0.98);
     font-size: 2.2em;
     font-weight: bolder;
     line-height: 37px;
@@ -523,7 +531,7 @@ h2, h3 {
     font-size: 1.8em;
     font-family: "Cutive Mono", monospace;
     letter-spacing: 0.03em;
-    color: #e89e45;
+    color: #ff1f3e;
     cursor: pointer;
     width: 67px;
     bottom: 0px;
@@ -613,11 +621,11 @@ h2, h3 {
     height: 33px;
     border-radius: 0 0 15px 15px;
     text-align: center;
-    border: 1px solid #b56e18;
+    border: 1px solid #ff1f3e;
     padding: 0px 46px 0 46px;
     margin: auto;
     cursor: pointer;
-    background-color: #202223;
+    background-color: #1b0f11;
   }
   .mobile-container .exit-menu .menu {
     color: #b56e18;
@@ -842,7 +850,7 @@ h2, h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: rgba(1, 7, 14, 0.93);
+    background-color: rgba(245, 245, 245, 0.58);
     height: 100vh;
     width: 100%;
     margin: auto;
@@ -853,10 +861,11 @@ h2, h3 {
     font-size: 1.07em;
     font-family: sans-serif;
     width: 86%;
-    color: #8a989a;
+    color: #1b1102;
     margin: auto;
     padding-bottom: 28px;
-    line-height: 27px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
   }
   body main section #wagai p span {
     font-size: 1.33em;
@@ -906,12 +915,11 @@ h2, h3 {
     height: 100vh;
   }
   body main section #wagai #skills-column #skills-set-imgs .GD, body main section #wagai #skills-column #skills-set-imgs .Adobe, body main section #wagai #skills-column #skills-set-imgs .Webdev, body main section #wagai #skills-column #skills-set-imgs .Musician {
-    font-size: 0.89em;
-    line-height: 20px;
+    font-size: 0.99em;
     letter-spacing: 0.04em;
     font-family: sans-serif;
     font-weight: lighter;
-    color: #fbd95e;
+    color: #ff1f3e;
     border-bottom: 1.7px solid #d3a436;
     padding: 10px;
     margin-bottom: 17px;
@@ -955,13 +963,13 @@ h2, h3 {
     line-height: 41px;
     text-align: center;
     font-family: sans-serif;
-    font-weight: lighter;
-    color: #fff362;
+    font-weight: normal;
+    color: #ff1f3e;
     font-style: normal;
-    background-color: #b56e18;
-    font-size: 1.08em;
-    border: 1px solid #ffce93;
+    font-size: 1.33em;
+    border-bottom: 1px solid #c7a377;
     border-radius: 0 0px 15px 15px;
+    letter-spacing: 0.05;
   }
   body main section #snaps {
     background-image: url("../dist/imgs/polygons.png");
