@@ -307,7 +307,7 @@ h2, h3 {
     width: 96%;
     margin: auto;
     padding: 0;
-    border-top: 1px solid #583a21;
+    border: 1.2px solid #b28a38;
     background-color: #fdd361;
   }
 }
@@ -408,7 +408,7 @@ h2, h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    line-height: 53px;
+    line-height: 45px;
     width: 96%;
     cursor: pointer;
     text-align: center;
@@ -428,7 +428,7 @@ h2, h3 {
         -ms-flex-align: start;
             align-items: flex-start;
     background-color: #fffef2;
-    border-left: 2px solid #230404;
+    border-left: 2px solid #438506;
     border-right: 6px solid #230404;
     border-radius: 10px 0 0 10px;
     padding-left: 20px;
@@ -556,8 +556,6 @@ h2, h3 {
     background-color: rgba(255, 31, 62, 0.89);
     z-index: 999999;
     position: fixed;
-    top: 0;
-    left: 4px;
     border: 2px solid #1b0f11;
     border-radius: 0 0px 15px 15px;
     display: none;
@@ -862,14 +860,12 @@ h2, h3 {
     overflow-x: hidden;
   }
   body main section #wagai p {
-    width: 86%;
     margin: auto;
-    font-size: 1.07em;
+    font-size: 1em;
     font-family: sans-serif;
     color: #1b1102;
-    padding-bottom: 28px;
-    line-height: 30px;
-    letter-spacing: 0.01em;
+    padding: 16px;
+    line-height: 1.5em;
   }
   body main section #wagai p span {
     font-size: 2em;
@@ -919,14 +915,13 @@ h2, h3 {
     height: 100vh;
   }
   body main section #wagai #skills-column #skills-set-imgs .GD, body main section #wagai #skills-column #skills-set-imgs .Adobe, body main section #wagai #skills-column #skills-set-imgs .Webdev, body main section #wagai #skills-column #skills-set-imgs .Musician {
-    font-size: 0.99em;
+    font-size: 0.863em;
     letter-spacing: 0.04em;
     font-family: sans-serif;
     font-weight: lighter;
-    color: #29343a;
-    border-bottom: 1.5px solid #ff1f3e;
+    color: #131426;
+    border-bottom: 1.2px solid #438506;
     padding: 10px;
-    margin-bottom: 17px;
   }
   body main section #wagai #skills-column .skills-title {
     border-bottom: 1px solid gray;
