@@ -435,8 +435,8 @@ h2, h3 {
     font-weight: 600;
     font-size: 1.23em;
     letter-spacing: 0.04em;
-    color: white;
-    background-color: rgba(255, 31, 62, 0.97);
+    color: #ffeeee;
+    background-color: rgba(255, 31, 62, 0.82);
   }
   .hamburger-menu .nav-archives {
     font-family: sans-serif;
@@ -471,7 +471,7 @@ h2, h3 {
     display: flex;
     border-radius: 0.3px;
     background-color: #29343a;
-    border-radius: 0 0px 15px 15px;
+    border-bottom: 5px solid green;
     z-index: 999999;
     height: 36px;
     top: 0;
@@ -558,7 +558,7 @@ h2, h3 {
     position: fixed;
     top: 0;
     left: 4px;
-    border: 3px solid white;
+    border: 2px solid #1b0f11;
     border-radius: 0 0px 15px 15px;
     display: none;
   }
@@ -632,9 +632,11 @@ h2, h3 {
   }
   .mobile-container .exit-menu .menu {
     color: #ffeeee;
-    font-size: 1.45em;
+    font-size: 1.29em;
     text-decoration: none;
     letter-spacing: 0.04em;
+    font-weight: bold;
+    font-family: sans-serif;
   }
 }
 
@@ -872,7 +874,7 @@ h2, h3 {
   body main section #wagai p span {
     font-size: 1.33em;
     font-family: sans-serif;
-    color: #ff3853;
+    color: green;
     font-weight: 600;
     line-height: 44px;
   }
@@ -956,8 +958,8 @@ h2, h3 {
     font-style: normal;
     font-size: 1.32em;
     letter-spacing: 0.04em;
-    color: white;
-    border-bottom: 2px solid #46262b;
+    color: #ffeeee;
+    border-bottom: 1.8px solid #b38a69;
     border-radius: 0 0px 15px 15px;
     background-color: rgba(255, 31, 62, 0.82);
   }
