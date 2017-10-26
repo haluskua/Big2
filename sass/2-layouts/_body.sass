@@ -2,11 +2,12 @@
 @include phone
 
   body
-    overflow-y: scroll
-    width: 100%
-    position: relative
     height: 100%
+    width: 100%
     margin: 0 auto
+    overflow-y: scroll
+    position: relative
+
     main
       display: flex
       flex-direction: column
@@ -28,34 +29,33 @@
         background-size: cover
         background-repeat: repeat-y
         border-top: 1px solid #d6a870
-    
+
         @include tablet
           display: flex
           flex-direction: column
           justify-content: space-around
+          width: 100vw
+          height: 100vh
           margin: auto
           border: 1px solid gray
-          height: 100vh
-          width: 100vw
 
         #wagai
           display: flex
           justify-content: flex-start
           align-items: center
           flex-direction: column
-          background-color: rgba(245, 245, 245, 0.58)
-          height: 100vh
           width: 100%
+          height: 100vh
           margin: auto
           overflow: scroll
           overflow-x: hidden
 
           p
+            width: 86%
+            margin: auto
             font-size: 1.07em
             font-family: sans-serif
-            width: 86%
             color: #1b1102
-            margin: auto
             padding-bottom: 28px
             line-height: 30px
             letter-spacing: 0.01em
@@ -63,8 +63,8 @@
             span
               font-size: 1.33em
               font-family: sans-serif
-              // font-weight: bold
-              color: #23b0be
+              color: #ff3853
+              font-weight: 600
               line-height: 44px
 
             .portrait
@@ -73,7 +73,6 @@
 
           #skills-column
             width: 100%
-            // background-color: rgb(189, 136, 61)
 
             #skills-set-imgs
               display: flex
@@ -87,10 +86,11 @@
                 #pillar
                   display: none
                   justify-content: space-around
-                  width: 68%
                   align-items: flex-end
                   position: relative
+                  width: 68%
                   z-index: 9
+
               .skills1
                 max-width: 70px
                 height: 100vh
@@ -101,18 +101,9 @@
                 font-family: sans-serif
                 font-weight: lighter
                 color: #29343a
-                border-bottom: 1.7px solid #d3a436
+                border-bottom: 1.5px solid #ff1f3e
                 padding: 10px
                 margin-bottom: 17px
-              .GD
-                // top: 80px
-                // z-index: 9999999
-              // .Adobe
-              //   top: 26px
-              // .Webdev
-              //   top: -34px
-              // .Musician
-              //   top: 137px
 
             .skills-title
               border-bottom: 1px solid gray
@@ -132,21 +123,21 @@
         #web
 
         #snaps
-          // background-color: rgba(37, 37, 37, 0.14)
 
         .tag-title
           width: 100%
-          line-height: 41px
+          line-height: 46px
           text-align: center
           font-family: sans-serif
           font-weight: 600
-          color: #0c0400
           font-style: normal
           font-size: 1.32em
-          border-bottom: 1px solid #c7a377
-          border-radius: 0 0px 15px 15px
-          background-color: #fbffff
           letter-spacing: 0.04em
+          color: #fff7c6
+          border-bottom: 2px solid #46262b
+          border-radius: 0 0px 15px 15px
+          background-color: rgba(255, 31, 62, 0.97)
+
         #snaps
           background-image: url('../dist/imgs/polygons.png')
           background-size: cover
@@ -180,7 +171,6 @@
                 height: 60%
                 border: 1px solid #cbd1cb
                 margin: 6px
-                // background-color: rgba(214, 187, 8, 0.86)
 
                 img
                   max-width: 100%
@@ -236,7 +226,6 @@
           justify-content: center
           width: 99%
           height: auto
-
 
           p
             color: #9c9889
