@@ -153,7 +153,7 @@
 		display: flex
 		flex-wrap: wrap
 		justify-content: space-between
-		width: 70%
+		width: 96%
 		margin: auto
 		padding: 0
 		border-radius: 21px
@@ -166,11 +166,10 @@
 
 		.nav-folders
 			height: auto
-			margin: 1.5px
 			padding: 8px
 			display: none
 			width: 100%
-			// border-bottom: 1px solid darkorange
+			border-bottom: 1px solid #d7caba
 			@include tablet
 				display: flex
 				justify-content: space-around
@@ -203,24 +202,23 @@
 		display: flex
 		flex-direction: column
 		justify-content: space-between
-		line-height: 38px
+		line-height: 41px
 		width: 100%
 		cursor: pointer
 		text-align: center
-		font-family: sans-serif
+		font-family: $font-stack-old-style
+		font-weight: bolder
 		text-decoration: none
-		background-color: #29343a
-		color:#eaa11d
-		border: 1px solid
-		border-radius: 0 0 15px 15px
+		background-color: rgba(255, 145, 13, 0.02)
+		color: #0c0400
 		&:active
 			color: #4DB0BF
 		&:focus
-			color: #4DB0BF
-			background-color: #1c1f25
+			color: #e4e4e4
+			background-color: #262b2d
 		.nav-archives
-			font-size: 0.97em
-			letter-spacing: 0.04em
+			font-size: 1.1em
+			letter-spacing: 0.02em
 			@include tablet
 				width: 16vw
 				border: 1px solid #f4df84
@@ -294,15 +292,19 @@
 
 	.mobile-container
 		display: flex
-		width: 97%
+		width: 82%
 		height: auto
 		justify-content: space-between
-		background-color: rgba(17, 32, 41, 0.86)
+		background-color: rgba(245, 245, 245, 0.98)
+		// background-image: url('../dist/imgs/polygons.1920.png')
+		// background-position: center
+		// background-size: cover
+		// background-repeat: no-repeat
 		z-index: 999999
 		position: fixed
 		top: 0
 		left: 4px
-		border: 1.5px solid #b56e18
+		border: 1px solid #d4ccc2
 		border-radius: 0 0px 15px 15px
 		display: none
 		@include tablet
@@ -317,15 +319,12 @@
 			top: 0
 			left: 0
 
-
-
 		#menu-buttons
 				display: flex
 				width: 100%
 				justify-content: flex-start
 				@include tablet
 					display: none
-
 
 		.mobile-menu
 			display: flex
@@ -347,6 +346,7 @@
 			padding: 0px 46px 0 46px
 			margin: auto
 			cursor: pointer
+			background-color: #202223
 
 			.menu
 				color: #b56e18

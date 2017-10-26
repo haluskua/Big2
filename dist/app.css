@@ -307,7 +307,7 @@ h2, h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 70%;
+    width: 96%;
     margin: auto;
     padding: 0;
     border-radius: 21px;
@@ -334,10 +334,10 @@ h2, h3 {
 @media only screen and (min-width: 1em) and (orientation: portrait) {
   #folders-container .nav-folders {
     height: auto;
-    margin: 1.5px;
     padding: 8px;
     display: none;
     width: 100%;
+    border-bottom: 1px solid #d7caba;
   }
 }
 
@@ -409,27 +409,26 @@ h2, h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    line-height: 38px;
+    line-height: 41px;
     width: 100%;
     cursor: pointer;
     text-align: center;
-    font-family: sans-serif;
+    font-family: "Yantramanav", sans-serif;
+    font-weight: bolder;
     text-decoration: none;
-    background-color: #29343a;
-    color: #eaa11d;
-    border: 1px solid;
-    border-radius: 0 0 15px 15px;
+    background-color: rgba(255, 145, 13, 0.02);
+    color: #0c0400;
   }
   .hamburger-menu:active {
     color: #4DB0BF;
   }
   .hamburger-menu:focus {
-    color: #4DB0BF;
-    background-color: #1c1f25;
+    color: #e4e4e4;
+    background-color: #262b2d;
   }
   .hamburger-menu .nav-archives {
-    font-size: 0.97em;
-    letter-spacing: 0.04em;
+    font-size: 1.1em;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -536,17 +535,17 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 97%;
+    width: 82%;
     height: auto;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background-color: rgba(17, 32, 41, 0.86);
+    background-color: rgba(245, 245, 245, 0.98);
     z-index: 999999;
     position: fixed;
     top: 0;
     left: 4px;
-    border: 1.5px solid #b56e18;
+    border: 1px solid #d4ccc2;
     border-radius: 0 0px 15px 15px;
     display: none;
   }
@@ -618,6 +617,7 @@ h2, h3 {
     padding: 0px 46px 0 46px;
     margin: auto;
     cursor: pointer;
+    background-color: #202223;
   }
   .mobile-container .exit-menu .menu {
     color: #b56e18;
@@ -952,14 +952,14 @@ h2, h3 {
   }
   body main section .tag-title {
     width: 100%;
-    line-height: 50px;
+    line-height: 41px;
     text-align: center;
     font-family: sans-serif;
     font-weight: lighter;
     color: #fff362;
     font-style: normal;
     background-color: #b56e18;
-    font-size: 1.48em;
+    font-size: 1.08em;
     border: 1px solid #ffce93;
     border-radius: 0 0px 15px 15px;
   }
