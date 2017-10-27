@@ -619,19 +619,19 @@ h2, h3 {
   .mobile-container .exit-menu {
     border-radius: 0 0 15px 10px;
     text-align: center;
-    border: 1px solid #ff3853;
+    border: 1px solid #5a3c3c;
     width: 88px;
     cursor: pointer;
-    background-color: #1b0f11;
+    background-color: #ffc62b;
     line-height: 40px;
   }
   .mobile-container .exit-menu .menu {
-    color: #ffeeee;
-    font-size: 1.29em;
+    color: #ff243d;
+    font-family: "Dancing Script";
+    font-size: 1.3em;
     text-decoration: none;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.08em;
     font-weight: bold;
-    font-family: sans-serif;
   }
 }
 
