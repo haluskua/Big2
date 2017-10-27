@@ -9,6 +9,7 @@
 @import url("https://fonts.googleapis.com/css?family=Cinzel");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
 /* BASE STYLES */
 h1 {
   font-family: Georgia, Times, serif;
@@ -214,15 +215,14 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (orientation: portrait) {
   #Colsplit-box1 .bio .intro {
-    font-family: sans-serif;
-    font-size: 0.699em;
-    color: #050200;
+    font-family: "Dancing Script";
+    font-size: 1.3em;
+    color: #da7800;
     text-align: justify;
-    text-transform: uppercase;
     margin: auto;
-    letter-spacing: 0.115em;
-    margin-top: 142px;
+    margin-top: 153px;
     position: absolute;
+    text-shadow: 4px 4px 4px #d0d0d0;
   }
 }
 
@@ -308,7 +308,7 @@ h2, h3 {
     margin: auto;
     padding: 0;
     border: 1.2px solid #b28a38;
-    background-color: #fdd361;
+    background-color: #ffc62b;
   }
 }
 
@@ -416,7 +416,7 @@ h2, h3 {
     font-size: 1.03em;
     font-weight: bold;
     text-decoration: none;
-    border-right: 2.8px solid #438506;
+    border-right: 2.8px solid rgba(255, 31, 62, 0.97);
     padding-right: 16px;
     color: #230404;
   }
@@ -470,7 +470,7 @@ h2, h3 {
     display: -ms-flexbox;
     display: flex;
     background-color: #29343a;
-    border-bottom: 5px solid #60982d;
+    border-bottom: 5px solid #129c00;
     z-index: 999999;
     height: 36px;
     width: 100%;
@@ -550,7 +550,7 @@ h2, h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background-color: rgba(255, 31, 62, 0.89);
+    background-color: #129c00;
     z-index: 999999;
     position: fixed;
     border: 2px solid #1b0f11;
@@ -869,13 +869,13 @@ h2, h3 {
     font-size: 1.88em;
     font-family: "Amatic SC", cursive;
     letter-spacing: 0.02em;
-    color: #438506;
+    color: #199601;
     font-weight: 600;
     line-height: 44px;
   }
   body main section #wagai p #pen-off {
-    font-size: 0.95em;
-    font-family: sans-serif;
+    font-size: 1.52em;
+    font-family: "Dancing Script";
     font-style: italic;
     color: #c78919;
     font-weight: lighter;
@@ -927,8 +927,8 @@ h2, h3 {
     font-weight: lighter;
     color: #131426;
     border-bottom: 1.2px solid #438506;
-    margin-bottom: 14px;
-    line-height: 1.9em;
+    margin-bottom: 21px;
+    padding-bottom: 8px;
   }
   body main section #wagai #skills-column .skills-title {
     border-bottom: 1px solid gray;
@@ -957,9 +957,10 @@ h2, h3 {
     line-height: 46px;
     text-align: center;
     font-family: sans-serif;
+    text-transform: uppercase;
     font-weight: 600;
     font-style: normal;
-    font-size: 1.28em;
+    font-size: 1.18em;
     color: #29343a;
     border-bottom: 2.1px solid #c81c38;
     border-top: 2px solid #438506;
@@ -1036,12 +1037,12 @@ h2, h3 {
   }
   body main section .slider-inner {
     max-width: 90.4%;
-    max-width-max-height: 300px;
     position: relative;
     overflow: hidden;
     float: left;
     padding: 3px;
     border: solid 1px #d3a436;
+    border-background-color: white;
   }
   body main section .slider-inner img {
     display: none;
