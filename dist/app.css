@@ -876,8 +876,10 @@ h2, h3 {
   body main section #wagai p #pen-off {
     font-size: 0.95em;
     font-family: sans-serif;
-    color: #ff1f3e;
+    font-style: italic;
+    color: #c78919;
     font-weight: lighter;
+    padding-bottom: 10px;
   }
   body main section #wagai p .portrait {
     max-width: 130px;
