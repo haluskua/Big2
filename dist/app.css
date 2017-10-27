@@ -35,6 +35,8 @@ h2, h3 {
     overflow: hidden;
     width: 100vw;
     height: 100vh;
+    background: url("../dist/imgs/1920.png") top no-repeat;
+    background-size: auto;
   }
 }
 
@@ -217,7 +219,7 @@ h2, h3 {
   #Colsplit-box1 .bio .intro {
     font-family: "Dancing Script";
     font-size: 1.3em;
-    color: #da7800;
+    color: #bd8347;
     text-align: justify;
     margin: auto;
     margin-top: 153px;
@@ -240,14 +242,13 @@ h2, h3 {
 @media only screen and (min-width: 1em) and (orientation: portrait) {
   #Colsplit-box1 .bio #my-name {
     color: #5e450d;
-    font-family: cursive;
-    font-size: 0.97em;
-    letter-spacing: 0.05em;
+    font-family: "Dancing Script";
+    font-size: 1.15em;
     text-transform: capitalize;
     font-weight: lighter;
     margin: auto;
     height: 45%;
-    padding-top: 34px;
+    padding-top: 54px;
   }
 }
 
@@ -304,10 +305,14 @@ h2, h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    background-image: url("../dist/imgs/1920.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
     width: 96%;
     margin: auto;
     padding: 0;
-    border: 1.2px solid #b28a38;
+    border: 1.2px solid #ffe224;
     background-color: #ffc62b;
   }
 }
@@ -429,14 +434,14 @@ h2, h3 {
             align-items: flex-start;
     background-color: #fffef2;
     border-left: 2px solid #438506;
-    border-right: 6px solid #230404;
+    border-right: 6px solid #438506;
     border-radius: 10px 0 0 10px;
     padding-left: 20px;
     font-weight: 600;
-    font-size: 1.23em;
+    font-size: 1.15em;
     letter-spacing: 0.04em;
-    color: #ffeeee;
-    background-color: rgba(255, 31, 62, 0.82);
+    color: #29343a;
+    background-color: #ffe224;
   }
   .hamburger-menu .nav-archives {
     font-family: sans-serif;
@@ -550,10 +555,10 @@ h2, h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background-color: #129c00;
+    background-color: #fffef2;
     z-index: 999999;
     position: fixed;
-    border: 2px solid #1b0f11;
+    border: 2px solid #438506;
     border-radius: 0 0px 15px 15px;
     display: none;
   }
@@ -619,14 +624,15 @@ h2, h3 {
   .mobile-container .exit-menu {
     border-radius: 0 0 15px 10px;
     text-align: center;
-    border: 1px solid #5a3c3c;
+    border: 2px solid #e8e8e8;
     width: 88px;
     cursor: pointer;
-    background-color: #ffc62b;
-    line-height: 40px;
+    background-color: #fffef2;
+    line-height: 32px;
+    margin-left: 5px;
   }
   .mobile-container .exit-menu .menu {
-    color: #ff243d;
+    color: #129c00;
     font-family: "Dancing Script";
     font-size: 1.3em;
     text-decoration: none;
@@ -965,7 +971,7 @@ h2, h3 {
     border-bottom: 2.1px solid #c81c38;
     border-top: 2px solid #438506;
     border-radius: 0 0px 15px 15px;
-    background-color: #fdd361;
+    background-color: #ffe224;
   }
   body main section #snaps {
     background-image: url("../dist/imgs/polygons.png");
