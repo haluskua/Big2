@@ -28,23 +28,23 @@ function checkSize(){
         }
       });
 
-      //Get the header height
-      var headerHeight2 = $('.mobile-container').outerHeight();
-      /* Stick navigation to the top of the page */
-
-      $('.hamburger-menu').click(function(e) {
-      var linkHref = $(this).attr('href');
-      $('html, body').animate({
-        scrollTop: $(linkHref).offset().top - headerHeight2
-      }, 1000);
-      e.preventDefault();
-    });
+    //   //Get the header height
+    //   var headerHeight2 = $('.mobile-container').outerHeight();
+    //   /* Stick navigation to the top of the page */
+    //
+    //   $('.hamburger-menu').click(function(e) {
+    //   var linkHref = $(this).attr('href');
+    //   $('html, body').animate({
+    //     scrollTop: $(linkHref).offset().top - headerHeight2
+    //   }, 1000);
+    //   e.preventDefault();
+    // });
 
     var stickyNavTop = $('.nav-folders').offset().top;
 
   }
 
-    var headerHeight = 22;
+    var headerHeight = 39;
     $('.hamburger-menu').click(function(e) {
         var linkHref = $(this).attr('href');
         $('html, body').animate({
