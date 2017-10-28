@@ -29,14 +29,14 @@
         background-size: cover
         background-repeat: repeat-y
         border-top: 1px solid #d6a870
-
         @include tablet
           display: flex
           flex-direction: column
           justify-content: space-around
-          width: 100vw
+          width: 98vw
           height: 100vh
           margin: auto
+          margin-top: 60px
           border: 1px solid gray
 
         #wagai
@@ -148,6 +148,14 @@
           border-top: 2px solid #438506
           border-radius: 0 0px 15px 15px
           background-color: #ffe224
+          @include tablet
+            width: 82%
+            margin-top: 16px
+            font-weight: normal
+            border-bottom: 2.1px solid #d1ae32
+            border-top: 2px solid #438506
+            background-color: #fffef2
+            color: #438506
 
         #snaps
           background-image: url('../dist/imgs/polygons.png')

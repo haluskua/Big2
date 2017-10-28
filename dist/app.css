@@ -81,7 +81,7 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   .Colsplit-between {
-    height: 100vh;
+    height: 91%;
     width: 100vw;
     margin: auto;
     padding: 0;
@@ -121,7 +121,7 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   #Colsplit-box1 .landing-page {
-    height: 15%;
+    height: 13%;
   }
 }
 
@@ -138,15 +138,6 @@ h2, h3 {
   #Colsplit-box1 .landing-page .hetpage-li #thin {
     margin: auto;
   }
-}
-
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
-  #Colsplit-box1 .landing-page .hetpage-li #thin {
-    background-color: green;
-  }
-}
-
-@media only screen and (min-width: 1em) and (orientation: portrait) {
   #Colsplit-box1 .landing-page .hetpage-li #thin #bulgeword {
     font-family: sans-serif;
     font-weight: lighter;
@@ -159,8 +150,9 @@ h2, h3 {
 @media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   #Colsplit-box1 .landing-page .hetpage-li #thin #bulgeword {
     color: #b3790b;
-    font-size: 1.2em;
-    letter-spacing: 0.3em;
+    font-family: serif;
+    font-size: 1em;
+    letter-spacing: 0.06em;
   }
 }
 
@@ -176,7 +168,7 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   #Colsplit-box1 .landing-page .hetpage-li #hetinfo {
-    height: 26px;
+    height: 42px;
     line-height: 0px;
     width: 100%;
   }
@@ -191,6 +183,17 @@ h2, h3 {
     font-weight: lighter;
     cursor: pointer;
   }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+  #Colsplit-box1 .landing-page .hetpage-li #hetinfo #mini-desc {
+    line-height: 44px;
+    font-size: 1.1em;
+    color: #00719c;
+  }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) {
   #Colsplit-box1 .bio {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -211,6 +214,17 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   #Colsplit-box1 .bio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    height: 24%;
     margin-top: 30px;
   }
 }
@@ -233,9 +247,12 @@ h2, h3 {
     color: #251202;
     padding-top: 0;
     margin-top: 0;
-    font-family: "Yantramanav", sans-serif;
-    font-size: 1.67em;
+    font-family: "Amatic SC", cursive;
+    font-size: 2.2em;
+    font-weight: 900;
     letter-spacing: 0.02em;
+    text-shadow: none;
+    position: relative;
   }
 }
 
@@ -247,7 +264,7 @@ h2, h3 {
     text-transform: capitalize;
     font-weight: lighter;
     margin: auto;
-    height: 45%;
+    height: 42%;
     padding-top: 54px;
   }
 }
@@ -256,6 +273,9 @@ h2, h3 {
   #Colsplit-box1 .bio #my-name {
     margin: 0 auto;
     padding: 0;
+    font-size: 2.7em;
+    position: relative;
+    height: 14px;
   }
 }
 
@@ -374,7 +394,7 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   #home-logo {
-    height: 40%;
+    height: 52%;
   }
 }
 
@@ -593,6 +613,7 @@ h2, h3 {
     background-image: none;
     z-index: 9999;
     position: fixed;
+    border: none;
     top: 0;
     left: 0;
   }
@@ -780,6 +801,8 @@ h2, h3 {
 @media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   .mobile-container.sticky {
     width: 100%;
+    height: 59px;
+    border: none;
     background-color: #fffef2;
   }
 }
@@ -863,9 +886,10 @@ h2, h3 {
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    width: 100vw;
+    width: 98vw;
     height: 100vh;
     margin: auto;
+    margin-top: 60px;
     border: 1px solid gray;
   }
 }
@@ -1003,6 +1027,21 @@ h2, h3 {
     border-radius: 0 0px 15px 15px;
     background-color: #ffe224;
   }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+  body main section .tag-title {
+    width: 82%;
+    margin-top: 16px;
+    font-weight: normal;
+    border-bottom: 2.1px solid #d1ae32;
+    border-top: 2px solid #438506;
+    background-color: #fffef2;
+    color: #438506;
+  }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) {
   body main section #snaps {
     background-image: url("../dist/imgs/polygons.png");
     background-size: cover;
