@@ -7,7 +7,7 @@ $(document).ready(function(){
 
 //function to the css rule
 function checkSize(){
-  if ($(".hetpage").css("width") < "480px"){
+  if ($(".hetpage").css("width") <= "480px"){
 
 
     // once width of header is less than 480 then jqery runs
@@ -113,7 +113,7 @@ function checkSize(){
 
               $(".hamburger-menu").on("click", function(){
                 $(".mobile-container").show(500);
-                $(".haus").hide(500);
+                $(".haus").hide();
                 $(".exit-menu").hide();
               });
 

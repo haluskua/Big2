@@ -480,7 +480,7 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   .hamburger-menu {
-    width: 60px;
+    width: 100%;
     font-size: 1.3em;
     margin: auto;
     padding: 0;
@@ -488,6 +488,7 @@ h2, h3 {
     cursor: pointer;
     font-weight: lighter;
     background-color: #fffef2;
+    border-right: 1px solid #dedccd;
   }
   .hamburger-menu:focus {
     margin: 0;
@@ -495,7 +496,7 @@ h2, h3 {
     color: green;
     background-color: #fffef2;
     text-transform: lowercase;
-    border-right: 4px solid green;
+    border-right: 2px solid #ff1f3e;
     border-left: none;
   }
 }
@@ -680,6 +681,15 @@ h2, h3 {
     background-color: #fffef2;
     line-height: 44px;
   }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+  .mobile-container .exit-menu {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) {
   .mobile-container .exit-menu .menu {
     color: #129c00;
     font-family: "Dancing Script";
@@ -1073,10 +1083,15 @@ h2, h3 {
     width: 82%;
     margin-top: 16px;
     font-weight: normal;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    line-height: 45px;
+    font-family: "Audiowide";
+    font-size: 1.5em;
     border-bottom: 2.1px solid #d1ae32;
     border-top: 2px solid #438506;
     background-color: #fffef2;
-    color: #438506;
+    color: #ff1f3e;
   }
 }
 

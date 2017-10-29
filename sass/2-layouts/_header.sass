@@ -1,6 +1,5 @@
 
 
-
 @include phone
 	.hetpage
 		display: flex
@@ -254,7 +253,7 @@
 			color: #29343a
 			background-color: #ffe224
 		@include tablet
-			width: 60px
+			width: 100%
 			font-size: 1.3em
 			margin: auto
 			padding: 0
@@ -262,13 +261,14 @@
 			cursor: pointer
 			font-weight: lighter
 			background-color: #fffef2
+			border-right: 1px solid #dedccd
 			&:focus
 				margin: 0
 				padding: 0
 				color: green
 				background-color: #fffef2
 				text-transform: lowercase
-				border-right: 4px solid green
+				border-right: 2px solid #ff1f3e
 				border-left: none
 
 		.nav-archives
@@ -384,6 +384,8 @@
 			cursor: pointer
 			background-color: #fffef2
 			line-height: 44px
+			@include tablet
+				display: none
 
 			.menu
 				color: #129c00
