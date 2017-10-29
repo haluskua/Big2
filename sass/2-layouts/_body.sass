@@ -49,6 +49,10 @@
           margin: auto
           overflow: scroll
           overflow-x: hidden
+          @include tablet
+            width: 83%
+            background-color: rgba(255, 254, 242, 0.26)
+            border: 1px solid #e5dcbc
 
           p
             margin: auto
@@ -58,6 +62,9 @@
             padding: 16px
             line-height: 1.5em
             letter-spacing: 0.004em
+            @include tablet
+              font-size: 1.04em
+              letter-spacing: normal
 
 
             span
@@ -113,6 +120,8 @@
                 border-bottom: 1.2px solid #438506
                 margin-bottom: 21px
                 padding-bottom: 8px
+                @include tablet
+                  margin-bottom: 16px
 
             .skills-title
               border-bottom: 1px solid gray

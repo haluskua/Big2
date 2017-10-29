@@ -42,10 +42,7 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   .hetpage {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-image: none;
+    background-size: contain;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -82,7 +79,6 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   .Colsplit-between {
-    height: 100%;
     width: 100vw;
     margin: auto;
     padding: 0;
@@ -108,7 +104,7 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   #Colsplit-box1 {
-    height: 81%;
+    height: 100%;
   }
 }
 
@@ -132,7 +128,7 @@ h2, h3 {
 @media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   #Colsplit-box1 .landing-page {
     height: 24%;
-    margin-bottom: 147px;
+    margin-bottom: 140px;
   }
 }
 
@@ -149,6 +145,15 @@ h2, h3 {
   #Colsplit-box1 .landing-page .hetpage-li #thin {
     margin: auto;
   }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+  #Colsplit-box1 .landing-page .hetpage-li #thin {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) {
   #Colsplit-box1 .landing-page .hetpage-li #thin #bulgeword {
     font-family: sans-serif;
     font-weight: lighter;
@@ -160,10 +165,10 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   #Colsplit-box1 .landing-page .hetpage-li #thin #bulgeword {
-    color: #b3790b;
-    font-family: serif;
-    font-size: 1em;
-    letter-spacing: 0.06em;
+    color: #129c00;
+    font-family: "Amatic SC", cursive;
+    font-size: 1.55em;
+    font-weight: 600;
   }
 }
 
@@ -198,9 +203,9 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   #Colsplit-box1 .landing-page .hetpage-li #hetinfo #mini-desc {
-    line-height: 44px;
+    line-height: 43px;
     font-size: 1.1em;
-    color: #00719c;
+    color: #574317;
   }
 }
 
@@ -236,7 +241,7 @@ h2, h3 {
         -ms-flex-direction: column;
             flex-direction: column;
     position: relative;
-    height: 22%;
+    height: 25%;
   }
 }
 
@@ -282,11 +287,10 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   #Colsplit-box1 .bio #my-name {
-    margin-top: 41px;
     padding: 0;
-    font-size: 2.5em;
+    font-size: 2.8em;
+    font-family: "Audiowide";
     position: relative;
-    height: 30px;
   }
 }
 
@@ -405,9 +409,7 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   #home-logo {
-    height: 47%;
     margin-top: 49px;
-    height: 52%;
   }
 }
 
@@ -432,9 +434,8 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   #home-logo .logo-home {
-    height: 64%;
-    margin-top: 74px;
     background-size: contain;
+    margin-top: 111px;
     z-index: 999;
   }
 }
@@ -931,6 +932,17 @@ h2, h3 {
     overflow: scroll;
     overflow-x: hidden;
   }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+  body main section #wagai {
+    width: 83%;
+    background-color: rgba(255, 254, 242, 0.26);
+    border: 1px solid #e5dcbc;
+  }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) {
   body main section #wagai p {
     margin: auto;
     font-size: 1em;
@@ -940,6 +952,16 @@ h2, h3 {
     line-height: 1.5em;
     letter-spacing: 0.004em;
   }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+  body main section #wagai p {
+    font-size: 1.04em;
+    letter-spacing: normal;
+  }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) {
   body main section #wagai p span {
     font-size: 1.88em;
     font-family: "Amatic SC", cursive;
@@ -1005,6 +1027,15 @@ h2, h3 {
     margin-bottom: 21px;
     padding-bottom: 8px;
   }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+  body main section #wagai #skills-column #skills-set-imgs .GD, body main section #wagai #skills-column #skills-set-imgs .Adobe, body main section #wagai #skills-column #skills-set-imgs .Webdev, body main section #wagai #skills-column #skills-set-imgs .Musician {
+    margin-bottom: 16px;
+  }
+}
+
+@media only screen and (min-width: 1em) and (orientation: portrait) {
   body main section #wagai #skills-column .skills-title {
     border-bottom: 1px solid gray;
   }

@@ -11,8 +11,8 @@
 		background: url('../dist/imgs/1920.png') top no-repeat
 		background-size: auto
 		@include tablet
-			justify-content: center
-			background-image: none
+			background-size: contain
+			// background-image: none
 			flex-grow: 1
 			height: 100vh
 			@include desktop
@@ -27,7 +27,6 @@
 		height: 70%
 		position: relative
 		@include tablet
-			height: 100%
 			width: 100vw
 			margin: auto
 			padding: 0
@@ -39,7 +38,7 @@
 		height: 100%
 		position: relative
 		@include tablet
-			height: 81%
+			height: 100%
 
 		.landing-page
 			display: flex
@@ -49,8 +48,7 @@
 			align-self: center
 			@include tablet
 				height: 24%
-				margin-bottom: 147px
-
+				margin-bottom: 140px
 
 			.hetpage-li
 				display: flex
@@ -60,6 +58,7 @@
 				#thin
 					margin: auto
 					@include tablet
+						margin: 0
 
 					#bulgeword
 						font-family: sans-serif
@@ -68,10 +67,10 @@
 						color: #524e48
 						font-style: normal
 						@include tablet
-							color: #b3790b
-							font-family: serif
-							font-size: 1em
-							letter-spacing: 0.06em
+							color: #129c00
+							font-family: $font-stack-thin
+							font-size: 1.55em
+							font-weight: 600
 
 				#hetinfo
 					margin: auto
@@ -92,10 +91,9 @@
 						font-weight: lighter
 						cursor: pointer
 						@include tablet
-							line-height: 44px
+							line-height: 43px
 							font-size: 1.1em
-							color: #00719c
-
+							color: #574317
 		.bio
 			display: flex
 			flex-direction: column
@@ -107,7 +105,7 @@
 				justify-content: space-between
 				flex-direction: column
 				position: relative
-				height: 22%
+				height: 25%
 
 			.intro
 				font-family: $font-stack-Dancing-script
@@ -139,11 +137,11 @@
 				height: 42%
 				padding-top: 54px
 				@include tablet
-					margin-top: 41px
 					padding: 0
-					font-size: 2.5em
+					font-size: 2.8em
+					font-family: $font-stack-audio
 					position: relative
-					height: 30px
+
 	#coa-menu
 		align-self: flex-start
 		margin-left: 30px
@@ -204,9 +202,7 @@
 		flex-direction: column
 		height: 70%
 		@include tablet
-			height: 47%
 			margin-top: 49px
-			height: 52%
 
 		.imgslider
 			width: 80%
@@ -221,9 +217,8 @@
 			display: flex
 			margin-top: 70px
 			@include tablet
-				height: 64%
-				margin-top: 74px
 				background-size: contain
+				margin-top: 111px
 				z-index: 999
 
 	.hamburger-menu
