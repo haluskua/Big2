@@ -12,6 +12,7 @@
 		background-size: auto
 		@include tablet
 			justify-content: center
+			background-image: none
 			flex-grow: 1
 			height: 100vh
 			@include desktop
@@ -26,7 +27,7 @@
 		height: 70%
 		position: relative
 		@include tablet
-			height: 91%
+			height: 100%
 			width: 100vw
 			margin: auto
 			padding: 0
@@ -38,6 +39,7 @@
 		height: 100%
 		position: relative
 		@include tablet
+			height: 81%
 
 		.landing-page
 			display: flex
@@ -45,9 +47,10 @@
 			justify-content: space-around
 			width: 80%
 			align-self: center
-			// margin-top: -20px
 			@include tablet
-				height: 13%
+				height: 24%
+				margin-bottom: 147px
+
 
 			.hetpage-li
 				display: flex
@@ -101,11 +104,10 @@
 			height: 70px
 			@include tablet
 				display: flex
-				justify-content: space-around
+				justify-content: space-between
 				flex-direction: column
 				position: relative
-				height: 24%
-				margin-top: 30px
+				height: 22%
 
 			.intro
 				font-family: $font-stack-Dancing-script
@@ -118,12 +120,12 @@
 				text-shadow: 4px 4px 4px #d0d0d0
 				@include tablet
 					color: #251202
-					padding-top: 0
-					margin-top: 0
 					font-family: $font-stack-thin
 					font-size: 2.2em
 					font-weight: 900
+					height: 60px
 					letter-spacing: 0.02em
+					margin-top: 33px
 					text-shadow: none
 					position: relative
 
@@ -137,11 +139,11 @@
 				height: 42%
 				padding-top: 54px
 				@include tablet
-					margin: 0 auto
+					margin-top: 41px
 					padding: 0
-					font-size: 2.7em
+					font-size: 2.5em
 					position: relative
-					height: 14px
+					height: 30px
 	#coa-menu
 		align-self: flex-start
 		margin-left: 30px
@@ -202,6 +204,8 @@
 		flex-direction: column
 		height: 70%
 		@include tablet
+			height: 47%
+			margin-top: 49px
 			height: 52%
 
 		.imgslider
@@ -217,6 +221,9 @@
 			display: flex
 			margin-top: 70px
 			@include tablet
+				height: 64%
+				margin-top: 74px
+				background-size: contain
 				z-index: 999
 
 	.hamburger-menu
