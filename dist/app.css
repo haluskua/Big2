@@ -36,7 +36,7 @@ h2, h3 {
     width: 100vw;
     height: 100vh;
     background: url("../dist/imgs/1920.png") top no-repeat;
-    background-size: auto;
+    background-size: contain;
   }
 }
 
@@ -100,15 +100,6 @@ h2, h3 {
     height: 100%;
     position: relative;
   }
-}
-
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
-  #Colsplit-box1 {
-    height: 100%;
-  }
-}
-
-@media only screen and (min-width: 1em) and (orientation: portrait) {
   #Colsplit-box1 .landing-page {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -120,6 +111,7 @@ h2, h3 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     width: 80%;
+    height: 29%;
     -ms-flex-item-align: center;
         align-self: center;
   }
@@ -155,10 +147,9 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (orientation: portrait) {
   #Colsplit-box1 .landing-page .hetpage-li #thin #bulgeword {
-    font-family: sans-serif;
-    font-weight: lighter;
-    font-size: 0.74em;
-    color: #524e48;
+    font-family: "Amatic SC", cursive;
+    font-size: 1.04em;
+    color: #129c00;
     font-style: normal;
   }
 }
@@ -194,7 +185,7 @@ h2, h3 {
   #Colsplit-box1 .landing-page .hetpage-li #hetinfo #mini-desc {
     font-size: 0.75em;
     letter-spacing: 0.05em;
-    color: #23b0be;
+    color: #1c1014;
     font-family: sans-serif;
     font-weight: lighter;
     cursor: pointer;
@@ -205,7 +196,7 @@ h2, h3 {
   #Colsplit-box1 .landing-page .hetpage-li #hetinfo #mini-desc {
     line-height: 43px;
     font-size: 1.1em;
-    color: #574317;
+    color: #1b0e13;
   }
 }
 
@@ -247,14 +238,13 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (orientation: portrait) {
   #Colsplit-box1 .bio .intro {
-    font-family: "Dancing Script";
-    font-size: 1.3em;
-    color: #bd8347;
+    font-family: "Amatic SC", cursive;
+    font-size: 1.4em;
+    color: #2b0d18;
     text-align: justify;
     margin: auto;
-    margin-top: 153px;
+    margin-top: 119px;
     position: absolute;
-    text-shadow: 4px 4px 4px #d0d0d0;
   }
 }
 
@@ -262,7 +252,7 @@ h2, h3 {
   #Colsplit-box1 .bio .intro {
     color: #251202;
     font-family: "Amatic SC", cursive;
-    font-size: 2.2em;
+    font-size: 2.11em;
     font-weight: 900;
     height: 60px;
     letter-spacing: 0.02em;
@@ -275,20 +265,20 @@ h2, h3 {
 @media only screen and (min-width: 1em) and (orientation: portrait) {
   #Colsplit-box1 .bio #my-name {
     color: #5e450d;
-    font-family: "Dancing Script";
-    font-size: 1.15em;
+    font-family: "Audiowide";
+    font-size: 2em;
     text-transform: capitalize;
     font-weight: lighter;
     margin: auto;
     height: 42%;
-    padding-top: 54px;
+    padding-top: 61px;
   }
 }
 
 @media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   #Colsplit-box1 .bio #my-name {
     padding: 0;
-    font-size: 2.8em;
+    font-size: 2.77em;
     font-family: "Audiowide";
     position: relative;
   }
@@ -409,7 +399,8 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   #home-logo {
-    margin-top: 49px;
+    height: 54%;
+    margin-top: 0px;
   }
 }
 
@@ -421,21 +412,21 @@ h2, h3 {
   #home-logo .logo-home {
     height: 100%;
     background: url("../dist/imgs/nlsmall1.png") no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     overflow: hidden;
     z-index: 99999;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 70px;
+    margin-top: 102px;
   }
 }
 
 @media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
   #home-logo .logo-home {
     background-size: contain;
-    margin-top: 111px;
+    margin-top: 24px;
     z-index: 999;
   }
 }
@@ -610,7 +601,7 @@ h2, h3 {
     background-color: #fffef2;
     z-index: 999999;
     position: fixed;
-    border: 2px solid #438506;
+    border: 1px solid #438506;
     border-radius: 0 0px 15px 15px;
     display: none;
   }
