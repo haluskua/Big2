@@ -149,7 +149,7 @@ h2, h3 {
 @media only screen and (min-width: 1em) and (orientation: portrait) {
   #Colsplit-box1 .landing-page .hetpage-li #thin #bulgeword {
     font-family: "Amatic SC", cursive;
-    font-size: 1.04em;
+    font-size: 0.79em;
     color: #129c00;
     font-style: normal;
   }
@@ -184,7 +184,7 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (orientation: portrait) {
   #Colsplit-box1 .landing-page .hetpage-li #hetinfo #mini-desc {
-    font-size: 0.75em;
+    font-size: 0.72em;
     letter-spacing: 0.05em;
     color: #1c1014;
     font-family: sans-serif;
@@ -267,7 +267,7 @@ h2, h3 {
   #Colsplit-box1 .bio #my-name {
     color: #5e450d;
     font-family: "Audiowide";
-    font-size: 2em;
+    font-size: 1.5em;
     text-transform: capitalize;
     font-weight: lighter;
     margin: auto;
@@ -364,11 +364,10 @@ h2, h3 {
 @media only screen and (min-width: 1em) and (orientation: portrait) {
   #folders-container .nav-folders {
     height: auto;
-    padding: 5px;
+    padding: 3px;
     display: none;
     width: 100%;
-    border-bottom: 1px solid #643d0d;
-    padding-right: 7px;
+    border-bottom: 1px solid #efdeca;
   }
 }
 
@@ -416,7 +415,7 @@ h2, h3 {
     background-size: contain;
     background-position: center;
     overflow: hidden;
-    z-index: 99999;
+    z-index: 9999;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -449,7 +448,7 @@ h2, h3 {
     cursor: pointer;
     text-align: center;
     font-family: sans-serif;
-    font-size: 1.18em;
+    font-size: 1em;
     font-weight: normal;
     text-decoration: none;
     text-transform: lowercase;
@@ -522,7 +521,6 @@ h2, h3 {
     background-color: #29343a;
     border-bottom: 5px solid #129c00;
     z-index: 999999;
-    height: 36px;
     width: 100%;
     position: fixed;
   }
@@ -565,9 +563,9 @@ h2, h3 {
     display: flex;
     font-family: "Audiowide";
     color: #d1ae32;
-    font-size: 2.8em;
+    font-size: 2.1em;
     font-weight: bolder;
-    line-height: 36px;
+    line-height: 39px;
     padding-left: 28px;
     width: 83px;
   }
@@ -673,13 +671,12 @@ h2, h3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border-radius: 0 0 15px 10px;
+    border-radius: 0 0 15px 15px;
     text-align: center;
     border: 2px solid #e8e8e8;
     width: 100%;
     cursor: pointer;
-    background-color: #fffef2;
-    line-height: 44px;
+    line-height: 37px;
   }
 }
 
@@ -947,7 +944,7 @@ h2, h3 {
 @media only screen and (min-width: 1em) and (orientation: portrait) {
   body main section #wagai p {
     margin: auto;
-    font-size: 1em;
+    font-size: 0.89em;
     font-family: sans-serif;
     color: #1b1102;
     padding: 16px;
@@ -965,7 +962,7 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (orientation: portrait) {
   body main section #wagai p span {
-    font-size: 1.88em;
+    font-size: 1.84em;
     font-family: "Amatic SC", cursive;
     letter-spacing: 0.02em;
     color: #199601;
@@ -1068,7 +1065,7 @@ h2, h3 {
     text-transform: uppercase;
     font-weight: 600;
     font-style: normal;
-    font-size: 1.13em;
+    font-size: 1em;
     color: #29343a;
     margin-top: 0;
     border-bottom: 2.1px solid #c81c38;
