@@ -9,7 +9,7 @@ $(document).ready(function(){
 function checkSize(){
   if ($(".hetpage").css("width") <= "480px"){
 
-
+    // )))))))))))))))))))))))))))))))))))))))))))))
     // once width of header is less than 480 then jqery runs
       $(window).scroll(function() {
         var scrollTop = $(window).scrollTop();
@@ -107,45 +107,6 @@ function checkSize(){
             }
           });
 
-              //<<<<<<<checkSize if not less than 480px than changes in respect to ipad and desktrop>>>>>>>>>>>>>
-        //<<<<<<<<<<<<<<<<<menu navigation responses for ipad>>>>>>>>>>>>>>>
-            }else {
-
-              $(".hamburger-menu").on("click", function(){
-                $(".mobile-container").show(500);
-                $(".haus").hide();
-                $(".exit-menu").hide();
-              });
-
-              // once width of header is less than 480 then jqery runs
-                $(window).scroll(function() {
-                  var scrollTop = $(window).scrollTop();
-
-                /*changing between classes */
-                  if (scrollTop > stickyNavTop) {
-                    $('.mobile-container').addClass('sticky');
-                    $('#folders-container').addClass('reduced');
-                    // $('#folders-container').addClass('reduced');
-
-                  } else {
-                      /*restoring back to normal */
-                    $('.mobile-container').removeClass('sticky');
-                    $('#folders-container').removeClass('reduced');
-                    // $('#folders-container').removeClass('reduced');
-                  }
-                });
-
-                var stickyNavTop = $('.nav-folders').offset().top;
-
-
-                var headerHeight = 39;
-                $('.hamburger-menu').click(function(e) {
-                    var linkHref = $(this).attr('href');
-                    $('html, body').animate({
-                      scrollTop: $(linkHref).offset().top - headerHeight
-                    }, 800);
-                    e.preventDefault();
-                  });
 
             }
 

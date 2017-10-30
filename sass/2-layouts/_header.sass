@@ -6,13 +6,13 @@
 		flex-direction: column
 		justify-content: flex-start
 		overflow: hidden
-		max-width: 480px
+		max-width: 100vw
 		height: 100vh
 		background: url('../dist/imgs/1920.png') top no-repeat
 		background-size: contain
 		@include tablet
 			background-size: contain
-			max-width: 1366px
+			max-width: 100vw
 			flex-grow: 1
 			height: 100vh
 			@include desktop
@@ -262,24 +262,22 @@
 			background-color: #fffef2
 			border-right: 1px solid #dedccd
 			&:focus
-				margin: 0
+				margin-left: 13px
 				padding: 0
 				color: green
 				background-color: #fffef2
 				text-transform: lowercase
 				border-right: 2px solid #ff1f3e
 				border-left: none
-
 		.nav-archives
 			font-family: sans-serif
 			text-align: right
 			@include tablet
 				text-align: center
-
 	.haus
 		display: flex
 		background-color: #29343a
-		border-bottom: 5px solid #129c00
+		border-bottom: 4px solid #129c00
 		z-index: 999999
 		width: 100%
 		position: fixed
