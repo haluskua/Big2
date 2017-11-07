@@ -9,6 +9,12 @@ $(document).ready(function(){
 function checkSize(){
   if ($(".hetpage").css("width") <= "480px"){
 
+  //exit menu bar onclick
+      $(".hamburger-menu").on("click", function(){
+        $(".mobile-container").hide(500);
+        $(".haus").show(500);
+      });
+
     // )))))))))))))))))))))))))))))))))))))))))))))
     // once width of header is less than 480 then jqery runs
       $(window).scroll(function() {
@@ -18,18 +24,15 @@ function checkSize(){
         if (scrollTop > stickyNavTop) {
           $('.mobile-container').addClass('sticky');
           $('#folders-container').addClass('reduced');
-          // $('#folders-container').addClass('reduced');
 
         } else {
             /*restoring back to normal */
           $('.mobile-container').removeClass('sticky');
           $('#folders-container').removeClass('reduced');
-          // $('#folders-container').removeClass('reduced');
         }
       });
 
       var stickyNavTop = $('.nav-folders').offset().top;
-
 
       var headerHeight = 39;
       $('.hamburger-menu').click(function(e) {
@@ -40,7 +43,6 @@ function checkSize(){
           e.preventDefault();
         });
 
-
         //show menu bar onclick on main logo
         $(".haus-menu, #hetinfo").click(function(){
           $(".mobile-container").show(900);
@@ -49,11 +51,6 @@ function checkSize(){
           $(".haus").hide(1000);
         });
 
-    //exit menu bar onclick
-        $(".hamburger-menu").on("click", function(){
-          $(".mobile-container").hide(500);
-          $(".haus").show(500);
-        });
         $(".exit-menu").on("click", function(){
           $(".mobile-container").hide(500);
           $(".haus").show(500);

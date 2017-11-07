@@ -20,7 +20,7 @@ h2, h3 {
 }
 
 /* LAYOUT */
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media (min-width: 1em), screen and (orientation: portrait) {
   .hetpage {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -40,7 +40,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .hetpage {
     background-size: contain;
     max-width: 100vw;
@@ -51,16 +51,16 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) and (min-width: 1200px) and (orientation: landscape) {
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .hetpage {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: green;
+    background: none;
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media (min-width: 1em), screen and (orientation: portrait) {
   .Colsplit-between {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -78,7 +78,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .Colsplit-between {
     width: 100vw;
     margin: auto;
@@ -86,7 +86,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media (min-width: 1em), screen and (orientation: portrait) {
   #Colsplit-box1 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -118,14 +118,14 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #Colsplit-box1 .landing-page {
     height: 24%;
     margin-bottom: 140px;
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media (min-width: 1em), screen and (orientation: portrait) {
   #Colsplit-box1 .landing-page .hetpage-li {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -140,13 +140,13 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #Colsplit-box1 .landing-page .hetpage-li #thin {
     margin: 0;
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media (min-width: 1em), screen and (orientation: portrait) {
   #Colsplit-box1 .landing-page .hetpage-li #thin #bulgeword {
     font-family: "Amatic SC", cursive;
     font-size: 0.79em;
@@ -155,7 +155,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #Colsplit-box1 .landing-page .hetpage-li #thin #bulgeword {
     color: #129c00;
     font-family: "Amatic SC", cursive;
@@ -164,17 +164,23 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #Colsplit-box1 .landing-page .hetpage-li #thin #bulgeword {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   #Colsplit-box1 .landing-page .hetpage-li #hetinfo {
     margin: auto;
     border-bottom: 1px dotted orange;
     text-align: center;
     height: 27px;
-    line-height: 27px;
+    line-height: 26px;
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #Colsplit-box1 .landing-page .hetpage-li #hetinfo {
     height: 42px;
     line-height: 0px;
@@ -182,7 +188,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media (min-width: 1em), screen and (orientation: portrait) {
   #Colsplit-box1 .landing-page .hetpage-li #hetinfo #mini-desc {
     font-size: 0.72em;
     letter-spacing: 0.05em;
@@ -193,7 +199,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #Colsplit-box1 .landing-page .hetpage-li #hetinfo #mini-desc {
     line-height: 43px;
     font-size: 1.1em;
@@ -201,7 +207,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media (min-width: 1em), screen and (orientation: portrait) {
   #Colsplit-box1 .bio {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -220,7 +226,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #Colsplit-box1 .bio {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -237,7 +243,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media (min-width: 1em), screen and (orientation: portrait) {
   #Colsplit-box1 .bio .intro {
     font-family: "Amatic SC", cursive;
     font-size: 1.4em;
@@ -249,7 +255,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #Colsplit-box1 .bio .intro {
     color: #251202;
     font-family: "Amatic SC", cursive;
@@ -263,7 +269,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media (min-width: 1em), screen and (orientation: portrait) {
   #Colsplit-box1 .bio #my-name {
     color: #5e450d;
     font-family: "Audiowide";
@@ -276,7 +282,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #Colsplit-box1 .bio #my-name {
     padding: 0;
     font-size: 2.77em;
@@ -285,7 +291,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media (min-width: 1em), screen and (orientation: portrait) {
   #coa-menu {
     -ms-flex-item-align: start;
         align-self: flex-start;
@@ -297,7 +303,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .folders-container2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -315,13 +321,13 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) and (min-width: 1200px) and (orientation: landscape) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .folders-container2 {
     background-color: white;
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media (min-width: 1em), screen and (orientation: portrait) {
   #folders-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -342,7 +348,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #folders-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -361,7 +367,26 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #folders-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-item-align: center;
+        align-self: center;
+    width: 82vw;
+    height: auto;
+    border: 1.3px solid #e0ad6e;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   #folders-container .nav-folders {
     height: auto;
     padding: 3px;
@@ -371,7 +396,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #folders-container .nav-folders {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -384,7 +409,15 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #folders-container .nav-folders {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   #home-logo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -397,14 +430,14 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #home-logo {
     height: 54%;
     margin-top: 0px;
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media (min-width: 1em), screen and (orientation: portrait) {
   #home-logo .imgslider {
     width: 80%;
     position: relative;
@@ -423,7 +456,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #home-logo .logo-home {
     background-size: contain;
     margin-top: 24px;
@@ -431,7 +464,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media (min-width: 1em), screen and (orientation: portrait) {
   .hamburger-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -477,7 +510,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .hamburger-menu {
     width: 100%;
     font-size: 1.3em;
@@ -500,20 +533,20 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media (min-width: 1em), screen and (orientation: portrait) {
   .hamburger-menu .nav-archives {
     font-family: sans-serif;
     text-align: right;
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .hamburger-menu .nav-archives {
     text-align: center;
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media (min-width: 1em), screen and (orientation: portrait) {
   .haus {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -526,7 +559,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .haus {
     top: 0;
     left: 0;
@@ -535,7 +568,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media (min-width: 1em), screen and (orientation: portrait) {
   .haus ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -549,6 +582,15 @@ h2, h3 {
     margin: 0;
     padding: 0;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .haus ul {
+    display: none;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .haus ul li {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -607,7 +649,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .mobile-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -627,7 +669,21 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .mobile-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    position: fixed;
+    border: none;
+    background-color: none;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .mobile-container #menu-buttons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -639,13 +695,19 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .mobile-container #menu-buttons {
     display: none;
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .mobile-container #menu-buttons {
+    display: none;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .mobile-container .mobile-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -680,13 +742,13 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .mobile-container .exit-menu {
     display: none;
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media (min-width: 1em), screen and (orientation: portrait) {
   .mobile-container .exit-menu .menu {
     color: #129c00;
     font-family: "Dancing Script";
@@ -697,13 +759,13 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .mobile-container #nav {
     width: 100%;
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media (min-width: 1em), screen and (orientation: portrait) {
   .navbar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -814,7 +876,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .mobile-container.sticky {
     width: 100%;
     height: 59px;
@@ -823,7 +885,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media (min-width: 1em), screen and (orientation: portrait) {
   .reduced {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -845,7 +907,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media (min-width: 1em), screen and (orientation: portrait) {
   body {
     height: 100%;
     width: 100%;
@@ -891,7 +953,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   body main section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -910,7 +972,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media (min-width: 1em), screen and (orientation: portrait) {
   body main section #wagai {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -933,7 +995,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   body main section #wagai {
     width: 83%;
     background-color: rgba(255, 254, 242, 0.26);
@@ -941,7 +1003,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media (min-width: 1em), screen and (orientation: portrait) {
   body main section #wagai p {
     margin: auto;
     font-size: 0.89em;
@@ -953,14 +1015,14 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   body main section #wagai p {
     font-size: 1.04em;
     letter-spacing: normal;
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media (min-width: 1em), screen and (orientation: portrait) {
   body main section #wagai p span {
     font-size: 1.84em;
     font-family: "Amatic SC", cursive;
@@ -1028,13 +1090,13 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   body main section #wagai #skills-column #skills-set-imgs .GD, body main section #wagai #skills-column #skills-set-imgs .Adobe, body main section #wagai #skills-column #skills-set-imgs .Webdev, body main section #wagai #skills-column #skills-set-imgs .Musician {
     margin-bottom: 16px;
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media (min-width: 1em), screen and (orientation: portrait) {
   body main section #wagai #skills-column .skills-title {
     border-bottom: 1px solid gray;
   }
@@ -1077,7 +1139,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) and (min-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   body main section .tag-title {
     width: 82%;
     margin-top: 18px;
@@ -1091,7 +1153,7 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (orientation: portrait) {
+@media (min-width: 1em), screen and (orientation: portrait) {
   body main section #snaps {
     background-image: url("../dist/imgs/polygons.png");
     background-size: cover;

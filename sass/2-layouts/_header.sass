@@ -15,9 +15,9 @@
 			max-width: 100vw
 			flex-grow: 1
 			height: 100vh
-			@include desktop
-				display: flex
-				background-color: green
+		@include desktop
+			display: flex
+			background: none
 
 	.Colsplit-between
 		display: flex
@@ -70,13 +70,15 @@
 							font-family: $font-stack-thin
 							font-size: 1.55em
 							font-weight: 600
+						@include desktop
+							font-size: 2em
 
 				#hetinfo
 					margin: auto
 					border-bottom: 1px dotted orange
 					text-align: center
 					height: 27px
-					line-height: 27px
+					line-height: 26px
 					@include tablet
 						height: 42px
 						line-height: 0px
@@ -114,7 +116,6 @@
 				margin: auto
 				margin-top: 119px
 				position: absolute
-				// text-shadow: 4px 4px 4px #d0d0d0
 				@include tablet
 					color: #251202
 					font-family: $font-stack-thin
@@ -182,6 +183,14 @@
 			height: auto
 			width: 81%
 			flex-flow: row
+		@include desktop
+			display: flex
+			flex-flow: row
+			justify-content: space-around
+			align-self: center
+			width: 82vw
+			height: auto
+			border: 1.3px solid #e0ad6e
 
 		.nav-folders
 			height: auto
@@ -194,6 +203,8 @@
 				justify-content: space-between
 				width: 100%
 				height: auto
+			@include desktop
+				display: flex
 
 	#home-logo
 		display: flex
@@ -281,13 +292,13 @@
 		z-index: 999999
 		width: 100%
 		position: fixed
-
-
 		@include tablet
 			top: 0
 			left: 0
 			height: 60px
 			display: none
+		@include desktop
+			// display: none
 		ul
 			display: flex
 			justify-content: space-between
@@ -296,6 +307,8 @@
 			height: auto
 			margin: 0
 			padding: 0
+			@include desktop
+				display: none
 
 			li
 				justify-content: center
@@ -351,12 +364,22 @@
 			border: none
 			top: 0
 			left: 0
+		@include desktop
+			display: flex
+			width: 100%
+			justify-content: space-around
+			position: fixed
+			border: none
+			background-color: none
+
 
 		#menu-buttons
 				display: flex
 				width: 100%
 				justify-content: flex-start
 				@include tablet
+					display: none
+				@include desktop
 					display: none
 
 		.mobile-menu
