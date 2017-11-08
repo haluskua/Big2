@@ -81,28 +81,4 @@ $(document).ready(function(){
         $(".haus").show(500);
       });
 
-
-    function checkSize(){
-      checkSize();
-      $(window).resize(checkSize);
-      if ($(".hetpage").css("width") <= "480px"){
-
-        $(".hamburger-menu").on("click", function(){
-          alert("frog");
-          $(".mobile-container").hide(500);
-          $(".sticky").css("display, none");
-          $(".haus").show(500);
-          });
-
-        $('.main-menu').on("click", function(){
-          $("#menu-buttons").show(1000);
-        });
-      }
-       else if ($(".hetpage").css("width") > "481px") {
-        $(".hamburger-menu").on("click", function(){
-          $(".haus").hide(0);
-          $(".mobile-container").show(0);
-        });
-      }
-    }
 });

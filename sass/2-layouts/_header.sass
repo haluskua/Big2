@@ -39,108 +39,108 @@
 		position: relative
 		@include tablet
 
-		.landing-page
+	.landing-page
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+		width: 80%
+		height: 29%
+		align-self: center
+		@include tablet
+			height: 24%
+			margin-bottom: 140px
+
+		.hetpage-li
 			display: flex
-			flex-direction: column
-			justify-content: space-around
-			width: 80%
-			height: 29%
-			align-self: center
+			justify-content: center
+			margin: auto
+
+	#thin
+		margin: auto
+		@include tablet
+			margin: 0
+
+		#bulgeword
+			font-family: $font-stack-thin
+			font-size: 0.79em
+			color: #129c00
+			font-style: normal
 			@include tablet
-				height: 24%
-				margin-bottom: 140px
-
-			.hetpage-li
-				display: flex
-				justify-content: center
-				margin: auto
-
-				#thin
-					margin: auto
-					@include tablet
-						margin: 0
-
-					#bulgeword
-						font-family: $font-stack-thin
-						font-size: 0.79em
-						color: #129c00
-						font-style: normal
-						@include tablet
-							color: #129c00
-							font-family: $font-stack-thin
-							font-size: 1.55em
-							font-weight: 600
-						@include desktop
-							font-size: 2em
-
-				#hetinfo
-					margin: auto
-					border-bottom: 1px dotted orange
-					text-align: center
-					height: 27px
-					line-height: 26px
-					@include tablet
-						height: 42px
-						line-height: 0px
-						width: 100%
-
-					#mini-desc
-						font-size: 0.72em
-						letter-spacing: 0.05em
-						color: #1c1014
-						font-family: sans-serif
-						font-weight: lighter
-						cursor: pointer
-						@include tablet
-							line-height: 43px
-							font-size: 1.1em
-							color: #1b0e13
-		.bio
-			display: flex
-			flex-direction: column
-			justify-content: space-between
-			align-items: center
-			height: 70px
-			@include tablet
-				display: flex
-				justify-content: space-between
-				flex-direction: column
-				position: relative
-				height: 25%
-
-			.intro
+				color: #129c00
 				font-family: $font-stack-thin
-				font-size: 1.4em
-				color: #2b0d18
-				text-align: justify
-				margin: auto
-				margin-top: 119px
-				position: absolute
-				@include tablet
-					color: #251202
-					font-family: $font-stack-thin
-					font-size: 2.11em
-					font-weight: 900
-					height: 60px
-					letter-spacing: 0.02em
-					margin-top: 33px
-					text-shadow: none
-					position: relative
+				font-size: 1.55em
+				font-weight: 600
+			@include desktop
+				font-size: 2em
 
-			#my-name
-				color: #5e450d
-				font-family: $font-stack-audio
-				font-size: 1.5em
-				text-transform: capitalize
-				font-weight: lighter
-				margin: auto
-				height: 42%
-				padding-top: 61px
-				@include tablet
-					padding: 0
-					font-size: 2.77em
-					font-family: $font-stack-audio
-					position: relative
+	#hetinfo
+		margin: auto
+		border-bottom: 1px dotted orange
+		text-align: center
+		height: 27px
+		line-height: 26px
+		@include tablet
+			height: 42px
+			line-height: 0px
+			width: 100%
+
+	#mini-desc
+		font-size: 0.72em
+		letter-spacing: 0.05em
+		color: #1c1014
+		font-family: sans-serif
+		font-weight: lighter
+		cursor: pointer
+		@include tablet
+			line-height: 43px
+			font-size: 1.1em
+			color: #1b0e13
+	.bio
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		align-items: center
+		height: 70px
+		@include tablet
+			display: flex
+			justify-content: space-between
+			flex-direction: column
+			position: relative
+			height: 25%
+
+	.intro
+		font-family: $font-stack-thin
+		font-size: 1.4em
+		color: #2b0d18
+		text-align: justify
+		margin: auto
+		margin-top: 119px
+		position: absolute
+		@include tablet
+			color: #251202
+			font-family: $font-stack-thin
+			font-size: 2.11em
+			font-weight: 900
+			height: 60px
+			letter-spacing: 0.02em
+			margin-top: 33px
+			text-shadow: none
+			position: relative
+
+	#my-name
+		color: #5e450d
+		font-family: $font-stack-audio
+		font-size: 1.5em
+		text-transform: capitalize
+		font-weight: lighter
+		margin: auto
+		height: 42%
+		padding-top: 61px
+		@include tablet
+			padding: 0
+			font-size: 2.77em
+			font-family: $font-stack-audio
+			position: relative
 
 	#coa-menu
 		align-self: flex-start
@@ -191,19 +191,37 @@
 			height: auto
 			border: 1.3px solid #e0ad6e
 
-		.nav-folders
-			height: auto
-			padding: 3px
-			display: none
+ .reduced
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+    // height: 22px
+    // width: 100vw
+    // padding: 31px 0 24px 0
+    // background-color: rgba(5, 4, 30, 0.9)
+		margin: 0
+		@include tablet
 			width: 100%
-			border-bottom: 1px solid #efdeca
-			@include tablet
-				display: flex
-				justify-content: space-between
-				width: 100%
-				height: auto
-			@include desktop
-				display: flex
+		@include desktop
+
+		li
+			display: flex
+			// background-color: green
+			// width: 100%
+
+	.nav-folders
+		height: auto
+		padding: 3px
+		display: none
+		width: 100%
+		border-bottom: 1px solid #efdeca
+		@include tablet
+			display: flex
+			justify-content: space-between
+			width: 100%
+			height: auto
+		@include desktop
+			display: flex
 
 	#home-logo
 		display: flex
@@ -213,22 +231,22 @@
 			height: 54%
 			margin-top: 0px
 
-		.imgslider
-			width: 80%
-			position: relative
-	 .logo-home
-			height: 100%
-			background: url('../dist/imgs/nlsmall1.png') no-repeat
+	.imgslider
+		width: 80%
+		position: relative
+ .logo-home
+		height: 100%
+		background: url('../dist/imgs/nlsmall1.png') no-repeat
+		background-size: contain
+		background-position: center
+		overflow: hidden
+		z-index: 9999
+		display: flex
+		margin-top: 102px
+		@include tablet
 			background-size: contain
-			background-position: center
-			overflow: hidden
-			z-index: 9999
-			display: flex
-			margin-top: 102px
-			@include tablet
-				background-size: contain
-				margin-top: 24px
-				z-index: 999
+			margin-top: 24px
+			z-index: 999
 
 	.hamburger-menu
 		display: flex
@@ -279,11 +297,15 @@
 				text-transform: lowercase
 				border-right: 2px solid #ff1f3e
 				border-left: none
-		.nav-archives
-			font-family: sans-serif
-			text-align: right
-			@include tablet
-				text-align: center
+		@include desktop
+			font-size: 2em
+			color: purple
+			
+	.nav-archives
+		font-family: sans-serif
+		text-align: right
+		@include tablet
+			text-align: center
 
 	.haus
 		display: flex
@@ -291,6 +313,7 @@
 		border-bottom: 4px solid #129c00
 		z-index: 999999
 		width: 100%
+		height: 38px
 		position: fixed
 		@include tablet
 			top: 0
@@ -298,49 +321,52 @@
 			height: 60px
 			display: none
 		@include desktop
-			// display: none
+			display: none
+			border: 1px solid blue
+			height: 100px
 		ul
 			display: flex
 			justify-content: space-between
 			position: relative
 			width: 60%
-			height: auto
-			margin: 0
 			padding: 0
+			margin: 0
+
 			@include desktop
-				display: none
+				display: flex
 
 			li
+				display: flex
 				justify-content: center
 				position: relative
 				height: 100%
 				cursor: pointer
 
-				.haus-menu
-					display: flex
-					font-family: $font-stack-audio
-					color: #d1ae32
-					font-size: 2.1em
-					font-weight: bolder
-					line-height: 39px
-					padding-left: 28px
-					width: 83px
+	.haus-menu
+		display: flex
+		font-family: $font-stack-audio
+		color: #d1ae32
+		font-size: 2.1em
+		font-weight: bolder
+		line-height: 35px
+		padding-left: 28px
+		width: 83px
 
-				.main-menu
-					display: flex
-					justify-content: center
-					height: auto
-					text-decoration: none
-					font-size: 2em
-					font-family: $font-stack-paragraph
-					letter-spacing: 0.03em
-					color: #ff1f3e
-					cursor: pointer
-					width: 83px
-					bottom: 0px
-					left: 0px
-					z-index: 99999
-					background-color: #131426
+	.main-menu
+		display: flex
+		justify-content: center
+		height: auto
+		text-decoration: none
+		font-size: 2em
+		font-family: $font-stack-paragraph
+		letter-spacing: 0.03em
+		color: #ff1f3e
+		cursor: pointer
+		width: 83px
+		bottom: 0px
+		left: 0px
+		z-index: 99999
+		background-color: #131426
 
 	.mobile-container
 		display: flex
@@ -355,6 +381,7 @@
 		display: none
 		@include tablet
 			display: flex
+			background-color: purple
 			width: 100%
 			justify-content: space-around
 			align-items: flex-start
@@ -365,54 +392,79 @@
 			top: 0
 			left: 0
 		@include desktop
-			display: flex
+			display: none
 			width: 100%
 			justify-content: center
+			background-color: purple
+			border: none
 
-		#menu-buttons
-			display: flex
+
+	.mobile-container.sticky
+	 	 position: fixed
+	 	 display: flex
+	 	 top: 0
+	 	 left: 0
+	 	 height: auto
+	 	 z-index: 9999
+	 	 @include tablet
+			 display: flex
+	 		 position: fixed
+	 		 width: 100%
+	 		 height: auto
+	 		 background-color: #5d1818
+	 	 @include desktop
+			 display: flex
+	 		 width: 100%
+	 		 height: auto
+	 		 background-color: #5d1818
+	 		 z-index: 99999
+	 		 position: fixed
+
+
+	#menu-buttons
+		display: flex
+		width: 100%
+		justify-content: flex-start
+		@include tablet
+			display: none
+		@include desktop
+			display: none
+
+	.mobile-menu
+		display: flex
+		flex-direction: column
+		justify-content: center
+		width: 61px
+		height: 22px
+		border: 0.5px solid #ae8950
+		border-radius: 1px
+		position: absolute
+		z-index: 99999
+
+	.exit-menu
+		display: flex
+		justify-content: center
+		border-radius: 0 0 15px 15px
+		text-align: center
+		border: 2px solid #e8e8e8
+		width: 100%
+		cursor: pointer
+		line-height: 37px
+		@include tablet
+			display: none
+
+	.menu
+		color: #129c00
+		font-family: $font-stack-Dancing-script
+		font-size: 1.4em
+		text-decoration: none
+		letter-spacing: 0.08em
+		font-weight: bold
+
+	#nav
+
+		@include tablet
 			width: 100%
-			justify-content: flex-start
-			@include tablet
-				display: none
-			@include desktop
-				display: none
-
-		.mobile-menu
-			display: flex
-			flex-direction: column
-			justify-content: center
-			width: 61px
-			height: 22px
-			border: 0.5px solid #ae8950
-			border-radius: 1px
-			position: absolute
-			z-index: 99999
-
-		.exit-menu
-			display: flex
-			justify-content: center
-			border-radius: 0 0 15px 15px
-			text-align: center
-			border: 2px solid #e8e8e8
-			width: 100%
-			cursor: pointer
-			line-height: 37px
-			@include tablet
-				display: none
-
-			.menu
-				color: #129c00
-				font-family: $font-stack-Dancing-script
-				font-size: 1.4em
-				text-decoration: none
-				letter-spacing: 0.08em
-				font-weight: bold
-
-		#nav
-
-			@include tablet
-				width: 100%
 
 	.navbar
 	  display: flex
@@ -489,51 +541,11 @@
 	  font-family: $font-stack-old-style
 	  margin-left: 22px
 
- .mobile-container.sticky
-	 position: fixed
-	 display: flex
-	 top: 0
-	 left: 0
-	 width: 68vw
-	 height: auto
-	 line-height: 110px
-	 z-index: 9999
-	 @include tablet
-		 position: fixed
-		 width: 100%
-		 height: auto
-		 background-color: #fffef2
-	 @include desktop
-		 width: 100%
-		 height: auto
-		 background-color: white
-		 z-index: 99999
-		 position: fixed
-
-
- .reduced
-		display: flex
-		flex-wrap: wrap
-		justify-content: center
-    // height: 22px
-    // width: 100vw
-    // padding: 31px 0 24px 0
-    // background-color: rgba(5, 4, 30, 0.9)
-		margin: 0
-		@include tablet
-			background-color: red
-			width: 100%
-			border: 3em solid red
-		@include desktop
-			background-color: green
-	li
-		display: flex
-		// background-color: green
-		// width: 100%
 
 
 	.shifted
 	 margin-top: 0px
+
 	 #navtabs
 		 li
 		//  border: 2px solid #b98c38
