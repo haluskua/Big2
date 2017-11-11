@@ -1,59 +1,68 @@
 
-
 @include phone
 	.hetpage
 		display: flex
-		flex-direction: column
-		justify-content: flex-start
+		height: 100vh
 		overflow: hidden
 		max-width: 100vw
-		height: 100vh
-		background: url('../dist/imgs/1920.png') top no-repeat
-		background-size: contain
+		flex-direction: column
+		background-size: cover
+		justify-content: flex-start
+		background-color: black
+		background: url('../dist/imgs/brickmobile.png') top no-repeat
 		@include tablet
-			background-size: contain
-			max-width: 100vw
 			flex-grow: 1
 			height: 100vh
+			max-width: 100vw
+			background-size: cover
+			background: url('../dist/imgs/brickmobile.png') top no-repeat
 		@include desktop
 			display: flex
-			background: none
+			background-size: cover
+			background: url('../dist/imgs/brick.png') top no-repeat
 
 	.Colsplit-between
-		display: flex
-		flex-direction: column
-		justify-content: flex-start
 		width: 100%
-		height: 70%
+		height: 100%
+		display: flex
 		position: relative
+		align-items: center
+		flex-direction: column
+		justify-content: space-between
+		background-color: rgba(0, 6, 12, 0.84)
 		@include tablet
 			width: 100vw
 			margin: auto
 			padding: 0
+		@include desktop
+			height: 100%
 
 	#Colsplit-box1
+		height: 64%
 		display: flex
+		position: relative
 		flex-direction: column
 		justify-content: space-between
-		height: 100%
-		position: relative
 		@include tablet
 
 	.landing-page
+		width: 93%
+		height: 33%
 		display: flex
+		margin-top: 44px
+		align-self: center
 		flex-direction: column
 		justify-content: space-around
-		width: 80%
-		height: 29%
-		align-self: center
+
 		@include tablet
 			height: 24%
 			margin-bottom: 140px
 
 		.hetpage-li
+			margin: auto
 			display: flex
 			justify-content: center
-			margin: auto
+
 
 	#thin
 		margin: auto
@@ -61,144 +70,164 @@
 			margin: 0
 
 		#bulgeword
-			font-family: $font-stack-thin
-			font-size: 0.79em
-			color: #129c00
+			padding: 3px
+			height: 96px
+			color: #c8c8c8
+			font-size: 0.56em
 			font-style: normal
+			font-weight: lighter
+			letter-spacing: 0.08em
+			text-transform: uppercase
+			font-family: $font-stack-roboto
+			background-color: rgba(18, 25, 29, 0.6)
 			@include tablet
 				color: #129c00
-				font-family: $font-stack-thin
-				font-size: 1.55em
 				font-weight: 600
+				font-size: 1.55em
+				font-family: $font-stack-thin
 			@include desktop
-				font-size: 2em
+				font-size: 1.1em
+				letter-spacing: 0.03em
 
 	#hetinfo
+		height: 50px
 		margin: auto
-		border-bottom: 1px dotted orange
+		color: #fffef2
+		font-size: 1em
 		text-align: center
-		height: 27px
-		line-height: 26px
+		font-weight: lighter
+		letter-spacing: 0.07em
+		font-family: sans-serif
 		@include tablet
+			width: 100%
 			height: 42px
 			line-height: 0px
-			width: 100%
+		@include desktop
+			height: 0px
+			border: none
 
 	#mini-desc
-		font-size: 0.72em
-		letter-spacing: 0.05em
-		color: #1c1014
-		font-family: sans-serif
-		font-weight: lighter
-		cursor: pointer
+		width: 100%
+		height: 100%
+		padding: 9px
+		z-index: 99999
+		line-height: 50px
+		border: 2px solid green
+		background-color: rgba(10, 3, 1, 0.68)
+
 		@include tablet
-			line-height: 43px
-			font-size: 1.1em
 			color: #1b0e13
+			font-size: 1.1em
+			line-height: 43px
+		@include desktop
+			font-size: 1.5em
+			font-weight: normal
+			letter-spacing: 0px
 	.bio
+		height: 15%
 		display: flex
+		padding-top: 91px
+		align-items: center
 		flex-direction: column
 		justify-content: space-between
-		align-items: center
-		height: 70px
+
 		@include tablet
-			display: flex
-			justify-content: space-between
-			flex-direction: column
-			position: relative
 			height: 25%
+			display: flex
+			position: relative
+			flex-direction: column
+			justify-content: space-between
 
 	.intro
-		font-family: $font-stack-thin
-		font-size: 1.4em
-		color: #2b0d18
-		text-align: justify
 		margin: auto
-		margin-top: 119px
-		position: absolute
+		color: #3ea955
+		font-size: 1em
+		margin-top: 155px
+		position: relative
+		text-align: justify
+		font-family: sans-serif
+		background-color: black
 		@include tablet
-			color: #251202
-			font-family: $font-stack-thin
-			font-size: 2.11em
-			font-weight: 900
 			height: 60px
-			letter-spacing: 0.02em
+			color: #251202
 			margin-top: 33px
+			font-weight: 900
 			text-shadow: none
+			font-size: 2.11em
 			position: relative
+			letter-spacing: 0.02em
+			font-family: $font-stack-thin
+
 
 	#my-name
-		color: #5e450d
-		font-family: $font-stack-audio
-		font-size: 1.5em
-		text-transform: capitalize
-		font-weight: lighter
-		margin: auto
 		height: 42%
-		padding-top: 61px
+		margin: auto
+		display: none
+		color: #3ba728
+		font-size: 2.5em
+		padding-top: 82px
+		font-weight: lighter
+		text-transform: capitalize
+		font-family: $font-stack-audio
 		@include tablet
 			padding: 0
 			font-size: 2.77em
-			font-family: $font-stack-audio
 			position: relative
+			font-family: $font-stack-audio
 
 	#coa-menu
-		align-self: flex-start
-		margin-left: 30px
 		display: none
+		margin-left: 30
+		margin-left: 30px
+		align-self: flex-start
 
 	.folders-container2
 		display: none
 		@include tablet
-			display: flex
-			justify-content: space-around
+			padding: 0
 			width: 74vw
 			height: 90px
+			display: flex
 			margin: 0 auto
-			padding: 0
-			background-image: url('../dist/imgs/1920.png')
-			background-repeat: no-repeat
-			background-position: top
 			background-size: cover
+			background-position: top
+			background-repeat: no-repeat
+			justify-content: space-around
+			background-image: url('../dist/imgs/1920.png')
 			@include desktop
 				background-color: white
 
 	#folders-container
+		padding: 0
+		width: 100%
+		margin: auto
 		display: flex
 		flex-wrap: wrap
+		flex-direction: column
+		background-color: #170805
 		justify-content: space-between
-		background-image: url('../dist/imgs/1920.png')
-		background-repeat: no-repeat
-		background-position: top
-		background-size: cover
-		width: 96%
-		margin: auto
-		padding: 0
-		border: 1.2px solid #ffe224
 		@include tablet
+			height: auto
 			display: flex
-			justify-content: space-between
-			background-color: #fffef2
+			flex-flow: row
 			background-image: none
-			height: auto
-			flex-flow: row
+			background-color: #fffef2
+			justify-content: space-between
 		@include desktop
+			width: 80vw
+			height: 42px
 			display: flex
 			flex-flow: row
-			justify-content: space-around
 			align-self: center
-			width: 80vw
-			height: auto
+			background-image: none
+			background-color: #fffef2
 			border: 1.3px solid #e0ad6e
+			justify-content: space-around
 
- .reduced
+  .reduced
 		display: flex
 		flex-wrap: wrap
 		justify-content: center
-    // height: 22px
-    // width: 100vw
-    // padding: 31px 0 24px 0
-    // background-color: rgba(5, 4, 30, 0.9)
 		margin: 0
 		@include tablet
 			width: 100%
@@ -206,115 +235,118 @@
 
 		li
 			display: flex
-			// background-color: green
-			// width: 100%
 
 	.nav-folders
-		height: auto
-		padding: 3px
+		width: 91%
+		height: 49px
 		display: none
-		width: 100%
-		border-bottom: 1px solid #efdeca
+		align-self: center
+		background-color: #000307
+		border: 1px solid #129c00
+		border-radius: 0 0 14px 14px
+		&:focus
+			width: 70%
 		@include tablet
-			display: flex
-			justify-content: space-between
 			width: 100%
 			height: auto
+			display: flex
+			justify-content: space-between
 		@include desktop
 			display: flex
 
 	#home-logo
+		height: 100%
 		display: flex
-		flex-direction: column
-		height: 70%
+		margin-top: 87px
+		background: url('../dist/imgs/nlsmall1.png') center no-repeat
+		background-size: contain
 		@include tablet
 			height: 54%
 			margin-top: 0px
 
-	.imgslider
-		width: 80%
-		position: relative
- .logo-home
-		height: 100%
-		background: url('../dist/imgs/nlsmall1.png') no-repeat
-		background-size: contain
-		background-position: center
-		overflow: hidden
-		z-index: 9999
-		display: flex
-		margin-top: 102px
+	.logo-home
+		// height: 57px
+		// display: flex
+		// z-index: 9999
+		// overflow: hidden
+		// margin-top: 57px
+		// background: url('../dist/imgs/newlogo.png') centerno-repeat
+		// background-size: contain
+		// background-position: center
+		// background-color: rgba(0, 0, 0, 0.43)
 		@include tablet
-			background-size: contain
-			margin-top: 24px
 			z-index: 999
+			margin-top: 24px
+			background-size: contain
+		@include desktop
+			height: 70%
+			margin-top: 42px
 
 	.hamburger-menu
+		width: 100%
 		display: flex
-		flex-direction: column
-		justify-content: space-between
-		align-items: center
-		line-height: 45px
-		width: 96%
+		color: #cdefef
 		cursor: pointer
+		line-height: 61px
+		font-size: 0.95em
 		text-align: center
-		font-family: sans-serif
-		font-size: 1em
 		font-weight: normal
+		align-items: center
 		text-decoration: none
-		text-transform: lowercase
+		letter-spacing: 0.08em
+		flex-direction: column
+		font-family: sans-serif
+		justify-content: space-between
 		border-right: 2.8px solid rgba(255, 31, 62, 0.97)
-		color: #230404
-		&:active
-			color: rgba(255, 31, 62, 0.97)
-		&:focus
-			align-items: flex-start
-			background-color: #fffef2
-			border-left: 2px solid #438506
-			border-right: 6px solid #438506
-			border-radius: 10px 0 0 10px
-			padding-left: 20px
-			font-weight: 600
-			font-size: 1.1em
-			text-transform: uppercase
-			letter-spacing: 0.04em
-			color: #29343a
-			background-color: #ffe224
+
 		@include tablet
-			width: 100%
-			font-size: 1.3em
-			margin: auto
 			padding: 0
+			width: 100%
+			margin: auto
 			border: none
 			cursor: pointer
+			font-size: 1.3em
 			font-weight: lighter
 			background-color: #fffef2
 			border-right: 1px solid #dedccd
 			&:focus
-				margin-left: 13px
 				padding: 0
 				color: green
+				margin-left: 13px
+				border-left: none
 				background-color: #fffef2
 				text-transform: lowercase
 				border-right: 2px solid #ff1f3e
-				border-left: none
 		@include desktop
-			font-size: 2em
-			color: purple
-			
+			height: 100%
+			line-height: 37px
+			&:focus
+				color: green
+				border-left: none
+				background-color: transparentize(yellow, 1)
+
 	.nav-archives
-		font-family: sans-serif
 		text-align: right
+		font-family: sans-serif
+		&:focus
+			text-align: center
+		&:active
+			text-align: center
 		@include tablet
 			text-align: center
+			background-color: none
+		@include desktop
+			background-color: none
+
 
 	.haus
-		display: flex
-		background-color: #29343a
-		border-bottom: 4px solid #129c00
-		z-index: 999999
 		width: 100%
 		height: 38px
+		display: flex
 		position: fixed
+		z-index: 999999
+		background-color: #070d10
+		border-bottom: 4px solid #f9970a
 		@include tablet
 			top: 0
 			left: 0
@@ -322,108 +354,84 @@
 			display: none
 		@include desktop
 			display: none
-			border: 1px solid blue
 			height: 100px
+			border: 1px solid blue
 		ul
-			display: flex
-			justify-content: space-between
-			position: relative
-			width: 60%
-			padding: 0
 			margin: 0
+			padding: 0
+			width: 60%
+			display: flex
+			position: relative
+			justify-content: space-between
 
 			@include desktop
 				display: flex
-
 			li
-				display: flex
-				justify-content: center
-				position: relative
 				height: 100%
+				display: flex
 				cursor: pointer
+				position: relative
+				flex-direction: column
+				justify-content: center
 
 	.haus-menu
+		width: 83px
 		display: flex
-		font-family: $font-stack-audio
-		color: #d1ae32
-		font-size: 2.1em
-		font-weight: bolder
+		color: #c8c8c8
+		font-size: 1.3em
 		line-height: 35px
 		padding-left: 28px
-		width: 83px
+		font-weight: bolder
+		font-weight: lighter
+		font-family: $font-stack-roboto
 
 	.main-menu
-		display: flex
-		justify-content: center
+		left: 0px
+		bottom: 0px
+		width: 83px
 		height: auto
-		text-decoration: none
-		font-size: 2em
-		font-family: $font-stack-paragraph
-		letter-spacing: 0.03em
+		display: flex
+		z-index: 99999
+		font-size: 1em
 		color: #ff1f3e
 		cursor: pointer
-		width: 83px
-		bottom: 0px
-		left: 0px
-		z-index: 99999
+		text-decoration: none
+		letter-spacing: 0.03em
+		justify-content: center
 		background-color: #131426
+		font-family: $font-stack-roboto
 
 	.mobile-container
-		display: flex
-		width: 82%
+		left: 10px
+		width: 62%
 		height: auto
-		justify-content: space-between
-		background-color: #fffef2
+		display: none
 		z-index: 999999
 		position: fixed
 		border: 1px solid #438506
+		background-color: mintcream
+		justify-content: space-between
 		border-radius: 0 0px 15px 15px
-		display: none
 		@include tablet
-			display: flex
-			background-color: purple
-			width: 100%
-			justify-content: space-around
-			align-items: flex-start
-			background-image: none
-			z-index: 9999
-			position: fixed
-			border: none
 			top: 0
 			left: 0
-		@include desktop
-			display: none
 			width: 100%
-			justify-content: center
-			background-color: purple
 			border: none
-
-
-	.mobile-container.sticky
-	 	 position: fixed
-	 	 display: flex
-	 	 top: 0
-	 	 left: 0
-	 	 height: auto
-	 	 z-index: 9999
-	 	 @include tablet
-			 display: flex
-	 		 position: fixed
-	 		 width: 100%
-	 		 height: auto
-	 		 background-color: #5d1818
-	 	 @include desktop
-			 display: flex
-	 		 width: 100%
-	 		 height: auto
-	 		 background-color: #5d1818
-	 		 z-index: 99999
-	 		 position: fixed
-
+			display: flex
+			z-index: 9999
+			position: fixed
+			background-image: none
+			align-items: flex-start
+			justify-content: space-around
+		@include desktop
+			width: 100%
+			border: none
+			display: none
+			justify-content: center
 
 	#menu-buttons
-		display: flex
 		width: 100%
+		display: flex
 		justify-content: flex-start
 		@include tablet
 			display: none
@@ -431,35 +439,33 @@
 			display: none
 
 	.mobile-menu
-		display: flex
-		flex-direction: column
-		justify-content: center
 		width: 61px
 		height: 22px
-		border: 0.5px solid #ae8950
+		display: flex
+		z-index: 99999
 		border-radius: 1px
 		position: absolute
-		z-index: 99999
+		flex-direction: column
+		justify-content: center
+		border: 0.5px solid #ae8950
 
 	.exit-menu
-		display: flex
-		justify-content: center
-		border-radius: 0 0 15px 15px
-		text-align: center
-		border: 2px solid #e8e8e8
 		width: 100%
+		display: flex
 		cursor: pointer
-		line-height: 37px
+		line-height: 39px
+		text-align: center
+		justify-content: center
 		@include tablet
 			display: none
 
 	.menu
-		color: #129c00
-		font-family: $font-stack-Dancing-script
-		font-size: 1.4em
+		color: #ed1c24
+		font-size: 1.1em
+		font-weight: bold
 		text-decoration: none
 		letter-spacing: 0.08em
-		font-weight: bold
+		font-family: $font-stack-roboto
 
 	#nav
 
@@ -470,51 +476,30 @@
 	  display: flex
 
 	#navtabs
+		margin: 0
+		width: auto
+		padding: 5px
 	  display: flex
 	  flex-wrap: wrap
-	  background-image: url('../dist/imgs/hero.png')
+		border-radius: 3px
 	  background-size: cover
 	  background-repeat: no-repeat
-	  padding: 5px
-	  width: auto
-	  border-radius: 3px
-	  margin: 0
+		background-image: url('../dist/imgs/hero.png')
 
-	  #home
-	    display: flex
-	    height: auto
-	    // background-color: #c16408
-	    width: 120px
-	    flex-grow: 1
-	    a
-	      margin: 0 auto
-	      height: 75%
-
-	      #home-nav
-	        color: white
-	        font-size: 0.93em
-	        letter-spacing: 0.03em
-	        font-family: $font-stack-audio
-	        margin: 0 8px 0 28px
-	        text-align: center
-	  li
-	    display: flex
-	    background-color: hsla(16, 96%, 9%, 0.92)
-	    border-radius: 1.5px
-	    opacity: 1
-	    flex-grow: 1
-	    flex-wrap: wrap
-
-	    a
-	      flex-grow: 1
-	      text-decoration: none
-	      padding: 3.6px
-	      margin: auto
-
-	      //icon styles
-	      background-size: 17px
-	      background-repeat: no-repeat
-	      background-position: 3px
+	  // li
+	  //   opacity: 1
+	  //   flex-grow: 1
+	  //   flex-wrap: wrap
+	  //   border-radius: 1.5px
+		// 	background-color: hsla(16, 96%, 9%, 0.92)
+	    // a
+	    //   flex-grow: 1
+			// 	margin: auto
+	    //   padding: 3.6px
+			// 	text-decoration: none
+	    //   background-size: 17px
+	    //   background-position: 3px
+			// 	background-repeat: no-repeat
 
 	      &.brand
 	        background-image: url(../dist/imgs/testicons.png)
@@ -534,24 +519,58 @@
 	        background-color: #f9970a
 	        height: auto
 
+	// .mobile-container.sticky
+	//  	top: 0
+	//  	height: auto
+	// 	display: flex
+	//  	z-index: 9999
+	// 	position: fixed
+	//  	@include tablet
+	// 		width: 100%
+	//  		height: auto
+	// 		display: flex
+	//  		position: fixed
+	//  		background-color: #5d1818
+	//  	@include deskto
+	//  		width: 100%
+	//  		height: auto
+	// 		display: flex
+	//  		z-index: 99999
+	//  		position: fixed
+	// 		background-color: #5d1818
+  //
+	// #navtexts
+	//   color: white
+	// 	margin-left: 22px
+	//   letter-spacing: 0.04em
+	//   font-family: $font-stack-old-style
+  //
+	// .shifted
+	//  margin-top: 0px
+  //
+	//  #navtabs
+	// 	 li
+  //
+	// 	 a
+	// 		 width: 63px
+	// 		 font-size: 0.96em
+  //
+  #home
+		flex-grow: 1
+		width: 120px
+		height: auto
+    display: flex
+    a
+			height: 75%
+      margin: 0 auto
 
-	#navtexts
-	  color: white
-	  letter-spacing: 0.04em
-	  font-family: $font-stack-old-style
-	  margin-left: 22px
-
-
-
-	.shifted
-	 margin-top: 0px
-
-	 #navtabs
-		 li
-		//  border: 2px solid #b98c38
-		 a
-			 width: 63px
-			 font-size: 0.96em
+    #home-nav
+      color: white
+      font-size: 0.93em
+			text-align: center
+			margin: 0 8px 0 28px
+      letter-spacing: 0.03em
+      font-family: $font-stack-audio
 
 
 

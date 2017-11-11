@@ -76,9 +76,13 @@ $(document).ready(function(){
         $(".haus").hide(1000);
         $(".exit-menu").show(12000);
       });
-      $(".exit-menu").on("click", function(){
+      $(".exit-menu, .hamburger-menu").on("click", function(){
         $(".mobile-container").hide(500);
         $(".haus").show(500);
       });
+      // $(".hamburger-menu").on("click", function(){
+      //   $(".sticky").hide(500);
+      //   $(".haus").show(500);
+      // });
 
 });
