@@ -38,14 +38,14 @@
 			height: 100%
 
 	#Colsplit-box1
-		height: 78%
+		height: 70%
 		display: flex
 		position: relative
 		flex-direction: column
+		justify-content: space-around
 		@include tablet
 
 	.landing-page
-		height: 50%
 		display: flex
 		align-self: center
 		flex-direction: column
@@ -55,14 +55,11 @@
 
 	.home-desc
 		display: flex
-		height: 25%
-		align-items: flex-end
 		flex-direction: column
-		justify-content: space-around
-		// background-color: green
 	.bio
 		width: 100%
 		height: auto
+		display: flex
 
 	#thin
 		margin: auto
@@ -72,10 +69,10 @@
 		#bulgeword
 			padding: 3px
 			color: #c8c8c8
-			font-size: 0.56em
+			font-size: 0.52em
 			font-style: normal
 			font-weight: lighter
-			letter-spacing: 0.05em
+			letter-spacing: 0.03em
 			text-transform: uppercase
 			font-family: $font-stack-roboto
 			background-color: rgb(3, 4, 6)
@@ -109,7 +106,7 @@
 		padding: 9px
 		z-index: 99999
 		line-height: 38px
-		border-bottom: 1.5px solid #f9970a
+		border-bottom: 1px solid #f9970a
 		background-color: rgb(3, 4, 6)
 
 		@include tablet
@@ -124,9 +121,10 @@
 	.intro
 		margin: auto
 		color: #f9970a
-		font-size: 1em
+		font-size: 0.78em
 		position: relative
 		text-align: justify
+		letter-spacing: 0.04em
 		font-family: sans-serif
 		background-color: black
 		@include tablet
@@ -179,15 +177,15 @@
 	#folders-container
 		padding: 0
 		width: 100%
-		margin: auto
-		display: flex
 		flex-wrap: wrap
-		flex-direction: column
-		background-color: #170805
-		justify-content: space-between
-		padding-top: 20px
+		display: flex
+		padding-top: 11px
+		padding-bottom: 8px
+		background-color: #030406
 		border-radius: 18px 0 0 0
+		justify-content: flex-start
 		@include tablet
+			padding: 0
 			height: auto
 			display: flex
 			flex-flow: row
@@ -218,13 +216,11 @@
 			display: flex
 
 	.nav-folders
-		width: 91%
-		height: 49px
+		width: 43%
+		height: 40px
 		display: none
 		align-self: center
-		margin-bottom: 4px
-		background-color: #000307
-		border: 1px solid #e8d37b
+		padding: 6px
 		&:focus
 			width: 70%
 		@include tablet
@@ -236,7 +232,7 @@
 			display: flex
 
 	#home-logo
-		height: 80%
+		height: 50%
 		display: flex
 		background: url('../dist/imgs/newlogo.png') center no-repeat
 		background-size: cover
@@ -267,17 +263,17 @@
 		display: flex
 		color: #cdefef
 		cursor: pointer
-		line-height: 61px
-		font-size: 0.95em
+		line-height: 36px
+		font-size: 0.9em
 		text-align: center
 		font-weight: normal
 		align-items: center
 		text-decoration: none
-		letter-spacing: 0.08em
+		letter-spacing: 0.1em
 		flex-direction: column
 		font-family: sans-serif
+		border: 1px solid yellowgreen
 		justify-content: space-between
-		border-right: 2.8px solid rgba(255, 31, 62, 0.97)
 
 		@include tablet
 			padding: 0
@@ -306,8 +302,7 @@
 				background-color: transparentize(yellow, 1)
 
 	.nav-archives
-		text-align: right
-		font-family: sans-serif
+		font-family: $font-stack-roboto
 		&:focus
 			text-align: center
 		&:active
@@ -321,12 +316,11 @@
 	.haus
 		bottom: 0
 		width: 100%
-		height: 38px
+		height: 40px
 		display: flex
 		position: fixed
 		z-index: 999999
-		background-color: #070d10
-		border-top: 4px solid #f9970a
+		background-color: #f9970a
 		@include tablet
 			top: 0
 			left: 0
@@ -339,57 +333,58 @@
 		ul
 			margin: 0
 			padding: 0
-			width: 60%
+			width: 64%
 			display: flex
 			position: relative
+			flex-flow: row-reverse
 			justify-content: space-between
 
 			@include desktop
 				display: flex
 			li
+				width: 90px
 				height: 100%
 				display: flex
 				cursor: pointer
 				position: relative
+				align-items: center
 				flex-direction: column
 				justify-content: center
+				background-color: #dedccd
 
 	.haus-menu
-		width: 83px
+		color: black
 		display: flex
-		color: #e68c09
-		font-size: 1.3em
-		line-height: 35px
-		padding-left: 28px
-		font-weight: bolder
+		font-size: 1em
 		font-weight: lighter
+		letter-spacing: 0.08em
 		font-family: $font-stack-roboto
 
 	.main-menu
 		left: 0px
 		bottom: 0px
-		width: 83px
-		height: auto
+		width: 90px
+		height: 100%
 		display: flex
 		z-index: 99999
+		color: #f9970a
 		font-size: 1em
-		color: #ff1f3e
 		cursor: pointer
+		font-weight: bold
+		align-items: center
 		text-decoration: none
-		letter-spacing: 0.03em
+		letter-spacing: 0.05em
 		justify-content: center
-		background-color: #131426
+		background-color: #02070c
 		font-family: $font-stack-roboto
 
 	.mobile-container
-		left: 10px
-		width: 62%
-		height: auto
+		width: 76%
+		height: 60%
 		bottom: 0
 		display: none
 		z-index: 999999
 		position: fixed
-		border: 1px solid #cca970
 		justify-content: space-between
 		border-radius: 18px 0 0 0
 		@include tablet
@@ -412,6 +407,7 @@
 	#menu-buttons
 		width: 100%
 		display: flex
+		background-color: #f9970a
 		justify-content: flex-start
 		@include tablet
 			display: none
@@ -440,7 +436,7 @@
 			display: none
 
 	.menu
-		color: #ed1c24
+		color: #000307
 		font-size: 1.1em
 		font-weight: bold
 		text-decoration: none
@@ -450,7 +446,7 @@
 	#nav
 
 		@include tablet
-			width: 100%
+			width: 95%
 
 	.navbar
 	  display: flex
