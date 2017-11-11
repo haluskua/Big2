@@ -114,6 +114,17 @@ h2, h3 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #Colsplit-box1 {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .landing-page {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -622,7 +633,7 @@ h2, h3 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .haus ul li {
-    width: 90px;
+    width: 50%;
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -654,7 +665,7 @@ h2, h3 {
   .main-menu {
     left: 0px;
     bottom: 0px;
-    width: 90px;
+    width: 100%;
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
