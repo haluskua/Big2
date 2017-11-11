@@ -16,7 +16,7 @@ $(document).ready(function(){
     });
 
     var stickyNavTop = $('.nav-folders').offset().top;
-    var headerHeight = 39;
+    var headerHeight = 0;
       $('.hamburger-menu').click(function(e) {
           var linkHref = $(this).attr('href');
           $('html, body').animate({

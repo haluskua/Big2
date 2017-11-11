@@ -29,7 +29,7 @@
 		align-items: center
 		flex-direction: column
 		justify-content: space-between
-		background-color: rgba(0, 6, 12, 0.84)
+		background-color: rgba(0, 6, 12, 0.96)
 		@include tablet
 			width: 100vw
 			margin: auto
@@ -38,31 +38,31 @@
 			height: 100%
 
 	#Colsplit-box1
-		height: 64%
+		height: 78%
 		display: flex
 		position: relative
 		flex-direction: column
-		justify-content: space-between
 		@include tablet
 
 	.landing-page
-		width: 93%
-		height: 33%
+		height: 50%
 		display: flex
-		margin-top: 44px
 		align-self: center
 		flex-direction: column
-		justify-content: space-around
-
 		@include tablet
 			height: 24%
 			margin-bottom: 140px
 
-		.hetpage-li
-			margin: auto
-			display: flex
-			justify-content: center
-
+	.home-desc
+		display: flex
+		height: 25%
+		align-items: flex-end
+		flex-direction: column
+		justify-content: space-around
+		// background-color: green
+	.bio
+		width: 100%
+		height: auto
 
 	#thin
 		margin: auto
@@ -71,15 +71,14 @@
 
 		#bulgeword
 			padding: 3px
-			height: 96px
 			color: #c8c8c8
 			font-size: 0.56em
 			font-style: normal
 			font-weight: lighter
-			letter-spacing: 0.08em
+			letter-spacing: 0.05em
 			text-transform: uppercase
 			font-family: $font-stack-roboto
-			background-color: rgba(18, 25, 29, 0.6)
+			background-color: rgb(3, 4, 6)
 			@include tablet
 				color: #129c00
 				font-weight: 600
@@ -90,10 +89,8 @@
 				letter-spacing: 0.03em
 
 	#hetinfo
-		height: 50px
-		margin: auto
 		color: #fffef2
-		font-size: 1em
+		font-size: 0.77em
 		text-align: center
 		font-weight: lighter
 		letter-spacing: 0.07em
@@ -111,9 +108,9 @@
 		height: 100%
 		padding: 9px
 		z-index: 99999
-		line-height: 50px
-		border: 2px solid green
-		background-color: rgba(10, 3, 1, 0.68)
+		line-height: 38px
+		border-bottom: 1.5px solid #f9970a
+		background-color: rgb(3, 4, 6)
 
 		@include tablet
 			color: #1b0e13
@@ -123,26 +120,11 @@
 			font-size: 1.5em
 			font-weight: normal
 			letter-spacing: 0px
-	.bio
-		height: 15%
-		display: flex
-		padding-top: 91px
-		align-items: center
-		flex-direction: column
-		justify-content: space-between
-
-		@include tablet
-			height: 25%
-			display: flex
-			position: relative
-			flex-direction: column
-			justify-content: space-between
 
 	.intro
 		margin: auto
-		color: #3ea955
+		color: #f9970a
 		font-size: 1em
-		margin-top: 155px
 		position: relative
 		text-align: justify
 		font-family: sans-serif
@@ -177,9 +159,6 @@
 
 	#coa-menu
 		display: none
-		margin-left: 30
-		margin-left: 30px
-		align-self: flex-start
 
 	.folders-container2
 		display: none
@@ -206,6 +185,8 @@
 		flex-direction: column
 		background-color: #170805
 		justify-content: space-between
+		padding-top: 20px
+		border-radius: 18px 0 0 0
 		@include tablet
 			height: auto
 			display: flex
@@ -241,9 +222,9 @@
 		height: 49px
 		display: none
 		align-self: center
+		margin-bottom: 4px
 		background-color: #000307
-		border: 1px solid #129c00
-		border-radius: 0 0 14px 14px
+		border: 1px solid #e8d37b
 		&:focus
 			width: 70%
 		@include tablet
@@ -255,11 +236,10 @@
 			display: flex
 
 	#home-logo
-		height: 100%
+		height: 80%
 		display: flex
-		margin-top: 87px
-		background: url('../dist/imgs/nlsmall1.png') center no-repeat
-		background-size: contain
+		background: url('../dist/imgs/newlogo.png') center no-repeat
+		background-size: cover
 		@include tablet
 			height: 54%
 			margin-top: 0px
@@ -338,15 +318,15 @@
 		@include desktop
 			background-color: none
 
-
 	.haus
+		bottom: 0
 		width: 100%
 		height: 38px
 		display: flex
 		position: fixed
 		z-index: 999999
 		background-color: #070d10
-		border-bottom: 4px solid #f9970a
+		border-top: 4px solid #f9970a
 		@include tablet
 			top: 0
 			left: 0
@@ -377,7 +357,7 @@
 	.haus-menu
 		width: 83px
 		display: flex
-		color: #c8c8c8
+		color: #e68c09
 		font-size: 1.3em
 		line-height: 35px
 		padding-left: 28px
@@ -405,13 +385,13 @@
 		left: 10px
 		width: 62%
 		height: auto
+		bottom: 0
 		display: none
 		z-index: 999999
 		position: fixed
-		border: 1px solid #438506
-		background-color: mintcream
+		border: 1px solid #cca970
 		justify-content: space-between
-		border-radius: 0 0px 15px 15px
+		border-radius: 18px 0 0 0
 		@include tablet
 			top: 0
 			left: 0
