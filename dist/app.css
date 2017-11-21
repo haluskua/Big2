@@ -37,8 +37,6 @@ h2, h3 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    background-color: black;
-    background: url("../dist/imgs/brickmobile.png") top no-repeat;
   }
 }
 
@@ -79,10 +77,9 @@ h2, h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    background-color: rgba(0, 6, 12, 0.96);
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -102,7 +99,7 @@ h2, h3 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #Colsplit-box1 {
-    height: 70%;
+    height: 76%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -116,6 +113,12 @@ h2, h3 {
   }
 }
 
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  #Colsplit-box1 {
+    margin-top: 38px;
+  }
+}
+
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #Colsplit-box1 {
     -webkit-box-pack: justify;
@@ -126,11 +129,13 @@ h2, h3 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .landing-page {
+    width: 80vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-item-align: center;
-        align-self: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -150,10 +155,14 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 0;
+    text-align: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    flex-direction-justify-content: space-around;
+    flex-direction-width: 80vw;
   }
   .bio {
     width: 100%;
@@ -163,27 +172,27 @@ h2, h3 {
     display: flex;
   }
   #thin {
-    margin: auto;
+    margin: 0;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #thin {
     margin: 0;
+    text-align: center;
   }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #thin #bulgeword {
     padding: 3px;
-    color: #c8c8c8;
-    font-size: 0.52em;
+    color: #000307;
+    font-size: 0.51em;
     font-style: normal;
-    font-weight: lighter;
+    font-weight: normal;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    font-family: "Roboto";
-    background-color: #030406;
+    font-family: "Audiowide";
   }
 }
 
@@ -205,12 +214,12 @@ h2, h3 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #hetinfo {
-    color: #fffef2;
-    font-size: 0.77em;
+    color: 030406;
+    font-size: 0.8em;
     text-align: center;
-    font-weight: lighter;
-    letter-spacing: 0.07em;
-    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+    font-family: "Roboto";
   }
 }
 
@@ -236,15 +245,14 @@ h2, h3 {
     padding: 9px;
     z-index: 99999;
     line-height: 38px;
-    border-bottom: 1px solid #f9970a;
-    background-color: #030406;
+    border-bottom: 1px solid yellowgreen;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #mini-desc {
-    color: #1b0e13;
-    font-size: 1.1em;
+    color: #f2f2e8;
+    font-size: 1.45em;
     line-height: 43px;
   }
 }
@@ -260,24 +268,26 @@ h2, h3 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .intro {
     margin: auto;
-    color: #f9970a;
-    font-size: 0.78em;
+    margin-top: 20px;
+    color: #199601;
+    font-size: 1.28em;
+    font-weight: bolder;
+    font-style: italic;
     position: relative;
     text-align: justify;
     letter-spacing: 0.04em;
-    font-family: sans-serif;
-    background-color: black;
+    font-family: "Amatic SC", cursive;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .intro {
     height: 60px;
-    color: #251202;
+    color: #f2f2e8;
     margin-top: 33px;
     font-weight: 900;
     text-shadow: none;
-    font-size: 2.11em;
+    font-size: 2.21em;
     position: relative;
     letter-spacing: 0.02em;
     font-family: "Amatic SC", cursive;
@@ -427,6 +437,7 @@ h2, h3 {
   }
   .nav-folders:focus {
     width: 70%;
+    background-color: #030406;
   }
 }
 
@@ -490,9 +501,9 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #cdefef;
+    color: #f5d19e;
     cursor: pointer;
-    line-height: 36px;
+    line-height: 40px;
     font-size: 0.9em;
     text-align: center;
     font-weight: normal;
@@ -520,8 +531,9 @@ h2, h3 {
     margin: auto;
     border: none;
     cursor: pointer;
-    font-size: 1.3em;
-    font-weight: lighter;
+    font-size: 1.4em;
+    font-weight: bold;
+    letter-spacing: none;
     background-color: #fffef2;
     border-right: 1px solid #dedccd;
   }
@@ -583,7 +595,7 @@ h2, h3 {
     display: flex;
     position: fixed;
     z-index: 999999;
-    background-color: #f9970a;
+    background-color: #030406;
   }
 }
 
@@ -650,16 +662,16 @@ h2, h3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-color: #dedccd;
   }
   .haus-menu {
-    color: black;
+    color: #f5d19e;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     font-size: 1em;
-    font-weight: lighter;
+    font-weight: bolder;
     letter-spacing: 0.08em;
+    text-transform: capitalize;
     font-family: "Roboto";
   }
   .main-menu {
@@ -671,10 +683,10 @@ h2, h3 {
     display: -ms-flexbox;
     display: flex;
     z-index: 99999;
-    color: #f9970a;
+    color: #f5d19e;
     font-size: 1em;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: normal;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -683,12 +695,11 @@ h2, h3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-color: #02070c;
     font-family: "Roboto";
   }
   .mobile-container {
     width: 76%;
-    height: 60%;
+    height: 52%;
     bottom: 0;
     display: none;
     z-index: 999999;
@@ -1050,16 +1061,15 @@ h2, h3 {
     font-family: "Audiowide";
     letter-spacing: 0.13em;
     text-transform: uppercase;
-    text-shadow: 2px 2px 2px #bcc2ba;
     font-weight: 600;
     font-style: normal;
     font-size: 1em;
-    color: #129c00;
+    color: #030406;
     margin-top: 0;
     border-bottom: 1.1px solid #f9970a;
     border-top: 2px solid #129c00;
     border-radius: 0 0px 15px 15px;
-    background-color: #fffef2;
+    background-color: #f9970a;
   }
 }
 
