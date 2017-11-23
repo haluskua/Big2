@@ -217,7 +217,7 @@ h2, h3 {
     font-size: 0.86em;
     text-align: center;
     font-weight: bold;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.05em;
     font-family: "Roboto";
   }
 }
@@ -402,6 +402,8 @@ h2, h3 {
             flex-flow: row;
     -ms-flex-item-align: center;
         align-self: center;
+    border-radius: 8px;
+    padding-bottom: 9px;
     background-image: none;
     background-color: #fffef2;
     border: 1.3px solid #e0ad6e;
@@ -728,9 +730,12 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .mobile-container {
+    top: 0;
     width: 100%;
     border: none;
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1178,6 +1183,7 @@ h2, h3 {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 61%;
+    z-index: 999999;
   }
   body main section .prev, body main section .next {
     float: left;
@@ -1185,11 +1191,11 @@ h2, h3 {
   }
   body main section .prev {
     position: relative;
-    z-index: 100;
+    z-index: 99999;
   }
   body main section .next {
     position: relative;
-    z-index: 100;
+    z-index: 999999;
   }
   body main section #imgslider-desc {
     display: -webkit-box;

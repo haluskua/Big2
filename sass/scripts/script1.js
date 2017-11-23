@@ -1,6 +1,32 @@
 
 $(document).ready(function(){
 
+    if (jQuery(window).width() <= 481) {
+        $(".exit-menu, .hamburger-menu").on("click", function(){
+          $(".mobile-container").hide(300);
+          $(".haus").show(300);
+        });
+        //show menu bar onclick on main logo
+        $(".haus-menu, #hetinfo").click(function(){
+          $(".mobile-container").show(500);
+          $(".nav-folders").show(480);
+          $(".haus").hide(500);
+          $(".exit-menu").show(700);
+        });
+        jQuery(window).resize(function () {
+                if (jQuery(window).width() > 500) {
+                  $("#folders-container").show(300);
+                  // $('#hetinfo').on("click", function(){
+                  //
+                  // });
+                  // alert('john');
+                    jQuery(".haus").css("display", "none");
+                }
+        });
+
+    }
+
+
   $(window).scroll(function() {
     var scrollTop = $(window).scrollTop();
     /*changing between classes */
@@ -68,18 +94,5 @@ $(document).ready(function(){
               }
             });
 
-            if (jQuery(window).width() <= 481) {
-                $(".exit-menu, .hamburger-menu").on("click", function(){
-                  $(".mobile-container").hide(300);
-                  $(".haus").show(300);
-                });
-                //show menu bar onclick on main logo
-                $(".haus-menu, #hetinfo").click(function(){
-                  $(".mobile-container").show(500);
-                  $(".nav-folders").show(480);
-                  $(".haus").hide(500);
-                  $(".exit-menu").show(700);
-                });
-            }
 
 });

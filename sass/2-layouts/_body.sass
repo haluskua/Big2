@@ -240,6 +240,7 @@
           display: flex
           justify-content: space-between
           width: 61%
+          z-index: 999999
 
         .prev,.next
         	float: left
@@ -247,11 +248,20 @@
 
         .prev
         	position: relative
-        	z-index: 100
+        	z-index: 99999
+          // @include tablet
+          //   z-index: 99999
+          // @include desktop
+          //   z-index: 99999
 
         .next
         	position: relative
-        	z-index: 100
+        	z-index: 999999
+          // @include tablet
+          //   z-index: 99999
+          // @include desktop
+          //   z-index: 99999
+
 
         #imgslider-desc
           display: flex
