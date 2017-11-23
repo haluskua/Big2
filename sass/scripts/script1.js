@@ -51,6 +51,20 @@ $(document).ready(function(){
           e.preventDefault();
         });
 
+// targeting tablet view because of menu top heigt change from mobile view
+        if (jQuery(window).width() > 481) {
+            var stickyNavTop = $('.nav-folders').offset().top;
+            var headerHeight = 64;
+              $('.hamburger-menu').click(function(e) {
+                  var linkHref = $(this).attr('href');
+                  $('html, body').animate({
+                    scrollTop: $(linkHref).offset().top - headerHeight
+                  }, 800);
+                  e.preventDefault();
+                });
+        }
+
+
 
           // code for lightbox
           $(".img").click(function(){
