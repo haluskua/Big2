@@ -396,9 +396,10 @@ h2, h3 {
         -ms-flex-pack: center;
             justify-content: center;
     border-radius: 7px;
+    margin-left: 10px;
     height: 67px;
     width: 22vw;
-    background-color: lemonchiffon;
+    background-color: #f9970a;
     background-image: url("../dist/imgs/newlogo.png");
     background-size: contain;
     background-position: bottom;
@@ -408,13 +409,15 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #logo-space {
+    margin: 0;
     width: 15vw;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #logo-space {
-    width: 15vw;
+    margin: auto;
+    width: 11vw;
   }
 }
 
@@ -979,8 +982,6 @@ h2, h3 {
         justify-content: space-around;
     position: fixed;
     top: 0;
-    width: 100vw;
-    background-color: white;
   }
 }
 
