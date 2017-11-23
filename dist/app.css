@@ -38,7 +38,8 @@ h2, h3 {
         -ms-flex-pack: start;
             justify-content: flex-start;
     background-color: black;
-    background: url("../dist/imgs/1920.png") top no-repeat;
+    background: url("../dist/imgs/hero_bg.png") top no-repeat;
+    background-size: cover;
   }
 }
 
@@ -49,6 +50,7 @@ h2, h3 {
             flex-grow: 1;
     height: 100vh;
     max-width: 100vw;
+    background-size: cover;
   }
 }
 
@@ -57,8 +59,7 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-size: cover;
-    background: url("../dist/imgs/1920.png") top no-repeat;
+    background: none;
   }
 }
 
@@ -93,7 +94,10 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .Colsplit-between {
-    height: 100%;
+    height: 100vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -121,15 +125,16 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #Colsplit-box1 {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    height: 74%;
+    margin-bottom: 99px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .landing-page {
-    width: 80vw;
+    width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -171,6 +176,15 @@ h2, h3 {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .bio {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   #thin {
     margin: 0;
   }
@@ -195,6 +209,12 @@ h2, h3 {
   }
 }
 
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  #thin #bulgeword {
+    color: white;
+  }
+}
+
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #thin #bulgeword {
     color: #341e25;
@@ -206,8 +226,9 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #thin #bulgeword {
-    font-size: 1.1em;
-    letter-spacing: 0.03em;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: dimgray;
   }
 }
 
@@ -261,6 +282,7 @@ h2, h3 {
     font-size: 1.5em;
     font-weight: normal;
     letter-spacing: 0px;
+    line-height: 51px;
   }
 }
 
@@ -269,7 +291,7 @@ h2, h3 {
     margin: auto;
     margin-top: 20px;
     color: #341e25;
-    font-size: 1.58em;
+    font-size: 1.18em;
     font-weight: bolder;
     position: relative;
     text-align: justify;
@@ -289,6 +311,14 @@ h2, h3 {
     position: relative;
     letter-spacing: 0.02em;
     font-family: "Amatic SC", cursive;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .intro {
+    font-size: 1em;
+    margin-top: 72px;
+    letter-spacing: 0.4em;
   }
 }
 
@@ -352,7 +382,7 @@ h2, h3 {
   #folders-container {
     padding: 0;
     width: 100%;
-    height: 266px;
+    height: 247px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     display: -webkit-box;
@@ -360,10 +390,14 @@ h2, h3 {
     display: flex;
     padding-top: 11px;
     padding-bottom: 8px;
-    border-radius: 18px 0 0 0;
+    border-radius: 13px 13.5px 0 0;
+    border-top: 0.5px solid #341e25;
     background-color: #efeaea;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    background-image: url("../dist/imgs/1920.png");
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -415,6 +449,12 @@ h2, h3 {
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #folders-container {
     width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #folders-container {
+    z-index: 999999;
   }
 }
 
@@ -471,10 +511,23 @@ h2, h3 {
   }
 }
 
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  #home-logo {
+    background-size: contain;
+  }
+}
+
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #home-logo {
     height: 54%;
     margin-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #home-logo {
+    height: 43%;
+    background-size: contain;
   }
 }
 
@@ -489,7 +542,7 @@ h2, h3 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .logo-home {
     height: 70%;
-    margin-top: 42px;
+    margin: 0;
   }
 }
 
@@ -739,6 +792,24 @@ h2, h3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
+  .mobile-container .sticky {
+    z-index: 999999;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .mobile-container .sticky {
+    z-index: 99999999;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .mobile-container .sticky {
+    z-index: 99999999;
   }
 }
 

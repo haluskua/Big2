@@ -9,15 +9,18 @@
 		background-size: cover
 		justify-content: flex-start
 		background-color: black
-		background: url('../dist/imgs/1920.png') top no-repeat
+		background: url('../dist/imgs/hero_bg.png') top no-repeat
+		background-size: cover
+		@include phone-landscape
+
 		@include tablet
 			flex-grow: 1
 			height: 100vh
 			max-width: 100vw
+			background-size: cover
 		@include desktop
 			display: flex
-			background-size: cover
-			background: url('../dist/imgs/1920.png') top no-repeat
+			background: none
 
 	.Colsplit-between
 		width: 100%
@@ -33,7 +36,8 @@
 			margin: auto
 			padding: 0
 		@include desktop
-			height: 100%
+			height: 100vh
+			justify-content: center
 
 	#Colsplit-box1
 		height: 76%
@@ -44,10 +48,12 @@
 		@include tablet
 			margin-top: 38px
 		@include desktop
-			justify-content: space-between
+			height: 74%
+			margin-bottom: 99px
+			justify-content: space-around
 
 	.landing-page
-		width: 80vw
+		width: 100vw
 		display: flex
 		justify-content: center
 		flex-direction: column
@@ -67,6 +73,8 @@
 		width: 100%
 		height: auto
 		display: flex
+		@include desktop
+			margin-top: 80px
 
 	#thin
 		margin: 0
@@ -83,14 +91,18 @@
 			text-transform: uppercase
 			font-family: $font-stack-roboto
 			// background-color: rgb(3, 4, 6)
+			@include phone-landscape
+				color: white
+
 			@include tablet
 				color: #341e25
 				font-weight: 600
 				font-size: 1.05em
 				font-family: $font-stack-roboto
 			@include desktop
-				font-size: 1.1em
-				letter-spacing: 0.03em
+				font-size: 0.9em
+				font-weight: bold
+				color: dimgray
 
 	#hetinfo
 		color: #341e25
@@ -123,12 +135,13 @@
 			font-size: 1.5em
 			font-weight: normal
 			letter-spacing: 0px
+			line-height: 51px
 
 	.intro
 		margin: auto
 		margin-top: 20px
 		color: #341e25
-		font-size: 1.58em
+		font-size: 1.18em
 		font-weight: bolder
 		position: relative
 		text-align: justify
@@ -144,6 +157,10 @@
 			position: relative
 			letter-spacing: 0.02em
 			font-family: $font-stack-thin
+			@include desktop
+				font-size: 1em
+				margin-top: 72px
+				letter-spacing: 0.4em
 
 	#my-name
 		height: 42%
@@ -183,14 +200,18 @@
 	#folders-container
 		padding: 0
 		width: 100%
-		height: 266px
+		height: 247px
 		flex-wrap: wrap
 		display: flex
 		padding-top: 11px
 		padding-bottom: 8px
-		border-radius: 18px 0 0 0
+		border-radius: 13px 13.5px 0 0
+		border-top: 0.5px solid #341e25
 		background-color: #efeaea
 		justify-content: space-around
+		background-image: url('../dist/imgs/1920.png')
+		background-size: cover
+		background-position: center
 		@include tablet
 			padding: 0
 			height: auto
@@ -220,6 +241,7 @@
 		@include tablet
 			width: 100%
 		@include desktop
+			z-index: 999999
 
 		li
 			display: flex
@@ -247,9 +269,15 @@
 		display: flex
 		background: url('../dist/imgs/newlogo.png') center no-repeat
 		background-size: cover
+		@include phone-landscape
+			background-size: contain
+
 		@include tablet
 			height: 54%
 			margin-top: 0px
+		@include desktop
+			height: 43%
+			background-size: contain
 
 	.logo-home
 		// height: 57px
@@ -267,7 +295,7 @@
 			background-size: contain
 		@include desktop
 			height: 70%
-			margin-top: 42px
+			margin: 0
 
 	.hamburger-menu
 		width: 100%
@@ -333,6 +361,8 @@
 		position: fixed
 		z-index: 999999
 		background-color: #341e25
+		@include phone-landscape
+
 		@include tablet
 			top: 0
 			left: 0
@@ -415,6 +445,13 @@
 			border: none
 			display: flex
 			justify-content: center
+
+	.mobile-container .sticky
+		z-index: 999999
+		@include tablet
+			z-index: 99999999
+		@include desktop
+			z-index: 99999999
 
 	#menu-buttons
 		width: 100%
@@ -526,7 +563,7 @@
 	//  		z-index: 99999
 	//  		position: fixed
 	// 		background-color: #5d1818
-  //
+
 	// #navtexts
 	//   color: white
 	// 	margin-left: 22px
@@ -542,7 +579,11 @@
 	// 	 a
 	// 		 width: 63px
 	// 		 font-size: 0.96em
-  //
+
+
+
+
+
   #home
 		flex-grow: 1
 		width: 120px

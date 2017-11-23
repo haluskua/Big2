@@ -8,6 +8,10 @@
   @media only (min-width: 1em), screen and (orientation: portrait)
     @content
 
+@mixin phone-landscape
+  @media only (device-width: 1em), screen and (orientation: landscape)
+    @content
+
 @mixin tablet
   @media only screen and (min-width: 481px) and (orientation: portrait)
     @content
