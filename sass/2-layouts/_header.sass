@@ -201,6 +201,34 @@
 			@include desktop
 				background-color: white
 
+	#logo-space
+		display: flex
+		justify-content: center
+		border-radius: 7px
+		height: 67px
+		width: 22vw
+		background-color: lemonchiffon
+		background-image: url('../dist/imgs/newlogo.png')
+		background-size: contain
+		background-position: bottom
+		background-repeat: no-repeat
+		@include tablet
+			width: 15vw
+		@include desktop
+			width: 15vw
+
+	.logo-desc
+		display: flex
+		justify-content: flex-start
+		flex-direction: column
+		align-items: center
+		text-decoration: none
+		.ok
+			font-size: 1.2em
+			color: black
+			text-transform: lowercase
+			font-style: oblique
+
 	#folders-container
 		padding: 0
 		width: 100%
@@ -226,7 +254,7 @@
 			background-color: #fffef2
 			justify-content: space-around
 		@include desktop
-			width: 80%
+			width: 80vw
 			height: 42px
 			display: flex
 			flex-flow: row
@@ -234,7 +262,7 @@
 			border-radius: 8px
 			padding-bottom: 9px
 			background-image: none
-			background-color: #fffef2
+			background-color: antiquewhite
 			border: 1.3px solid #e0ad6e
 			justify-content: space-around
 
@@ -509,6 +537,13 @@
 			display: flex
 			justify-content: center
 			background-color: #898088
+		@include desktop
+			display: flex
+			justify-content: space-around
+			position: fixed
+			top: 0
+			width: 100vw
+			background-color: white
 
 	.navbar
 	  display: flex
@@ -524,20 +559,6 @@
 	  background-repeat: no-repeat
 		background-image: url('../dist/imgs/hero.png')
 
-	  // li
-	  //   opacity: 1
-	  //   flex-grow: 1
-	  //   flex-wrap: wrap
-	  //   border-radius: 1.5px
-		// 	background-color: hsla(16, 96%, 9%, 0.92)
-	    // a
-	    //   flex-grow: 1
-			// 	margin: auto
-	    //   padding: 3.6px
-			// 	text-decoration: none
-	    //   background-size: 17px
-	    //   background-position: 3px
-			// 	background-repeat: no-repeat
 
 	      &.brand
 	        background-image: url(../dist/imgs/testicons.png)
@@ -556,45 +577,6 @@
 	      &:hover
 	        background-color: #f9970a
 	        height: auto
-
-	// .mobile-container.sticky
-	//  	top: 0
-	//  	height: auto
-	// 	display: flex
-	//  	z-index: 9999
-	// 	position: fixed
-	//  	@include tablet
-	// 		width: 100%
-	//  		height: auto
-	// 		display: flex
-	//  		position: fixed
-	//  		background-color: #5d1818
-	//  	@include deskto
-	//  		width: 100%
-	//  		height: auto
-	// 		display: flex
-	//  		z-index: 99999
-	//  		position: fixed
-	// 		background-color: #5d1818
-
-	// #navtexts
-	//   color: white
-	// 	margin-left: 22px
-	//   letter-spacing: 0.04em
-	//   font-family: $font-stack-old-style
-  //
-	// .shifted
-	//  margin-top: 0px
-  //
-	//  #navtabs
-	// 	 li
-  //
-	// 	 a
-	// 		 width: 63px
-	// 		 font-size: 0.96em
-
-
-
 
 
   #home

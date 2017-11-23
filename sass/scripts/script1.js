@@ -2,7 +2,7 @@
 $(document).ready(function(){
 
     if (jQuery(window).width() <= 481) {
-        $(".exit-menu, .hamburger-menu").on("click", function(){
+        $(".exit-menu, .hamburger-menu, .logo-desc").on("click", function(){
           $(".mobile-container").hide(300);
           $(".haus").show(300);
         });
@@ -43,7 +43,7 @@ $(document).ready(function(){
 
     var stickyNavTop = $('.nav-folders').offset().top;
     var headerHeight = 0;
-      $('.hamburger-menu').click(function(e) {
+      $('.hamburger-menu, .logo-desc').click(function(e) {
           var linkHref = $(this).attr('href');
           $('html, body').animate({
             scrollTop: $(linkHref).offset().top - headerHeight
@@ -55,7 +55,7 @@ $(document).ready(function(){
         if (jQuery(window).width() > 481) {
             var stickyNavTop = $('.nav-folders').offset().top;
             var headerHeight = 64;
-              $('.hamburger-menu').click(function(e) {
+              $('.hamburger-menu, .logo-desc').click(function(e) {
                   var linkHref = $(this).attr('href');
                   $('html, body').animate({
                     scrollTop: $(linkHref).offset().top - headerHeight

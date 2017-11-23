@@ -388,6 +388,59 @@ h2, h3 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
+  #logo-space {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 7px;
+    height: 67px;
+    width: 22vw;
+    background-color: lemonchiffon;
+    background-image: url("../dist/imgs/newlogo.png");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  #logo-space {
+    width: 15vw;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #logo-space {
+    width: 15vw;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
+  .logo-desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+  }
+  .logo-desc .ok {
+    font-size: 1.2em;
+    color: black;
+    text-transform: lowercase;
+    font-style: oblique;
+  }
   #folders-container {
     padding: 0;
     width: 100%;
@@ -435,7 +488,7 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #folders-container {
-    width: 80%;
+    width: 80vw;
     height: 42px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -449,7 +502,7 @@ h2, h3 {
     border-radius: 8px;
     padding-bottom: 9px;
     background-image: none;
-    background-color: #fffef2;
+    background-color: antiquewhite;
     border: 1.3px solid #e0ad6e;
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -917,6 +970,20 @@ h2, h3 {
   }
 }
 
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: white;
+  }
+}
+
 @media (min-width: 1em), screen and (orientation: portrait) {
   .navbar {
     display: -webkit-box;
@@ -1169,12 +1236,12 @@ h2, h3 {
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   body main section .tag-title {
     width: 82%;
-    margin-top: 18px;
+    margin-top: 0;
     font-weight: normal;
     font-weight: bold;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.1em;
     line-height: 45px;
-    font-size: 1.5em;
+    font-size: 1.4em;
     background-color: #fffef2;
     color: #129c00;
   }
