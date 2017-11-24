@@ -38,273 +38,305 @@
           margin: auto
           margin-top: 60px
           border: 1px solid gray
+  #large-3
+    display: flex
+    @include tablet
+      display: flex
+    @include desktop
+      display: flex
+      justify-content: space-between
+      width: 100vw
+      height: auto
 
-        #wagai
+    #left, #right
+      display: none
+      @include tablet
+        display: none
+      @include desktop
+        display: flex
+        width: 20vw
+        height: 100%
+        background-color: green
+        z-index: 9999
+  #left
+  #wagai
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    flex-direction: column
+    width: 60vw
+    height: 100vh
+    margin: auto
+    overflow-y: scroll
+    overflow-x: hidden
+    @include tablet
+      height: 100vh
+      margin: auto
+      width: 83%
+      overflow-y: scroll
+      overflow-x: hidden
+      background-color: rgba(255, 254, 242, 0.26)
+      border: 1px solid #e5dcbc
+    @include desktop
+      height: 100vh
+      margin: auto
+      overflow-y: scroll
+      overflow-x: hidden
+      background-color: rgba(255, 254, 242, 0.26)
+      border: 1px solid #e5dcbc
+
+    p
+      margin: auto
+      font-size: 0.99em
+      font-family: sans-serif
+      color: #1b1102
+      padding: 16px
+      line-height: 1.5em
+      letter-spacing: 0.004em
+      @include tablet
+        font-size: 1.04em
+        letter-spacing: normal
+
+      span
+        font-size: 1.84em
+        font-family: $font-stack-thin
+        letter-spacing: 0.02em
+        color: #199601
+        font-weight: 600
+        line-height: 44px
+
+      #pen-off
+        font-size: 1.52em
+        font-family: $font-stack-Dancing-script
+        font-style: italic
+        color: #c78919
+        font-weight: lighter
+        padding-bottom: 10px
+
+      .portrait
+        max-width: 130px
+        border: 1px solid gray
+
+  #skills-column
+    width: 100%
+
+    #skills-set-imgs
+      display: flex
+      flex-wrap: wrap
+
+      #flying-skills
+        display: flex
+        flex-direction: column
+        position: relative
+
+        #pillar
+          display: none
+          justify-content: space-around
+          align-items: flex-end
+          position: relative
+          width: 68%
+          z-index: 9
+
+  .skills1
+    max-width: 70px
+    height: 100vh
+
+  .GD, .Adobe, .Webdev, .Musician
+    font-size: 0.89em
+    letter-spacing: 0.04em
+    font-family: sans-serif
+    font-weight: lighter
+    color: #131426
+    border-bottom: 1.2px solid #438506
+    margin-bottom: 21px
+    padding-bottom: 8px
+    @include tablet
+      margin-bottom: 16px
+
+  .skills-title
+    border-bottom: 1px solid gray
+
+  #grafix, #web, #snaps
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    height: 100vh
+    margin: 0
+    padding: 0
+
+  #grafix
+
+  #web
+
+  #snaps
+
+  .tag-title
+    width: 79%
+    margin-top: 0
+    line-height: 28px
+    text-align: center
+    font-weight: 600
+    font-style: normal
+    font-size: 0.88em
+    color: #341e25
+    letter-spacing: 0.13em
+    text-transform: uppercase
+    border-top: 2px solid #341e25
+    border-radius: 0 0px 15px 15px
+    font-family: $font-stack-audio
+    border-bottom: 1.1px solid #f9970a
+    @include tablet
+      width: 82%
+      margin-top: 0
+      font-weight: normal
+      font-weight: bold
+      letter-spacing: 0.1em
+      line-height: 45px
+      font-size: 1.4em
+      background-color: #fffef2
+      color: #129c00
+
+  #snaps
+    background-image: url('../dist/imgs/polygons.png')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: top
+
+    .split-width
+      display: flex
+      justify-content: space-between
+      width: 100%
+      height: 100%
+      // border: 1px solid red
+
+      #left-pane, #right-pane
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        height: 100%
+        overflow-y: scroll
+
+        #left-pane
+          display: none
+
+        #snap-box
           display: flex
-          justify-content: flex-start
-          align-items: center
           flex-direction: column
-          width: 100%
-          height: 100vh
-          margin: auto
-          overflow: scroll
-          overflow-x: hidden
-          padding-bottom: 197px
-          @include tablet
-            width: 83%
-            background-color: rgba(255, 254, 242, 0.26)
-            border: 1px solid #e5dcbc
-
-          p
-            margin: auto
-            font-size: 0.99em
-            font-family: sans-serif
-            color: #1b1102
-            padding: 16px
-            line-height: 1.5em
-            letter-spacing: 0.004em
-            @include tablet
-              font-size: 1.04em
-              letter-spacing: normal
-
-            span
-              font-size: 1.84em
-              font-family: $font-stack-thin
-              letter-spacing: 0.02em
-              color: #199601
-              font-weight: 600
-              line-height: 44px
-
-            #pen-off
-              font-size: 1.52em
-              font-family: $font-stack-Dancing-script
-              font-style: italic
-              color: #c78919
-              font-weight: lighter
-              padding-bottom: 10px
-
-            .portrait
-              max-width: 130px
-              border: 1px solid gray
-
-          #skills-column
-            width: 100%
-
-            #skills-set-imgs
-              display: flex
-              flex-wrap: wrap
-
-              #flying-skills
-                display: flex
-                flex-direction: column
-                position: relative
-
-                #pillar
-                  display: none
-                  justify-content: space-around
-                  align-items: flex-end
-                  position: relative
-                  width: 68%
-                  z-index: 9
-
-              .skills1
-                max-width: 70px
-                height: 100vh
-
-              .GD, .Adobe, .Webdev, .Musician
-                font-size: 0.89em
-                letter-spacing: 0.04em
-                font-family: sans-serif
-                font-weight: lighter
-                color: #131426
-                border-bottom: 1.2px solid #438506
-                margin-bottom: 21px
-                padding-bottom: 8px
-                @include tablet
-                  margin-bottom: 16px
-
-            .skills-title
-              border-bottom: 1px solid gray
-
-        #grafix, #web, #snaps
-          display: flex
-          flex-direction: column
-          justify-content: space-between
+          justify-content: space-around
           align-items: center
           width: 100%
-          height: 100vh
-          margin: 0
-          padding: 0
+          height: 60%
+          border: 1px solid #cbd1cb
+          margin: 6px
 
-        #grafix
+          img
+            max-width: 100%
+            max-height: 160px
+            align-self: center
+            margin-bottom: 12px
+            scroll-behavior: smooth
+            border: 1px solid #63616c
+            padding: 3px
 
-        #web
-
-        #snaps
-
-        .tag-title
-          width: 79%
-          margin-top: 0
-          line-height: 28px
-          text-align: center
-          // text-shadow: 2px 2px 2px #bcc2ba
-          font-weight: 600
-          font-style: normal
-          font-size: 0.88em
-          color: #341e25
-          letter-spacing: 0.13em
-          text-transform: uppercase
-          border-top: 2px solid #341e25
-          border-radius: 0 0px 15px 15px
-          font-family: $font-stack-audio
-          border-bottom: 1.1px solid #f9970a
-          @include tablet
-            width: 82%
-            margin-top: 0
-            font-weight: normal
-            font-weight: bold
-            letter-spacing: 0.1em
-            line-height: 45px
-            font-size: 1.4em
-            background-color: #fffef2
-            color: #129c00
-
-        #snaps
-          background-image: url('../dist/imgs/polygons.png')
-          background-size: cover
-          background-repeat: no-repeat
-          background-position: top
-
-          .split-width
-            display: flex
-            justify-content: space-between
-            width: 100%
-            height: 100%
-            // border: 1px solid red
-
-            #left-pane, #right-pane
-              display: flex
-              flex-wrap: wrap
-              justify-content: center
-              align-items: center
-              height: 100%
-              overflow-y: scroll
-
-              #left-pane
-                display: none
-
-              #snap-box
-                display: flex
-                flex-direction: column
-                justify-content: space-around
-                align-items: center
-                width: 100%
-                height: 60%
-                border: 1px solid #cbd1cb
-                margin: 6px
-
-                img
-                  max-width: 100%
-                  max-height: 160px
-                  align-self: center
-                  margin-bottom: 12px
-                  scroll-behavior: smooth
-                  border: 1px solid #63616c
-                  padding: 3px
-
-              span
-                font-family: sans-serif
-                font-size: 0.77em
-                border-bottom: 1px dotted
-                line-height: 22px
-
-        .slider-inner
-        	max-width: 90.4%
-        	position: relative
-        	overflow: hidden
-        	float: left
-        	padding: 3px
-        	border: solid 1px #d3a436
-          background-color: white
-
-        .slider-inner img
-        	display: none
-        	max-width: 100%
-        	max-height: 250px
-
-        .slider-inner img.active
-        	display: flex
-
-        #prext
-          display: flex
-          justify-content: space-between
-          width: 61%
-          z-index: 999999
-
-        .prev,.next
-        	float: left
-        	cursor: pointer
-
-        .prev
-        	position: relative
-        	z-index: 99999
-          // @include tablet
-          //   z-index: 99999
-          // @include desktop
-          //   z-index: 99999
-
-        .next
-        	position: relative
-        	z-index: 999999
-          // @include tablet
-          //   z-index: 99999
-          // @include desktop
-          //   z-index: 99999
-
-
-        #imgslider-desc
-          display: flex
-          justify-content: center
-          width: 99%
-          height: auto
-
-          p
-            color: #9c9889
-            font-family: sans-serif
-            border-bottom: .5px dotted
-            font-weight: lighter
-            font-size: 0.87em
-            letter-spacing: 0.04em
-            width: 83%
-            text-align: center
-            margin: auto
-            padding-bottom: 8px
-
-        #web-desc
-          display: flex
-          justify-content: center
-          font-size: 0.9em
+        span
           font-family: sans-serif
-          text-align: center
-          width: 74%
-          line-height: 23px
-          border: none
-          color: #c28943
+          font-size: 0.77em
+          border-bottom: 1px dotted
+          line-height: 22px
 
-        #thumbnails
-          display: flex
-          justify-content: space-between
-          width: 99%
-          height: auto
+  .slider-inner
+  	max-width: 90.4%
+  	position: relative
+  	overflow: hidden
+  	float: left
+  	padding: 3px
+  	border: solid 1px #d3a436
+    background-color: white
 
-          p
-            width: 50%
-            color: #637985
-            font-size: 0.84em
-            font-family: sans-serif
-            text-align: center
+  .slider-inner img
+  	display: none
+  	max-width: 100%
+  	max-height: 250px
 
+  .slider-inner img.active
+  	display: flex
+
+  #prext
+    display: flex
+    justify-content: space-between
+    width: 61%
+    z-index: 9999999999
+
+  .prev,.next
+  	float: left
+  	cursor: pointer
+
+  .prev
+  	position: relative
+  	z-index: 99999
+    // @include tablet
+    //   z-index: 99999
+    // @include desktop
+    //   z-index: 99999
+
+  .next
+  	position: relative
+  	z-index: 999999
+    // @include tablet
+    //   z-index: 99999
+    // @include desktop
+    //   z-index: 99999
+
+
+  #imgslider-desc
+    display: flex
+    justify-content: center
+    width: 99%
+    height: auto
+
+    p
+      color: #9c9889
+      font-family: sans-serif
+      border-bottom: .5px dotted
+      font-weight: lighter
+      font-size: 0.87em
+      letter-spacing: 0.04em
+      width: 83%
+      text-align: center
+      margin: auto
+      padding-bottom: 8px
+
+  #web-desc
+    display: flex
+    justify-content: center
+    font-size: 0.9em
+    font-family: sans-serif
+    text-align: center
+    width: 74%
+    line-height: 23px
+    border: none
+    color: #c28943
+
+  #thumbnails
+    display: flex
+    justify-content: space-between
+    width: 99%
+    height: auto
+
+    p
+      width: 50%
+      color: #637985
+      font-size: 0.84em
+      font-family: sans-serif
+      text-align: center
+  #skills-column
+    display: flex
+    justify-content: center
   #Accordion
+    width: 90vw
     margin-bottom: 20px
 
   #cor-skills

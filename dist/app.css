@@ -821,10 +821,11 @@ h2, h3 {
     font-family: "Roboto";
   }
   .mobile-container {
+    height: 80px;
     width: 76%;
     bottom: 0;
     display: none;
-    z-index: 999999999999;
+    z-index: 999;
     position: fixed;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -835,6 +836,7 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .mobile-container {
+    height: 80px;
     top: 0;
     left: 0;
     width: 100%;
@@ -855,6 +857,7 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .mobile-container {
+    height: 80px;
     top: 0;
     width: 100%;
     border: none;
@@ -864,6 +867,7 @@ h2, h3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    z-index: 99999999;
   }
 }
 
@@ -1070,7 +1074,60 @@ h2, h3 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  body main section #wagai {
+  #large-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  #large-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #large-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100vw;
+    height: auto;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
+  #large-3 #left, #large-3 #right {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  #large-3 #left, #large-3 #right {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #large-3 #left, #large-3 #right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 20vw;
+    height: 100%;
+    background-color: green;
+    z-index: 9999;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
+  #wagai {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1084,25 +1141,39 @@ h2, h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
+    width: 60vw;
     height: 100vh;
     margin: auto;
-    overflow: scroll;
+    overflow-y: scroll;
     overflow-x: hidden;
-    padding-bottom: 197px;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  body main section #wagai {
+  #wagai {
+    height: 100vh;
+    margin: auto;
     width: 83%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: rgba(255, 254, 242, 0.26);
+    border: 1px solid #e5dcbc;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #wagai {
+    height: 100vh;
+    margin: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
     background-color: rgba(255, 254, 242, 0.26);
     border: 1px solid #e5dcbc;
   }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  body main section #wagai p {
+  #wagai p {
     margin: auto;
     font-size: 0.99em;
     font-family: sans-serif;
@@ -1114,14 +1185,14 @@ h2, h3 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  body main section #wagai p {
+  #wagai p {
     font-size: 1.04em;
     letter-spacing: normal;
   }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  body main section #wagai p span {
+  #wagai p span {
     font-size: 1.84em;
     font-family: "Amatic SC", cursive;
     letter-spacing: 0.02em;
@@ -1129,7 +1200,7 @@ h2, h3 {
     font-weight: 600;
     line-height: 44px;
   }
-  body main section #wagai p #pen-off {
+  #wagai p #pen-off {
     font-size: 1.52em;
     font-family: "Dancing Script";
     font-style: italic;
@@ -1137,21 +1208,21 @@ h2, h3 {
     font-weight: lighter;
     padding-bottom: 10px;
   }
-  body main section #wagai p .portrait {
+  #wagai p .portrait {
     max-width: 130px;
     border: 1px solid gray;
   }
-  body main section #wagai #skills-column {
+  #skills-column {
     width: 100%;
   }
-  body main section #wagai #skills-column #skills-set-imgs {
+  #skills-column #skills-set-imgs {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  body main section #wagai #skills-column #skills-set-imgs #flying-skills {
+  #skills-column #skills-set-imgs #flying-skills {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1161,7 +1232,7 @@ h2, h3 {
             flex-direction: column;
     position: relative;
   }
-  body main section #wagai #skills-column #skills-set-imgs #flying-skills #pillar {
+  #skills-column #skills-set-imgs #flying-skills #pillar {
     display: none;
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -1172,11 +1243,11 @@ h2, h3 {
     width: 68%;
     z-index: 9;
   }
-  body main section #wagai #skills-column #skills-set-imgs .skills1 {
+  .skills1 {
     max-width: 70px;
     height: 100vh;
   }
-  body main section #wagai #skills-column #skills-set-imgs .GD, body main section #wagai #skills-column #skills-set-imgs .Adobe, body main section #wagai #skills-column #skills-set-imgs .Webdev, body main section #wagai #skills-column #skills-set-imgs .Musician {
+  .GD, .Adobe, .Webdev, .Musician {
     font-size: 0.89em;
     letter-spacing: 0.04em;
     font-family: sans-serif;
@@ -1189,16 +1260,16 @@ h2, h3 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  body main section #wagai #skills-column #skills-set-imgs .GD, body main section #wagai #skills-column #skills-set-imgs .Adobe, body main section #wagai #skills-column #skills-set-imgs .Webdev, body main section #wagai #skills-column #skills-set-imgs .Musician {
+  .GD, .Adobe, .Webdev, .Musician {
     margin-bottom: 16px;
   }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  body main section #wagai #skills-column .skills-title {
+  .skills-title {
     border-bottom: 1px solid gray;
   }
-  body main section #grafix, body main section #web, body main section #snaps {
+  #grafix, #web, #snaps {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1217,7 +1288,7 @@ h2, h3 {
     margin: 0;
     padding: 0;
   }
-  body main section .tag-title {
+  .tag-title {
     width: 79%;
     margin-top: 0;
     line-height: 28px;
@@ -1236,7 +1307,7 @@ h2, h3 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  body main section .tag-title {
+  .tag-title {
     width: 82%;
     margin-top: 0;
     font-weight: normal;
@@ -1250,13 +1321,13 @@ h2, h3 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  body main section #snaps {
+  #snaps {
     background-image: url("../dist/imgs/polygons.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
   }
-  body main section #snaps .split-width {
+  #snaps .split-width {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1266,7 +1337,7 @@ h2, h3 {
     width: 100%;
     height: 100%;
   }
-  body main section #snaps .split-width #left-pane, body main section #snaps .split-width #right-pane {
+  #snaps .split-width #left-pane, #snaps .split-width #right-pane {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1281,10 +1352,10 @@ h2, h3 {
     height: 100%;
     overflow-y: scroll;
   }
-  body main section #snaps .split-width #left-pane #left-pane, body main section #snaps .split-width #right-pane #left-pane {
+  #snaps .split-width #left-pane #left-pane, #snaps .split-width #right-pane #left-pane {
     display: none;
   }
-  body main section #snaps .split-width #left-pane #snap-box, body main section #snaps .split-width #right-pane #snap-box {
+  #snaps .split-width #left-pane #snap-box, #snaps .split-width #right-pane #snap-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1302,7 +1373,7 @@ h2, h3 {
     border: 1px solid #cbd1cb;
     margin: 6px;
   }
-  body main section #snaps .split-width #left-pane #snap-box img, body main section #snaps .split-width #right-pane #snap-box img {
+  #snaps .split-width #left-pane #snap-box img, #snaps .split-width #right-pane #snap-box img {
     max-width: 100%;
     max-height: 160px;
     -ms-flex-item-align: center;
@@ -1312,13 +1383,13 @@ h2, h3 {
     border: 1px solid #63616c;
     padding: 3px;
   }
-  body main section #snaps .split-width #left-pane span, body main section #snaps .split-width #right-pane span {
+  #snaps .split-width #left-pane span, #snaps .split-width #right-pane span {
     font-family: sans-serif;
     font-size: 0.77em;
     border-bottom: 1px dotted;
     line-height: 22px;
   }
-  body main section .slider-inner {
+  .slider-inner {
     max-width: 90.4%;
     position: relative;
     overflow: hidden;
@@ -1327,17 +1398,17 @@ h2, h3 {
     border: solid 1px #d3a436;
     border-background-color: white;
   }
-  body main section .slider-inner img {
+  .slider-inner img {
     display: none;
     max-width: 100%;
     max-height: 250px;
   }
-  body main section .slider-inner img.active {
+  .slider-inner img.active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  body main section #prext {
+  #prext {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1345,21 +1416,21 @@ h2, h3 {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 61%;
-    z-index: 999999;
+    z-index: 9999999999;
   }
-  body main section .prev, body main section .next {
+  .prev, .next {
     float: left;
     cursor: pointer;
   }
-  body main section .prev {
+  .prev {
     position: relative;
     z-index: 99999;
   }
-  body main section .next {
+  .next {
     position: relative;
     z-index: 999999;
   }
-  body main section #imgslider-desc {
+  #imgslider-desc {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1369,7 +1440,7 @@ h2, h3 {
     width: 99%;
     height: auto;
   }
-  body main section #imgslider-desc p {
+  #imgslider-desc p {
     color: #9c9889;
     font-family: sans-serif;
     border-bottom: .5px dotted;
@@ -1381,7 +1452,7 @@ h2, h3 {
     margin: auto;
     padding-bottom: 8px;
   }
-  body main section #web-desc {
+  #web-desc {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1396,7 +1467,7 @@ h2, h3 {
     border: none;
     color: #c28943;
   }
-  body main section #thumbnails {
+  #thumbnails {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1406,14 +1477,23 @@ h2, h3 {
     width: 99%;
     height: auto;
   }
-  body main section #thumbnails p {
+  #thumbnails p {
     width: 50%;
     color: #637985;
     font-size: 0.84em;
     font-family: sans-serif;
     text-align: center;
   }
+  #skills-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   #Accordion {
+    width: 90vw;
     margin-bottom: 20px;
   }
   #cor-skills {

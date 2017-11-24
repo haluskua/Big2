@@ -462,14 +462,16 @@
 		font-family: $font-stack-roboto
 
 	.mobile-container
+		height: 80px
 		width: 76%
 		bottom: 0
 		display: none
-		z-index: 999999999999
+		z-index: 999
 		position: fixed
 		justify-content: space-between
 		border-radius: 18px 0 0 0
 		@include tablet
+			height: 80px
 			top: 0
 			left: 0
 			width: 100%
@@ -481,11 +483,13 @@
 			align-items: flex-start
 			justify-content: space-around
 		@include desktop
+			height: 80px
 			top: 0
 			width: 100%
 			border: none
 			display: flex
 			justify-content: center
+			z-index: 99999999
 
 	.mobile-container .sticky
 		z-index: 999999999999
