@@ -825,7 +825,7 @@ h2, h3 {
     width: 76%;
     bottom: 0;
     display: none;
-    z-index: 999;
+    z-index: 999999;
     position: fixed;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1013,8 +1013,6 @@ h2, h3 {
     height: 100%;
     width: 100%;
     margin: 0 auto;
-    overflow: scroll;
-    position: relative;
   }
   body main {
     display: -webkit-box;
@@ -1073,6 +1071,13 @@ h2, h3 {
   }
 }
 
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  body main section {
+    border: none;
+    background-size: cover;
+  }
+}
+
 @media (min-width: 1em), screen and (orientation: portrait) {
   #large-3 {
     display: -webkit-box;
@@ -1090,8 +1095,11 @@ h2, h3 {
     display: -ms-flexbox;
     display: flex;
     height: auto;
-    overflow-y: auto;
-    visibility: hidden;
+    overflow-y: scroll;
+    visibility: visible;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -1130,7 +1138,7 @@ h2, h3 {
     width: 25vw;
     height: 100%;
     background-color: green;
-    z-index: 9999;
+    z-index: 9999999;
   }
 }
 
@@ -1158,10 +1166,10 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #wagai {
-    height: 100vh;
+    height: 100%;
     margin: auto;
     width: 83%;
-    overflow: scroll;
+    overflow: auto;
     visibility: visible;
     background-color: rgba(255, 254, 242, 0.26);
     border: 1px solid #e5dcbc;
@@ -1170,9 +1178,10 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #wagai {
-    height: 100vh;
+    height: 100%;
     width: 50vw;
     margin: auto;
+    overflow: hidden;
     visibility: visible;
     background-color: rgba(255, 254, 242, 0.26);
     border: 1px solid #e5dcbc;
@@ -1182,11 +1191,11 @@ h2, h3 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   #wagai p {
     margin: auto;
-    font-size: 0.99em;
+    font-size: 0.97em;
     font-family: sans-serif;
     color: #1b1102;
     padding: 16px;
-    line-height: 1.5em;
+    line-height: 1.7em;
     letter-spacing: 0.004em;
   }
 }
@@ -1423,7 +1432,7 @@ h2, h3 {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 61%;
-    z-index: 9999999999;
+    z-index: 99999;
   }
   .prev, .next {
     float: left;

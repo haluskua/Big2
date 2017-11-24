@@ -5,8 +5,8 @@
     height: 100%
     width: 100%
     margin: 0 auto
-    overflow: scroll
-    position: relative
+    // overflow: scroll
+    // position: relative
 
     main
       display: flex
@@ -38,6 +38,9 @@
           margin: auto
           margin-top: 60px
           border: 1px solid gray
+        @include desktop
+          border: none
+          background-size: cover
 
   #large-3
     display: flex
@@ -47,8 +50,9 @@
     @include tablet
       display: flex
       height: auto
-      overflow-y: auto
-      visibility: hidden
+      overflow-y: scroll
+      visibility: visible
+      justify-content: space-between
     @include desktop
       display: flex
       justify-content: space-between
@@ -66,7 +70,7 @@
         width: 25vw
         height: 100%
         background-color: green
-        z-index: 9999
+        z-index: 9999999
   #left
   #wagai
     display: flex
@@ -78,28 +82,29 @@
     margin: auto
     visibility: visible
     @include tablet
-      height: 100vh
+      height: 100%
       margin: auto
       width: 83%
-      overflow: scroll
+      overflow: auto
       visibility: visible
       background-color: rgba(255, 254, 242, 0.26)
       border: 1px solid #e5dcbc
     @include desktop
-      height: 100vh
+      height: 100%
       width: 50vw
       margin: auto
+      overflow: hidden
       visibility: visible
       background-color: rgba(255, 254, 242, 0.26)
       border: 1px solid #e5dcbc
 
     p
       margin: auto
-      font-size: 0.99em
+      font-size: 0.97em
       font-family: sans-serif
       color: #1b1102
       padding: 16px
-      line-height: 1.5em
+      line-height: 1.7em
       letter-spacing: 0.004em
       @include tablet
         font-size: 1.04em
@@ -278,7 +283,7 @@
     display: flex
     justify-content: space-between
     width: 61%
-    z-index: 9999999999
+    z-index: 99999
 
   .prev,.next
   	float: left
