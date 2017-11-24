@@ -38,7 +38,7 @@ h2, h3 {
         -ms-flex-pack: start;
             justify-content: flex-start;
     background-color: black;
-    background: url("../dist/imgs/hero_bg.png") top no-repeat;
+    background: url("../dist/imgs/1920.png") top no-repeat;
     background-size: cover;
   }
 }
@@ -59,7 +59,8 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background: none;
+    background: url("../dist/imgs/1920.png") top no-repeat;
+    background-size: cover;
   }
 }
 
@@ -98,6 +99,7 @@ h2, h3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 0;
   }
 }
 
@@ -125,10 +127,11 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #Colsplit-box1 {
-    height: 74%;
-    margin-bottom: 99px;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    height: 48%;
+    margin: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -180,7 +183,7 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .bio {
-    margin-top: 80px;
+    margin-top: 0;
   }
 }
 
@@ -200,7 +203,7 @@ h2, h3 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   #thin #bulgeword {
     padding: 3px;
-    color: #f7ebdb;
+    color: #18120b;
     font-size: 0.57em;
     font-style: normal;
     font-weight: normal;
@@ -227,7 +230,7 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #thin #bulgeword {
-    font-size: 0.9em;
+    font-size: 0.57em;
     font-weight: bold;
     color: dimgray;
   }
@@ -288,10 +291,11 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #mini-desc {
-    font-size: 1.5em;
+    font-size: 0.94em;
     font-weight: normal;
     letter-spacing: 0px;
-    line-height: 51px;
+    line-height: 15px;
+    border: none;
   }
 }
 
@@ -397,9 +401,9 @@ h2, h3 {
             justify-content: center;
     border-radius: 7px;
     margin-left: 10px;
-    height: 67px;
+    height: 56px;
     width: 22vw;
-    background-color: #f9970a;
+    background-color: #cac1b4;
     background-image: url("../dist/imgs/newlogo.png");
     background-size: contain;
     background-position: bottom;
@@ -418,6 +422,8 @@ h2, h3 {
   #logo-space {
     margin: auto;
     width: 11vw;
+    height: 50px;
+    background-color: #cac1b4;
   }
 }
 
@@ -440,7 +446,7 @@ h2, h3 {
   }
   .logo-desc .ok {
     font-size: 1.2em;
-    color: black;
+    color: #fffef2;
     text-transform: lowercase;
     font-style: oblique;
   }
@@ -492,7 +498,7 @@ h2, h3 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #folders-container {
     width: 80vw;
-    height: 42px;
+    height: 21px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -505,8 +511,6 @@ h2, h3 {
     border-radius: 8px;
     padding-bottom: 9px;
     background-image: none;
-    background-color: antiquewhite;
-    border: 1.3px solid #e0ad6e;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -567,6 +571,7 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    border: none;
   }
 }
 
@@ -596,7 +601,7 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #home-logo {
-    height: 43%;
+    height: 68%;
     background-size: contain;
   }
 }
@@ -673,11 +678,17 @@ h2, h3 {
   .hamburger-menu {
     height: 100%;
     line-height: 37px;
+    color: #131426;
+    font-size: 0.85em;
+    background-color: whitesmoke;
+    border: none;
   }
   .hamburger-menu:focus {
     color: green;
+    font-size: 0.93em;
     border-left: none;
     background-color: rgba(255, 255, 0, 0);
+    background-color: none;
   }
 }
 
@@ -698,12 +709,6 @@ h2, h3 {
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .nav-archives {
     text-align: center;
-    background-color: none;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .nav-archives {
     background-color: none;
   }
 }
@@ -836,7 +841,7 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .mobile-container {
-    height: 80px;
+    height: 76px;
     top: 0;
     left: 0;
     width: 100%;
@@ -857,13 +862,23 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .mobile-container {
-    height: 80px;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     top: 0;
+    height: 50px;
     width: 100%;
     border: none;
+    border-radius: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #faf6e6;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -979,6 +994,7 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #nav {
+    width: 36vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1194,7 +1210,8 @@ h2, h3 {
     font-size: 0.97em;
     font-family: sans-serif;
     color: #1b1102;
-    padding: 16px;
+    padding: 18px;
+    text-align: justify;
     line-height: 1.7em;
     letter-spacing: 0.004em;
   }
@@ -1331,6 +1348,7 @@ h2, h3 {
     letter-spacing: 0.1em;
     line-height: 45px;
     font-size: 1.4em;
+    border-top: 1px solid #607d8b;
     background-color: #fffef2;
     color: #129c00;
   }

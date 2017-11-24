@@ -9,7 +9,7 @@
 		background-size: cover
 		justify-content: flex-start
 		background-color: black
-		background: url('../dist/imgs/hero_bg.png') top no-repeat
+		background: url('../dist/imgs/1920.png') top no-repeat
 		background-size: cover
 		@include phone-landscape
 
@@ -20,7 +20,8 @@
 			background-size: cover
 		@include desktop
 			display: flex
-			background: none
+			background: url('../dist/imgs/1920.png') top no-repeat
+			background-size: cover
 
 	.Colsplit-between
 		width: 100%
@@ -30,7 +31,6 @@
 		align-items: center
 		flex-direction: column
 		justify-content: flex-start
-		// background-color: rgba(0, 6, 12, 0.96)
 		@include tablet
 			width: 100vw
 			margin: auto
@@ -38,6 +38,7 @@
 		@include desktop
 			height: 100vh
 			justify-content: center
+			margin-bottom: 0
 
 	#Colsplit-box1
 		height: 76%
@@ -48,9 +49,9 @@
 		@include tablet
 			margin-top: 38px
 		@include desktop
-			height: 74%
-			margin-bottom: 99px
-			justify-content: space-around
+			height: 48%
+			margin: 0
+			justify-content: space-between
 
 	.landing-page
 		width: 100vw
@@ -74,7 +75,7 @@
 		height: auto
 		display: flex
 		@include desktop
-			margin-top: 80px
+			margin-top: 0
 
 	#thin
 		margin: 0
@@ -84,14 +85,13 @@
 
 		#bulgeword
 			padding: 3px
-			color: #f7ebdb
+			color: #18120b
 			font-size: 0.57em
 			font-style: normal
 			font-weight: normal
 			letter-spacing: 0.03em
 			text-transform: uppercase
 			font-family: $font-stack-roboto
-			// background-color: rgb(3, 4, 6)
 			@include phone-landscape
 				color: white
 
@@ -101,7 +101,7 @@
 				font-size: 1.05em
 				font-family: $font-stack-roboto
 			@include desktop
-				font-size: 0.9em
+				font-size: 0.57em
 				font-weight: bold
 				color: dimgray
 
@@ -136,10 +136,11 @@
 			font-size: 1.45em
 			line-height: 43px
 		@include desktop
-			font-size: 1.5em
+			font-size: 0.94em
 			font-weight: normal
 			letter-spacing: 0px
-			line-height: 51px
+			line-height: 15px
+			border: none
 
 	.intro
 		margin: auto
@@ -206,9 +207,9 @@
 		justify-content: center
 		border-radius: 7px
 		margin-left: 10px
-		height: 67px
+		height: 56px
 		width: 22vw
-		background-color: #f9970a
+		background-color: #cac1b4
 		background-image: url('../dist/imgs/newlogo.png')
 		background-size: contain
 		background-position: bottom
@@ -219,6 +220,8 @@
 		@include desktop
 			margin: auto
 			width: 11vw
+			height: 50px
+			background-color: #cac1b4
 
 	.logo-desc
 		display: flex
@@ -228,7 +231,7 @@
 		text-decoration: none
 		.ok
 			font-size: 1.2em
-			color: black
+			color: #fffef2
 			text-transform: lowercase
 			font-style: oblique
 
@@ -258,15 +261,13 @@
 			justify-content: space-around
 		@include desktop
 			width: 80vw
-			height: 42px
+			height: 21px
 			display: flex
 			flex-flow: row
 			align-self: center
 			border-radius: 8px
 			padding-bottom: 9px
 			background-image: none
-			background-color: antiquewhite
-			border: 1.3px solid #e0ad6e
 			justify-content: space-around
 
   .reduced
@@ -303,6 +304,7 @@
 			justify-content: space-between
 		@include desktop
 			display: flex
+			border: none
 
 	#home-logo
 		height: 50%
@@ -316,7 +318,7 @@
 			height: 54%
 			margin-top: 0px
 		@include desktop
-			height: 43%
+			height: 68%
 			background-size: contain
 
 	.logo-home
@@ -375,11 +377,16 @@
 		@include desktop
 			height: 100%
 			line-height: 37px
+			color: #131426
+			font-size: 0.85em
+			background-color: whitesmoke
+			border: none
 			&:focus
 				color: green
+				font-size: 0.93em
 				border-left: none
 				background-color: transparentize(yellow, 1)
-
+				background-color: none
 	.nav-archives
 		font-family: $font-stack-roboto
 		font-weight: normal
@@ -392,7 +399,7 @@
 			text-align: center
 			background-color: none
 		@include desktop
-			background-color: none
+
 
 	.haus
 		bottom: 0
@@ -471,7 +478,7 @@
 		justify-content: space-between
 		border-radius: 18px 0 0 0
 		@include tablet
-			height: 80px
+			height: 76px
 			top: 0
 			left: 0
 			width: 100%
@@ -483,11 +490,16 @@
 			align-items: flex-start
 			justify-content: space-around
 		@include desktop
-			height: 80px
+			height: auto
+			flex-direction: column
 			top: 0
+			height: 50px
 			width: 100%
 			border: none
+			border-radius: 0
 			display: flex
+			align-items: center
+			background-color: #faf6e6
 			justify-content: center
 			z-index: 99999999
 
@@ -545,6 +557,7 @@
 			justify-content: center
 			background-color: #898088
 		@include desktop
+			width: 36vw
 			display: flex
 			justify-content: space-around
 			position: fixed
