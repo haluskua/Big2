@@ -462,7 +462,7 @@ h2, h3 {
   #folders-container {
     padding: 0;
     width: 100%;
-    height: 247px;
+    height: 146px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     display: -webkit-box;
@@ -1222,7 +1222,7 @@ h2, h3 {
     color: #1b1102;
     padding: 18px;
     text-align: justify;
-    line-height: 1.7em;
+    line-height: 1.56em;
     letter-spacing: 0.004em;
   }
 }
@@ -1551,6 +1551,7 @@ h2, h3 {
     color: #444;
     cursor: pointer;
     padding: 18px;
+    margin: 2px 0 2px 0;
     width: 100%;
     border: 0;
     text-align: left;
@@ -1575,6 +1576,45 @@ h2, h3 {
     padding: 0 18px;
     display: none;
     background-color: white;
+  }
+  div.panel p {
+    margin: auto;
+    font-size: 0.97em;
+    font-family: sans-serif;
+    color: #1b1102;
+    padding: 18px;
+    text-align: justify;
+    line-height: 1.56em;
+    letter-spacing: 0.004em;
+  }
+  #gd-folders {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #gd-folders li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: space-around;
+        -ms-flex-align: space-around;
+            align-items: space-around;
+  }
+  #gd-folders li h4 {
+    font-family: "Roboto";
+    color: #341e25;
+    font-weight: normal;
   }
 }
 
