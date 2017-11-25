@@ -26,7 +26,6 @@ $(document).ready(function(){
 
     }
 
-
   $(window).scroll(function() {
     var scrollTop = $(window).scrollTop();
     /*changing between classes */
@@ -43,7 +42,7 @@ $(document).ready(function(){
 
     var stickyNavTop = $('.nav-folders').offset().top;
     var headerHeight = 0;
-      $('.hamburger-menu, .logo-desc').click(function(e) {
+      $('.hamburger-menu, .logo-desc, .grafix').click(function(e) {
           var linkHref = $(this).attr('href');
           $('html, body').animate({
             scrollTop: $(linkHref).offset().top - headerHeight
@@ -55,7 +54,7 @@ $(document).ready(function(){
         if (jQuery(window).width() > 481) {
             var stickyNavTop = $('.nav-folders').offset().top;
             var headerHeight = 64;
-              $('.hamburger-menu, .logo-desc').click(function(e) {
+              $('.hamburger-menu, .logo-desc, #snaps').click(function(e) {
                   var linkHref = $(this).attr('href');
                   $('html, body').animate({
                     scrollTop: $(linkHref).offset().top - headerHeight
