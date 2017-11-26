@@ -67,7 +67,7 @@ h2, h3 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .Colsplit-between {
     width: 100%;
-    height: 100%;
+    height: 92%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -173,6 +173,7 @@ h2, h3 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .hetpage-li {
     width: 100%;
+    padding-top: 40px;
   }
 }
 
@@ -212,7 +213,7 @@ h2, h3 {
   #thin #bulgeword {
     padding: 3px;
     color: #18120b;
-    font-size: 0.6em;
+    font-size: 0.57em;
     font-style: normal;
     font-weight: bold;
     letter-spacing: 0.06em;
@@ -275,9 +276,9 @@ h2, h3 {
   #mini-desc {
     width: 100%;
     height: 100%;
-    padding: 5px;
+    padding-bottom: 4px;
     z-index: 99999;
-    line-height: 29px;
+    line-height: 27px;
     border-bottom: 0.6px solid #9a8396;
   }
 }
@@ -300,9 +301,9 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #mini-desc {
-    font-size: 0.99em;
+    font-size: 1em;
     font-weight: normal;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.05em;
     line-height: 24px;
     border: none;
   }
@@ -338,9 +339,9 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .intro {
-    font-size: 1.15em;
+    font-size: 1.72em;
     margin-top: 80px;
-    letter-spacing: 0.4em;
+    letter-spacing: 0.52em;
   }
 }
 
@@ -405,6 +406,7 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    border: 1px solid lightgoldenrodyellow;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -462,7 +464,7 @@ h2, h3 {
   #folders-container {
     padding: 0;
     width: 100%;
-    height: 146px;
+    height: 260px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     display: -webkit-box;
@@ -471,7 +473,7 @@ h2, h3 {
     padding-top: 11px;
     padding-bottom: 8px;
     border-radius: 13px 13.5px 0 0;
-    border-top: 0.5px solid #341e25;
+    border: 0.5px solid #dcc29b;
     background-color: #efeaea;
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -547,8 +549,8 @@ h2, h3 {
     display: flex;
   }
   .nav-folders {
-    width: 40%;
-    height: 33px;
+    width: 55%;
+    height: 26px;
     display: none;
     -ms-flex-item-align: center;
         align-self: center;
@@ -611,7 +613,7 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #home-logo {
-    height: 78%;
+    height: 90%;
     background-size: contain;
   }
 }
@@ -637,9 +639,9 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #341e25;
+    color: #100006;
     cursor: pointer;
-    line-height: 34px;
+    line-height: 26px;
     font-size: 0.9em;
     text-align: center;
     font-weight: normal;
@@ -837,7 +839,7 @@ h2, h3 {
   }
   .mobile-container {
     height: auto;
-    width: 76%;
+    width: 60%;
     bottom: 0;
     display: none;
     z-index: 999999;
@@ -920,6 +922,7 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    border-right: 1px solid #341e25;
     background-color: #341e25;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1309,9 +1312,6 @@ h2, h3 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .skills-title {
-    border-bottom: 1px solid gray;
-  }
   #grafix, #web, #snaps {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1327,7 +1327,7 @@ h2, h3 {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     margin: 0;
     padding: 0;
   }
@@ -1557,8 +1557,8 @@ h2, h3 {
     text-align: left;
     outline: none;
     font-size: 15px;
-    -webkit-transition: 1s;
-    transition: 1s;
+    -webkit-transition: 2s ease;
+    transition: 2s ease;
   }
 }
 
@@ -1571,11 +1571,15 @@ h2, h3 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   button.accordion.active, button.accordion:hover {
     background-color: #ccc;
+    -webkit-transition: 3s ease;
+    transition: 3s ease;
   }
   div.panel {
     padding: 0 18px;
     display: none;
     background-color: white;
+    height: 70vh;
+    overflow: scroll;
   }
   div.panel p {
     margin: auto;
@@ -1612,9 +1616,11 @@ h2, h3 {
             align-items: space-around;
   }
   #gd-folders li h4 {
-    font-family: "Roboto";
-    color: #341e25;
-    font-weight: normal;
+    font-family: "Amatic SC", cursive;
+    color: #199601;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    font-size: 1.2em;
   }
 }
 
