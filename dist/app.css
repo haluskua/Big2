@@ -531,7 +531,7 @@ h2, h3 {
   #folders-container {
     width: 94%;
     height: 61px;
-    background-color: #898088;
+    background-color: none;
     border: none;
   }
 }
@@ -589,7 +589,7 @@ h2, h3 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   #home-logo {
     height: 61%;
-    margin-left: 6px;
+    margin-left: 4px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -689,7 +689,7 @@ h2, h3 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .hamburger-menu {
     height: 100%;
-    line-height: 37px;
+    line-height: 27px;
     color: #131426;
     font-size: 0.85em;
     background-color: whitesmoke;
@@ -1001,7 +1001,7 @@ h2, h3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-color: #898088;
+    background-color: #faf6e6;
   }
 }
 
@@ -1218,6 +1218,10 @@ h2, h3 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
+  #wagai a {
+    width: 82%;
+    text-decoration: none;
+  }
   #wagai p {
     margin: auto;
     font-size: 0.97em;
@@ -1331,8 +1335,12 @@ h2, h3 {
     margin: 0;
     padding: 0;
   }
+  #grafix a, #web a, #snaps a {
+    width: 82%;
+    text-decoration: none;
+  }
   .tag-title {
-    width: 79%;
+    width: 100%;
     margin-top: 0;
     line-height: 28px;
     text-align: center;
@@ -1485,16 +1493,16 @@ h2, h3 {
     height: auto;
   }
   #imgslider-desc p {
-    color: #9c9889;
+    color: #787670;
     font-family: sans-serif;
-    border-bottom: .5px dotted;
     font-weight: lighter;
-    font-size: 0.87em;
-    letter-spacing: 0.04em;
+    font-size: 0.92em;
+    letter-spacing: 0.07em;
+    line-height: 24px;
     width: 83%;
     text-align: center;
     margin: auto;
-    padding-bottom: 8px;
+    padding-bottom: 12px;
   }
   #web-desc {
     display: -webkit-box;
