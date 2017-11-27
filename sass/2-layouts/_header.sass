@@ -49,10 +49,8 @@
 		@include tablet
 			height: 63%
 			margin-bottom: 25px
-
 		@include desktop
-			height: 40%
-			margin: 0
+			height: 52%
 
 	.landing-page
 		width: 100%
@@ -116,7 +114,7 @@
 		color: #341e25
 		font-size: 0.86em
 		text-align: center
-		font-weight: bold
+		font-weight: normal
 		letter-spacing: 0.03em
 		font-family: $font-stack-roboto
 		@include tablet
@@ -321,7 +319,14 @@
 		background: url('../dist/imgs/newlogo.png') center no-repeat
 		background-size: cover
 		@include phone-landscape
-			background-size: contain
+			display: flex
+			width: 39%
+			align-self: center
+			border: 0.3px dotted #ffc4c4
+			background-color: #fd58000d
+			background-size: cover
+		@include desktop
+			background-size: cover
 
 		@include tablet
 			height: 89%

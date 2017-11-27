@@ -128,8 +128,7 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #Colsplit-box1 {
-    height: 40%;
-    margin: 0;
+    height: 52%;
   }
 }
 
@@ -251,7 +250,7 @@ h2, h3 {
     color: #341e25;
     font-size: 0.86em;
     text-align: center;
-    font-weight: bold;
+    font-weight: normal;
     letter-spacing: 0.03em;
     font-family: "Roboto";
   }
@@ -600,7 +599,21 @@ h2, h3 {
 
 @media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
   #home-logo {
-    background-size: contain;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 39%;
+    -ms-flex-item-align: center;
+        align-self: center;
+    border: 0.3px dotted #ffc4c4;
+    background-color: #fd58000d;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #home-logo {
+    background-size: cover;
   }
 }
 
@@ -1080,25 +1093,15 @@ h2, h3 {
     background-size: cover;
     background-repeat: repeat-y;
     border-top: 1px solid #d6a870;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  body main section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: 98vw;
-    height: 100vh;
-    margin: auto;
-    margin-top: 60px;
-    border: 1px solid gray;
+    background-color: #14191e;
+    background-color-display: flex;
+    background-color-flex-direction: column;
+    background-color-justify-content: space-around;
+    background-color-width: 98vw;
+    background-color-height: 100vh;
+    background-color-margin: auto;
+    background-color-margin-top: 60px;
+    background-color-border: 1px solid gray;
   }
 }
 
@@ -1376,6 +1379,12 @@ h2, h3 {
   }
 }
 
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .tag-title {
+    width: auto;
+  }
+}
+
 @media (min-width: 1em), screen and (orientation: portrait) {
   #snaps {
     background-image: url("../dist/imgs/polygons.png");
@@ -1558,7 +1567,7 @@ h2, h3 {
     letter-spacing: 0.02em;
   }
   button.accordion {
-    background-color: #eee;
+    background-color: #ffc462;
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -1582,8 +1591,8 @@ h2, h3 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   button.accordion.active, button.accordion:hover {
     background-color: #ccc;
-    -webkit-transition: 3s ease;
-    transition: 3s ease;
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
   }
   div.panel {
     padding: 0 18px;

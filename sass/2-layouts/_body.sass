@@ -29,7 +29,7 @@
         background-size: cover
         background-repeat: repeat-y
         border-top: 1px solid #d6a870
-        @include tablet
+        background-color: #14191e
           display: flex
           flex-direction: column
           justify-content: space-around
@@ -218,6 +218,8 @@
       border-top: 1px solid #607d8b
       background-color: #fffef2
       color: #129c00
+      @include tablet
+        width: auto
 
   #snaps
     background-image: url('../dist/imgs/polygons.png')
@@ -365,8 +367,9 @@
     font-family: $font-stack-thin
     margin-left: 14px
     letter-spacing: 0.02em
+
   button.accordion
-      background-color: #eee
+      background-color: #ffc462
       color: #444
       cursor: pointer
       padding: 18px
@@ -382,7 +385,7 @@
 
   button.accordion.active, button.accordion:hover
       background-color: #ccc
-      transition: 3s ease
+      transition: 1s ease
 
   div.panel
       padding: 0 18px
