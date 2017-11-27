@@ -1610,12 +1610,13 @@ h2, h3 {
         -ms-flex-align: center;
             align-items: center;
     padding: 0;
-    margin: 0;
+    margin-top: 36px;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
   #gd-folders li {
     width: 86%;
+    list-style: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1629,14 +1630,21 @@ h2, h3 {
     -webkit-box-align: space-around;
         -ms-flex-align: space-around;
             align-items: space-around;
-    text-align: right;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #gd-folders li h4 {
     font-family: "Roboto";
-    color: #0d2632;
+    color: #b57413;
     font-weight: normal;
-    letter-spacing: 0.06em;
-    font-size: 0.87em;
+    letter-spacing: 0.2em;
+    font-size: 0.75em;
+    margin-top: 14px;
+  }
+  #gd-folders li h4 a {
+    width: 0%;
   }
   #folder-title {
     width: 100%;
@@ -1666,6 +1674,9 @@ h2, h3 {
     margin: 0;
   }
   #gd-page li {
+    list-style: none;
+    font-family: "Roboto";
+    color: #4CAF50;
     height: 50%;
     margin-right: 20px;
   }
