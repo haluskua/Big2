@@ -1755,7 +1755,7 @@ h2, h3 {
     text-align: center;
     background-size: contain;
     background-position: center center;
-    background-color: rgba(20, 20, 20, 0.87);
+    background-color: rgba(20, 20, 20, 0.45);
     background-repeat: no-repeat;
     overflow: hidden;
     z-index: 999999;
