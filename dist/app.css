@@ -1348,6 +1348,9 @@ h2, h3 {
             justify-content: center;
     text-decoration: none;
   }
+  #goals {
+    height: 100vh;
+  }
   .tag-title {
     width: 82%;
     margin-top: 0;
@@ -1381,9 +1384,9 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .tag-title {
-    width: auto;
+    width: 90%;
   }
 }
 
@@ -1528,16 +1531,12 @@ h2, h3 {
     height: auto;
   }
   #imgslider-desc p {
-    color: #787670;
-    font-family: sans-serif;
+    font-size: 1.52em;
+    font-family: "Dancing Script";
+    font-style: italic;
+    color: #c78919;
     font-weight: lighter;
-    font-size: 0.92em;
-    letter-spacing: 0.07em;
-    line-height: 20px;
-    width: 83%;
     text-align: center;
-    margin: auto;
-    padding-bottom: 12px;
   }
   #web-desc {
     display: -webkit-box;
@@ -1590,7 +1589,9 @@ h2, h3 {
     letter-spacing: 0.02em;
   }
   button.accordion {
-    background-color: #221f1a;
+    font-family: "Roboto";
+    background-color: #2f2f2f;
+    font-weight: bolder;
     color: #ffc462;
     cursor: pointer;
     padding: 18px;
@@ -1599,8 +1600,8 @@ h2, h3 {
     border: 0;
     text-align: left;
     outline: none;
-    letter-spacing: 0.24em;
-    font-size: 0.966em;
+    letter-spacing: 0.14em;
+    font-size: 1.01em;
     -webkit-transition: 0.7s ease;
     transition: 0.7s ease;
   }
@@ -1614,12 +1615,13 @@ h2, h3 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   button.accordion.active, button.accordion:hover {
-    background-color: #ffc462;
+    background-color: #ebd38f;
+    font-weight: bold;
     -webkit-transition: 0.7s ease;
     transition: 0.7s ease;
     color: #221f1a;
     font-weight: bold;
-    letter-spacing: 0.07em;
+    letter-spacing: 0.02em;
     font-size: 1.08em;
   }
   div.panel {
@@ -1740,6 +1742,22 @@ h2, h3 {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+  #main-gallery .aic {
+    width: 94vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   #main-gallery #g-t {
     text-align: center;
     font-family: "Amatic SC", cursive;
@@ -1765,7 +1783,7 @@ h2, h3 {
   }
   .fs-gal-view {
     display: none;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     margin: 0;
     padding: 0;
@@ -1775,12 +1793,22 @@ h2, h3 {
     text-align: center;
     background-size: contain;
     background-position: center center;
-    background-color: rgba(20, 20, 20, 0.75);
+    background-color: rgba(1, 2, 5, 0.96);
     background-repeat: no-repeat;
     overflow: hidden;
     z-index: 999999;
   }
   .fs-gal-view h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1789,13 +1817,14 @@ h2, h3 {
     max-width: 100%;
     margin: 0;
     padding: 0;
-    height: 50px;
+    height: 29%;
+    font-family: "Amatic SC", cursive;
     line-height: 50px;
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
     color: #fff;
-    font-weight: 300;
-    font-size: 26px;
+    font-size: 1.38em;
+    letter-spacing: 0.07em;
   }
   .fs-gal-prev, .fs-gal-next, .fs-gal-close {
     position: absolute;
