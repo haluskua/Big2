@@ -1101,7 +1101,6 @@ h2, h3 {
     background-color-height: 100vh;
     background-color-margin: auto;
     background-color-margin-top: 60px;
-    background-color-border: 1px solid gray;
   }
 }
 
@@ -1615,7 +1614,7 @@ h2, h3 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   button.accordion.active, button.accordion:hover {
-    background-color: #ebd38f;
+    background-color: #dcb955;
     font-weight: bold;
     -webkit-transition: 0.7s ease;
     transition: 0.7s ease;
@@ -1629,7 +1628,6 @@ h2, h3 {
     display: none;
     background-color: white;
     height: auto;
-    overflow: scroll;
   }
   div.panel p {
     margin: auto;
