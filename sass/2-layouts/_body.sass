@@ -136,8 +136,6 @@
         max-width: 130px
         border: 1px solid gray
 
-  #skills-column
-    width: 100%
 
     #skills-set-imgs
       display: flex
@@ -206,7 +204,7 @@
     color: #341e25
     letter-spacing: 0.13em
     text-transform: uppercase
-    background-color: #f0e0c8
+    background-color: #faf5ed
     border-top: 2px solid #9c8c85
     border-radius: 0 0px 15px 15px
     font-family: $font-stack-audio
@@ -366,46 +364,55 @@
       font-size: 0.84em
       font-family: sans-serif
       text-align: center
+
+
   #skills-column
+    width: 100%
+    height: 100vh
     display: flex
-    justify-content: center
+    justify-content: flex-start
   #Accordion
     width: 90vw
     margin-bottom: 20px
 
   #cor-skills
-    color: #199601
-    font-family: $font-stack-thin
-    margin-left: 14px
-    letter-spacing: 0.02em
+    color: #262e26
+    display: flex
+    font-size: 1.46em
+    font-weight: normal
+    line-height: 24px
+    letter-spacing: 0.08em
+    text-transform: capitalize
+    font-family: $font-stack-roboto
+    margin-left: 17px
 
   button.accordion
       font-family: $font-stack-roboto
-      background-color: #423e3e
+      background-color:#e0d8a1
       // background-color: #8c1919
-      font-weight: bolder
-      color: #ffc462
+      font-weight: normal
+      color: #0c0c00
       cursor: pointer
-      padding: 13px
+      padding: 17px
       margin: 2px 0 2px 0
       width: 100%
       border: 0
       text-align: left
       outline: none
       letter-spacing: 0.13em
-      font-size: 1.01em
+      font-size: 1.13em
       transition: 0.7s ease
       @include tablet
         border: none
 
   button.accordion.active, button.accordion:hover
-      background-color: #8BC34A
+      background-color: #CDDC39
       font-weight: bold
       transition: 0.7s ease
       color: #221f1a
       font-weight: bold
-      letter-spacing: 0.02em
-      font-size: 1.08em
+      letter-spacing: 0.3em
+      font-size: 1.15em
 
   div.panel
       padding: 0 8px
@@ -521,7 +528,7 @@
     display: flex
     flex-wrap: wrap
     align-items: center
-    justify-content: space-between
+    justify-content: center
     height: 49vh
 
 
