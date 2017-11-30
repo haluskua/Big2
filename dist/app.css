@@ -1318,6 +1318,12 @@ h2, h3 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
+  .snaps-section {
+    height: 100vh;
+  }
+  #gdesign {
+    height: 100vh;
+  }
   #grafix, #web, #snaps, #gdesign, .wagai-weh, #main-gallery, #goals {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1326,9 +1332,8 @@ h2, h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1361,10 +1366,14 @@ h2, h3 {
     color: #341e25;
     letter-spacing: 0.13em;
     text-transform: uppercase;
-    border-top: 2px solid #341e25;
+    background-color: #f0e0c8;
+    border-top: 2px solid #9c8c85;
     border-radius: 0 0px 15px 15px;
     font-family: "Audiowide";
     border-bottom: 1.1px solid #f9970a;
+  }
+  .tag-title:hover {
+    background-color: #cccc;
   }
 }
 
@@ -1530,7 +1539,7 @@ h2, h3 {
     height: auto;
   }
   #imgslider-desc p {
-    font-size: 1.52em;
+    font-size: 1.3em;
     font-family: "Dancing Script";
     font-style: italic;
     color: #c78919;
@@ -1589,17 +1598,17 @@ h2, h3 {
   }
   button.accordion {
     font-family: "Roboto";
-    background-color: #2f2f2f;
+    background-color: #423e3e;
     font-weight: bolder;
     color: #ffc462;
     cursor: pointer;
-    padding: 18px;
+    padding: 13px;
     margin: 2px 0 2px 0;
     width: 100%;
     border: 0;
     text-align: left;
     outline: none;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.13em;
     font-size: 1.01em;
     -webkit-transition: 0.7s ease;
     transition: 0.7s ease;
@@ -1614,7 +1623,7 @@ h2, h3 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   button.accordion.active, button.accordion:hover {
-    background-color: #dcb955;
+    background-color: #8BC34A;
     font-weight: bold;
     -webkit-transition: 0.7s ease;
     transition: 0.7s ease;
@@ -1624,7 +1633,7 @@ h2, h3 {
     font-size: 1.08em;
   }
   div.panel {
-    padding: 0 18px;
+    padding: 0 8px;
     display: none;
     background-color: white;
     height: auto;
@@ -1765,7 +1774,7 @@ h2, h3 {
     color: forestgreen;
   }
   .container {
-    width: 90%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1774,10 +1783,10 @@ h2, h3 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 49vh;
   }
   .fs-gal-view {
     display: none;
@@ -1849,6 +1858,7 @@ h2, h3 {
     width: 100px;
     height: auto;
     float: left;
+    padding: 7px;
   }
 }
 
