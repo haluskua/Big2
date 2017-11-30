@@ -1657,7 +1657,7 @@ h2, h3 {
     margin: auto;
     font-size: 0.95em;
     font-family: sans-serif;
-    color: #1b1102;
+    color: #4a5f6b;
     padding: 12px;
     text-align: center;
     font-style: italic;
@@ -1703,12 +1703,31 @@ h2, h3 {
     font-size: 0.8em;
     letter-spacing: 0.03em;
     margin: 0;
+    margin-top: 8px;
   }
   #gd-folders li h4 a {
     width: 0%;
   }
-  #gd-folders li h4 i {
-    color: #8bc34a;
+  #gd-folders li .fl-title {
+    color: #090108;
+    font-weight: normal;
+    font-size: 1.12em;
+    letter-spacing: 0.1em;
+    margin: 0;
+    margin-top: 8px;
+  }
+  .gd-f2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .gd-f2 span {
+    color: #351531;
+    font-size: 0.9em;
+    letter-spacing: 0.09em;
+    font-style: italic;
   }
   #folder-title {
     width: 100%;
@@ -1805,7 +1824,6 @@ h2, h3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 49vh;
   }
   .fs-gal-view {
     display: none;
@@ -1865,13 +1883,27 @@ h2, h3 {
     right: 0;
   }
   .fs-gal-close {
-    top: 174px;
+    top: 74px;
     right: 14px;
     height: 30px;
     width: 30px;
   }
   .fs-gal:hover, .fs-gal-nav:hover, .fs-gal-close:hover {
     cursor: pointer;
+  }
+  .freelance {
+    background-color: white;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    text-align: left;
+    border: none;
+    font-size: 1.7em;
+    width: 100%;
+    color: #351531;
+    letter-spacing: 0.04em;
+    margin-left: 10px;
+    margin-top: 42px;
+    font-family: "Roboto";
   }
   .fs-gal {
     width: 100px;
