@@ -367,7 +367,7 @@
 
 
   #skills-column
-    width: 100%
+    width: 88%
     height: 100%
     display: flex
     justify-content: flex-start
@@ -376,7 +376,7 @@
     margin-bottom: 20px
 
   #cor-skills
-    color: #CDDC39
+    color: #cccc
     display: flex
     font-size: 1.56em
     font-weight: normal
@@ -387,35 +387,38 @@
     text-align: center
     font-weight: bolder
     justify-content: center
+
   button.accordion
       font-family: $font-stack-roboto
-      background-color: #42382a
-      // background-color: #8c1919
+      background-color: #351531
       font-weight: normal
-      color: #ebef57
+      color: white
       cursor: pointer
-      padding: 17px
+      padding: 13px
       margin: 2px 0 2px 0
       width: 100%
       border: 0
       text-align: left
       outline: none
-      letter-spacing: 0.13em
-      font-size: 1.13em
+      letter-spacing: 0.05em
+      font-size: 1.12em
       transition: 0.7s ease
+
       @include tablet
         border: none
 
   button.accordion.active, button.accordion:hover
-      background-color: whitesmoke
+      background-color: #faf5ed
       font-weight: bold
       transition: 0.7s ease
-      color: #221f1a
+      color: #351531
+      padding: 11px
       font-weight: bold
       text-align: center
-      letter-spacing: 0.1em
-      font-size: 1.5em
-      border-bottom: 1px dotted
+      font-family: "Dancing Script"
+      font-size: 1.7em
+      text-transform: lowercase
+      border-bottom: 1px dotted #d3cdb7
 
 
   div.panel
@@ -426,13 +429,14 @@
 
       p
         margin: auto
-        font-size: 0.97em
+        font-size: 0.96em
         font-family: sans-serif
         color: #1b1102
-        padding: 18px
+        padding: 14px
         text-align: justify
-        line-height: 1.36em
+        line-height: 1.6em
         letter-spacing: 0.004em
+
 
   #gd-folders
     display: flex
@@ -596,12 +600,6 @@
     cursor: pointer
 
 
-
-
-
-
-
-        //
         //
         // html, body
         //   margin: 0

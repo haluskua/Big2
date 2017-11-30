@@ -1576,7 +1576,7 @@ h2, h3 {
     text-align: center;
   }
   #skills-column {
-    width: 100%;
+    width: 88%;
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1590,7 +1590,7 @@ h2, h3 {
     margin-bottom: 20px;
   }
   #cor-skills {
-    color: #CDDC39;
+    color: #cccc;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1608,18 +1608,18 @@ h2, h3 {
   }
   button.accordion {
     font-family: "Roboto";
-    background-color: #42382a;
+    background-color: #351531;
     font-weight: normal;
-    color: #ebef57;
+    color: white;
     cursor: pointer;
-    padding: 17px;
+    padding: 13px;
     margin: 2px 0 2px 0;
     width: 100%;
     border: 0;
     text-align: left;
     outline: none;
-    letter-spacing: 0.13em;
-    font-size: 1.13em;
+    letter-spacing: 0.05em;
+    font-size: 1.12em;
     -webkit-transition: 0.7s ease;
     transition: 0.7s ease;
   }
@@ -1633,16 +1633,18 @@ h2, h3 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   button.accordion.active, button.accordion:hover {
-    background-color: whitesmoke;
+    background-color: #faf5ed;
     font-weight: bold;
     -webkit-transition: 0.7s ease;
     transition: 0.7s ease;
-    color: #221f1a;
+    color: #351531;
+    padding: 11px;
     font-weight: bold;
     text-align: center;
-    letter-spacing: 0.1em;
-    font-size: 1.5em;
-    border-bottom: 1px dotted;
+    font-family: "Dancing Script";
+    font-size: 1.7em;
+    text-transform: lowercase;
+    border-bottom: 1px dotted #d3cdb7;
   }
   div.panel {
     padding: 0 8px;
@@ -1652,12 +1654,12 @@ h2, h3 {
   }
   div.panel p {
     margin: auto;
-    font-size: 0.97em;
+    font-size: 0.96em;
     font-family: sans-serif;
     color: #1b1102;
-    padding: 18px;
+    padding: 14px;
     text-align: justify;
-    line-height: 1.36em;
+    line-height: 1.6em;
     letter-spacing: 0.004em;
   }
   #gd-folders {
