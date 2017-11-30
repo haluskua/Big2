@@ -210,7 +210,7 @@
     font-family: $font-stack-audio
     border-bottom: 1.1px solid #f9970a
     &:hover
-      background-color: #cccc
+      background-color: #CDDC39
     @include tablet
       width: 82%
       margin-top: 0
@@ -368,7 +368,7 @@
 
   #skills-column
     width: 100%
-    height: 100vh
+    height: 100%
     display: flex
     justify-content: flex-start
   #Accordion
@@ -376,22 +376,23 @@
     margin-bottom: 20px
 
   #cor-skills
-    color: #262e26
+    color: #CDDC39
     display: flex
-    font-size: 1.46em
+    font-size: 1.56em
     font-weight: normal
     line-height: 24px
     letter-spacing: 0.08em
     text-transform: capitalize
     font-family: $font-stack-roboto
-    margin-left: 17px
-
+    text-align: center
+    font-weight: bolder
+    justify-content: center
   button.accordion
       font-family: $font-stack-roboto
-      background-color:#e0d8a1
+      background-color: #42382a
       // background-color: #8c1919
       font-weight: normal
-      color: #0c0c00
+      color: #ebef57
       cursor: pointer
       padding: 17px
       margin: 2px 0 2px 0
@@ -406,13 +407,16 @@
         border: none
 
   button.accordion.active, button.accordion:hover
-      background-color: #CDDC39
+      background-color: whitesmoke
       font-weight: bold
       transition: 0.7s ease
       color: #221f1a
       font-weight: bold
-      letter-spacing: 0.3em
-      font-size: 1.15em
+      text-align: center
+      letter-spacing: 0.1em
+      font-size: 1.5em
+      border-bottom: 1px dotted
+
 
   div.panel
       padding: 0 8px
