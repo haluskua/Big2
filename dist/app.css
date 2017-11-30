@@ -1320,6 +1320,7 @@ h2, h3 {
   }
   #gdesign {
     height: 100vh;
+    border-bottom: 1px solid thistle;
   }
   #grafix, #web, #snaps, #gdesign, .wagai-weh, #main-gallery, #goals {
     display: -webkit-box;
@@ -1329,8 +1330,9 @@ h2, h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1562,9 +1564,9 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     width: 99%;
     height: auto;
   }
@@ -1642,9 +1644,7 @@ h2, h3 {
     padding: 5px;
     font-weight: bold;
     text-align: center;
-    font-family: "Dancing Script";
-    font-size: 1.7em;
-    text-transform: lowercase;
+    font-size: 1.2em;
     border-bottom: 1px dotted #d3cdb7;
   }
   div.panel {
@@ -1711,8 +1711,8 @@ h2, h3 {
   #gd-folders li .fl-title {
     color: #090108;
     font-weight: normal;
-    font-size: 1.12em;
-    letter-spacing: 0.1em;
+    font-size: 1.1em;
+    font-family: monospace;
     margin: 0;
     margin-top: 8px;
   }
@@ -1722,6 +1722,7 @@ h2, h3 {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    width: 100%;
   }
   .gd-f2 span {
     color: #351531;
@@ -1897,12 +1898,11 @@ h2, h3 {
         align-self: flex-start;
     text-align: left;
     border: none;
-    font-size: 1.7em;
+    font-size: 1.1em;
     width: 100%;
     color: #351531;
-    letter-spacing: 0.04em;
-    margin-left: 10px;
-    margin-top: 42px;
+    margin-left: 12px;
+    margin-top: 23px;
     font-family: "Roboto";
   }
   .fs-gal {
