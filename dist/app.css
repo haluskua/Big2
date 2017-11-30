@@ -1711,7 +1711,7 @@ h2, h3 {
   #gd-folders li .fl-title {
     color: #090108;
     font-weight: normal;
-    font-size: 1.1em;
+    font-size: 0.98em;
     font-family: monospace;
     margin: 0;
     margin-top: 8px;
@@ -1727,7 +1727,7 @@ h2, h3 {
   .gd-f2 span {
     color: #351531;
     font-size: 0.9em;
-    letter-spacing: 0.09em;
+    letter-spacing: 0.03em;
     font-style: italic;
   }
   #folder-title {
@@ -1898,7 +1898,8 @@ h2, h3 {
         align-self: flex-start;
     text-align: left;
     border: none;
-    font-size: 1.1em;
+    font-size: 0.97em;
+    letter-spacing: 0.07em;
     width: 100%;
     color: #351531;
     margin-left: 12px;
