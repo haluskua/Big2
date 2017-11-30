@@ -1722,7 +1722,6 @@ h2, h3 {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    width: 100%;
   }
   .gd-f2 span {
     color: #351531;
