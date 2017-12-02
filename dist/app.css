@@ -1956,6 +1956,9 @@ h2, h3 {
     float: left;
     padding: 7px;
   }
+  #accordion {
+    margin-top: 30px;
+  }
   .rgdp {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1965,8 +1968,8 @@ h2, h3 {
             justify-content: center;
     color: #151f13;
     font-weight: normal;
-    font-size: 0.5em;
-    letter-spacing: 0.12em;
+    font-size: 0.6em;
+    letter-spacing: 0.08em;
   }
 }
 
