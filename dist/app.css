@@ -1346,9 +1346,9 @@ h2, h3 {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-decoration: none;
   }
   #grafix {
@@ -1673,38 +1673,36 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 95%;
+    margin-top: 0;
     padding: 0;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
   }
   #gd-folders li {
     list-style: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: space-around;
         -ms-flex-align: space-around;
             align-items: space-around;
-    text-align: center;
+    text-align: left;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 7px;
   }
   #gd-folders li h4 {
     color: #090108;
     font-weight: normal;
     font-size: 0.8em;
     letter-spacing: 0.03em;
+    line-height: 16px;
     margin: 0;
     margin-top: 8px;
   }
