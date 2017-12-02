@@ -1352,7 +1352,7 @@ h2, h3 {
     text-decoration: none;
   }
   #grafix {
-    height: 94vh;
+    height: 88vh;
     overflow-y: scroll;
   }
   #goals {
@@ -1581,6 +1581,7 @@ h2, h3 {
     font-family: sans-serif;
     text-align: center;
     padding: 4px;
+    background-color: rgba(103, 224, 104, 0.0705882);
     border: 0.6px dotted gainsboro;
   }
   #skills-column {
@@ -1838,7 +1839,8 @@ h2, h3 {
         -ms-flex-align: center;
             align-items: center;
     overflow-y: scroll;
-    border: 1px solid slategray;
+    border: 1px solid #e6dee2;
+    background-color: #a7a18247;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -1871,7 +1873,7 @@ h2, h3 {
     text-align: center;
     background-size: contain;
     background-position: center center;
-    background-color: rgba(1, 2, 5, 0.96);
+    background-color: rgba(1, 2, 5, 0.54);
     background-repeat: no-repeat;
     overflow: hidden;
     z-index: 999999;
@@ -1895,14 +1897,20 @@ h2, h3 {
     max-width: 100%;
     margin: 0;
     padding: 0;
-    height: 29%;
-    font-family: "Amatic SC", cursive;
+    height: 6%;
+    font-family: "Roboto";
+    letter-spacing: 0.07em;
     line-height: 50px;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.9);
-    color: #fff;
-    font-size: 1.38em;
+    border-top: 1px solid #6b6958;
+    font-size: .66em;
+    font-weight: lighter;
     letter-spacing: 0.07em;
+    color: #b3c7d3;
+    font-size: 0.66em;
+    font-family: sans-serif;
+    text-align: center;
   }
   .fs-gal-prev, .fs-gal-next, .fs-gal-close {
     position: absolute;
@@ -1917,10 +1925,15 @@ h2, h3 {
     right: 0;
   }
   .fs-gal-close {
-    top: 74px;
-    right: 14px;
-    height: 30px;
+    top: 6px;
+    right: 7px;
+    height: 24px;
     width: 30px;
+    border-radius: 6px 6px 2px 2px;
+    padding: 1px 6px 1px 6px;
+    border: 0.5px solid #595856;
+    top: calc(98vh - 20.8px);
+    z-index: 1;
   }
   .fs-gal:hover, .fs-gal-nav:hover, .fs-gal-close:hover {
     cursor: pointer;
