@@ -1417,10 +1417,6 @@ h2, h3 {
             justify-content: space-between;
     width: 100%;
     height: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
   }
   #snaps .split-width #left-pane, #snaps .split-width #right-pane {
     display: -webkit-box;
@@ -1665,7 +1661,7 @@ h2, h3 {
   }
   div.panel p {
     margin: auto;
-    font-size: 0.77em;
+    font-size: 1em;
     font-family: sans-serif;
     color: #382d1e;
     padding: 12px;
