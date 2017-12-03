@@ -413,7 +413,7 @@ h2, h3 {
     margin-left: 10px;
     height: 56px;
     width: 22vw;
-    background-color: #d4b786;
+    background-color: #ebcf87;
     background-image: url("../dist/imgs/newlogo.png");
     background-size: contain;
     background-position: bottom;
@@ -671,7 +671,7 @@ h2, h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    border: 1px solid #e3d8ca;
+    border: 1px solid #f3a0c4;
   }
 }
 
@@ -1322,7 +1322,7 @@ h2, h3 {
     height: 100vh;
     border-bottom: 1px solid thistle;
   }
-  #grafix, #web, #snaps, #gdesign, .wagai-weh, #main-gallery, #goals {
+  #grafix, #contact, #gdesign, .wagai-weh, #main-gallery {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1341,7 +1341,7 @@ h2, h3 {
     margin: 0;
     padding: 0;
   }
-  #grafix a, #web a, #snaps a, #gdesign a, .wagai-weh a, #main-gallery a, #goals a {
+  #grafix a, #contact a, #gdesign a, .wagai-weh a, #main-gallery a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1366,6 +1366,9 @@ h2, h3 {
     font-style: normal;
     font-size: 0.97em;
     color: #341e25;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-bottom: 0.7px;
     letter-spacing: 0.13em;
     text-transform: uppercase;
@@ -1373,7 +1376,7 @@ h2, h3 {
     border-top: 2px solid #9c8c85;
     border-radius: 0 0px 15px 15px;
     font-family: "Roboto";
-    border-bottom: 1.1px solid #f9970a;
+    border-bottom: 1.1px solid goldenrod;
   }
   .tag-title:hover {
     background-color: white;
@@ -1402,41 +1405,22 @@ h2, h3 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  #snaps {
-    background-image: url("../dist/imgs/polygons.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-  }
-  #snaps .split-width {
+  .contact-section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    text-decoration: none;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    background-image: url("../dist/imgs/cone.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
-  #snaps .split-width #left-pane, #snaps .split-width #right-pane {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 100%;
-    overflow-y: visible;
-  }
-  #snaps .split-width #left-pane #left-pane, #snaps .split-width #right-pane #left-pane {
-    display: none;
-  }
-  #snaps .split-width #left-pane #snap-box, #snaps .split-width #right-pane #snap-box {
+  .contact-section #contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1444,47 +1428,69 @@ h2, h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    height: 84%;
     width: 100%;
-    height: 60%;
-    margin: 6px;
   }
-  #snaps .split-width #left-pane #snap-box img, #snaps .split-width #right-pane #snap-box img {
-    max-width: 100%;
-    max-height: 112px;
-    -ms-flex-item-align: center;
-        align-self: center;
-    margin-bottom: 12px;
-    scroll-behavior: smooth;
-    border: 1px solid #63616c;
-    padding: 3px;
-  }
-  #snaps .split-width #left-pane ul, #snaps .split-width #right-pane ul {
-    width: 95%;
+  .sm-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 80%;
+  }
+  #social-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 65%;
+    padding: 8px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    list-style: none;
+  }
+  #address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 61%;
+    height: 192px;
+    list-style: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
-    list-style: none;
-    font-family: sans-serif;
-    font-size: 0.94em;
-    line-height: 22px;
+    line-height: 50px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
-  #snaps .split-width #left-pane ul li, #snaps .split-width #right-pane ul li {
-    padding: 6px;
-    width: 100px;
-    color: #1d2729;
-  }
-  #snaps .split-width #left-pane ul li span, #snaps .split-width #right-pane ul li span {
+  .gcontact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-decoration: none;
     width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .myname {
+    color: #f9f1f2;
+    font-family: "Roboto";
     font-size: 0.88em;
+    line-height: 25px;
+    letter-spacing: 0.14em;
   }
   .slider-inner {
     max-width: 90.4%;
