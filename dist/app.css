@@ -1703,7 +1703,7 @@ h2, h3 {
   }
   #gd-folders li h4 {
     font-family: "Roboto";
-    color: #090108;
+    color: #ca6c8c;
     font-weight: normal;
     font-size: 0.75em;
     line-height: 16px;
@@ -1729,7 +1729,7 @@ h2, h3 {
             justify-content: space-between;
   }
   .gd-f2 span {
-    color: #351531;
+    color: #8c857a;
     font-size: 0.84em;
     letter-spacing: 0.03em;
     font-style: italic;
@@ -1944,11 +1944,14 @@ h2, h3 {
         align-self: center;
     text-align: center;
     border: none;
-    font-size: 1.28em;
+    font-weight: normal;
+    font-size: 1.25em;
     width: 100%;
-    color: #351531;
+    color: #ca6c8c;
     margin: 0;
-    border: 0.6px solid #ecdba4;
+    border: 0;
+    letter-spacing: 0.04em;
+    border-bottom: 1px solid #ecdba4;
     border-top: none;
     font-family: "Roboto";
   }
