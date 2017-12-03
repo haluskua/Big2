@@ -455,10 +455,10 @@ h2, h3 {
     text-decoration: none;
   }
   .logo-desc .ok {
-    font-size: 1.2em;
-    color: #fffef2;
-    text-transform: lowercase;
-    font-style: oblique;
+    font-size: 1em;
+    color: #ed1c24;
+    font-family: "Roboto";
+    letter-spacing: 0.06em;
   }
   #folders-container {
     padding: 0;
@@ -652,9 +652,9 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #100006;
+    color: #341e25;
     cursor: pointer;
-    line-height: 26px;
+    line-height: 24px;
     font-size: 0.9em;
     text-align: center;
     font-weight: normal;
@@ -667,11 +667,11 @@ h2, h3 {
         -ms-flex-direction: column;
             flex-direction: column;
     font-family: sans-serif;
-    background-color: #cac1b4;
+    background-color: #faf5ed;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    border: 1px solid lightgoldenrodyellow;
+    border: 1px solid #e3d8ca;
   }
 }
 
@@ -720,8 +720,9 @@ h2, h3 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .nav-archives {
     font-family: "Roboto";
-    font-weight: normal;
-    font-size: 0.97em;
+    font-weight: bold;
+    font-size: 0.94em;
+    letter-spacing: 0.12em;
   }
   .nav-archives:focus {
     text-align: center;
@@ -1364,14 +1365,14 @@ h2, h3 {
     text-align: center;
     font-weight: 600;
     font-style: normal;
-    font-size: 0.88em;
+    font-size: 0.97em;
     color: #341e25;
     letter-spacing: 0.13em;
     text-transform: uppercase;
     background-color: #faf5ed;
     border-top: 2px solid #9c8c85;
     border-radius: 0 0px 15px 15px;
-    font-family: "Audiowide";
+    font-family: "Roboto";
     border-bottom: 1.1px solid #f9970a;
   }
   .tag-title:hover {
@@ -1616,21 +1617,20 @@ h2, h3 {
             justify-content: center;
   }
   button.accordion {
-    font-family: "Roboto";
-    background-color: #351531;
+    font-family: sans-serif;
+    background-color: #faf5ed;
     font-weight: normal;
-    color: white;
+    color: #100b09;
     cursor: pointer;
     padding: 12px;
+    font-size: 1em;
     border: 0;
-    border-bottom: 2px solid #726a19;
+    border-bottom: 2px solid #d9d8d0;
     width: 100%;
     text-align: left;
     outline: none;
-    letter-spacing: 0.05em;
-    font-size: 1em;
-    -webkit-transition: 0.7s ease;
-    transition: 0.7s ease;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
   }
 }
 
@@ -1642,15 +1642,15 @@ h2, h3 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   button.accordion.active, button.accordion:hover {
-    background-color: #e7b157;
-    font-weight: bold;
-    -webkit-transition: 0.7s ease;
-    transition: 0.7s ease;
+    background-color: #f5d19e;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    letter-spacing: 0.04em;
     color: #1c171b;
-    padding: 5px;
+    padding: 11px;
     font-weight: bold;
     text-align: center;
-    font-size: 1.09em;
+    font-size: 1.01em;
     border-bottom: 1px solid #979485;
   }
   div.panel {

@@ -5,8 +5,6 @@
     height: 100%
     width: 100%
     margin: 0 auto
-    // overflow: scroll
-    // position: relative
 
     main
       display: flex
@@ -113,7 +111,6 @@
         letter-spacing: normal
       @include desktop
 
-
       span
         font-size: 1.84em
         font-family: $font-stack-thin
@@ -135,7 +132,6 @@
       .portrait
         max-width: 130px
         border: 1px solid gray
-
 
     #skills-set-imgs
       display: flex
@@ -196,7 +192,6 @@
   #grafix
     overflow-y: scroll
 
-
   #goals
     height: 100vh
   .tag-title
@@ -206,14 +201,14 @@
     text-align: center
     font-weight: 600
     font-style: normal
-    font-size: 0.88em
+    font-size: 0.97em
     color: #341e25
     letter-spacing: 0.13em
     text-transform: uppercase
     background-color: #faf5ed
     border-top: 2px solid #9c8c85
     border-radius: 0 0px 15px 15px
-    font-family: $font-stack-audio
+    font-family: $font-stack-roboto
     border-bottom: 1.1px solid #f9970a
     &:hover
       background-color: white
@@ -399,34 +394,32 @@
     justify-content: center
 
   button.accordion
-      font-family: $font-stack-roboto
-      background-color: #351531
+      font-family: sans-serif
+      background-color: #faf5ed
       font-weight: normal
-      color: white
+      color: #100b09
       cursor: pointer
       padding: 12px
-      // border-radius: 3px
+      font-size: 1em
       border: 0
-      border-bottom: 2px solid #726a19
+      border-bottom: 2px solid #d9d8d0
       width: 100%
       text-align: left
       outline: none
-      letter-spacing: 0.05em
-      font-size: 1em
-      transition: 0.7s ease
+      transition: 0.5s ease
 
       @include tablet
         border: none
 
   button.accordion.active, button.accordion:hover
-      background-color: #e7b157
-      font-weight: bold
-      transition: 0.7s ease
+      background-color: #f5d19e
+      transition: 0.5s ease
+      letter-spacing: 0.04em
       color: #1c171b
-      padding: 5px
+      padding: 11px
       font-weight: bold
       text-align: center
-      font-size: 1.09em
+      font-size: 1.01em
       border-bottom: 1px solid #979485
 
 
