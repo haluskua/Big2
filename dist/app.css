@@ -413,7 +413,7 @@ h2, h3 {
     margin-left: 10px;
     height: 56px;
     width: 22vw;
-    background-color: #cac1b4;
+    background-color: #d4b786;
     background-image: url("../dist/imgs/newlogo.png");
     background-size: contain;
     background-position: bottom;
@@ -456,7 +456,7 @@ h2, h3 {
   }
   .logo-desc .ok {
     font-size: 1em;
-    color: #ed1c24;
+    color: #000;
     font-family: "Roboto";
     letter-spacing: 0.06em;
   }
@@ -1225,13 +1225,12 @@ h2, h3 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   #wagai p {
     margin: auto;
-    font-size: 0.93em;
+    font-size: 0.92em;
     font-family: sans-serif;
-    color: #6e614f;
+    color: #382d1e;
     padding: 18px;
     text-align: justify;
     line-height: 1.56em;
-    letter-spacing: 0.004em;
   }
 }
 
@@ -1247,7 +1246,7 @@ h2, h3 {
     font-size: 1.88em;
     font-family: "Amatic SC", cursive;
     letter-spacing: 0.02em;
-    color: #3b2d1e;
+    color: #b68d31;
     font-weight: bolder;
     line-height: 44px;
     border-bottom: 0.5px dotted;
@@ -1367,6 +1366,7 @@ h2, h3 {
     font-style: normal;
     font-size: 0.97em;
     color: #341e25;
+    padding-bottom: 0.7px;
     letter-spacing: 0.13em;
     text-transform: uppercase;
     background-color: #faf5ed;
@@ -1576,13 +1576,13 @@ h2, h3 {
     height: auto;
   }
   #thumbnails p {
-    color: #637985;
+    color: #382d1e;
     font-size: 0.84em;
     font-family: sans-serif;
     text-align: center;
     padding: 4px;
     margin-left: 8px;
-    background-color: rgba(103, 224, 104, 0.0705882);
+    background-color: #fcf8ed;
     border: 0.6px dotted gainsboro;
   }
   #skills-column {
@@ -1667,7 +1667,7 @@ h2, h3 {
     margin: auto;
     font-size: 0.77em;
     font-family: sans-serif;
-    color: #4a5f6b;
+    color: #382d1e;
     padding: 12px;
     text-align: justify;
     line-height: 1.4em;
@@ -1706,7 +1706,6 @@ h2, h3 {
     color: #090108;
     font-weight: normal;
     font-size: 0.75em;
-    letter-spacing: 0.04em;
     line-height: 16px;
     margin: 0;
   }
@@ -1734,7 +1733,7 @@ h2, h3 {
     font-size: 0.84em;
     letter-spacing: 0.03em;
     font-style: italic;
-    border-bottom: 1px solid moccasin;
+    border-bottom: 1px dotted #a8a6a4;
   }
   #folder-title {
     width: 100%;
@@ -1949,8 +1948,8 @@ h2, h3 {
     width: 100%;
     color: #351531;
     margin: 0;
-    padding-top: 6px;
-    border: 0.6px solid lightgray;
+    border: 0.6px solid #ecdba4;
+    border-top: none;
     font-family: "Roboto";
   }
   .fs-gal {
@@ -1972,7 +1971,7 @@ h2, h3 {
     color: #151f13;
     font-weight: normal;
     font-size: 0.6em;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.04em;
   }
 }
 
