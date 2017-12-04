@@ -456,7 +456,7 @@ h2, h3 {
   }
   .logo-desc .ok {
     font-size: 1em;
-    color: #000;
+    color: #341e25;
     font-family: "Roboto";
     letter-spacing: 0.06em;
   }
@@ -668,10 +668,10 @@ h2, h3 {
             flex-direction: column;
     font-family: sans-serif;
     background-color: #faf5ed;
+    border: 1px solid #ffe68b;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    border: 1px solid #f3a0c4;
   }
 }
 
@@ -1428,7 +1428,7 @@ h2, h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 84%;
+    height: 92%;
     width: 100%;
   }
   .sm-container {
@@ -1486,11 +1486,11 @@ h2, h3 {
             justify-content: center;
   }
   .myname {
-    color: #f9f1f2;
+    color: #ffdba7;
     font-family: "Roboto";
-    font-size: 0.88em;
-    line-height: 25px;
-    letter-spacing: 0.14em;
+    font-size: 0.96em;
+    line-height: 26px;
+    letter-spacing: 0.03em;
   }
   .slider-inner {
     max-width: 90.4%;
@@ -1736,6 +1736,13 @@ h2, h3 {
   .gd-f2 span {
     color: #8c857a;
     font-size: 0.84em;
+    letter-spacing: 0.03em;
+    font-style: italic;
+    border-bottom: 1px dotted #a8a6a4;
+  }
+  #more-info {
+    color: #e65865;
+    font-size: 0.9em;
     letter-spacing: 0.03em;
     font-style: italic;
     border-bottom: 1px dotted #a8a6a4;
