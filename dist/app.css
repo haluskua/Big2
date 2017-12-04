@@ -312,7 +312,7 @@ h2, h3 {
   .intro {
     margin: auto;
     margin-top: 11px;
-    color: #341e25;
+    color: #957315;
     font-size: 1.18em;
     font-weight: bolder;
     position: relative;
@@ -1246,7 +1246,7 @@ h2, h3 {
     font-size: 1.88em;
     font-family: "Amatic SC", cursive;
     letter-spacing: 0.02em;
-    color: #96731a;
+    color: #957315;
     font-weight: bolder;
     line-height: 44px;
     border-bottom: 0.5px dotted;
@@ -1983,7 +1983,7 @@ h2, h3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    color: #96731a;
+    color: #957315;
     font-weight: normal;
     font-size: 0.723em;
     letter-spacing: 0.08em;
