@@ -312,7 +312,7 @@ h2, h3 {
   .intro {
     margin: auto;
     margin-top: 11px;
-    color: #b68600;
+    color: #9d630d;
     font-size: 1.18em;
     font-weight: bolder;
     position: relative;
@@ -1246,7 +1246,7 @@ h2, h3 {
     font-size: 1.88em;
     font-family: "Amatic SC", cursive;
     letter-spacing: 0.02em;
-    color: #b68600;
+    color: #9d630d;
     font-weight: bolder;
     line-height: 44px;
     border-bottom: 0.5px dotted;
@@ -1561,7 +1561,7 @@ h2, h3 {
     letter-spacing: 0.03em;
     font-family: "Dancing Script";
     font-style: italic;
-    color: #b68600;
+    color: #9d630d;
     font-weight: lighter;
     text-align: center;
   }
@@ -1669,7 +1669,7 @@ h2, h3 {
     font-size: 1.08em;
     line-height: 20px;
     border-bottom: 1px solid #a98e48;
-    background-color: #f7edc1;
+    background-color: #eec660c2;
     color: #3c2f09;
   }
   div.panel {
@@ -1680,13 +1680,12 @@ h2, h3 {
   }
   div.panel p {
     margin: auto;
-    font-size: 1em;
+    font-size: 0.92em;
     font-family: sans-serif;
     color: #341e25;
-    padding: 12px;
+    padding: 18px;
     text-align: justify;
-    line-height: 1.4em;
-    letter-spacing: 0.018em;
+    line-height: 1.56em;
   }
   #gd-folders {
     display: -webkit-box;
@@ -1719,7 +1718,7 @@ h2, h3 {
   }
   #gd-folders li h4 {
     font-family: "Roboto";
-    color: #96731a;
+    color: #9d630d;
     font-weight: normal;
     font-size: 0.75em;
     line-height: 18px;
