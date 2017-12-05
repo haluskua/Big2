@@ -1318,11 +1318,11 @@ h2, h3 {
   .snaps-section {
     height: 100vh;
   }
-  #gdesign {
+  .projects {
     height: 100vh;
     border-bottom: 1px solid thistle;
   }
-  #grafix, #contact, #gdesign, .wagai-weh, #main-gallery {
+  #grafix, #contact, .projects, .wagai-weh, #main-gallery {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1341,7 +1341,7 @@ h2, h3 {
     margin: 0;
     padding: 0;
   }
-  #grafix a, #contact a, #gdesign a, .wagai-weh a, #main-gallery a {
+  #grafix a, #contact a, .projects a, .wagai-weh a, #main-gallery a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1351,8 +1351,28 @@ h2, h3 {
             justify-content: center;
     text-decoration: none;
   }
+  .grafix {
+    text-decoration: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   #grafix {
     overflow-y: scroll;
+    text-decoration: none;
+  }
+  .webdev, .film, .painting, .music {
+    background-image: none;
+  }
+  .film {
+    background-color: #fce2f3;
+    background-image: none;
+  }
+  .music {
+    background-color: purple;
+  }
+  .painting {
+    background-color: red;
   }
   #goals {
     height: 100vh;
@@ -1434,14 +1454,13 @@ h2, h3 {
   .contact-section #contact p {
     width: 75%;
     font-family: "Roboto";
-    font-size: 0.9em;
+    font-size: 0.92em;
     text-align: justify;
     padding: 21px;
-    margin-bottom: 115px;
     letter-spacing: 0.04em;
+    margin-bottom: 115px;
     color: whitesmoke;
     line-height: 19px;
-    letter-spacing: 0.1em;
   }
   .sm-container {
     display: -webkit-box;
@@ -1679,8 +1698,14 @@ h2, h3 {
     height: auto;
   }
   div.panel p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: auto;
-    font-size: 0.92em;
+    font-size: 0.93em;
     font-family: sans-serif;
     color: #341e25;
     padding: 18px;
@@ -1721,10 +1746,11 @@ h2, h3 {
     color: #9d630d;
     font-weight: normal;
     font-size: 0.75em;
-    line-height: 18px;
+    line-height: 15.5px;
     -ms-flex-item-align: end;
         align-self: flex-end;
     margin: 0;
+    padding-left: 5px;
   }
   #gd-folders li h4 a {
     width: 0%;
@@ -1820,6 +1846,11 @@ h2, h3 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #main-gallery a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

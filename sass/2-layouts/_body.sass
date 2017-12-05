@@ -168,11 +168,11 @@
 
   .snaps-section
     height: 100vh
-  #gdesign
+  .projects
     height: 100vh
     border-bottom: 1px solid thistle
 
-  #grafix, #contact, #gdesign, .wagai-weh, #main-gallery
+  #grafix, #contact, .projects, .wagai-weh, #main-gallery
     display: flex
     flex-direction: column
     justify-content: space-between
@@ -187,8 +187,24 @@
       justify-content: center
       text-decoration: none
 
+  .grafix
+    text-decoration: none
+    align-items: center
   #grafix
     overflow-y: scroll
+    text-decoration: none
+
+  .webdev, .film, .painting, .music
+
+    background-image: none
+  .film
+    background-color: #fce2f3
+    background-image: none
+  .music
+    background-color: purple
+  .painting
+    background-color: red
+
 
   #goals
     height: 100vh
@@ -237,6 +253,7 @@
     background-size: cover
     background-repeat: no-repeat
     background-position: center
+
     #contact
       display: flex
       flex-direction: column
@@ -245,14 +262,13 @@
       p
         width: 75%
         font-family: $font-stack-roboto
-        font-size: 0.9em
+        font-size: 0.92em
         text-align: justify
         padding: 21px
-        margin-bottom: 115px
         letter-spacing: 0.04em
+        margin-bottom: 115px
         color: whitesmoke
         line-height: 19px
-        letter-spacing: 0.1em
 
   .sm-container
     display: flex
@@ -440,13 +456,16 @@
       background-color: white
       height: auto
       p
+        display: flex
+        justify-content: center
         margin: auto
-        font-size: 0.92em
+        font-size: 0.93em
         font-family: sans-serif
         color: $purple
         padding: 18px
         text-align: justify
         line-height: 1.56em
+
 
   #gd-folders
     display: flex
@@ -468,9 +487,10 @@
         color: $gold
         font-weight: normal
         font-size: 0.75em
-        line-height: 18px
+        line-height: 15.5px
         align-self: flex-end
         margin: 0
+        padding-left: 5px
         a
           width: 0%
       a
@@ -540,11 +560,6 @@
 
 
 
-
-
-
-
-
   /**
    * Author: Tim Vervoort - info@timvervoort.com
    * Licence: Free for commercial use
@@ -557,6 +572,8 @@
     flex-direction: column
     justify-content: flex-start
     align-items: center
+    a
+      align-items: center
 
     .aic
       width: 94vw
