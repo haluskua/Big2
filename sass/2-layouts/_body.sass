@@ -96,7 +96,7 @@
       background-color: rgba(255, 254, 242, 0.26)
       border: 1px solid #e5dcbc
 
-    p
+    .main-paragraph
       margin: auto
       font-size: 0.92em
       font-family: sans-serif
@@ -375,7 +375,6 @@
       font-family: sans-serif
       text-align: center
       padding: 4px
-      margin-left: 8px
       background-color: rgb(252, 248, 237)
       border: 0.6px dotted gainsboro
 
@@ -454,7 +453,7 @@
 
   #gd-folders
     display: flex
-    justify-content: flex-end
+    justify-content: flex-start
     width: 95%
     margin-top: 0
     padding: 0
@@ -466,6 +465,7 @@
       text-align: left
       align-items: center
       padding: 7px
+      width: 33%
       h4
         font-family: $font-stack-roboto
         color: #96731a
@@ -473,10 +473,11 @@
         font-size: 0.75em
         line-height: 18px
         align-self: flex-end
-        letter-spacing: 0.08em
         margin: 0
         a
           width: 0%
+      a
+        // justify-content: space-around
 
       .fl-title
         color: #090108
@@ -499,7 +500,7 @@
       border-bottom: 1px dotted #a8a6a4
 
   #more-info
-    color: $strawberry
+    color: #5c4d60
     font-size: 0.85em
     letter-spacing: 0.078em
     font-style: italic
@@ -659,7 +660,7 @@
     right: 19px
     height: 24px
     width: 30px
-    background-color: #68538d
+    background-color: #8f79ad
     border-radius: 6px 6px 2px 2px
     padding: 1px 6px 1px 6px
     border: 0.5px solid #595856
