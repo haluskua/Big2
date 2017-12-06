@@ -1094,14 +1094,6 @@ h2, h3 {
     background-size: cover;
     background-repeat: repeat-y;
     border-top: 1px solid #d6a870;
-    background-color: #14191e;
-    background-color-display: flex;
-    background-color-flex-direction: column;
-    background-color-justify-content: space-around;
-    background-color-width: 98vw;
-    background-color-height: 100vh;
-    background-color-margin: auto;
-    background-color-margin-top: 60px;
   }
 }
 
@@ -1361,18 +1353,12 @@ h2, h3 {
     overflow-y: scroll;
     text-decoration: none;
   }
-  .webdev, .film, .painting, .music {
+  .webdev, .film, .painting, .music-page {
     background-image: none;
   }
   .film {
     background-color: #fce2f3;
     background-image: none;
-  }
-  .music {
-    background-color: purple;
-  }
-  .painting {
-    background-color: red;
   }
   #goals {
     height: 100vh;
@@ -1397,9 +1383,6 @@ h2, h3 {
     border-radius: 0 0px 15px 15px;
     font-family: "Roboto";
     border-bottom: 1.1px solid goldenrod;
-  }
-  .tag-title:hover {
-    background-color: white;
   }
 }
 
@@ -1690,6 +1673,9 @@ h2, h3 {
     border-bottom: 1px solid #a98e48;
     background-color: #eec660c2;
     color: #3c2f09;
+  }
+  button.music.active, button.music:hover {
+    background-color: #ee6060c2;
   }
   div.panel {
     padding: 0 8px;
@@ -1983,7 +1969,7 @@ h2, h3 {
     right: 19px;
     height: 24px;
     width: 30px;
-    background-color: #8f79ad;
+    background-color: #c4bba4;
     border-radius: 6px 6px 2px 2px;
     padding: 1px 6px 1px 6px;
     border: 0.5px solid #595856;
@@ -2031,6 +2017,66 @@ h2, h3 {
     font-size: 0.84em;
     letter-spacing: 0.08em;
     line-height: 40px;
+  }
+}
+
+/* mobile view */
+@media (min-width: 1em), screen and (orientation: portrait) {
+  /* Styling for Graphic page only*/
+  .graphic-title {
+    background-color: #eec660;
+    width: 100%;
+  }
+  .graphic-subtitle {
+    color: #3c2f09;
+    color: white;
+  }
+  button.graphic.active, button.graphic:hover {
+    background-color: #ee6060c2;
+  }
+  /* Styling for music page only*/
+  .music-title {
+    background-color: #ee6060c2;
+    width: 100%;
+  }
+  .music-subtitle {
+    color: white;
+  }
+  button.music.active, button.music:hover {
+    background-color: #ee6060c2;
+  }
+  /* Styling for webdev page only*/
+  .webdev-title {
+    background-color: #5dadc2;
+    width: 100%;
+  }
+  .webdev-subtitle {
+    color: white;
+  }
+  button.webdev.active, button.webdev:hover {
+    background-color: #5dadc2;
+    /* Styling for Film page only*/
+  }
+  .film-title {
+    background-color: rgba(111, 194, 93, 0.77);
+    width: 100%;
+  }
+  .film-subtitle {
+    color: white;
+  }
+  button.film.active, button.film:hover {
+    background-color: rgba(111, 194, 93, 0.77);
+    /* Styling for Painting page only*/
+  }
+  .painting-title {
+    background-color: rgba(57, 78, 93, 0.580392);
+    width: 100%;
+  }
+  .painting-subtitle {
+    color: white;
+  }
+  button.painting.active, button.painting:hover {
+    background-color: rgba(57, 78, 93, 0.580392);
   }
 }
 

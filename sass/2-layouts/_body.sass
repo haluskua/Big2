@@ -27,15 +27,6 @@
         background-size: cover
         background-repeat: repeat-y
         border-top: 1px solid #d6a870
-        background-color: #14191e
-          display: flex
-          flex-direction: column
-          justify-content: space-around
-          width: 98vw
-          height: 100vh
-          margin: auto
-          margin-top: 60px
-          // border: 1px solid gray
         @include desktop
           border: none
           background-size: cover
@@ -187,6 +178,7 @@
       justify-content: center
       text-decoration: none
 
+
   .grafix
     text-decoration: none
     align-items: center
@@ -194,16 +186,12 @@
     overflow-y: scroll
     text-decoration: none
 
-  .webdev, .film, .painting, .music
+  .webdev, .film, .painting, .music-page
 
     background-image: none
   .film
     background-color: #fce2f3
     background-image: none
-  .music
-    background-color: purple
-  .painting
-    background-color: red
 
 
   #goals
@@ -228,7 +216,7 @@
     font-family: $font-stack-roboto
     border-bottom: 1.1px solid goldenrod
     &:hover
-      background-color: white
+      // background-color: white
     @include tablet
       width: 82%
       margin-top: 0
@@ -307,8 +295,6 @@
     font-size: 0.95em
     line-height: 25px
     letter-spacing: 0.05em
-
-
 
   .slider-inner
   	max-width: 90.4%
@@ -449,7 +435,8 @@
       border-bottom: 1px solid #a98e48
       background-color: #eec660c2
       color: #3c2f09
-
+  button.music.active, button.music:hover
+      background-color: #ee6060c2
   div.panel
       padding: 0 8px
       display: none
@@ -674,7 +661,7 @@
     right: 19px
     height: 24px
     width: 30px
-    background-color: #8f79ad
+    background-color: #c4bba4
     border-radius: 6px 6px 2px 2px
     padding: 1px 6px 1px 6px
     border: 0.5px solid #595856
