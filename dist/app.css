@@ -1364,7 +1364,7 @@ h2, h3 {
     height: 100vh;
   }
   .tag-title {
-    width: 50%;
+    width: 82%;
     margin-top: 0;
     line-height: 28px;
     text-align: center;
@@ -2032,6 +2032,7 @@ h2, h3 {
     color: white;
   }
   button.graphic.active, button.graphic:hover {
+    color: white;
     background-color: #ee6060c2;
   }
   /* Styling for music page only*/
@@ -2043,6 +2044,7 @@ h2, h3 {
     color: white;
   }
   button.music.active, button.music:hover {
+    color: white;
     background-color: #ee6060c2;
   }
   /* Styling for webdev page only*/
@@ -2054,29 +2056,33 @@ h2, h3 {
     color: white;
   }
   button.webdev.active, button.webdev:hover {
+    color: white;
     background-color: #5dadc2;
     /* Styling for Film page only*/
   }
   .film-title {
-    background-color: rgba(111, 194, 93, 0.77);
+    background-color: #80c272;
+    color: white;
     width: 100%;
   }
   .film-subtitle {
     color: white;
   }
   button.film.active, button.film:hover {
-    background-color: rgba(111, 194, 93, 0.77);
+    background-color: #80c272;
     /* Styling for Painting page only*/
   }
   .painting-title {
-    background-color: rgba(57, 78, 93, 0.580392);
+    background-color: #8c49b2;
+    color: white;
     width: 100%;
   }
   .painting-subtitle {
     color: white;
   }
   button.painting.active, button.painting:hover {
-    background-color: rgba(57, 78, 93, 0.580392);
+    color: white;
+    background-color: rgba(101, 26, 143, 0.7);
   }
 }
 
