@@ -1364,13 +1364,13 @@ h2, h3 {
     height: 100vh;
   }
   .tag-title {
-    width: 82%;
+    width: 100%;
     margin-top: 0;
     line-height: 28px;
     text-align: center;
     font-weight: 600;
     font-style: normal;
-    font-size: 0.97em;
+    font-size: 1em;
     color: #341e25;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2025,7 +2025,7 @@ h2, h3 {
   /* Styling for Graphic page only*/
   .graphic-title {
     background-color: #eec660;
-    width: 100%;
+    color: black;
   }
   .graphic-subtitle {
     color: #3c2f09;
@@ -2038,7 +2038,7 @@ h2, h3 {
   /* Styling for music page only*/
   .music-title {
     background-color: #ee6060c2;
-    width: 100%;
+    color: black;
   }
   .music-subtitle {
     color: white;
@@ -2050,7 +2050,7 @@ h2, h3 {
   /* Styling for webdev page only*/
   .webdev-title {
     background-color: #5dadc2;
-    width: 100%;
+    color: black;
   }
   .webdev-subtitle {
     color: white;
@@ -2062,27 +2062,26 @@ h2, h3 {
   }
   .film-title {
     background-color: #80c272;
-    color: white;
-    width: 100%;
+    color: black;
   }
   .film-subtitle {
     color: white;
   }
   button.film.active, button.film:hover {
-    background-color: #80c272;
+    color: white;
+    background-color: rgba(98, 184, 80, 0.87);
     /* Styling for Painting page only*/
   }
   .painting-title {
-    background-color: #8c49b2;
-    color: white;
-    width: 100%;
+    background-color: rgba(140, 73, 178, 0.78);
+    color: black;
   }
   .painting-subtitle {
     color: white;
   }
   button.painting.active, button.painting:hover {
     color: white;
-    background-color: rgba(101, 26, 143, 0.7);
+    background-color: rgba(140, 73, 178, 0.78);
   }
 }
 
