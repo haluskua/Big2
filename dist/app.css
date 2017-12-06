@@ -1651,7 +1651,6 @@ h2, h3 {
     letter-spacing: 0.02em;
     border-radius: 0 0 8px 8px;
     background-color: #f7efd66e;
-    color: #35290e;
   }
 }
 
@@ -1672,10 +1671,7 @@ h2, h3 {
     line-height: 20px;
     border-bottom: 1px solid #a98e48;
     background-color: #eec660c2;
-    color: #3c2f09;
-  }
-  button.music.active, button.music:hover {
-    background-color: #ee6060c2;
+    color: white;
   }
   div.panel {
     padding: 0 8px;
@@ -2025,7 +2021,6 @@ h2, h3 {
   /* Styling for Graphic page only*/
   .graphic-title {
     background-color: #eec660;
-    color: black;
   }
   .graphic-subtitle {
     color: #3c2f09;
