@@ -11,6 +11,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
+@import url("https://fonts.googleapis.com/css?family=Rajdhani");
 /* BASE STYLES */
 h1 {
   font-family: Georgia, Times, serif;
@@ -1235,8 +1236,8 @@ h2, h3 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #wagai .main-paragraph span {
-    font-size: 1.88em;
-    font-family: "Amatic SC", cursive;
+    font-size: 1.66em;
+    font-family: "Rajdhani", sans-serif;
     letter-spacing: 0.02em;
     color: #9d630d;
     font-weight: bolder;
@@ -1633,24 +1634,26 @@ h2, h3 {
             justify-content: center;
   }
   button.accordion {
-    font-family: "Roboto";
+    font-family: "Rajdhani", sans-serif;
     cursor: pointer;
     padding: 12px;
-    font-size: 0.98em;
-    font-weight: normal;
+    font-size: 1.02em;
+    font-weight: bolder;
     border-top: none;
     border-left: none;
     border-right: none;
-    text-transform: lowercase;
+    text-transform: uppercase;
     border-bottom: 1px solid goldenrod;
     width: 100%;
     text-align: center;
     outline: none;
+    line-height: 27px;
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
     border-radius: 0 0 8px 8px;
     background-color: #f7efd66e;
+    color: #554836;
   }
 }
 
