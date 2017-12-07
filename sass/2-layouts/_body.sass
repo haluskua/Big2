@@ -578,16 +578,6 @@
       margin: 0
       margin-bottom: 8px
 
-  .container
-    height: 100%
-    display: flex
-    flex-wrap: wrap
-    align-items: center
-    overflow-y: scroll
-    border: 1px solid #e6dee2
-    background-color: #f7efd66e
-    justify-content: space-evenly
-
   .big-gallery
     height: 100%
     display: flex
@@ -704,3 +694,23 @@
     font-size: 0.84em
     letter-spacing: 0.08em
     line-height: 40px
+
+  .video
+    position: relative
+    padding-bottom: 56.25%
+  .video iframe
+    position: absolute
+    width: 100%
+    height: 100%
+
+  .container
+    height: 100%
+    max-width: 480px
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    overflow-y: scroll
+    border: 1px solid #e6dee2
+    background-color: #f7efd66e
+    // background-color: red
+    justify-content: space-evenly
