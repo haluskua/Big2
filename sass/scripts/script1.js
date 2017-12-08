@@ -27,8 +27,18 @@ $(document).ready(function(){
         $(".m").on("click", function() {
           $(".scmt").css("display", "flex");
         });
-        $(".pm").on("click", function() {
+        $(".open-caption").on("click", function() {
+          $("#skills-descOpen").css("display", "none");
+          $("#skills-descClose").css("display", "flex");
           $(".scpmt").css("display", "flex");
+          $(".close-caption").css("z-index", "999");
+        });
+
+        $(".close-caption").on("click", function(){
+          $("#skills-descOpen").css("display", "flex");
+          $("#skills-descClose").css("display", "none");
+          $(".scpmt").css("display", "none");
+          $(".open-caption").css("z-index", "999");
         });
 
 
