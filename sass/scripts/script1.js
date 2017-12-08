@@ -13,6 +13,10 @@ $(document).ready(function(){
           $(".haus").hide(500);
           $(".exit-menu").show(700);
         });
+
+        $("#skills-desc").on("click", function() {
+          $(".skills-caption").css("display", "flex");
+        });
         jQuery(window).resize(function () {
                 if (jQuery(window).width() > 500) {
                   $("#folders-container").show(300);

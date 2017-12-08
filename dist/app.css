@@ -1673,7 +1673,7 @@ h2, h3 {
     font-size: 1.08em;
     line-height: 20px;
     border-bottom: 1px solid #a98e48;
-    background-color: #eec660c2;
+    background-color: #f1c044e3;
     color: white;
   }
   div.panel {
@@ -1682,10 +1682,8 @@ h2, h3 {
     background-color: white;
     height: auto;
   }
-  div.panel p {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  div.panel .skills-caption {
+    display: none;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1694,6 +1692,7 @@ h2, h3 {
     font-family: sans-serif;
     color: #341e25;
     padding: 18px;
+    padding-top: 0;
     text-align: justify;
     line-height: 1.56em;
   }
@@ -2028,6 +2027,40 @@ h2, h3 {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
+  #skills-desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    position: relative;
+    height: auto;
+  }
+  #read-on {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+    text-align: left;
+    width: 100%;
+    font-size: 0.96em;
+    letter-spacing: 0.048em;
+    font-family: "Rajdhani", sans-serif;
+    color: #341e25;
+  }
+  #read-on .showRead {
+    border-bottom: 1px dotted;
+  }
+  #read-on small {
+    color: black;
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+  }
 }
 
 /* mobile view */
@@ -2042,7 +2075,7 @@ h2, h3 {
   }
   button.graphic.active, button.graphic:hover {
     color: white;
-    background-color: #ee6060c2;
+    background-color: #f1c044e3;
   }
   /* Styling for music page only*/
   .music-title {

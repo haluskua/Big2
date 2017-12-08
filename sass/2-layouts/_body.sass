@@ -434,7 +434,7 @@
       font-size: 1.08em
       line-height: 20px
       border-bottom: 1px solid #a98e48
-      background-color: #eec660c2
+      background-color: #f1c044e3
       color: white
 
   div.panel
@@ -442,14 +442,15 @@
       display: none
       background-color: white
       height: auto
-      p
-        display: flex
+      .skills-caption
+        display: none
         justify-content: center
         margin: auto
         font-size: 0.93em
         font-family: sans-serif
         color: $purple
         padding: 18px
+        padding-top: 0
         text-align: justify
         line-height: 1.56em
 
@@ -715,3 +716,29 @@
     background-color: #f7efd66e
     // background-color: red
     justify-content: space-evenly
+
+  #skills-desc
+    display: flex
+    width: 100%
+    justify-content: flex-start
+    position: relative
+    height: auto
+  #read-on
+    justify-content: flex-start !important
+    position: relative
+    margin: 0
+    padding: 0
+    font-weight: lighter
+    text-align: left
+    width: 100%
+    font-size: 0.96em
+    letter-spacing: 0.048em
+    font-family: $font-stack-rajdhani
+    color: #341e25
+
+    .showRead
+      border-bottom: 1px dotted
+    small
+      color: black
+      font-size: 1.2em
+      letter-spacing: 0.05em
