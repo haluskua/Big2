@@ -14,9 +14,26 @@ $(document).ready(function(){
           $(".exit-menu").show(700);
         });
 
-        $("#skills-desc").on("click", function() {
-          $(".skills-caption").css("display", "flex");
+        /* Repetitive code on ellipsis effec,, need to be changed to dray*/
+        $(".gdt").on("click", function() {
+          $(".scgdt").css("display", "flex");
         });
+        $(".wdt").on("click", function() {
+          $(".scwdt").css("display", "flex");
+        });
+        $(".f").on("click", function() {
+          $(".scft").css("display", "flex");
+        });
+        $(".m").on("click", function() {
+          $(".scmt").css("display", "flex");
+        });
+        $(".pm").on("click", function() {
+          $(".scpmt").css("display", "flex");
+        });
+
+
+
+
         jQuery(window).resize(function () {
                 if (jQuery(window).width() > 500) {
                   $("#folders-container").show(300);
