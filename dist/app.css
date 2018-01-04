@@ -403,6 +403,7 @@ h2, h3 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #logo-space {
+    position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -410,13 +411,12 @@ h2, h3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border-radius: 7px;
-    margin-left: 10px;
-    height: 51px;
-    width: 22vw;
+    border-radius: 4px;
+    height: 80px;
+    width: 18vw;
     background-color: #ebcf87;
     background-image: url("../dist/imgs/newlogo.png");
-    background-size: contain;
+    background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
   }
@@ -553,7 +553,7 @@ h2, h3 {
     padding: 3px;
     border: 0.3px solid #daa52054;
     margin-bottom: 12px;
-    margin-top: 12px;
+    margin-top: 20px;
   }
   .nav-folders:focus {
     width: 70%;
@@ -872,7 +872,7 @@ h2, h3 {
   }
   .mobile-container {
     max-height: 100%;
-    width: 80%;
+    width: 100%;
     bottom: 0;
     display: none;
     z-index: 999999;
@@ -1641,7 +1641,7 @@ h2, h3 {
     letter-spacing: 0.08em;
     background-color: #ffffff;
     color: #341e25;
-    margin-top: 6px;
+    margin-top: 19px;
     margin-bottom: 11px;
     border: 0;
     border-left: 2px solid #ebcf87;
