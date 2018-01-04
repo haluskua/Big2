@@ -213,7 +213,7 @@
 		justify-content: center
 		border-radius: 7px
 		margin-left: 10px
-		height: 56px
+		height: 51px
 		width: 22vw
 		background-color: #ebcf87
 		background-image: url('../dist/imgs/newlogo.png')
@@ -244,18 +244,13 @@
 	#folders-container
 		padding: 0
 		width: 100%
-		height: 260px
+		height: auto
 		flex-wrap: wrap
 		display: flex
-		padding-top: 11px
-		padding-bottom: 8px
 		border-radius: 13px 13.5px 0 0
 		border: 0.5px solid #dcc29b
-		background-color: #efeaea
-		justify-content: space-around
-		background-image: url('../dist/imgs/polygons.png')
-		background-size: cover
-		background-position: top
+		background-color: #2c3641
+		justify-content: center !important
 		@include tablet
 			width: 89%
 			padding: 0
@@ -264,7 +259,7 @@
 			flex-flow: row
 			background-image: none
 			background-color: #fffef2
-			justify-content: space-around
+			justify-content: center
 		@include desktop
 			width: 80vw
 			height: 21px
@@ -274,7 +269,6 @@
 			border-radius: 8px
 			padding-bottom: 9px
 			background-image: none
-			justify-content: space-around
 
   .reduced
 		display: flex
@@ -293,12 +287,14 @@
 			display: flex
 
 	.nav-folders
-		width: 55%
-		height: 26px
+		width: 35%
+		height: 22px
 		display: none
 		align-self: center
 		padding: 3px
-		border: 0.3px solid goldenrod
+		border: 0.3px solid #daa52054
+		margin-bottom: 12px
+		margin-top: 12px
 		&:focus
 			width: 70%
 			background-color: #030406
@@ -311,6 +307,23 @@
 		@include desktop
 			display: flex
 			border: none
+	.menu2
+		background-color: #341e25
+		padding: 0
+		border: 0
+		height: 29px
+		border-radius: 0 0 8px 8px
+		border-bottom: 2px solid #ebcf87
+		a
+			background-color: white
+			color: #341e25
+			text-transform: lowercase
+			height: 100%
+			line-height: 27px
+			width: 97%
+			border-radius: 0 0 8px 8px
+			border: 0
+			font-size: 1.2em
 
 	#home-logo
 		height: 61%
@@ -356,18 +369,18 @@
 	.hamburger-menu
 		width: 100%
 		display: flex
-		color: #341e25
+		color: white
 		cursor: pointer
-		line-height: 24px
-		font-size: 0.9em
+		line-height: 23px
+		font-size: 0.83em
 		text-align: center
 		font-weight: normal
 		align-items: center
 		text-decoration: none
+		text-transform: uppercase
 		flex-direction: column
-		font-family: sans-serif
-		background-color: #faf5ed
-		border: 1px solid #ffe68b
+		// background-color: #fcf8ed
+		border-left: 2px solid #ebcf87
 		justify-content: space-between
 
 		@include tablet
@@ -403,9 +416,9 @@
 				background-color: transparentize(yellow, 1)
 				background-color: none
 	.nav-archives
-		font-family: $font-stack-roboto
+		font-family: $font-stack-playfair
 		font-weight: bold
-		font-size: 0.94em
+		font-size: 1.22em
 		letter-spacing: 0.12em
 		&:focus
 			text-align: center
@@ -468,6 +481,7 @@
 		text-transform: capitalize
 		font-family: $font-stack-roboto
 
+
 	.main-menu
 		left: 0px
 		bottom: 0px
@@ -486,8 +500,8 @@
 		font-family: $font-stack-roboto
 
 	.mobile-container
-		height: auto
-		width: 60%
+		max-height: 100%
+		width: 80%
 		bottom: 0
 		display: none
 		z-index: 999999
@@ -533,6 +547,7 @@
 		border-right: 1px solid #341e25
 		background-color: #341e25
 		justify-content: flex-start
+		border-radius: 8px 8px 0 0
 		@include tablet
 			display: none
 		@include desktop

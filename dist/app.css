@@ -412,7 +412,7 @@ h2, h3 {
             justify-content: center;
     border-radius: 7px;
     margin-left: 10px;
-    height: 56px;
+    height: 51px;
     width: 22vw;
     background-color: #ebcf87;
     background-image: url("../dist/imgs/newlogo.png");
@@ -464,25 +464,22 @@ h2, h3 {
   #folders-container {
     padding: 0;
     width: 100%;
-    height: 260px;
+    height: auto;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 11px;
-    padding-bottom: 8px;
     border-radius: 13px 13.5px 0 0;
     border: 0.5px solid #dcc29b;
-    background-color: #efeaea;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    background-image: url("../dist/imgs/polygons.png");
-    background-size: cover;
-    background-position: top;
+    background-color: #2c3641;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin: 0;
   }
 }
@@ -501,8 +498,9 @@ h2, h3 {
             flex-flow: row;
     background-image: none;
     background-color: #fffef2;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -522,8 +520,6 @@ h2, h3 {
     border-radius: 8px;
     padding-bottom: 9px;
     background-image: none;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
   }
 }
 
@@ -549,13 +545,15 @@ h2, h3 {
     display: flex;
   }
   .nav-folders {
-    width: 55%;
-    height: 26px;
+    width: 35%;
+    height: 22px;
     display: none;
     -ms-flex-item-align: center;
         align-self: center;
     padding: 3px;
-    border: 0.3px solid goldenrod;
+    border: 0.3px solid #daa52054;
+    margin-bottom: 12px;
+    margin-top: 12px;
   }
   .nav-folders:focus {
     width: 70%;
@@ -587,6 +585,25 @@ h2, h3 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
+  .menu2 {
+    background-color: #341e25;
+    padding: 0;
+    border: 0;
+    height: 29px;
+    border-radius: 0 0 8px 8px;
+    border-bottom: 2px solid #ebcf87;
+  }
+  .menu2 a {
+    background-color: white;
+    color: #341e25;
+    text-transform: lowercase;
+    height: 100%;
+    line-height: 27px;
+    width: 97%;
+    border-radius: 0 0 8px 8px;
+    border: 0;
+    font-size: 1.2em;
+  }
   #home-logo {
     height: 61%;
     margin-left: 4px;
@@ -653,23 +670,22 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #341e25;
+    color: white;
     cursor: pointer;
-    line-height: 24px;
-    font-size: 0.9em;
+    line-height: 23px;
+    font-size: 0.83em;
     text-align: center;
     font-weight: normal;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     text-decoration: none;
+    text-transform: uppercase;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    font-family: sans-serif;
-    background-color: #faf5ed;
-    border: 1px solid #ffe68b;
+    border-left: 2px solid #ebcf87;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -720,9 +736,9 @@ h2, h3 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .nav-archives {
-    font-family: "Roboto";
+    font-family: "Playfair";
     font-weight: bold;
-    font-size: 0.94em;
+    font-size: 1.22em;
     letter-spacing: 0.12em;
   }
   .nav-archives:focus {
@@ -855,8 +871,8 @@ h2, h3 {
     font-family: "Roboto";
   }
   .mobile-container {
-    height: auto;
-    width: 60%;
+    max-height: 100%;
+    width: 80%;
     bottom: 0;
     display: none;
     z-index: 999999;
@@ -944,6 +960,7 @@ h2, h3 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    border-radius: 8px 8px 0 0;
   }
 }
 
@@ -1289,33 +1306,10 @@ h2, h3 {
     max-width: 70px;
     height: 100vh;
   }
-  .GD, .Adobe, .Webdev, .Musician {
-    font-size: 0.89em;
-    letter-spacing: 0.04em;
-    font-family: sans-serif;
-    font-weight: lighter;
-    color: #131426;
-    border-bottom: 1.2px solid #438506;
-    margin-bottom: 21px;
-    padding-bottom: 8px;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  .GD, .Adobe, .Webdev, .Musician {
-    margin-bottom: 16px;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
   .snaps-section {
     height: 100vh;
   }
-  .projects {
-    height: 100vh;
-    border-bottom: 1px solid thistle;
-  }
-  #grafix, #contact, .projects, .wagai-weh, #main-gallery {
+  #grafix, #contact, .projects, .wagai-weh, #main-gallery, #projects {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1330,11 +1324,10 @@ h2, h3 {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    height: 100%;
     margin: 0;
     padding: 0;
   }
-  #grafix a, #contact a, .projects a, .wagai-weh a, #main-gallery a {
+  #grafix a, #contact a, .projects a, .wagai-weh a, #main-gallery a, #projects a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1354,7 +1347,7 @@ h2, h3 {
     overflow-y: scroll;
     text-decoration: none;
   }
-  .webdev, .film, .painting, .music-page {
+  .film, .painting, .music-page {
     background-image: none;
   }
   .film {
@@ -1634,54 +1627,60 @@ h2, h3 {
             justify-content: center;
   }
   button.accordion {
-    font-family: "Rajdhani", sans-serif;
+    font-family: "Playfair";
     cursor: pointer;
-    padding: 12px;
-    font-size: 1.02em;
+    height: 37px;
+    font-size: 0.88em;
     font-weight: bolder;
-    border-top: none;
-    border-left: none;
-    border-right: none;
     text-transform: uppercase;
-    border-bottom: 1px solid goldenrod;
-    width: 100%;
+    width: 64%;
     text-align: center;
     outline: none;
-    line-height: 27px;
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
-    letter-spacing: 0.04em;
-    border-radius: 0 0 8px 8px;
-    background-color: #f7efd66e;
-    color: #554836;
+    letter-spacing: 0.08em;
+    background-color: #ffffff;
+    color: #341e25;
+    margin-top: 6px;
+    margin-bottom: 11px;
+    border: 0;
+    border-left: 2px solid #ebcf87;
+  }
+  button.accordion.active, button.accordion:hover {
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.08em;
+    background-color: #b7b3a6 !important;
+    color: #341e25 !important;
+    height: 39px;
+    width: 78%;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    border: none;
+    border-left: 2px solid #341e25;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  button.accordion {
+  button.accordion.active, button.accordion:hover {
     border: none;
   }
 }
 
-@media (min-width: 1em), screen and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   button.accordion.active, button.accordion:hover {
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease;
-    letter-spacing: 0.05em;
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.08em;
-    line-height: 20px;
-    border-bottom: 1px solid #a98e48;
-    background-color: #f1c044e3;
-    color: white;
+    margin-right: 0;
   }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   div.panel {
     padding: 0 8px;
     display: none;
-    background-color: white;
     height: auto;
-    border: 0.5px solid gainsboro;
+    width: 69%;
   }
   div.panel .skills-caption {
     display: none;
@@ -1701,9 +1700,13 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: 95%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
     margin-top: 0;
     padding: 0;
   }
@@ -1712,18 +1715,18 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -webkit-box-align: space-around;
         -ms-flex-align: space-around;
             align-items: space-around;
-    text-align: left;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 7px;
-    width: 33%;
+    width: 100%;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
   }
   #gd-folders li h4 {
     font-family: "Rajdhani", sans-serif;
@@ -1979,7 +1982,7 @@ h2, h3 {
     font-family: "Roboto";
   }
   .fs-gal {
-    width: 122px;
+    width: 143px;
     height: auto;
     float: left;
     padding: 7px;
@@ -2010,8 +2013,7 @@ h2, h3 {
     height: 300px;
   }
   .container {
-    height: 100%;
-    max-width: 500pxx;
+    max-width: 500px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
