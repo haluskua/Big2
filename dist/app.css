@@ -412,8 +412,8 @@ h2, h3 {
         -ms-flex-pack: center;
             justify-content: center;
     border-radius: 4px;
-    height: 80px;
-    width: 18vw;
+    height: 68px;
+    width: 14vw;
     background-color: #ebcf87;
     background-image: url("../dist/imgs/newlogo.png");
     background-size: cover;
@@ -586,23 +586,21 @@ h2, h3 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .menu2 {
-    background-color: #341e25;
+    margin-top: 11px;
     padding: 0;
     border: 0;
-    height: 29px;
+    height: 35px;
     border-radius: 0 0 8px 8px;
-    border-bottom: 2px solid #ebcf87;
   }
   .menu2 a {
-    background-color: white;
-    color: #341e25;
-    text-transform: lowercase;
+    background-color: rgba(135, 230, 235, 0.5);
+    color: white;
     height: 100%;
-    line-height: 27px;
+    line-height: 35px;
     width: 97%;
     border-radius: 0 0 8px 8px;
     border: 0;
-    font-size: 1.2em;
+    font-size: 0.98em;
   }
   #home-logo {
     height: 61%;
@@ -736,9 +734,9 @@ h2, h3 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .nav-archives {
-    font-family: "Playfair";
+    font-family: "Cutive Mono", monospace;
     font-weight: bold;
-    font-size: 1.22em;
+    font-size: 1.06em;
     letter-spacing: 0.12em;
   }
   .nav-archives:focus {
@@ -951,16 +949,18 @@ h2, h3 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #menu-buttons {
-    width: 100%;
+    position: fixed;
+    left: 8px;
+    bottom: 8px;
+    width: 12%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    border-right: 1px solid #341e25;
-    background-color: #341e25;
+    background-color: rgba(87, 85, 100, 0.3);
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    border-radius: 8px 8px 0 0;
+    border-radius: 35px 61px 37px 0;
   }
 }
 
@@ -1017,7 +1017,7 @@ h2, h3 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .menu {
-    color: #f5d19e;
+    color: #120e08;
     font-size: 1.1em;
     font-weight: bold;
     text-decoration: none;
@@ -1630,7 +1630,7 @@ h2, h3 {
     font-family: "Playfair";
     cursor: pointer;
     height: 37px;
-    font-size: 0.88em;
+    font-size: 0.98em;
     font-weight: bolder;
     text-transform: uppercase;
     width: 64%;
@@ -1639,11 +1639,12 @@ h2, h3 {
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
     letter-spacing: 0.08em;
-    background-color: #ffffff;
-    color: #341e25;
+    background-color: #2c3641;
+    color: white;
     margin-top: 19px;
-    margin-bottom: 11px;
+    margin-bottom: 10px;
     border: 0;
+    border: 1px solid #665a37;
     border-left: 2px solid #ebcf87;
   }
   button.accordion.active, button.accordion:hover {
@@ -1652,14 +1653,14 @@ h2, h3 {
     font-weight: bold;
     text-align: center;
     font-size: 1.08em;
-    background-color: #b7b3a6 !important;
-    color: #341e25 !important;
+    background-color: #39404b !important;
+    color: #5e8288 !important;
     height: 39px;
-    width: 78%;
-    margin-top: 4px;
-    margin-bottom: 8px;
-    border: none;
-    border-left: 2px solid #341e25;
+    width: 74%;
+    margin-bottom: 4px;
+    border: 1px solid dimgray;
+    border-bottom: none;
+    border-left: 1px solid dimgray;
   }
 }
 
@@ -1677,10 +1678,13 @@ h2, h3 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   div.panel {
+    background-color: rgba(87, 85, 100, 0.3);
     padding: 0 8px;
     display: none;
     height: auto;
-    width: 69%;
+    width: 68%;
+    border: 1px solid dimgray;
+    border-top: 0;
   }
   div.panel .skills-caption {
     display: none;
@@ -1715,9 +1719,9 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: space-around;
         -ms-flex-align: space-around;
             align-items: space-around;

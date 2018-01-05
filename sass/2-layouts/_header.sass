@@ -213,8 +213,8 @@
 		border: 1px solid lightgoldenrodyellow
 		justify-content: center
 		border-radius: 4px
-		height: 80px
-		width: 18vw
+		height: 68px
+		width: 14vw
 		background-color: #ebcf87
 		background-image: url('../dist/imgs/newlogo.png')
 		background-size: cover
@@ -251,6 +251,10 @@
 		border: 0.5px solid #dcc29b
 		background-color: #2c3641
 		justify-content: center !important
+		// background-image: url('../dist/imgs/1920.png')
+		// background-size: cover
+		// background-position: top
+		// background-repeat: no-repeat
 		@include tablet
 			width: 89%
 			padding: 0
@@ -307,23 +311,24 @@
 		@include desktop
 			display: flex
 			border: none
+
 	.menu2
-		background-color: #341e25
+		margin-top: 11px
+		// background-color: #341e25
 		padding: 0
 		border: 0
-		height: 29px
+		height: 35px
 		border-radius: 0 0 8px 8px
-		border-bottom: 2px solid #ebcf87
+		// border-bottom: 2px solid #ebcf87
 		a
-			background-color: white
-			color: #341e25
-			text-transform: lowercase
+			background-color: rgba(135, 230, 235, 0.5)
+			color: white
 			height: 100%
-			line-height: 27px
+			line-height: 35px
 			width: 97%
 			border-radius: 0 0 8px 8px
 			border: 0
-			font-size: 1.2em
+			font-size: 0.98em
 
 	#home-logo
 		height: 61%
@@ -416,9 +421,9 @@
 				background-color: transparentize(yellow, 1)
 				background-color: none
 	.nav-archives
-		font-family: $font-stack-playfair
+		font-family: $font-stack-paragraph
 		font-weight: bold
-		font-size: 1.22em
+		font-size: 1.06em
 		letter-spacing: 0.12em
 		&:focus
 			text-align: center
@@ -542,12 +547,14 @@
 			z-index: 99999999
 
 	#menu-buttons
-		width: 100%
+		position: fixed
+		left: 8px
+		bottom: 8px
+		width: 12%
 		display: flex
-		border-right: 1px solid #341e25
-		background-color: #341e25
+		background-color: rgba(87, 85, 100, 0.30)
 		justify-content: flex-start
-		border-radius: 8px 8px 0 0
+		border-radius: 35px 61px 37px 0
 		@include tablet
 			display: none
 		@include desktop
@@ -575,7 +582,7 @@
 			display: none
 
 	.menu
-		color: #f5d19e
+		color: #120e08
 		font-size: 1.1em
 		font-weight: bold
 		text-decoration: none
