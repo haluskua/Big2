@@ -38,8 +38,7 @@ h2, h3 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    background-color: black;
-    background: url("../dist/imgs/1920.png") top no-repeat;
+    background-color: #253144;
     background-size: cover;
   }
 }
@@ -212,7 +211,7 @@ h2, h3 {
   }
   #thin #bulgeword {
     padding: 3px;
-    color: #18120b;
+    color: #e6f3f3;
     font-size: 0.57em;
     font-style: normal;
     font-weight: bold;
@@ -248,7 +247,7 @@ h2, h3 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #hetinfo {
-    color: #341e25;
+    color: #e2dfe0;
     font-size: 0.86em;
     text-align: center;
     font-weight: normal;
@@ -279,7 +278,7 @@ h2, h3 {
     padding-bottom: 4px;
     z-index: 99999;
     line-height: 27px;
-    border-bottom: 0.6px dotted #b9797b;
+    border-bottom: 0.6px dotted #6d6c51;
   }
 }
 
@@ -766,7 +765,7 @@ h2, h3 {
     display: flex;
     position: fixed;
     z-index: 999999;
-    background-color: #341e25;
+    background-color: #1e242b;
   }
 }
 
@@ -1240,7 +1239,7 @@ h2, h3 {
   #wagai .main-paragraph {
     margin: auto;
     font-size: 0.92em;
-    font-family: "Roboto";
+    font-family: sans-serif;
     color: #e2e2e2;
     padding: 18px;
     text-align: justify;
@@ -1330,7 +1329,7 @@ h2, h3 {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #3e4b60;
+    background-color: #253144;
   }
   #grafix a, #contact a, .projects a, .wagai-weh a, #main-gallery a, #projects a {
     display: -webkit-box;
@@ -2023,7 +2022,7 @@ h2, h3 {
             justify-content: center;
     color: #957315;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.3em;
     letter-spacing: 0.12em;
     line-height: 40px;
   }
@@ -2120,7 +2119,6 @@ h2, h3 {
         -ms-flex-align: center;
             align-items: center;
     width: 92vw;
-    background-color: #3e4b60;
   }
   .small_intro h2 {
     color: #e7f8fb;
@@ -2132,7 +2130,7 @@ h2, h3 {
     color: #e2e2e2;
     width: 100%;
     text-align: justify;
-    font-family: "Roboto";
+    font-family: sans-serif;
     line-height: 20px;
     letter-spacing: 0.03em;
   }
@@ -2166,7 +2164,7 @@ h2, h3 {
   }
   /* Styling for webdev page only*/
   .webdev-title {
-    background-color: #4e3e60;
+    background-color: #4a5f67;
     color: black;
   }
   .webdev-subtitle {
