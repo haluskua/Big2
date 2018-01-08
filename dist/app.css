@@ -313,7 +313,7 @@ h2, h3 {
   .intro {
     margin: auto;
     margin-top: 11px;
-    color: #9d630d;
+    color: #e4a342;
     font-size: 1.18em;
     font-weight: bolder;
     position: relative;
@@ -1240,8 +1240,8 @@ h2, h3 {
   #wagai .main-paragraph {
     margin: auto;
     font-size: 0.92em;
-    font-family: sans-serif;
-    color: #341e25;
+    font-family: "Roboto";
+    color: #e2e2e2;
     padding: 18px;
     text-align: justify;
     line-height: 1.56em;
@@ -1260,7 +1260,7 @@ h2, h3 {
     font-size: 1.66em;
     font-family: "Rajdhani", sans-serif;
     letter-spacing: 0.02em;
-    color: #9d630d;
+    color: #e4a342;
     font-weight: bolder;
     line-height: 44px;
     border-bottom: 0.5px dotted;
@@ -1330,6 +1330,7 @@ h2, h3 {
     width: 100%;
     margin: 0;
     padding: 0;
+    background-color: #3e4b60;
   }
   #grafix a, #contact a, .projects a, .wagai-weh a, #main-gallery a, #projects a {
     display: -webkit-box;
@@ -1340,6 +1341,22 @@ h2, h3 {
         -ms-flex-pack: center;
             justify-content: center;
     text-decoration: none;
+  }
+  #content-holder {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .grafix {
     text-decoration: none;
@@ -1368,8 +1385,9 @@ h2, h3 {
     text-align: center;
     font-weight: 600;
     font-style: normal;
-    font-size: 1em;
-    color: #341e25;
+    font-size: 1.2em;
+    color: white;
+    background-color: #4e3e60;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1379,8 +1397,8 @@ h2, h3 {
     background-color: #faf5ed;
     border-top: 2px solid #9c8c85;
     border-radius: 0 0px 12px 12px;
-    font-family: "Roboto";
-    border-bottom: 1.1px solid goldenrod;
+    font-family: "Cutive Mono", monospace;
+    border-bottom: 1.1px solid #341e25;
   }
 }
 
@@ -1561,7 +1579,7 @@ h2, h3 {
     letter-spacing: 0.03em;
     font-family: "Dancing Script";
     font-style: italic;
-    color: #9d630d;
+    color: #e4a342;
     font-weight: lighter;
     text-align: center;
   }
@@ -1642,7 +1660,7 @@ h2, h3 {
     outline: none;
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.28em;
     background-color: #39404b;
     color: white;
     margin-top: 19px;
@@ -1775,8 +1793,8 @@ h2, h3 {
     border-bottom: 1px dotted #a8a6a4;
   }
   #more-info {
-    color: #5c4d60;
-    font-size: 0.85em;
+    color: #e2e2e2;
+    font-size: 0.9em;
     letter-spacing: 0.078em;
     font-style: italic;
     border-bottom: 1px dotted #a8a6a4;
@@ -1977,7 +1995,6 @@ h2, h3 {
     -ms-flex-item-align: center;
         align-self: center;
     text-align: center;
-    border: none;
     font-weight: normal;
     font-size: 1em;
     width: 100%;
@@ -1985,9 +2002,8 @@ h2, h3 {
     margin: 0;
     border: 0;
     letter-spacing: 0.05em;
-    border-bottom: 1px solid #ecdba4;
     border-top: none;
-    font-family: "Roboto";
+    font-family: "Cutive Mono", monospace;
   }
   .fs-gal {
     width: 143px;
@@ -2021,7 +2037,7 @@ h2, h3 {
     height: 300px;
   }
   .container {
-    max-width: 500px;
+    width: 93vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2093,14 +2109,28 @@ h2, h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100vw;
-    background-color: white;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 92vw;
+    background-color: #3e4b60;
+  }
+  .small_intro h2 {
+    color: #e7f8fb;
+    font-family: "Amatic SC", cursive;
+    font-size: 1.45em;
+    letter-spacing: 0.12em;
   }
   .small_intro p {
-    width: 90%;
+    color: #e2e2e2;
+    width: 100%;
     text-align: justify;
     font-family: "Roboto";
     line-height: 20px;
@@ -2136,7 +2166,7 @@ h2, h3 {
   }
   /* Styling for webdev page only*/
   .webdev-title {
-    background-color: #5dadc2;
+    background-color: #4e3e60;
     color: black;
   }
   .webdev-subtitle {
@@ -2145,6 +2175,8 @@ h2, h3 {
   button.webdev.active, button.webdev:hover {
     color: white;
     background-color: #5dadc2;
+    font-size: 1.25em;
+    font-family: "Rajdhani", sans-serif;
     /* Styling for Film page only*/
   }
   .film-title {
