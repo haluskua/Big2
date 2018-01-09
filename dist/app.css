@@ -211,7 +211,7 @@ h2, h3 {
     margin: 0;
   }
   #thin #bulgeword {
-    color: #3d5c6b;
+    color: #2e4752;
     font-size: 0.9em;
     font-style: normal;
     font-weight: bold;
@@ -248,7 +248,7 @@ h2, h3 {
   #hetinfo {
     margin-top: 40px;
     margin-bottom: 33px;
-    color: #182c36;
+    color: #000000;
     font-size: 0.86em;
     text-align: center;
     font-weight: normal;
@@ -1651,7 +1651,7 @@ h2, h3 {
     font-family: "Playfair";
     cursor: pointer;
     height: 37px;
-    font-size: 0.98em;
+    font-size: 0.9em;
     font-weight: bolder;
     text-transform: uppercase;
     width: 64%;
