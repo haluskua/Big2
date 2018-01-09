@@ -39,6 +39,7 @@ h2, h3 {
         -ms-flex-pack: start;
             justify-content: flex-start;
     background-color: #253144;
+    background: url("../dist/imgs/1920.png") top no-repeat;
     background-size: cover;
   }
 }
@@ -210,14 +211,12 @@ h2, h3 {
     margin: 0;
   }
   #thin #bulgeword {
-    padding: 3px;
-    color: #e6f3f3;
-    font-size: 0.57em;
+    color: #3d5c6b;
+    font-size: 0.9em;
     font-style: normal;
     font-weight: bold;
-    letter-spacing: 0.06em;
     text-transform: uppercase;
-    font-family: "Roboto";
+    font-family: serif;
   }
 }
 
@@ -247,7 +246,9 @@ h2, h3 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #hetinfo {
-    color: #e2dfe0;
+    margin-top: 40px;
+    margin-bottom: 33px;
+    color: #182c36;
     font-size: 0.86em;
     text-align: center;
     font-weight: normal;
@@ -605,7 +606,6 @@ h2, h3 {
   }
   #home-logo {
     height: 61%;
-    margin-left: 4px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
