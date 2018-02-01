@@ -1,5 +1,24 @@
 
 @include phone
+
+
+	@font-face
+	  font-family: 'Orbitron'
+	  src: url(..Big2/fonts/Orbitron-Black.ttf)
+	  font-style: normal
+	  font-weight: 100
+
+	@font-face
+	  font-family: 'Orbitron'
+	  src: url(..Big2/fonts/Orbitron-Regular.ttf)
+	  font-style: normal
+	  font-weight: 100
+
+	@font-face
+	  font-family: 'PerpetuaLight'
+	  src: url(..Big2/fonts/PERTILI.TTF)
+
+
 	.hetpage
 		display: flex
 		height: 100vh
@@ -25,7 +44,7 @@
 
 	.Colsplit-between
 		width: 100%
-		height: 92%
+		height: 88%
 		display: flex
 		position: relative
 		align-items: center
@@ -41,11 +60,11 @@
 			margin-bottom: 0
 
 	#Colsplit-box1
-		height: 63%
+		height: 90%
 		display: flex
 		position: relative
 		flex-direction: column
-		justify-content: space-around
+		justify-content: space-between
 		@include tablet
 			height: 63%
 			margin-bottom: 25px
@@ -85,16 +104,18 @@
 			margin-top: 0
 
 	#thin
+		line-height: 34px
 		margin: 0
+		background-color: rgba(169, 169, 169, 0.23)
 		@include tablet
 
 		#bulgeword
-			color: #2e4752
-			font-size: 0.9em
-			font-style: normal
-			font-weight: bold
+			color: #8a7f67
+			font-size: 0.72em
+			letter-spacing: 0.045em
 			text-transform: uppercase
-			font-family: serif
+			font-family: PerpetuaLight
+			font-family: $font-stack-character
 			@include phone-landscape
 				color: white
 			@include tablet
@@ -109,8 +130,7 @@
 				letter-spacing: 0.09em
 
 	#hetinfo
-		margin-top: 40px
-		margin-bottom: 33px
+		margin-bottom: 85px
 		color: #000000
 		font-size: 0.86em
 		text-align: center
@@ -210,12 +230,11 @@
 	#logo-space
 		position: fixed
 		display: flex
-		border: 1px solid lightgoldenrodyellow
 		justify-content: center
 		border-radius: 4px
 		height: 68px
 		width: 14vw
-		background-color: #ebcf87
+    margin-top: 30px
 		background-image: url('../dist/imgs/newlogo.png')
 		background-size: cover
 		background-position: bottom
@@ -235,10 +254,11 @@
 		flex-direction: column
 		align-items: center
 		text-decoration: none
+		padding-top: 60px
 		.ok
 			font-size: 0.82em
 			color: #341e25
-			font-family: $font-stack-roboto
+			font-family: $font-stack-pro
 			letter-spacing: 0.06em
 
 	#folders-container
@@ -247,15 +267,14 @@
 		height: auto
 		flex-wrap: wrap
 		display: flex
-		border-radius: 13px 13.5px 0 0
+		border-radius: 4.5px 4.5px 0 0
 		border: 0.5px solid #dcc29b
-		background-color: #2c3641
-		background-color: #212c39
 		justify-content: center !important
-		// background-image: url('../dist/imgs/1920.png')
-		// background-size: cover
-		// background-position: top
-		// background-repeat: no-repeat
+		background-image: url('../dist/imgs/1920.png')
+		background-size: cover
+		background-position: top
+		background-repeat: no-repeat
+		background-color: rgba(160, 168, 175, 0.42)
 		@include tablet
 			width: 89%
 			padding: 0
@@ -292,15 +311,14 @@
 			display: flex
 
 	.nav-folders
-		width: 35%
-		height: 26px
+		width: 63%
+		height: 30px
 		display: none
 		align-self: center
 		padding: 3px
-		border: 1px solid dimgray
-		background-color: #39404b
-		margin-bottom: 12px
-		margin-top: 17px
+		background-color: rgba(155, 149, 130, 0.32941176470588235)
+		margin-bottom: 11px
+		margin-top: 9px
 		&:focus
 			width: 70%
 			background-color: #030406
@@ -314,26 +332,29 @@
 			display: flex
 			border: none
 
+	// .fieldbox
+	// 	a
+	// 		width: 96%
+	// 		border: 1px solid black
+
 	.menu2
-		margin-top: 11px
-		// background-color: #341e25
+		border-radius: 0 10px 0 0
+		background-color: rgba(255, 255, 255, 0.82)
 		padding: 0
 		border: 0
 		height: 35px
 		border-radius: 0 0 8px 8px
 		// border-bottom: 2px solid #ebcf87
 		a
-			border-left: 1px solid #849194
-			color: white
 			height: 100%
 			line-height: 35px
 			width: 97%
 			border-radius: 0 0 8px 8px
-			background-color: #4a5f67
+			// background-color: rgba(46, 54, 67, 0.9098039215686274)
 			font-size: 0.98em
 
 	#home-logo
-		height: 61%
+		height: 116%
 		display: flex
 		background: url('../dist/imgs/newlogo.png') center no-repeat
 		background-size: cover
@@ -377,7 +398,7 @@
 		display: flex
 		color: white
 		cursor: pointer
-		line-height: 26px
+		line-height: 30px
 		font-size: 0.83em
 		text-align: center
 		font-weight: normal
@@ -385,8 +406,6 @@
 		text-decoration: none
 		text-transform: uppercase
 		flex-direction: column
-		// background-color: #fcf8ed
-		border-left: 2px solid #ebcf87
 		justify-content: space-between
 
 		@include tablet
@@ -421,11 +440,26 @@
 				border-left: none
 				background-color: transparentize(yellow, 1)
 				background-color: none
+
+	.fields
+		font-family: $font-stack-character
+		font-weight: normal
+		font-size: 1.01em
+		letter-spacing: 0.09em
+		color: #3d2707
+		width: 100%
+		&:focus
+			text-align: center
+		&:active
+			text-align: center
+
 	.nav-archives
+		font-family: Orbitron
 		font-family: $font-stack-rajdhani
-		font-weight: bold
-		font-size: 1.08em
-		letter-spacing: 0.16em
+		font-weight: bolder
+		font-size: 1.24em
+		letter-spacing: 0.07em
+		color: #453320
 		&:focus
 			text-align: center
 		&:active
@@ -585,7 +619,7 @@
 			display: none
 
 	.menu
-		color: #120e08
+		color: #ffffff
 		font-size: 1.1em
 		font-weight: bold
 		text-decoration: none

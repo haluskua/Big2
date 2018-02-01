@@ -90,7 +90,7 @@
       margin: auto
       font-size: 0.92em
       font-family: sans-serif
-      color: #e2e2e2
+      color: #594f4f
       padding: 18px
       text-align: justify
       line-height: 1.56em
@@ -155,7 +155,7 @@
     width: 100%
     margin: 0
     padding: 0
-    background-color: #253144
+    // background-color: #253144
     a
       display: flex
       width: 100%
@@ -393,7 +393,7 @@
     justify-content: center
 
   button.accordion
-    font-family: $font-stack-playfair
+    font-family: $font-stack-pro
     cursor: pointer
     height: 37px
     font-size: 0.9em
@@ -404,40 +404,39 @@
     outline: none
     transition: 0.5s ease
     letter-spacing: 0.28em
-    background-color: #39404b
-    color: white
-    margin-top: 19px
-    margin-bottom: 10px
+    background-color: rgba(255, 196, 131, 0.56)
+    color: #09070b
+    margin-top: 6px
+    margin-bottom: 15px
     border: 0
-    border: 1px solid #665a37
     border-left: 2px solid #ebcf87
+    margin-right: 0
 
   button.accordion.active, button.accordion:hover
     transition: 0.5s ease
-    font-weight: bold
     text-align: center
-    font-size: 1.08em
-    background-color: #39404b !important
-    color: #5e8288 !important
+    font-size: 0.9em
+    background-color: rgba(255, 196, 131, 0.56) !important
+    color: #09070b !important
     height: 39px
-    width: 74%
-    margin-bottom: 4px
-    border: 1px solid dimgray
+    border: 1px solid #ffc387
     border-bottom: none
-    border-left: 1px solid dimgray
+    margin-bottom: -2px
+
     @include tablet
       border: none
     @include desktop
       margin-right: 0
 
   div.panel
-      background-color: rgba(87, 85, 100, 0.30)
+      background-color: rgba(255, 196, 131, 0.56)
       padding: 0 8px
       display: none
       height: auto
-      width: 68%
-      border: 1px solid dimgray
+      width: 59%
+      border: 1px solid #ffc388
       border-top: 0
+      margin-bottom: 4px
       .skills-caption
         display: none
         justify-content: center
@@ -458,15 +457,19 @@
     height: 100%
     margin-top: 0
     padding: 0
+
     li
       list-style: none
       display: flex
       justify-content: center
       align-items: space-around
       align-items: center
-      width: 100%
+      width: 92%
       transition: 0.5s ease
+      border-bottom: 1px solid
 
+    #nav-folders:nth-child(4)
+      margin-bottom: 50px
       h4
         font-family: $font-stack-rajdhani
         color: black
