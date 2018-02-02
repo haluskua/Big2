@@ -80,6 +80,8 @@ $allVideos.each(function() {
 
 });
 
+
+
 // When the window is resized
 $(window).resize(function() {
 

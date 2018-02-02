@@ -41,9 +41,7 @@ $(document).ready(function(){
           $(".open-caption").css("z-index", "999");
         });
 
-
-
-
+        // Undisplaying the mobie menu-bar
         jQuery(window).resize(function () {
                 if (jQuery(window).width() > 500) {
                   $("#folders-container").show(300);
@@ -81,7 +79,7 @@ $(document).ready(function(){
           e.preventDefault();
         });
 
-// targeting tablet view because of menu top heigt change from mobile view
+// targeting tablet view because of menu top height change from mobile view
         if (jQuery(window).width() > 481) {
             var stickyNavTop = $('.nav-folders').offset().top;
             var headerHeight = 64;
@@ -95,46 +93,47 @@ $(document).ready(function(){
         }
 
           // code for lightbox
-          $(".img").click(function(){
-            $src=$(this).attr("src");
-              if(!$("#light-box").length > 0) {
-                //creates a new div and includes lightbox properties
-                $("#mygrafix").append("<div id='light-box'><span class='material-icons'>close</span><img src=''></div>");
-                $("#light-box").show();
-                $("#light-box img").attr("src",$src);
-
-                $("#light-box").append("<div id='next'<span class ='next'>-></span></div>");
-                $("#light-box").append("<div id='prev'<span class ='prev'><-</span></div>");
-
-              }else{
-                $("#light-box").show();
-                $("#light-box img").attr("src",$src);
-              }
-            });
-
-            $("#mygrafix").on("click", "#light-box span", function() {
-              $("#light-box").hide();
-            });
-          // jquery image slider
-            $('.next').on('click', function(){
-              var currentImg = $('.active');
-              var nextImg = currentImg.next();
-
-              if(nextImg.length){
-                currentImg.removeClass('active').css('z-index', -10);
-                nextImg.addClass('active').css('z-index', 10);
-              }
-            });
-
-            $('.prev').on('click', function(){
-              var currentImg = $('.active');
-              var prevImg = currentImg.prev();
-
-              if(prevImg.length){
-                currentImg.removeClass('active').css('z-index', -10);
-                prevImg.addClass('active').css('z-index', 10);
-              }
-            });
+          // $(".img").click(function(){
+          //   $src=$(this).attr("src");
+          //     if(!$("#light-box").length > 0) {
+          //       //creates a new div and includes lightbox properties
+          //       $("#mygrafix").append("<div id='light-box'><span class='material-icons'>close</span><img src=''></div>");
+          //       $("#light-box").show();
+          //       $("#light-box img").attr("src",$src);
+          //
+          //       $("#light-box").append("<div id='next'<span class ='next'>-></span></div>");
+          //       $("#light-box").append("<div id='prev'<span class ='prev'><-</span></div>");
+          //
+          //     }else{
+          //       $("#light-box").show();
+          //       $("#light-box img").attr("src",$src);
+          //     }
+          //   });
+          //
+          //   $("#mygrafix").on("click", "#light-box span", function() {
+          //     $("#light-box").hide();
+          //   });
+          //
+          // // jquery image slider
+          //   $('.next').on('click', function(){
+          //     var currentImg = $('.active');
+          //     var nextImg = currentImg.next();
+          //
+          //     if(nextImg.length){
+          //       currentImg.removeClass('active').css('z-index', -10);
+          //       nextImg.addClass('active').css('z-index', 10);
+          //     }
+          //   });
+          //
+          //   $('.prev').on('click', function(){
+          //     var currentImg = $('.active');
+          //     var prevImg = currentImg.prev();
+          //
+          //     if(prevImg.length){
+          //       currentImg.removeClass('active').css('z-index', -10);
+          //       prevImg.addClass('active').css('z-index', 10);
+          //     }
+          //   });
 
         // Code for Accordion
 

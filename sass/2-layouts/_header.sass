@@ -45,11 +45,11 @@
 	.Colsplit-between
 		width: 100%
 		height: 88%
-		display: flex
-		position: relative
-		align-items: center
-		flex-direction: column
-		justify-content: center
+			display: flex
+			position: relative
+			align-items: center
+			flex-direction: column
+			justify-content: center
 		@include tablet
 			width: 100vw
 			margin: auto
@@ -60,7 +60,7 @@
 			margin-bottom: 0
 
 	#Colsplit-box1
-		height: 84%
+		height: 98%
 		display: flex
 		position: relative
 		flex-direction: column
@@ -482,6 +482,8 @@
 		z-index: 999999
 		background-color: #2e113b
 		@include phone-landscape
+			width: 38vw
+			top: 0
 
 		@include tablet
 			top: 0
@@ -500,6 +502,8 @@
 			position: relative
 			flex-flow: row-reverse
 			justify-content: space-between
+			@include phone-landscape
+				width: 96%
 
 			@include desktop
 				display: flex
