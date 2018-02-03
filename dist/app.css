@@ -86,11 +86,20 @@ h2, h3 {
   .Colsplit-between {
     width: 100%;
     height: 88%;
-    height-display: flex;
-    height-position: relative;
-    height-align-items: center;
-    height-flex-direction: column;
-    height-justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -231,6 +240,12 @@ h2, h3 {
     -ms-flex-item-align: end;
         align-self: flex-end;
     width: 76vw;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  #thin {
+    margin-top: -87px;
   }
 }
 
@@ -454,8 +469,10 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #logo-space {
+    top: 7px;
+    left: -34px;
     margin: 0;
-    width: 15vw;
+    height: 53px;
   }
 }
 
@@ -521,7 +538,7 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #folders-container {
-    width: 89%;
+    width: 93vw;
     padding: 0;
     height: auto;
     display: -webkit-box;
@@ -552,15 +569,15 @@ h2, h3 {
             flex-flow: row;
     -ms-flex-item-align: center;
         align-self: center;
-    border-radius: 8px;
     padding-bottom: 9px;
     background-image: none;
+    border: none;
+    background: none;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #folders-container {
-    width: 94%;
     height: 61px;
     background-color: none;
     border: none;
@@ -1095,6 +1112,7 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #nav {
+    margin-left: 29px;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1108,13 +1126,16 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #nav {
-    width: 36vw;
+    width: 80vw;
+    height: 56px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     position: fixed;
+    -ms-flex-item-align: center;
+        align-self: center;
     top: 0;
   }
 }
@@ -1739,6 +1760,20 @@ h2, h3 {
   }
 }
 
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  button.accordion {
+    height: 36px;
+    margin-top: 12px;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  button.accordion {
+    margin-top: -8px;
+    height: 35px;
+  }
+}
+
 @media (min-width: 1em), screen and (orientation: portrait) {
   button.accordion.active, button.accordion:hover {
     -webkit-transition: 0.5s ease;
@@ -1747,7 +1782,7 @@ h2, h3 {
     font-size: 0.9em;
     background-color: rgba(255, 196, 131, 0.56) !important;
     color: #09070b !important;
-    height: 39px;
+    height: 35px;
     border: 1px solid #ffc387;
     border-bottom: none;
     margin-bottom: -2px;
@@ -1785,6 +1820,15 @@ h2, h3 {
   }
 }
 
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  div.panel {
+    position: fixed;
+    width: auto;
+    top: 47px;
+    left: 130px;
+  }
+}
+
 @media (min-width: 1em), screen and (orientation: portrait) {
   div.panel .skills-caption {
     display: none;
@@ -1814,6 +1858,16 @@ h2, h3 {
     margin-top: 0;
     padding: 0;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  #gd-folders {
+    width: 163px;
+    background-color: bisque;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   #gd-folders li {
     list-style: none;
     display: -webkit-box;

@@ -414,6 +414,13 @@
     @include phone-landscape
       width: 44%
       margin-top: 13px
+    @include tablet
+      height: 36px
+      margin-top: 12px
+
+    @include desktop
+      margin-top: -8px
+      height: 35px
 
   button.accordion.active, button.accordion:hover
     transition: 0.5s ease
@@ -421,7 +428,7 @@
     font-size: 0.9em
     background-color: rgba(255, 196, 131, 0.56) !important
     color: #09070b !important
-    height: 39px
+    height: 35px
     border: 1px solid #ffc387
     border-bottom: none
     margin-bottom: -2px
@@ -442,6 +449,11 @@
       margin-bottom: 4px
       @include phone-landscape
         width: 81%
+      @include tablet
+        position: fixed
+        width: auto
+        top: 47px
+        left: 130px
       .skills-caption
         display: none
         justify-content: center
@@ -462,6 +474,11 @@
     height: 100%
     margin-top: 0
     padding: 0
+    @include phone-landscape
+
+    @include tablet
+      width: 163px
+      background-color: bisque
 
     li
       list-style: none

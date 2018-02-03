@@ -45,11 +45,11 @@
 	.Colsplit-between
 		width: 100%
 		height: 88%
-			display: flex
-			position: relative
-			align-items: center
-			flex-direction: column
-			justify-content: center
+		display: flex
+		position: relative
+		align-items: center
+		flex-direction: column
+		justify-content: center
 		@include tablet
 			width: 100vw
 			margin: auto
@@ -114,6 +114,7 @@
 			width: 76vw
 
 		@include tablet
+			margin-top: -87px
 
 		#bulgeword
 			color: #8a7f67
@@ -251,8 +252,10 @@
 			bottom: 10px
 
 		@include tablet
+			top: 7px
+			left: -34px
 			margin: 0
-			width: 15vw
+			height: 53px
 		@include desktop
 			margin: auto
 			width: 11vw
@@ -287,7 +290,7 @@
 		background-repeat: no-repeat
 		background-color: rgba(160, 168, 175, 0.42)
 		@include tablet
-			width: 89%
+			width: 93vw
 			padding: 0
 			height: auto
 			display: flex
@@ -301,9 +304,10 @@
 			display: flex
 			flex-flow: row
 			align-self: center
-			border-radius: 8px
 			padding-bottom: 9px
 			background-image: none
+			border: none
+			background: none
 
   .reduced
 		display: flex
@@ -311,7 +315,6 @@
 		justify-content: space-around
 		margin: 0
 		@include tablet
-			width: 94%
 			height: 61px
 			background-color: none
 			border: none
@@ -644,15 +647,19 @@
 
 	#nav
 		@include tablet
+			margin-left: 29px
 			width: 100%
 			display: flex
 			justify-content: center
 			background-color: #faf6e6
 		@include desktop
-			width: 36vw
+			width: 80vw
+			height: 56px
 			display: flex
 			justify-content: space-around
 			position: fixed
+			align-self: center
+
 			top: 0
 
 	.navbar
