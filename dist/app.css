@@ -224,6 +224,17 @@ h2, h3 {
     margin: 0;
     background-color: rgba(169, 169, 169, 0.23);
   }
+}
+
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  #thin {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    width: 76vw;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   #thin #bulgeword {
     color: #8a7f67;
     font-size: 0.72em;
@@ -262,7 +273,7 @@ h2, h3 {
   #hetinfo {
     margin-bottom: 85px;
     color: #000000;
-    font-size: 0.86em;
+    font-size: 1.18em;
     text-align: center;
     font-weight: normal;
     letter-spacing: 0.03em;
@@ -434,6 +445,13 @@ h2, h3 {
   }
 }
 
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  #logo-space {
+    right: -16px;
+    bottom: 10px;
+  }
+}
+
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #logo-space {
     margin: 0;
@@ -578,6 +596,12 @@ h2, h3 {
   }
 }
 
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  .nav-folders {
+    width: 19%;
+  }
+}
+
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .nav-folders {
     width: 100%;
@@ -636,8 +660,6 @@ h2, h3 {
     width: 39%;
     -ms-flex-item-align: center;
         align-self: center;
-    border: 0.3px dotted #ffc4c4;
-    background-color: #fd58000d;
     background-size: cover;
   }
 }
@@ -794,13 +816,13 @@ h2, h3 {
     display: flex;
     position: fixed;
     z-index: 999999;
-    background-color: #2e113b;
+    background-color: #26061e;
   }
 }
 
 @media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
   .haus {
-    width: 38vw;
+    width: 25vw;
     top: 0;
   }
 }
@@ -1046,7 +1068,7 @@ h2, h3 {
     display: -ms-flexbox;
     display: flex;
     cursor: pointer;
-    line-height: 39px;
+    line-height: 26px;
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1689,7 +1711,6 @@ h2, h3 {
             justify-content: center;
   }
   button.accordion {
-    font-family: "Source";
     cursor: pointer;
     height: 37px;
     font-size: 0.9em;
@@ -1709,6 +1730,16 @@ h2, h3 {
     border-left: 2px solid #ebcf87;
     margin-right: 0;
   }
+}
+
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  button.accordion {
+    width: 44%;
+    margin-top: 13px;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   button.accordion.active, button.accordion:hover {
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
@@ -1746,6 +1777,15 @@ h2, h3 {
     border-top: 0;
     margin-bottom: 4px;
   }
+}
+
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  div.panel {
+    width: 81%;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   div.panel .skills-caption {
     display: none;
     -webkit-box-pack: center;
@@ -2045,7 +2085,7 @@ h2, h3 {
     border: 0;
     letter-spacing: 0.05em;
     border-top: none;
-    font-family: "Cutive Mono", monospace;
+    font-family: "Rajdhani", sans-serif;
   }
   .fs-gal {
     width: 143px;
@@ -2065,8 +2105,8 @@ h2, h3 {
             justify-content: center;
     color: #957315;
     font-weight: bold;
-    font-size: 1.3em;
-    letter-spacing: 0.12em;
+    font-size: 1.5em;
+    letter-spacing: 0.22em;
     line-height: 40px;
   }
   .video {
@@ -2164,10 +2204,13 @@ h2, h3 {
     width: 92vw;
   }
   .small_intro h2 {
-    color: #e7f8fb;
-    font-family: "Amatic SC", cursive;
-    font-size: 1.45em;
-    letter-spacing: 0.12em;
+    color: #cc57a3;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    font-weight: normal;
+    font-size: 1.58em;
+    margin-top: 32px;
+    margin-bottom: -2px;
   }
   .small_intro p {
     color: #443939;
@@ -2186,32 +2229,32 @@ h2, h3 {
     background-color: #eec660;
   }
   .graphic-subtitle {
-    color: #3c2f09;
-    color: white;
+    color: #463b20;
   }
   button.graphic.active, button.graphic:hover {
-    color: white;
-    background-color: #f1c044e3;
+    color: #65635e;
+    background-color: rgba(229, 172, 97, 0.11);
   }
   /* Styling for music page only*/
   .music-title {
     background-color: #ee6060c2;
-    color: black;
+    color: #65635e;
   }
   .music-subtitle {
-    color: white;
+    color: #463b20;
   }
   button.music.active, button.music:hover {
-    color: white;
+    color: #65635e;
     background-color: #ee6060c2;
   }
   /* Styling for webdev page only*/
   .webdev-title {
-    background-color: rgba(222, 157, 85, 0.81);
-    color: black;
+    background-color: rgba(229, 172, 97, 0.11);
+    color: #65635e;
+    border-bottom: 1px solid lightgray;
   }
   .webdev-subtitle {
-    color: white;
+    color: #463b20;
   }
   button.webdev.active, button.webdev:hover {
     color: white;
@@ -2221,23 +2264,23 @@ h2, h3 {
     /* Styling for Film page only*/
   }
   .film-title {
-    background-color: #80c272;
-    color: black;
+    background-color: rgba(229, 172, 97, 0.11);
+    color: #65635e;
   }
   .film-subtitle {
-    color: white;
+    color: #463b20;
   }
   button.film.active, button.film:hover {
-    color: white;
-    background-color: rgba(98, 184, 80, 0.87);
+    color: #65635e;
+    background-color: rgba(229, 172, 97, 0.11);
     /* Styling for Painting page only*/
   }
   .painting-title {
     background-color: rgba(140, 73, 178, 0.78);
-    color: black;
+    color: #65635e;
   }
   .painting-subtitle {
-    color: white;
+    color: #463b20;
   }
   button.painting.active, button.painting:hover {
     color: white;

@@ -109,6 +109,10 @@
 		line-height: 34px
 		margin: 0
 		background-color: rgba(169, 169, 169, 0.23)
+		@include phone-landscape
+			align-self: flex-end
+			width: 76vw
+
 		@include tablet
 
 		#bulgeword
@@ -134,7 +138,7 @@
 	#hetinfo
 		margin-bottom: 85px
 		color: #000000
-		font-size: 0.86em
+		font-size: 1.18em
 		text-align: center
 		font-weight: normal
 		letter-spacing: 0.03em
@@ -241,6 +245,11 @@
 		background-size: cover
 		background-position: bottom
 		background-repeat: no-repeat
+		@include phone-landscape
+			// left: -17px
+			right: -16px
+			bottom: 10px
+
 		@include tablet
 			margin: 0
 			width: 15vw
@@ -324,6 +333,8 @@
 		&:focus
 			width: 70%
 			background-color: #030406
+		@include phone-landscape
+			width: 19%
 		@include tablet
 			width: 100%
 			height: auto
@@ -365,8 +376,6 @@
 			display: flex
 			width: 39%
 			align-self: center
-			border: 0.3px dotted #ffc4c4
-			background-color: #fd58000d
 			background-size: cover
 		@include desktop
 			background-size: cover
@@ -480,9 +489,9 @@
 		display: flex
 		position: fixed
 		z-index: 999999
-		background-color: #2e113b
+		background-color: #26061e
 		@include phone-landscape
-			width: 38vw
+			width: 25vw
 			top: 0
 
 		@include tablet
@@ -619,7 +628,7 @@
 		width: 100%
 		display: flex
 		cursor: pointer
-		line-height: 39px
+		line-height: 26px
 		text-align: center
 		justify-content: center
 		@include tablet

@@ -393,7 +393,7 @@
     justify-content: center
 
   button.accordion
-    font-family: $font-stack-pro
+    // font-family: $font-stack-pro
     cursor: pointer
     height: 37px
     font-size: 0.9em
@@ -411,6 +411,9 @@
     border: 0
     border-left: 2px solid #ebcf87
     margin-right: 0
+    @include phone-landscape
+      width: 44%
+      margin-top: 13px
 
   button.accordion.active, button.accordion:hover
     transition: 0.5s ease
@@ -437,6 +440,8 @@
       border: 1px solid #ffc388
       border-top: 0
       margin-bottom: 4px
+      @include phone-landscape
+        width: 81%
       .skills-caption
         display: none
         justify-content: center
@@ -674,7 +679,7 @@
     border: 0
     letter-spacing: 0.05em
     border-top: none
-    font-family: $font-stack-paragraph
+    font-family: $font-stack-rajdhani
 
   .fs-gal
     width: 143px
@@ -690,8 +695,8 @@
     justify-content: center
     color: #957315
     font-weight: bold
-    font-size: 1.3em
-    letter-spacing: 0.12em
+    font-size: 1.5em
+    letter-spacing: 0.22em
     line-height: 40px
 
   .video
@@ -757,10 +762,12 @@
     width: 92vw
     // background-color: #3e4b60
     h2
-      color: #e7f8fb
-      font-family: $font-stack-thin
-      font-size: 1.45em
-      letter-spacing: 0.12em
+      color: #cc57a3
+      align-self: flex-start
+      font-weight: normal
+      font-size: 1.58em
+      margin-top: 32px
+      margin-bottom: -2px
     p
       color: #443939
       width: 100%
