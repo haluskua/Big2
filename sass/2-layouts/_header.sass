@@ -49,6 +49,8 @@
 		align-items: center
 		flex-direction: column
 		justify-content: center
+		@include phone-landscape
+			height: 86%
 		@include tablet
 			width: 100vw
 			margin: auto
@@ -66,7 +68,7 @@
 		flex-direction: column
 		justify-content: space-between
 		@include phone-landscape
-			margin-bottom: -22px
+			margin-bottom: 0px
 			height: 100%
 		@include tablet
 			height: 74%
@@ -80,11 +82,15 @@
 		justify-content: center
 		flex-direction: column
 		align-items: center
+		@include phone-landscape
+			align-items: flex-start
 		@include tablet
 			margin: 0
 
 	.hetpage-li
 		width: 67%
+		@include phone-landscape
+			width: 72%
 		@include tablet
 			width: 100%
 		@include desktop
@@ -106,6 +112,8 @@
 		width: 100%
 		height: auto
 		display: flex
+		@include phone-landscape
+			margin-bottom: 13px
 		@include desktop
 			margin-top: 0
 
@@ -123,10 +131,12 @@
 			margin-top: -87px
 
 		#cr-field
-			color: #6b5a66
+			color: #9d8b70
 			font-size: 0.8em
 			letter-spacing: 0.08em
 			font-style: italic
+			@include phone-landscape
+				font-size: 0.7em
 			@include tablet
 				font-size: 0.84em
 				letter-spacing: 0.055em
@@ -137,8 +147,8 @@
 			text-transform: uppercase
 			font-family: $font-stack-roboto
 			@include phone-landscape
-				color: #a4750c
-				font-size: 1em
+				color: #26061e
+				font-size: 0.78em
 			@include tablet
 				color: #341e25
 				font-weight: 600
@@ -164,7 +174,8 @@
 		font-family: $font-stack-roboto
 		text-transform: uppercase
 		@include phone-landscape
-			margin-bottom: 84px
+			margin-bottom: 78px
+			margin-top: 3px
 		@include tablet
 			width: 100%
 			line-height: 0px

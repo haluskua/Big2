@@ -99,6 +99,12 @@ h2, h3 {
   }
 }
 
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  .Colsplit-between {
+    height: 86%;
+  }
+}
+
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .Colsplit-between {
     width: 100vw;
@@ -137,7 +143,7 @@ h2, h3 {
 
 @media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
   #Colsplit-box1 {
-    margin-bottom: -22px;
+    margin-bottom: 0px;
     height: 100%;
   }
 }
@@ -174,6 +180,14 @@ h2, h3 {
   }
 }
 
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  .landing-page {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .landing-page {
     margin: 0;
@@ -183,6 +197,12 @@ h2, h3 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .hetpage-li {
     width: 67%;
+  }
+}
+
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  .hetpage-li {
+    width: 72%;
   }
 }
 
@@ -232,6 +252,12 @@ h2, h3 {
   }
 }
 
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  .bio {
+    margin-bottom: 13px;
+  }
+}
+
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .bio {
     margin-top: 0;
@@ -264,10 +290,16 @@ h2, h3 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #thin #cr-field {
-    color: #6b5a66;
+    color: #9d8b70;
     font-size: 0.8em;
     letter-spacing: 0.08em;
     font-style: italic;
+  }
+}
+
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  #thin #cr-field {
+    font-size: 0.7em;
   }
 }
 
@@ -290,8 +322,8 @@ h2, h3 {
 
 @media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
   #thin #bulgeword {
-    color: #a4750c;
-    font-size: 1em;
+    color: #26061e;
+    font-size: 0.78em;
   }
 }
 
@@ -330,7 +362,8 @@ h2, h3 {
 
 @media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
   #hetinfo {
-    margin-bottom: 84px;
+    margin-bottom: 78px;
+    margin-top: 3px;
   }
 }
 
@@ -1390,7 +1423,7 @@ h2, h3 {
     font-size: 1.66em;
     font-family: "Rajdhani", sans-serif;
     letter-spacing: 0.02em;
-    color: #e4a342;
+    color: #e49116;
     font-weight: bolder;
     line-height: 44px;
     border-bottom: 0.5px dotted;
@@ -1707,7 +1740,7 @@ h2, h3 {
     letter-spacing: 0.03em;
     font-family: "Dancing Script";
     font-style: italic;
-    color: #e4a342;
+    color: #e49116;
     font-weight: lighter;
     text-align: center;
   }
@@ -1974,7 +2007,7 @@ h2, h3 {
     border-bottom: 1px dotted #a8a6a4;
   }
   #more-info {
-    color: #e2e2e2;
+    color: #9d8b70;
     font-size: 0.9em;
     letter-spacing: 0.078em;
     font-style: italic;
@@ -2303,11 +2336,11 @@ h2, h3 {
     width: 92vw;
   }
   .small_intro h2 {
-    color: #cc57a3;
+    color: #e49116;
     -ms-flex-item-align: start;
         align-self: flex-start;
     font-weight: normal;
-    font-size: 1.58em;
+    font-size: 1.44em;
     margin-top: 32px;
     margin-bottom: -2px;
   }
@@ -2316,7 +2349,7 @@ h2, h3 {
     width: 100%;
     text-align: justify;
     font-family: sans-serif;
-    line-height: 20px;
+    line-height: 1.56em;
     letter-spacing: 0.03em;
   }
 }
