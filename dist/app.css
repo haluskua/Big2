@@ -209,6 +209,16 @@ h2, h3 {
     flex-direction-justify-content: space-around;
     flex-direction-width: 80vw;
   }
+}
+
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  .home-desc {
+    width: 87vw;
+    margin-left: 85px;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .bio {
     width: 100%;
     height: auto;
@@ -231,7 +241,6 @@ h2, h3 {
         align-self: center;
     line-height: 34px;
     margin: 0;
-    background-color: rgba(169, 169, 169, 0.23);
   }
 }
 
@@ -252,8 +261,7 @@ h2, h3 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   #thin #bulgeword {
     color: #8a7f67;
-    font-size: 0.72em;
-    letter-spacing: 0.045em;
+    font-size: 1.1em;
     text-transform: uppercase;
     font-family: PerpetuaLight;
     font-family: "Cabin Sketch", Garamond;
@@ -262,7 +270,8 @@ h2, h3 {
 
 @media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
   #thin #bulgeword {
-    color: white;
+    color: #a4750c;
+    font-size: 1em;
   }
 }
 

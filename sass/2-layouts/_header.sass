@@ -95,6 +95,9 @@
 		flex-direction: column
     justify-content: space-around
     width: 80vw
+		@include phone-landscape
+			width: 87vw
+			margin-left: 85px
 
 	.bio
 		width: 100%
@@ -108,7 +111,7 @@
 		align-self: center
 		line-height: 34px
 		margin: 0
-		background-color: rgba(169, 169, 169, 0.23)
+		// background-color: rgba(169, 169, 169, 0.23)
 		@include phone-landscape
 			align-self: flex-end
 			width: 76vw
@@ -118,13 +121,13 @@
 
 		#bulgeword
 			color: #8a7f67
-			font-size: 0.72em
-			letter-spacing: 0.045em
+			font-size: 1.1em
 			text-transform: uppercase
 			font-family: PerpetuaLight
 			font-family: $font-stack-character
 			@include phone-landscape
-				color: white
+				color: #a4750c
+				font-size: 1em
 			@include tablet
 				color: #341e25
 				font-weight: 600
