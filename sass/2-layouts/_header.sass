@@ -65,6 +65,9 @@
 		position: relative
 		flex-direction: column
 		justify-content: space-between
+		@include phone-landscape
+			margin-bottom: -22px
+			height: 100%
 		@include tablet
 			height: 63%
 			margin-bottom: 25px
@@ -119,9 +122,14 @@
 		@include tablet
 			margin-top: -87px
 
+		#cr-field
+			font-family: $font-stack-roboto
+			color: #757163
+			font-size: 0.6em
+			letter-spacing: 0.03em
 		#bulgeword
 			color: #8a7f67
-			font-size: 1.1em
+			font-size: 1em
 			text-transform: uppercase
 			font-family: PerpetuaLight
 			font-family: $font-stack-character
@@ -139,6 +147,8 @@
 				color: dimgray
 				letter-spacing: 0.09em
 
+    //0272293746 talinty
+
 	#hetinfo
 		margin-top: 10px
 		margin-bottom: 128px
@@ -149,6 +159,8 @@
 		letter-spacing: 0.06em
 		font-family: $font-stack-roboto
 		text-transform: uppercase
+		@include phone-landscape
+			margin-bottom: 84px
 		@include tablet
 			width: 100%
 			height: 42px
@@ -636,9 +648,11 @@
 		width: 100%
 		display: flex
 		cursor: pointer
-		line-height: 26px
+		line-height: 37px
 		text-align: center
 		justify-content: center
+		@include phone-landscape
+			line-height: 22px
 		@include tablet
 			display: none
 

@@ -135,6 +135,13 @@ h2, h3 {
   }
 }
 
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  #Colsplit-box1 {
+    margin-bottom: -22px;
+    height: 100%;
+  }
+}
+
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #Colsplit-box1 {
     height: 63%;
@@ -256,9 +263,15 @@ h2, h3 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
+  #thin #cr-field {
+    font-family: "Roboto";
+    color: #757163;
+    font-size: 0.6em;
+    letter-spacing: 0.03em;
+  }
   #thin #bulgeword {
     color: #8a7f67;
-    font-size: 1.1em;
+    font-size: 1em;
     text-transform: uppercase;
     font-family: PerpetuaLight;
     font-family: "Cabin Sketch", Garamond;
@@ -301,6 +314,12 @@ h2, h3 {
     letter-spacing: 0.06em;
     font-family: "Roboto";
     text-transform: uppercase;
+  }
+}
+
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  #hetinfo {
+    margin-bottom: 84px;
   }
 }
 
@@ -1092,11 +1111,17 @@ h2, h3 {
     display: -ms-flexbox;
     display: flex;
     cursor: pointer;
-    line-height: 26px;
+    line-height: 37px;
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  .exit-menu {
+    line-height: 22px;
   }
 }
 
