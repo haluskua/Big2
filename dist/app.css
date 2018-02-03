@@ -81,7 +81,7 @@ h2, h3 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .Colsplit-between {
     width: 100%;
-    height: 88%;
+    height: 86%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -265,7 +265,9 @@ h2, h3 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   #thin #cr-field {
     color: #6b5a66;
-    font-size: 0.81em;
+    font-size: 0.8em;
+    letter-spacing: 0.08em;
+    font-style: italic;
   }
 }
 
@@ -279,11 +281,9 @@ h2, h3 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #thin #bulgeword {
-    color: #b7ab99;
-    font-size: 0.77em;
+    color: #26061e;
+    font-size: 0.75em;
     text-transform: uppercase;
-    letter-spacing: 0.02em;
-    font-family: PerpetuaLight;
     font-family: "Roboto";
   }
 }
@@ -392,7 +392,7 @@ h2, h3 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .intro {
     margin: auto;
-    margin-top: -36px;
+    margin-top: -4px;
     color: #9d8b70;
     font-size: 1.18em;
     position: relative;
