@@ -144,8 +144,8 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #Colsplit-box1 {
-    height: 63%;
-    margin-bottom: 25px;
+    height: 74%;
+    margin-bottom: -126px;
   }
 }
 
@@ -243,7 +243,7 @@ h2, h3 {
     width: 92vw;
     -ms-flex-item-align: center;
         align-self: center;
-    line-height: 34px;
+    line-height: 29px;
     margin: 0;
   }
 }
@@ -264,17 +264,27 @@ h2, h3 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #thin #cr-field {
-    font-family: "Roboto";
-    color: #757163;
-    font-size: 0.6em;
-    letter-spacing: 0.03em;
+    color: #6b5a66;
+    font-size: 0.81em;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  #thin #cr-field {
+    font-size: 0.84em;
+    letter-spacing: 0.055em;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   #thin #bulgeword {
-    color: #8a7f67;
-    font-size: 1em;
+    color: #b7ab99;
+    font-size: 0.77em;
     text-transform: uppercase;
+    letter-spacing: 0.02em;
     font-family: PerpetuaLight;
-    font-family: "Cabin Sketch", Garamond;
+    font-family: "Roboto";
   }
 }
 
@@ -289,7 +299,8 @@ h2, h3 {
   #thin #bulgeword {
     color: #341e25;
     font-weight: 600;
-    font-size: 0.93em;
+    font-size: 1.02em;
+    letter-spacing: 0.04em;
     font-family: "Roboto";
   }
 }
@@ -307,11 +318,11 @@ h2, h3 {
   #hetinfo {
     margin-top: 10px;
     margin-bottom: 128px;
-    color: #000000;
+    color: #4c3244;
     font-size: 1.1em;
     text-align: center;
     font-weight: normal;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.05em;
     font-family: "Roboto";
     text-transform: uppercase;
   }
@@ -326,8 +337,10 @@ h2, h3 {
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #hetinfo {
     width: 100%;
-    height: 42px;
     line-height: 0px;
+    border-bottom: 1px solid gray;
+    width: 49vw;
+    padding-bottom: 3px;
   }
 }
 
@@ -360,7 +373,8 @@ h2, h3 {
   #mini-desc {
     color: #341e25;
     font-weight: normal;
-    font-size: 1.12em;
+    font-size: 1.27em;
+    letter-spacing: 0.09em;
     border: none;
   }
 }
@@ -391,14 +405,14 @@ h2, h3 {
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .intro {
     height: 60px;
-    color: #341e25;
+    color: #9d8b70;
     margin-top: 32px;
-    font-weight: 900;
+    font-weight: normal;
     text-shadow: none;
     font-size: 2em;
     position: relative;
     letter-spacing: 0.02em;
-    font-family: "Amatic SC", cursive;
+    font-family: "Yellowtail";
   }
 }
 
@@ -564,7 +578,7 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #folders-container {
-    width: 93vw;
+    width: 86vw;
     padding: 0;
     height: auto;
     display: -webkit-box;
@@ -607,6 +621,7 @@ h2, h3 {
     height: 61px;
     background-color: none;
     border: none;
+    width: 86vw;
   }
 }
 
@@ -707,16 +722,9 @@ h2, h3 {
   }
 }
 
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  #home-logo {
-    background-size: cover;
-  }
-}
-
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #home-logo {
-    height: 89%;
-    margin-top: 0px;
+    height: 86%;
   }
 }
 
@@ -983,10 +991,17 @@ h2, h3 {
     display: none;
     z-index: 999999;
     position: fixed;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     border-radius: 18px 0 0 0;
+  }
+}
+
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  .mobile-container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -1144,7 +1159,6 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #nav {
-    margin-left: 29px;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;

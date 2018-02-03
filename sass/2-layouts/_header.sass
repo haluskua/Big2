@@ -69,8 +69,8 @@
 			margin-bottom: -22px
 			height: 100%
 		@include tablet
-			height: 63%
-			margin-bottom: 25px
+			height: 74%
+			margin-bottom: -126px
 		@include desktop
 			height: 52%
 
@@ -112,7 +112,7 @@
 	#thin
 		width: 92vw
 		align-self: center
-		line-height: 34px
+		line-height: 29px
 		margin: 0
 		// background-color: rgba(169, 169, 169, 0.23)
 		@include phone-landscape
@@ -123,23 +123,27 @@
 			margin-top: -87px
 
 		#cr-field
-			font-family: $font-stack-roboto
-			color: #757163
-			font-size: 0.6em
-			letter-spacing: 0.03em
+			color: #6b5a66
+			font-size: 0.81em
+			@include tablet
+				font-size: 0.84em
+				letter-spacing: 0.055em
+				font-weight: bold
 		#bulgeword
-			color: #8a7f67
-			font-size: 1em
+			color: #b7ab99
+			font-size: 0.77em
 			text-transform: uppercase
+			letter-spacing: 0.02em
 			font-family: PerpetuaLight
-			font-family: $font-stack-character
+			font-family: $font-stack-roboto
 			@include phone-landscape
 				color: #a4750c
 				font-size: 1em
 			@include tablet
 				color: #341e25
 				font-weight: 600
-				font-size: 0.93em
+				font-size: 1.02em
+				letter-spacing: 0.04em
 				font-family: $font-stack-roboto
 			@include desktop
 				font-size: 0.58em
@@ -152,19 +156,21 @@
 	#hetinfo
 		margin-top: 10px
 		margin-bottom: 128px
-		color: #000000
+		color: #4c3244
 		font-size: 1.1em
 		text-align: center
 		font-weight: normal
-		letter-spacing: 0.06em
+		letter-spacing: 0.05em
 		font-family: $font-stack-roboto
 		text-transform: uppercase
 		@include phone-landscape
 			margin-bottom: 84px
 		@include tablet
 			width: 100%
-			height: 42px
 			line-height: 0px
+			border-bottom: 1px solid gray
+			width: 49vw
+			padding-bottom: 3px
 		@include desktop
 			height: 0px
 			border: none
@@ -182,7 +188,8 @@
 		@include tablet
 			color: #341e25
 			font-weight: normal
-			font-size: 1.12em
+			font-size: 1.27em
+			letter-spacing: 0.09em
 			border: none
 		@include desktop
 			font-size: 1em
@@ -203,14 +210,14 @@
 		font-family: $font-stack-yellow
 		@include tablet
 			height: 60px
-			color: #341e25
+			color: #9d8b70
 			margin-top: 32px
-			font-weight: 900
+			font-weight: normal
 			text-shadow: none
 			font-size: 2em
 			position: relative
 			letter-spacing: 0.02em
-			font-family: $font-stack-thin
+			font-family: $font-stack-yellow
 		@include desktop
 			font-size: 1.72em
 			margin-top: 80px
@@ -307,7 +314,7 @@
 		background-repeat: no-repeat
 		background-color: rgba(160, 168, 175, 0.42)
 		@include tablet
-			width: 93vw
+			width: 86vw
 			padding: 0
 			height: auto
 			display: flex
@@ -335,6 +342,7 @@
 			height: 61px
 			background-color: none
 			border: none
+			width: 86vw
 		@include desktop
 			z-index: 999999
 
@@ -397,12 +405,8 @@
 			width: 39%
 			align-self: center
 			background-size: cover
-		@include desktop
-			background-size: cover
-
 		@include tablet
-			height: 89%
-			margin-top: 0px
+			height: 86%
 		@include desktop
 			height: 90%
 			background-size: contain
@@ -582,8 +586,11 @@
 		display: none
 		z-index: 999999
 		position: fixed
-		justify-content: space-between
+		justify-content: space-around
 		border-radius: 18px 0 0 0
+
+		@include phone-landscape
+			justify-content: flex-start
 		@include tablet
 			height: 76px
 			top: 0
@@ -666,7 +673,7 @@
 
 	#nav
 		@include tablet
-			margin-left: 29px
+			// margin-left: 29px
 			width: 100%
 			display: flex
 			justify-content: center
