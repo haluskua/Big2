@@ -314,7 +314,7 @@ h2, h3 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   #thin #bulgeword {
     color: #26061e;
-    font-size: 0.75em;
+    font-size: 0.8em;
     text-transform: uppercase;
     font-family: "Roboto";
   }
@@ -419,6 +419,8 @@ h2, h3 {
     letter-spacing: 0.05em;
     line-height: 24px;
     border: none;
+    border-bottom: 1px dotted #9d8b70;
+    padding-bottom: 4px;
   }
 }
 
@@ -451,9 +453,9 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .intro {
-    font-size: 1.72em;
+    font-size: 1.4em;
     margin-top: 80px;
-    letter-spacing: 0.52em;
+    letter-spacing: 0.2em;
   }
 }
 
@@ -551,10 +553,12 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #logo-space {
-    margin: auto;
+    margin: 0;
     width: 11vw;
-    height: 50px;
+    height: 51px;
     background-color: #cac1b4;
+    left: 0;
+    top: 0;
   }
 }
 
@@ -1408,6 +1412,7 @@ h2, h3 {
     padding: 18px;
     text-align: justify;
     line-height: 1.56em;
+    font-size: 1em;
   }
 }
 
@@ -1426,7 +1431,7 @@ h2, h3 {
     color: #e49116;
     font-weight: bolder;
     line-height: 44px;
-    border-bottom: 0.5px dotted;
+    border-bottom: 1px dotted rgba(187, 166, 54, 0.37);
     line-height: 10px;
   }
   #wagai .main-paragraph #pen-off {
@@ -2343,6 +2348,7 @@ h2, h3 {
     font-size: 1.44em;
     margin-top: 32px;
     margin-bottom: -2px;
+    border-bottom: 1px dotted rgba(187, 166, 54, 0.37);
   }
   .small_intro p {
     color: #443939;
@@ -2351,6 +2357,7 @@ h2, h3 {
     font-family: sans-serif;
     line-height: 1.56em;
     letter-spacing: 0.03em;
+    font-size: 1em;
   }
 }
 

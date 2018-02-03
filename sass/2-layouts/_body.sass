@@ -94,6 +94,9 @@
       padding: 18px
       text-align: justify
       line-height: 1.56em
+      font-size: 1em
+      @include phone-landscape
+
       @include tablet
         font-size: 1.04em
         letter-spacing: normal
@@ -106,7 +109,7 @@
         color: $gold
         font-weight: bolder
         line-height: 44px
-        border-bottom: 0.5px dotted
+        border-bottom: 1px dotted rgba(187, 166, 54, 0.37)
         line-height: 10px
 
       #pen-off
@@ -784,6 +787,7 @@
       font-size: 1.44em
       margin-top: 32px
       margin-bottom: -2px
+      border-bottom: 1px dotted rgba(187, 166, 54, 0.37)
     p
       color: #443939
       width: 100%
@@ -791,3 +795,5 @@
       font-family: sans-serif
       line-height: 1.56em
       letter-spacing: 0.03em
+      font-size: 1em
+      @include phone-landscape
