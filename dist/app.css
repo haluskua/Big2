@@ -371,9 +371,6 @@ h2, h3 {
   #hetinfo {
     width: 100%;
     line-height: 0px;
-    border-bottom: 1px solid gray;
-    width: 49vw;
-    padding-bottom: 3px;
   }
 }
 
@@ -544,12 +541,13 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #logo-space {
-    top: 4px;
+    top: 3px;
     left: -14px;
     margin: 0;
     height: 52px;
     width: 11vw;
     background-position: top;
+    background-color: #cac1b4;
   }
 }
 
@@ -559,6 +557,7 @@ h2, h3 {
     width: 11vw;
     height: 51px;
     background-color: #cac1b4;
+    background-position: center;
     left: 0;
     top: 0;
   }
@@ -683,7 +682,7 @@ h2, h3 {
     -ms-flex-item-align: center;
         align-self: center;
     padding: 3px;
-    background-color: rgba(155, 149, 130, 0.329412);
+    background-color: rgba(155, 149, 130, 0.329);
     margin-bottom: 11px;
     margin-top: 9px;
   }
@@ -710,6 +709,8 @@ h2, h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    z-index: 999;
+    background-color: #cac1b4;
   }
 }
 
@@ -1395,12 +1396,11 @@ h2, h3 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #wagai {
     height: 100%;
-    width: 50vw;
+    width: 67vw;
     margin: auto;
     overflow: hidden;
     visibility: visible;
     background-color: rgba(255, 254, 242, 0.26);
-    border: 1px solid #e5dcbc;
   }
 }
 
@@ -1911,16 +1911,16 @@ h2, h3 {
     position: fixed;
     width: auto;
     top: 47px;
-    left: 117px;
+    left: 190px;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   div.panel {
-    width: 27%;
+    width: 28%;
     position: fixed;
     top: 40px;
-    left: 231px;
+    left: 307.5px;
   }
 }
 
@@ -1957,7 +1957,7 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #gd-folders {
-    width: 175px;
+    width: 180px;
     background-color: bisque;
   }
 }

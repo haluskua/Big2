@@ -162,7 +162,6 @@
 				letter-spacing: 0.09em
 
     //0272293746 talinty
-
 	#hetinfo
 		margin-top: 10px
 		margin-bottom: 128px
@@ -179,9 +178,6 @@
 		@include tablet
 			width: 100%
 			line-height: 0px
-			border-bottom: 1px solid gray
-			width: 49vw
-			padding-bottom: 3px
 		@include desktop
 			height: 0px
 			border: none
@@ -289,17 +285,19 @@
 			bottom: 0
 
 		@include tablet
-			top: 4px
+			top: 3px
 			left: -14px
 			margin: 0
 			height: 52px
 			width: 11vw
 			background-position: top
+			background-color: #cac1b4
 		@include desktop
 			margin: 0
 			width: 11vw
 			height: 51px
 			background-color: #cac1b4
+			background-position: center
 			left: 0
 			top: 0
 
@@ -372,7 +370,7 @@
 		display: none
 		align-self: center
 		padding: 3px
-		background-color: rgba(155, 149, 130, 0.32941176470588235)
+		background-color: rgba(155, 149, 130, 0.329)
 		margin-bottom: 11px
 		margin-top: 9px
 		&:focus
@@ -386,14 +384,12 @@
 			display: flex
 			border: none
 			justify-content: space-between
+			z-index: 999
+			background-color: #cac1b4
+
 		@include desktop
 			display: flex
 			border: none
-
-	// .fieldbox
-	// 	a
-	// 		width: 96%
-	// 		border: 1px solid black
 
 	.menu2
 		border-radius: 0 10px 0 0
@@ -402,16 +398,13 @@
 		border: 0
 		height: 35px
 		border-radius: 0 0 8px 8px
-		// border-bottom: 2px solid #ebcf87
+
 		a
 			height: 100%
 			line-height: 35px
 			width: 97%
-			// border-radius: 0 0 8px 8px
-			// background-color: rgba(46, 54, 67, 0.9098039215686274)
 			font-size: 0.98em
 		@include desktop
-			// border-radius: 0
 
 	#home-logo
 		margin-top: 8px

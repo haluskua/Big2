@@ -15,31 +15,31 @@ $(document).ready(function(){
         });
 
         /* Repetitive code on ellipsis effec,, need to be changed to dray*/
-        $(".gdt").on("click", function() {
-          $(".scgdt").css("display", "flex");
-        });
-        $(".wdt").on("click", function() {
-          $(".scwdt").css("display", "flex");
-        });
-        $(".f").on("click", function() {
-          $(".scft").css("display", "flex");
-        });
-        $(".m").on("click", function() {
-          $(".scmt").css("display", "flex");
-        });
-        $(".open-caption").on("click", function() {
-          $("#skills-descOpen").css("display", "none");
-          $("#skills-descClose").css("display", "flex");
-          $(".scpmt").css("display", "flex");
-          $(".close-caption").css("z-index", "999");
-        });
-
-        $(".close-caption").on("click", function(){
-          $("#skills-descOpen").css("display", "flex");
-          $("#skills-descClose").css("display", "none");
-          $(".scpmt").css("display", "none");
-          $(".open-caption").css("z-index", "999");
-        });
+        // $(".gdt").on("click", function() {
+        //   $(".scgdt").css("display", "flex");
+        // });
+        // $(".wdt").on("click", function() {
+        //   $(".scwdt").css("display", "flex");
+        // });
+        // $(".f").on("click", function() {
+        //   $(".scft").css("display", "flex");
+        // });
+        // $(".m").on("click", function() {
+        //   $(".scmt").css("display", "flex");
+        // });
+        // $(".open-caption").on("click", function() {
+        //   $("#skills-descOpen").css("display", "none");
+        //   $("#skills-descClose").css("display", "flex");
+        //   $(".scpmt").css("display", "flex");
+        //   $(".close-caption").css("z-index", "999");
+        // });
+        //
+        // $(".close-caption").on("click", function(){
+        //   $("#skills-descOpen").css("display", "flex");
+        //   $("#skills-descClose").css("display", "none");
+        //   $(".scpmt").css("display", "none");
+        //   $(".open-caption").css("z-index", "999");
+        // });
 
         // Undisplaying the mobie menu-bar
         jQuery(window).resize(function () {
@@ -51,6 +51,7 @@ $(document).ready(function(){
                   // alert('john');
                     jQuery(".haus").css("display", "none");
                 }
+
         });
 
     }
@@ -90,50 +91,9 @@ $(document).ready(function(){
                   }, 800);
                   e.preventDefault();
                 });
+
         }
 
-          // code for lightbox
-          // $(".img").click(function(){
-          //   $src=$(this).attr("src");
-          //     if(!$("#light-box").length > 0) {
-          //       //creates a new div and includes lightbox properties
-          //       $("#mygrafix").append("<div id='light-box'><span class='material-icons'>close</span><img src=''></div>");
-          //       $("#light-box").show();
-          //       $("#light-box img").attr("src",$src);
-          //
-          //       $("#light-box").append("<div id='next'<span class ='next'>-></span></div>");
-          //       $("#light-box").append("<div id='prev'<span class ='prev'><-</span></div>");
-          //
-          //     }else{
-          //       $("#light-box").show();
-          //       $("#light-box img").attr("src",$src);
-          //     }
-          //   });
-          //
-          //   $("#mygrafix").on("click", "#light-box span", function() {
-          //     $("#light-box").hide();
-          //   });
-          //
-          // // jquery image slider
-          //   $('.next').on('click', function(){
-          //     var currentImg = $('.active');
-          //     var nextImg = currentImg.next();
-          //
-          //     if(nextImg.length){
-          //       currentImg.removeClass('active').css('z-index', -10);
-          //       nextImg.addClass('active').css('z-index', 10);
-          //     }
-          //   });
-          //
-          //   $('.prev').on('click', function(){
-          //     var currentImg = $('.active');
-          //     var prevImg = currentImg.prev();
-          //
-          //     if(prevImg.length){
-          //       currentImg.removeClass('active').css('z-index', -10);
-          //       prevImg.addClass('active').css('z-index', 10);
-          //     }
-          //   });
 
         // Code for Accordion
 
@@ -151,5 +111,18 @@ $(document).ready(function(){
                 }
             }
         }
+
+        if (jQuery(window).width() >= 482) {
+          $(".nav-folders").on("click", function(){
+            $(".panel").hide(300);
+          });
+
+
+
+        }
+
+
+
+
 
 });
