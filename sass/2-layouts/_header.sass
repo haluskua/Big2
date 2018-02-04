@@ -286,14 +286,15 @@
 		@include phone-landscape
 			// left: -17px
 			right: -16px
-			bottom: 10px
+			bottom: 0
 
 		@include tablet
-			top: 7px
-			left: -34px
+			top: 4px
+			left: -14px
 			margin: 0
-			height: 53px
-			// background-color: #cac1b4
+			height: 52px
+			width: 11vw
+			background-position: top
 		@include desktop
 			margin: 0
 			width: 11vw
@@ -311,7 +312,7 @@
 		padding-top: 60px
 		.ok
 			font-size: 0.82em
-			color: #341e25
+			color: rgba(52, 30, 37, 0)
 			font-family: $font-stack-pro
 			letter-spacing: 0.06em
 
@@ -406,9 +407,11 @@
 			height: 100%
 			line-height: 35px
 			width: 97%
-			border-radius: 0 0 8px 8px
+			// border-radius: 0 0 8px 8px
 			// background-color: rgba(46, 54, 67, 0.9098039215686274)
 			font-size: 0.98em
+		@include desktop
+			// border-radius: 0
 
 	#home-logo
 		margin-top: 8px
@@ -494,10 +497,10 @@
 				background-color: none
 
 	.fields
-		font-family: $font-stack-character
+		font-family: $font-stack-roboto
 		font-weight: normal
-		font-size: 1.01em
-		letter-spacing: 0.09em
+		font-size: 1em
+		letter-spacing: 0.07em
 		color: #3d2707
 		width: 100%
 		&:focus

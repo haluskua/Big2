@@ -422,7 +422,8 @@
 
     @include desktop
       margin-top: -8px
-      height: 35px
+      height: 35.5px
+      border: 1.5px solid #c8c7c3
 
   button.accordion.active, button.accordion:hover
     transition: 0.5s ease
@@ -436,7 +437,8 @@
     margin-bottom: -2px
 
     @include tablet
-      border: none
+      border: 1px solid rgba(155, 149, 130, 0.329412)
+      height: 36px
     @include desktop
       margin-right: 0
 
@@ -455,7 +457,13 @@
         position: fixed
         width: auto
         top: 47px
-        left: 130px
+        left: 117px
+
+      @include desktop
+        width: 27%
+        position: fixed
+        top: 40px
+        left: 231px
       .skills-caption
         display: none
         justify-content: center
@@ -479,8 +487,10 @@
     @include phone-landscape
 
     @include tablet
-      width: 163px
+      width: 175px
       background-color: bisque
+    @include desktop
+      background-color: #f0c997
 
     li
       list-style: none

@@ -538,16 +538,18 @@ h2, h3 {
 @media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
   #logo-space {
     right: -16px;
-    bottom: 10px;
+    bottom: 0;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #logo-space {
-    top: 7px;
-    left: -34px;
+    top: 4px;
+    left: -14px;
     margin: 0;
-    height: 53px;
+    height: 52px;
+    width: 11vw;
+    background-position: top;
   }
 }
 
@@ -582,7 +584,7 @@ h2, h3 {
   }
   .logo-desc .ok {
     font-size: 0.82em;
-    color: #341e25;
+    color: rgba(52, 30, 37, 0);
     font-family: "Source";
     letter-spacing: 0.06em;
   }
@@ -733,7 +735,6 @@ h2, h3 {
     height: 100%;
     line-height: 35px;
     width: 97%;
-    border-radius: 0 0 8px 8px;
     font-size: 0.98em;
   }
   #home-logo {
@@ -858,10 +859,10 @@ h2, h3 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .fields {
-    font-family: "Cabin Sketch", Garamond;
+    font-family: "Roboto";
     font-weight: normal;
-    font-size: 1.01em;
-    letter-spacing: 0.09em;
+    font-size: 1em;
+    letter-spacing: 0.07em;
     color: #3d2707;
     width: 100%;
   }
@@ -1853,7 +1854,8 @@ h2, h3 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   button.accordion {
     margin-top: -8px;
-    height: 35px;
+    height: 35.5px;
+    border: 1.5px solid #c8c7c3;
   }
 }
 
@@ -1874,7 +1876,8 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   button.accordion.active, button.accordion:hover {
-    border: none;
+    border: 1px solid rgba(155, 149, 130, 0.329412);
+    height: 36px;
   }
 }
 
@@ -1908,7 +1911,16 @@ h2, h3 {
     position: fixed;
     width: auto;
     top: 47px;
-    left: 130px;
+    left: 117px;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  div.panel {
+    width: 27%;
+    position: fixed;
+    top: 40px;
+    left: 231px;
   }
 }
 
@@ -1945,8 +1957,14 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #gd-folders {
-    width: 163px;
+    width: 175px;
     background-color: bisque;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #gd-folders {
+    background-color: #f0c997;
   }
 }
 
