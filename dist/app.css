@@ -1911,16 +1911,16 @@ h2, h3 {
     position: fixed;
     width: auto;
     top: 47px;
-    left: 190px;
+    left: 1143px;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   div.panel {
-    width: 28%;
+    width: 27%;
     position: fixed;
     top: 40px;
-    left: 307.5px;
+    left: 231.5px;
   }
 }
 
@@ -1957,7 +1957,7 @@ h2, h3 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #gd-folders {
-    width: 180px;
+    width: 200px;
     background-color: bisque;
   }
 }
@@ -1986,7 +1986,7 @@ h2, h3 {
     width: 92%;
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid slategray;
   }
   #gd-folders #nav-folders:nth-child(4) {
     margin-bottom: 50px;
