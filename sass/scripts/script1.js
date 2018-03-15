@@ -94,7 +94,6 @@ $(document).ready(function(){
 
         }
 
-
         // Code for Accordion
 
         var acc = document.getElementsByClassName("accordion");
@@ -117,12 +116,7 @@ $(document).ready(function(){
             $(".panel").hide(300);
           });
 
-
-
         }
-
-
-
 
 
 });

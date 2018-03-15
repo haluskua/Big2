@@ -13,13 +13,19 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
 @import url("https://fonts.googleapis.com/css?family=Rajdhani");
 @import url("https://fonts.googleapis.com/css?family=Source+Serif+Pro");
+@import url("https://fonts.googleapis.com/css?family=Antic");
 /* BASE STYLES */
 h1 {
-  font-family: Georgia, Times, serif;
+  font-family: "Playfair Display";
+  text-align: justify;
+  color: #26061e;
 }
 
 h2, h3 {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Antic";
+  text-align: center;
+  font-weight: normal;
+  color: #111111;
 }
 
 /* LAYOUT */
@@ -125,8 +131,7 @@ h2, h3 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #Colsplit-box1 {
-    margin-bottom: 52px;
-    height: 91%;
+    height: 84%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -269,7 +274,7 @@ h2, h3 {
     width: 92vw;
     -ms-flex-item-align: center;
         align-self: center;
-    line-height: 29px;
+    line-height: 16px;
     margin: 0;
   }
 }
@@ -290,10 +295,12 @@ h2, h3 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #thin #cr-field {
-    color: #9d8b70;
-    font-size: 0.8em;
-    letter-spacing: 0.08em;
-    font-style: italic;
+    color: #0c0801;
+    font-size: 0.41em;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+    text-transform: normal;
+    font-family: "Antic";
   }
 }
 
@@ -314,9 +321,9 @@ h2, h3 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   #thin #bulgeword {
     color: #26061e;
-    font-size: 0.8em;
-    text-transform: uppercase;
-    font-family: "Roboto";
+    font-size: 1em;
+    font-weight: normal;
+    font-family: "Antic";
   }
 }
 
@@ -348,15 +355,12 @@ h2, h3 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #hetinfo {
-    margin-top: 10px;
-    margin-bottom: 128px;
-    color: #4c3244;
+    margin-bottom: 90px;
+    color: #524f48;
     font-size: 1.1em;
     text-align: center;
     font-weight: normal;
-    letter-spacing: 0.05em;
-    font-family: "Roboto";
-    text-transform: uppercase;
+    font-family: "Open Sans";
   }
 }
 
@@ -385,10 +389,7 @@ h2, h3 {
   #mini-desc {
     width: 100%;
     height: 100%;
-    padding-bottom: 4px;
-    z-index: 99999;
-    line-height: 27px;
-    border-bottom: 0.6px dotted #6d6c51;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -426,11 +427,10 @@ h2, h3 {
     margin: auto;
     margin-top: -4px;
     color: #9d8b70;
-    font-size: 1.18em;
+    font-size: .88em;
     position: relative;
     text-align: justify;
-    letter-spacing: 0.1em;
-    font-family: "Yellowtail";
+    font-family: "Antic";
   }
 }
 
@@ -682,7 +682,6 @@ h2, h3 {
     -ms-flex-item-align: center;
         align-self: center;
     padding: 3px;
-    background-color: rgba(155, 149, 130, 0.329);
     margin-bottom: 11px;
     margin-top: 9px;
   }
@@ -695,6 +694,7 @@ h2, h3 {
 @media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
   .nav-folders {
     width: 19%;
+    margin-top: 4px;
   }
 }
 
@@ -711,6 +711,7 @@ h2, h3 {
             justify-content: space-between;
     z-index: 999;
     background-color: #cac1b4;
+    margin-top: 0px;
   }
 }
 
@@ -739,8 +740,7 @@ h2, h3 {
     font-size: 0.98em;
   }
   #home-logo {
-    margin-top: 8px;
-    height: 88%;
+    height: 42%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1280,10 +1280,6 @@ h2, h3 {
     max-width: 100%;
     height: 100%;
     position: relative;
-    background-image: url("../dist/imgs/polygons.png");
-    background-position: top;
-    background-size: cover;
-    background-repeat: repeat-y;
     border-top: 1px solid #d6a870;
   }
 }
@@ -1408,12 +1404,11 @@ h2, h3 {
   #wagai .main-paragraph {
     margin: auto;
     font-size: 0.92em;
-    font-family: sans-serif;
+    font-family: "Open Sans";
     color: #443939;
-    padding: 18px;
+    padding: 8px;
     text-align: justify;
     line-height: 1.56em;
-    font-size: 1em;
   }
 }
 
@@ -1425,17 +1420,24 @@ h2, h3 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  #wagai .main-paragraph span {
-    font-size: 1.66em;
-    font-family: "Rajdhani", sans-serif;
+  #wagai .opening_statement {
+    font-size: 0.92em;
+    font-family: "Open Sans";
+    color: #443939;
+    padding: 9px;
+    line-height: 1.65em;
+    margin-top: 18px;
+  }
+  #wagai .opening_statement span {
+    font-size: 1.6em;
+    font-family: "Antic";
     letter-spacing: 0.02em;
-    color: #e49116;
+    color: #9d8b70;
     font-weight: bolder;
-    line-height: 44px;
     border-bottom: 1px dotted rgba(187, 166, 54, 0.37);
     line-height: 10px;
   }
-  #wagai .main-paragraph #pen-off {
+  #wagai .opening_statement #pen-off {
     font-size: 1.52em;
     font-family: "Dancing Script";
     font-style: italic;
@@ -1443,18 +1445,34 @@ h2, h3 {
     font-weight: lighter;
     padding-bottom: 10px;
   }
-  #wagai .main-paragraph .portrait {
+  #wagai .opening_statement .portrait {
     max-width: 130px;
     border: 1px solid gray;
   }
-  #wagai #skills-set-imgs {
+  .opening_line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    color: #e7daea;
+    font-size: 0.8em;
+    font-family: "Open Sans";
+    position: relative;
+    margin-top: -68px;
+  }
+  .opening_line #skills-set-imgs {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  #wagai #skills-set-imgs #flying-skills {
+  .opening_line #skills-set-imgs #flying-skills {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1464,7 +1482,7 @@ h2, h3 {
             flex-direction: column;
     position: relative;
   }
-  #wagai #skills-set-imgs #flying-skills #pillar {
+  .opening_line #skills-set-imgs #flying-skills #pillar {
     display: none;
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -1505,10 +1523,11 @@ h2, h3 {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     text-decoration: none;
+    padding-left: 18px;
   }
   #content-holder {
     width: 100vw;
@@ -1827,7 +1846,7 @@ h2, h3 {
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
     letter-spacing: 0.28em;
-    background-color: rgba(255, 196, 131, 0.56);
+    background-color: whitesmoke;
     color: #09070b;
     margin-top: 6px;
     margin-bottom: 15px;
@@ -1839,20 +1858,24 @@ h2, h3 {
 
 @media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
   button.accordion {
-    width: 44%;
+    width: auto;
     margin-top: 13px;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   button.accordion {
+    width: auto;
     height: 36px;
     margin-top: 12px;
+    background-color: #fffef2;
+    border: 1.5px solid #c8c7c3;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   button.accordion {
+    width: auto;
     margin-top: -8px;
     height: 35.5px;
     border: 1.5px solid #c8c7c3;
@@ -1910,14 +1933,14 @@ h2, h3 {
   div.panel {
     position: fixed;
     width: auto;
-    top: 47px;
-    left: 1143px;
+    top: 4.7%;
+    left: 18%;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   div.panel {
-    width: 27%;
+    width: 21%;
     position: fixed;
     top: 40px;
     left: 231.5px;
@@ -2258,11 +2281,10 @@ h2, h3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    color: #957315;
+    color: #7b735d;
     font-weight: bold;
-    font-size: 1.5em;
-    letter-spacing: 0.22em;
-    line-height: 40px;
+    font-size: 1.4em;
+    line-height: 42px;
   }
   .video {
     position: relative;
@@ -2377,6 +2399,67 @@ h2, h3 {
     letter-spacing: 0.03em;
     font-size: 1em;
   }
+  .blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .blocks section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin: 10px 0 0px 0;
+  }
+  .blocks section img {
+    width: 87%;
+    height: 33%;
+    border-radius: 9px;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .blocks section p {
+    font-size: 0.92em;
+    font-family: "Open Sans";
+    text-align: center;
+    padding: 10px;
+    line-height: 1.65em;
+    color: #443939;
+    margin-bottom: 50px;
+  }
+  .blocks section button {
+    width: 101px;
+    height: 83px;
+    background-color: green;
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .blocks section button a {
+    font-family: "Antic";
+    color: white;
+    text-align: justify;
+    font-size: 1.1em;
+    padding: 0;
+    width: auto;
+  }
 }
 
 /* mobile view */
@@ -2409,9 +2492,6 @@ h2, h3 {
     background-color: rgba(229, 172, 97, 0.11);
     color: #65635e;
     border-bottom: 1px solid lightgray;
-  }
-  .webdev-subtitle {
-    color: #463b20;
   }
   button.webdev.active, button.webdev:hover {
     color: white;

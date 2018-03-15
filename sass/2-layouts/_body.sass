@@ -1,5 +1,6 @@
 
 @include phone
+
   body
     height: 100%
     width: 100%
@@ -21,10 +22,10 @@
         max-width: 100%
         height: 100%
         position: relative
-        background-image: url('../dist/imgs/polygons.png')
-        background-position: top
-        background-size: cover
-        background-repeat: repeat-y
+        // background-image: url('../dist/imgs/polygons.png')
+        // background-position: top
+        // background-size: cover
+        // background-repeat: repeat-y
         border-top: 1px solid #d6a870
         @include desktop
           border: none
@@ -89,26 +90,32 @@
     .main-paragraph
       margin: auto
       font-size: 0.92em
-      font-family: sans-serif
+      font-family: $font-stack-open-sans
       color: #443939
-      padding: 18px
+      padding: 8px
       text-align: justify
       line-height: 1.56em
-      font-size: 1em
       @include phone-landscape
 
       @include tablet
         font-size: 1.04em
         letter-spacing: normal
       @include desktop
+    .opening_statement
+      font-size: 0.92em
+      font-family: $font-stack-open-sans
+      color: #443939
+      padding: 9px
+      line-height: 1.65em
+      margin-top: 18px
 
       span
-        font-size: 1.66em
-        font-family: $font-stack-rajdhani
+        font-size: 1.6em
+        font-family: $font-stack-antic
         letter-spacing: 0.02em
-        color: $gold
+        color: #9d8b70
         font-weight: bolder
-        line-height: 44px
+
         border-bottom: 1px dotted rgba(187, 166, 54, 0.37)
         line-height: 10px
 
@@ -123,7 +130,18 @@
       .portrait
         max-width: 130px
         border: 1px solid gray
-
+  .opening_line
+    display: flex
+    justify-content: center
+    text-align: center
+    width: 100%
+    height: auto
+    color: #e7daea
+    font-size: 0.8em
+    font-family: $font-stack-open-sans-condensed
+    position: relative
+    margin-top: -68px
+    // position: absolute
     #skills-set-imgs
       display: flex
       flex-wrap: wrap
@@ -162,8 +180,9 @@
     a
       display: flex
       width: 100%
-      justify-content: center
+      justify-content: flex-start
       text-decoration: none
+      padding-left: 18px
   #content-holder
     width: 100vw
     display: flex
@@ -395,7 +414,6 @@
     justify-content: center
 
   button.accordion
-    // font-family: $font-stack-pro
     cursor: pointer
     height: 37px
     font-size: 0.9em
@@ -406,7 +424,7 @@
     outline: none
     transition: 0.5s ease
     letter-spacing: 0.28em
-    background-color: rgba(255, 196, 131, 0.56)
+    background-color: rgb(245, 245, 245)
     color: #09070b
     margin-top: 6px
     margin-bottom: 15px
@@ -414,13 +432,17 @@
     border-left: 2px solid #ebcf87
     margin-right: 0
     @include phone-landscape
-      width: 44%
+      width: auto
       margin-top: 13px
     @include tablet
+      width: auto
       height: 36px
       margin-top: 12px
+      background-color: #fffef2
+      border: 1.5px solid #c8c7c3
 
     @include desktop
+      width: auto
       margin-top: -8px
       height: 35.5px
       border: 1.5px solid #c8c7c3
@@ -442,6 +464,7 @@
     @include desktop
       margin-right: 0
 
+
   div.panel
       background-color: rgba(255, 196, 131, 0.56)
       padding: 0 8px
@@ -456,11 +479,11 @@
       @include tablet
         position: fixed
         width: auto
-        top: 47px
-        left: 1143px
+        top: 4.7%
+        left: 18%
 
       @include desktop
-        width: 27%
+        width: 21%
         position: fixed
         top: 40px
         left: 231.5px
@@ -723,11 +746,10 @@
   .rgdp
     display: flex
     justify-content: center
-    color: #957315
+    color: #7b735d
     font-weight: bold
-    font-size: 1.5em
-    letter-spacing: 0.22em
-    line-height: 40px
+    font-size: 1.4em
+    line-height: 42px
 
   .video
     position: relative
@@ -808,3 +830,53 @@
       letter-spacing: 0.03em
       font-size: 1em
       @include phone-landscape
+
+
+
+
+
+
+  .blocks
+    display: flex
+    height: 100%
+    width: 100%
+    flex-wrap: wrap
+    justify-content: center
+    // background-color: green
+    section
+      display: flex
+      // flex-wrap: wrap
+      justify-content: center
+      width: 100%
+      height: auto
+      margin: auto
+      margin: 10px 0 0px 0
+      img
+        width: 87%
+        height: 33%
+        border-radius: 9px
+        align-self: center
+      p
+        font-size: 0.92em
+        font-family: $font-stack-open-sans
+        text-align: center
+        padding: 10px
+        line-height: 1.65em
+        color: #443939
+        margin-bottom: 50px
+      button
+        width: 101px
+        height: 83px
+        background-color: green
+        margin: auto
+        justify-content: center
+        border-radius: 10px
+        display: flex
+
+        a
+          font-family: $font-stack-antic
+          color: white
+          text-align: justify
+          font-size: 1.1em
+          padding: 0
+          width: auto
