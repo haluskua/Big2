@@ -16,9 +16,12 @@
 @import url("https://fonts.googleapis.com/css?family=Antic");
 /* BASE STYLES */
 h1 {
-  font-family: "Playfair Display";
+  font-family: "Antic";
   text-align: justify;
   color: #26061e;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #060407;
 }
 
 h2, h3 {
@@ -26,6 +29,15 @@ h2, h3 {
   text-align: center;
   font-weight: normal;
   color: #111111;
+}
+
+h4, h6 {
+  font-family: "Roboto";
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #060407;
+  font-weight: normal;
+  letter-spacing: 0.03em;
 }
 
 /* LAYOUT */
@@ -87,7 +99,7 @@ h2, h3 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .Colsplit-between {
     width: 100%;
-    height: 86%;
+    height: 76%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -201,7 +213,7 @@ h2, h3 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .hetpage-li {
-    width: 67%;
+    width: 100%;
   }
 }
 
@@ -271,10 +283,12 @@ h2, h3 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #thin {
-    width: 92vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-item-align: center;
         align-self: center;
-    line-height: 16px;
+    line-height: 9px;
     margin: 0;
   }
 }
@@ -296,7 +310,7 @@ h2, h3 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   #thin #cr-field {
     color: #0c0801;
-    font-size: 0.41em;
+    font-size: 0.35em;
     font-weight: normal;
     letter-spacing: 0.02em;
     text-transform: normal;
@@ -321,8 +335,10 @@ h2, h3 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   #thin #bulgeword {
     color: #26061e;
-    font-size: 1em;
-    font-weight: normal;
+    font-size: 1.05em;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.02em;
     font-family: "Antic";
   }
 }
@@ -355,12 +371,12 @@ h2, h3 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #hetinfo {
-    margin-bottom: 90px;
+    margin-bottom: 65px;
     color: #524f48;
-    font-size: 1.1em;
+    font-size: 1.71em;
     text-align: center;
-    font-weight: normal;
-    font-family: "Open Sans";
+    font-weight: bold;
+    font-family: "Amatic SC", cursive;
   }
 }
 
@@ -390,6 +406,7 @@ h2, h3 {
     width: 100%;
     height: 100%;
     letter-spacing: 0.02em;
+    font-family: "Amatic SC", cursive;
   }
 }
 
@@ -1280,7 +1297,7 @@ h2, h3 {
     max-width: 100%;
     height: 100%;
     position: relative;
-    border-top: 1px solid #d6a870;
+    overflow: hidden;
   }
 }
 
@@ -1425,6 +1442,7 @@ h2, h3 {
     font-family: "Open Sans";
     color: #443939;
     padding: 9px;
+    padding-left: 12px;
     line-height: 1.65em;
     margin-top: 18px;
   }
@@ -1457,7 +1475,7 @@ h2, h3 {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
-    width: 100%;
+    width: 90%;
     height: auto;
     color: #e7daea;
     font-size: 0.8em;
@@ -1527,7 +1545,6 @@ h2, h3 {
         -ms-flex-pack: start;
             justify-content: flex-start;
     text-decoration: none;
-    padding-left: 18px;
   }
   #content-holder {
     width: 100vw;
@@ -2058,6 +2075,7 @@ h2, h3 {
     letter-spacing: 0.078em;
     font-style: italic;
     border-bottom: 1px dotted #a8a6a4;
+    padding-left: 18px;
   }
   #folder-title {
     width: 100%;
@@ -2281,7 +2299,7 @@ h2, h3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    color: #7b735d;
+    color: #26061e;
     font-weight: bold;
     font-size: 1.4em;
     line-height: 42px;
@@ -2421,11 +2439,67 @@ h2, h3 {
     width: 100%;
     height: auto;
     margin: auto;
-    margin: 10px 0 0px 0;
+    margin: 0;
+  }
+  .blocks section div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: url("../dist/imgs/1920.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+  }
+  .blocks section #website_background2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: url("../dist/imgs/wed184.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+  }
+  .blocks section #website_background2 img {
+    width: 100%;
+    height: auto;
+  }
+  .blocks section #website_background2 h4 {
+    color: #111111;
+  }
+  .blocks section h4 {
+    -ms-flex-item-align: center;
+        align-self: center;
+    font-size: 1.44em;
+  }
+  .blocks section a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .blocks section img {
-    width: 87%;
-    height: 33%;
+    width: 54%;
+    height: auto;
     border-radius: 9px;
     -ms-flex-item-align: center;
         align-self: center;
@@ -2441,24 +2515,30 @@ h2, h3 {
   }
   .blocks section button {
     width: 101px;
-    height: 83px;
-    background-color: green;
+    height: auto;
+    background-color: #f7f5f2;
     margin: auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border-radius: 10px;
+    border-radius: 6px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 20px;
   }
   .blocks section button a {
     font-family: "Antic";
-    color: white;
+    color: #26061e;
     text-align: justify;
     font-size: 1.1em;
     padding: 0;
-    width: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 100%;
+    line-height: 2.5em;
   }
 }
 
