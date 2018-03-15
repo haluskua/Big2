@@ -14,6 +14,12 @@ $(document).ready(function(){
           $(".exit-menu").show(700);
         });
 
+        //readmore_text onclick function
+        $(".container_text").click(function(){
+          $("#open_read").hide(300);
+        });
+
+
         /* Repetitive code on ellipsis effec,, need to be changed to dray*/
         // $(".gdt").on("click", function() {
         //   $(".scgdt").css("display", "flex");
@@ -27,19 +33,20 @@ $(document).ready(function(){
         // $(".m").on("click", function() {
         //   $(".scmt").css("display", "flex");
         // });
-        // $(".open-caption").on("click", function() {
-        //   $("#skills-descOpen").css("display", "none");
-        //   $("#skills-descClose").css("display", "flex");
-        //   $(".scpmt").css("display", "flex");
-        //   $(".close-caption").css("z-index", "999");
-        // });
-        //
-        // $(".close-caption").on("click", function(){
-        //   $("#skills-descOpen").css("display", "flex");
-        //   $("#skills-descClose").css("display", "none");
-        //   $(".scpmt").css("display", "none");
-        //   $(".open-caption").css("z-index", "999");
-        // });
+        $(".open-caption").on("click", function() {
+          $("#skills-descOpen").css("display", "none");
+          $("#skills-descClose").css("display", "flex");
+          $(".scpmt").css("display", "flex");
+          $(".close-caption").css("z-index", "999");
+        });
+
+        $(".close-caption").on("click", function(){
+          $("#skills-descOpen").css("display", "flex");
+          $("#skills-descClose").css("display", "none");
+          $(".scpmt").css("display", "none");
+          $(".open-caption").css("z-index", "999");
+        });
+
 
         // Undisplaying the mobie menu-bar
         jQuery(window).resize(function () {
@@ -110,6 +117,23 @@ $(document).ready(function(){
                 }
             }
         }
+
+        // code of reamore_text Accordion
+        $(".set > a").on("click", function(){
+          if($(this).hasClass('active')){
+            $(this).removeClass("active");
+            $(this).siblings('.content').slideUp(200);
+            $(".set > a i").removeClass("fa-minus").addClass("fa-plus");
+          }else{
+            $(".set > a i").removeClass("fa-minus").addClass("fa-plus");
+          $(this).find("i").removeClass("fa-plus").addClass("fa-minus");
+          $(".set > a").removeClass("active");
+          $(this).addClass("active");
+          $('.content').slideUp(200);
+          $(this).siblings('.content').slideDown(200);
+          }
+
+        });
 
         if (jQuery(window).width() >= 482) {
           $(".nav-folders").on("click", function(){
