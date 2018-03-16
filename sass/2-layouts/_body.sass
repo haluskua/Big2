@@ -172,7 +172,9 @@
   .snaps-section
     height: 100vh
 
-  #grafix, #contact, .projects, .wagai-weh, #main-gallery, #projects, #gd-projects
+  #grafix, #contact,
+  .projects, .wagai-weh, #main-gallery, #projects,
+  #gd-projects, #dm-projects, #t-projects
     display: flex
     flex-direction: column
     justify-content: space-between
@@ -499,7 +501,7 @@
         top: 40px
         left: 231.5px
 
-      .skills-caption, .gd-caption
+      .skills-caption, .gd-caption, .dm-caption, .t-caption
         display: none
         justify-content: center
         margin: auto
@@ -510,7 +512,7 @@
         padding-top: 0
         text-align: justify
         line-height: 1.56em
-  .scpmt, .scpmt-gd
+  .scpmt, .scpmt-gd, .scpmt-dm, .scpmt-t
     display: none
 
   #gd-folders
@@ -812,7 +814,7 @@
       width: 128px
       justify-content: space-between
 
-    .open-caption, .gdReadmore
+    .open-caption, .gdReadmore, .dmReadmore, .tReadmore
       font-family: $font-stack-antic
       display: flex
       justify-content: space-between
@@ -821,10 +823,10 @@
       font-size: 1em
       letter-spacing: 0.05em
 
-  #skills-descOpen, #gd-descOpen
+  #skills-descOpen, #gd-descOpen, #dm-descOpen, #t-descOpen
     display: flex
 
-  #skills-descClose, #gd-descClose
+  #skills-descClose, #gd-descClose, #dm-descClose, #t-descClose
     display: none
     width: 42%
     // position: fixed
@@ -832,8 +834,7 @@
     // bottom: 10%
     background-color: rgba(202, 218, 215, 0.22)
 
-
-  .close-caption, .gdClose
+  .close-caption, .gdClose, .dmClose, .tClose
     display: flex
 
   .small_intro
@@ -1049,7 +1050,7 @@
   #open_read
     display: block
 
-  #hide_h2, #hide_h2_gd
+  #hide_h2, #hide_h2_gd, #hide_h2_dm, #hide_h2_t
     display: none
 
   .project_box

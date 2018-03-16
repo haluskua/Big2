@@ -99,7 +99,7 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .Colsplit-between {
     width: 100%;
-    height: 76%;
+    height: 85%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -143,7 +143,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #Colsplit-box1 {
-    height: 84%;
+    height: 94%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -181,6 +181,7 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .landing-page {
     width: 100%;
+    margin-top: -30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -288,7 +289,7 @@ h4, h6 {
     display: flex;
     -ms-flex-item-align: center;
         align-self: center;
-    line-height: 9px;
+    line-height: 10px;
     margin: 0;
   }
 }
@@ -371,12 +372,10 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #hetinfo {
-    margin-bottom: 65px;
     color: #524f48;
-    font-size: 1.71em;
+    font-size: 2em;
     text-align: center;
     font-weight: bold;
-    font-family: "Amatic SC", cursive;
   }
 }
 
@@ -405,8 +404,8 @@ h4, h6 {
   #mini-desc {
     width: 100%;
     height: 100%;
-    letter-spacing: 0.02em;
-    font-family: "Amatic SC", cursive;
+    letter-spacing: 0em;
+    font-family: "Dancing Script";
   }
 }
 
@@ -442,12 +441,13 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .intro {
     margin: auto;
-    margin-top: -4px;
-    color: #9d8b70;
-    font-size: .88em;
+    margin-top: -25px;
+    color: #6b6459;
+    font-size: 0.85em;
     position: relative;
     text-align: justify;
-    font-family: "Antic";
+    letter-spacing: 0.04em;
+    font-family: "Open Sans";
   }
 }
 
@@ -757,7 +757,7 @@ h4, h6 {
     font-size: 0.98em;
   }
   #home-logo {
-    height: 42%;
+    height: 110%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1520,7 +1520,9 @@ h4, h6 {
   .snaps-section {
     height: 100vh;
   }
-  #grafix, #contact, .projects, .wagai-weh, #main-gallery, #projects, #gd-projects {
+  #grafix, #contact,
+  .projects, .wagai-weh, #main-gallery, #projects,
+  #gd-projects, #dm-projects, #t-projects {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1538,7 +1540,9 @@ h4, h6 {
     margin: 0;
     padding: 0;
   }
-  #grafix a, #contact a, .projects a, .wagai-weh a, #main-gallery a, #projects a, #gd-projects a {
+  #grafix a, #contact a,
+  .projects a, .wagai-weh a, #main-gallery a, #projects a,
+  #gd-projects a, #dm-projects a, #t-projects a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1975,7 +1979,7 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  div.panel .skills-caption, div.panel .gd-caption {
+  div.panel .skills-caption, div.panel .gd-caption, div.panel .dm-caption, div.panel .t-caption {
     display: none;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1989,7 +1993,7 @@ h4, h6 {
     text-align: justify;
     line-height: 1.56em;
   }
-  .scpmt, .scpmt-gd {
+  .scpmt, .scpmt-gd, .scpmt-dm, .scpmt-t {
     display: none;
   }
   #gd-folders {
@@ -2381,7 +2385,7 @@ h4, h6 {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  #read-on .open-caption, #read-on .gdReadmore {
+  #read-on .open-caption, #read-on .gdReadmore, #read-on .dmReadmore, #read-on .tReadmore {
     font-family: "Antic";
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2394,17 +2398,17 @@ h4, h6 {
     font-size: 1em;
     letter-spacing: 0.05em;
   }
-  #skills-descOpen, #gd-descOpen {
+  #skills-descOpen, #gd-descOpen, #dm-descOpen, #t-descOpen {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  #skills-descClose, #gd-descClose {
+  #skills-descClose, #gd-descClose, #dm-descClose, #t-descClose {
     display: none;
     width: 42%;
     background-color: rgba(202, 218, 215, 0.22);
   }
-  .close-caption, .gdClose {
+  .close-caption, .gdClose, .dmClose, .tClose {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2645,7 +2649,7 @@ h4, h6 {
   #open_read {
     display: block;
   }
-  #hide_h2, #hide_h2_gd {
+  #hide_h2, #hide_h2_gd, #hide_h2_dm, #hide_h2_t {
     display: none;
   }
   .project_box {

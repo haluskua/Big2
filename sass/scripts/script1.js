@@ -52,6 +52,8 @@ $(document).ready(function(){
         });
 
 
+
+
         // accordion effect for Graphic Design page
         $(".gdReadmore").on("click", function() {
           $("#gd-descOpen").css("display", "none");
@@ -68,6 +70,44 @@ $(document).ready(function(){
           $(".gdReadmore").css("z-index", "999");
           $("#hide_h2_gd").css("display", "none");
         });
+
+
+
+        // accordion effect for Digital Media page
+        $(".dmReadmore").on("click", function() {
+          $("#dm-descOpen").css("display", "none");
+          $("#dm-descClose").css("display", "flex");
+          $(".scpmt-dm").css("display", "flex");
+          $(".dmClose").css("z-index", "999");
+          $("#hide_h2_dm").css("display", "flex");
+        });
+
+        $(".dmClose").on("click", function(){
+          $("#dm-descOpen").css("display", "flex");
+          $("#dm-descClose").css("display", "none");
+          $(".scpmt-dm").css("display", "none");
+          $(".dmReadmore").css("z-index", "999");
+          $("#hide_h2_dm").css("display", "none");
+        });
+
+
+        // accordion effect for Digital Media page
+        $(".tReadmore").on("click", function() {
+          $("#t-descOpen").css("display", "none");
+          $("#t-descClose").css("display", "flex");
+          $(".scpmt-t").css("display", "flex");
+          $(".tClose").css("z-index", "999");
+          $("#hide_h2_t").css("display", "flex");
+        });
+
+        $(".tClose").on("click", function(){
+          $("#t-descOpen").css("display", "flex");
+          $("#t-descClose").css("display", "none");
+          $(".scpmt-t").css("display", "none");
+          $(".tReadmore").css("z-index", "999");
+          $("#hide_h2_t").css("display", "none");
+        });
+
 
 
         // Undisplaying the mobie menu-bar
