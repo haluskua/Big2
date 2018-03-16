@@ -193,6 +193,13 @@
     flex-flow: column
     align-items: center
     justify-content: center
+    h1
+      padding: 0 20px 0 20px
+      font-size: 1.1em
+      margin-top: 40px
+      color: #73726b
+      padding-bottom: 5px
+      border-bottom: 1px dotted #73726b
 
   .grafix
     text-decoration: none
@@ -741,7 +748,7 @@
     font-family: $font-stack-rajdhani
 
   .fs-gal
-    width: 143px
+    width: 100%
     height: auto
     float: left
     padding: 7px
@@ -798,7 +805,6 @@
 
     .showRead
       display: flex
-      position: relative
       margin: 0
       color: #9d8b70
       font-style: italic
@@ -816,7 +822,11 @@
     display: flex
   #skills-descClose
     display: none
-    width: 100%
+    width: 42%
+    // position: fixed
+    // padding: 4px
+    // bottom: 10%
+    background-color: rgba(202, 218, 215, 0.22)
 
   .close-caption
     display: flex
@@ -834,10 +844,10 @@
       color: #9d8b70
       align-self: flex-start
       font-weight: normal
-      font-size: 1.44em
+      font-size: 1.1em
       margin-top: 32px
       margin-bottom: -2px
-      border-bottom: 1px dotted rgba(187, 166, 54, 0.37)
+      border-bottom: 1px dotted rgba(187, 166, 54, 0.97)
     p
       color: #443939
       width: 100%
@@ -1035,3 +1045,20 @@
 
   #open_read
     display: block
+
+  #hide_h2
+    display: none
+
+  .project_box
+    display: flex
+    margin: auto
+
+  #project_title
+    display: flex
+    width: 40%
+    padding: 8px
+    margin: 10px 0 10px -30px
+    // position: fixed
+    // padding: 4px
+    // bottom: 10%
+    background-color: rgba(202, 218, 215, 0.22)

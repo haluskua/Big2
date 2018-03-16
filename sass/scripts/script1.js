@@ -38,6 +38,7 @@ $(document).ready(function(){
           $("#skills-descClose").css("display", "flex");
           $(".scpmt").css("display", "flex");
           $(".close-caption").css("z-index", "999");
+          $("#hide_h2").css("display", "flex");
         });
 
         $(".close-caption").on("click", function(){
@@ -45,6 +46,7 @@ $(document).ready(function(){
           $("#skills-descClose").css("display", "none");
           $(".scpmt").css("display", "none");
           $(".open-caption").css("z-index", "999");
+          $("#hide_h2").hide(300);
         });
 
 
