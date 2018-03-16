@@ -33,6 +33,8 @@ $(document).ready(function(){
         // $(".m").on("click", function() {
         //   $(".scmt").css("display", "flex");
         // });
+
+        // accordion effect for website page
         $(".open-caption").on("click", function() {
           $("#skills-descOpen").css("display", "none");
           $("#skills-descClose").css("display", "flex");
@@ -46,7 +48,25 @@ $(document).ready(function(){
           $("#skills-descClose").css("display", "none");
           $(".scpmt").css("display", "none");
           $(".open-caption").css("z-index", "999");
-          $("#hide_h2").hide(300);
+          $("#hide_h2").css("display", "none");
+        });
+
+
+        // accordion effect for Graphic Design page
+        $(".gdReadmore").on("click", function() {
+          $("#gd-descOpen").css("display", "none");
+          $("#gd-descClose").css("display", "flex");
+          $(".scpmt-gd").css("display", "flex");
+          $(".gdClose").css("z-index", "999");
+          $("#hide_h2_gd").css("display", "flex");
+        });
+
+        $(".gdClose").on("click", function(){
+          $("#gd-descOpen").css("display", "flex");
+          $("#gd-descClose").css("display", "none");
+          $(".scpmt-gd").css("display", "none");
+          $(".gdReadmore").css("z-index", "999");
+          $("#hide_h2_gd").css("display", "none");
         });
 
 

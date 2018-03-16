@@ -1520,7 +1520,7 @@ h4, h6 {
   .snaps-section {
     height: 100vh;
   }
-  #grafix, #contact, .projects, .wagai-weh, #main-gallery, #projects {
+  #grafix, #contact, .projects, .wagai-weh, #main-gallery, #projects, #gd-projects {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1538,7 +1538,7 @@ h4, h6 {
     margin: 0;
     padding: 0;
   }
-  #grafix a, #contact a, .projects a, .wagai-weh a, #main-gallery a, #projects a {
+  #grafix a, #contact a, .projects a, .wagai-weh a, #main-gallery a, #projects a, #gd-projects a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1975,7 +1975,7 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  div.panel .skills-caption {
+  div.panel .skills-caption, div.panel .gd-caption {
     display: none;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1989,7 +1989,7 @@ h4, h6 {
     text-align: justify;
     line-height: 1.56em;
   }
-  .scpmt {
+  .scpmt, .scpmt-gd {
     display: none;
   }
   #gd-folders {
@@ -2381,7 +2381,7 @@ h4, h6 {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  #read-on .open-caption {
+  #read-on .open-caption, #read-on .gdReadmore {
     font-family: "Antic";
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2394,22 +2394,17 @@ h4, h6 {
     font-size: 1em;
     letter-spacing: 0.05em;
   }
-  #skills-descOpen {
+  #skills-descOpen, #gd-descOpen {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  #skills-descClose {
+  #skills-descClose, #gd-descClose {
     display: none;
     width: 42%;
     background-color: rgba(202, 218, 215, 0.22);
   }
-  .close-caption {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .open-caption {
+  .close-caption, .gdClose {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2650,7 +2645,7 @@ h4, h6 {
   #open_read {
     display: block;
   }
-  #hide_h2 {
+  #hide_h2, #hide_h2_gd {
     display: none;
   }
   .project_box {
