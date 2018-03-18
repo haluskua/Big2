@@ -757,7 +757,7 @@ h4, h6 {
     font-size: 0.98em;
   }
   #home-logo {
-    height: 110%;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -923,7 +923,7 @@ h4, h6 {
     display: flex;
     position: fixed;
     z-index: 999999;
-    background-color: #26061e;
+    background-color: #1b0615;
   }
 }
 
