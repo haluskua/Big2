@@ -1500,7 +1500,7 @@ h4, h6 {
     font-size: 0.8em;
     font-family: "Open Sans";
     position: relative;
-    margin-top: -117px;
+    margin-top: -90px;
   }
   .opening_line #skills-set-imgs {
     display: -webkit-box;
@@ -1555,7 +1555,7 @@ h4, h6 {
   #grafix, #contact,
   .projects, .wagai-weh, #wagai, #main-gallery,
   .main-gallery, #main-projects, #projects,
-  #gd-projects, #dm-projects, #t-projects {
+  #gd-projects, #dm-projects, #t-projects, .contact-section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1576,7 +1576,7 @@ h4, h6 {
   #grafix a, #contact a,
   .projects a, .wagai-weh a, #wagai a, #main-gallery a,
   .main-gallery a, #main-projects a, #projects a,
-  #gd-projects a, #dm-projects a, #t-projects a {
+  #gd-projects a, #dm-projects a, #t-projects a, .contact-section a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1703,14 +1703,14 @@ h4, h6 {
   }
   .contact-section #contact p {
     width: 75%;
-    font-family: "Roboto";
-    font-size: 0.92em;
+    font-family: "Dancing Script";
+    font-size: 1.5em;
     text-align: justify;
+    color: black;
     padding: 21px;
-    letter-spacing: 0.04em;
-    margin-bottom: 115px;
+    margin-bottom: 200px;
     color: whitesmoke;
-    line-height: 19px;
+    line-height: 33px;
   }
   .sm-container {
     display: -webkit-box;
@@ -2719,6 +2719,18 @@ h4, h6 {
     width: 100%;
     padding: 0 10px 0 10px;
   }
+  #quote {
+    font-size: 1em;
+    font-family: "Antic";
+    color: green;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 /* mobile view */
@@ -2751,6 +2763,7 @@ h4, h6 {
     background-color: rgba(229, 172, 97, 0.11);
     color: #65635e;
     border-bottom: 1px solid lightgray;
+    border-top: 1px solid brown;
   }
   button.webdev.active, button.webdev:hover {
     color: white;
