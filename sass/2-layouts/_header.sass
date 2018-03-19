@@ -145,7 +145,7 @@
 			@include phone-landscape
 				font-size: 0.7em
 			@include tablet
-				font-size: 0.84em
+				color: #635133
 				letter-spacing: 0.055em
 				font-weight: bold
 
@@ -161,7 +161,7 @@
 			@include tablet
 				color: #341e25
 				font-weight: 600
-				font-size: 1.02em
+				font-size: 1.3em
 				letter-spacing: 0.04em
 				font-family: $font-stack-roboto
 			@include desktop
@@ -196,7 +196,7 @@
 		@include tablet
 			color: #341e25
 			font-weight: normal
-			font-size: 1.27em
+			font-size: 1.5em
 			letter-spacing: 0.09em
 			border: none
 		@include desktop
@@ -224,9 +224,9 @@
 			margin-top: 32px
 			font-weight: normal
 			text-shadow: none
-			font-size: 2em
+			font-size: 1.38em
 			position: relative
-			letter-spacing: 0.02em
+			letter-spacing: 0.03em
 			font-family: $font-stack-yellow
 		@include desktop
 			font-size: 1.4em
@@ -331,6 +331,7 @@
 		background-color: rgba(160, 168, 175, 0.42)
 		@include tablet
 			width: 86vw
+			margin-left: 62px
 			padding: 0
 			height: auto
 			display: flex
@@ -388,11 +389,62 @@
 			justify-content: space-between
 			z-index: 999
 			background-color: #cac1b4
-			margin-top: 0px
-
+			// margin-top: 0px
+			padding: 0
+			margin-bottom: 0
 		@include desktop
 			display: flex
 			border: none
+	// 
+	// button.accordion
+  //   cursor: pointer
+  //   height: 37px
+  //   font-size: 0.9em
+  //   font-weight: bolder
+  //   text-transform: uppercase
+  //   width: 64%
+  //   text-align: center
+  //   outline: none
+  //   transition: 0.5s ease
+  //   letter-spacing: 0.28em
+  //   background-color: rgb(245, 245, 245)
+  //   color: #09070b
+  //   margin-top: 6px
+  //   margin-bottom: 15px
+  //   border: 0
+  //   border-left: 2px solid #ebcf87
+  //   margin-right: 0
+  //   @include phone-landscape
+  //     width: auto
+  //     margin-top: 13px
+  //   @include tablet
+  //     width: auto
+  //     height: 36px
+  //     margin-top: 12px
+  //     background-color: #fffef2
+  //     border: 1.5px solid #c8c7c3
+  //   @include desktop
+  //     width: auto
+  //     margin-top: -8px
+  //     height: 35.5px
+  //     // border: 1.5px solid #c8c7c3
+	//
+  // button.accordion.active, button.accordion:hover
+  //   transition: 0.5s ease
+  //   text-align: center
+  //   font-size: 0.9em
+  //   background-color: rgba(255, 196, 131, 0.56) !important
+  //   color: #09070b !important
+  //   height: 35px
+  //   border: 1px solid #ffc387
+  //   border-bottom: none
+  //   margin-bottom: -2px
+	//
+  //   @include tablet
+  //     border: 1px solid rgba(155, 149, 130, 0.329412)
+  //     height: 36px
+  //   @include desktop
+  //     margin-right: 0
 
 	.menu2
 		border-radius: 0 10px 0 0
@@ -421,7 +473,7 @@
 			align-self: center
 			background-size: cover
 		@include tablet
-			height: 86%
+			height: 71%
 		@include desktop
 			height: 90%
 			background-size: contain
@@ -505,7 +557,6 @@
 			text-align: center
 
 	.nav-archives
-		font-family: Orbitron
 		font-family: $font-stack-rajdhani
 		font-weight: bolder
 		font-size: 1.24em
@@ -516,6 +567,7 @@
 		&:active
 			text-align: center
 		@include tablet
+			font-size: 1.1em
 			text-align: center
 			background-color: none
 		@include desktop

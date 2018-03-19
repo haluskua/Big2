@@ -31,8 +31,12 @@
     color: #65635e
     border-bottom: 1px solid lightgray
     border-top: 1px solid brown
-  // .webdev-subtitle
-  //   color: #7b735d
+    @include phone-landscape
+
+    @include tablet
+      border-top: 1px solid #cac1b4
+  .contactx
+    background-color: rgb(255, 244, 230)
 
   button.webdev.active, button.webdev:hover
     color: white

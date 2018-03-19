@@ -117,9 +117,12 @@
       line-height: 1.65em
       margin-bottom: 10px
       padding: 0 15px 0 15px
+      @include phone-landscape
 
-
-
+      @include tablet
+        padding: 0 30px 0 30px
+        font-size: 1.12em
+        margin-top: 14px
 
     .opening_statement
       font-size: 0.92em
@@ -129,16 +132,24 @@
       padding-left: 12px
       line-height: 1.65em
       margin-top: 18px
+      @include phone-landscape
+
+      @include tablet
+        padding: 9px 30px 0 16px
+        font-size: 1.12em
 
       span
         font-size: 1.6em
         font-family: $font-stack-antic
         letter-spacing: 0.02em
-        color: #9d8b70
+        color: #5f4725
         font-weight: bolder
-
         border-bottom: 1px dotted rgba(187, 166, 54, 0.37)
         line-height: 10px
+        @include phone-landscape
+
+        @include tablet
+          font-size: 1.9em
 
       #pen-off
         font-size: 1.52em
@@ -151,6 +162,7 @@
       .portrait
         max-width: 130px
         border: 1px solid gray
+
   .opening_line
     display: flex
     justify-content: center
@@ -162,7 +174,11 @@
     font-family: $font-stack-open-sans-condensed
     position: relative
     margin-top: -90px
-    // position: absolute
+    @include phone-landscape
+
+    @include tablet
+      font-size: 1.1em
+      margin-top: -116px
     #skills-set-imgs
       display: flex
       flex-wrap: wrap
@@ -194,6 +210,10 @@
     text-align: center
     font-weight: bold
     font-size: 1.3em
+  .ompa
+    @include tablet
+      justify-content: flex-start
+      color: #1b0615
 
   .snaps-section
     height: 100vh
@@ -201,7 +221,7 @@
   #grafix, #contact,
   .projects, .wagai-weh, #wagai, #main-gallery,
   .main-gallery, #main-projects, #projects,
-  #gd-projects, #dm-projects, #t-projects, .contact-section
+  #gd-projects, #dm-projects, #t-projects,
     display: flex
     flex-direction: column
     justify-content: space-between
@@ -307,8 +327,13 @@
         color: black
         padding: 21px
         margin-bottom: 200px
-        color: whitesmoke
+        color: #bbec82
         line-height: 33px
+        @include phone-landscape
+
+        @include tablet
+          font-size: 2.1em
+          margin-bottom: 270px
 
   .sm-container
     display: flex
@@ -331,7 +356,10 @@
     line-height: 50px
     justify-content: space-between
     align-items: flex-end
+    @include phone-landscape
 
+    @include tablet
+      flex-flow: row
   .ctitle
 
   .gcontact
@@ -342,11 +370,16 @@
     justify-content: center
 
   .myname
-    color: #ffdba7
-    font-family: sans-serif
+    color: #fff6e8
+    font-family: $font-stack-antic
     font-size: 0.95em
     line-height: 25px
     letter-spacing: 0.05em
+    @include phone-landscape
+
+    @include tablet
+      line-height: 33px
+      font-size: 1.3em
 
   .slider-inner
   	max-width: 90.4%
@@ -404,9 +437,13 @@
       line-height: 1.65em
       font-family: "Dancing Script"
       font-style: italic
-      color: $gold
+      color: #5f4725
       font-weight: lighter
       text-align: center
+      @include phone-landscape
+
+      @include tablet
+        font-size: 1.4em
 
   #web-desc
     display: flex
@@ -479,10 +516,13 @@
     @include tablet
       width: auto
       height: 36px
-      margin-top: 12px
+      margin-top: 7px
+      color: #453320
+      font-size: 1.21em
+      font-family: $font-stack-rajdhani
       background-color: #fffef2
-      border: 1.5px solid #c8c7c3
-
+      letter-spacing: 0.13em
+      margin-top: 22px
     @include desktop
       width: auto
       margin-top: -8px
@@ -490,6 +530,7 @@
       border: 1.5px solid #c8c7c3
 
   button.accordion.active, button.accordion:hover
+    width: 100%
     transition: 0.5s ease
     text-align: center
     font-size: 0.9em
@@ -505,7 +546,6 @@
       height: 36px
     @include desktop
       margin-right: 0
-
 
   div.panel
       background-color: rgba(255, 196, 131, 0.56)
@@ -569,6 +609,8 @@
       width: 92%
       transition: 0.5s ease
       border-bottom: 1px solid slategray
+      @include tablet
+        margin-top: 8px
 
     #nav-folders:nth-child(4)
       margin-bottom: 50px
@@ -683,14 +725,14 @@
       margin-bottom: 8px
 
   .big-gallery
-    height: 32%
+    height: 33%
     display: flex
     flex-wrap: wrap
     align-items: center
     overflow-y: scroll
     border: 1px solid #e6dee2
-    justify-content: space-evenly
-    margin-bottom: 41px
+    justify-content: space-between
+
 
   .fs-gal-view
     display: none
@@ -783,6 +825,8 @@
     height: auto
     float: left
     padding: 7px
+  .static-image
+    width: 26%
 
   #accordion
     margin-top: 30px
@@ -794,6 +838,13 @@
     font-weight: bold
     font-size: 1.4em
     line-height: 42px
+    @include phone-landscape
+
+    @include tablet
+      justify-content: flex-start
+      font-size: 1.71em
+      padding-left: 8px
+      color: #808080
 
   .video
     position: relative
@@ -842,12 +893,16 @@
       font-style: italic
       width: 128px
       justify-content: space-between
+      @include phone-landscape
+
+      @include tablet
+        justify-content: center
 
     .open-caption, .gdReadmore, .dmReadmore, .tReadmore
       font-family: $font-stack-antic
       display: flex
       justify-content: space-between
-      color: #9d8b70
+      color: #5f4725
       width: 107px
       font-size: 1em
       letter-spacing: 0.05em
@@ -862,9 +917,19 @@
     // padding: 4px
     // bottom: 10%
     background-color: rgba(202, 218, 215, 0.22)
+    @include phone-landscape
+
+    @include tablet
+      width: 23%
+
 
   .close-caption, .gdClose, .dmClose, .tClose
     display: flex
+    @include phone-landscape
+
+    @include tablet
+      font-size: 1.1em
+      width: 110px
 
   .small_intro
     display: flex
@@ -872,15 +937,22 @@
     justify-content: flex-start
     align-items: center
     width: 92vw
-    // background-color: #3e4b60
+    @include phone-landscape
+
+    @include tablet
+
     h2
-      color: #9d8b70
+      color: #5f4725
       align-self: flex-start
       font-weight: normal
-      font-size: 1.1em
+      font-size: 1.21em
       margin-top: 32px
       margin-bottom: -2px
       border-bottom: 1px dotted rgba(187, 166, 54, 0.97)
+      @include phone-landscape
+
+      @include tablet
+        font-size: 1.65em
     p
       color: #443939
       width: 100%
@@ -890,10 +962,8 @@
       font-size: 0.92em
       @include phone-landscape
 
-
-
-
-
+      @include tablet
+        font-size: 1.12em
 
   .blocks
     display: flex
@@ -929,7 +999,7 @@
       #website_background2
         display: flex
         flex-direction: column
-        background: url("../dist/imgs/wed184.jpg")
+        background: url("../dist/imgs/1920.png")
         background-size: cover
         background-position: center
         background-repeat: no-repeat
@@ -966,6 +1036,12 @@
         line-height: 1.65em
         color: #443939
         margin-bottom: 50px
+        @include phone-landscape
+
+        @include tablet
+          padding: 10px 30px
+          font-size: 1.12em
+          margin-bottom: 0
       button
         width: auto
         height: auto
@@ -975,6 +1051,11 @@
         border-radius: 6px
         display: flex
         margin-bottom: 20px
+        @include phone-landscape
+
+        @include tablet
+          margin-bottom: 58px
+          margin-top: 10px
 
         a
           font-family: $font-stack-antic

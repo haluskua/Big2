@@ -332,7 +332,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #thin #cr-field {
-    font-size: 0.84em;
+    color: #635133;
     letter-spacing: 0.055em;
     font-weight: bold;
   }
@@ -359,7 +359,7 @@ h4, h6 {
   #thin #bulgeword {
     color: #341e25;
     font-weight: 600;
-    font-size: 1.02em;
+    font-size: 1.3em;
     letter-spacing: 0.04em;
     font-family: "Roboto";
   }
@@ -422,7 +422,7 @@ h4, h6 {
   #mini-desc {
     color: #341e25;
     font-weight: normal;
-    font-size: 1.27em;
+    font-size: 1.5em;
     letter-spacing: 0.09em;
     border: none;
   }
@@ -461,9 +461,9 @@ h4, h6 {
     margin-top: 32px;
     font-weight: normal;
     text-shadow: none;
-    font-size: 2em;
+    font-size: 1.38em;
     position: relative;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.03em;
     font-family: "Yellowtail";
   }
 }
@@ -637,6 +637,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #folders-container {
     width: 86vw;
+    margin-left: 62px;
     padding: 0;
     height: auto;
     display: -webkit-box;
@@ -731,7 +732,8 @@ h4, h6 {
             justify-content: space-between;
     z-index: 999;
     background-color: #cac1b4;
-    margin-top: 0px;
+    padding: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -783,7 +785,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #home-logo {
-    height: 86%;
+    height: 71%;
   }
 }
 
@@ -894,7 +896,6 @@ h4, h6 {
     text-align: center;
   }
   .nav-archives {
-    font-family: Orbitron;
     font-family: "Rajdhani", sans-serif;
     font-weight: bolder;
     font-size: 1.24em;
@@ -911,6 +912,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .nav-archives {
+    font-size: 1.1em;
     text-align: center;
     background-color: none;
   }
@@ -1456,6 +1458,17 @@ h4, h6 {
     margin-bottom: 10px;
     padding: 0 15px 0 15px;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  #wagai #p-justified {
+    padding: 0 30px 0 30px;
+    font-size: 1.12em;
+    margin-top: 14px;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   #wagai .opening_statement {
     font-size: 0.92em;
     font-family: "Open Sans";
@@ -1465,15 +1478,34 @@ h4, h6 {
     line-height: 1.65em;
     margin-top: 18px;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  #wagai .opening_statement {
+    padding: 9px 30px 0 16px;
+    font-size: 1.12em;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   #wagai .opening_statement span {
     font-size: 1.6em;
     font-family: "Antic";
     letter-spacing: 0.02em;
-    color: #9d8b70;
+    color: #5f4725;
     font-weight: bolder;
     border-bottom: 1px dotted rgba(187, 166, 54, 0.37);
     line-height: 10px;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  #wagai .opening_statement span {
+    font-size: 1.9em;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   #wagai .opening_statement #pen-off {
     font-size: 1.52em;
     font-family: "Dancing Script";
@@ -1502,6 +1534,16 @@ h4, h6 {
     position: relative;
     margin-top: -90px;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .opening_line {
+    font-size: 1.1em;
+    margin-top: -116px;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .opening_line #skills-set-imgs {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1549,13 +1591,25 @@ h4, h6 {
     font-weight: bold;
     font-size: 1.3em;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .ompa {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    color: #1b0615;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .snaps-section {
     height: 100vh;
   }
   #grafix, #contact,
   .projects, .wagai-weh, #wagai, #main-gallery,
   .main-gallery, #main-projects, #projects,
-  #gd-projects, #dm-projects, #t-projects, .contact-section {
+  #gd-projects, #dm-projects, #t-projects {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1576,7 +1630,7 @@ h4, h6 {
   #grafix a, #contact a,
   .projects a, .wagai-weh a, #wagai a, #main-gallery a,
   .main-gallery a, #main-projects a, #projects a,
-  #gd-projects a, #dm-projects a, #t-projects a, .contact-section a {
+  #gd-projects a, #dm-projects a, #t-projects a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1709,9 +1763,19 @@ h4, h6 {
     color: black;
     padding: 21px;
     margin-bottom: 200px;
-    color: whitesmoke;
+    color: #bbec82;
     line-height: 33px;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .contact-section #contact p {
+    font-size: 2.1em;
+    margin-bottom: 270px;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .sm-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1756,6 +1820,18 @@ h4, h6 {
         -ms-flex-align: end;
             align-items: flex-end;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  #address {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .gcontact {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1768,12 +1844,22 @@ h4, h6 {
             justify-content: center;
   }
   .myname {
-    color: #ffdba7;
-    font-family: sans-serif;
+    color: #fff6e8;
+    font-family: "Antic";
     font-size: 0.95em;
     line-height: 25px;
     letter-spacing: 0.05em;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .myname {
+    line-height: 33px;
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .slider-inner {
     max-width: 90.4%;
     position: relative;
@@ -1832,10 +1918,19 @@ h4, h6 {
     line-height: 1.65em;
     font-family: "Dancing Script";
     font-style: italic;
-    color: #e49116;
+    color: #5f4725;
     font-weight: lighter;
     text-align: center;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  #imgslider-desc p {
+    font-size: 1.4em;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   #web-desc {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1934,9 +2029,13 @@ h4, h6 {
   button.accordion {
     width: auto;
     height: 36px;
-    margin-top: 12px;
+    margin-top: 7px;
+    color: #453320;
+    font-size: 1.21em;
+    font-family: "Rajdhani", sans-serif;
     background-color: #fffef2;
-    border: 1.5px solid #c8c7c3;
+    letter-spacing: 0.13em;
+    margin-top: 22px;
   }
 }
 
@@ -1951,6 +2050,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   button.accordion.active, button.accordion:hover {
+    width: 100%;
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
     text-align: center;
@@ -2081,6 +2181,15 @@ h4, h6 {
     transition: 0.5s ease;
     border-bottom: 1px solid slategray;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  #gd-folders li {
+    margin-top: 8px;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   #gd-folders #nav-folders:nth-child(4) {
     margin-bottom: 50px;
   }
@@ -2227,7 +2336,7 @@ h4, h6 {
     margin-bottom: 8px;
   }
   .big-gallery {
-    height: 32%;
+    height: 33%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2238,10 +2347,9 @@ h4, h6 {
             align-items: center;
     overflow-y: scroll;
     border: 1px solid #e6dee2;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    margin-bottom: 41px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .fs-gal-view {
     display: none;
@@ -2342,6 +2450,9 @@ h4, h6 {
     float: left;
     padding: 7px;
   }
+  .static-image {
+    width: 26%;
+  }
   #accordion {
     margin-top: 30px;
   }
@@ -2357,6 +2468,20 @@ h4, h6 {
     font-size: 1.4em;
     line-height: 42px;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .rgdp {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    font-size: 1.71em;
+    padding-left: 8px;
+    color: #808080;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .video {
     position: relative;
     padding-bottom: 56.25%;
@@ -2421,6 +2546,17 @@ h4, h6 {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  #read-on .showRead {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   #read-on .open-caption, #read-on .gdReadmore, #read-on .dmReadmore, #read-on .tReadmore {
     font-family: "Antic";
     display: -webkit-box;
@@ -2429,7 +2565,7 @@ h4, h6 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    color: #9d8b70;
+    color: #5f4725;
     width: 107px;
     font-size: 1em;
     letter-spacing: 0.05em;
@@ -2444,11 +2580,30 @@ h4, h6 {
     width: 42%;
     background-color: rgba(202, 218, 215, 0.22);
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  #skills-descClose, #gd-descClose, #dm-descClose, #t-descClose {
+    width: 23%;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .close-caption, .gdClose, .dmClose, .tClose {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .close-caption, .gdClose, .dmClose, .tClose {
+    font-size: 1.1em;
+    width: 110px;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .small_intro {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2466,15 +2621,24 @@ h4, h6 {
     width: 92vw;
   }
   .small_intro h2 {
-    color: #9d8b70;
+    color: #5f4725;
     -ms-flex-item-align: start;
         align-self: flex-start;
     font-weight: normal;
-    font-size: 1.1em;
+    font-size: 1.21em;
     margin-top: 32px;
     margin-bottom: -2px;
     border-bottom: 1px dotted rgba(187, 166, 54, 0.97);
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .small_intro h2 {
+    font-size: 1.65em;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .small_intro p {
     color: #443939;
     width: 100%;
@@ -2483,6 +2647,15 @@ h4, h6 {
     line-height: 1.56em;
     font-size: 0.92em;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .small_intro p {
+    font-size: 1.12em;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .blocks {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2532,7 +2705,7 @@ h4, h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background: url("../dist/imgs/wed184.jpg");
+    background: url("../dist/imgs/1920.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2579,6 +2752,17 @@ h4, h6 {
     color: #443939;
     margin-bottom: 50px;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .blocks section p {
+    padding: 10px 30px;
+    font-size: 1.12em;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .blocks section button {
     width: auto;
     height: auto;
@@ -2593,6 +2777,16 @@ h4, h6 {
     display: flex;
     margin-bottom: 20px;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .blocks section button {
+    margin-bottom: 58px;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .blocks section button a {
     font-family: "Antic";
     color: #26061e;
@@ -2764,6 +2958,18 @@ h4, h6 {
     color: #65635e;
     border-bottom: 1px solid lightgray;
     border-top: 1px solid brown;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .webdev-title {
+    border-top: 1px solid #cac1b4;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
+  .contactx {
+    background-color: #fff4e6;
   }
   button.webdev.active, button.webdev:hover {
     color: white;
