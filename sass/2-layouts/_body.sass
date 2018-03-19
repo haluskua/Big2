@@ -71,6 +71,9 @@
     height: 100%
     margin: auto
     visibility: visible
+    padding: 0 22px 0 22px
+    p
+      padding: 20px
     @include tablet
       height: 100%
       margin: auto
@@ -93,17 +96,31 @@
       font-size: 0.92em
       font-family: $font-stack-open-sans
       color: #443939
-      padding: 10px
       text-align: center
       line-height: 1.65em
-      margin-bottom: 50px
-      padding: 0
+      margin-bottom: 10px
+      padding: 0 15px 0 15px
       @include phone-landscape
 
       @include tablet
         font-size: 1.04em
         letter-spacing: normal
       @include desktop
+
+    #p-justified
+      text-align: justify
+      margin: auto
+      font-size: 0.92em
+      font-family: $font-stack-open-sans
+      color: #443939
+      padding: 10px
+      line-height: 1.65em
+      margin-bottom: 10px
+      padding: 0 15px 0 15px
+
+
+
+
     .opening_statement
       font-size: 0.92em
       font-family: $font-stack-open-sans
@@ -168,12 +185,22 @@
     height: 100vh
 
   .skills-title
+    display: flex
+    justify-content: center
+    width: 100%
+    padding: 0
+    margin: 0
+    color: #e6c4c4
+    text-align: center
+    font-weight: bold
+    font-size: 1.3em
 
   .snaps-section
     height: 100vh
 
   #grafix, #contact,
-  .projects, .wagai-weh, #main-gallery, #projects,
+  .projects, .wagai-weh, #wagai, #main-gallery,
+  .main-gallery, #main-projects, #projects,
   #gd-projects, #dm-projects, #t-projects
     display: flex
     flex-direction: column
@@ -367,12 +394,14 @@
   #imgslider-desc
     display: flex
     justify-content: center
-    width: 99%
+    width: 100%
     height: auto
 
     p
+      padding: 20px
       font-size: 1.12em
       letter-spacing: 0.03em
+      line-height: 1.65em
       font-family: "Dancing Script"
       font-style: italic
       color: $gold
@@ -654,7 +683,7 @@
       margin-bottom: 8px
 
   .big-gallery
-    height: 100%
+    height: 32%
     display: flex
     flex-wrap: wrap
     align-items: center
@@ -710,7 +739,7 @@
 
   .fs-gal-prev, .fs-gal-next, .fs-gal-close
     position: absolute
-    top: calc(50vh - 20px)
+    top: calc(74vh - 20px)
     height: 40px
     width: 40px
 
@@ -750,7 +779,7 @@
     font-family: $font-stack-rajdhani
 
   .fs-gal
-    width: 100%
+    width: 65%
     height: auto
     float: left
     padding: 7px
@@ -1046,6 +1075,11 @@
     margin: 0
     color: #333
     padding: 20px 0 20px 0
+  #summary
+    width: 100%
+    text-align: center
+    border-bottom: none
+    text-transform: uppercase
 
   #open_read
     display: block
@@ -1066,3 +1100,13 @@
     // padding: 4px
     // bottom: 10%
     background-color: rgba(202, 218, 215, 0.22)
+
+  .aboutus
+    background: url("../dist/imgs/1920.png")
+    overflow-y: scroll
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    height: auto
+    width: 100%
+    padding: 0 10px 0 10px

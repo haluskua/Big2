@@ -37,7 +37,6 @@ h4, h6 {
   line-height: 1.5em;
   color: #060407;
   font-weight: normal;
-  letter-spacing: 0.03em;
 }
 
 /* LAYOUT */
@@ -100,6 +99,7 @@ h4, h6 {
   .Colsplit-between {
     width: 100%;
     height: 85%;
+    padding-bottom: 38px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -143,7 +143,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #Colsplit-box1 {
-    height: 94%;
+    height: 87%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -181,7 +181,7 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .landing-page {
     width: 100%;
-    margin-top: -30px;
+    margin-top: -57px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -289,7 +289,7 @@ h4, h6 {
     display: flex;
     -ms-flex-item-align: center;
         align-self: center;
-    line-height: 10px;
+    line-height: 11px;
     margin: 0;
   }
 }
@@ -310,6 +310,11 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #thin #cr-field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 1.54em;
+    margin-top: 16px;
     color: #0c0801;
     font-size: 0.35em;
     font-weight: normal;
@@ -336,10 +341,9 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   #thin #bulgeword {
     color: #26061e;
-    font-size: 1em;
+    font-size: 0.94em;
     font-weight: bold;
     text-align: center;
-    letter-spacing: 0.02em;
     font-family: "Roboto";
   }
 }
@@ -372,10 +376,9 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #hetinfo {
-    color: #524f48;
-    font-size: 2em;
+    color: #1b0615;
+    font-size: 1em;
     text-align: center;
-    font-weight: bold;
   }
 }
 
@@ -405,7 +408,6 @@ h4, h6 {
     width: 100%;
     height: 100%;
     letter-spacing: 0em;
-    font-family: "Dancing Script";
   }
 }
 
@@ -441,9 +443,10 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .intro {
     margin: auto;
-    margin-top: -25px;
+    margin-top: 0px;
     color: #6b6459;
-    font-size: 0.85em;
+    text-transform: uppercase;
+    font-size: 0.80em;
     position: relative;
     text-align: justify;
     letter-spacing: 0.04em;
@@ -757,7 +760,7 @@ h4, h6 {
     font-size: 0.98em;
   }
   #home-logo {
-    height: 100%;
+    height: 73%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1391,6 +1394,10 @@ h4, h6 {
     height: 100%;
     margin: auto;
     visibility: visible;
+    padding: 0 22px 0 22px;
+  }
+  #wagai p {
+    padding: 20px;
   }
 }
 
@@ -1423,11 +1430,10 @@ h4, h6 {
     font-size: 0.92em;
     font-family: "Open Sans";
     color: #443939;
-    padding: 10px;
     text-align: center;
     line-height: 1.65em;
-    margin-bottom: 50px;
-    padding: 0;
+    margin-bottom: 10px;
+    padding: 0 15px 0 15px;
   }
 }
 
@@ -1439,6 +1445,17 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
+  #wagai #p-justified {
+    text-align: justify;
+    margin: auto;
+    font-size: 0.92em;
+    font-family: "Open Sans";
+    color: #443939;
+    padding: 10px;
+    line-height: 1.65em;
+    margin-bottom: 10px;
+    padding: 0 15px 0 15px;
+  }
   #wagai .opening_statement {
     font-size: 0.92em;
     font-family: "Open Sans";
@@ -1517,11 +1534,27 @@ h4, h6 {
     max-width: 70px;
     height: 100vh;
   }
+  .skills-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    color: #e6c4c4;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
   .snaps-section {
     height: 100vh;
   }
   #grafix, #contact,
-  .projects, .wagai-weh, #main-gallery, #projects,
+  .projects, .wagai-weh, #wagai, #main-gallery,
+  .main-gallery, #main-projects, #projects,
   #gd-projects, #dm-projects, #t-projects {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1541,7 +1574,8 @@ h4, h6 {
     padding: 0;
   }
   #grafix a, #contact a,
-  .projects a, .wagai-weh a, #main-gallery a, #projects a,
+  .projects a, .wagai-weh a, #wagai a, #main-gallery a,
+  .main-gallery a, #main-projects a, #projects a,
   #gd-projects a, #dm-projects a, #t-projects a {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1788,12 +1822,14 @@ h4, h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 99%;
+    width: 100%;
     height: auto;
   }
   #imgslider-desc p {
+    padding: 20px;
     font-size: 1.12em;
     letter-spacing: 0.03em;
+    line-height: 1.65em;
     font-family: "Dancing Script";
     font-style: italic;
     color: #e49116;
@@ -2191,7 +2227,7 @@ h4, h6 {
     margin-bottom: 8px;
   }
   .big-gallery {
-    height: 100%;
+    height: 32%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2260,7 +2296,7 @@ h4, h6 {
   }
   .fs-gal-prev, .fs-gal-next, .fs-gal-close {
     position: absolute;
-    top: calc(50vh - 20px);
+    top: calc(74vh - 20px);
     height: 40px;
     width: 40px;
   }
@@ -2301,7 +2337,7 @@ h4, h6 {
     font-family: "Rajdhani", sans-serif;
   }
   .fs-gal {
-    width: 100%;
+    width: 65%;
     height: auto;
     float: left;
     padding: 7px;
@@ -2646,6 +2682,12 @@ h4, h6 {
     color: #333;
     padding: 20px 0 20px 0;
   }
+  #summary {
+    width: 100%;
+    text-align: center;
+    border-bottom: none;
+    text-transform: uppercase;
+  }
   #open_read {
     display: block;
   }
@@ -2666,6 +2708,16 @@ h4, h6 {
     padding: 8px;
     margin: 10px 0 10px -30px;
     background-color: rgba(202, 218, 215, 0.22);
+  }
+  .aboutus {
+    background: url("../dist/imgs/1920.png");
+    overflow-y: scroll;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    padding: 0 10px 0 10px;
   }
 }
 
