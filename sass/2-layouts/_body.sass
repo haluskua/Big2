@@ -252,7 +252,7 @@
     @include desktop
       flex-wrap: wrap
       flex-flow: row
-      justify-content: space-between
+      justify-content: space-around
       width: 97vw
     h1
       padding: 0 20px 0 20px
@@ -954,11 +954,15 @@
   .hold_in2
     @include phone-landscape
 
+
     @include tablet
       display: flex
       justify-content: flex-start
       width: 100%
-
+    @include desktop
+      display: flex
+      flex-flow: column
+      width: 100%
   #read-on
     justify-content: flex-start !important
     position: relative
@@ -1055,6 +1059,8 @@
 
       @include tablet
         font-size: 1.12em
+      @include desktop
+        font-size: 0.9em
 
   .blocks
     display: flex

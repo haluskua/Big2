@@ -87,6 +87,88 @@ $(document).ready(function(){
                 });
 
         }
+                if(jQuery (window).width() >801){
+                  $("#hide_h2, #hide_h2_gd, #hide_h2_dm, #hide_h2_t").css("display", "flex");
+                  $("#t-descOpen, #t-descClose, #skills-descOpen, #skills-descClose, #gd-descClose, #gd-descOpen, #dm-descOpen, #dm-descClose").css("display", "none");
+                  $(".scpmt, .scpmt-gd, .scpmt-dm, .scpmt-t").css("display", "flex");
+                }
+
+        // targeting tablet view because of menu top height change from mobile view
+                if (jQuery(window).width() <800) {
+                  // accordion effect for website page
+                  $(".open-caption").on("click", function() {
+                    $("#skills-descOpen").css("display", "none");
+                    $("#skills-descClose").css("display", "flex");
+                    $(".scpmt").css("display", "flex");
+                    $(".close-caption").css("z-index", "999");
+                    $("#hide_h2").css("display", "flex");
+                  });
+
+                  $(".close-caption").on("click", function(){
+                    $("#skills-descOpen").css("display", "flex");
+                    $("#skills-descClose").css("display", "none");
+                    $(".scpmt").css("display", "none");
+                    $(".open-caption").css("z-index", "999");
+                    $("#hide_h2").css("display", "none");
+                  });
+
+
+                  // accordion effect for Graphic Design page
+                  $(".gdReadmore").on("click", function() {
+                    $("#gd-descOpen").css("display", "none");
+                    $("#gd-descClose").css("display", "flex");
+                    $(".scpmt-gd").css("display", "flex");
+                    $(".gdClose").css("z-index", "999");
+                    $("#hide_h2_gd").css("display", "flex");
+                  });
+
+                  $(".gdClose").on("click", function(){
+                    $("#gd-descOpen").css("display", "flex");
+                    $("#gd-descClose").css("display", "none");
+                    $(".scpmt-gd").css("display", "none");
+                    $(".gdReadmore").css("z-index", "999");
+                    $("#hide_h2_gd").css("display", "none");
+                  });
+
+
+
+                  // accordion effect for Digital Media page
+                  $(".dmReadmore").on("click", function() {
+                    $("#dm-descOpen").css("display", "none");
+                    $("#dm-descClose").css("display", "flex");
+                    $(".scpmt-dm").css("display", "flex");
+                    $(".dmClose").css("z-index", "999");
+                    $("#hide_h2_dm").css("display", "flex");
+                  });
+
+                  $(".dmClose").on("click", function(){
+                    $("#dm-descOpen").css("display", "flex");
+                    $("#dm-descClose").css("display", "none");
+                    $(".scpmt-dm").css("display", "none");
+                    $(".dmReadmore").css("z-index", "999");
+                    $("#hide_h2_dm").css("display", "none");
+                  });
+
+
+                  // accordion effect for Digital Media page
+                  $(".tReadmore").on("click", function() {
+                    $("#t-descOpen").css("display", "none");
+                    $("#t-descClose").css("display", "flex");
+                    $(".scpmt-t").css("display", "flex");
+                    $(".tClose").css("z-index", "999");
+                    $("#hide_h2_t").css("display", "flex");
+                  });
+
+                  $(".tClose").on("click", function(){
+                    $("#t-descOpen").css("display", "flex");
+                    $("#t-descClose").css("display", "none");
+                    $(".scpmt-t").css("display", "none");
+                    $(".tReadmore").css("z-index", "999");
+                    $("#hide_h2_t").css("display", "none");
+                  });
+
+
+                }
 
         // Code for Accordion
 
