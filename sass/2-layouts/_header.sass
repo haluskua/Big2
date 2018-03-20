@@ -74,7 +74,7 @@
 			height: 74%
 			margin-bottom: -126px
 		@include desktop
-			height: 52%
+			height: 63%
 
 	.landing-page
 		width: 100%
@@ -87,6 +87,8 @@
 			align-items: flex-start
 		@include tablet
 			margin: 0
+		@include desktop
+			height: 0
 
 	.hetpage-li
 		width: 100%
@@ -96,7 +98,7 @@
 			width: 100%
 		@include desktop
 			width: 100%
-			padding-top: 40px
+			padding-top: 120px
 
 	.home-desc
 		display: flex
@@ -108,7 +110,13 @@
 		@include phone-landscape
 			width: 87vw
 			margin-left: 85px
+		@include tablet
 
+		@include desktop
+			display: flex
+			justify-content: center
+			width: 100%
+			margin: auto
 	.bio
 		width: 100%
 		height: auto
@@ -148,6 +156,8 @@
 				color: #635133
 				letter-spacing: 0.055em
 				font-weight: bold
+			@include desktop
+				font-size: 0.3em
 
 		#bulgeword
 			color: #26061e
@@ -165,9 +175,8 @@
 				letter-spacing: 0.04em
 				font-family: $font-stack-roboto
 			@include desktop
-				font-size: 0.58em
+				font-size: 1em
 				font-weight: bold
-				color: dimgray
 				letter-spacing: 0.09em
 
 	#hetinfo
@@ -230,8 +239,7 @@
 			font-family: $font-stack-yellow
 		@include desktop
 			font-size: 1.4em
-			margin-top: 80px
-			letter-spacing: 0.2em
+			margin-top: 130px
 
 	#my-name
 		height: 42%
@@ -340,12 +348,11 @@
 			background-color: #fffef2
 			justify-content: center
 		@include desktop
-			width: 80vw
-			height: 21px
+			width: 66vw
 			display: flex
 			flex-flow: row
 			align-self: center
-			padding-bottom: 9px
+			padding-bottom: 0px
 			background-image: none
 			border: none
 			background: none
@@ -392,8 +399,11 @@
 			padding: 0
 			margin-bottom: 0
 		@include desktop
+			width: 24%
 			display: flex
 			border: none
+			padding: 0
+			line-height: 1.8em
 
 	.menu2
 		border-radius: 0 10px 0 0
@@ -424,7 +434,8 @@
 		@include tablet
 			height: 71%
 		@include desktop
-			height: 90%
+			height: 100%
+			width: 66%
 			background-size: contain
 
 	.logo-home
@@ -481,11 +492,12 @@
 				border-left: 2px solid #ff1f3e
 		@include desktop
 			height: 100%
-			line-height: 27px
+			line-height: 44px
 			color: #131426
 			font-size: 0.85em
-			background-color: whitesmoke
+			background-color: none
 			border: none
+			justify-content: center
 			&:focus
 				color: green
 				font-size: 0.93em
@@ -508,6 +520,8 @@
 
 		@include tablet
 			font-size: 1.09em
+		@include desktop
+			font-size: 0.8em
 
 	.nav-archives
 		font-family: $font-stack-rajdhani

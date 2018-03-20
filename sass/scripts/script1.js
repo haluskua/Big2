@@ -77,7 +77,7 @@ $(document).ready(function(){
 // targeting tablet view because of menu top height change from mobile view
         if (jQuery(window).width() > 481) {
             var stickyNavTop = $('.nav-folders').offset().top;
-            var headerHeight = 64;
+            var headerHeight = 52;
               $('.hamburger-menu, .logo-desc, #snaps').click(function(e) {
                   var linkHref = $(this).attr('href');
                   $('html, body').animate({

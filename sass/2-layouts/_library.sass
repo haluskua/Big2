@@ -35,8 +35,14 @@
 
     @include tablet
       border-top: 1px solid #cac1b4
+    @include desktop
+      align-self: flex-start
+      background-color: #faf6e6
+
   .contactx
     background-color: rgb(255, 244, 230)
+    @include desktop
+      background-color: #faf6e6
 
   button.webdev.active, button.webdev:hover
     color: white
