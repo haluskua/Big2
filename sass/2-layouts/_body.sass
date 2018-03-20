@@ -32,6 +32,8 @@
           border: none
           background-size: cover
 
+
+
   #large-3
     display: flex
     height: auto
@@ -61,7 +63,7 @@
         height: 100%
         background-color: green
         z-index: 9999999
-  #left
+
   #wagai
     display: flex
     justify-content: flex-start
@@ -74,94 +76,97 @@
     padding: 0 22px 0 22px
     p
       padding: 20px
-    @include tablet
-      height: 100%
-      margin: auto
-      width: 83%
-      overflow: auto
-      visibility: visible
-      background-color: rgba(255, 254, 242, 0.26)
-      border: 1px solid #e5dcbc
-    @include desktop
-      height: 100%
-      width: 67vw
-      margin: auto
-      overflow: hidden
-      visibility: visible
-      background-color: rgba(255, 254, 242, 0.26)
-      // border: 1px solid #e5dcbc
-
-    .main-paragraph
-      margin: auto
-      font-size: 0.92em
-      font-family: $font-stack-open-sans
-      color: #443939
-      text-align: center
-      line-height: 1.65em
-      margin-bottom: 10px
-      padding: 0 15px 0 15px
-      @include phone-landscape
-
       @include tablet
-        font-size: 1.04em
-        letter-spacing: normal
+        height: 100%
+        margin: auto
+        width: 83%
+        overflow: auto
+        visibility: visible
+        background-color: rgba(255, 254, 242, 0.26)
+        border: 1px solid #e5dcbc
       @include desktop
+        height: 100%
+        width: 67vw
+        margin: auto
+        overflow: hidden
+        visibility: visible
+        background-color: rgba(255, 254, 242, 0.26)
+        padding: 0px
 
-    #p-justified
-      text-align: justify
-      margin: auto
-      font-size: 0.92em
-      font-family: $font-stack-open-sans
-      color: #443939
-      padding: 10px
-      line-height: 1.65em
-      margin-bottom: 10px
-      padding: 0 15px 0 15px
+  .main-paragraph
+    margin: auto
+    font-size: 0.92em
+    font-family: $font-stack-open-sans
+    color: #443939
+    text-align: center
+    line-height: 1.65em
+    margin-bottom: 10px
+    padding: 0 15px 0 15px
+    @include phone-landscape
+
+    @include tablet
+      font-size: 1.04em
+      letter-spacing: normal
+    @include desktop
+      width: 30vw
+
+  #p-justified
+    text-align: justify
+    margin: auto
+    font-size: 0.92em
+    font-family: $font-stack-open-sans
+    color: #443939
+    padding: 10px
+    line-height: 1.65em
+    margin-bottom: 10px
+    padding: 0 15px 0 15px
+    @include phone-landscape
+
+    @include tablet
+      padding: 0 30px 0 30px
+      font-size: 1.12em
+      margin-top: 14px
+
+  .opening_statement
+    font-size: 0.92em
+    font-family: $font-stack-open-sans
+    color: #443939
+    padding: 9px
+    padding-left: 12px
+    line-height: 1.65em
+    margin-top: 18px
+    @include phone-landscape
+
+    @include tablet
+      padding: 9px 30px 0 16px
+      font-size: 1.12em
+    @include desktop
+      width: 60vw
+
+    span
+      font-size: 1.6em
+      font-family: $font-stack-antic
+      letter-spacing: 0.02em
+      color: #5f4725
+      font-weight: bolder
+      border-bottom: 1px dotted rgba(187, 166, 54, 0.37)
+      line-height: 10px
       @include phone-landscape
 
       @include tablet
-        padding: 0 30px 0 30px
-        font-size: 1.12em
-        margin-top: 14px
+        font-size: 1.9em
 
-    .opening_statement
-      font-size: 0.92em
-      font-family: $font-stack-open-sans
-      color: #443939
-      padding: 9px
-      padding-left: 12px
-      line-height: 1.65em
-      margin-top: 18px
-      @include phone-landscape
+    #pen-off
+      font-size: 1.52em
+      font-family: $font-stack-Dancing-script
+      font-style: italic
+      color: #c78919
+      font-weight: lighter
+      padding-bottom: 10px
 
-      @include tablet
-        padding: 9px 30px 0 16px
-        font-size: 1.12em
-
-      span
-        font-size: 1.6em
-        font-family: $font-stack-antic
-        letter-spacing: 0.02em
-        color: #5f4725
-        font-weight: bolder
-        border-bottom: 1px dotted rgba(187, 166, 54, 0.37)
-        line-height: 10px
-        @include phone-landscape
-
-        @include tablet
-          font-size: 1.9em
-
-      #pen-off
-        font-size: 1.52em
-        font-family: $font-stack-Dancing-script
-        font-style: italic
-        color: #c78919
-        font-weight: lighter
-        padding-bottom: 10px
-
-      .portrait
-        max-width: 130px
-        border: 1px solid gray
+    .portrait
+      max-width: 130px
+      border: 1px solid gray
 
   .opening_line
     display: flex
@@ -179,6 +184,9 @@
     @include tablet
       font-size: 1.1em
       margin-top: -116px
+    @include desktop
+      width: 30vw
+
     #skills-set-imgs
       display: flex
       flex-wrap: wrap
@@ -234,8 +242,6 @@
     @include tablet
 
     @include desktop
-      width: 100vw
-
 
     a
       display: flex
@@ -745,6 +751,8 @@
     @include tablet
       height: auto
       padding-bottom: 54px
+    @include desktop
+      height: auto
     a
       align-items: center
 
@@ -773,14 +781,7 @@
       line-height: 2.5em
       margin: auto
 
-  .big-gallery
-    height: 33%
-    display: flex
-    flex-wrap: wrap
-    align-items: center
-    overflow-y: scroll
-    border: 1px solid #e6dee2
-    justify-content: space-between
+
 
 
   .fs-gal-view
@@ -927,6 +928,22 @@
     font-weight: bold
     color: #060407
 
+  .big-gallery
+    height: 33%
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    overflow-y: scroll
+    border: 1px solid #e6dee2
+    justify-content: space-between
+
+    @include desktop
+      flex-flow: row !important
+      align-self: center !important
+      width: 84vw !important
+      height: 100vh !important
+      flex-wrap: wrap !important
+
   .container
     width: 93vw
     display: flex
@@ -944,6 +961,8 @@
     @include desktop
       align-self: flex-end
       width: 60%
+      flex-flow: column
+
   #skills-desc
     display: flex
     width: 100%
@@ -1022,6 +1041,8 @@
       font-size: 1.1em
       width: 120px
 
+
+
   .small_intro
     display: flex
     flex-flow: column
@@ -1062,6 +1083,10 @@
       @include desktop
         font-size: 0.9em
 
+  .suite
+    @include desktop
+      width: 60vw
+
   .blocks
     display: flex
     height: 100%
@@ -1081,6 +1106,8 @@
       height: auto
       margin: auto
       margin: 0
+      @include desktop
+        width: 60vw
       div
         display: flex
         flex-direction: column
@@ -1118,7 +1145,9 @@
         width: 100%
         height: auto
         justify-content: center
-
+        @include desktop
+          width: 60vw
+          align-self: center
 
       img
         width: 54%
@@ -1139,6 +1168,11 @@
           padding: 10px 30px
           font-size: 1.12em
           margin-bottom: 0
+        @include desktop
+          width: 60vw
+          display: flex
+          align-self: center
+
       button
         width: auto
         height: auto
