@@ -389,62 +389,11 @@
 			justify-content: space-between
 			z-index: 999
 			background-color: #cac1b4
-			// margin-top: 0px
 			padding: 0
 			margin-bottom: 0
 		@include desktop
 			display: flex
 			border: none
-	// 
-	// button.accordion
-  //   cursor: pointer
-  //   height: 37px
-  //   font-size: 0.9em
-  //   font-weight: bolder
-  //   text-transform: uppercase
-  //   width: 64%
-  //   text-align: center
-  //   outline: none
-  //   transition: 0.5s ease
-  //   letter-spacing: 0.28em
-  //   background-color: rgb(245, 245, 245)
-  //   color: #09070b
-  //   margin-top: 6px
-  //   margin-bottom: 15px
-  //   border: 0
-  //   border-left: 2px solid #ebcf87
-  //   margin-right: 0
-  //   @include phone-landscape
-  //     width: auto
-  //     margin-top: 13px
-  //   @include tablet
-  //     width: auto
-  //     height: 36px
-  //     margin-top: 12px
-  //     background-color: #fffef2
-  //     border: 1.5px solid #c8c7c3
-  //   @include desktop
-  //     width: auto
-  //     margin-top: -8px
-  //     height: 35.5px
-  //     // border: 1.5px solid #c8c7c3
-	//
-  // button.accordion.active, button.accordion:hover
-  //   transition: 0.5s ease
-  //   text-align: center
-  //   font-size: 0.9em
-  //   background-color: rgba(255, 196, 131, 0.56) !important
-  //   color: #09070b !important
-  //   height: 35px
-  //   border: 1px solid #ffc387
-  //   border-bottom: none
-  //   margin-bottom: -2px
-	//
-  //   @include tablet
-  //     border: 1px solid rgba(155, 149, 130, 0.329412)
-  //     height: 36px
-  //   @include desktop
-  //     margin-right: 0
 
 	.menu2
 		border-radius: 0 10px 0 0
@@ -529,7 +478,7 @@
 				border-left: none
 				background-color: #fffef2
 				text-transform: lowercase
-				border-right: 2px solid #ff1f3e
+				border-left: 2px solid #ff1f3e
 		@include desktop
 			height: 100%
 			line-height: 27px
@@ -555,6 +504,10 @@
 			text-align: center
 		&:active
 			text-align: center
+		@include phone-landscape
+
+		@include tablet
+			font-size: 1.09em
 
 	.nav-archives
 		font-family: $font-stack-rajdhani

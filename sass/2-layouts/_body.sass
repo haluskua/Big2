@@ -249,6 +249,10 @@
       color: #73726b
       padding-bottom: 5px
       border-bottom: 1px dotted #73726b
+      @include phone-landscape
+
+      @include tablet
+        font-size: 1.3em
 
   .grafix
     text-decoration: none
@@ -540,10 +544,13 @@
     border: 1px solid #ffc387
     border-bottom: none
     margin-bottom: -2px
+    @include phone-landscape
 
     @include tablet
       border: 1px solid rgba(155, 149, 130, 0.329412)
       height: 36px
+      margin: auto
+      background-color: rgba(155, 149, 130, 0) !important
     @include desktop
       margin-right: 0
 
@@ -610,7 +617,8 @@
       transition: 0.5s ease
       border-bottom: 1px solid slategray
       @include tablet
-        margin-top: 8px
+        margin-top: 12px
+        padding-bottom: 7px
 
     #nav-folders:nth-child(4)
       margin-bottom: 50px
@@ -704,6 +712,12 @@
     flex-direction: column
     justify-content: flex-start
     align-items: center
+    @include phone-landscape
+
+
+    @include tablet
+      height: auto
+      padding-bottom: 54px
     a
       align-items: center
 
@@ -723,6 +737,14 @@
       color: forestgreen
       margin: 0
       margin-bottom: 8px
+  .title_block
+
+      @include tablet
+      width: 100%
+      color: white
+      background-color: #cac1b4
+      line-height: 2.5em
+      margin: auto
 
   .big-gallery
     height: 33%
@@ -843,6 +865,7 @@
     @include tablet
       justify-content: flex-start
       font-size: 1.71em
+      line-height: 2em
       padding-left: 8px
       color: #808080
 
@@ -864,6 +887,10 @@
     background-color: #f7efd66e
     // background-color: red
     justify-content: space-evenly
+    @include phone-landscape
+
+    @include tablet
+      width: auto
 
   #skills-desc
     display: flex
@@ -872,6 +899,13 @@
     position: relative
     height: auto
 
+  .hold_in2
+    @include phone-landscape
+
+    @include tablet
+      display: flex
+      justify-content: flex-start
+      width: 100%
 
   #read-on
     justify-content: flex-start !important
@@ -921,6 +955,7 @@
 
     @include tablet
       width: 23%
+      align-self: flex-start
 
 
   .close-caption, .gdClose, .dmClose, .tClose
@@ -929,7 +964,7 @@
 
     @include tablet
       font-size: 1.1em
-      width: 110px
+      width: 120px
 
   .small_intro
     display: flex
@@ -1167,6 +1202,10 @@
 
   #hide_h2, #hide_h2_gd, #hide_h2_dm, #hide_h2_t
     display: none
+    @include phone-landscape
+
+    @include tablet
+      padding-right: 8px
 
   .project_box
     display: flex
@@ -1181,6 +1220,14 @@
     // padding: 4px
     // bottom: 10%
     background-color: rgba(202, 218, 215, 0.22)
+    @include phone-landscape
+
+    p
+
+      @include phone-landscape
+
+      @include tablet
+
 
   .aboutus
     background: url("../dist/imgs/1920.png")
