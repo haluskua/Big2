@@ -1711,7 +1711,7 @@ h4, h6 {
   }
   #grafix, #contact,
   .projects, .wagai-weh, #wagai, #main-gallery,
-  .main-gallery, #main-projects, #projects,
+  .main-gallery, #main-projects, #projects, #film-projects,
   #gd-projects, #dm-projects, #t-projects {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1732,7 +1732,7 @@ h4, h6 {
   }
   #grafix a, #contact a,
   .projects a, .wagai-weh a, #wagai a, #main-gallery a,
-  .main-gallery a, #main-projects a, #projects a,
+  .main-gallery a, #main-projects a, #projects a, #film-projects a,
   #gd-projects a, #dm-projects a, #t-projects a {
     display: -webkit-box;
     display: -ms-flexbox;
