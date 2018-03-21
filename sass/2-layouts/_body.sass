@@ -64,6 +64,21 @@
         height: 100%
         background-color: green
         z-index: 9999999
+  #about
+    width: 100vw
+    // background: url("../dist/imgs/meri.png")
+    // background-position: center
+    // background-size: cover
+    // background-repeat: no-repeat
+    background-color: #1b0615
+    height: auto
+
+  #recent_projects
+    @include tablet
+      margin-top: 121px
+    @include desktop
+      margin-top: 81px
+
 
   #wagai
     display: flex
@@ -75,8 +90,9 @@
     margin: auto
     visibility: visible
     padding: 0 22px 0 22px
+
     p
-      padding: 20px
+      padding: 8px
       @include tablet
         height: 100%
         margin: auto
@@ -85,6 +101,7 @@
         visibility: visible
         background-color: rgba(255, 254, 242, 0.26)
         border: 1px solid #e5dcbc
+
       @include desktop
         height: 100%
         width: 67vw
@@ -137,8 +154,8 @@
     line-height: 1.65em
     margin-bottom: 10px
     padding: 0 15px 0 15px
-    font-size: 0.86em
-    color: #3d2707
+    font-size: 0.84em
+    color: #d6e1e2
     letter-spacing: 0.03em
     font-weight: normal
     font-family: $font-stack-roboto
@@ -148,7 +165,12 @@
       padding: 0 30px 0 30px
       font-size: 1.12em
       margin-top: 14px
+    @include desktop
+      width: 60vw
 
+  .opening_image
+    @include desktop
+      width: 40% !important
   .opening_statement
     font-size: 0.86em
     color: #3d2707
@@ -162,10 +184,12 @@
     @include phone-landscape
 
     @include tablet
-      padding: 9px 30px 0 16px
+      padding: 57px 30px 0 16px
       font-size: 1.12em
     @include desktop
       width: 60vw
+      padding-top: 60px
+      font-size: 1.1em
 
 
     span
@@ -207,10 +231,16 @@
     @include phone-landscape
 
     @include tablet
-      font-size: 1.1em
-      margin-top: -116px
+      font-size: 0.89em
+      margin-top: -97px !important
+      width: 54% !important
+      background-color: rgba(187, 166, 54, 0) !important
+      border: none !important
     @include desktop
-      width: 30vw
+      width: 48vw !important
+      margin-top: -94px !important
+      font-size: 1em !important
+      background-color: rgba(187, 166, 54, 0) !important
 
     #skills-set-imgs
       display: flex
@@ -238,15 +268,21 @@
     justify-content: center
     width: 100%
     padding: 0
+    padding-top: 30px
     margin: 0
-    color: #e6c4c4
+    color: #43a2ce
     text-align: center
     font-weight: bold
     font-size: 1.3em
+    @include phone-landscape
+
+    @include tablet
+
   .ompa
     @include tablet
+
       justify-content: flex-start
-      color: #1b0615
+      color: #03A9F4
 
   .snaps-section
     height: 100vh
@@ -254,7 +290,7 @@
   #grafix, #contact,
   .projects, .wagai-weh, #wagai, #main-gallery,
   .main-gallery, #main-projects, #projects, #film-projects,
-  #gd-projects, #dm-projects, #t-projects,
+  #gd-projects, #dm-projects, #t-projects, #about
     display: flex
     flex-direction: column
     justify-content: space-between
@@ -360,6 +396,9 @@
     background-size: cover
     background-repeat: no-repeat
     background-position: center
+    @include desktop
+      background-position: bottom
+      height: 80vh
 
     #contact
       display: flex
@@ -372,15 +411,18 @@
         font-size: 1.5em
         text-align: justify
         color: black
+        text-align: center
         padding: 21px
-        margin-bottom: 200px
-        color: #bbec82
-        line-height: 33px
+        margin-bottom: 121px
+        line-height: 29px
         @include phone-landscape
 
         @include tablet
           font-size: 2.1em
-          margin-bottom: 270px
+          margin-bottom: 300px
+          line-height: 37px
+        @include desktop
+          margin-bottom: 0
 
   .sm-container
     display: flex
@@ -393,7 +435,6 @@
     display: flex
     flex-wrap: wrap
     width: 65%
-    padding: 8px
     justify-content: space-between
     list-style: none
   #address
@@ -478,7 +519,6 @@
     justify-content: center
     width: 100%
     height: auto
-
     p
       padding: 20px
       font-size: 1.12em
@@ -493,6 +533,17 @@
 
       @include tablet
         font-size: 1.4em
+        margin-bottom: -134px
+        z-index: 999
+        color: #e7e7c3
+        background-color: rgba(255, 254, 242, 0)
+        border: none
+      @include desktop
+        background-color: rgba(255, 254, 242, 0)
+        margin-bottom: -148px
+        color: #e7e7c3
+        font-size: 1.6em
+        z-index: 9999
 
   #web-desc
     display: flex
@@ -626,7 +677,7 @@
         top: 4.7%
         left: 18%
       @include desktop
-        background-color: #f5f5f5
+        background-color: #29172b
         width: 21%
         position: fixed
         top: 50px
@@ -660,7 +711,7 @@
       width: 200px
       background-color: bisque
     @include desktop
-      background-color: rgba(255, 253, 250, 0.3)
+      background-color: rgba(245, 225, 255, 0.15)
 
     li
       list-style: none
@@ -676,7 +727,7 @@
         padding: 7px 0px
       @include desktop
         border-bottom: 1px solid #e3e6e8
-        background-color: #f5f5f5
+        background-color: #ecebe3
 
     #nav-folders:nth-child(4)
       margin-bottom: 50px
@@ -922,7 +973,7 @@
   .rgdp
     display: flex
     justify-content: center
-    color: #101010
+    color: #faf6e6
     font-weight: bold
     font-size: 1.4em
     line-height: 42px
@@ -933,6 +984,9 @@
       font-size: 1.71em
       line-height: 2em
       padding-left: 8px
+    @include desktop
+      font-size: 0.97em
+      font-style: oblique
 
   .video
     position: relative
@@ -963,6 +1017,17 @@
     text-transform: uppercase
     font-weight: bold
     color: #060407
+
+
+  .movie-gallery
+    @include desktop
+      flex-flow: row !important
+      // align-self: center !important
+      width: 100vw !important
+      height: 100vh !important
+      flex-wrap: wrap !important
+      padding-bottom: 50px !important
+      height: 200px !important
 
   .big-gallery
     height: 33%
@@ -999,6 +1064,26 @@
       width: 60%
       flex-flow: column
       margin: 0
+
+  .container-movie
+    width: 93vw
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    overflow-y: scroll
+    border: 1px solid #e6dee2
+    background-color: #f7efd66e
+    // background-color: red
+    justify-content: space-evenly
+    @include phone-landscape
+
+    @include tablet
+      margin: auto
+    @include desktop
+      align-self: flex-end
+      width: auto
+      flex-flow: column
+      margin: auto
 
   .iframe
 
@@ -1152,6 +1237,9 @@
       margin: 0
       @include desktop
         width: 60vw
+        border: 1px solid #606a3c
+        border-bottom: none
+        border-top: none
       div
         display: flex
         flex-direction: column
@@ -1397,3 +1485,11 @@
     width: 100%
     display: flex
     justify-content: center
+    flex-flow: column
+  #unkown
+    font-family: $font-stack-antic
+    color: #bfbfbf
+    font-style: italic
+    font-size: 0.72em
+    @include desktop
+      font-size: 0.62em

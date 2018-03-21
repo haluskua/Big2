@@ -74,7 +74,7 @@
 			height: 74%
 			margin-bottom: -126px
 		@include desktop
-			height: 63%
+			height: 51%
 
 	.landing-page
 		width: 100%
@@ -135,9 +135,10 @@
 		@include phone-landscape
 			align-self: flex-end
 			width: 76vw
-
 		@include tablet
 			margin-top: -87px
+		@include desktop
+			width: auto
 
 		#cr-field
 			display: flex
@@ -175,9 +176,9 @@
 				letter-spacing: 0.04em
 				font-family: $font-stack-roboto
 			@include desktop
-				font-size: 1em
+				font-size: 1.1em
 				font-weight: bold
-				letter-spacing: 0.09em
+
 
 	#hetinfo
 		color: #1b0615
@@ -240,6 +241,7 @@
 		@include desktop
 			font-size: 1.4em
 			margin-top: 130px
+			letter-spacing: 0
 
 	#my-name
 		height: 42%
@@ -305,7 +307,6 @@
 			margin: 0
 			width: 11vw
 			height: 51px
-			background-color: #cac1b4
 			background-position: center
 			left: 0
 			top: 0
@@ -538,6 +539,7 @@
 			text-align: center
 			background-color: none
 		@include desktop
+			color: #f5d19e
 
 
 	.haus
@@ -647,7 +649,9 @@
 			border-radius: 0
 			display: flex
 			align-items: center
-			background-color: #faf6e6
+			// background-color: #faf6e6
+			background-color: #29172b
+
 			justify-content: center
 			z-index: 99999999
 
