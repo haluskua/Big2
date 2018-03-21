@@ -13,7 +13,7 @@
       max-width: 100%
       height: auto
       position: relative
-      background-color: white
+      background-color: #f6f6f6
 
       section
         display: flex
@@ -31,6 +31,7 @@
         @include desktop
           border: none
           background-size: cover
+          align-items: center
 
 
 
@@ -110,16 +111,37 @@
     @include desktop
       width: 30vw
 
+  .columnsSplit
+    display: flex !important
+    flex-wrap: wrap
+
+    @include phone-landscape
+
+    @include tablet
+      flex-wrap: wrap
+
+    @include desktop
+      width: 100%
+      flex-wrap: nowrap
+      margin: auto
+
+  .p-2columns
+    @include desktop
+      width: 36%
+      margin: auto
+
   #p-justified
     text-align: justify
     margin: auto
-    font-size: 0.92em
-    font-family: $font-stack-open-sans
-    color: #443939
     padding: 10px
     line-height: 1.65em
     margin-bottom: 10px
     padding: 0 15px 0 15px
+    font-size: 0.86em
+    color: #3d2707
+    letter-spacing: 0.03em
+    font-weight: normal
+    font-family: $font-stack-roboto
     @include phone-landscape
 
     @include tablet
@@ -128,9 +150,11 @@
       margin-top: 14px
 
   .opening_statement
-    font-size: 0.92em
-    font-family: $font-stack-open-sans
-    color: #443939
+    font-size: 0.86em
+    color: #3d2707
+    letter-spacing: 0.03em
+    font-weight: normal
+    font-family: $font-stack-roboto
     padding: 9px
     padding-left: 12px
     line-height: 1.65em
@@ -142,6 +166,7 @@
       font-size: 1.12em
     @include desktop
       width: 60vw
+
 
     span
       font-size: 1.6em
@@ -266,7 +291,7 @@
       margin-top: 40px
       color: #73726b
       padding-bottom: 5px
-      border-bottom: 1px dotted #73726b
+      // border-bottom: 1px dotted #73726b
       @include phone-landscape
 
       @include tablet
@@ -878,13 +903,26 @@
   .static-image
     width: 26%
 
+  .img-split
+    height: 20%
+    width: 97%
+    @include phone-landscape
+
+    @include tablet
+      height: 25%
+    @include desktop
+      width: 45%
+      height: 25%
+
+
+
   #accordion
     margin-top: 30px
 
   .rgdp
     display: flex
     justify-content: center
-    color: #26061e
+    color: #101010
     font-weight: bold
     font-size: 1.4em
     line-height: 42px
@@ -895,7 +933,6 @@
       font-size: 1.71em
       line-height: 2em
       padding-left: 8px
-      color: #808080
 
   .video
     position: relative
@@ -917,9 +954,8 @@
       display: none
 
   .show_inlarge
-    display: none
+    display: none !important
     @include desktop
-    display: flex
     display: flex
     font-family: $font-stack-antic
     text-align: justify
@@ -957,12 +993,17 @@
     @include phone-landscape
 
     @include tablet
-      width: auto
+      margin: auto
     @include desktop
       align-self: flex-end
       width: 60%
       flex-flow: column
+      margin: 0
 
+  .iframe
+
+    @include desktop
+      margin: auto
   #skills-desc
     display: flex
     width: 100%
@@ -1070,16 +1111,19 @@
       @include tablet
         font-size: 1.65em
     p
-      color: #443939
       width: 100%
       text-align: justify
-      font-family: $font-stack-open-sans
       line-height: 1.56em
-      font-size: 0.92em
+      font-size: 0.86em
+      padding-top: 8px
+      color: #3d2707
+      letter-spacing: 0.03em
+      font-weight: normal
+      font-family: $font-stack-roboto
       @include phone-landscape
 
       @include tablet
-        font-size: 1.12em
+        font-size: 1em
       @include desktop
         font-size: 0.9em
 
@@ -1155,12 +1199,14 @@
         border-radius: 9px
         align-self: center
       p
-        font-size: 0.92em
-        font-family: $font-stack-open-sans
+        font-size: 0.86em
+        color: #3d2707
+        letter-spacing: 0.03em
+        font-weight: normal
+        font-family: $font-stack-roboto
         text-align: center
         padding: 10px
         line-height: 1.65em
-        color: #443939
         margin-bottom: 50px
         @include phone-landscape
 
@@ -1324,7 +1370,16 @@
 
       @include tablet
 
-
+  .spacer
+    @include desktop
+      height: 100%
+      margin: auto
+      width: 83%
+      overflow: auto
+      visibility: visible
+      padding: 40px 0px
+      /* background-color: rgba(255, 254, 242, 0.26); */
+      border-bottom: 1px solid #e5dcbc
   .aboutus
     background: url("../dist/imgs/1920.png")
     overflow-y: scroll
