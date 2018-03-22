@@ -400,6 +400,7 @@ h4, h6 {
   #thin #bulgeword {
     font-size: 1.1em;
     font-weight: bold;
+    font-family: 'Orbitron';
   }
 }
 
@@ -502,6 +503,7 @@ h4, h6 {
     font-size: 1.4em;
     margin-top: 130px;
     letter-spacing: 0;
+    font-family: 'Orbitron';
   }
 }
 
@@ -733,7 +735,7 @@ h4, h6 {
     margin-bottom: 11px;
     margin-top: 9px;
   }
-  .nav-folders:focus {
+  .nav-folders:active, .nav-folders:focus {
     width: 70%;
     background-color: #030406;
   }
@@ -773,6 +775,16 @@ h4, h6 {
     border: none;
     padding: 0;
     line-height: 1.8em;
+  }
+  .nav-folders:focus, .nav-foldersactive, .nav-folders:hover, .nav-folders:visited {
+    background-color: green;
+    width: 24%;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .nav-folders:visited {
+    color: red;
   }
 }
 
@@ -912,6 +924,9 @@ h4, h6 {
     background-color: rgba(255, 255, 0, 0);
     background-color: none;
   }
+  .hamburger-menu:visited {
+    color: white;
+  }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
@@ -951,11 +966,9 @@ h4, h6 {
     letter-spacing: 0.07em;
     color: #453320;
   }
-  .nav-archives:focus {
+  .nav-archives:focus, .nav-archives:active, .nav-archives:hover, .nav-archivesvisited {
     text-align: center;
-  }
-  .nav-archives:active {
-    text-align: center;
+    color: brown;
   }
 }
 
@@ -969,7 +982,14 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .nav-archives {
-    color: #f5d19e;
+    color: #faf6e6;
+    text-align: center;
+    z-index: 999;
+    font-family: 'Orbitron';
+  }
+  .nav-archives:focus, .nav-archives:active, .nav-archives:hover, .nav-archivesvisited {
+    text-align: center;
+    color: white;
   }
 }
 
@@ -1691,6 +1711,8 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .opening_line {
     width: 48vw !important;
+    width: 30% !important;
+    font-size: 0.78em !important;
     margin-top: -94px !important;
     font-size: 1em !important;
     background-color: rgba(187, 166, 54, 0) !important;
@@ -2147,8 +2169,9 @@ h4, h6 {
     background-color: rgba(255, 254, 242, 0);
     margin-bottom: -148px;
     color: #e7e7c3;
-    font-size: 1.6em;
+    font-size: 1.5em;
     z-index: 9999;
+    width: 35%;
   }
 }
 
@@ -3537,7 +3560,7 @@ h4, h6 {
     display: flex;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    background-color: #29172b;
+    background-color: #080608;
     border-top: 0px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
