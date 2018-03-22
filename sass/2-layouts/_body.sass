@@ -614,9 +614,6 @@
     border: 0
     // border-left: 2px solid #ebcf87
     margin-right: 0
-    @include phone-landscape
-      width: auto
-      margin-top: 13px
     @include tablet
       width: auto
       height: 36px
@@ -636,6 +633,9 @@
       color: #453320
       font-size: 1.01em
       letter-spacing: 0.04em
+    @include phone-landscape
+      margin: 0
+      width: 14%
 
   button.accordion.active, button.accordion:hover
     width: 100%
@@ -648,8 +648,6 @@
     border: 1px solid #ffc387
     border-bottom: none
     margin-bottom: -2px
-    @include phone-landscape
-
     @include tablet
       border: 1px solid rgba(155, 149, 130, 0.33)
       height: 36px
@@ -662,6 +660,10 @@
       width: auto
       border: none !important
       background-color: #faf6e6 !important
+    @include phone-landscape
+      background-color: rgba(255, 196, 131, 0)
+      width: 14%
+      margin: auto
 
   div.panel
       background-color: rgba(255, 196, 131, 0.56)
@@ -672,8 +674,6 @@
       border: 1px solid #ffc388
       border-top: 0
       margin-bottom: 4px
-      @include phone-landscape
-        width: 81%
       @include tablet
         position: fixed
         width: auto
@@ -682,9 +682,17 @@
       @include desktop
         background-color: #29172b
         width: 21%
-        position: fixed
+        height: 255px
         top: 50px
         left: 219.5px
+        border-right: 1px solid #ffc388
+      @include phone-landscape
+        width: 1%
+        background-color: rgba(255, 196, 131, 0)
+        padding: 0
+        margin: auto
+        border-bottom: 0
+        z-index: 1
 
       .skills-caption, .gd-caption, .dm-caption, .t-caption
         display: none
@@ -709,12 +717,24 @@
     margin-top: 0
     padding: 0
     @include phone-landscape
+      position: absolute
+      width: 24%
+      font-size: 0.8em
+      top: 50px
+      height: auto
+      left: 122px
+      background-color: gainsboro
 
     @include tablet
       width: 200px
       background-color: bisque
     @include desktop
-      background-color: rgba(245, 225, 255, 0.15)
+      background-color: rgba(129, 63, 162, 0.4)
+      position: absolute
+      left: 149px
+      width: 42%
+      height: auto
+      font-size: 0.8em
 
     li
       list-style: none
@@ -731,6 +751,7 @@
       @include desktop
         border-bottom: 1px solid #e3e6e8
         background-color: #ecebe3
+        width: 60%
 
     #nav-folders:nth-child(4)
       margin-bottom: 50px

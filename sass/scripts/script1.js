@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 
-    if (jQuery(window).width() <= 481) {
+    if (jQuery(window).width() <= 640) {
         $(".exit-menu, .hamburger-menu, .logo-desc").on("click", function(){
           $(".mobile-container").hide(300);
           $(".haus").show(300);
@@ -37,7 +37,7 @@ $(document).ready(function(){
 
         // Undisplaying the mobie menu-bar
         jQuery(window).resize(function () {
-                if (jQuery(window).width() > 500) {
+                if (jQuery(window).width() > 641) {
                   $("#folders-container").show(300);
                   // $('#hetinfo').on("click", function(){
                   //

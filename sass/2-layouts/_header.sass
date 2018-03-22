@@ -51,7 +51,8 @@
 		flex-direction: column
 		justify-content: center
 		@include phone-landscape
-			height: 86%
+			height: 77%
+			padding: 0
 		@include tablet
 			width: 100vw
 			margin: auto
@@ -151,14 +152,14 @@
 			letter-spacing: 0.02em
 			text-transform: normal
 			font-family: $font-stack-antic
-			@include phone-landscape
-				font-size: 0.7em
 			@include tablet
 				color: #635133
 				letter-spacing: 0.055em
 				font-weight: bold
 			@include desktop
 				font-size: 0.3em
+			@include phone-landscape
+				font-size: 0.45em
 
 		#bulgeword
 			color: #26061e
@@ -166,9 +167,6 @@
 			font-weight: bold
 			text-align: center
 			font-family: $font-stack-roboto
-			@include phone-landscape
-				color: #26061e
-				font-size: 0.78em
 			@include tablet
 				color: #341e25
 				font-weight: 600
@@ -179,6 +177,9 @@
 				font-size: 1.1em
 				font-weight: bold
 				font-family: 'Orbitron'
+			@include phone-landscape
+				color: #26061e
+				font-size: 0.78em
 
 
 	#hetinfo
@@ -340,6 +341,8 @@
 		background-position: top
 		background-repeat: no-repeat
 		background-color: rgba(160, 168, 175, 0.42)
+		@include phone-landscape
+			height: 40px
 		@include tablet
 			width: 86vw
 			margin-left: 62px
@@ -373,24 +376,23 @@
 		@include desktop
 			z-index: 999999
 
-		li
-			display: flex
-
+ 		// li
+		// 	display: flex
+		//
 	.nav-folders
+		display: flex
 		width: 63%
 		height: 30px
 		display: none
 		align-self: center
 		padding: 3px
+		list-style: none
 		// background-color: rgba(155, 149, 130, 0.329)
 		margin-bottom: 11px
 		margin-top: 9px
 		&:active, &:focus
 			width: 70%
 			background-color: #030406
-		@include phone-landscape
-			width: 19%
-			margin-top: 4px
 		@include tablet
 			width: 100%
 			height: auto
@@ -410,6 +412,11 @@
 			&:focus, &active, &:hover, &:visited
 				background-color: green
 				width: 24%
+		@include phone-landscape
+			z-index: 99999
+			width: 20%
+			&:active, &:focus
+				width: 20%
 
 	.nav-folders:visited
 		@include desktop
@@ -428,7 +435,10 @@
 			line-height: 35px
 			width: 97%
 			font-size: 0.98em
-		@include desktop
+
+			@include desktop
+
+			@include phone-landscape
 
 
 	#home-logo
@@ -436,17 +446,17 @@
 		display: flex
 		background: url('../dist/imgs/newlogo.png') center no-repeat
 		background-size: cover
-		@include phone-landscape
-			display: flex
-			width: 39%
-			align-self: center
-			background-size: cover
 		@include tablet
 			height: 71%
 		@include desktop
 			height: 100%
 			width: 66%
 			background-size: contain
+		@include phone-landscape
+			display: flex
+			width: 39%
+			align-self: center
+			background-size: cover
 
 	.logo-home
 		// height: 57px
@@ -536,14 +546,17 @@
 			font-size: 0.8em
 
 	.nav-archives
+		&:focus, &:active, &:hover, &visited
+			text-align: center
+			color: brown
 		font-family: $font-stack-rajdhani
 		font-weight: bolder
 		font-size: 1.24em
 		letter-spacing: 0.07em
 		color: #453320
-		&:focus, &:active, &:hover, &visited
-			text-align: center
-			color: brown
+		@include phone-landscape
+			font-size: 0.9em
+
 
 		@include tablet
 			font-size: 1.1em
@@ -569,6 +582,7 @@
 		background-color: #1b0615
 		@include phone-landscape
 			width: 25vw
+			height: 34px
 			top: 0
 
 		@include tablet
@@ -613,6 +627,8 @@
 		border-bottom: 1px dotted
 		text-transform: capitalize
 		font-family: $font-stack-roboto
+		@include phone-landscape
+			font-size: 0.8em
 
 
 	.main-menu
@@ -631,6 +647,8 @@
 		letter-spacing: 0.05em
 		justify-content: center
 		font-family: $font-stack-roboto
+		@include phone-landscape
+			font-size: 0.8em
 
 	.mobile-container
 		max-height: 100%
@@ -644,6 +662,8 @@
 
 		@include phone-landscape
 			justify-content: flex-start
+			top: 0
+			z-index: 9999
 		@include tablet
 			height: 76px
 			top: 0
@@ -674,6 +694,8 @@
 
 	.mobile-container .sticky
 		z-index: 999999999999
+		@include phone-landscape
+			top: 0
 		@include tablet
 			z-index: 99999999
 		@include desktop
