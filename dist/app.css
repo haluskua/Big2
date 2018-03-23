@@ -42,10 +42,10 @@ h4, h6 {
 /* LAYOUT */
 @media (min-width: 1em), screen and (orientation: portrait) {
   @font-face {
-    font-family: 'Orbitron';
+    font-family: 'Orbitron black';
     src: url(..Big2/fonts/Orbitron-Black.ttf);
     font-style: normal;
-    font-weight: 100;
+    font-weight: 300;
   }
   @font-face {
     font-family: 'Orbitron';
@@ -263,7 +263,6 @@ h4, h6 {
 @media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
   .home-desc {
     width: 87vw;
-    margin-left: 85px;
   }
 }
 
@@ -367,6 +366,7 @@ h4, h6 {
 @media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
   #thin #cr-field {
     font-size: 0.45em;
+    font-family: 'Orbitron';
   }
 }
 
@@ -402,6 +402,7 @@ h4, h6 {
   #thin #bulgeword {
     color: #26061e;
     font-size: 0.78em;
+    font-family: "Orbitron";
   }
 }
 
@@ -410,13 +411,6 @@ h4, h6 {
     color: #1b0615;
     font-size: 1em;
     text-align: center;
-  }
-}
-
-@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
-  #hetinfo {
-    margin-bottom: 78px;
-    margin-top: 3px;
   }
 }
 
@@ -434,18 +428,19 @@ h4, h6 {
   }
 }
 
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  #hetinfo {
+    margin-bottom: 28px;
+    margin-top: 3px;
+    font-family: 'Orbitron black';
+  }
+}
+
 @media (min-width: 1em), screen and (orientation: portrait) {
   #mini-desc {
     width: 100%;
     height: 100%;
     letter-spacing: 0em;
-  }
-}
-
-@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
-  #mini-desc {
-    font-size: 0.84em;
-    padding: 3px;
   }
 }
 
@@ -468,6 +463,13 @@ h4, h6 {
     border: none;
     border-bottom: 1px dotted #9d8b70;
     padding-bottom: 4px;
+  }
+}
+
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  #mini-desc {
+    font-size: 0.84em;
+    padding: 3px 91px 3px 3px;
   }
 }
 
@@ -504,6 +506,13 @@ h4, h6 {
     font-size: 1.4em;
     margin-top: 130px;
     letter-spacing: 0;
+    font-family: 'Orbitron';
+  }
+}
+
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  .intro {
+    font-size: 0.72em;
     font-family: 'Orbitron';
   }
 }
@@ -785,6 +794,7 @@ h4, h6 {
   .nav-folders {
     z-index: 99999;
     width: 20%;
+    margin: 4px 0px;
   }
   .nav-folders:active, .nav-folders:focus {
     width: 20%;
@@ -1567,6 +1577,14 @@ h4, h6 {
   }
 }
 
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  #wagai p {
+    width: 84vw;
+    margin-top: -105px;
+    font-size: 0.7em;
+  }
+}
+
 @media (min-width: 1em), screen and (orientation: portrait) {
   .main-paragraph {
     margin: auto;
@@ -1656,6 +1674,12 @@ h4, h6 {
   }
 }
 
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  #p-justified {
+    width: 80vw;
+  }
+}
+
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .opening_image {
     width: 96% !important;
@@ -1673,6 +1697,14 @@ h4, h6 {
     padding-left: 12px;
     line-height: 1.65em;
     margin-top: 18px;
+  }
+}
+
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  .opening_statement {
+    margin-bottom: 107px;
+    margin-top: 40px;
+    width: 90vw;
   }
 }
 
@@ -1737,6 +1769,14 @@ h4, h6 {
     font-family: "Open Sans";
     position: relative;
     margin-top: -90px;
+  }
+}
+
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  .opening_line {
+    width: 62vw !important;
+    margin-top: -100px !important;
+    font-size: 0.7em !important;
   }
 }
 
@@ -2217,6 +2257,14 @@ h4, h6 {
   }
 }
 
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  #imgslider-desc p {
+    color: white;
+    z-index: 1;
+    margin: 0;
+  }
+}
+
 @media (min-width: 1em), screen and (orientation: portrait) {
   #web-desc {
     display: -webkit-box;
@@ -2466,10 +2514,14 @@ h4, h6 {
     position: absolute;
     width: 24%;
     font-size: 0.8em;
-    top: 50px;
+    top: 41px;
     height: auto;
-    left: 122px;
-    background-color: gainsboro;
+    left: 101px;
+    background-color: #1b0615;
+    background: url("../dist/imgs/1920.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
@@ -2805,15 +2857,23 @@ h4, h6 {
   }
 }
 
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  .img-split {
+    height: 306px;
+    width: 100%;
+  }
+}
+
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .img-split {
     width: 54%;
+    height: 238px;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .img-split:hover {
-    width: 94%;
+    width: 60vw;
     height: 20%;
   }
 }
@@ -3206,7 +3266,7 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .small_intro p {
     width: 100%;
-    text-align: justify;
+    text-align: left;
     line-height: 1.56em;
     font-size: 0.86em;
     padding-top: 8px;
@@ -3376,6 +3436,14 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+}
+
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  .blocks section p {
+    width: 89vw;
     -ms-flex-item-align: center;
         align-self: center;
   }
@@ -3618,12 +3686,14 @@ h4, h6 {
     color: #65635e;
     border-bottom: 1px solid lightgray;
     border-top: 1px solid brown;
+    font-family: 'orbitron';
   }
 }
 
 @media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
   .webdev-title {
     background-color: #1b0615;
+    z-index: 1;
   }
 }
 

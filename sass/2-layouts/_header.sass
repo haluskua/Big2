@@ -3,10 +3,10 @@
 
 
 	@font-face
-	  font-family: 'Orbitron'
+	  font-family: 'Orbitron black'
 	  src: url(..Big2/fonts/Orbitron-Black.ttf)
 	  font-style: normal
-	  font-weight: 100
+	  font-weight: 300
 
 	@font-face
 	  font-family: 'Orbitron'
@@ -110,7 +110,6 @@
     width: 80vw
 		@include phone-landscape
 			width: 87vw
-			margin-left: 85px
 		@include tablet
 
 		@include desktop
@@ -160,6 +159,8 @@
 				font-size: 0.3em
 			@include phone-landscape
 				font-size: 0.45em
+				font-family: 'Orbitron'
+
 
 		#bulgeword
 			color: #26061e
@@ -180,31 +181,28 @@
 			@include phone-landscape
 				color: #26061e
 				font-size: 0.78em
+				font-family: "Orbitron"
 
 
 	#hetinfo
 		color: #1b0615
 		font-size: 1em
 		text-align: center
-
-		@include phone-landscape
-			margin-bottom: 78px
-			margin-top: 3px
 		@include tablet
 			width: 100%
 			line-height: 0px
 		@include desktop
 			height: 0px
 			border: none
+		@include phone-landscape
+			margin-bottom: 28px
+			margin-top: 3px
+			font-family: 'Orbitron black'
 
 	#mini-desc
 		width: 100%
 		height: 100%
 		letter-spacing: 0em
-
-		@include phone-landscape
-	    font-size: 0.84em
-	    padding: 3px
 		@include tablet
 			color: #341e25
 			font-weight: normal
@@ -219,7 +217,9 @@
 			border: none
 			border-bottom: 1px dotted #9d8b70
 			padding-bottom: 4px
-
+		@include phone-landscape
+	    font-size: 0.84em
+	    padding: 3px 91px 3px 3px
 	.intro
 		margin: auto
 		margin-top: 0px
@@ -244,6 +244,9 @@
 			font-size: 1.4em
 			margin-top: 130px
 			letter-spacing: 0
+			font-family: 'Orbitron'
+		@include phone-landscape
+			font-size: 0.72em
 			font-family: 'Orbitron'
 
 	#my-name
@@ -415,6 +418,7 @@
 		@include phone-landscape
 			z-index: 99999
 			width: 20%
+			margin: 4px 0px
 			&:active, &:focus
 				width: 20%
 

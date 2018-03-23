@@ -87,10 +87,25 @@ $(document).ready(function(){
                 });
 
         }
+// targeting headerHeight on phon-landscape resolution
+
+                if(jQuery (window).height() <460) {
+                  var stickyNavTop = $('.nav-folders').offset().top;
+                  var headerHeight = 0;
+                    $('.hamburger-menu, .logo-desc, #snaps').click(function(e) {
+                        var linkHref = $(this).attr('href');
+                        $('html, body').animate({
+                          scrollTop: $(linkHref).offset().top - headerHeight
+                        }, 800);
+                        e.preventDefault();
+                      });
+
+                }
                 if(jQuery (window).width() >801){
                   $("#hide_h2, #hide_h2_gd, #hide_h2_dm, #hide_h2_t").css("display", "flex");
                   $("#t-descOpen, #t-descClose, #skills-descOpen, #skills-descClose, #gd-descClose, #gd-descOpen, #dm-descOpen, #dm-descClose").css("display", "none");
                   $(".scpmt, .scpmt-gd, .scpmt-dm, .scpmt-t").css("display", "flex");
+                  // $(".img-split").css("width", "50%")
                 }
 
         // targeting tablet view because of menu top height change from mobile view
