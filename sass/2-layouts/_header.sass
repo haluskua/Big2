@@ -417,12 +417,7 @@
 		margin-top: 9px
 		&:active, &:focus
 			width: 70%
-		@include phone-landscape
-			z-index: 99999
-			width: 20%
-			margin: 4px 0px
-			&:active, &:focus
-				width: 20%
+			background-color: #030406
 		@include tablet
 			width: 100%
 			height: auto
@@ -440,9 +435,14 @@
 			padding: 0
 			line-height: 1.8em
 			&:focus, &active, &:hover, &:visited
-				background-color: rgba(159, 150, 160, 0.59)
-				// width: 24%
-
+				background-color: green
+				width: 24%
+		@include phone-landscape
+			z-index: 99999
+			width: 20%
+			margin: 4px 0px
+			&:active, &:focus
+				width: 20%
 
 	.nav-folders:visited
 		@include desktop
@@ -570,8 +570,6 @@
 			font-size: 1.09em
 		@include desktop
 			font-size: 0.8em
-			&:hover
-				color: white
 
 	.nav-archives
 		&:focus, &:active, &:hover, &visited

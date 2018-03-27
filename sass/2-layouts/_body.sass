@@ -71,7 +71,6 @@
     // background-size: cover
     // background-repeat: no-repeat
     background-color: #1b0615
-    background-color: #3a3438
     height: auto
 
   #recent_projects
@@ -164,24 +163,18 @@
     letter-spacing: 0.03em
     font-weight: normal
     font-family: $font-stack-roboto
-    @include phone-landscape
-      width: 72vw
     @include tablet
       padding: 0 30px 0 30px
       font-size: 1.12em
       margin-top: 14px
     @include desktop
       width: 60vw
-      font-size: 1.02em
-      line-height: 1.67em
-
+    @include phone-landscape
+      width: 80vw
 
   .opening_image
-    @include phone-landscape
-      width: 35%
     @include desktop
-      width: 25% !important
-
+      width: 96% !important
   .opening_statement
     font-size: 0.86em
     color: #3d2707
@@ -219,13 +212,13 @@
       @include tablet
         font-size: 1.9em
 
-  #pen-off
-    font-size: 1.52em
-    font-family: $font-stack-Dancing-script !important
-    font-style: italic
-    color: #c78919
-    font-weight: lighter
-    padding-bottom: 10px
+    #pen-off
+      font-size: 1.52em
+      font-family: $font-stack-Dancing-script
+      font-style: italic
+      color: #c78919
+      font-weight: lighter
+      padding-bottom: 10px
 
     .portrait
       max-width: 130px
@@ -290,7 +283,7 @@
     padding: 0
     padding-top: 30px
     margin: 0
-    color: #c78919
+    color: #43a2ce
     text-align: center
     font-weight: bold
     font-size: 1.3em
@@ -298,15 +291,11 @@
 
     @include tablet
 
-    @include desktop
-      justify-content: flex-start
-      font-family: 'Orbitron'
-
-
   .ompa
     @include tablet
+
       justify-content: flex-start
-      color: #c78919
+      color: #03A9F4
 
   .snaps-section
     height: 100vh
@@ -420,29 +409,26 @@
     background-size: cover
     background-repeat: no-repeat
     background-position: center
-    @include phone-landscape
-      background-position: bottom
     @include desktop
-      background-position: top
-      height: 100vh
+      background-position: bottom
+      height: 80vh
 
     #contact
       display: flex
       flex-direction: column
-      height: 100vh
+      height: 92%
       width: 100%
       p
         width: 75%
         font-family: $font-stack-Dancing-script
         font-size: 1.5em
         text-align: justify
-        color: #54d259
+        color: black
         text-align: center
         padding: 21px
         margin-bottom: 121px
         line-height: 29px
         @include phone-landscape
-
 
         @include tablet
           font-size: 2.1em
@@ -640,9 +626,6 @@
     margin-top: 6px
     margin-bottom: 15px
     border: 0
-    @include phone-landscape
-      margin: 0
-      width: 14%
     // border-left: 2px solid #ebcf87
     margin-right: 0
     @include tablet
@@ -657,16 +640,16 @@
       margin-top: 22px
       border: none
     @include desktop
-      width: 14%
-      height: 28px
-      margin: 0
-      padding: 0
-      align-self: center
-      color: white
+      width: auto
+      height: auto
+      margin: auto
+      background-color: #faf6e6
+      color: #453320
       font-size: 1.01em
       letter-spacing: 0.04em
-      background-color: rgba(255, 196, 131, 0)
-
+    @include phone-landscape
+      margin: 0
+      width: 14%
 
   button.accordion.active, button.accordion:hover
     width: 100%
@@ -679,10 +662,6 @@
     border: 1px solid #ffc387
     border-bottom: none
     margin-bottom: -2px
-    @include phone-landscape
-      background-color: rgba(255, 196, 131, 0)
-      width: 14%
-      margin: auto
     @include tablet
       border: 1px solid rgba(155, 149, 130, 0.33)
       height: 36px
@@ -690,14 +669,15 @@
       background-color: rgb(248, 247, 246) !important
     @include desktop
       padding: 0
-      height: 28px
+      height: auto
       margin: auto
-      align-self: center
-      color: white !important
-      width: 14%
+      width: auto
       border: none !important
-      background-color: rgba(155, 149, 130, 0) !important
-
+      background-color: #faf6e6 !important
+    @include phone-landscape
+      background-color: rgba(255, 196, 131, 0)
+      width: 14%
+      margin: auto
 
   div.panel
       background-color: rgba(255, 196, 131, 0.56)
@@ -762,14 +742,15 @@
       background-size: cover
       background-position: center
       background-repeat: no-repeat
+
     @include tablet
       width: 200px
       background-color: bisque
     @include desktop
-      background-color: rgba(59, 5, 86, 0.56)
+      background-color: rgba(129, 63, 162, 0.4)
       position: absolute
-      top: 50px
-      width: 30%
+      left: 149px
+      width: 42%
       height: auto
       font-size: 0.8em
 
@@ -787,8 +768,8 @@
         padding: 7px 0px
       @include desktop
         border-bottom: 1px solid #e3e6e8
-        width: 54%
-        margin-top: 10px
+        background-color: #ecebe3
+        width: 60%
 
     #nav-folders:nth-child(4)
       margin-bottom: 50px
@@ -883,7 +864,6 @@
     justify-content: flex-start
     align-items: center
     @include phone-landscape
-      height: auto
 
 
     @include tablet
@@ -1122,7 +1102,6 @@
     // background-color: red
     justify-content: space-evenly
     @include phone-landscape
-      height: 93vh
 
     @include tablet
       margin: auto
@@ -1130,7 +1109,6 @@
       align-self: flex-end
       width: 60%
       flex-flow: column
-      height: auto
       margin: 0
 
   .container-movie
@@ -1278,7 +1256,7 @@
       @include tablet
         font-size: 1em
       @include desktop
-        font-size: 0.83em
+        font-size: 0.9em
 
   .suite
     @include desktop
@@ -1543,7 +1521,7 @@
       overflow: auto
       visibility: visible
       padding: 40px 0px
-      margin-bottom: 40px
+      /* background-color: rgba(255, 254, 242, 0.26); */
       border-bottom: 1px solid #e5dcbc
   .aboutus
     background: url("../dist/imgs/1920.png")
