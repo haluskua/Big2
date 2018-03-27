@@ -3,10 +3,10 @@
 
 
 	@font-face
-	  font-family: 'Orbitron black'
+	  font-family: 'Orbitron'
 	  src: url(..Big2/fonts/Orbitron-Black.ttf)
 	  font-style: normal
-	  font-weight: 300
+	  font-weight: 100
 
 	@font-face
 	  font-family: 'Orbitron'
@@ -17,6 +17,7 @@
 	@font-face
 	  font-family: 'PerpetuaLight'
 	  src: url(..Big2/fonts/PERTILI.TTF)
+
 
 	.hetpage
 		display: flex
@@ -50,8 +51,7 @@
 		flex-direction: column
 		justify-content: center
 		@include phone-landscape
-			height: 77%
-			padding: 0
+			height: 86%
 		@include tablet
 			width: 100vw
 			margin: auto
@@ -109,6 +109,7 @@
     width: 80vw
 		@include phone-landscape
 			width: 87vw
+			margin-left: 85px
 		@include tablet
 
 		@include desktop
@@ -150,16 +151,14 @@
 			letter-spacing: 0.02em
 			text-transform: normal
 			font-family: $font-stack-antic
+			@include phone-landscape
+				font-size: 0.7em
 			@include tablet
 				color: #635133
 				letter-spacing: 0.055em
 				font-weight: bold
 			@include desktop
 				font-size: 0.3em
-			@include phone-landscape
-				font-size: 0.45em
-				font-family: 'Orbitron'
-
 
 		#bulgeword
 			color: #26061e
@@ -167,6 +166,9 @@
 			font-weight: bold
 			text-align: center
 			font-family: $font-stack-roboto
+			@include phone-landscape
+				color: #26061e
+				font-size: 0.78em
 			@include tablet
 				color: #341e25
 				font-weight: 600
@@ -177,59 +179,37 @@
 				font-size: 1.1em
 				font-weight: bold
 				font-family: 'Orbitron'
-			@include phone-landscape
-				color: #26061e
-				font-size: 0.78em
-				font-family: "Orbitron"
+
 
 	#hetinfo
 		color: #1b0615
 		font-size: 1em
 		text-align: center
-		// font-family: 'Orbitron black'
-		// background: url('../dist/imgs/simbu_redspear.png')
-		// background-position: bottom
-		// background-repeat: no-repeat
-		// background-size: contain
-		height: 100%
+
+		@include phone-landscape
+			margin-bottom: 78px
+			margin-top: 3px
 		@include tablet
 			width: 100%
 			line-height: 0px
 		@include desktop
 			height: 0px
 			border: none
-			// font-family: 'Orbitron black'
-			// background: url('../dist/imgs/simbu_redspear.png')
-			// background-position: bottom
-			// background-repeat: no-repeat
-			// background-size: contain
-			height: 100%
-		@include phone-landscape
-			margin-bottom: 28px
-			margin-top: 3px
-			font-family: 'Orbitron black'
-			// background: url('../dist/imgs/simbu_redspear.png')
-			// background-position: bottom
-			// background-repeat: no-repeat
-			// background-size: contain
-			height: 100%
 
 	#mini-desc
 		width: 100%
 		height: 100%
 		letter-spacing: 0em
-		line-height: 80px
+
 		@include phone-landscape
 	    font-size: 0.84em
-	    padding: 3px 91px 3px 3px
+	    padding: 3px
 		@include tablet
 			color: #341e25
 			font-weight: normal
 			font-size: 1.5em
 			letter-spacing: 0.09em
 			border: none
-			padding: 0
-			line-height: 134px
 		@include desktop
 			font-size: 1em
 			font-weight: normal
@@ -238,8 +218,6 @@
 			border: none
 			border-bottom: 1px dotted #9d8b70
 			padding-bottom: 4px
-			padding: 0
-			line-height: 120px
 
 	.intro
 		margin: auto
@@ -265,9 +243,6 @@
 			font-size: 1.4em
 			margin-top: 130px
 			letter-spacing: 0
-			font-family: 'Orbitron'
-		@include phone-landscape
-			font-size: 0.72em
 			font-family: 'Orbitron'
 
 	#my-name
@@ -365,8 +340,6 @@
 		background-position: top
 		background-repeat: no-repeat
 		background-color: rgba(160, 168, 175, 0.42)
-		@include phone-landscape
-			height: 40px
 		@include tablet
 			width: 86vw
 			margin-left: 62px
@@ -400,23 +373,24 @@
 		@include desktop
 			z-index: 999999
 
- 		// li
-		// 	display: flex
-		//
+		li
+			display: flex
+
 	.nav-folders
-		display: flex
 		width: 63%
 		height: 30px
 		display: none
 		align-self: center
 		padding: 3px
-		list-style: none
 		// background-color: rgba(155, 149, 130, 0.329)
 		margin-bottom: 11px
 		margin-top: 9px
 		&:active, &:focus
 			width: 70%
 			background-color: #030406
+		@include phone-landscape
+			width: 19%
+			margin-top: 4px
 		@include tablet
 			width: 100%
 			height: auto
@@ -436,12 +410,6 @@
 			&:focus, &active, &:hover, &:visited
 				background-color: green
 				width: 24%
-		@include phone-landscape
-			z-index: 99999
-			width: 20%
-			margin: 4px 0px
-			&:active, &:focus
-				width: 20%
 
 	.nav-folders:visited
 		@include desktop
@@ -460,10 +428,7 @@
 			line-height: 35px
 			width: 97%
 			font-size: 0.98em
-
-			@include desktop
-
-			@include phone-landscape
+		@include desktop
 
 
 	#home-logo
@@ -471,17 +436,17 @@
 		display: flex
 		background: url('../dist/imgs/newlogo.png') center no-repeat
 		background-size: cover
+		@include phone-landscape
+			display: flex
+			width: 39%
+			align-self: center
+			background-size: cover
 		@include tablet
 			height: 71%
 		@include desktop
 			height: 100%
 			width: 66%
 			background-size: contain
-		@include phone-landscape
-			display: flex
-			width: 39%
-			align-self: center
-			background-size: cover
 
 	.logo-home
 		// height: 57px
@@ -544,13 +509,13 @@
 			border: none
 			justify-content: center
 			&:focus
-				color: brown
+				color: green
 				font-size: 0.93em
 				border-left: none
 				background-color: transparentize(yellow, 1)
 				background-color: none
-			&:hover
-				color: green
+			&:visited
+				color: white
 
 	.fields
 		font-family: $font-stack-roboto
@@ -571,17 +536,14 @@
 			font-size: 0.8em
 
 	.nav-archives
-		&:focus, &:active, &:hover, &visited
-			text-align: center
-			color: brown
 		font-family: $font-stack-rajdhani
 		font-weight: bolder
 		font-size: 1.24em
 		letter-spacing: 0.07em
 		color: #453320
-		@include phone-landscape
-			font-size: 0.9em
-
+		&:focus, &:active, &:hover, &visited
+			text-align: center
+			color: brown
 
 		@include tablet
 			font-size: 1.1em
@@ -607,7 +569,6 @@
 		background-color: #1b0615
 		@include phone-landscape
 			width: 25vw
-			height: 34px
 			top: 0
 
 		@include tablet
@@ -652,8 +613,6 @@
 		border-bottom: 1px dotted
 		text-transform: capitalize
 		font-family: $font-stack-roboto
-		@include phone-landscape
-			font-size: 0.8em
 
 
 	.main-menu
@@ -672,8 +631,6 @@
 		letter-spacing: 0.05em
 		justify-content: center
 		font-family: $font-stack-roboto
-		@include phone-landscape
-			font-size: 0.8em
 
 	.mobile-container
 		max-height: 100%
@@ -687,8 +644,6 @@
 
 		@include phone-landscape
 			justify-content: flex-start
-			top: 0
-			z-index: 9999
 		@include tablet
 			height: 76px
 			top: 0
@@ -719,8 +674,6 @@
 
 	.mobile-container .sticky
 		z-index: 999999999999
-		@include phone-landscape
-			top: 0
 		@include tablet
 			z-index: 99999999
 		@include desktop
