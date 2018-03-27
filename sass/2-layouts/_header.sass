@@ -183,32 +183,54 @@
 				font-size: 0.78em
 				font-family: "Orbitron"
 
-
 	#hetinfo
 		color: #1b0615
 		font-size: 1em
 		text-align: center
+		font-family: 'Orbitron black'
+		background: url('../dist/imgs/simbu_redspear.png')
+		background-position: bottom
+		background-repeat: no-repeat
+		background-size: contain
+		height: 100%
 		@include tablet
 			width: 100%
 			line-height: 0px
 		@include desktop
 			height: 0px
 			border: none
+			font-family: 'Orbitron black'
+			background: url('../dist/imgs/simbu_redspear.png')
+			background-position: bottom
+			background-repeat: no-repeat
+			background-size: contain
+			height: 100%
 		@include phone-landscape
 			margin-bottom: 28px
 			margin-top: 3px
 			font-family: 'Orbitron black'
+			background: url('../dist/imgs/simbu_redspear.png')
+			background-position: bottom
+			background-repeat: no-repeat
+			background-size: contain
+			height: 100%
 
 	#mini-desc
 		width: 100%
 		height: 100%
 		letter-spacing: 0em
+		line-height: 80px
+		@include phone-landscape
+	    font-size: 0.84em
+	    padding: 3px 91px 3px 3px
 		@include tablet
 			color: #341e25
 			font-weight: normal
 			font-size: 1.5em
 			letter-spacing: 0.09em
 			border: none
+			padding: 0
+			line-height: 134px
 		@include desktop
 			font-size: 1em
 			font-weight: normal
@@ -217,9 +239,9 @@
 			border: none
 			border-bottom: 1px dotted #9d8b70
 			padding-bottom: 4px
-		@include phone-landscape
-	    font-size: 0.84em
-	    padding: 3px 91px 3px 3px
+			padding: 0
+			line-height: 120px
+
 	.intro
 		margin: auto
 		margin-top: 0px
@@ -523,13 +545,13 @@
 			border: none
 			justify-content: center
 			&:focus
-				color: green
+				color: brown
 				font-size: 0.93em
 				border-left: none
 				background-color: transparentize(yellow, 1)
 				background-color: none
-			&:visited
-				color: white
+			&:hover
+				color: green
 
 	.fields
 		font-family: $font-stack-roboto

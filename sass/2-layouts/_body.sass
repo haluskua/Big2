@@ -878,7 +878,7 @@
 
   #main-gallery
     width: 100%
-    height: 100vh
+    height: 100%
     flex-direction: column
     justify-content: flex-start
     align-items: center
@@ -1026,6 +1026,9 @@
   .img-split:hover
 
     @include desktop
+      transition: 0.8s ease-in
+      transition: 0.8s ease-out
+
       width: 60vw
       height: 20%
 
@@ -1094,7 +1097,7 @@
       height: 200px !important
 
   .big-gallery
-    height: 33%
+    height: 85%
     display: flex
     flex-wrap: wrap
     align-items: center
@@ -1110,7 +1113,6 @@
       flex-wrap: wrap !important
 
   .container
-    width: 93vw
     display: flex
     flex-wrap: wrap
     align-items: center
@@ -1231,7 +1233,7 @@
 
     @include tablet
       font-size: 1.1em
-      width: 120px
+      width: 100%
 
 
 
@@ -1348,10 +1350,14 @@
           align-self: center
 
       img
-        width: 54%
+        width: 100%
         height: auto
         border-radius: 2px
         align-self: center
+        @include tablet
+          width: 90%
+        @include desktop
+          width: 54%
       p
         font-size: 0.86em
         color: #3d2707
@@ -1362,6 +1368,9 @@
         padding: 10px
         line-height: 1.65em
         margin-bottom: 50px
+        @include phone-landscape
+          width: 89vw
+          align-self: center
         @include tablet
           padding: 10px 30px
           font-size: 1.12em
@@ -1370,12 +1379,10 @@
           font-size: 1.08em
           letter-spacing: 0em
           line-height: 1.56em
-          width: 60vw
+          width: 90%
           display: flex
           align-self: center
-        @include phone-landscape
-          width: 89vw
-          align-self: center
+
 
       button
         width: auto

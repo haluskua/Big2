@@ -411,6 +411,12 @@ h4, h6 {
     color: #1b0615;
     font-size: 1em;
     text-align: center;
+    font-family: 'Orbitron black';
+    background: url("../dist/imgs/simbu_redspear.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
   }
 }
 
@@ -425,6 +431,12 @@ h4, h6 {
   #hetinfo {
     height: 0px;
     border: none;
+    font-family: 'Orbitron black';
+    background: url("../dist/imgs/simbu_redspear.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
   }
 }
 
@@ -433,6 +445,11 @@ h4, h6 {
     margin-bottom: 28px;
     margin-top: 3px;
     font-family: 'Orbitron black';
+    background: url("../dist/imgs/simbu_redspear.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
   }
 }
 
@@ -441,6 +458,14 @@ h4, h6 {
     width: 100%;
     height: 100%;
     letter-spacing: 0em;
+    line-height: 80px;
+  }
+}
+
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  #mini-desc {
+    font-size: 0.84em;
+    padding: 3px 91px 3px 3px;
   }
 }
 
@@ -451,6 +476,8 @@ h4, h6 {
     font-size: 1.5em;
     letter-spacing: 0.09em;
     border: none;
+    padding: 0;
+    line-height: 134px;
   }
 }
 
@@ -463,13 +490,8 @@ h4, h6 {
     border: none;
     border-bottom: 1px dotted #9d8b70;
     padding-bottom: 4px;
-  }
-}
-
-@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
-  #mini-desc {
-    font-size: 0.84em;
-    padding: 3px 91px 3px 3px;
+    padding: 0;
+    line-height: 120px;
   }
 }
 
@@ -935,14 +957,14 @@ h4, h6 {
             justify-content: center;
   }
   .hamburger-menu:focus {
-    color: green;
+    color: brown;
     font-size: 0.93em;
     border-left: none;
     background-color: rgba(255, 255, 0, 0);
     background-color: none;
   }
-  .hamburger-menu:visited {
-    color: white;
+  .hamburger-menu:hover {
+    color: green;
   }
 }
 
@@ -2714,7 +2736,7 @@ h4, h6 {
    */
   #main-gallery {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2910,6 +2932,10 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .img-split:hover {
+    -webkit-transition: 0.8s ease-in;
+    transition: 0.8s ease-in;
+    -webkit-transition: 0.8s ease-out;
+    transition: 0.8s ease-out;
     width: 60vw;
     height: 20%;
   }
@@ -3012,7 +3038,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .big-gallery {
-    height: 33%;
+    height: 85%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3046,7 +3072,6 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .container {
-    width: 93vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3257,7 +3282,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .close-caption, .gdClose, .dmClose, .tClose {
     font-size: 1.1em;
-    width: 120px;
+    width: 100%;
   }
 }
 
@@ -3444,12 +3469,27 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .blocks section img {
-    width: 54%;
+    width: 100%;
     height: auto;
     border-radius: 2px;
     -ms-flex-item-align: center;
         align-self: center;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .blocks section img {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .blocks section img {
+    width: 54%;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .blocks section p {
     font-size: 0.86em;
     color: #3d2707;
@@ -3460,6 +3500,14 @@ h4, h6 {
     padding: 10px;
     line-height: 1.65em;
     margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  .blocks section p {
+    width: 89vw;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 }
 
@@ -3476,18 +3524,10 @@ h4, h6 {
     font-size: 1.08em;
     letter-spacing: 0em;
     line-height: 1.56em;
-    width: 60vw;
+    width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-item-align: center;
-        align-self: center;
-  }
-}
-
-@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
-  .blocks section p {
-    width: 89vw;
     -ms-flex-item-align: center;
         align-self: center;
   }
