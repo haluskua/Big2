@@ -411,11 +411,6 @@ h4, h6 {
     color: #1b0615;
     font-size: 1em;
     text-align: center;
-    font-family: 'Orbitron black';
-    background: url("../dist/imgs/simbu_redspear.png");
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
     height: 100%;
   }
 }
@@ -431,11 +426,6 @@ h4, h6 {
   #hetinfo {
     height: 0px;
     border: none;
-    font-family: 'Orbitron black';
-    background: url("../dist/imgs/simbu_redspear.png");
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
     height: 100%;
   }
 }
@@ -445,10 +435,6 @@ h4, h6 {
     margin-bottom: 28px;
     margin-top: 3px;
     font-family: 'Orbitron black';
-    background: url("../dist/imgs/simbu_redspear.png");
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
     height: 100%;
   }
 }
