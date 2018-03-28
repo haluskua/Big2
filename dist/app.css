@@ -791,7 +791,7 @@ h4, h6 {
     line-height: 1.8em;
   }
   .nav-folders:focus, .nav-foldersactive, .nav-folders:hover, .nav-folders:visited {
-    background-color: green;
+    background-color: #8f7292;
     width: 24%;
   }
 }
@@ -2289,7 +2289,6 @@ h4, h6 {
   button.accordion {
     width: auto;
     height: 36px;
-    margin-top: 7px;
     color: #453320;
     font-size: 1.21em;
     font-family: "Rajdhani", sans-serif;
@@ -2302,13 +2301,16 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   button.accordion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: auto;
-    height: auto;
-    margin: auto;
+    height: 36px;
+    margin: 0;
+    padding: 0 8px;
     background-color: #faf6e6;
     color: #453320;
     font-size: 1.01em;
-    letter-spacing: 0.04em;
   }
 }
 
@@ -2339,8 +2341,14 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   button.accordion.active, button.accordion:hover {
-    padding: 0;
-    height: auto;
+    padding: 0 8px;
+    height: 37px;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    font-size: 1.21em;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
     margin: 0;
     width: auto;
     border: none !important;
