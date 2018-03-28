@@ -658,7 +658,7 @@
     @include desktop
       padding: 0
       height: auto
-      margin: auto
+      margin: 0
       width: auto
       border: none !important
       background-color: #faf6e6 !important
@@ -964,8 +964,11 @@
   .img-split:hover
 
     @include desktop
-      width: 94%
+      width: 92%
       height: 20%
+      -webkit-transition: width 1.5s ease-out
+      transition: width 1.5s ease-out
+
 
 
 
@@ -1284,10 +1287,12 @@
           align-self: center
 
       img
-        width: 54%
+        width: 94%
         height: auto
         border-radius: 2px
         align-self: center
+        @include desktop
+          width: 62%
       p
         font-size: 0.86em
         color: #3d2707
