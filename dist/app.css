@@ -798,7 +798,8 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .nav-folders:hover, .nav-folders:active, .nav-folders:visited {
-    background-color: green;
+    background-color: #29172b;
+    border-bottom: 1px solid #4CAF50;
   }
 }
 
@@ -976,6 +977,7 @@ h4, h6 {
     font-size: 1.06em;
     -webkit-transition: 0.26s ease-in;
     transition: 0.26s ease-in;
+    font-style: normal;
   }
 }
 
@@ -1016,7 +1018,6 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .nav-archives:active {
-    border-bottom: 1px solid white;
     font-style: oblique;
   }
 }
@@ -1214,6 +1215,7 @@ h4, h6 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    border-bottom: 1.3px solid #4CAF50;
     background-color: #29172b;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2329,7 +2331,7 @@ h4, h6 {
     margin: 0;
     padding: 0 8px;
     font-weight: bolder;
-    background-color: green !important;
+    background-color: #29172b !important;
     color: #faf6e6 !important;
     font-size: 1.2em;
     letter-spacing: 0.2em;
@@ -2376,7 +2378,8 @@ h4, h6 {
     margin: 0;
     width: auto;
     border: none !important;
-    background-color: green !important;
+    background-color: #29172b !important;
+    border-bottom: 1px solid #4CAF50 !important;
   }
 }
 
@@ -2387,7 +2390,7 @@ h4, h6 {
     display: none;
     height: auto;
     width: 59%;
-    border: 1px solid #ffc388;
+    border: 1px solid #4CAF50;
     border-top: 0;
     margin-bottom: 4px;
   }
@@ -2414,7 +2417,7 @@ h4, h6 {
     width: 21%;
     position: fixed;
     top: 50px;
-    left: 219.5px;
+    left: 244px;
   }
 }
 

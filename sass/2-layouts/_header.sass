@@ -427,7 +427,8 @@
 
 	.nav-folders:hover, .nav-folders:active, .nav-folders:visited
 		@include desktop
-			background-color: green
+			background-color: #29172b
+			border-bottom: 1px solid #4CAF50
 
 	.menu2
 		border-radius: 0 10px 0 0
@@ -553,6 +554,7 @@
 				color: white
 				font-size: 1.06em
 				transition: 0.26s ease-in
+				font-style: normal
 
 
 	.nav-archives
@@ -580,7 +582,6 @@
 
 	.nav-archives:active
 		@include desktop
-			border-bottom: 1px solid white
 			font-style: oblique
 	.nav-archives:visited
 		@include desktop
@@ -668,7 +669,6 @@
 		position: fixed
 		justify-content: space-around
 		border-radius: 18px 0 0 0
-
 		@include phone-landscape
 			justify-content: flex-start
 		@include tablet
@@ -693,9 +693,8 @@
 			border-radius: 0
 			display: flex
 			align-items: center
-			// background-color: #faf6e6
+			border-bottom: 1.3px solid #4CAF50
 			background-color: #29172b
-
 			justify-content: center
 			z-index: 99999999
 
