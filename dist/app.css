@@ -439,7 +439,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #hetinfo {
-    height: 122px;
+    height: 119px;
     background-size: contain;
     border: none;
     margin: 0;
@@ -479,7 +479,6 @@ h4, h6 {
     letter-spacing: 0.05em;
     line-height: 24px;
     border: none;
-    border-bottom: 1px dotted #9d8b70;
     padding-bottom: 4px;
   }
 }
@@ -793,12 +792,13 @@ h4, h6 {
   .nav-folders:focus, .nav-foldersactive, .nav-folders:hover, .nav-folders:visited {
     background-color: #8f7292;
     width: 24%;
+    font-style: oblique;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .nav-folders:visited {
-    color: red;
+  .nav-folders:hover, .nav-folders:active, .nav-folders:visited {
+    background-color: green;
   }
 }
 
@@ -971,6 +971,12 @@ h4, h6 {
   .fields {
     font-size: 0.8em;
   }
+  .fields:hover {
+    color: white;
+    font-size: 1.06em;
+    -webkit-transition: 0.26s ease-in;
+    transition: 0.26s ease-in;
+  }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
@@ -1005,6 +1011,19 @@ h4, h6 {
   .nav-archives:focus, .nav-archives:active, .nav-archives:hover, .nav-archivesvisited {
     text-align: center;
     color: white;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .nav-archives:active {
+    border-bottom: 1px solid white;
+    font-style: oblique;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .nav-archives:visited {
+    font-style: oblique;
   }
 }
 
@@ -2301,6 +2320,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   button.accordion {
+    margin: 0px 17px !important;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2308,9 +2328,11 @@ h4, h6 {
     height: 36px;
     margin: 0;
     padding: 0 8px;
-    background-color: #faf6e6;
-    color: #453320;
-    font-size: 1.01em;
+    font-weight: bolder;
+    background-color: green !important;
+    color: #faf6e6 !important;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
   }
 }
 
@@ -2341,18 +2363,20 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   button.accordion.active, button.accordion:hover {
+    margin: 0px 17px !important;
     padding: 0 8px;
     height: 37px;
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
-    font-size: 1.21em;
-    font-weight: normal;
+    font-size: 1.2em;
+    color: #f5efe1 !important;
+    font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 0.13em;
+    letter-spacing: 0.2em;
     margin: 0;
     width: auto;
     border: none !important;
-    background-color: #faf6e6 !important;
+    background-color: green !important;
   }
 }
 
@@ -2475,6 +2499,9 @@ h4, h6 {
     border-bottom: 1px solid #e3e6e8;
     background-color: #ecebe3;
   }
+  #gd-folders li:hover {
+    background-color: green;
+  }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
@@ -2573,11 +2600,6 @@ h4, h6 {
     font-weight: bold;
     letter-spacing: 0.77em;
   }
-  /**
-   * Author: Tim Vervoort - info@timvervoort.com
-   * Licence: Free for commercial use
-   * Last update: 8th November 2017 - v1.0
-   */
   #main-gallery {
     width: 100%;
     height: 100vh;
@@ -2781,6 +2803,7 @@ h4, h6 {
         -ms-flex-pack: center;
             justify-content: center;
     color: #faf6e6;
+    color: #4CAF50;
     font-weight: bold;
     font-size: 1.4em;
     line-height: 42px;

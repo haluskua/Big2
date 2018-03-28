@@ -612,7 +612,6 @@
     margin-top: 6px
     margin-bottom: 15px
     border: 0
-    // border-left: 2px solid #ebcf87
     margin-right: 0
     @include phone-landscape
       width: auto
@@ -628,14 +627,17 @@
       margin-top: 22px
       border: none
     @include desktop
+      margin: 0px 17px !important
       display: flex
       width: auto
       height: 36px
       margin: 0
       padding: 0 8px
-      background-color: #faf6e6
-      color: #453320
-      font-size: 1.01em
+      font-weight: bolder
+      background-color: green !important
+      color: #faf6e6 !important
+      font-size: 1.2em
+      letter-spacing: 0.2em
 
   button.accordion.active, button.accordion:hover
     width: 100%
@@ -656,17 +658,19 @@
       margin: auto
       background-color: rgb(248, 247, 246) !important
     @include desktop
+      margin: 0px 17px !important
       padding: 0 8px
       height: 37px
       transition: 0.5s ease
-      font-size: 1.21em
-      font-weight: normal
+      font-size: 1.2em
+      color: #f5efe1 !important
+      font-weight: bold
       text-transform: uppercase
-      letter-spacing: 0.13em
+      letter-spacing: 0.2em
       margin: 0
       width: auto
       border: none !important
-      background-color: #faf6e6 !important
+      background-color: green !important
 
   div.panel
       background-color: rgba(255, 196, 131, 0.56)
@@ -690,6 +694,7 @@
         position: fixed
         top: 50px
         left: 219.5px
+
 
       .skills-caption, .gd-caption, .dm-caption, .t-caption
         display: none
@@ -736,6 +741,8 @@
       @include desktop
         border-bottom: 1px solid #e3e6e8
         background-color: #ecebe3
+        &:hover
+          background-color: green
 
     #nav-folders:nth-child(4)
       margin-bottom: 50px
@@ -814,14 +821,6 @@
         font-weight: bold
         letter-spacing: 0.77em
 
-
-
-
-  /**
-   * Author: Tim Vervoort - info@timvervoort.com
-   * Licence: Free for commercial use
-   * Last update: 8th November 2017 - v1.0
-   */
 
   #main-gallery
     width: 100%
@@ -974,9 +973,6 @@
       -webkit-transition: width 1.5s ease-out
       transition: width 1.5s ease-out
 
-
-
-
   #accordion
     margin-top: 30px
 
@@ -984,6 +980,7 @@
     display: flex
     justify-content: center
     color: #faf6e6
+    color: #4CAF50
     font-weight: bold
     font-size: 1.4em
     line-height: 42px

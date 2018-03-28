@@ -183,7 +183,6 @@
 				font-weight: bold
 				font-family: 'Orbitron'
 
-
 	#hetinfo
 		color: #1b0615
 		font-size: 1em
@@ -203,7 +202,7 @@
 			height: 41px
 			line-height: 127px
 		@include desktop
-			height: 122px
+			height: 119px
 			background-size: contain
 			border: none
 			margin: 0
@@ -229,7 +228,6 @@
 			letter-spacing: 0.05em
 			line-height: 24px
 			border: none
-			border-bottom: 1px dotted #9d8b70
 			padding-bottom: 4px
 
 	.intro
@@ -257,6 +255,7 @@
 			margin-top: 130px
 			letter-spacing: 0
 			font-family: 'Orbitron'
+
 
 	#my-name
 		height: 42%
@@ -423,10 +422,11 @@
 			&:focus, &active, &:hover, &:visited
 				background-color: #8f7292
 				width: 24%
+				font-style: oblique
 
-	.nav-folders:visited
+	.nav-folders:hover, .nav-folders:active, .nav-folders:visited
 		@include desktop
-			color: red
+			background-color: green
 
 	.menu2
 		border-radius: 0 10px 0 0
@@ -548,6 +548,11 @@
 			font-size: 1.09em
 		@include desktop
 			font-size: 0.8em
+			&:hover
+				color: white
+				font-size: 1.06em
+				transition: 0.26s ease-in
+
 
 	.nav-archives
 		font-family: $font-stack-rajdhani
@@ -572,6 +577,13 @@
 				text-align: center
 				color: white
 
+	.nav-archives:active
+		@include desktop
+			border-bottom: 1px solid white
+			font-style: oblique
+	.nav-archives:visited
+		@include desktop
+			font-style: oblique
 
 	.haus
 		bottom: 0
