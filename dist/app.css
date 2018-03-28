@@ -163,8 +163,8 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #Colsplit-box1 {
-    height: 81%;
-    margin-bottom: -126px;
+    height: 87%;
+    margin-top: 148px;
   }
 }
 
@@ -842,7 +842,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #home-logo {
-    height: 125%;
+    height: 100%;
   }
 }
 
