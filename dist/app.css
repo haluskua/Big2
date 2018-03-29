@@ -14,6 +14,25 @@
 @import url("https://fonts.googleapis.com/css?family=Rajdhani");
 @import url("https://fonts.googleapis.com/css?family=Source+Serif+Pro");
 @import url("https://fonts.googleapis.com/css?family=Antic");
+@font-face {
+  font-family: 'Orbitron';
+  src: url(..Big2/fonts/Orbitron-Black.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url(..Big2/fonts/Orbitron-Regular.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'PerpetuaLight';
+  src: url(..Big2/fonts/PERTILI.TTF);
+}
+
 /* BASE STYLES */
 h1 {
   font-family: "Antic";
@@ -41,22 +60,6 @@ h4, h6 {
 
 /* LAYOUT */
 @media (min-width: 1em), screen and (orientation: portrait) {
-  @font-face {
-    font-family: 'Orbitron';
-    src: url(..Big2/fonts/Orbitron-Black.ttf);
-    font-style: normal;
-    font-weight: 100;
-  }
-  @font-face {
-    font-family: 'Orbitron';
-    src: url(..Big2/fonts/Orbitron-Regular.ttf);
-    font-style: normal;
-    font-weight: 100;
-  }
-  @font-face {
-    font-family: 'PerpetuaLight';
-    src: url(..Big2/fonts/PERTILI.TTF);
-  }
   .hetpage {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1428,70 +1431,6 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  #large-3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: auto;
-    overflow-y: auto;
-    visibility: hidden;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  #large-3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: auto;
-    overflow-y: scroll;
-    visibility: visible;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  #large-3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 100vw;
-    height: auto;
-    overflow-y: auto;
-    visibility: hidden;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
-  #large-3 #left, #large-3 #right {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  #large-3 #left, #large-3 #right {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  #large-3 #left, #large-3 #right {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 25vw;
-    height: 100%;
-    background-color: green;
-    z-index: 9999999;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
   #about {
     width: 100vw;
     background-color: #1b0615;
@@ -1783,10 +1722,6 @@ h4, h6 {
     width: 68%;
     z-index: 9;
   }
-  .skills1 {
-    max-width: 70px;
-    height: 100vh;
-  }
   .skills-title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1815,9 +1750,6 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .snaps-section {
-    height: 100vh;
-  }
   #grafix, #contact,
   .projects, .wagai-weh, #wagai, #main-gallery,
   .main-gallery, #main-projects, #projects, #film-projects,
@@ -1910,16 +1842,6 @@ h4, h6 {
   #grafix {
     overflow-y: scroll;
     text-decoration: none;
-  }
-  .film, .painting, .music-page {
-    background-image: none;
-  }
-  .film {
-    background-color: #fce2f3;
-    background-image: none;
-  }
-  #goals {
-    height: 100vh;
   }
   .tag-title {
     width: 100%;
@@ -2096,17 +2018,6 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .gcontact {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-decoration: none;
-    width: 100%;
-    margin-bottom: 40px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .myname {
     color: #fff6e8;
     font-family: "Antic";
@@ -2124,47 +2035,6 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .slider-inner {
-    max-width: 90.4%;
-    position: relative;
-    overflow: hidden;
-    float: left;
-    padding: 3px;
-    border: solid 1px #d3a436;
-    border-background-color: white;
-  }
-  .slider-inner img {
-    display: none;
-    max-width: 100%;
-    max-height: 250px;
-  }
-  .slider-inner img.active {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  #prext {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 61%;
-    z-index: 99999;
-  }
-  .prev, .next {
-    float: left;
-    cursor: pointer;
-  }
-  .prev {
-    position: relative;
-    z-index: 99999;
-  }
-  .next {
-    position: relative;
-    z-index: 999999;
-  }
   #imgslider-desc {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2212,71 +2082,6 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  #web-desc {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-size: 0.9em;
-    font-family: sans-serif;
-    text-align: center;
-    width: 74%;
-    line-height: 23px;
-    border: none;
-    color: #c28943;
-  }
-  #thumbnails {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    width: 99%;
-    height: auto;
-  }
-  #thumbnails p {
-    color: #382d1e;
-    font-size: 0.78em;
-    font-family: sans-serif;
-    text-align: center;
-    padding: 4px;
-    background-color: #fcf8ed;
-    border: 0.6px dotted gainsboro;
-  }
-  #skills-column {
-    width: 88%;
-    height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  #Accordion {
-    width: 90vw;
-    margin-bottom: 20px;
-  }
-  #cor-skills {
-    color: #9b834d;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 1em;
-    font-weight: normal;
-    line-height: 24px;
-    letter-spacing: 0.38em;
-    text-transform: capitalize;
-    font-family: "Roboto";
-    text-align: center;
-    font-weight: bolder;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   button.accordion {
     cursor: pointer;
     height: 37px;
@@ -2566,44 +2371,6 @@ h4, h6 {
     font-size: 1.44;
     color: green;
   }
-  #gd-page {
-    width: 100%;
-    height: 120px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    text-decoration: none;
-    padding: 0;
-    margin: 0;
-  }
-  #gd-page li {
-    list-style: none;
-    font-family: "Roboto";
-    color: #4CAF50;
-    height: 50%;
-    margin-right: 20px;
-  }
-  #gd-page li:nth-child(2) {
-    -ms-flex-item-align: center;
-        align-self: center;
-    text-decoration: none;
-    margin: 0;
-  }
-  #gd-page li:nth-child(2) a {
-    font-family: "Roboto";
-    color: #607D8B;
-    font-weight: bold;
-    letter-spacing: 0.77em;
-  }
   #main-gallery {
     width: 100%;
     height: 100vh;
@@ -2638,39 +2405,6 @@ h4, h6 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  #main-gallery .aic {
-    width: 94vw;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #main-gallery #g-t {
-    text-align: center;
-    font-family: "Amatic SC", cursive;
-    font-size: 1.4em;
-    letter-spacing: 0.03em;
-    font-weight: bold;
-    color: forestgreen;
-    margin: 0;
-    margin-bottom: 8px;
-  }
-  .title_block {
-    width: 100%;
-    color: white;
-    background-color: #cac1b4;
-    line-height: 2.5em;
-    margin: auto;
   }
   .fs-gal-view {
     display: none;
@@ -2796,9 +2530,6 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  #accordion {
-    margin-top: 30px;
-  }
   .rgdp {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2833,15 +2564,6 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .video {
-    position: relative;
-    padding-bottom: 56.25%;
-  }
-  .video iframe {
-    position: absolute;
-    max-width: 100%;
-    height: 300px;
-  }
   .hide_inlarge {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3006,20 +2728,6 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .iframe {
     margin: auto;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
-  #skills-desc {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    position: relative;
-    height: auto;
   }
 }
 
@@ -3419,78 +3127,6 @@ h4, h6 {
     height: auto;
     display: none;
   }
-  .web_panelread {
-    width: 100%;
-    height: auto;
-    display: none;
-  }
-  .web_panelread p {
-    font-size: 0.92em;
-    font-family: "Antic";
-    color: #111;
-    line-height: 1.65em;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-  }
-  .container_text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    width: auto;
-    height: auto;
-    margin: 50px auto;
-  }
-  .set {
-    position: relative;
-    width: 100%;
-    height: auto;
-  }
-  .set > a {
-    display: block;
-    text-decoration: none;
-    color: #000;
-    font-family: "Antic";
-    border-bottom: 1px solid #ddd;
-  }
-  .set > a i {
-    position: relative;
-    float: right;
-    margin-top: 4px;
-    color: #666;
-  }
-  .set > a.active {
-    background-color: #d8e3dd;
-    color: #111;
-    padding: 0;
-  }
-  .set > a.active i {
-    color: #fff;
-  }
-  .content {
-    position: relative;
-    width: 100%;
-    height: auto;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-    display: none;
-  }
-  .content p {
-    margin: 0;
-    color: #333;
-    padding: 20px 0 20px 0;
-  }
-  #summary {
-    width: 100%;
-    text-align: center;
-    border-bottom: none;
-    text-transform: uppercase;
-  }
-  #open_read {
-    display: block;
-  }
   #hide_h2, #hide_h2_gd, #hide_h2_dm, #hide_h2_t {
     display: none;
   }
@@ -3528,22 +3164,11 @@ h4, h6 {
     overflow: auto;
     visibility: visible;
     padding: 40px 0px;
-    /* background-color: rgba(255, 254, 242, 0.26); */
     border-bottom: 1px solid #e5dcbc;
   }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .aboutus {
-    background: url("../dist/imgs/1920.png");
-    overflow-y: scroll;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: auto;
-    width: 100%;
-    padding: 0 10px 0 10px;
-  }
   #quote {
     font-size: 1em;
     font-family: "Antic";
