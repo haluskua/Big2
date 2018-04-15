@@ -58,6 +58,13 @@ h4, h6 {
   font-weight: normal;
 }
 
+@media only screen and (min-width: 769px) and (orientation: landscape) {
+  h4, h6 {
+    color: #adaeaf;
+    letter-spacing: 0.03em;
+  }
+}
+
 /* LAYOUT */
 @media (min-width: 1em), screen and (orientation: portrait) {
   .hetpage {
@@ -227,7 +234,7 @@ h4, h6 {
 
 @media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
   .hetpage-li {
-    width: 72%;
+    width: 100%;
   }
 }
 
@@ -1432,6 +1439,30 @@ h4, h6 {
   }
 }
 
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #about {
+    background-color: gray;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
+  .about-title {
+    color: #adaeaf;
+    letter-spacing: 0.03em;
+    font-family: "Roboto";
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #060407;
+    font-weight: normal;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .about-title {
+    font-size: 2em;
+  }
+}
+
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #recent_projects {
     margin-top: 121px;
@@ -1580,12 +1611,16 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #p-justified {
     width: 60vw;
+    background-color: rgba(32, 44, 53, 0.95);
+    padding: 22px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .opening_image {
-    width: 96% !important;
+    width: 20% !important;
   }
 }
 
@@ -1613,7 +1648,7 @@ h4, h6 {
   .opening_statement {
     width: 60vw;
     padding-top: 60px;
-    font-size: 1.1em;
+    font-size: 0.88em;
   }
 }
 
@@ -1731,6 +1766,12 @@ h4, h6 {
     text-align: center;
     font-weight: bold;
     font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .skills-title {
+    color: white;
   }
 }
 
@@ -2894,6 +2935,13 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .small_intro h2 {
     font-size: 1.65em;
+    color: #19384a;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .small_intro h2 {
+    color: #fffafa;
   }
 }
 
@@ -2914,12 +2962,14 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .small_intro p {
     font-size: 1em;
+    color: #7d7d74;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .small_intro p {
     font-size: 0.8em;
+    color: #c4d9dc;
     line-height: 1.66em;
     letter-spacing: 0.04em;
   }
@@ -2932,7 +2982,7 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .blocks {
+  .blocks, .one {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2944,7 +2994,7 @@ h4, h6 {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .blocks section {
+  .blocks section, .blocks .one, .one section, .one .one {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2959,7 +3009,7 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .blocks section {
+  .blocks section, .blocks .one, .one section, .one .one {
     width: 60vw;
     border: 1px solid #606a3c;
     border-bottom: none;
@@ -2968,7 +3018,7 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .blocks section div {
+  .blocks section div, .blocks .one div, .one section div, .one .one div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2985,7 +3035,7 @@ h4, h6 {
     margin: auto;
     padding: 0;
   }
-  .blocks section #website_background2 {
+  .blocks section #website_background2, .blocks .one #website_background2, .one section #website_background2, .one .one #website_background2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3002,19 +3052,20 @@ h4, h6 {
     margin: auto;
     padding: 0;
   }
-  .blocks section #website_background2 img {
+  .blocks section #website_background2 img, .blocks .one #website_background2 img, .one section #website_background2 img, .one .one #website_background2 img {
     width: 100%;
     height: auto;
+    margin: auto;
   }
-  .blocks section #website_background2 h4 {
+  .blocks section #website_background2 h4, .blocks .one #website_background2 h4, .one section #website_background2 h4, .one .one #website_background2 h4 {
     color: #111111;
   }
-  .blocks section h4 {
+  .blocks section h4, .blocks .one h4, .one section h4, .one .one h4 {
     -ms-flex-item-align: center;
         align-self: center;
     font-size: 1.44em;
   }
-  .blocks section a {
+  .blocks section a, .blocks .one a, .one section a, .one .one a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3027,7 +3078,7 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .blocks section a {
+  .blocks section a, .blocks .one a, .one section a, .one .one a {
     width: 60vw;
     -ms-flex-item-align: center;
         align-self: center;
@@ -3035,7 +3086,7 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .blocks section img {
+  .blocks section img, .blocks .one img, .one section img, .one .one img {
     width: 94%;
     height: auto;
     border-radius: 2px;
@@ -3045,13 +3096,13 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .blocks section img {
+  .blocks section img, .blocks .one img, .one section img, .one .one img {
     width: 62%;
   }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .blocks section p {
+  .blocks section p, .blocks .one p, .one section p, .one .one p {
     font-size: 0.86em;
     color: #3d2707;
     letter-spacing: 0.02em;
@@ -3065,7 +3116,7 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  .blocks section p {
+  .blocks section p, .blocks .one p, .one section p, .one .one p {
     padding: 10px 30px;
     font-size: 1.12em;
     margin-bottom: 0;
@@ -3073,21 +3124,22 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .blocks section p {
-    font-size: 1.08em;
+  .blocks section p, .blocks .one p, .one section p, .one .one p {
+    font-size: 0.9em;
     letter-spacing: 0em;
     line-height: 1.56em;
-    width: 60vw;
+    width: 77%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-item-align: center;
         align-self: center;
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .blocks section button {
+  .blocks section button, .blocks .one button, .one section button, .one .one button {
     width: auto;
     height: auto;
     background-color: #f7f5f2;
@@ -3104,14 +3156,14 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  .blocks section button {
+  .blocks section button, .blocks .one button, .one section button, .one .one button {
     margin-bottom: 58px;
     margin-top: 10px;
   }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .blocks section button a {
+  .blocks section button a, .blocks .one button a, .one section button a, .one .one button a {
     font-family: "Antic";
     color: #26061e;
     text-align: justify;

@@ -30,12 +30,27 @@
     width: 100vw
     background-color: #1b0615
     height: auto
+    @include desktop
+      background-color: gray
+
+  .about-title
+    color: #adaeaf
+    letter-spacing: 0.03em
+    font-family: $font-stack-roboto
+    font-size: 1em
+    line-height: 1.5em
+    color: #060407
+    font-weight: normal
+    @include desktop
+      font-size: 2em
 
   #recent_projects
     @include tablet
       margin-top: 121px
     @include desktop
       margin-top: 81px
+
+
 
   #wagai
     display: flex
@@ -120,10 +135,13 @@
       margin-top: 14px
     @include desktop
       width: 60vw
+      background-color: rgba(32, 44, 53, 0.95)
+      padding: 22px
+      align-self: flex-start
 
   .opening_image
     @include desktop
-      width: 96% !important
+      width: 20% !important
   .opening_statement
     font-size: 0.84em
     color: #3d2707
@@ -140,7 +158,7 @@
     @include desktop
       width: 60vw
       padding-top: 60px
-      font-size: 1.1em
+      font-size: 0.88em
 
     span
       font-size: 1.6em
@@ -220,6 +238,8 @@
     font-size: 1.3em
     @include phone-landscape
     @include tablet
+    @include desktop
+      color: white
 
   .ompa
     @include tablet
@@ -855,6 +875,7 @@
       flex-flow: column
       width: 100%
 
+
   #read-on
     justify-content: flex-start !important
     position: relative
@@ -929,6 +950,10 @@
       @include phone-landscape
       @include tablet
         font-size: 1.65em
+        color: #19384a
+      @include desktop
+        color: #fffafa
+
     p
       width: 100%
       text-align: justify
@@ -942,8 +967,10 @@
       @include phone-landscape
       @include tablet
         font-size: 1em
+        color: #7d7d74
       @include desktop
         font-size: 0.8em
+        color: #c4d9dc
         line-height: 1.66em
         letter-spacing: 0.04em
 
@@ -951,13 +978,13 @@
     @include desktop
       width: 60vw
 
-  .blocks
+  .blocks, .one
     display: flex
     height: 100%
     width: 100%
     flex-wrap: wrap
     justify-content: center
-    section
+    section, .one
       display: flex
       justify-content: center
       width: 100%
@@ -994,6 +1021,7 @@
         img
           width: 100%
           height: auto
+          margin: auto
         h4
           color: #111111
 
@@ -1032,12 +1060,14 @@
           font-size: 1.12em
           margin-bottom: 0
         @include desktop
-          font-size: 1.08em
+          font-size: 0.9em
           letter-spacing: 0em
           line-height: 1.56em
-          width: 60vw
+          width: 77%
           display: flex
           align-self: center
+          margin-bottom: 0
+
       button
         width: auto
         height: auto
