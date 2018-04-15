@@ -5,7 +5,7 @@ $(document).ready(function(){
         $(".exit-menu, .hamburger-menu, .logo-desc").on("click", function(){
           $(".mobile-container").hide(300);
           $(".haus").show(300);
-          $("#logo-space").hide();
+          // $("#logo-space").hide();
         });
         //show menu bar onclick on main logo
         $(".haus-menu, #hetinfo").click(function(){
