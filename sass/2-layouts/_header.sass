@@ -55,18 +55,17 @@
 			margin-top: 148px
 
 		@include desktop
-			padding-top: 54px
 			height: 71%
 
 	.landing-page
 		width: 100%
-		margin-top: -96px
 		display: flex
 		justify-content: center
 		flex-direction: row
 		align-items: center
 		@include phone-landscape
 			align-items: flex-start
+      margin-top: -43px
 		@include tablet
 			margin: 0
 		@include desktop
@@ -93,8 +92,7 @@
     justify-content: space-around
     width: 80vw
 		@include phone-landscape
-			width: 87vw
-			margin-left: 85px
+      margin: 0
 		@include tablet
 
 		@include desktop
@@ -118,8 +116,7 @@
 		margin: 0
 		font-size: 2.2em
 		@include phone-landscape
-			align-self: flex-end
-			width: 76vw
+
 		@include tablet
 			margin-top: -87px
 		@include desktop
@@ -129,7 +126,7 @@
 		#cr-field
 			display: flex
 			line-height: 1.54em
-			// width: 53%
+			text-align: center
 			margin-top: 16px
 			color: #0c0801
 			font-size: 0.35em
@@ -138,13 +135,15 @@
 			text-transform: normal
 			font-family: $font-stack-antic
 			@include phone-landscape
-				font-size: 0.7em
+				font-size: 0.45em
 			@include tablet
 				color: #635133
 				letter-spacing: 0.055em
 				font-weight: bold
-			@include desktop
-				font-size: 0.3em
+  		@include desktop
+        justify-content: center
+        text-align: center
+        font-size: 0.8em
 
 		#bulgeword
 			color: #26061e
@@ -154,7 +153,7 @@
 			font-family: $font-stack-roboto
 			@include phone-landscape
 				color: #26061e
-				font-size: 0.78em
+				font-size: 0.7em
 			@include tablet
 				color: #341e25
 				font-weight: 600
@@ -164,7 +163,6 @@
 			@include desktop
 				font-size: 1.1em
 				font-weight: bold
-				font-family: 'Orbitron'
 
 	#hetinfo
 		color: #1b0615
@@ -291,6 +289,7 @@
 			// left: -17px
 			right: -16px
 			bottom: 0
+      display: none
 
 		@include tablet
 			top: 3px
@@ -346,14 +345,23 @@
 			background-color: #fffef2
 			justify-content: center
 		@include desktop
-			width: 66vw
+			// width: 66vw
+			// display: flex
+			// flex-flow: row
+			// align-self: center
+			// padding-bottom: 0px
+			// background-image: none
+			// border: none
+			// background: none
+
+      width: 86vw
+			padding: 0
+			height: 46px
 			display: flex
 			flex-flow: row
-			align-self: center
-			padding-bottom: 0px
 			background-image: none
-			border: none
-			background: none
+			background-color: #fffef2
+			justify-content: center
 
   .reduced
 		display: flex
@@ -383,6 +391,7 @@
 		&:active, &:focus
 			width: 70%
 			background-color: #030406
+
 		@include phone-landscape
 			width: 19%
 			margin-top: 4px
@@ -398,6 +407,7 @@
 			margin-bottom: 0
 		@include desktop
 			width: 24%
+      margin: 0
 			display: flex
 			border: none
 			padding: 0
@@ -438,7 +448,10 @@
 			display: flex
 			width: 39%
 			align-self: center
-			background-size: cover
+			background-size: contain
+      margin-top: -18px
+      margin-bottom: 10px
+      margin-top: 0
 		@include tablet
 			height: 100%
 		@include desktop
@@ -507,13 +520,13 @@
 			border: none
 			justify-content: center
 			&:focus
-				color: green
+				color: white
 				font-size: 0.93em
 				border-left: none
+        background-color: rgba(32, 44, 53, 0.95)
 				background-color: transparentize(yellow, 1)
-				background-color: none
 			&:visited
-				color: white
+				color: black
 
 	.fields
 		font-family: $font-stack-roboto
@@ -554,10 +567,10 @@
 			text-align: center
 			background-color: none
 		@include desktop
-			color: #faf6e6
+			color: #29172b
 			text-align: center
 			z-index: 999
-			font-family: 'Orbitron'
+      font-size: 1.4em
 			&:focus, &:active, &:hover, &visited
 				text-align: center
 				color: white
@@ -676,9 +689,15 @@
 			display: flex
 			align-items: center
 			border-bottom: 1.3px solid #4CAF50
-			background-color: #29172b
-			justify-content: center
-			z-index: 99999999
+			// background-color: #29172b
+      background-color: rgba(32, 44, 53, 0.95)
+      // 
+      // background: url('../dist/imgs/1920.png')
+      // background-position: center
+      // background-size: cover
+      // background-repeat: no-repeat
+			// justify-content: center
+			// z-index: 99999999
 
 	.mobile-container .sticky
 		z-index: 999999999999

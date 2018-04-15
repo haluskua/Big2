@@ -257,6 +257,7 @@
       flex-flow: row
       justify-content: space-around
       width: 97vw
+      background: url('../dist/imgs/1920.png') top center no-repeat
     h1
       padding: 0 20px 0 20px
       font-size: 1.1em
@@ -409,12 +410,13 @@
         border: none
       @include desktop
         background-color: rgba(255, 254, 242, 0)
-        margin-bottom: -92px
+        // margin-bottom: -92px
+        margin-top: 70px
         color: #585036
-        font-size: 1.08em
+        font-size: 1.72em
         letter-spacing: 0.03em
         z-index: 9999
-        width: 27%
+        width: 50%
 
   button.accordion
     cursor: pointer
@@ -716,6 +718,9 @@
     height: auto
     float: left
     padding: 7px
+    @include desktop
+      width: 66%
+      margin: auto
   .static-image
     width: 26%
 
@@ -725,6 +730,7 @@
     @include phone-landscape
     @include desktop
       width: 54%
+      margin-top: 160px
 
   .img-split:hover
     @include desktop
@@ -908,10 +914,12 @@
     @include phone-landscape
     @include tablet
     @include desktop
+      background-color: rgba(32, 44, 53, 0.95)
+      padding: 22px
       width: 30%
       align-self: flex-start
     h2
-      color: #5f4725
+      color: white
       align-self: flex-start
       font-weight: normal
       font-size: 1.21em
@@ -928,6 +936,7 @@
       font-size: 0.86em
       padding-top: 8px
       color: #3d2707
+      color: #ded8da
       letter-spacing: 0.03em
       font-weight: normal
       font-family: $font-stack-roboto
@@ -935,7 +944,9 @@
       @include tablet
         font-size: 1em
       @include desktop
-        font-size: 0.9em
+        font-size: 0.8em
+        line-height: 1.66em
+        letter-spacing: 0.04em
 
   .suite
     @include desktop
@@ -1106,7 +1117,7 @@
     display: flex
     justify-content: center
     flex-flow: column
-    
+
   #unkown
     font-family: $font-stack-antic
     color: #bfbfbf

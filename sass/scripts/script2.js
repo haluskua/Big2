@@ -61,8 +61,6 @@ $('document').ready(function() {
 });
 
 
-
-
 // Find all YouTube videos
 var $allVideos = $("iframe[src^='//www.youtube.com']"),
 

@@ -1,10 +1,11 @@
 
 $(document).ready(function(){
 
-    if (jQuery(window).width() <= 481) {
+    if (jQuery(window).width() <= 641) {
         $(".exit-menu, .hamburger-menu, .logo-desc").on("click", function(){
           $(".mobile-container").hide(300);
           $(".haus").show(300);
+          $("#logo-space").hide();
         });
         //show menu bar onclick on main logo
         $(".haus-menu, #hetinfo").click(function(){
@@ -12,28 +13,13 @@ $(document).ready(function(){
           $(".nav-folders").show(480);
           $(".haus").hide(500);
           $(".exit-menu").show(700);
+
         });
 
         //readmore_text onclick function
         $(".container_text").click(function(){
           $("#open_read").hide(300);
         });
-
-
-        /* Repetitive code on ellipsis effec,, need to be changed to dray*/
-        // $(".gdt").on("click", function() {
-        //   $(".scgdt").css("display", "flex");
-        // });
-        // $(".wdt").on("click", function() {
-        //   $(".scwdt").css("display", "flex");
-        // });
-        // $(".f").on("click", function() {
-        //   $(".scft").css("display", "flex");
-        // });
-        // $(".m").on("click", function() {
-        //   $(".scmt").css("display", "flex");
-        // });
-
 
         // Undisplaying the mobie menu-bar
         jQuery(window).resize(function () {
