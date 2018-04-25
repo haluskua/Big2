@@ -28,10 +28,8 @@
 
   #about
     width: 100vw
-    background-color: #1b0615
     height: auto
     @include desktop
-      background-color: gray
 
   .about-title
     color: #adaeaf
@@ -85,20 +83,22 @@
 
   .main-paragraph
     margin: auto
-    font-size: 0.92em
+    font-size: 1.04rem
     font-family: $font-stack-open-sans
-    color: #443939
-    text-align: center
+    color: #252121
     line-height: 1.65em
     margin-bottom: 10px
-    padding: 0 15px 0 15px
+    padding-top: 20px
+    text-align: justify
     @include phone-landscape
     @include tablet
       font-size: 1.04em
       letter-spacing: normal
     @include desktop
-      width: 30vw
-
+      margin: 0
+      padding-top: 20px
+      text-align: justify
+      width: 100%
   .columnsSplit
     display: flex !important
     flex-wrap: wrap
@@ -115,6 +115,7 @@
     @include desktop
       width: 36%
       margin: auto
+      margin-left: -80px
 
   #p-justified
     text-align: justify
@@ -123,11 +124,10 @@
     line-height: 1.65em
     margin-bottom: 10px
     padding: 0 15px 0 15px
-    font-size: 0.84em
-    color: #d6e1e2
-    letter-spacing: 0.03em
+    font-size: 1.04em
+    color: #443939
     font-weight: normal
-    font-family: $font-stack-roboto
+    font-family: $font-stack-open-sans
     @include phone-landscape
     @include tablet
       padding: 0 30px 0 30px
@@ -143,7 +143,8 @@
     @include desktop
       width: 20% !important
   .opening_statement
-    font-size: 0.84em
+    text-align: justify
+    font-size: 1.04em
     color: #3d2707
     font-weight: normal
     font-family: $font-stack-roboto
@@ -158,7 +159,8 @@
     @include desktop
       width: 60vw
       padding-top: 60px
-      font-size: 0.88em
+      font-size: 1.07rem
+      line-height: 1.75rem
 
     span
       font-size: 1.6em
@@ -412,9 +414,9 @@
     height: auto
     p
       padding: 20px
-      font-size: 1.12em
+      font-size: 1.3em
       letter-spacing: 0.03em
-      line-height: 1.65em
+      line-height: 1.6em
       font-family: "Dancing Script"
       font-style: italic
       color: #5f4725
@@ -538,17 +540,33 @@
         position: fixed
         top: 50px
         left: 284px
-      .skills-caption, .gd-caption, .dm-caption, .t-caption
-        display: none
-        justify-content: center
-        margin: auto
-        font-size: 0.93em
-        font-family: sans-serif
-        color: $purple
-        padding: 18px
-        padding-top: 0
-        text-align: justify
-        line-height: 1.56em
+  .skills-caption, .gd-caption, .dm-caption, .t-caption
+    display: none
+    // justify-content: center
+    // margin: auto
+    // font-size: 0.93em
+    // font-family: sans-serif
+    // color: $purple
+    // padding: 18px
+    // padding-top: 0
+    // text-align: justify
+    margin: auto
+    font-size: 1.04em
+    font-family: $font-stack-open-sans
+    color: #252121
+    text-align: center
+    line-height: 1.65em
+    margin-bottom: 10px
+    padding: 0
+    text-align: justify
+    @include phone-landscape
+    @include tablet
+      font-size: 1.04em
+      letter-spacing: normal
+    @include desktop
+      margin: 0
+      padding-top: 20px
+      text-align: justify
 
   .scpmt, .scpmt-gd, .scpmt-dm, .scpmt-t
     display: none
@@ -750,20 +768,29 @@
     @include phone-landscape
     @include desktop
       width: 54%
-      margin-top: 160px
+      margin-top: 88px
 
-  .img-split:hover
-    @include desktop
-      width: 92%
-      height: 20%
-      -webkit-transition: width 1.5s ease-out
-      transition: width 1.5s ease-out
+  // .img-split:hover
+  //   @include desktop
+  //     width: 92%
+  //     height: 20%
+  //     -webkit-transition: width 1.5s ease-out
+  //     transition: width 1.5s ease-out
+
+
+  #open_pic
+    width: 100px
+    height: 50px
+    background-color: green
+    color: white
+
+
 
   .rgdp
     display: flex
     justify-content: center
     color: #faf6e6
-    color: #4CAF50
+    color: #697279
     font-weight: bold
     font-size: 1.4em
     line-height: 42px
@@ -774,7 +801,7 @@
       line-height: 2em
       padding-left: 8px
     @include desktop
-      font-size: 0.97em
+      font-size: 1.7rem
       font-style: oblique
 
   .hide_inlarge
@@ -935,7 +962,8 @@
     @include phone-landscape
     @include tablet
     @include desktop
-      background-color: rgba(32, 44, 53, 0.95)
+      margin: auto
+      background-color: rgba(225, 228, 205, 0.64)
       padding: 22px
       width: 30%
       align-self: flex-start
@@ -952,31 +980,34 @@
         font-size: 1.65em
         color: #19384a
       @include desktop
-        color: #fffafa
+        color: #4c340e
+        font-size: 1.55em
 
-    p
-      width: 100%
-      text-align: justify
-      line-height: 1.56em
-      font-size: 0.86em
-      padding-top: 8px
-      color: #3d2707
-      letter-spacing: 0.03em
-      font-weight: normal
-      font-family: $font-stack-roboto
-      @include phone-landscape
-      @include tablet
-        font-size: 1em
-        color: #7d7d74
-      @include desktop
-        font-size: 0.8em
-        color: #c4d9dc
-        line-height: 1.66em
-        letter-spacing: 0.04em
+    // p
+    //   width: 100%
+    //   text-align: justify
+    //   line-height: 1.56em
+    //   font-size: 0.86em
+    //   padding-top: 8px
+    //   color: #3d2707
+    //   letter-spacing: 0.03em
+    //   font-weight: normal
+    //   font-family: $font-stack-roboto
+    //   @include phone-landscape
+    //   @include tablet
+    //     font-size: 1em
+    //     color: #7d7d74
+    //   @include desktop
+    //     font-size: 1.07rem
+    //     color: #312e28
+    //     line-height: 1.7rem
+    //     letter-spacing: 0.04em
+    //     margin-left: -94px
+    //     padding-right: 40px
 
   .suite
     @include desktop
-      width: 60vw
+      width: 80vw
 
   .blocks, .one
     display: flex
@@ -1045,12 +1076,12 @@
         @include desktop
           width: 62%
       p
-        font-size: 0.86em
-        color: #3d2707
+        font-size: 1.04em
+        text-align: justify
+        color: #252121
         letter-spacing: 0.02em
         font-weight: normal
         font-family: $font-stack-roboto
-        text-align: center
         padding: 10px
         line-height: 1.65em
         margin-bottom: 50px
@@ -1060,9 +1091,9 @@
           font-size: 1.12em
           margin-bottom: 0
         @include desktop
-          font-size: 0.9em
+          font-size: 1.07rem
           letter-spacing: 0em
-          line-height: 1.56em
+          line-height: 1.7em
           width: 77%
           display: flex
           align-self: center

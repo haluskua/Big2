@@ -153,8 +153,14 @@ $(document).ready(function(){
                     $("#hide_h2_t").css("display", "none");
                   });
 
+                  $("#open_pic").on("click", function(){
+                    $(".img-split").css("width", "92%");
+
+                  });
 
                 }
+
+
 
         // Code for Accordion
 

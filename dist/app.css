@@ -1224,7 +1224,7 @@ h4, h6 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    border-bottom: 1.3px solid #4CAF50;
+    background-color: #e8e7e5;
   }
 }
 
@@ -1434,18 +1434,8 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   #about {
     width: 100vw;
-    background-color: #1b0615;
     height: auto;
   }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  #about {
-    background-color: gray;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
   .about-title {
     color: #adaeaf;
     letter-spacing: 0.03em;
@@ -1528,13 +1518,13 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .main-paragraph {
     margin: auto;
-    font-size: 0.92em;
+    font-size: 1.04rem;
     font-family: "Open Sans";
-    color: #443939;
-    text-align: center;
+    color: #252121;
     line-height: 1.65em;
     margin-bottom: 10px;
-    padding: 0 15px 0 15px;
+    padding-top: 20px;
+    text-align: justify;
   }
 }
 
@@ -1547,7 +1537,10 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .main-paragraph {
-    width: 30vw;
+    margin: 0;
+    padding-top: 20px;
+    text-align: justify;
+    width: 100%;
   }
 }
 
@@ -1581,6 +1574,7 @@ h4, h6 {
   .p-2columns {
     width: 36%;
     margin: auto;
+    margin-left: -80px;
   }
 }
 
@@ -1592,11 +1586,10 @@ h4, h6 {
     line-height: 1.65em;
     margin-bottom: 10px;
     padding: 0 15px 0 15px;
-    font-size: 0.84em;
-    color: #d6e1e2;
-    letter-spacing: 0.03em;
+    font-size: 1.04em;
+    color: #443939;
     font-weight: normal;
-    font-family: "Roboto";
+    font-family: "Open Sans";
   }
 }
 
@@ -1626,7 +1619,8 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .opening_statement {
-    font-size: 0.84em;
+    text-align: justify;
+    font-size: 1.04em;
     color: #3d2707;
     font-weight: normal;
     font-family: "Roboto";
@@ -1648,7 +1642,8 @@ h4, h6 {
   .opening_statement {
     width: 60vw;
     padding-top: 60px;
-    font-size: 0.88em;
+    font-size: 1.07rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -2083,9 +2078,9 @@ h4, h6 {
   }
   #imgslider-desc p {
     padding: 20px;
-    font-size: 1.12em;
+    font-size: 1.3em;
     letter-spacing: 0.03em;
-    line-height: 1.65em;
+    line-height: 1.6em;
     font-family: "Dancing Script";
     font-style: italic;
     color: #5f4725;
@@ -2264,20 +2259,36 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  div.panel .skills-caption, div.panel .gd-caption, div.panel .dm-caption, div.panel .t-caption {
+  .skills-caption, .gd-caption, .dm-caption, .t-caption {
     display: none;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     margin: auto;
-    font-size: 0.93em;
-    font-family: sans-serif;
-    color: #341e25;
-    padding: 18px;
-    padding-top: 0;
+    font-size: 1.04em;
+    font-family: "Open Sans";
+    color: #252121;
+    text-align: center;
+    line-height: 1.65em;
+    margin-bottom: 10px;
+    padding: 0;
     text-align: justify;
-    line-height: 1.56em;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .skills-caption, .gd-caption, .dm-caption, .t-caption {
+    font-size: 1.04em;
+    letter-spacing: normal;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .skills-caption, .gd-caption, .dm-caption, .t-caption {
+    margin: 0;
+    padding-top: 20px;
+    text-align: justify;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .scpmt, .scpmt-gd, .scpmt-dm, .scpmt-t {
     display: none;
   }
@@ -2563,20 +2574,17 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .img-split {
     width: 54%;
-    margin-top: 160px;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .img-split:hover {
-    width: 92%;
-    height: 20%;
-    -webkit-transition: width 1.5s ease-out;
-    transition: width 1.5s ease-out;
+    margin-top: 88px;
   }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
+  #open_pic {
+    width: 100px;
+    height: 50px;
+    background-color: green;
+    color: white;
+  }
   .rgdp {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2585,7 +2593,7 @@ h4, h6 {
         -ms-flex-pack: center;
             justify-content: center;
     color: #faf6e6;
-    color: #4CAF50;
+    color: #697279;
     font-weight: bold;
     font-size: 1.4em;
     line-height: 42px;
@@ -2605,7 +2613,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .rgdp {
-    font-size: 0.97em;
+    font-size: 1.7rem;
     font-style: oblique;
   }
 }
@@ -2911,7 +2919,8 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .small_intro {
-    background-color: rgba(32, 44, 53, 0.95);
+    margin: auto;
+    background-color: rgba(225, 228, 205, 0.64);
     padding: 22px;
     width: 30%;
     -ms-flex-item-align: start;
@@ -2941,43 +2950,14 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .small_intro h2 {
-    color: #fffafa;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
-  .small_intro p {
-    width: 100%;
-    text-align: justify;
-    line-height: 1.56em;
-    font-size: 0.86em;
-    padding-top: 8px;
-    color: #3d2707;
-    letter-spacing: 0.03em;
-    font-weight: normal;
-    font-family: "Roboto";
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  .small_intro p {
-    font-size: 1em;
-    color: #7d7d74;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .small_intro p {
-    font-size: 0.8em;
-    color: #c4d9dc;
-    line-height: 1.66em;
-    letter-spacing: 0.04em;
+    color: #4c340e;
+    font-size: 1.55em;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .suite {
-    width: 60vw;
+    width: 80vw;
   }
 }
 
@@ -3103,12 +3083,12 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .blocks section p, .blocks .one p, .one section p, .one .one p {
-    font-size: 0.86em;
-    color: #3d2707;
+    font-size: 1.04em;
+    text-align: justify;
+    color: #252121;
     letter-spacing: 0.02em;
     font-weight: normal;
     font-family: "Roboto";
-    text-align: center;
     padding: 10px;
     line-height: 1.65em;
     margin-bottom: 50px;
@@ -3125,9 +3105,9 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .blocks section p, .blocks .one p, .one section p, .one .one p {
-    font-size: 0.9em;
+    font-size: 1.07rem;
     letter-spacing: 0em;
-    line-height: 1.56em;
+    line-height: 1.7em;
     width: 77%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3288,10 +3268,10 @@ h4, h6 {
   }
   /* Styling for webdev page only*/
   .webdev-title {
-    background-color: #1b0615;
+    background-color: #f3c5b1;
     color: #65635e;
     border-bottom: 1px solid lightgray;
-    border-top: 1px solid brown;
+    border-top: 1px solid #d0b98e;
   }
 }
 
@@ -3315,7 +3295,7 @@ h4, h6 {
     display: flex;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    background-color: #080608;
+    background-color: #f3c5b1;
     border-top: 0px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
