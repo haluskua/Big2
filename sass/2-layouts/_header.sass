@@ -129,7 +129,7 @@
 			text-align: center
 			margin-top: 16px
 			color: #0c0801
-			font-size: 0.35em
+			font-size: 0.42em
 			font-weight: normal
 			letter-spacing: 0.02em
 			text-transform: normal
@@ -542,7 +542,11 @@
 		@include phone-landscape
 
 		@include tablet
-			font-size: 1.09em
+			font-size: 1em
+			color: black
+			letter-spacing: 0em
+			&:focus
+				background-color: white
 		@include desktop
 			font-size: 0.8em
 			&:hover

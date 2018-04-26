@@ -345,7 +345,7 @@ h4, h6 {
     text-align: center;
     margin-top: 16px;
     color: #0c0801;
-    font-size: 0.35em;
+    font-size: 0.42em;
     font-weight: normal;
     letter-spacing: 0.02em;
     text-transform: normal;
@@ -973,7 +973,12 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .fields {
-    font-size: 1.09em;
+    font-size: 1em;
+    color: black;
+    letter-spacing: 0em;
+  }
+  .fields:focus {
+    background-color: white;
   }
 }
 
@@ -1530,7 +1535,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .main-paragraph {
-    font-size: 1.04em;
+    font-size: 1.09em;
     letter-spacing: normal;
   }
 }
@@ -2078,11 +2083,10 @@ h4, h6 {
   }
   #imgslider-desc p {
     padding: 20px;
-    font-size: 1.3em;
-    letter-spacing: 0.03em;
+    font-size: 1.05em;
+    letter-spacing: 0.01em;
     line-height: 1.6em;
-    font-family: "Dancing Script";
-    font-style: italic;
+    font-family: "Open Sans";
     color: #5f4725;
     font-weight: lighter;
     text-align: center;
@@ -2245,6 +2249,8 @@ h4, h6 {
     width: auto;
     top: 4.7%;
     left: 18%;
+    background-color: #fffef2;
+    border: none;
   }
 }
 
@@ -2311,7 +2317,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #gd-folders {
     width: 200px;
-    background-color: bisque;
+    background-color: #f9f7e3;
   }
 }
 
@@ -2339,7 +2345,7 @@ h4, h6 {
     width: 92%;
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
-    border-bottom: 1px solid slategray;
+    border-bottom: 1px solid #e6e6e0;
   }
 }
 
@@ -2347,6 +2353,8 @@ h4, h6 {
   #gd-folders li {
     margin-top: 12px;
     padding: 7px 0px;
+    border-radius: none;
+    background-color: #fffef2;
   }
 }
 
@@ -2593,7 +2601,7 @@ h4, h6 {
         -ms-flex-pack: center;
             justify-content: center;
     color: #faf6e6;
-    color: #697279;
+    color: #3e290c;
     font-weight: bold;
     font-size: 1.4em;
     line-height: 42px;
@@ -3268,7 +3276,7 @@ h4, h6 {
   }
   /* Styling for webdev page only*/
   .webdev-title {
-    background-color: #f3c5b1;
+    background-color: #fffcf4;
     color: #65635e;
     border-bottom: 1px solid lightgray;
     border-top: 1px solid #d0b98e;
@@ -3277,7 +3285,7 @@ h4, h6 {
 
 @media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
   .webdev-title {
-    background-color: #1b0615;
+    background-color: #fffcf4;
     z-index: 1;
   }
 }
@@ -3295,7 +3303,7 @@ h4, h6 {
     display: flex;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    background-color: #f3c5b1;
+    background-color: #fffcf4;
     border-top: 0px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
