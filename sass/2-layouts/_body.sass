@@ -83,10 +83,12 @@
 
   .main-paragraph
     margin: auto
-    font-size: 1.09rem
-    font-family: $font-stack-roboto
+    font-weight: 500
+    font-size: 1.05rem
+    font-family: $font-stack-open-sans
     color: #252121
-    line-height: 1.5em
+    letter-spacing: 0
+    line-height: 1.56em
     margin-bottom: 10px
     padding-top: 20px
     text-align: justify
@@ -121,13 +123,15 @@
     text-align: justify
     margin: auto
     padding: 10px
-    line-height: 1.5em
+    font-weight: 500
+    line-height: 1.56em
     margin-bottom: 10px
     padding: 0 15px 0 15px
-    font-size: 1.09em
+    font-size: 1.05em
     color: #252121
+    letter-spacing: 0
     font-weight: normal
-    font-family: $font-stack-roboto
+    font-family: $font-stack-open-sans
     @include phone-landscape
     @include tablet
       padding: 0 30px 0 30px
@@ -154,7 +158,8 @@
     line-height: 1.56em
     letter-spacing: 0
     font-weight: 500
-    margin-top: 18px
+    margin-top: 30px
+    margin-bottom: 36px
     @include phone-landscape
     @include tablet
       padding: 57px 30px 0 16px
@@ -166,7 +171,8 @@
       line-height: 1.75rem
 
     span
-      font-size: 1.6em
+      margin-top: 18px
+      font-size: 1.35em
       font-family: $font-stack-antic
       letter-spacing: 0.02em
       color: #5f4725
@@ -215,34 +221,36 @@
       font-size: 0.7em !important
       background-color: rgba(187, 166, 54, 0) !important
 
-    #skills-set-imgs
-      display: flex
-      flex-wrap: wrap
-      #flying-skills
-        display: flex
-        flex-direction: column
-        position: relative
-        #pillar
-          display: none
-          justify-content: space-around
-          align-items: flex-end
-          position: relative
-          width: 68%
-          z-index: 9
+    // #skills-set-imgs
+    //   display: flex
+    //   flex-wrap: wrap
+    //   #flying-skills
+    //     display: flex
+    //     flex-direction: column
+    //     position: relative
+    //     #pillar
+    //       display: none
+    //       justify-content: space-around
+    //       align-items: flex-end
+    //       position: relative
+    //       width: 68%
+    //       z-index: 9
 
   .skills-title
     display: flex
-    justify-content: center
+    justify-content: flex-start
     width: 100%
     padding: 17px
     padding-top: 30px
+    padding-left: 50px
     margin: 0
-    letter-spacing: 0.03em
-    color: #563724
+    letter-spacing: 0.05em
+    color: #252121
     text-align: center
     font-weight: bold
-    font-size: 1.4em
+    font-size: 1.3em
     text-transform: uppercase
+    background-color: rgba(255, 250, 205, 0.52)
     font-family: $font-stack-roboto
     @include phone-landscape
     @include tablet
@@ -361,7 +369,7 @@
         font-family: $font-stack-Dancing-script
         font-size: 1.5em
         text-align: justify
-        color: black
+        color: #e0e4d2
         text-align: center
         padding: 21px
         margin-bottom: 121px
@@ -550,12 +558,15 @@
   .skills-caption, .gd-caption, .dm-caption, .t-caption
     display: none
     margin: auto
-    font-size: 1.09em
-    font-family: $font-stack-roboto
+    font-weight: 500
+    font-size: 1.05em
+    letter-spacing: 0
+    font-family: $font-stack-open-sans
     color: #252121
     text-align: center
-    line-height: 1.5em
+    line-height: 1.56em
     margin-bottom: 10px
+    margin-top: 20px
     padding: 0
     text-align: justify
     @include phone-landscape
@@ -654,7 +665,6 @@
 
   #main-gallery
     width: 100%
-    height: 100vh
     flex-direction: column
     justify-content: flex-start
     align-items: center
@@ -852,11 +862,12 @@
       flex-wrap: wrap !important
 
   .container
-    width: 93vw
+    width: 100vw
     display: flex
     flex-wrap: wrap
     align-items: center
     overflow-y: scroll
+    padding-bottom: 33px
     border: 1px solid #e6dee2
     background-color: #f7efd66e
     // background-color: red
@@ -875,6 +886,8 @@
     display: flex
     flex-wrap: wrap
     align-items: center
+    padding-top: 30px
+    padding-bottom: 30px
     overflow-y: scroll
     border: 1px solid #e6dee2
     background-color: #f7efd66e
@@ -973,9 +986,14 @@
       color: #111111
       align-self: flex-start
       font-weight: normal
-      font-size: 1.21em
+      font-size: 1.3em
       margin-top: 32px
-      margin-bottom: -2px
+      display: flex
+      padding: 11px
+      margin-bottom: 0px
+      width: 55%
+      margin-left: -18px
+      padding-left: 23px
       border-bottom: 1px dotted rgba(187, 166, 54, 0.97)
       @include phone-landscape
       @include tablet
@@ -1060,7 +1078,7 @@
 
       h4
         align-self: center
-        font-size: 1.44em
+        font-size: 2em
       a
         display: flex
         width: 100%
@@ -1078,13 +1096,14 @@
         @include desktop
           width: 62%
       p
-        font-size: 1.09em
+        font-size: 1.05em
         text-align: justify
         color: #252121
+        letter-spacing: 0
         font-weight: normal
-        font-family: $font-stack-roboto
+        font-family: $font-stack-open-sans
         padding: 10px
-        line-height: 1.5em
+        line-height: 1.56em
         margin-bottom: 50px
         font-weight: 500
         @include phone-landscape
@@ -1117,7 +1136,7 @@
           margin-top: 10px
         a
           font-family: $font-stack-antic
-          color: #26061e
+          color: #000
           text-align: justify
           font-size: 1.1em
           padding: 0
