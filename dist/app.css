@@ -1525,11 +1525,11 @@ h4, h6 {
   .main-paragraph {
     margin: auto;
     font-weight: 500;
-    font-size: 1.03em;
+    font-size: 1.04em;
     font-family: "Open Sans";
     color: #252121;
     letter-spacing: 0;
-    line-height: 1.56em;
+    line-height: 1.6em;
     margin-bottom: 30px;
     padding-top: 20px;
     text-align: justify;
@@ -1591,10 +1591,10 @@ h4, h6 {
     margin: auto;
     padding: 10px;
     font-weight: 500;
-    line-height: 1.56em;
+    line-height: 1.6em;
     margin-bottom: 10px;
     padding: 0 15px 0 15px;
-    font-size: 1.03em;
+    font-size: 1.04em;
     color: #252121;
     letter-spacing: 0;
     font-weight: normal;
@@ -1635,7 +1635,7 @@ h4, h6 {
     font-family: "Open Sans";
     padding: 9px;
     padding-left: 12px;
-    line-height: 1.56em;
+    line-height: 1.6em;
     letter-spacing: 0;
     font-weight: 500;
     margin-top: 30px;
@@ -2254,12 +2254,12 @@ h4, h6 {
     display: none;
     margin: auto;
     font-weight: 500;
-    font-size: 1.03em;
+    font-size: 1.04em;
     letter-spacing: 0;
     font-family: "Open Sans";
     color: #252121;
     text-align: center;
-    line-height: 1.56em;
+    line-height: 1.6em;
     margin-bottom: 10px;
     margin-top: 20px;
     padding: 0;
@@ -3089,14 +3089,14 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .blocks section p, .blocks .one p, .one section p, .one .one p {
-    font-size: 1.03em;
+    font-size: 1.04em;
     text-align: justify;
     color: #252121;
     letter-spacing: 0;
     font-weight: normal;
     font-family: "Open Sans";
     padding: 10px;
-    line-height: 1.56em;
+    line-height: 1.6em;
     margin-bottom: 50px;
     font-weight: 500;
   }
