@@ -1625,13 +1625,15 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .opening_statement {
     text-align: justify;
-    font-size: 1.09em;
+    font-size: 1.05em;
     color: #252121;
     font-weight: normal;
-    font-family: "Roboto";
+    font-family: "Open Sans";
     padding: 9px;
     padding-left: 12px;
-    line-height: 1.5em;
+    line-height: 1.56em;
+    letter-spacing: 0;
+    font-weight: 500;
     margin-top: 18px;
   }
 }
@@ -3103,6 +3105,7 @@ h4, h6 {
     padding: 10px;
     line-height: 1.5em;
     margin-bottom: 50px;
+    font-weight: 500;
   }
 }
 
