@@ -51,6 +51,13 @@ h2, h3 {
 }
 
 h4, h6 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: "Roboto";
   font-size: 1em;
   line-height: 1.5em;
@@ -1421,6 +1428,7 @@ h4, h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: -12px;
     max-width: 100%;
     height: 100%;
     position: relative;
@@ -1532,7 +1540,7 @@ h4, h6 {
     color: #252121;
     letter-spacing: 0;
     line-height: 1.6em;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding-top: 20px;
     text-align: justify;
   }
@@ -2254,6 +2262,7 @@ h4, h6 {
   .skills-caption, .gd-caption, .dm-caption, .t-caption {
     display: none;
     margin: auto;
+    margin-top: 10px;
     font-weight: 500;
     font-size: 1.05em;
     letter-spacing: 0;
@@ -2542,7 +2551,7 @@ h4, h6 {
     font-family: "Rajdhani", sans-serif;
   }
   .fs-gal {
-    width: 65%;
+    width: 100%;
     height: auto;
     float: left;
     padding: 7px;
@@ -2868,6 +2877,7 @@ h4, h6 {
   #skills-descClose, #gd-descClose, #dm-descClose, #t-descClose {
     display: none;
     width: 42%;
+    margin-top: 20px;
     background-color: rgba(202, 218, 215, 0.22);
   }
 }
@@ -3203,7 +3213,7 @@ h4, h6 {
     display: flex;
     width: 100%;
     padding: 8px;
-    margin: 10px 0 24px 0px;
+    margin: -6px 0 33px 0px;
     background-color: rgba(202, 218, 215, 0.22);
   }
 }
