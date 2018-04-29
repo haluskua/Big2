@@ -1527,6 +1527,7 @@ h4, h6 {
     margin: auto;
     font-weight: 500;
     font-size: 1.05em;
+    letter-spacing: 0.01em;
     font-family: "Open Sans";
     color: #252121;
     letter-spacing: 0;
@@ -1593,6 +1594,7 @@ h4, h6 {
     padding: 10px;
     font-weight: 500;
     line-height: 1.6em;
+    letter-spacing: 0.01em;
     margin-bottom: 10px;
     padding: 0 15px 0 15px;
     font-size: 1.05em;
@@ -1637,8 +1639,7 @@ h4, h6 {
     padding: 9px;
     padding-left: 12px;
     line-height: 1.6em;
-    letter-spacing: 0;
-    font-weight: 500;
+    letter-spacing: 0.01em;
     margin-top: 30px;
     margin-bottom: 36px;
   }
@@ -2260,8 +2261,7 @@ h4, h6 {
     color: #252121;
     text-align: center;
     line-height: 1.6em;
-    margin-bottom: 10px;
-    margin-top: 20px;
+    letter-spacing: 0.01em;
     padding: 0;
     text-align: justify;
   }
@@ -2933,7 +2933,6 @@ h4, h6 {
         align-self: flex-start;
     font-weight: normal;
     font-size: 1.3em;
-    margin-top: 32px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3092,6 +3091,7 @@ h4, h6 {
   .blocks section p, .blocks .one p, .one section p, .one .one p {
     font-size: 1.05em;
     text-align: justify;
+    letter-spacing: 0.01em;
     color: #252121;
     letter-spacing: 0;
     font-weight: normal;
@@ -3203,7 +3203,7 @@ h4, h6 {
     display: flex;
     width: 100%;
     padding: 8px;
-    margin: 10px 0 50px 0px;
+    margin: 10px 0 24px 0px;
     background-color: rgba(202, 218, 215, 0.22);
   }
 }
