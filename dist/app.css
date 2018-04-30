@@ -2101,9 +2101,9 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #imgslider-desc p {
     background-color: rgba(255, 254, 242, 0);
-    margin-top: 70px;
+    margin-top: 8px;
     color: #585036;
-    font-size: 1.72em;
+    font-size: 1.32em;
     letter-spacing: 0.03em;
     z-index: 9999;
     width: 50%;
@@ -2895,13 +2895,14 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
+    text-align: center;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .close-caption, .gdClose, .dmClose, .tClose {
     font-size: 1.1em;
-    width: 120px;
   }
 }
 
@@ -3258,6 +3259,114 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #unkown {
     font-size: 0.62em;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
+  .bilum {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .bilum {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
+  #slider {
+    width: 400px;
+    height: 430px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #slider {
+    width: 720px;
+    height: 430px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
+  #slider .slides {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 2040px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #slider .slides {
+    display: block;
+    width: 6000px;
+    height: 430px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
+  #slider .slide {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    list-style-type: none;
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 720px;
+    height: 430px;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
+  #slider .slide img {
+    width: 340px;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  #slider .slide img {
+    width: 720px;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #slider .slide img {
+    width: 720px;
   }
 }
 

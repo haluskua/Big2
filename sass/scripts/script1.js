@@ -1,6 +1,62 @@
 
 $(document).ready(function(){
 
+
+      // Anime.js code
+    anime({
+      targets: '#home-logo',
+      translateX: 8,
+      translateY: 8,
+      duration: 1000,
+      rotate: '4turn',
+      loop: 10, // Play the animation 3 times
+      direction: 'reverse', // Play the animation in reverse
+      autoplay: true // Animation paused by default
+    });
+
+
+//////////////////////////////////////////////
+
+  $(function() {
+
+      //settings for slider
+      var width = 720;
+      var animationSpeed = 5500;
+      var pause = 0;
+      var currentSlide = 1;
+
+      //cache DOM elements
+      var $slider = $('#slider');
+      var $slideContainer = $('.slides', $slider);
+      var $slides = $('.slide', $slider);
+
+      var interval;
+
+      function startSlider() {
+          interval = setInterval(function() {
+              $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
+                  if (++currentSlide === $slides.length) {
+                      currentSlide = 1;
+                      $slideContainer.css('margin-left', 0) ;
+                  }
+              });
+          }, pause);
+      }
+      function pauseSlider() {
+          clearInterval(interval);
+      }
+
+      $slideContainer
+          .on('mouseenter', pauseSlider)
+          .on('mouseleave', startSlider);
+
+      startSlider();
+
+
+  });
+
+
+
     if (jQuery(window).width() <= 480) {
         $(".exit-menu, .hamburger-menu, .logo-desc").on("click", function(){
           $(".mobile-container").hide(300);
