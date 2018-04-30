@@ -3275,6 +3275,8 @@ h4, h6 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin: 0;
   }
 }
@@ -3297,8 +3299,11 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #slider {
-    width: 400px;
-    height: 430px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
     overflow: hidden;
   }
 }
@@ -3313,11 +3318,9 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #slider .slides {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 2040px;
-    height: auto;
+    display: block;
+    width: 100%;
+    height: 209px;
     padding: 0;
     margin: 0;
   }
@@ -3335,11 +3338,12 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #slider .slide {
+    margin: 0 auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     list-style-type: none;
-    width: 400px;
+    width: 340px;
   }
 }
 
@@ -3367,6 +3371,141 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #slider .slide img {
     width: 720px;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
+  .outer-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    height: 360px;
+    margin: 0 auto;
+    background-image: url("../dist/imgs/1920.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .outer-div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-flow: row;
+        flex-flow: row;
+    width: 100%;
+    height: 360px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
+  .box {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .inner-div1 {
+    height: 30%;
+    width: 180px;
+    background-image: url("../dist/imgs/slider1.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .inner-div1 {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
+  .inner-div2 {
+    height: 30%;
+    width: 180px;
+    background-image: url("../dist/imgs/slider2.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .inner-div2 {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
+  .inner-div3 {
+    height: 30%;
+    width: 180px;
+    background-image: url("../dist/imgs/slider3.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .inner-div3 {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
+  .inner-div4 {
+    height: 30%;
+    width: 180px;
+    background-image: url("../dist/imgs/slider4.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .inner-div4 {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
+  .inner-div5 {
+    height: 30%;
+    width: 180px;
+    background-image: url("../dist/imgs/slider5.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .inner-div5 {
+    width: 100%;
+    height: 200px;
   }
 }
 

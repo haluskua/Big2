@@ -1196,6 +1196,7 @@
     display: flex
     flex-direction: column
     align-items: center
+    justify-content: space-around
     margin: 0
     @include desktop
       display: flex
@@ -1204,8 +1205,9 @@
       align-items: center
 
   #slider
-    width: 400px
-    height: 430px
+    width: 100%
+    display: flex
+    height: auto
     overflow: hidden
     @include desktop
       width: 720px
@@ -1213,9 +1215,9 @@
       overflow: hidden
 
   #slider .slides
-    display: flex
-    width: 2040px
-    height: auto
+    display: block
+    width: 100%
+    height: 209px
     padding: 0
     margin: 0
     @include desktop
@@ -1225,18 +1227,108 @@
       margin: 0
       padding: 0
 
+
   #slider .slide
+    margin: 0 auto
     justify-content: center
     list-style-type: none
-    width: 400px
+    width: 340px
     @include desktop
       float: left
       list-style-type: none
       width: 720px
       height: 430px
+
   #slider .slide img
     width: 340px
     @include tablet
       width: 720px
     @include desktop
       width: 720px
+
+  .outer-div
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    width: 100%
+    height: 360px
+    margin: 0 auto
+    background-image: url("../dist/imgs/1920.png")
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    @include desktop
+      flex-direction: row
+      flex-wrap: wrap
+      flex-flow: row
+      width: 100%
+      height: 360px
+      display: flex
+      margin: 0 auto
+
+
+  .box
+    position: relative
+    width: 100vw
+    height: auto
+    align-self: center
+
+  .inner-div1
+    height: 30%
+    width: 180px
+    background-image: url("../dist/imgs/slider1.png")
+    background-size: contain
+    background-position: center
+    background-repeat: no-repeat
+    @include phone-landscape
+    @include desktop
+      width: 100%
+      height: 200px
+
+  .inner-div2
+    height: 30%
+    width: 180px
+    background-image: url("../dist/imgs/slider2.png")
+    background-size: contain
+    background-position: center
+    background-repeat: no-repeat
+    @include phone-landscape
+    @include desktop
+      width: 100%
+      height: 200px
+
+  .inner-div3
+    height: 30%
+    width: 180px
+    background-image: url("../dist/imgs/slider3.png")
+    background-size: contain
+    background-position: center
+    background-repeat: no-repeat
+    @include phone-landscape
+    @include desktop
+      width: 100%
+      height: 200px
+
+  .inner-div4
+    height: 30%
+    width: 180px
+    background-image: url("../dist/imgs/slider4.png")
+    background-size: contain
+    background-position: center
+    background-repeat: no-repeat
+    @include phone-landscape
+    @include desktop
+      width: 100%
+      height: 200px
+
+  .inner-div5
+    height: 30%
+    width: 180px
+    background-image: url("../dist/imgs/slider5.png")
+    background-size: contain
+    background-position: center
+    background-repeat: no-repeat
+    @include phone-landscape
+    @include desktop
+      width: 100%
+      height: 200px
