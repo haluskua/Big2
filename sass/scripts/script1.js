@@ -1,7 +1,6 @@
 
 $(document).ready(function(){
 
-
       // Anime.js code
     anime({
       targets: '#home-logo',
