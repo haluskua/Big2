@@ -2,41 +2,50 @@
 $(document).ready(function(){
 
       // Anime.js code
-    anime({
-      targets: '#home-logo',
-      translateX: 8,
-      translateY: 8,
-      duration: 1000,
-      rotate: '4turn',
-      loop: 10, // Play the animation 3 times
-      direction: 'reverse', // Play the animation in reverse
-      autoplay: true // Animation paused by default
-    });
+    // anime({
+    //   targets: '#hetinfo',
+    //   duration: 7500,
+    //   delay: 7000,
+    //   rotate: '1turn',
+    //   loop: true, // Play the animation 3 times
+    //   // direction: 'reverse', // Play the animation in reverse
+    //   autoplay: true // Animation paused by default
+    // });
 
     anime({
       targets: '.box',
-      translateX: [
-          { value: 0, duration: 3000},
-          // {value: 1, duration: 800}
+      translateY: [
+        { value: -10, duration: 1000},
+        { value: 0, duration: 2200, delay: 3800}
       ],
       rotate:{
-      value: '1turn',
-      easing: 'easeInOutSine'
+      value: '-0.07turn',
+      duration: 1500,
+      easing: 'easeInOutQuart'
     },
-    loop: 10,
+    // scale: {
+    //   value: 2,
+    //   duration: 1600,
+    //   // delay: 800,
+    //   easing: 'easeInOutQuart'
+    // },
+    loop: true,
+    // direction: 'reverse', // Play the animation in reverse
       delay: function(el, i, l){
-        return i * 4900}
+        return i *1650}
+
     });
 
-    // anime({
-    //   targets: '.inner-div5',
-    //   opacity: [
-    //       { value: 0, duration: 800, delay: 800},
-    //       // {value: 1, duration: 2000, delay: 2400}
-    //   ],
-    //   loop: 4,
-    //   autoplay: true
-    // });
+    //////////////////
+
+    anime({
+      targets: '.animation-caption',
+      translateY: [
+        { value: +40, duration: 810},
+        { value: +40, duration: 2200, delay: 300}
+      ],
+
+    });
 
     // anime({
     //   targets: '.inner-div4',

@@ -1631,6 +1631,34 @@ h4, h6 {
   }
 }
 
+@media (min-width: 1em), screen and (orientation: portrait) {
+  .animation-caption, .gallery-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    letter-spacing: 0.05em;
+    color: #252121;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.13em;
+    text-transform: uppercase;
+    background-color: white;
+    font-family: "Cabin Sketch", Garamond;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .animation-caption, .gallery-link {
+    font-size: 1.53em;
+  }
+}
+
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .opening_image {
     width: 20% !important;
@@ -3414,8 +3442,17 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     position: relative;
-    width: 100vw;
+    width: 75vw;
     height: auto;
     -ms-flex-item-align: center;
         align-self: center;
@@ -3450,7 +3487,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .inner-div2 {
-    width: 100%;
+    width: 1800px;
     height: 200px;
   }
 }

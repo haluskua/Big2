@@ -143,6 +143,23 @@
       padding: 22px
       align-self: flex-start
 
+  .animation-caption, .gallery-link
+    display: flex
+    justify-content: center
+    width: 100%
+    padding: 10px
+    margin: 0
+    letter-spacing: 0.05em
+    color: #252121
+    text-align: center
+    font-weight: bold
+    font-size: 1.13em
+    text-transform: uppercase
+    background-color: white
+    font-family: $font-stack-character
+    @include desktop
+      font-size: 1.53em
+
   .opening_image
     @include desktop
       width: 20% !important
@@ -1268,8 +1285,11 @@
 
 
   .box
+    display: flex
+    flex-direction: column
+    justify-content: space-around
     position: relative
-    width: 100vw
+    width: 75vw
     height: auto
     align-self: center
 
@@ -1294,7 +1314,7 @@
     background-repeat: no-repeat
     @include phone-landscape
     @include desktop
-      width: 100%
+      width: 1800px
       height: 200px
 
   .inner-div3
