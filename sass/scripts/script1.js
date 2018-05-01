@@ -12,138 +12,15 @@ $(document).ready(function(){
     //   autoplay: true // Animation paused by default
     // });
 
-    anime({
-      targets: '.box',
-      translateY: [
-        { value: -10, duration: 1000},
-        { value: 0, duration: 2200, delay: 3800}
-      ],
-      rotate:{
-      value: '-0.07turn',
-      duration: 1500,
-      easing: 'easeInOutQuart'
-    },
-    // scale: {
-    //   value: 2,
-    //   duration: 1600,
-    //   // delay: 800,
-    //   easing: 'easeInOutQuart'
-    // },
-    loop: true,
-    // direction: 'reverse', // Play the animation in reverse
-      delay: function(el, i, l){
-        return i *1650}
 
-    });
-
-    //////////////////
-
-    anime({
-      targets: '.animation-caption',
-      translateY: [
-        { value: +40, duration: 810},
-        { value: +40, duration: 2200, delay: 300}
-      ],
-
-    });
-
-    // anime({
-    //   targets: '.inner-div4',
-    //   opacity: [
-    //       { value: 0, duration: 800, delay: 6000},
-    //       // {value: 1, duration: 2000, delay: 3000}
-    //   ],
-    //   loop: 4,
-    //   autoplay: true
-    // });
-    //
-    // anime({
-    //   targets: '.inner-div3',
-    //   opacity: [
-    //       { value: 0, duration: 800, delay: 8000},
-    //       // {value: 1, duration: 2000, delay: 3300}
-    //   ],
-    //   loop: 4,
-    //   autoplay: true
-    // });
-    //
-    // anime({
-    //   targets: '.inner-div2',
-    //   opacity: [
-    //       { value: 0, duration: 800, delay: 10000},
-    //       // {value: 1, duration: 2000, delay: 3600}
-    //   ],
-    //   loop: 4,
-    //   autoplay: true
-    // });
-    //
-    // anime({
-    //   targets: '.inner-div1',
-    //   opacity: [
-    //       { value: 0, duration: 800, delay: 12000},
-    //       // {value: 1, duration: 2000, delay: 3900}
-    //   ],
-    //   loop: 4,
-    //   autoplay: true
-    // });
-
-
-
-
-
-
-
-
-
-
-//////////////////////////////////////////////
-
-  // $(function() {
-  //
-  //     //settings for slider
-  //     var width = 720;
-  //     var animationSpeed = 5500;
-  //     var pause = 0;
-  //     var currentSlide = 1;
-  //
-  //     //cache DOM elements
-  //     var $slider = $('#slider');
-  //     var $slideContainer = $('.slides', $slider);
-  //     var $slides = $('.slide', $slider);
-  //
-  //     var interval;
-  //
-  //     function startSlider() {
-  //         interval = setInterval(function() {
-  //             $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
-  //                 if (++currentSlide === $slides.length) {
-  //                     currentSlide = 1;
-  //                     $slideContainer.css('margin-left', 0) ;
-  //                 }
-  //             });
-  //         }, pause);
-  //     }
-  //     function pauseSlider() {
-  //         clearInterval(interval);
-  //     }
-  //
-  //     $slideContainer
-  //         .on('mouseenter', pauseSlider)
-  //         .on('mouseleave', startSlider);
-  //
-  //     startSlider();
-  //
-  //
-  // });
-
-
+ //// Script targeting mainly mobile menus
 
     if (jQuery(window).width() <= 480) {
         $(".exit-menu, .hamburger-menu, .logo-desc").on("click", function(){
           $(".mobile-container").hide(300);
           $(".haus").show(300);
-          // $("#logo-space").hide();
         });
+
         //show menu bar onclick on main logo
         $(".haus-menu, #hetinfo").click(function(){
           $(".mobile-container").show(500);
@@ -160,18 +37,40 @@ $(document).ready(function(){
 
         // Undisplaying the mobie menu-bar
         jQuery(window).resize(function () {
-                if (jQuery(window).width() > 642) {
-                  $("#folders-container").show(300);
-                  // $('#hetinfo').on("click", function(){
-                  //
-                  // });
-                  // alert('john');
-                    jQuery(".haus").css("display", "none");
-                }
+          if (jQuery(window).width() > 642) {
+            $("#folders-container").show(300);
+              jQuery(".haus").css("display", "none");
+          }
+        });
+
+        ///////////////////Animation for mobile view///////////////////
+        anime({
+          targets: '.box',
+          translateY: [
+            { value: -5, duration: 1100},
+            { value: 0, duration: 1100}
+          ],
+          rotate:{
+          value: '-0.02turn',
+          duration: 3500,
+          easing: 'easeInOutQuart'
+        },
+        scale: {
+          value: 1.05,
+          duration: 2500,
+          delay: 1000,
+          easing: 'easeInOutQuart'
+        },
+        loop: true,
+        // direction: 'reverse', // Play the animation in reverse
+          delay: function(el, i, l){
+            return i *2000}
 
         });
 
     }
+
+
 
   $(window).scroll(function() {
     var scrollTop = $(window).scrollTop();
@@ -235,7 +134,6 @@ $(document).ready(function(){
                     $("#hide_h2").css("display", "none");
                   });
 
-
                   // accordion effect for Graphic Design page
                   $(".gdReadmore").on("click", function() {
                     $("#gd-descOpen").css("display", "none");
@@ -253,8 +151,6 @@ $(document).ready(function(){
                     $("#hide_h2_gd").css("display", "none");
                   });
 
-
-
                   // accordion effect for Digital Media page
                   $(".dmReadmore").on("click", function() {
                     $("#dm-descOpen").css("display", "none");
@@ -271,7 +167,6 @@ $(document).ready(function(){
                     $(".dmReadmore").css("z-index", "999");
                     $("#hide_h2_dm").css("display", "none");
                   });
-
 
                   // accordion effect for Digital Media page
                   $(".tReadmore").on("click", function() {
@@ -294,10 +189,9 @@ $(document).ready(function(){
                     $(".img-split").css("width", "92%");
 
                   });
-
                 }
 
-
+/////////////////////////////////////////////////////////////////////
 
         // Code for Accordion
 
@@ -332,13 +226,126 @@ $(document).ready(function(){
           }
 
         });
+        ///////////////////////Script writing for larger than mobile resolution screens //////////////////
 
         if (jQuery(window).width() >= 482) {
           $(".nav-folders").on("click", function(){
             $(".panel").hide(300);
           });
 
+          ///////////////////////Animation for VIEWS Larger than Mobile View //////////////////
+
+          anime({
+            targets: '.box',
+            easing: 'easeInOutSine',
+            translateY: [
+              { value: -10, duration: 1100, delay: 1200},
+              { value: +10, duration: 1100}
+            ],
+            rotate:{
+            value: '-0.02turn',
+            duration: 3500,
+            easing: 'easeInOutQuart'
+          },
+          scale: {
+            value: 1.05,
+            duration: 2500,
+            delay: 1000,
+            easing: 'easeInOutQuart'
+          },
+          loop: true,
+          // direction: 'reverse', // Play the animation in reverse
+            delay: function(el, i, l){
+              return i *840}
+
+          });
+
+          anime({
+            targets: '.animation-caption',
+            translateY: [
+              { value: +30, duration: 810},
+              { value: +30, duration: 2200, delay: 300}
+            ],
+
+          });
         }
-
-
 });
+    // anime({
+    //   targets: '.inner-div4',
+    //   opacity: [
+    //       { value: 0, duration: 800, delay: 6000},
+    //       // {value: 1, duration: 2000, delay: 3000}
+    //   ],
+    //   loop: 4,
+    //   autoplay: true
+    // });
+    //
+    // anime({
+    //   targets: '.inner-div3',
+    //   opacity: [
+    //       { value: 0, duration: 800, delay: 8000},
+    //       // {value: 1, duration: 2000, delay: 3300}
+    //   ],
+    //   loop: 4,
+    //   autoplay: true
+    // });
+    //
+    // anime({
+    //   targets: '.inner-div2',
+    //   opacity: [
+    //       { value: 0, duration: 800, delay: 10000},
+    //       // {value: 1, duration: 2000, delay: 3600}
+    //   ],
+    //   loop: 4,
+    //   autoplay: true
+    // });
+    //
+    // anime({
+    //   targets: '.inner-div1',
+    //   opacity: [
+    //       { value: 0, duration: 800, delay: 12000},
+    //       // {value: 1, duration: 2000, delay: 3900}
+    //   ],
+    //   loop: 4,
+    //   autoplay: true
+    // });
+
+//////////////////////////////////////////////
+
+  // $(function() {
+  //
+  //     //settings for slider
+  //     var width = 720;
+  //     var animationSpeed = 5500;
+  //     var pause = 0;
+  //     var currentSlide = 1;
+  //
+  //     //cache DOM elements
+  //     var $slider = $('#slider');
+  //     var $slideContainer = $('.slides', $slider);
+  //     var $slides = $('.slide', $slider);
+  //
+  //     var interval;
+  //
+  //     function startSlider() {
+  //         interval = setInterval(function() {
+  //             $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
+  //                 if (++currentSlide === $slides.length) {
+  //                     currentSlide = 1;
+  //                     $slideContainer.css('margin-left', 0) ;
+  //                 }
+  //             });
+  //         }, pause);
+  //     }
+  //     function pauseSlider() {
+  //         clearInterval(interval);
+  //     }
+  //
+  //     $slideContainer
+  //         .on('mouseenter', pauseSlider)
+  //         .on('mouseleave', startSlider);
+  //
+  //     startSlider();
+  //
+  //
+  // });

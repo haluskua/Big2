@@ -97,6 +97,9 @@
       font-size: 1.09em
       letter-spacing: normal
     @include desktop
+      font-size: 1.3em
+      line-height: 1.8em
+      letter-spacing: 0.01em
       margin: 0
       padding-top: 20px
       text-align: justify
@@ -117,6 +120,7 @@
     @include desktop
       width: 36%
       margin: auto
+      margin-left: -55px
 
   #p-justified
     text-align: justify
@@ -138,6 +142,9 @@
       font-size: 1.12em
       margin-top: 14px
     @include desktop
+      font-size: 1.3em
+      line-height: 1.8em
+      letter-spacing: 0.01em
       width: 60vw
       background-color: rgba(32, 44, 53, 0.95)
       padding: 22px
@@ -146,19 +153,24 @@
   .animation-caption, .gallery-link
     display: flex
     justify-content: center
-    width: 100%
-    padding: 10px
-    margin: 0
+    width: 60%
+    padding: 8px
+    margin-top: 8px
+    margin: 0 auto
     letter-spacing: 0.05em
     color: #252121
+    color: black
     text-align: center
     font-weight: bold
-    font-size: 1.13em
+    font-size: 0.9em
     text-transform: uppercase
     background-color: white
     font-family: $font-stack-character
     @include desktop
-      font-size: 1.53em
+      font-size: 1.2em
+
+  .gallery-link
+    font-size: 1.3em
 
   .opening_image
     @include desktop
@@ -183,8 +195,12 @@
     @include desktop
       width: 60vw
       padding-top: 60px
-      font-size: 1.07rem
-      line-height: 1.75rem
+      font-size: 1.3em
+      line-height: 1.8em
+
+      font-size: 1.6em
+      font-weight: 500
+      color: #4c4947
 
     span
       margin-top: 18px
@@ -589,6 +605,9 @@
       font-size: 1.04em
       letter-spacing: normal
     @include desktop
+      font-size: 1.3em
+      letter-spacing: 0.01em
+      line-height: 1.8em
       margin: 0
       padding-top: 20px
       text-align: justify
@@ -1017,6 +1036,7 @@
         font-size: 1.65em
         color: #19384a
       @include desktop
+        width: 9%
         color: #4c340e
         font-size: 1.55em
 
@@ -1040,7 +1060,7 @@
       margin: 0
       @include desktop
         width: 60vw
-        border: 1px solid #606a3c
+        border: 1px solid #FFC107
         border-bottom: none
         border-top: none
       div
@@ -1111,9 +1131,9 @@
           font-size: 1.12em
           margin-bottom: 0
         @include desktop
-          font-size: 1.07rem
+          font-size: 1.3rem
           letter-spacing: 0em
-          line-height: 1.7em
+          line-height: 1.8em
           width: 77%
           display: flex
           align-self: center
@@ -1168,6 +1188,8 @@
   .project_box
     display: flex
     margin: auto
+    @include desktop
+      width: auto
 
   #project_title
     display: flex
@@ -1176,6 +1198,13 @@
     margin: -6px 0 33px 0px
     background-color: rgba(202, 218, 215, 0.22)
     @include phone-landscape
+    @include desktop
+      width: 60%
+      display: flex
+      justify-content: center
+      margin: 10px 0 33px 0
+      background-color: white
+
     p
       @include phone-landscape
       @include tablet
@@ -1270,6 +1299,7 @@
     width: 100%
     height: 360px
     margin: 0 auto
+    margin-bottom: 26px
     background-image: url("../dist/imgs/1920.png")
     background-size: cover
     background-position: center
@@ -1279,76 +1309,41 @@
       flex-wrap: wrap
       flex-flow: row
       width: 100%
-      height: 360px
+      height: 370px
       display: flex
       margin: 0 auto
-
 
   .box
     display: flex
     flex-direction: column
     justify-content: space-around
     position: relative
-    width: 75vw
+    width: 100vw
     height: auto
     align-self: center
+    margin: 4px
 
-  .inner-div1
-    height: 30%
-    width: 180px
-    background-image: url("../dist/imgs/slider1.png")
+  .inner-div1, .inner-div2, .inner-div3, .inner-div4, .inner-div5
+    height: 28%
+    width: 138px
     background-size: contain
     background-position: center
     background-repeat: no-repeat
     @include phone-landscape
     @include desktop
-      width: 100%
+      width: 340px
       height: 200px
+  .inner-div1
+    background-image: url("../dist/imgs/slider1.png")
 
   .inner-div2
-    height: 30%
-    width: 180px
     background-image: url("../dist/imgs/slider2.png")
-    background-size: contain
-    background-position: center
-    background-repeat: no-repeat
-    @include phone-landscape
-    @include desktop
-      width: 1800px
-      height: 200px
 
   .inner-div3
-    height: 30%
-    width: 180px
     background-image: url("../dist/imgs/slider3.png")
-    background-size: contain
-    background-position: center
-    background-repeat: no-repeat
-    @include phone-landscape
-    @include desktop
-      width: 100%
-      height: 200px
 
   .inner-div4
-    height: 30%
-    width: 180px
     background-image: url("../dist/imgs/slider4.png")
-    background-size: contain
-    background-position: center
-    background-repeat: no-repeat
-    @include phone-landscape
-    @include desktop
-      width: 100%
-      height: 200px
 
   .inner-div5
-    height: 30%
-    width: 180px
     background-image: url("../dist/imgs/slider5.png")
-    background-size: contain
-    background-position: center
-    background-repeat: no-repeat
-    @include phone-landscape
-    @include desktop
-      width: 100%
-      height: 200px

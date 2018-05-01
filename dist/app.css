@@ -1555,6 +1555,9 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .main-paragraph {
+    font-size: 1.3em;
+    line-height: 1.8em;
+    letter-spacing: 0.01em;
     margin: 0;
     padding-top: 20px;
     text-align: justify;
@@ -1592,6 +1595,7 @@ h4, h6 {
   .p-2columns {
     width: 36%;
     margin: auto;
+    margin-left: -55px;
   }
 }
 
@@ -1623,6 +1627,9 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #p-justified {
+    font-size: 1.3em;
+    line-height: 1.8em;
+    letter-spacing: 0.01em;
     width: 60vw;
     background-color: rgba(32, 44, 53, 0.95);
     padding: 22px;
@@ -1639,14 +1646,16 @@ h4, h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 100%;
-    padding: 10px;
-    margin: 0;
+    width: 60%;
+    padding: 8px;
+    margin-top: 8px;
+    margin: 0 auto;
     letter-spacing: 0.05em;
     color: #252121;
+    color: black;
     text-align: center;
     font-weight: bold;
-    font-size: 1.13em;
+    font-size: 0.9em;
     text-transform: uppercase;
     background-color: white;
     font-family: "Cabin Sketch", Garamond;
@@ -1655,7 +1664,13 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .animation-caption, .gallery-link {
-    font-size: 1.53em;
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
+  .gallery-link {
+    font-size: 1.3em;
   }
 }
 
@@ -1692,8 +1707,11 @@ h4, h6 {
   .opening_statement {
     width: 60vw;
     padding-top: 60px;
-    font-size: 1.07rem;
-    line-height: 1.75rem;
+    font-size: 1.3em;
+    line-height: 1.8em;
+    font-size: 1.6em;
+    font-weight: 500;
+    color: #4c4947;
   }
 }
 
@@ -2313,6 +2331,9 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .skills-caption, .gd-caption, .dm-caption, .t-caption {
+    font-size: 1.3em;
+    letter-spacing: 0.01em;
+    line-height: 1.8em;
     margin: 0;
     padding-top: 20px;
     text-align: justify;
@@ -2993,6 +3014,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .small_intro h2 {
+    width: 9%;
     color: #4c340e;
     font-size: 1.55em;
   }
@@ -3035,7 +3057,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .blocks section, .blocks .one, .one section, .one .one {
     width: 60vw;
-    border: 1px solid #606a3c;
+    border: 1px solid #FFC107;
     border-bottom: none;
     border-top: none;
   }
@@ -3153,9 +3175,9 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .blocks section p, .blocks .one p, .one section p, .one .one p {
-    font-size: 1.07rem;
+    font-size: 1.3rem;
     letter-spacing: 0em;
-    line-height: 1.7em;
+    line-height: 1.8em;
     width: 77%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3236,6 +3258,15 @@ h4, h6 {
     display: flex;
     margin: auto;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .project_box {
+    width: auto;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   #project_title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3244,6 +3275,20 @@ h4, h6 {
     padding: 8px;
     margin: -6px 0 33px 0px;
     background-color: rgba(202, 218, 215, 0.22);
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #project_title {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 10px 0 33px 0;
+    background-color: white;
   }
 }
 
@@ -3414,6 +3459,7 @@ h4, h6 {
     width: 100%;
     height: 360px;
     margin: 0 auto;
+    margin-bottom: 26px;
     background-image: url("../dist/imgs/1920.png");
     background-size: cover;
     background-position: center;
@@ -3432,7 +3478,7 @@ h4, h6 {
     -ms-flex-flow: row;
         flex-flow: row;
     width: 100%;
-    height: 360px;
+    height: 370px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3452,97 +3498,43 @@ h4, h6 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     position: relative;
-    width: 75vw;
+    width: 100vw;
     height: auto;
     -ms-flex-item-align: center;
         align-self: center;
+    margin: 4px;
   }
+  .inner-div1, .inner-div2, .inner-div3, .inner-div4, .inner-div5 {
+    height: 28%;
+    width: 138px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .inner-div1, .inner-div2, .inner-div3, .inner-div4, .inner-div5 {
+    width: 340px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .inner-div1 {
-    height: 30%;
-    width: 180px;
     background-image: url("../dist/imgs/slider1.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
   }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .inner-div1 {
-    width: 100%;
-    height: 200px;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
   .inner-div2 {
-    height: 30%;
-    width: 180px;
     background-image: url("../dist/imgs/slider2.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
   }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .inner-div2 {
-    width: 1800px;
-    height: 200px;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
   .inner-div3 {
-    height: 30%;
-    width: 180px;
     background-image: url("../dist/imgs/slider3.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
   }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .inner-div3 {
-    width: 100%;
-    height: 200px;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
   .inner-div4 {
-    height: 30%;
-    width: 180px;
     background-image: url("../dist/imgs/slider4.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
   }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .inner-div4 {
-    width: 100%;
-    height: 200px;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
   .inner-div5 {
-    height: 30%;
-    width: 180px;
     background-image: url("../dist/imgs/slider5.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .inner-div5 {
-    width: 100%;
-    height: 200px;
   }
 }
 
