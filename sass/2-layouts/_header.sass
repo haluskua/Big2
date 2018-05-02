@@ -51,11 +51,11 @@
 			margin-bottom: 0px
 			height: 100%
 		@include tablet
-			height: 87%
-			margin-top: 148px
+			height: 84%
+			margin-top: 156px
 
 		@include desktop
-			height: 71%
+			height: 77%
 
 	.landing-page
 		width: 100%
@@ -69,8 +69,7 @@
 		@include tablet
 			margin: 0
 		@include desktop
-			height: 0
-			margin-top: -70px
+			height: 0 auto
 
 	.hetpage-li
 		width: 100%
@@ -79,7 +78,7 @@
       width: 100%
 		@include tablet
 			width: 100%
-			margin-top: -88px
+			// margin-top: -88px
 			height: auto
 		@include desktop
 			width: 100%
@@ -107,7 +106,7 @@
 		@include phone-landscape
 			margin-bottom: 13px
 		@include desktop
-			margin-top: 0
+			margin: 0
 
 	#thin
 		display: flex
@@ -181,10 +180,11 @@
 			margin-top: 3px
 		@include tablet
 			width: 100%
-			height: 41px
-			line-height: 127px
+			height: 55px
+			line-height: 167px
+			background-size: contain
 		@include desktop
-			height: 119px
+			height: 58px
 			background-size: contain
 			border: none
 			margin: 0
@@ -208,7 +208,7 @@
 			font-weight: bolder
 			text-transform: uppercase
 			letter-spacing: 0.05em
-			line-height: 24px
+			line-height: 0px
 			border: none
 			padding-bottom: 4px
 
@@ -231,13 +231,11 @@
 			font-size: 1.38em
 			position: relative
 			letter-spacing: 0.03em
-			font-family: $font-stack-yellow
+			font-family: $font-stack-character
 		@include desktop
 			font-size: 1.4em
-			margin-top: 130px
+			margin-top: 13px
 			letter-spacing: 0
-			font-family: 'Orbitron'
-
 
 	#my-name
 		height: 42%
@@ -438,6 +436,22 @@
 			font-size: 0.98em
 		@include desktop
 
+	.second-class
+		display: none
+		@include phone-landscape
+			display: none
+		@include tablet
+			display: flex
+			flex-direction: row
+	    flex-wrap: wrap
+	    justify-content: space-around
+	    width: 100%
+	    height: 305px
+			margin: 60px 0 30px 0
+		@include desktop
+			display: flex
+			height: 480px
+			margin-top: 80px
 
 	#home-logo
 		height: 100%
@@ -454,9 +468,9 @@
       margin-bottom: 10px
       margin-top: 0
 		@include tablet
-			height: 100%
+			height: 50%
 		@include desktop
-			height: 100%
+			height: 75%
 			width: 137%
 			background-size: contain
 

@@ -29,21 +29,44 @@
   .webdev-title
     background-color: #fffcf4
     color: #65635e
-    border-bottom: 1px solid lightgray
+    // border-bottom: 1px solid lightgray
     border-top: 1px solid #d0b98e
     @include phone-landscape
       background-color: #fffcf4
       z-index: 1
-
     @include tablet
       border-top: 1px solid #cac1b4
+      font-size: 1.7em
+      line-height: 72px
     @include desktop
       display: flex
+      width: 22%
       align-self: flex-start
       background-color: #fffcf4
+      flex-flow: row
       border-top: 0px
-      justify-content: flex-start
-      padding-left: 38px
+      justify-content: space-between
+      padding-left: 46px
+      padding: 10px 20px 10px 50px
+      border-bottom: 1px solid #d8c6a6
+      border-right: 1px solid #d8c6a6
+      border-radius: 4px
+
+  .webdev-subtitle
+    display: flex
+    @include desktop
+      height: 100%
+      width: 16vw
+      margin: 0
+      height: 32px
+      position: relative
+      background-image: url("../dist/imgs/native_pear.png")
+      background-size: contain
+      background-repeat: no-repeat
+      background-position: center
+    #push-up
+      margin-bottom: 20px
+
 
   .contactx
     background-color: rgb(255, 244, 230)

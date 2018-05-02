@@ -226,33 +226,37 @@ $(document).ready(function(){
           }
 
         });
-        ///////////////////////Script writing for larger than mobile resolution screens //////////////////
+
+///////////////////////Script writing for larger than mobile resolution screens //////////////////
 
         if (jQuery(window).width() >= 482) {
           $(".nav-folders").on("click", function(){
             $(".panel").hide(300);
           });
 
-          ///////////////////////Animation for VIEWS Larger than Mobile View //////////////////
+    ///////////////////////Animation for VIEWS Larger than Mobile View //////////////////
 
           anime({
             targets: '.box',
             easing: 'easeInOutSine',
             translateY: [
-              { value: -10, duration: 1100, delay: 1200},
-              { value: +10, duration: 1100}
+              { value: -10, duration: 4100, delay: 1000},
+              { value: 0, duration: 3300, delay: 800}
             ],
-            rotate:{
-            value: '-0.02turn',
-            duration: 3500,
-            easing: 'easeInOutQuart'
-          },
-          scale: {
-            value: 1.05,
-            duration: 2500,
-            delay: 1000,
-            easing: 'easeInOutQuart'
-          },
+            easing: 'easeInOutQuart',
+            rotate:[
+            { value: '-0.01turn',duration: 4400, delay: 1000},
+            { value: '0turn', duration:3300, delay: 800}
+          ],
+          easing: 'easeInOutQuart',
+          scale: [
+            { value: 1.05, duration: 3800, delay: 1000},
+            { value: 1, duration: 3400, delay: 1000}
+          ],
+          // opacity: [
+          //   { value: 1, duration: 4000, delay: 4000},
+          //   { value: 0.6, duration: 4560, delay: 5400}
+          // ],
           loop: true,
           // direction: 'reverse', // Play the animation in reverse
             delay: function(el, i, l){
@@ -263,8 +267,8 @@ $(document).ready(function(){
           anime({
             targets: '.animation-caption',
             translateY: [
-              { value: +30, duration: 810},
-              { value: +30, duration: 2200, delay: 300}
+              { value: +30, duration: 3810, dealy: 600},
+              { value: 0, duration: 3860, delay: 600}
             ],
 
           });
