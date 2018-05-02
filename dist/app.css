@@ -1911,9 +1911,9 @@ h4, h6 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse;
+            flex-flow: row-reverse;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     width: 97vw;
@@ -3021,7 +3021,7 @@ h4, h6 {
     margin: auto;
     background-color: rgba(225, 228, 205, 0.64);
     padding: 22px;
-    width: 30%;
+    width: 100%;
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
@@ -3655,7 +3655,7 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 22%;
+    width: 26%;
     -ms-flex-item-align: start;
         align-self: flex-start;
     background-color: #fffcf4;
@@ -3668,7 +3668,7 @@ h4, h6 {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-left: 46px;
-    padding: 10px 20px 10px 50px;
+    padding: 16px 20px 0px 5px;
     border-bottom: 1px solid #d8c6a6;
     border-right: 1px solid #d8c6a6;
     border-radius: 4px;
