@@ -1541,7 +1541,7 @@ h4, h6 {
   .main-paragraph {
     margin: auto;
     font-weight: 500;
-    font-size: 1.048em;
+    font-size: 1.042em;
     line-height: 1.6em;
     font-family: "Open Sans";
     color: #4c4947;
@@ -1612,7 +1612,7 @@ h4, h6 {
     margin: auto;
     padding: 10px;
     font-weight: 500;
-    font-size: 1.048em;
+    font-size: 1.042em;
     line-height: 1.6em;
     margin-bottom: 10px;
     padding: 0 15px 0 15px;
@@ -1705,7 +1705,7 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .opening_statement {
     text-align: justify;
-    font-size: 1.048em;
+    font-size: 1.042em;
     color: #4c4947;
     font-weight: normal;
     font-family: "Open Sans";
@@ -2338,7 +2338,7 @@ h4, h6 {
     margin: auto;
     margin-top: 10px;
     font-weight: 500;
-    font-size: 1.048em;
+    font-size: 1.042em;
     font-family: "Open Sans";
     color: #4c4947;
     text-align: center;
@@ -3195,9 +3195,8 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .blocks section p, .blocks .one p, .one section p, .one .one p {
-    font-size: 1.05em;
+    font-size: 1.042em;
     text-align: justify;
-    letter-spacing: 0.01em;
     color: #4c4947;
     letter-spacing: 0;
     font-weight: normal;
