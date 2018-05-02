@@ -1676,7 +1676,8 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .gallery-link {
-    font-size: 1.3em;
+    font-size: 1.88em;
+    width: 69%;
   }
 }
 
@@ -3697,8 +3698,12 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .webdev-subtitle #push-up {
+  #push-up {
     margin-bottom: 20px;
+    line-height: 42px;
+    font-weight: bold;
+    color: #402e13;
+    font-size: 1.24em;
   }
   .contactx {
     background-color: #fff4e6;
