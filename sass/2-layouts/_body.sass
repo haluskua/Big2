@@ -169,7 +169,7 @@
     @include desktop
       font-size: 1.2em
 
-  .gallery-link
+  .gallery-link, .nameohk
     font-size: 1.88em
     width: 69%
     @include tablet
@@ -178,9 +178,12 @@
       margin-bottom: -14px
     @include desktop
       color: #607d8b
-      font-size: 2.2em
+      font-size: 1.77em
       margin-top: 37px
       margin-bottom: -14px
+  .nameohk
+    background-color: rgba(255, 255, 255, 0)
+    font-size: 1.7em
 
   .opening_image
     @include desktop
@@ -600,11 +603,12 @@
         background-color: #fffef2
         border: none
       @include desktop
-        background-color: #29172b
+        background-color: rgba(182, 190, 92, 0.56)
         width: 21%
         position: fixed
         top: 50px
         left: 284px
+        border: 1px solid #b4c883
   .skills-caption, .gd-caption, .dm-caption, .t-caption
     display: none
     margin: auto
@@ -663,9 +667,10 @@
         background-color: #fffef2
       @include desktop
         border-bottom: 1px solid #e3e6e8
-        background-color: #ecebe3
+        background-color: #f6f5ed
         &:hover
-          background-color: green
+          background-color: #FF5722
+
     #nav-folders:nth-child(4)
       margin-bottom: 50px
       h4
@@ -1383,7 +1388,8 @@
     align-self: center
     margin: 4px
 
-  .inner-div1, .inner-div2, .inner-div3, .inner-div4, .inner-div5
+  .inner-div1, .inner-div2, .inner-div3, .inner-div4,
+  .inner-div5, .inner-div11, .inner-div12
     height: 28%
     width: 138px
     border: 1px dotted rgba(160, 168, 175, 0.42)
@@ -1391,6 +1397,8 @@
     background-position: center
     background-repeat: no-repeat
     @include phone-landscape
+    @include tablet
+      background-repeat: no-repeat
     @include desktop
       border: none
       width: 320px
@@ -1411,3 +1419,29 @@
 
   .inner-div5
     background-image: url("../dist/imgs/slider5.png")
+
+  .inner-div11
+    background-image: url("../dist/imgs/newlogo.png")
+    background-size: cover
+    padding: 0
+    height: 45%
+    width: 100%
+    border: none
+    @include desktop
+      background-size: contain
+
+  .inner-div12
+    background-image: url("../dist/imgs/native_pear.png")
+    background-size: contain
+    padding: 0
+    height: 40px
+    width: 100%
+    border: none
+    margin: 0 auto
+    @include tablet
+      background-repeat: no-repeat
+      height: 83px
+      width: 100
+    @include desktop
+      background-repeat: no-repeat
+      background-size: contain

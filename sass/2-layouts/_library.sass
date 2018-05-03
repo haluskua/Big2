@@ -42,7 +42,7 @@
       display: flex
       width: 16%
       align-self: flex-start
-      background-color: #607d8b
+      background-color: #FF5722
       flex-flow: row
       border-top: 0px
       justify-content: space-around
@@ -67,11 +67,15 @@
       background-repeat: no-repeat
       background-position: center
   #push-up
-    line-height: 8px
+    line-height: 37px
     padding-top: 12px
     font-weight: bold
-    color: white
+    color: #878478
     font-size: 1.24em
+    @include tablet
+      font-size: 1.16em
+    @include desktop
+      color: #edebe6
 
 
   .contactx
