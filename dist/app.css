@@ -1704,7 +1704,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .gallery-link {
-    font-size: 2.7em;
+    font-size: 2.2em;
     margin-top: 37px;
     margin-bottom: -14px;
   }
@@ -1744,7 +1744,7 @@ h4, h6 {
   .opening_statement {
     width: 50vw;
     padding-top: 60px;
-    font-size: 1.26em;
+    font-size: 1.24em;
     line-height: 1.8em;
     padding: 30px;
     font-weight: 500;
@@ -3140,8 +3140,8 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .blocks section, .blocks .one, .one section, .one .one {
-    width: 46vw;
-    border: 1px solid #FFC107;
+    width: 42vw;
+    border: 1px solid rgba(255, 193, 7, 0.22);
     border-bottom: none;
     border-top: none;
     display: -webkit-box;
@@ -3324,6 +3324,16 @@ h4, h6 {
   }
 }
 
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .blocks section button, .blocks .one button, .one section button, .one .one button {
+    width: auto;
+    height: auto;
+    padding: 8px 38px;
+    margin-top: 53px;
+    margin-bottom: 36px;
+  }
+}
+
 @media (min-width: 1em), screen and (orientation: portrait) {
   .blocks section button a, .blocks .one button a, .one section button a, .one .one button a {
     font-family: "Antic";
@@ -3343,6 +3353,13 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .blocks section button a, .blocks .one button a, .one section button a, .one .one button a {
     padding: 7px;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .blocks section button a, .blocks .one button a, .one section button a, .one .one button a {
+    font-size: 1.3em;
+    color: gray;
   }
 }
 
