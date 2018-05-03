@@ -146,7 +146,6 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .Colsplit-between {
-    height: 100vh;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -187,7 +186,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #Colsplit-box1 {
-    height: 77%;
+    height: 86%;
   }
 }
 
@@ -338,6 +337,7 @@ h4, h6 {
     width: auto;
     -ms-flex-item-align: center;
         align-self: center;
+    align-self-font-size: 2em;
   }
 }
 
@@ -450,7 +450,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #hetinfo {
-    height: 58px;
+    height: 47px;
     background-size: contain;
     border: none;
     margin: 0;
@@ -524,8 +524,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .intro {
-    font-size: 1.4em;
-    margin-top: 13px;
+    font-size: 1.1em;
     letter-spacing: 0;
   }
 }
@@ -864,7 +863,7 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 480px;
+    height: 310px;
     margin-top: 80px;
   }
 }
@@ -1564,15 +1563,15 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .main-paragraph {
     margin-bottom: 40px;
-    font-size: 1.09em;
+    font-size: 1em;
     letter-spacing: normal;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .main-paragraph {
-    font-size: 1.23em;
-    line-height: 1.8em;
+    font-size: 1em;
+    line-height: 1.7em;
     margin: 0;
     padding-top: 20px;
     text-align: justify;
@@ -1647,10 +1646,9 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #p-justified {
-    font-size: 1.23em;
-    line-height: 1.8em;
+    font-size: 1em;
+    line-height: 1.7em;
     width: 60vw;
-    background-color: rgba(32, 44, 53, 0.95);
     padding: 22px;
     -ms-flex-item-align: start;
         align-self: flex-start;
@@ -1712,7 +1710,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .opening_image {
-    width: 20% !important;
+    width: 20%;
   }
 }
 
@@ -1734,7 +1732,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .opening_statement {
     padding: 57px 30px 0 16px;
-    font-size: 1.12em;
+    font-size: 1.01em;
     margin-left: 40px;
     margin-right: 40px;
   }
@@ -1744,8 +1742,8 @@ h4, h6 {
   .opening_statement {
     width: 50vw;
     padding-top: 60px;
-    font-size: 1.24em;
-    line-height: 1.8em;
+    font-size: 1em;
+    line-height: 1.7em;
     padding: 30px;
     font-weight: 500;
     color: #4c4947;
@@ -1836,7 +1834,7 @@ h4, h6 {
             justify-content: flex-start;
     width: 100%;
     padding: 17px;
-    padding-top: 30px;
+    padding-top: 12px;
     margin: 0;
     letter-spacing: 0.05em;
     color: #252121;
@@ -1844,7 +1842,7 @@ h4, h6 {
     font-weight: bold;
     font-size: 1.05em;
     text-transform: uppercase;
-    height: 52px;
+    height: 41px;
     line-height: 52.2px;
     padding-left: 11%;
     font-family: "Cabin Sketch", Garamond;
@@ -1854,7 +1852,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .skills-title {
     color: white;
-    font-size: 1.78em;
+    font-size: 1.55em;
   }
 }
 
@@ -2039,7 +2037,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .contact-section {
     background-position: bottom;
-    height: 80vh;
+    height: 100vh;
   }
 }
 
@@ -2384,11 +2382,12 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .skills-caption, .gd-caption, .dm-caption, .t-caption {
-    font-size: 1.26em;
-    line-height: 1.8em;
+    font-size: 1em;
+    line-height: 1.7em;
     margin: 0;
     padding-top: 20px;
     text-align: justify;
+    width: 85%;
   }
 }
 
@@ -2817,6 +2816,7 @@ h4, h6 {
     height: 100vh !important;
     -ms-flex-wrap: wrap !important;
         flex-wrap: wrap !important;
+    margin-top: 33px !important;
   }
 }
 
@@ -3140,7 +3140,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .blocks section, .blocks .one, .one section, .one .one {
-    width: 42vw;
+    width: 45vw;
     border: 1px solid rgba(255, 193, 7, 0.22);
     border-bottom: none;
     border-top: none;
@@ -3222,7 +3222,8 @@ h4, h6 {
   .blocks section h4, .blocks .one h4, .one section h4, .one .one h4 {
     -ms-flex-item-align: center;
         align-self: center;
-    font-size: 1.7em;
+    font-size: 1.5em;
+    letter-spacing: 0;
   }
   .blocks section a, .blocks .one a, .one section a, .one .one a {
     display: -webkit-box;
@@ -3256,14 +3257,14 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .blocks section img, .blocks .one img, .one section img, .one .one img {
-    width: 62%;
+    width: 88%;
   }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .blocks section p, .blocks .one p, .one section p, .one .one p {
-    font-size: 1.045em;
-    line-height: 1.67em;
+    font-size: 1em;
+    line-height: 1.7em;
     text-align: justify;
     color: #4c4947;
     letter-spacing: 0;
@@ -3279,17 +3280,18 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .blocks section p, .blocks .one p, .one section p, .one .one p {
     padding: 10px 30px;
-    font-size: 1.12em;
+    font-size: 1.01em;
     margin: 40px;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .blocks section p, .blocks .one p, .one section p, .one .one p {
-    font-size: 1.23rem;
+    margin-top: 30px;
+    font-size: 0.89em;
     letter-spacing: 0em;
-    line-height: 1.8em;
-    width: 77%;
+    line-height: 1.68em;
+    width: 78%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3358,7 +3360,8 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .blocks section button a, .blocks .one button a, .one section button a, .one .one button a {
-    font-size: 1.3em;
+    font-size: 1.01em;
+    line-height: 1.7em;
     color: gray;
   }
 }
@@ -3645,7 +3648,7 @@ h4, h6 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: auto;
     -ms-flex-item-align: center;
         align-self: center;
@@ -3654,6 +3657,7 @@ h4, h6 {
   .inner-div1, .inner-div2, .inner-div3, .inner-div4, .inner-div5 {
     height: 28%;
     width: 138px;
+    border: 1px dotted rgba(160, 168, 175, 0.42);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -3662,8 +3666,11 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .inner-div1, .inner-div2, .inner-div3, .inner-div4, .inner-div5 {
+    border: none;
     width: 320px;
-    height: 140px;
+    height: 100px;
+    width: 210px;
+    padding: 0 20px;
   }
 }
 
@@ -3738,7 +3745,7 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 26%;
+    width: 16%;
     -ms-flex-item-align: start;
         align-self: flex-start;
     background-color: #b7922e;
@@ -3747,14 +3754,16 @@ h4, h6 {
         -ms-flex-flow: row;
             flex-flow: row;
     border-top: 0px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
     padding-left: 46px;
     padding: 16px 20px 0px 5px;
     border-bottom: 1px solid #d8c6a6;
     border-right: 1px solid #d8c6a6;
     border-radius: 4px;
+    padding: 0;
   }
 }
 
@@ -3782,8 +3791,8 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #push-up {
-    margin-bottom: 20px;
-    line-height: 42px;
+    line-height: 8px;
+    padding-top: 12px;
     font-weight: bold;
     color: white;
     font-size: 1.24em;

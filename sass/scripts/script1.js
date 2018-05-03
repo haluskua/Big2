@@ -253,10 +253,7 @@ $(document).ready(function(){
             { value: 1.05, duration: 3800, delay: 1000},
             { value: 1, duration: 3400, delay: 1000}
           ],
-          // opacity: [
-          //   { value: 1, duration: 4000, delay: 4000},
-          //   { value: 0.6, duration: 4560, delay: 5400}
-          // ],
+
           loop: true,
           // direction: 'reverse', // Play the animation in reverse
             delay: function(el, i, l){

@@ -96,11 +96,11 @@
     @include phone-landscape
     @include tablet
       margin-bottom: 40px
-      font-size: 1.09em
+      font-size: 1em
       letter-spacing: normal
     @include desktop
-      font-size: 1.23em
-      line-height: 1.8em
+      font-size: 1em
+      line-height: 1.7em
       margin: 0
       padding-top: 20px
       text-align: justify
@@ -144,10 +144,9 @@
       font-size: 1.12em
       margin-top: 14px
     @include desktop
-      font-size: 1.23em
-      line-height: 1.8em
+      font-size: 1em
+      line-height: 1.7em
       width: 60vw
-      background-color: rgba(32, 44, 53, 0.95)
       padding: 22px
       align-self: flex-start
 
@@ -184,7 +183,7 @@
 
   .opening_image
     @include desktop
-      width: 20% !important
+      width: 20%
 
   .opening_statement
     text-align: justify
@@ -200,14 +199,14 @@
     @include phone-landscape
     @include tablet
       padding: 57px 30px 0 16px
-      font-size: 1.12em
+      font-size: 1.01em
       margin-left: 40px
       margin-right: 40px
     @include desktop
       width: 50vw
       padding-top: 60px
-      font-size: 1.24em
-      line-height: 1.8em
+      font-size: 1em
+      line-height: 1.7em
       padding: 30px
       font-weight: 500
       color: #4c4947
@@ -284,7 +283,7 @@
     justify-content: flex-start
     width: 100%
     padding: 17px
-    padding-top: 30px
+    padding-top: 12px
     margin: 0
     letter-spacing: 0.05em
     color: #252121
@@ -292,7 +291,7 @@
     font-weight: bold
     font-size: 1.05em
     text-transform: uppercase
-    height: 52px
+    height: 41px
     line-height: 52.2px
     padding-left: 11%
     // background-image: url('../dist/imgs/1920.png')
@@ -304,7 +303,7 @@
     @include tablet
     @include desktop
       color: white
-      font-size: 1.78em
+      font-size: 1.55em
 
   .ompa
     @include tablet
@@ -408,7 +407,7 @@
     background-position: center
     @include desktop
       background-position: bottom
-      height: 80vh
+      height: 100vh
     #contact
       display: flex
       flex-direction: column
@@ -622,11 +621,12 @@
       font-size: 1.04em
       letter-spacing: normal
     @include desktop
-      font-size: 1.26em
-      line-height: 1.8em
+      font-size: 1em
+      line-height: 1.7em
       margin: 0
       padding-top: 20px
       text-align: justify
+      width: 85%
 
   .scpmt, .scpmt-gd, .scpmt-dm, .scpmt-t
     display: none
@@ -916,6 +916,7 @@
       width: 84vw !important
       height: 100vh !important
       flex-wrap: wrap !important
+      margin-top: 33px !important
 
   .container
     width: 100%
@@ -1089,7 +1090,7 @@
       margin: auto
       margin: 0
       @include desktop
-        width: 42vw
+        width: 45vw
         border: 1px solid rgba(255, 193, 7, 0.22)
         border-bottom: none
         border-top: none
@@ -1134,7 +1135,8 @@
 
       h4
         align-self: center
-        font-size: 1.7em
+        font-size: 1.5em
+        letter-spacing: 0
       a
         display: flex
         width: 100%
@@ -1150,10 +1152,10 @@
         border-radius: 2px
         align-self: center
         @include desktop
-          width: 62%
+          width: 88%
       p
-        font-size: 1.045em
-        line-height: 1.67em
+        font-size: 1em
+        line-height: 1.7em
         text-align: justify
         color: #4c4947
         letter-spacing: 0
@@ -1166,13 +1168,14 @@
         @include phone-landscape
         @include tablet
           padding: 10px 30px
-          font-size: 1.12em
+          font-size: 1.01em
           margin: 40px
         @include desktop
-          font-size: 1.23rem
+          margin-top: 30px
+          font-size: 0.89em
           letter-spacing: 0em
-          line-height: 1.8em
-          width: 77%
+          line-height: 1.68em
+          width: 78%
           display: flex
           align-self: center
           margin-bottom: 0
@@ -1211,7 +1214,8 @@
           @include tablet
             padding: 7px
           @include desktop
-            font-size: 1.3em
+            font-size: 1.01em
+            line-height: 1.7em
             color: gray
 
   .readmore_text
@@ -1373,7 +1377,7 @@
     flex-direction: column
     justify-content: space-around
     position: relative
-    width: 100vw
+    width: 100%
     height: auto
     align-self: center
     margin: 4px
@@ -1381,13 +1385,17 @@
   .inner-div1, .inner-div2, .inner-div3, .inner-div4, .inner-div5
     height: 28%
     width: 138px
+    border: 1px dotted rgba(160, 168, 175, 0.42)
     background-size: contain
     background-position: center
     background-repeat: no-repeat
     @include phone-landscape
     @include desktop
+      border: none
       width: 320px
-      height: 140px
+      height: 100px
+      width: 210px
+      padding: 0 20px
   .inner-div1
     background-image: url("../dist/imgs/slider1.png")
 
