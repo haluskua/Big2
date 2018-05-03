@@ -37,8 +37,11 @@
 			margin: auto
 			padding: 0
 		@include desktop
-			justify-content: center
-			margin-bottom: 0
+      height: auto
+      align-items: flex-end
+      flex-direction: row
+      justify-content: center
+      height: 100vh
 
 	#Colsplit-box1
 		height: 93%
@@ -53,7 +56,7 @@
 			height: 84%
 			margin-top: 156px
 		@include desktop
-			height: 86%
+			height: 83%
 
 	.landing-page
 		width: 100%
@@ -67,7 +70,7 @@
 		@include tablet
 			margin: 0
 		@include desktop
-			height: 0 auto
+			height: 63px
 
 	.hetpage-li
 		width: 100%
@@ -76,7 +79,6 @@
       width: 100%
 		@include tablet
 			width: 100%
-			// margin-top: -88px
 			height: auto
 		@include desktop
 			width: 100%
@@ -96,7 +98,7 @@
 			display: flex
 			justify-content: center
 			width: 100%
-			margin: auto
+			margin: 0 auto
 	.bio
 		width: 100%
 		height: auto
@@ -125,7 +127,7 @@
 			display: flex
 			line-height: 1.54em
 			text-align: center
-			margin-top: 16px
+			margin-top: 12px
 			color: #5a5044
 			font-size: 0.42em
 			font-weight: 600
@@ -133,7 +135,6 @@
 			text-transform: normal
 			font-family: $font-stack-antic
 			@include phone-landscape
-				font-size: 0.45em
 			@include tablet
 				color: #635133
 				letter-spacing: 0.055em
@@ -141,7 +142,7 @@
   		@include desktop
         justify-content: center
         text-align: center
-        font-size: 0.8em
+        margin-top: 7px
 
 		#bulgeword
 			color: #26061e
@@ -160,7 +161,7 @@
 				letter-spacing: 0.04em
 				font-family: $font-stack-roboto
 			@include desktop
-				font-size: 1.1em
+				font-size: 1em
 				font-weight: bold
 
 	#hetinfo
@@ -183,7 +184,7 @@
 			line-height: 167px
 			background-size: contain
 		@include desktop
-			height: 47px
+			height: 40px
 			background-size: contain
 			border: none
 			margin: 0
@@ -203,10 +204,9 @@
 			letter-spacing: 0.09em
 			border: none
 		@include desktop
-			font-size: 1.2em
-			font-weight: bolder
+			font-size: 0.88em
 			text-transform: uppercase
-			letter-spacing: 0.05em
+			letter-spacing: 0.07em
 			line-height: 0px
 			border: none
 			padding-bottom: 4px
@@ -449,7 +449,7 @@
 		@include desktop
 			display: flex
 			height: 310px
-			margin-top: 80px
+			margin-top: 20px
 
 	#home-logo
 		height: 100%
@@ -459,7 +459,7 @@
 		margin-top: -26px
 		@include phone-landscape
 			display: flex
-			width: 39%
+			width: 24%
 			align-self: center
 			background-size: contain
       margin-top: -18px
@@ -468,9 +468,8 @@
 		@include tablet
 			height: 50%
 		@include desktop
-			height: 75%
-			width: 137%
-			background-size: contain
+			height: 85%
+			background-size: cover
 
 	.logo-home
 		// height: 57px
