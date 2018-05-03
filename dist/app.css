@@ -629,6 +629,7 @@ h4, h6 {
         -ms-flex-flow: row;
             flex-flow: row;
     background-image: none;
+    background-color: rgba(0, 128, 239, 0.42);
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -700,7 +701,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .nav-folders {
-    width: 23%;
+    width: 24%;
     width-margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1118,7 +1119,7 @@ h4, h6 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #FF5722;
+    background-color: #22ff41;
   }
 }
 
@@ -3648,7 +3649,7 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 16%;
+    width: 100%;
     -ms-flex-item-align: start;
         align-self: flex-start;
     background-color: #FF5722;
@@ -3680,10 +3681,9 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .webdev-subtitle {
-    height: 100%;
-    width: 16vw;
+    width: 100vw;
     margin: 0;
-    height: 32px;
+    height: 49px;
     position: relative;
     background-image: url("../dist/imgs/native_pear.png");
     background-size: contain;
@@ -3711,6 +3711,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #push-up {
     color: #edebe6;
+    line-height: 0;
   }
 }
 
