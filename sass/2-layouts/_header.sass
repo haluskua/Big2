@@ -20,6 +20,8 @@
 			background-size: cover
 		@include desktop
 			display: flex
+			justify-content: center
+			flex-direction: column
 			background: url('../dist/imgs/1920.png') top no-repeat
 			background-size: cover
 
@@ -38,7 +40,6 @@
 			margin: auto
 			padding: 0
 		@include desktop
-      height: 100%
 
 	#Colsplit-box1
 		height: 93%
@@ -185,7 +186,6 @@
 		@include desktop
 			font-size: 0.86em
 			letter-spacing: 0
-			margin-top: -49px
 	.nameohk
 		display: flex
 		width: 100%
@@ -408,48 +408,20 @@
 	    height: 305px
 			margin: 60px 0 30px 0
 		@include desktop
+			display: none
+
+	.desktop-class
+		display: none
+		@include phone-landscape
+			display: none
+		@include tablet
+			display: none
+		@include desktop
 			display: flex
 			height: 310px
-			margin-bottom: -73px
+			margin-bottom: -87px
+			background-color: rgba(115, 132, 155, 0.1)
 
-	// #home-logo
-  //   display: none
-	// 	height: 100%
-	// 	display: flex
-	// 	background: url('../dist/imgs/newlogo.png') center no-repeat
-	// 	background-size: cover
-	// 	margin-top: -26px
-	// 	@include phone-landscape
-	// 		display: flex
-	// 		width: 24%
-	// 		align-self: center
-	// 		background-size: contain
-  //     margin-top: -18px
-  //     margin-bottom: 10px
-  //     margin-top: 0
-	// 	@include tablet
-	// 		height: 50%
-	// 	@include desktop
-	// 		height: 85%
-	// 		background-size: cover
-
-	.logo-home
-		// height: 57px
-		// display: flex
-		// z-index: 9999
-		// overflow: hidden
-		// margin-top: 57px
-		// background: url('../dist/imgs/newlogo.png') centerno-repeat
-		// background-size: contain
-		// background-position: center
-		// background-color: rgba(0, 0, 0, 0.43)
-		// @include tablet
-		// 	z-index: 999
-		// 	margin-top: 24px
-		// 	background-size: contain
-		// @include desktop
-		// 	height: 70%
-		// 	margin: 0
 
 	.hamburger-menu
 		width: 100%

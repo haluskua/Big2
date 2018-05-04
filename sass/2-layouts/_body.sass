@@ -200,12 +200,12 @@
       font-size: 1.01em
       margin-left: 40px
       margin-right: 40px
+      margin-bottom: 40px
     @include desktop
-      width: 50vw
-      padding-top: 60px
+      width: 91%
+      padding-top: 58px
       font-size: 1em
       line-height: 1.7em
-      padding: 30px
       font-weight: 500
       color: #4c4947
 
@@ -222,6 +222,7 @@
       @include tablet
         font-size: 1.9em
 
+
     #pen-off
       font-size: 1.52em
       font-family: $font-stack-Dancing-script
@@ -233,6 +234,40 @@
     .portrait
       max-width: 130px
       border: 1px solid gray
+  .hide-desktop
+    display: none
+
+  .opening_statement_desktop
+    display: none
+    @include desktop
+      display: flex
+      width: 56%
+      text-align: justify
+      padding-top: 58px
+      margin-bottom: 33px
+      font-size: 1em
+      line-height: 1.7em
+      font-weight: 500
+      color: #4c4947
+      line-height: 1.67em
+      color: #3c3937
+      font-weight: normal
+      font-family: $font-stack-open-sans
+
+    .par-title_desktop
+      display: none
+      @include desktop
+        display: flex
+        font-size: 1.9em
+        margin-top: 18px
+        font-family: $font-stack-antic
+        letter-spacing: 0.02em
+        color: #5f4725
+        font-weight: bolder
+        border-bottom: 1px dotted rgba(187, 166, 54, 0.37)
+        line-height: 10px
+
+
 
   .opening_line
     display: flex
@@ -300,8 +335,8 @@
     @include phone-landscape
     @include tablet
     @include desktop
-      color: white
-      font-size: 1.55em
+      color: #2b2020
+      font-size: 1.67em
 
   .ompa
     @include tablet
@@ -826,6 +861,7 @@
     @include desktop
       width: 66%
       margin: auto
+      width: 39%
   .static-image
     width: 26%
 
@@ -937,12 +973,17 @@
     @include phone-landscape
     @include tablet
       margin: auto
+      padding-top: 33px
     @include desktop
       align-self: center
       width: 60%
+      width: 90%
       flex-flow: column
       margin: 0
       overflow: hidden
+      flex-flow: row
+      flex-wrap: wrap
+
 
   .container-movie
     width: 93vw
@@ -955,6 +996,7 @@
     border: 1px solid #e6dee2
     background-color: #f7efd66e
     justify-content: space-evenly
+    overflow: hidden
     @include phone-landscape
     @include tablet
       margin: auto
@@ -1029,6 +1071,7 @@
     display: flex
     width: 100%
     text-align: center
+    justify-content: center
     @include phone-landscape
     @include tablet
       font-size: 0.89em
@@ -1249,6 +1292,10 @@
 
     @include tablet
       padding-right: 8px
+    @include desktop
+      display: flex
+      margin-top: 45px
+      margin-bottom: 9px
 
   .project_box
     display: flex
@@ -1268,11 +1315,12 @@
       margin-top: 1px
 
     @include desktop
-      width: 60%
+      width: 100%
       display: flex
       justify-content: center
       margin: 10px 0 33px 0
       background-color: white
+      margin: a
 
     p
       @include phone-landscape
@@ -1436,6 +1484,9 @@
     margin-top: -27px
     margin-bottom: -24px
     @include desktop
+      height: 31%
+      margin-top: 0
+      margin-bottom: 0
       background-size: contain
 
   .inner-div12
