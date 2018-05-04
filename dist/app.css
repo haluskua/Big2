@@ -337,7 +337,7 @@ h4, h6 {
   #bulgeword {
     margin: 0 auto;
     color: #26061e;
-    font-size: 1.72em;
+    font-size: 1.8em;
     text-align: center;
     font-family: "Roboto";
   }
@@ -409,7 +409,7 @@ h4, h6 {
     margin: auto;
     margin-top: 9px;
     color: #6b6459;
-    font-size: 0.82em;
+    font-size: 0.85em;
     position: relative;
     text-align: justify;
     font-family: "Open Sans";
@@ -1488,7 +1488,7 @@ h4, h6 {
     font-size: 1.045em;
     line-height: 1.67em;
     margin-bottom: 10px;
-    padding: 0 15px 0 15px;
+    padding: 0 20px 0 26px;
     color: #3c3937;
     letter-spacing: 0;
     font-weight: normal;
@@ -1583,10 +1583,7 @@ h4, h6 {
     color: #3c3937;
     font-weight: normal;
     font-family: "Open Sans";
-    padding: 9px;
-    padding-left: 12px;
-    margin-top: 30px;
-    margin-bottom: 36px;
+    padding: 60px 20px 30px 26px;
   }
 }
 
@@ -1612,7 +1609,7 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .opening_statement span {
+  .opening_statement span, .opening_statement .par-title {
     margin-top: 18px;
     font-size: 1.35em;
     font-family: "Antic";
@@ -1625,7 +1622,7 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  .opening_statement span {
+  .opening_statement span, .opening_statement .par-title {
     font-size: 1.9em;
   }
 }
@@ -2231,7 +2228,11 @@ h4, h6 {
     color: #3c3937;
     text-align: center;
     padding: 0;
+    padding-left: 26px;
+    padding-right: 20px;
     text-align: justify;
+    margin-top: -3px;
+    margin-bottom: 33px;
   }
 }
 
@@ -2770,6 +2771,12 @@ h4, h6 {
   }
 }
 
+@media (min-width: 1em), screen and (orientation: portrait) {
+  .hold_in2 {
+    margin-top: 15px;
+  }
+}
+
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .hold_in2 {
     display: -webkit-box;
@@ -2885,7 +2892,7 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .small_intro {
+  .small-intro {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2899,13 +2906,13 @@ h4, h6 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 92vw;
+    width: 100vw;
     margin-bottom: 12px;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .small_intro {
+  .small-intro {
     margin: 0;
     width: 100%;
     -ms-flex-item-align: start;
@@ -2914,7 +2921,7 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .small_intro h2 {
+  .small-intro h2 {
     color: #111111;
     -ms-flex-item-align: start;
         align-self: flex-start;
@@ -2924,7 +2931,8 @@ h4, h6 {
     display: -ms-flexbox;
     display: flex;
     padding: 11px;
-    margin-bottom: 0px;
+    margin-bottom: -26px;
+    margin-top: -39px;
     width: 55%;
     margin-left: -18px;
     padding-left: 23px;
@@ -2933,14 +2941,14 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  .small_intro h2 {
+  .small-intro h2 {
     font-size: 1.65em;
     color: #19384a;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .small_intro h2 {
+  .small-intro h2 {
     width: 19%;
     color: #4c340e;
     font-size: 1.55em;
@@ -3135,6 +3143,8 @@ h4, h6 {
     padding: 10px;
     margin-bottom: 28px;
     padding-top: 12px;
+    padding-left: 26px;
+    padding-right: 20px;
     font-weight: 500;
   }
 }
@@ -3183,8 +3193,8 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .blocks section button, .blocks .one button, .one section button, .one .one button {
-    margin-bottom: 58px;
-    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-top: 45px;
   }
 }
 
@@ -3244,6 +3254,8 @@ h4, h6 {
   }
   #hide_h2, #hide_h2_gd, #hide_h2_dm, #hide_h2_t {
     display: none;
+    margin-top: -9px;
+    margin-bottom: 25px;
   }
 }
 
@@ -3565,7 +3577,7 @@ h4, h6 {
     background-image: url("../dist/imgs/newlogo.png");
     background-size: cover;
     padding: 0;
-    height: 116%;
+    height: 94%;
     width: 100%;
     border: none;
     margin-top: -27px;
@@ -3633,7 +3645,7 @@ h4, h6 {
   }
   /* Styling for webdev page only*/
   .webdev-title {
-    background-color: #fffcf4;
+    background-color: #d1c9a7;
     color: #65635e;
     border-top: 1px solid #d0b98e;
   }
@@ -3662,7 +3674,7 @@ h4, h6 {
     width: 100%;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    background-color: #FF5722;
+    background-color: #d1c9a7;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row;
@@ -3707,7 +3719,7 @@ h4, h6 {
     line-height: 37px;
     padding-top: 12px;
     font-weight: bold;
-    color: #878478;
+    color: #352f1a;
     font-size: 1.24em;
   }
 }

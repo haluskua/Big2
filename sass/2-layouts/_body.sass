@@ -133,7 +133,7 @@
     font-size: 1.045em
     line-height: 1.67em
     margin-bottom: 10px
-    padding: 0 15px 0 15px
+    padding: 0 20px 0 26px
     color: #3c3937
     letter-spacing: 0
     font-weight: normal
@@ -193,10 +193,7 @@
     color: #3c3937
     font-weight: normal
     font-family: $font-stack-open-sans
-    padding: 9px
-    padding-left: 12px
-    margin-top: 30px
-    margin-bottom: 36px
+    padding: 60px 20px 30px 26px
     @include phone-landscape
     @include tablet
       padding: 57px 30px 0 16px
@@ -212,7 +209,7 @@
       font-weight: 500
       color: #4c4947
 
-    span
+    span, .par-title
       margin-top: 18px
       font-size: 1.35em
       font-family: $font-stack-antic
@@ -617,7 +614,11 @@
     color: #3c3937
     text-align: center
     padding: 0
+    padding-left: 26px
+    padding-right: 20px
     text-align: justify
+    margin-top: -3px
+    margin-bottom: 33px
     @include phone-landscape
     @include tablet
       font-size: 1.04em
@@ -968,6 +969,7 @@
       margin: auto
 
   .hold_in2
+    margin-top: 15px
     @include phone-landscape
     @include tablet
       display: flex
@@ -1032,12 +1034,12 @@
       font-size: 0.89em
 
 
-  .small_intro
+  .small-intro
     display: flex
     flex-flow: column
     justify-content: flex-start
     align-items: center
-    width: 92vw
+    width: 100vw
     margin-bottom: 12px
     @include phone-landscape
     @include tablet
@@ -1054,7 +1056,8 @@
       font-size: 1.3em
       display: flex
       padding: 11px
-      margin-bottom: 0px
+      margin-bottom: -26px
+      margin-top: -39px
       width: 55%
       margin-left: -18px
       padding-left: 23px
@@ -1113,6 +1116,7 @@
         width: 100%
         margin: auto
         padding: 0
+
       #website_background2
         display: flex
         flex-direction: column
@@ -1167,6 +1171,8 @@
         padding: 10px
         margin-bottom: 28px
         padding-top: 12px
+        padding-left: 26px
+        padding-right: 20px
         font-weight: 500
         @include phone-landscape
         @include tablet
@@ -1195,9 +1201,10 @@
         border: 1px solid gainsboro
         @include phone-landscape
 
+
         @include tablet
-          margin-bottom: 58px
-          margin-top: 10px
+          margin-bottom: 30px
+          margin-top: 45px
         @include desktop
           width: auto
           height: auto
@@ -1236,6 +1243,8 @@
 
   #hide_h2, #hide_h2_gd, #hide_h2_dm, #hide_h2_t
     display: none
+    margin-top: -9px
+    margin-bottom: 25px
     @include phone-landscape
 
     @include tablet
@@ -1421,7 +1430,7 @@
     background-image: url("../dist/imgs/newlogo.png")
     background-size: cover
     padding: 0
-    height: 116%
+    height: 94%
     width: 100%
     border: none
     margin-top: -27px
