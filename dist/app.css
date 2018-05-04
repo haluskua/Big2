@@ -82,9 +82,9 @@ h4, h6 {
     overflow: hidden;
     width: 100vw;
     background-size: cover;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     background-color: #253144;
     background: url("../dist/imgs/1920.png") top no-repeat;
     background-size: cover;
@@ -115,11 +115,12 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .Colsplit-between {
     width: 100%;
-    height: 88%;
+    height: 85%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     position: relative;
+    margin-top: 23px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -146,7 +147,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .Colsplit-between {
-    height: 90%;
+    height: 100%;
   }
 }
 
@@ -200,9 +201,9 @@ h4, h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
 
@@ -230,7 +231,7 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .hetpage-li {
     width: 100%;
-    height: 143px;
+    height: 85px;
     height-margin: 0 auto;
   }
 }
@@ -296,6 +297,7 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 6px;
   }
 }
 
@@ -312,18 +314,20 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  #thin {
+  #portfolio-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     display-flex-direction: column;
     -ms-flex-item-align: center;
         align-self: center;
+    padding-top: 11px;
+    margin-bottom: 4px;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  #thin {
+  #portfolio-header {
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -333,8 +337,9 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #bulgeword {
+    margin: 0 auto;
     color: #26061e;
-    font-size: 1.85em;
+    font-size: 1.87em;
     letter-spacing: 0.04em;
     font-weight: bold;
     font-weight-text-transform: uppercase;
@@ -362,7 +367,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #bulgeword {
-    font-size: 2.2em;
+    font-size: 2.32em;
     font-weight: bold;
   }
 }
@@ -436,6 +441,7 @@ h4, h6 {
   .intro {
     font-size: 0.86em;
     letter-spacing: 0;
+    margin-top: -49px;
   }
 }
 
@@ -1557,7 +1563,7 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .nameohk {
     background-color: rgba(255, 255, 255, 0);
-    font-size: 1.7em;
+    font-size: 1.01em;
   }
 }
 
@@ -3557,9 +3563,11 @@ h4, h6 {
     background-image: url("../dist/imgs/newlogo.png");
     background-size: cover;
     padding: 0;
-    height: 45%;
+    height: 85%;
     width: 100%;
     border: none;
+    margin-top: -32px;
+    margin-bottom: -26px;
   }
 }
 

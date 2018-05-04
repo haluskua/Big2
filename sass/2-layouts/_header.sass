@@ -7,7 +7,7 @@
 		overflow: hidden
 		width: 100vw
 		background-size: cover
-		align-items: center
+		align-items: flex-start
 		background-color: #253144
 		background: url('../dist/imgs/1920.png') top no-repeat
 		background-size: cover
@@ -25,9 +25,10 @@
 
 	.Colsplit-between
 		width: 100%
-		height: 88%
+		height: 85%
 		display: flex
 		position: relative
+		margin-top: 23px
 		align-items: center
 		flex-direction: column
 		@include phone-landscape
@@ -37,7 +38,7 @@
 			margin: auto
 			padding: 0
 		@include desktop
-      height: 90%
+      height: 100%
 
 	#Colsplit-box1
 		height: 93%
@@ -59,7 +60,7 @@
 		display: flex
 		justify-content: center
 		flex-direction: row
-		align-items: center
+		align-items: flex-end
 		@include phone-landscape
 			align-items: flex-start
       margin-top: -43px
@@ -70,7 +71,7 @@
 
 	.hetpage-li
 		width: 100%
-		height: 143px
+		height: 85px
     margin: 0 auto
 		@include phone-landscape
       width: 100%
@@ -100,24 +101,30 @@
 		width: 100%
 		height: auto
 		display: flex
+		margin-top: 6px
 		@include phone-landscape
 			margin-bottom: 13px
 		@include desktop
 			margin: 0
 
-	#thin
+
+	#portfolio-header
 		display: flex
     flex-direction: column
 		align-self: center
+		padding-top: 11px
+		margin-bottom: 4px
 		@include phone-landscape
 		@include tablet
 		@include desktop
+
       width: 100%
       justify-content: center
 
 	#bulgeword
+		margin: 0 auto
 		color: #26061e
-		font-size: 1.85em
+		font-size: 1.87em
 		letter-spacing: 0.04em
 		font-weight: bold
     text-transform: uppercase
@@ -133,8 +140,9 @@
 			letter-spacing: 0.04em
 			font-family: $font-stack-roboto
 		@include desktop
-			font-size: 2.2em
+			font-size: 2.32em
 			font-weight: bold
+
   .ohk-logo
     width: 33%
     margin: auto
@@ -181,6 +189,7 @@
 		@include desktop
 			font-size: 0.86em
 			letter-spacing: 0
+			margin-top: -49px
 
 	#my-name
 		height: 42%
