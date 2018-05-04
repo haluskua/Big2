@@ -115,7 +115,7 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .Colsplit-between {
     width: 100%;
-    height: 85%;
+    height: 78%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -339,8 +339,7 @@ h4, h6 {
   #bulgeword {
     margin: 0 auto;
     color: #26061e;
-    font-size: 1.87em;
-    letter-spacing: 0.04em;
+    font-size: 1.95em;
     font-weight: bold;
     font-weight-text-transform: uppercase;
     text-align: center;
@@ -1563,7 +1562,7 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .nameohk {
     background-color: rgba(255, 255, 255, 0);
-    font-size: 1.01em;
+    font-size: 1.25em;
   }
 }
 
@@ -3563,10 +3562,10 @@ h4, h6 {
     background-image: url("../dist/imgs/newlogo.png");
     background-size: cover;
     padding: 0;
-    height: 85%;
+    height: 114%;
     width: 100%;
     border: none;
-    margin-top: -32px;
+    margin-top: -45px;
     margin-bottom: -26px;
   }
 }
