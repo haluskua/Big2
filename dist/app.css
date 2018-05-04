@@ -337,7 +337,7 @@ h4, h6 {
   #bulgeword {
     margin: 0 auto;
     color: #26061e;
-    font-size: 1.98em;
+    font-size: 1.87em;
     font-weight: bold;
     font-weight-text-transform: uppercase;
     text-align: center;
@@ -409,13 +409,12 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .intro, .nameohk {
     margin: auto;
-    margin-top: 1px;
+    margin-top: 5px;
     color: #6b6459;
     text-transform: uppercase;
-    font-size: 0.80em;
+    font-size: 0.82em;
     position: relative;
     text-align: justify;
-    letter-spacing: 0.01em;
     font-family: "Open Sans";
   }
 }
@@ -3570,7 +3569,7 @@ h4, h6 {
     background-image: url("../dist/imgs/newlogo.png");
     background-size: cover;
     padding: 0;
-    height: 107%;
+    height: 116%;
     width: 100%;
     border: none;
     margin-top: -27px;
@@ -3590,7 +3589,7 @@ h4, h6 {
     background-size: contain;
     padding: 0;
     height: 46px;
-    width: 60%;
+    width: 70%;
     border: none;
     margin: 0 auto;
   }
