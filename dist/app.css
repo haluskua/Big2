@@ -337,9 +337,7 @@ h4, h6 {
   #bulgeword {
     margin: 0 auto;
     color: #26061e;
-    font-size: 1.87em;
-    font-weight: bold;
-    font-weight-text-transform: uppercase;
+    font-size: 1.72em;
     text-align: center;
     font-family: "Roboto";
   }
@@ -409,9 +407,8 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .intro, .nameohk {
     margin: auto;
-    margin-top: 5px;
+    margin-top: 9px;
     color: #6b6459;
-    text-transform: uppercase;
     font-size: 0.82em;
     position: relative;
     text-align: justify;
@@ -450,11 +447,10 @@ h4, h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    font-size: 1.03em;
-    color: #563b13;
+    font-size: 1.02em;
+    color: #565047;
     font-weight: bold;
-    text-transform: uppercase;
-    margin-top: 18px;
+    margin-top: 2px;
     color: #5f4725;
     font-weight: bolder;
     border-bottom: 1px dotted rgba(187, 166, 54, 0.37);
@@ -3588,7 +3584,7 @@ h4, h6 {
     background-image: url("../dist/imgs/native_pear.png");
     background-size: contain;
     padding: 0;
-    height: 46px;
+    height: 32px;
     width: 70%;
     border: none;
     margin: 0 auto;
