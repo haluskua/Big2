@@ -232,7 +232,6 @@ h4, h6 {
   .hetpage-li {
     width: 100%;
     height: 85px;
-    height-margin: 0 auto;
   }
 }
 
@@ -339,7 +338,7 @@ h4, h6 {
   #bulgeword {
     margin: 0 auto;
     color: #26061e;
-    font-size: 1.95em;
+    font-size: 1.98em;
     font-weight: bold;
     font-weight-text-transform: uppercase;
     text-align: center;
@@ -409,21 +408,21 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .intro {
+  .intro, .nameohk {
     margin: auto;
-    margin-top: 0px;
+    margin-top: 1px;
     color: #6b6459;
     text-transform: uppercase;
     font-size: 0.80em;
     position: relative;
     text-align: justify;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.01em;
     font-family: "Open Sans";
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  .intro {
+  .intro, .nameohk {
     height: 60px;
     color: #9d8b70;
     margin-top: 32px;
@@ -437,7 +436,7 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .intro {
+  .intro, .nameohk {
     font-size: 0.86em;
     letter-spacing: 0;
     margin-top: -49px;
@@ -445,6 +444,25 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
+  .nameohk {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 1.05em;
+    color: #563b13;
+    font-weight: bold;
+    margin-top: 18px;
+    font-size: 1.33em;
+    font-family: "Antic";
+    color: #5f4725;
+    font-weight: bolder;
+    border-bottom: 1px dotted rgba(187, 166, 54, 0.37);
+    line-height: 10px;
+  }
   #my-name {
     height: 42%;
     margin: auto;
@@ -1536,14 +1554,14 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .gallery-link, .nameohk {
+  .gallery-link {
     font-size: 1.88em;
     width: 69%;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  .gallery-link, .nameohk {
+  .gallery-link {
     font-size: 1.81em;
     margin-top: 40px;
     margin-bottom: -14px;
@@ -1551,18 +1569,11 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .gallery-link, .nameohk {
+  .gallery-link {
     color: #607d8b;
     font-size: 1.77em;
     margin-top: 37px;
     margin-bottom: -14px;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
-  .nameohk {
-    background-color: rgba(255, 255, 255, 0);
-    font-size: 1.25em;
   }
 }
 
