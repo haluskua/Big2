@@ -452,12 +452,11 @@ h4, h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    font-size: 1.05em;
+    font-size: 1.15em;
     color: #563b13;
     font-weight: bold;
+    text-transform: none;
     margin-top: 18px;
-    font-size: 1.33em;
-    font-family: "Antic";
     color: #5f4725;
     font-weight: bolder;
     border-bottom: 1px dotted rgba(187, 166, 54, 0.37);
