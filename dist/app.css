@@ -1178,7 +1178,7 @@ h4, h6 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #22ff41;
+    background-color: #adcdb1;
   }
 }
 
@@ -2297,7 +2297,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   div.panel {
-    background-color: rgba(182, 190, 92, 0.56);
+    background-color: rgba(74, 204, 220, 0.56);
     width: 21%;
     position: fixed;
     top: 50px;
@@ -2416,7 +2416,7 @@ h4, h6 {
     background-color: #f6f5ed;
   }
   #gd-folders li:hover {
-    background-color: #FF5722;
+    background-color: #64adcb;
   }
 }
 
@@ -3899,11 +3899,13 @@ h4, h6 {
     padding-top: 12px;
     font-weight: bold;
     color: #352f1a;
-    font-size: 1.24em;
+    font-size: 1.02em;
+    letter-spacing: 0.08em;
     border: 1px solid #ffd84e;
     padding: 2px;
     background-color: #ffebcdcc;
     padding: 4px 13px;
+    font-family: "Roboto";
   }
 }
 
