@@ -147,6 +147,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .Colsplit-between {
     width: 100vw;
+    height: 84%;
     margin: auto;
     padding: 0;
   }
@@ -355,7 +356,7 @@ h4, h6 {
   #bulgeword {
     color: #341e25;
     font-weight: 600;
-    font-size: 1.9em;
+    font-size: 2.7em;
     letter-spacing: 0.04em;
     font-family: "Roboto";
   }
@@ -420,7 +421,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .intro, .nameohk {
     height: 60px;
-    color: #9d8b70;
+    color: #322e28;
     margin-top: 32px;
     font-weight: normal;
     text-shadow: none;
@@ -455,6 +456,17 @@ h4, h6 {
     font-weight: bolder;
     border-bottom: 1px dotted rgba(187, 166, 54, 0.37);
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .nameohk {
+    margin-top: 0;
+    font-size: 1.5em;
+    line-height: 68px;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   #my-name {
     height: 42%;
     margin: auto;
@@ -770,7 +782,7 @@ h4, h6 {
     flex-direction-justify-content: space-around;
     flex-direction-width: 100%;
     flex-direction-height: 305px;
-    margin: 60px 0 30px 0;
+    margin: 88px 0 30px 0;
   }
 }
 
@@ -1603,6 +1615,8 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .opening_statement {
     text-align: justify;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     font-size: 1.045em;
     line-height: 1.67em;
     color: #3c3937;
@@ -1614,6 +1628,9 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .opening_statement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     padding: 57px 30px 0 16px;
     font-size: 1.01em;
     margin-left: 40px;
@@ -1669,15 +1686,27 @@ h4, h6 {
     display: none;
   }
   .opening_statement_desktop {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-family: "Open Sans";
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .opening_statement_desktop {
+    padding: 57px 30px 0 16px;
+    font-size: 1.01em;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .opening_statement_desktop {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     width: 56%;
     text-align: justify;
     padding-top: 58px;
@@ -2615,23 +2644,45 @@ h4, h6 {
   .static-image {
     width: 26%;
   }
-  .img-split {
+  .img-split, .selfie {
     height: 20%;
     width: 100%;
+    margin-top: 33px;
     margin-bottom: 10px;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  .img-split {
+  .img-split, .selfie {
     width: 94%;
+    margin-top: 49px;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .img-split {
+  .img-split, .selfie {
     width: 54%;
     margin-top: 88px;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
+  .selfie {
+    height: 9%;
+    width: 55%;
+    border-radius: 4.8px;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .selfie {
+    height: 16%;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .selfie {
+    width: 13%;
   }
 }
 
@@ -2727,7 +2778,8 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .big-gallery {
-    height: 33%;
+    height: 100%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2737,26 +2789,38 @@ h4, h6 {
         -ms-flex-align: center;
             align-items: center;
     overflow-y: scroll;
+    padding-bottom: 33px;
+    margin-top: 16px;
     border: 1px solid #e6dee2;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    background-color: #f7efd66e;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .big-gallery {
+    margin: auto;
+    padding-top: 33px;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .big-gallery {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-flow: row !important;
-            flex-flow: row !important;
-    -ms-flex-item-align: center !important;
-        align-self: center !important;
-    width: 84vw !important;
-    height: 100vh !important;
-    -ms-flex-wrap: wrap !important;
-        flex-wrap: wrap !important;
-    margin-top: 33px !important;
+    -ms-flex-item-align: center;
+        align-self: center;
+    height: 68vh;
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    margin: 0;
+    overflow: scroll;
+    -ms-flex-flow: row;
+        flex-flow: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -3397,7 +3461,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #project_title {
-    width: 100%;
+    width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3641,6 +3705,8 @@ h4, h6 {
   .inner-div1, .inner-div2, .inner-div3, .inner-div4,
   .inner-div5, .inner-div11, .inner-div12 {
     background-repeat: no-repeat;
+    height: 36%;
+    margin-bottom: -40px;
   }
 }
 
@@ -3708,7 +3774,7 @@ h4, h6 {
   .inner-div12 {
     background-repeat: no-repeat;
     height: 83px;
-    width: 100;
+    width: 62%;
   }
 }
 
