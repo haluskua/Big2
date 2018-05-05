@@ -125,31 +125,6 @@
     @include desktop
       margin-left: -226px
 
-  #p-justified
-    text-align: justify
-    margin: auto
-    padding: 10px
-    font-weight: 500
-    font-size: 1.045em
-    line-height: 1.67em
-    margin-bottom: 10px
-    padding: 0 20px 0 26px
-    color: #3c3937
-    letter-spacing: 0
-    font-weight: normal
-    font-family: $font-stack-open-sans
-    @include phone-landscape
-    @include tablet
-      padding: 0 30px 0 30px
-      font-size: 1.12em
-      margin-top: 14px
-    @include desktop
-      font-size: 1em
-      line-height: 1.7em
-      width: 60vw
-      padding: 22px
-      align-self: flex-start
-
   .animation-caption, .gallery-link
     display: flex
     justify-content: center
@@ -170,18 +145,23 @@
       font-size: 1.2em
 
   .gallery-link
-    font-size: 1.88em
-    width: 69%
+    height: auto
+    padding: 0
+    margin: 0
+    font-size: 1.35em
+    width: 100%
+    margin-top: 20px
+    line-height: 1.35em
     @include tablet
       font-size: 1.81em
-      margin-top: 40px
-      margin-bottom: -14px
+      margin-top: 20px
+      margin-bottom: 14px
     @include desktop
       color: #607d8b
       font-size: 1.77em
       margin-top: 37px
       margin-bottom: -14px
-
+      background-color: rgba(42, 76, 77, 0)
   .opening_image
     @include desktop
       width: 20%
@@ -205,11 +185,11 @@
       margin-bottom: 40px
     @include desktop
       width: 91%
-      padding-top: 58px
       font-size: 1em
       line-height: 1.7em
       font-weight: 500
       color: #4c4947
+      padding: 60px 28px 30px 26px
 
     span, .par-title
       margin-top: 18px
@@ -220,9 +200,11 @@
       font-weight: bolder
       border-bottom: 1px dotted rgba(187, 166, 54, 0.37)
       line-height: 10px
+      margin: a
       @include phone-landscape
       @include tablet
         font-size: 1.9em
+        margin: auto
 
 
     #pen-off
@@ -338,13 +320,10 @@
     height: 41px
     line-height: 52.2px
     padding-left: 11%
-    // background-image: url('../dist/imgs/1920.png')
-    // background-size: cover
-    // background-position: center
-    // background-repeat: no-repeat
     font-family: $font-stack-character
     @include phone-landscape
     @include tablet
+      font-size: 1.66em
     @include desktop
       color: #2b2020
       font-size: 1.67em
@@ -560,8 +539,8 @@
     font-family: $font-stack-rajdhani
     background-color: rgb(245, 245, 245)
     color: #09070b
-    margin-top: 6px
-    margin-bottom: 15px
+    margin-top: 0px
+    margin-bottom: 12px
     border: 0
     margin-right: 0
     @include phone-landscape
@@ -596,12 +575,10 @@
     transition: 0.5s ease
     text-align: center
     font-size: 0.9em
-    background-color: rgba(255, 196, 131, 0.56) !important
+    background-color: rgba(240, 224, 176, 0.56) !important
     color: #09070b !important
     height: 35px
-    border: 1px solid #ffc387
     border-bottom: none
-    margin-bottom: -2px
     @include phone-landscape
     @include tablet
       border: 1px solid rgba(155, 149, 130, 0.33)
@@ -625,7 +602,7 @@
       border-bottom: 1px solid #4CAF50 !important
 
   div.panel
-      background-color: rgba(255, 196, 131, 0.56)
+      background-color: rgba(240, 224, 176, 0.56)
       padding: 0 8px
       display: none
       height: auto
@@ -633,7 +610,9 @@
       border: 1px solid #c19b1a
       border-top: 0
       margin-bottom: 4px
+      border-radius: 4px
       @include phone-landscape
+        background-color: rgba(222, 231, 128, 0.68)
         width: 81%
       @include tablet
         position: fixed
@@ -669,13 +648,15 @@
     @include tablet
       font-size: 1.04em
       letter-spacing: normal
+      margin: 0
+      width: 86%
     @include desktop
       font-size: 1em
       line-height: 1.7em
       margin: 0
-      padding-top: 20px
       text-align: justify
       width: 85%
+      padding: 20px 0 0 0
 
   .scpmt, .scpmt-gd, .scpmt-dm, .scpmt-t
     display: none
@@ -708,7 +689,7 @@
         margin-top: 12px
         padding: 7px 0px
         border-radius: none
-        background-color: #fffef2
+        background-color: #fbfff0
       @include desktop
         border-bottom: 1px solid #e3e6e8
         background-color: #f6f5ed
@@ -876,7 +857,7 @@
   .static-image
     width: 26%
     @include desktop
-      width: 19%
+      width: 16%
 
   .img-split, .selfie
     height: 20%
@@ -898,9 +879,9 @@
     width: 72% !important
     border-radius: 4.8px !important
     @include tablet
-      height: 16% !important
+      width: 22% !important
     @include desktop
-      width: 45% !important
+      width: 43% !important
 
   // .img-split:hover
   //   @include desktop
@@ -967,6 +948,21 @@
       padding-bottom: 50px !important
       height: 200px !important
 
+  .gallery-title
+    font-size: 1em
+    letter-spacing: 0.02em
+    font-family: $font-stack-rajdhani
+    color: black
+    width: 100%
+    line-height: 2.51em
+    margin: 0 auto
+    text-align: center
+    @include tablet
+      font-size: 1.51em
+      letter-spacing: 0.02em
+      line-height: 2.1em
+
+
   .big-gallery
     height: 100%
     width: 100%
@@ -975,7 +971,6 @@
     align-items: center
     overflow-y: scroll
     padding-bottom: 33px
-    margin-top: 16px
     border: 1px solid #e6dee2
     background-color: #f7efd66e
     // background-color: red
@@ -1010,10 +1005,10 @@
     @include tablet
       margin: auto
       padding-top: 33px
+      margin-top: 55px
     @include desktop
       align-self: center
-      width: 60%
-      width: 90%
+      width: 86%
       flex-flow: column
       margin: 0
       overflow: hidden
@@ -1046,7 +1041,7 @@
     @include desktop
       margin: auto
 
-  .hold_in2
+  .hold_in2_
     margin-top: 15px
     @include phone-landscape
     @include tablet
@@ -1151,7 +1146,7 @@
   .suite
     @include desktop
       width: 80%
-      padding: 10px 100px 10px 100px
+      padding: 31px 0px 35px 38px
 
   .blocks, .one
     display: flex
@@ -1161,8 +1156,8 @@
     justify-content: center
     margin-bottom: 30px
     @include tablet
-      margin-top: 20px
     @include desktop
+      margin-top: 33px
       flex-wrap: wrap
       justify-content: space-around
     section, .one
@@ -1205,7 +1200,6 @@
         width: 100%
         margin: auto
         padding: 0
-        margin-top: 20px
         @include desktop
           margin-top: 0
         img
@@ -1274,7 +1268,7 @@
         justify-content: center
         border-radius: 6px
         display: flex
-        margin-bottom: 20px
+        margin-bottom: 42px
         border: 1px solid gainsboro
         @include phone-landscape
 
@@ -1322,10 +1316,12 @@
     display: none
     margin-top: -9px
     margin-bottom: 25px
+    margin-left: 12px
     @include phone-landscape
 
     @include tablet
       padding-right: 8px
+      margin-top: 40px
     @include desktop
       display: flex
       margin-top: 45px

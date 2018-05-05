@@ -29,8 +29,11 @@
   .webdev-title
     background-color: #d1c9a7
     color: #65635e
-    // border-bottom: 1px solid lightgray
     border-top: 1px solid #d0b98e
+    background: url('../dist/imgs/pattern.jpg')
+    background-size: contain
+    background-position: center
+    background-repeat: repeat
     @include phone-landscape
       background-color: #fffcf4
       z-index: 1
@@ -39,6 +42,7 @@
       font-size: 1.7em
       line-height: 72px
     @include desktop
+      height: 51px
       display: flex
       width: 100%
       align-self: flex-start
@@ -54,23 +58,28 @@
       border-radius: 4px
       padding: 0
 
+
   .webdev-subtitle
     display: flex
     @include desktop
       width: 100vw
       margin: 0
-      height: 49px
+      // height: 49px
       position: relative
-      background-image: url("../dist/imgs/native_pear.png")
-      background-size: contain
-      background-repeat: no-repeat
-      background-position: center
+      // background-image: url("../dist/imgs/native_pear.png")
+      // background-size: contain
+      // background-repeat: no-repeat
+      // background-position: center
   #push-up
     line-height: 37px
     padding-top: 12px
     font-weight: bold
     color: #352f1a
     font-size: 1.24em
+    border: 1px solid #ffd84e
+    padding: 2px
+    background-color: #ffebcdcc
+    padding: 4px 13px
     @include tablet
       font-size: 1.16em
     @include desktop
