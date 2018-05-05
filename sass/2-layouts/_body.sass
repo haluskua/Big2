@@ -875,6 +875,8 @@
       width: 39%
   .static-image
     width: 26%
+    @include desktop
+      width: 19%
 
   .img-split, .selfie
     height: 20%
@@ -893,12 +895,12 @@
 
   .selfie
     height: 9%
-    width: 55%
-    border-radius: 4.8px
+    width: 72% !important
+    border-radius: 4.8px !important
     @include tablet
-      height: 16%
+      height: 16% !important
     @include desktop
-      width: 13%
+      width: 45% !important
 
   // .img-split:hover
   //   @include desktop
