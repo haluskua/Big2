@@ -613,6 +613,8 @@ h4, h6 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 100%;
+    background: white;
     display: flex;
     flex-wrap: wrap;
     -ms-flex-pack: distribute;
@@ -1003,8 +1005,10 @@ h4, h6 {
 
 @media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
   .haus {
-    width: 25vw;
+    position: fixed;
+    width: 34vw;
     top: 0;
+    right: 0;
   }
 }
 
@@ -3768,6 +3772,13 @@ h4, h6 {
     border: none;
     margin-top: -27px;
     margin-bottom: -24px;
+  }
+}
+
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  .inner-div11 {
+    height: 82%;
+    width: 32%;
   }
 }
 

@@ -1014,7 +1014,6 @@
       flex-flow: column
       margin: 0
       overflow: hidden
-      // flex-flow: row
       flex-wrap: wrap
   .talentpage
     @include desktop
@@ -1521,6 +1520,9 @@
     border: none
     margin-top: -27px
     margin-bottom: -24px
+    @include phone-landscape
+      height: 82%
+      width: 32%
     @include desktop
       height: 31%
       margin-top: 0

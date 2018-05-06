@@ -296,6 +296,9 @@
 		background-position: center
 		background-repeat: no-repeat
 		// background-color: rgba(160, 168, 175, 0.42)
+		@include phone-landscape
+		height: 100%
+		background: white
 		@include tablet
 			width: 86vw
 			margin-left: 62px
@@ -551,8 +554,10 @@
 		background-repeat: repeat
 		background-position: center
 		@include phone-landscape
-			width: 25vw
+			position: fixed
+			width: 34vw
 			top: 0
+			right: 0
 
 		@include tablet
 			top: 0
@@ -587,6 +592,9 @@
 				flex-direction: column
 				justify-content: center
 				background-color: rgba(240, 224, 176, 0.56)
+				@include phone-landscape
+
+
 
 	.haus-menu
 		color: #110e09
