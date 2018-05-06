@@ -1798,6 +1798,7 @@ h4, h6 {
     line-height: 52.2px;
     padding-left: 11%;
     font-family: "Cabin Sketch", Garamond;
+    background-color: rgba(240, 224, 176, 0.56);
   }
 }
 
@@ -3216,6 +3217,10 @@ h4, h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    background: url("../dist/imgs/pattern.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: auto;
     width: 100%;
     margin: auto;
