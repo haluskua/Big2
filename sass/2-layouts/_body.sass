@@ -193,8 +193,9 @@
 
     span, .par-title
       margin-top: 18px
-      font-size: 1.35em
+      font-size: 1.52em
       font-family: $font-stack-antic
+      font-family: $font-stack-Dancing-script
       letter-spacing: 0.02em
       color: #5f4725
       font-weight: bolder
@@ -205,8 +206,9 @@
       @include tablet
         font-size: 1.9em
         margin: auto
-
-
+      @include desktop
+        font-size: 2em
+  
     #pen-off
       font-size: 1.52em
       font-family: $font-stack-Dancing-script
@@ -622,7 +624,7 @@
         background-color: #fffef2
         border: none
       @include desktop
-        background-color: rgba(74, 204, 220, 0.56)
+        background-color: rgba(195, 160, 56, 0.79)
         width: 21%
         position: fixed
         top: 50px
@@ -692,9 +694,9 @@
         background-color: #fbfff0
       @include desktop
         border-bottom: 1px solid #e3e6e8
-        background-color: #f6f5ed
+        background-color: #2f555b
         &:hover
-          background-color: #64adcb
+          background-color: #719385
 
     #nav-folders:nth-child(4)
       margin-bottom: 50px
@@ -989,7 +991,7 @@
       flex-flow: row
       flex-wrap: wrap
 
-  .container
+  .container, .talentpage
     width: 100%
     display: flex
     flex-wrap: wrap
@@ -1012,8 +1014,11 @@
       flex-flow: column
       margin: 0
       overflow: hidden
-      flex-flow: row
+      // flex-flow: row
       flex-wrap: wrap
+  .talentpage
+    @include desktop
+      margin-top: 40px
 
 
   .container-movie
@@ -1099,6 +1104,7 @@
       align-self: flex-start
 
   .close-caption, .gdClose, .dmClose, .tClose
+    color: #6b6a6a
     display: flex
     width: 100%
     text-align: center
@@ -1106,7 +1112,6 @@
     @include phone-landscape
     @include tablet
       font-size: 0.89em
-
 
   .small-intro
     display: flex

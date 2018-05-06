@@ -114,8 +114,7 @@ h4, h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background: url("../dist/imgs/1920.png") top no-repeat;
-    background-size: cover;
+    background: none;
   }
 }
 
@@ -817,7 +816,6 @@ h4, h6 {
     height: 310px;
     margin-bottom: -87px;
     margin-top: 30px;
-    background-color: rgba(115, 132, 155, 0.1);
   }
 }
 
@@ -914,7 +912,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .fields {
     font-size: 1em;
-    color: black;
+    color: white;
     letter-spacing: 0em;
   }
   .fields:focus {
@@ -925,6 +923,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .fields {
     font-size: 0.8em;
+    color: white;
   }
   .fields:hover {
     color: white;
@@ -1178,7 +1177,7 @@ h4, h6 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #adcdb1;
+    background-color: #c3a038;
   }
 }
 
@@ -1630,8 +1629,9 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .opening_statement span, .opening_statement .par-title {
     margin-top: 18px;
-    font-size: 1.35em;
+    font-size: 1.52em;
     font-family: "Antic";
+    font-family: "Dancing Script";
     letter-spacing: 0.02em;
     color: #5f4725;
     font-weight: bolder;
@@ -1645,6 +1645,12 @@ h4, h6 {
   .opening_statement span, .opening_statement .par-title {
     font-size: 1.9em;
     margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .opening_statement span, .opening_statement .par-title {
+    font-size: 2em;
   }
 }
 
@@ -2297,7 +2303,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   div.panel {
-    background-color: rgba(74, 204, 220, 0.56);
+    background-color: rgba(195, 160, 56, 0.79);
     width: 21%;
     position: fixed;
     top: 50px;
@@ -2413,10 +2419,10 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #gd-folders li {
     border-bottom: 1px solid #e3e6e8;
-    background-color: #f6f5ed;
+    background-color: #2f555b;
   }
   #gd-folders li:hover {
-    background-color: #64adcb;
+    background-color: #719385;
   }
 }
 
@@ -2841,7 +2847,7 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .container {
+  .container, .talentpage {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2862,7 +2868,7 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  .container {
+  .container, .talentpage {
     margin: auto;
     padding-top: 33px;
     margin-top: 55px;
@@ -2870,7 +2876,7 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .container {
+  .container, .talentpage {
     -ms-flex-item-align: center;
         align-self: center;
     width: 86%;
@@ -2880,10 +2886,14 @@ h4, h6 {
             flex-flow: column;
     margin: 0;
     overflow: hidden;
-    -ms-flex-flow: row;
-        flex-flow: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .talentpage {
+    margin-top: 40px;
   }
 }
 
@@ -3041,6 +3051,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .close-caption, .gdClose, .dmClose, .tClose {
+    color: #6b6a6a;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

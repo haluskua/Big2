@@ -22,8 +22,7 @@
 			display: flex
 			justify-content: center
 			flex-direction: column
-			background: url('../dist/imgs/1920.png') top no-repeat
-			background-size: cover
+			background: none
 
 	.Colsplit-between
 		width: 100%
@@ -426,8 +425,6 @@
 			height: 310px
 			margin-bottom: -87px
 			margin-top: 30px
-			background-color: rgba(115, 132, 155, 0.1)
-
 
 	.hamburger-menu
 		width: 100%
@@ -495,12 +492,13 @@
 
 		@include tablet
 			font-size: 1em
-			color: black
+			color: white
 			letter-spacing: 0em
 			&:focus
 				background-color: white
 		@include desktop
 			font-size: 0.8em
+			color: white
 			&:hover
 				color: white
 				font-size: 1.06em
@@ -653,7 +651,7 @@
 			border-radius: 0
 			display: flex
 			align-items: center
-			background-color: #adcdb1
+			background-color: #c3a038
 
 	.mobile-container .sticky
 		z-index: 999999999999
