@@ -6,22 +6,23 @@
     width: 100%
     margin: 0 auto
     main
-      display: flex
-      flex-direction: column
-      justify-content: flex-start
-      max-width: 100%
       height: auto
+      display: flex
+      max-width: 100%
       position: relative
       background-color: #fff
+      flex-direction: column
+      justify-content: flex-start
       section
         display: flex
-        justify-content: flex-start
-        flex-direction: column
-        margin-bottom: -12px
-        max-width: 100%
         height: 100%
-        position: relative
+        max-width: 100%
         overflow: hidden
+        position: relative
+        margin-bottom: -12px
+        flex-direction: column
+        justify-content: flex-start
+
         @include desktop
           border: none
           background-size: cover
@@ -32,79 +33,43 @@
     height: auto
     @include desktop
 
-  .about-title
-    color: #adaeaf
-    letter-spacing: 0.03em
-    font-family: $font-stack-roboto
-    font-size: 1em
-    line-height: 1.5em
-    color: #060407
-    font-weight: normal
-    @include desktop
-      font-size: 2em
-
-  #recent_projects
-    @include tablet
-      margin-top: 121px
-    @include desktop
-      margin-top: 81px
-
   #wagai
-    display: flex
-    justify-content: flex-start
-    align-items: center
-    flex-direction: column
     width: 100vw
     height: 100%
     margin: auto
+    display: flex
     visibility: visible
+    align-items: center
+    flex-direction: column
     padding: 0 22px 0 22px
+    justify-content: flex-start
     @include desktop
       margin-bottom: 33px
 
-    p
-      // padding: 8px
-      // @include tablet
-      //   height: 100%
-      //   margin: auto
-      //   width: 83%
-      //   overflow: auto
-      //   visibility: visible
-      //   background-color: rgba(255, 254, 242, 0.26)
-      //   border: 1px solid #e5dcbc
-      //
-      // @include desktop
-      //   height: 100%
-      //   width: 16vw
-      //   margin: 0
-      //   overflow: hidden
-      //   visibility: visible
-      //   background-color: rgba(255, 254, 242, 0.26)
-      //   padding: 0px
-
   .main-paragraph
     margin: auto
+    color: #3c3937
     font-weight: 500
+    letter-spacing: 0
+    padding-top: 20px
     font-size: 1.045em
     line-height: 1.67em
-    font-family: $font-stack-open-sans
-    color: #3c3937
-    letter-spacing: 0
     margin-bottom: 20px
-    padding-top: 20px
     text-align: justify
+    font-family: $font-stack-open-sans
     @include phone-landscape
     @include tablet
-      margin-bottom: 40px
       font-size: 1em
+      margin-bottom: 40px
       letter-spacing: normal
     @include desktop
+      margin: 0
+      width: 85%
       font-size: 1em
       line-height: 1.7em
-      margin: 0
       padding-top: 20px
       text-align: justify
-      width: 85%
+
   .columnsSplit
     display: flex !important
     flex-wrap: wrap
@@ -117,29 +82,21 @@
       flex-wrap: nowrap
       margin: auto
 
-  .p-2columns
-    @include desktop
-      width: 36%
-      margin: auto
-      margin-left: -55px
-    @include desktop
-      margin-left: -226px
-
   .animation-caption, .gallery-link
     display: flex
-    justify-content: center
     width: 60%
     padding: 8px
     margin-top: 8px
     margin: 0 auto
-    letter-spacing: 0.05em
     color: #252121
     color: black
     text-align: center
     font-weight: bold
     font-size: 0.9em
-    text-transform: uppercase
     background-color: white
+    justify-content: center
+    letter-spacing: 0.05em
+    text-transform: uppercase
     font-family: $font-stack-character
     @include desktop
       font-size: 1.2em
@@ -162,9 +119,6 @@
       margin-top: 37px
       margin-bottom: -14px
       background-color: rgba(42, 76, 77, 0)
-  .opening_image
-    @include desktop
-      width: 20%
 
   .opening_statement
     text-align: justify
@@ -227,14 +181,12 @@
     flex-wrap: wrap
     font-family: $font-stack-open-sans
     @include tablet
-      // display: flex
       padding: 57px 30px 0 16px
       font-size: 1.01em
       margin-left: 40px
       margin-right: 40px
       margin-bottom: 40px
     @include desktop
-      // display: flex
       width: 56%
       text-align: justify
       padding-top: 58px
@@ -248,61 +200,6 @@
       font-weight: normal
       font-family: $font-stack-open-sans
 
-    .par-title_desktop
-      display: none
-      @include desktop
-        display: flex
-        font-size: 1.9em
-        margin-top: 18px
-        font-family: $font-stack-antic
-        letter-spacing: 0.02em
-        color: #5f4725
-        font-weight: bolder
-        border-bottom: 1px dotted rgba(187, 166, 54, 0.37)
-        line-height: 10px
-
-
-
-  .opening_line
-    display: flex
-    justify-content: center
-    text-align: center
-    width: 90%
-    height: auto
-    color: #e7daea
-    font-size: 0.8em
-    font-family: $font-stack-open-sans-condensed
-    position: relative
-    margin-top: -90px
-    @include phone-landscape
-    @include tablet
-      font-size: 0.89em
-      margin-top: -97px !important
-      width: 54% !important
-      background-color: rgba(187, 166, 54, 0) !important
-      border: none !important
-    @include desktop
-      width: 48vw !important
-      width: 30% !important
-      font-size: 0.78em !important
-      margin-top: -94px !important
-      font-size: 0.7em !important
-      background-color: rgba(187, 166, 54, 0) !important
-
-    // #skills-set-imgs
-    //   display: flex
-    //   flex-wrap: wrap
-    //   #flying-skills
-    //     display: flex
-    //     flex-direction: column
-    //     position: relative
-    //     #pillar
-    //       display: none
-    //       justify-content: space-around
-    //       align-items: flex-end
-    //       position: relative
-    //       width: 68%
-    //       z-index: 9
   .screen
     background-color:  rgba(187, 166, 54, 0.5)
   .skills-title
@@ -337,7 +234,7 @@
 
   #grafix, #contact,
   .projects, .wagai-weh, #wagai, #main-gallery,
-  .main-gallery, #main-projects, #projects, #film-projects,
+  .main-gallery, #projects, #film-projects,
   #gd-projects, #dm-projects, #t-projects, #about
     display: flex
     flex-direction: column
@@ -426,13 +323,14 @@
     text-decoration: none
     width: 100%
     height: 100vh
-    background-image: url('../dist/imgs/cone.jpg')
     background-size: cover
     background-repeat: no-repeat
     background-position: center
+    background-image: url('../dist/imgs/cone.jpg')
     @include desktop
       background-position: bottom
       height: 100vh
+
     #contact
       display: flex
       flex-direction: column
@@ -494,38 +392,6 @@
     @include tablet
       line-height: 33px
       font-size: 1.3em
-
-  #imgslider-desc
-    display: flex
-    justify-content: center
-    width: 100%
-    height: auto
-    p
-      padding: 20px
-      font-size: 1.05em
-      letter-spacing: 0.01em
-      line-height: 1.6em
-      font-family: $font-stack-open-sans
-      color: #252121
-      font-weight: lighter
-      text-align: center
-      @include phone-landscape
-      @include tablet
-        font-size: 1.4em
-        margin-bottom: -134px
-        z-index: 999
-        color: #e7e7c3
-        background-color: rgba(255, 254, 242, 0)
-        border: none
-      @include desktop
-        background-color: rgba(255, 254, 242, 0)
-        // margin-bottom: -92px
-        margin-top: 8px
-        color: #585036
-        font-size: 1.32em
-        letter-spacing: 0.03em
-        z-index: 9999
-        width: 50%
 
   button.accordion
     cursor: pointer
@@ -630,6 +496,7 @@
         top: 50px
         left: 284px
         border: 1px solid #b4c883
+
   .skills-caption, .gd-caption, .dm-caption, .t-caption
     display: none
     margin: auto
@@ -712,39 +579,7 @@
         padding-left: 5px
         a
           width: 0%
-      .fl-title
-        color: #090108
-        font-weight: normal
-        font-size: 0.98em
-        font-family: monospace
-        margin: 0
 
-  .gd-f2
-    // this width stops mobile menu bar from schinking onScroll
-    width: 88%
-    display: flex
-    justify-content: space-between
-    span
-      color: #8c857a
-      font-size: 0.84em
-      letter-spacing: 0.03em
-      font-style: italic
-      border-bottom: 1px dotted #a8a6a4
-
-  #more-info
-    color: #9d8b70
-    font-size: 0.9em
-    letter-spacing: 0.078em
-    font-style: italic
-    border-bottom: 1px dotted #a8a6a4
-
-    padding-left: 18px
-  #folder-title
-    width: 100%
-    text-align: center
-    h3
-      font-size: 1.44
-      color: green
 
   #main-gallery
     width: 100%
@@ -856,6 +691,7 @@
       width: 66%
       margin: auto
       width: 39%
+
   .static-image
     width: 26%
     @include desktop
@@ -891,15 +727,6 @@
   //     height: 20%
   //     -webkit-transition: width 1.5s ease-out
   //     transition: width 1.5s ease-out
-
-
-  #open_pic
-    width: 100px
-    height: 50px
-    background-color: green
-    color: white
-
-
 
   .rgdp
     display: flex
@@ -1059,7 +886,6 @@
       flex-flow: column
       width: 100%
 
-
   #read-on
     justify-content: flex-start !important
     position: relative
@@ -1072,6 +898,7 @@
     letter-spacing: 0.048em
     font-family: $font-stack-rajdhani
     color: #341e25
+
     .showRead
       display: flex
       margin: 0
@@ -1082,6 +909,7 @@
       @include phone-landscape
       @include tablet
         justify-content: center
+
     .open-caption, .gdReadmore, .dmReadmore, .tReadmore
       font-family: $font-stack-antic
       display: flex
@@ -1380,93 +1208,10 @@
     display: flex
     justify-content: center
     flex-flow: column
-
-  #unkown
-    font-family: $font-stack-antic
-    color: #bfbfbf
-    font-style: italic
-    font-size: 0.72em
-    @include desktop
-      font-size: 0.62em
-
-  // image slider CSS
-  .bilum
-    width: 100%
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: space-around
-    margin: 0
-    @include desktop
-      display: flex
-      width: 100%
-      flex-direction: column
-      align-items: center
-
-  #slider
-    width: 100%
-    display: flex
-    height: auto
-    overflow: hidden
-    @include desktop
-      width: 720px
-      height: 430px
-      overflow: hidden
-
-  #slider .slides
-    display: block
-    width: 100%
-    height: 209px
-    padding: 0
-    margin: 0
-    @include desktop
-      display: block
-      width: 6000px
-      height: 430px
-      margin: 0
-      padding: 0
-
-  #slider .slide
-    margin: 0 auto
-    justify-content: center
-    list-style-type: none
-    width: 340px
-    @include desktop
-      float: left
-      list-style-type: none
-      width: 720px
-      height: 430px
-
-  #slider .slide img
-    width: 340px
-    @include tablet
-      width: 720px
-    @include desktop
-      width: 720px
-
   .outer-div
     display: flex
     flex-wrap: wrap
     justify-content: space-around
-    width: 100%
-    height: 360px
-    margin: 0 auto
-    margin-bottom: 26px
-    background-image: url("../dist/imgs/1920.png")
-    background-size: cover
-    background-position: center
-    background-repeat: no-repeat
-    @include tablet
-      display: none
-    @include desktop
-      flex-direction: row
-      flex-wrap: wrap
-      flex-flow: row
-      width: 100%
-      height: 370px
-      margin: 0 auto
-      display: none
-
 
   .box
     display: flex
@@ -1546,3 +1291,7 @@
     @include desktop
       background-repeat: no-repeat
       background-size: contain
+
+
+
+    

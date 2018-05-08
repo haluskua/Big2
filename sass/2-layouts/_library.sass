@@ -3,37 +3,15 @@
 
 @include phone
 
-  /* Styling for Graphic page only*/
-  .graphic-title
-    background-color: #eec660
-    // color: black
-  .graphic-subtitle
-    color: #463b20
-
-  button.graphic.active, button.graphic:hover
-    color: #65635e
-    background-color: rgba(229, 172, 97, 0.11)
-
-  /* Styling for music page only*/
-  .music-title
-    background-color: #ee6060c2
-    color: #65635e
-  .music-subtitle
-    color: #463b20
-
-  button.music.active, button.music:hover
-    color: #65635e
-    background-color: #ee6060c2
-
   /* Styling for webdev page only*/
   .webdev-title
-    background-color: #d1c9a7
     color: #65635e
-    border-top: 1px solid #d0b98e
-    background: url('../dist/imgs/pattern.jpg')
     background-size: contain
     background-position: center
     background-repeat: repeat
+    background-color: #d1c9a7
+    border-top: 1px solid #d0b98e
+    background: url('../dist/imgs/pattern.jpg')
     @include phone-landscape
       background-color: #fffcf4
       z-index: 1
@@ -45,16 +23,17 @@
       height: 51px
       display: flex
       width: 100%
-      align-self: flex-start
-      background-color: #d1c9a7
+
       flex-flow: row
       border-top: 0px
-      justify-content: space-around
-      flex-wrap: wrap-reverse
       padding-left: 46px
+      align-self: flex-start
+      flex-wrap: wrap-reverse
       padding: 16px 20px 0px 5px
+      background-color: #d1c9a7
       border-bottom: 1px solid #d8c6a6
       border-right: 1px solid #d8c6a6
+      justify-content: space-around
       border-radius: 4px
       padding: 0
 
@@ -63,23 +42,19 @@
     @include desktop
       width: 100vw
       margin: 0
-      // height: 49px
       position: relative
-      // background-image: url("../dist/imgs/native_pear.png")
-      // background-size: contain
-      // background-repeat: no-repeat
-      // background-position: center
+
   #push-up
+    padding: 2px
+    color: #352f1a
     line-height: 37px
     padding-top: 12px
     font-weight: bold
-    color: #352f1a
     font-size: 1.02em
+    padding: 4px 13px
     letter-spacing: 0.08em
     border: 1px solid #ffd84e
-    padding: 2px
     background-color: #ffebcdcc
-    padding: 4px 13px
     font-family: $font-stack-roboto
     @include tablet
       font-size: 1.16em
@@ -89,37 +64,13 @@
       font-size: 1.45em
       padding-top: 25px
 
-
-  .contactx
-    background-color: rgb(255, 244, 230)
-    @include desktop
-      background-color: #faf6e6
-
   button.webdev.active, button.webdev:hover
     color: white
     background-color: #5dadc2
     font-size: 1.25em
     font-family: $font-stack-rajdhani
 
-    /* Styling for Film page only*/
-  .film-title
-    background-color: rgba(229, 172, 97, 0.11)
-    color: #65635e
-  .film-subtitle
-    color: #463b20
 
   button.film.active, button.film:hover
     color: #65635e
     background-color: rgba(229, 172, 97, 0.11)
-
-    /* Styling for Painting page only*/
-  .painting-title
-    background-color: rgba(140, 73, 178, 0.78)
-    color: #65635e
-  .painting-subtitle
-    color: #463b20
-
-
-  // button.painting.active, button.painting:hover
-  //   color: white
-  //   background-color: rgba(140, 73, 178, 0.78)

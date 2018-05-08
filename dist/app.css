@@ -656,7 +656,7 @@ h4, h6 {
         -ms-flex-flow: row;
             flex-flow: row;
     background-image: none;
-    background-color: rgba(0, 128, 239, 0.42);
+    background-color: #5f4725;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1345,9 +1345,13 @@ h4, h6 {
     margin: 0 auto;
   }
   body main {
+    height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    max-width: 100%;
+    position: relative;
+    background-color: #fff;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1355,27 +1359,23 @@ h4, h6 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    max-width: 100%;
-    height: auto;
-    position: relative;
-    background-color: #fff;
   }
   body main section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: -12px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: -12px;
-    max-width: 100%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -1394,43 +1394,14 @@ h4, h6 {
     width: 100vw;
     height: auto;
   }
-  .about-title {
-    color: #adaeaf;
-    letter-spacing: 0.03em;
-    font-family: "Roboto";
-    font-size: 1em;
-    line-height: 1.5em;
-    color: #060407;
-    font-weight: normal;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .about-title {
-    font-size: 2em;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  #recent_projects {
-    margin-top: 121px;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  #recent_projects {
-    margin-top: 81px;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
   #wagai {
+    width: 100vw;
+    height: 100%;
+    margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    visibility: visible;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1438,11 +1409,10 @@ h4, h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100vw;
-    height: 100%;
-    margin: auto;
-    visibility: visible;
     padding: 0 22px 0 22px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -1455,34 +1425,34 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .main-paragraph {
     margin: auto;
+    color: #3c3937;
     font-weight: 500;
+    letter-spacing: 0;
+    padding-top: 20px;
     font-size: 1.045em;
     line-height: 1.67em;
-    font-family: "Open Sans";
-    color: #3c3937;
-    letter-spacing: 0;
     margin-bottom: 20px;
-    padding-top: 20px;
     text-align: justify;
+    font-family: "Open Sans";
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .main-paragraph {
-    margin-bottom: 40px;
     font-size: 1em;
+    margin-bottom: 40px;
     letter-spacing: normal;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .main-paragraph {
+    margin: 0;
+    width: 85%;
     font-size: 1em;
     line-height: 1.7em;
-    margin: 0;
     padding-top: 20px;
     text-align: justify;
-    width: 85%;
   }
 }
 
@@ -1512,40 +1482,26 @@ h4, h6 {
   }
 }
 
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .p-2columns {
-    width: 36%;
-    margin: auto;
-    margin-left: -55px;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .p-2columns {
-    margin-left: -226px;
-  }
-}
-
 @media (min-width: 1em), screen and (orientation: portrait) {
   .animation-caption, .gallery-link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     width: 60%;
     padding: 8px;
     margin-top: 8px;
     margin: 0 auto;
-    letter-spacing: 0.05em;
     color: #252121;
     color: black;
     text-align: center;
     font-weight: bold;
     font-size: 0.9em;
-    text-transform: uppercase;
     background-color: white;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
     font-family: "Cabin Sketch", Garamond;
   }
 }
@@ -1583,12 +1539,6 @@ h4, h6 {
     margin-top: 37px;
     margin-bottom: -14px;
     background-color: rgba(42, 76, 77, 0);
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .opening_image {
-    width: 20%;
   }
 }
 
@@ -1711,68 +1661,6 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .opening_statement_desktop .par-title_desktop {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .opening_statement_desktop .par-title_desktop {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 1.9em;
-    margin-top: 18px;
-    font-family: "Antic";
-    letter-spacing: 0.02em;
-    color: #5f4725;
-    font-weight: bolder;
-    border-bottom: 1px dotted rgba(187, 166, 54, 0.37);
-    line-height: 10px;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
-  .opening_line {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-    width: 90%;
-    height: auto;
-    color: #e7daea;
-    font-size: 0.8em;
-    font-family: "Open Sans";
-    position: relative;
-    margin-top: -90px;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  .opening_line {
-    font-size: 0.89em;
-    margin-top: -97px !important;
-    width: 54% !important;
-    background-color: rgba(187, 166, 54, 0) !important;
-    border: none !important;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .opening_line {
-    width: 48vw !important;
-    width: 30% !important;
-    font-size: 0.78em !important;
-    margin-top: -94px !important;
-    font-size: 0.7em !important;
-    background-color: rgba(187, 166, 54, 0) !important;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
   .screen {
     background-color: rgba(187, 166, 54, 0.5);
   }
@@ -1826,7 +1714,7 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   #grafix, #contact,
   .projects, .wagai-weh, #wagai, #main-gallery,
-  .main-gallery, #main-projects, #projects, #film-projects,
+  .main-gallery, #projects, #film-projects,
   #gd-projects, #dm-projects, #t-projects, #about {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1850,7 +1738,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #grafix, #contact,
   .projects, .wagai-weh, #wagai, #main-gallery,
-  .main-gallery, #main-projects, #projects, #film-projects,
+  .main-gallery, #projects, #film-projects,
   #gd-projects, #dm-projects, #t-projects, #about {
     margin-bottom: 33px;
   }
@@ -1859,7 +1747,7 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   #grafix a, #contact a,
   .projects a, .wagai-weh a, #wagai a, #main-gallery a,
-  .main-gallery a, #main-projects a, #projects a, #film-projects a,
+  .main-gallery a, #projects a, #film-projects a,
   #gd-projects a, #dm-projects a, #t-projects a, #about a {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1985,10 +1873,10 @@ h4, h6 {
     text-decoration: none;
     width: 100%;
     height: 100vh;
-    background-image: url("../dist/imgs/cone.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-image: url("../dist/imgs/cone.jpg");
   }
 }
 
@@ -2118,52 +2006,6 @@ h4, h6 {
   .myname {
     line-height: 33px;
     font-size: 1.3em;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
-  #imgslider-desc {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-    height: auto;
-  }
-  #imgslider-desc p {
-    padding: 20px;
-    font-size: 1.05em;
-    letter-spacing: 0.01em;
-    line-height: 1.6em;
-    font-family: "Open Sans";
-    color: #252121;
-    font-weight: lighter;
-    text-align: center;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  #imgslider-desc p {
-    font-size: 1.4em;
-    margin-bottom: -134px;
-    z-index: 999;
-    color: #e7e7c3;
-    background-color: rgba(255, 254, 242, 0);
-    border: none;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  #imgslider-desc p {
-    background-color: rgba(255, 254, 242, 0);
-    margin-top: 8px;
-    color: #585036;
-    font-size: 1.32em;
-    letter-spacing: 0.03em;
-    z-index: 9999;
-    width: 50%;
   }
 }
 
@@ -2449,45 +2291,6 @@ h4, h6 {
   #gd-folders #nav-folders:nth-child(4) h4 a {
     width: 0%;
   }
-  #gd-folders #nav-folders:nth-child(4) .fl-title {
-    color: #090108;
-    font-weight: normal;
-    font-size: 0.98em;
-    font-family: monospace;
-    margin: 0;
-  }
-  .gd-f2 {
-    width: 88%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .gd-f2 span {
-    color: #8c857a;
-    font-size: 0.84em;
-    letter-spacing: 0.03em;
-    font-style: italic;
-    border-bottom: 1px dotted #a8a6a4;
-  }
-  #more-info {
-    color: #9d8b70;
-    font-size: 0.9em;
-    letter-spacing: 0.078em;
-    font-style: italic;
-    border-bottom: 1px dotted #a8a6a4;
-    padding-left: 18px;
-  }
-  #folder-title {
-    width: 100%;
-    text-align: center;
-  }
-  #folder-title h3 {
-    font-size: 1.44;
-    color: green;
-  }
   #main-gallery {
     width: 100%;
     -webkit-box-orient: vertical;
@@ -2693,12 +2496,6 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  #open_pic {
-    width: 100px;
-    height: 50px;
-    background-color: green;
-    color: white;
-  }
   .rgdp {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3534,133 +3331,6 @@ h4, h6 {
         -ms-flex-flow: column;
             flex-flow: column;
   }
-  #unkown {
-    font-family: "Antic";
-    color: #bfbfbf;
-    font-style: italic;
-    font-size: 0.72em;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  #unkown {
-    font-size: 0.62em;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
-  .bilum {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    margin: 0;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .bilum {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
-  #slider {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: auto;
-    overflow: hidden;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  #slider {
-    width: 720px;
-    height: 430px;
-    overflow: hidden;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
-  #slider .slides {
-    display: block;
-    width: 100%;
-    height: 209px;
-    padding: 0;
-    margin: 0;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  #slider .slides {
-    display: block;
-    width: 6000px;
-    height: 430px;
-    margin: 0;
-    padding: 0;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
-  #slider .slide {
-    margin: 0 auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    list-style-type: none;
-    width: 340px;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  #slider .slide {
-    float: left;
-    list-style-type: none;
-    width: 720px;
-    height: 430px;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
-  #slider .slide img {
-    width: 340px;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  #slider .slide img {
-    width: 720px;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  #slider .slide img {
-    width: 720px;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
   .outer-div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3669,41 +3339,7 @@ h4, h6 {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    width: 100%;
-    height: 360px;
-    margin: 0 auto;
-    margin-bottom: 26px;
-    background-image: url("../dist/imgs/1920.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
   }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  .outer-div {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .outer-div {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-flow: row;
-        flex-flow: row;
-    width: 100%;
-    height: 370px;
-    margin: 0 auto;
-    display: none;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
   .box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3825,38 +3461,15 @@ h4, h6 {
 
 /* mobile view */
 @media (min-width: 1em), screen and (orientation: portrait) {
-  /* Styling for Graphic page only*/
-  .graphic-title {
-    background-color: #eec660;
-  }
-  .graphic-subtitle {
-    color: #463b20;
-  }
-  button.graphic.active, button.graphic:hover {
-    color: #65635e;
-    background-color: rgba(229, 172, 97, 0.11);
-  }
-  /* Styling for music page only*/
-  .music-title {
-    background-color: #ee6060c2;
-    color: #65635e;
-  }
-  .music-subtitle {
-    color: #463b20;
-  }
-  button.music.active, button.music:hover {
-    color: #65635e;
-    background-color: #ee6060c2;
-  }
   /* Styling for webdev page only*/
   .webdev-title {
-    background-color: #d1c9a7;
     color: #65635e;
-    border-top: 1px solid #d0b98e;
-    background: url("../dist/imgs/pattern.jpg");
     background-size: contain;
     background-position: center;
     background-repeat: repeat;
+    background-color: #d1c9a7;
+    border-top: 1px solid #d0b98e;
+    background: url("../dist/imgs/pattern.jpg");
   }
 }
 
@@ -3882,22 +3495,22 @@ h4, h6 {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    background-color: #d1c9a7;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row;
             flex-flow: row;
     border-top: 0px;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    padding-left: 46px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
-    padding-left: 46px;
     padding: 16px 20px 0px 5px;
+    background-color: #d1c9a7;
     border-bottom: 1px solid #d8c6a6;
     border-right: 1px solid #d8c6a6;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     border-radius: 4px;
     padding: 0;
   }
@@ -3921,16 +3534,16 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #push-up {
+    padding: 2px;
+    color: #352f1a;
     line-height: 37px;
     padding-top: 12px;
     font-weight: bold;
-    color: #352f1a;
     font-size: 1.02em;
+    padding: 4px 13px;
     letter-spacing: 0.08em;
     border: 1px solid #ffd84e;
-    padding: 2px;
     background-color: #ffebcdcc;
-    padding: 4px 13px;
     font-family: "Roboto";
   }
 }
@@ -3951,43 +3564,15 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .contactx {
-    background-color: #fff4e6;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .contactx {
-    background-color: #faf6e6;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
   button.webdev.active, button.webdev:hover {
     color: white;
     background-color: #5dadc2;
     font-size: 1.25em;
     font-family: "Rajdhani", sans-serif;
-    /* Styling for Film page only*/
-  }
-  .film-title {
-    background-color: rgba(229, 172, 97, 0.11);
-    color: #65635e;
-  }
-  .film-subtitle {
-    color: #463b20;
   }
   button.film.active, button.film:hover {
     color: #65635e;
     background-color: rgba(229, 172, 97, 0.11);
-    /* Styling for Painting page only*/
-  }
-  .painting-title {
-    background-color: rgba(140, 73, 178, 0.78);
-    color: #65635e;
-  }
-  .painting-subtitle {
-    color: #463b20;
   }
 }
 
