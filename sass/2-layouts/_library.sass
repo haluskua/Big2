@@ -20,20 +20,14 @@
       font-size: 1.7em
       line-height: 72px
     @include desktop
-      height: 51px
+      // background: none
+      height: 45px
       display: flex
       width: 100%
-
-      flex-flow: row
+      flex-wrap: wrap
       border-top: 0px
-      padding-left: 46px
       align-self: flex-start
-      flex-wrap: wrap-reverse
-      padding: 16px 20px 0px 5px
-      background-color: #d1c9a7
-      border-bottom: 1px solid #d8c6a6
-      border-right: 1px solid #d8c6a6
-      justify-content: space-around
+      justify-content: center
       border-radius: 4px
       padding: 0
 
@@ -54,15 +48,21 @@
     padding: 4px 13px
     letter-spacing: 0.08em
     border: 1px solid #ffd84e
-    background-color: #ffebcdcc
+    background-color: #4CAF50
     font-family: $font-stack-roboto
     @include tablet
       font-size: 1.16em
     @include desktop
-      color: #1a160d
-      line-height: 0
-      font-size: 1.45em
-      padding-top: 25px
+      color: white
+      line-height: 2em
+      font-size: 1.28em
+      border: 0
+      padding: 0
+      margin: auto
+      width: 180px
+      width: 100vw
+      text-align: center
+      background-color: rgba(82, 85, 92, 0.69)
 
   button.webdev.active, button.webdev:hover
     color: white

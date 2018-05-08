@@ -147,9 +147,8 @@
 
     span, .par-title
       margin-top: 18px
-      font-size: 1.52em
+      font-size: 1.49em
       font-family: $font-stack-antic
-      font-family: $font-stack-Dancing-script
       letter-spacing: 0.02em
       color: #5f4725
       font-weight: bolder
@@ -161,7 +160,7 @@
         font-size: 1.9em
         margin: auto
       @include desktop
-        font-size: 2em
+        font-size: 1.35em
 
     #pen-off
       font-size: 0.95em
@@ -218,14 +217,17 @@
     height: 41px
     line-height: 52.2px
     padding-left: 11%
-    font-family: $font-stack-character
+    font-family: $font-stack-roboto
     background-color: rgba(240, 224, 176, 0.56)
     @include phone-landscape
     @include tablet
       font-size: 1.66em
     @include desktop
       color: #2b2020
-      font-size: 1.67em
+      font-size: 1.4em
+      padding: 0
+      line-height: 46.2px
+      padding-left: 6%
 
   .ompa
     @include tablet
@@ -435,7 +437,7 @@
       font-family: 'orbitron', '$font-stack-open-sans'
       background-color: #29172b !important
       color: #faf6e6 !important
-      font-size: 1.06em
+      font-size: 0.97em
       letter-spacing: 0.2em
 
   button.accordion.active, button.accordion:hover
@@ -490,7 +492,7 @@
         background-color: #fffef2
         border: none
       @include desktop
-        background-color: rgba(195, 160, 56, 0.79)
+        background-color: #e9efa9
         width: 21%
         position: fixed
         top: 50px
@@ -561,7 +563,7 @@
         background-color: #fbfff0
       @include desktop
         border-bottom: 1px solid #e3e6e8
-        background-color: #2f555b
+        background-color: #52555c
         &:hover
           background-color: #719385
 
@@ -1022,6 +1024,9 @@
         width: 100%
         margin: auto
         padding: 0
+        @include desktop
+          background: none
+
 
       #website_background2
         display: flex
@@ -1212,6 +1217,12 @@
     display: flex
     flex-wrap: wrap
     justify-content: space-around
+    @include phone-landscape
+      display: none
+    @include tablet
+      display: none
+    @include desktop
+      display: none
 
   .box
     display: flex
@@ -1291,7 +1302,3 @@
     @include desktop
       background-repeat: no-repeat
       background-size: contain
-
-
-
-    

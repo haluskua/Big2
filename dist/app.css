@@ -114,7 +114,6 @@ h4, h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background: none;
   }
 }
 
@@ -337,7 +336,7 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   #bulgeword {
     margin: 0 auto;
-    color: #26061e;
+    color: #00a307;
     font-size: 1.8em;
     text-align: center;
     font-family: "Roboto";
@@ -364,7 +363,6 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #bulgeword {
     font-size: 2.32em;
-    font-weight: bold;
   }
 }
 
@@ -637,7 +635,7 @@ h4, h6 {
         -ms-flex-flow: row;
             flex-flow: row;
     background-image: none;
-    background-color: #fffef2;
+    background-color: #29172b;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -656,7 +654,7 @@ h4, h6 {
         -ms-flex-flow: row;
             flex-flow: row;
     background-image: none;
-    background-color: #5f4725;
+    background-color: #52555c;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -730,6 +728,7 @@ h4, h6 {
   .nav-folders {
     width: 24%;
     width-margin: 0;
+    margin-bottom: 4px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1181,7 +1180,7 @@ h4, h6 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #c3a038;
+    background-color: #eef1d5;
   }
 }
 
@@ -1583,9 +1582,8 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .opening_statement span, .opening_statement .par-title {
     margin-top: 18px;
-    font-size: 1.52em;
+    font-size: 1.49em;
     font-family: "Antic";
-    font-family: "Dancing Script";
     letter-spacing: 0.02em;
     color: #5f4725;
     font-weight: bolder;
@@ -1604,7 +1602,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .opening_statement span, .opening_statement .par-title {
-    font-size: 2em;
+    font-size: 1.35em;
   }
 }
 
@@ -1684,7 +1682,7 @@ h4, h6 {
     height: 41px;
     line-height: 52.2px;
     padding-left: 11%;
-    font-family: "Cabin Sketch", Garamond;
+    font-family: "Roboto";
     background-color: rgba(240, 224, 176, 0.56);
   }
 }
@@ -1698,7 +1696,10 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .skills-title {
     color: #2b2020;
-    font-size: 1.67em;
+    font-size: 1.4em;
+    padding: 0;
+    line-height: 46.2px;
+    padding-left: 6%;
   }
 }
 
@@ -2067,7 +2068,7 @@ h4, h6 {
     font-family: 'orbitron', '$font-stack-open-sans';
     background-color: #29172b !important;
     color: #faf6e6 !important;
-    font-size: 1.06em;
+    font-size: 0.97em;
     letter-spacing: 0.2em;
   }
 }
@@ -2149,7 +2150,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   div.panel {
-    background-color: rgba(195, 160, 56, 0.79);
+    background-color: #e9efa9;
     width: 21%;
     position: fixed;
     top: 50px;
@@ -2265,7 +2266,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #gd-folders li {
     border-bottom: 1px solid #e3e6e8;
-    background-color: #2f555b;
+    background-color: #52555c;
   }
   #gd-folders li:hover {
     background-color: #719385;
@@ -3023,6 +3024,15 @@ h4, h6 {
     margin: auto;
     padding: 0;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .blocks section div, .blocks .one div, .one section div, .one .one div {
+    background: none;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .blocks section #website_background2, .blocks .one #website_background2, .one section #website_background2, .one .one #website_background2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3340,6 +3350,27 @@ h4, h6 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+}
+
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  .outer-div {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .outer-div {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .outer-div {
+    display: none;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3490,27 +3521,19 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .webdev-title {
-    height: 51px;
+    height: 45px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     border-top: 0px;
-    padding-left: 46px;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    -ms-flex-wrap: wrap-reverse;
-        flex-wrap: wrap-reverse;
-    padding: 16px 20px 0px 5px;
-    background-color: #d1c9a7;
-    border-bottom: 1px solid #d8c6a6;
-    border-right: 1px solid #d8c6a6;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     border-radius: 4px;
     padding: 0;
   }
@@ -3543,7 +3566,7 @@ h4, h6 {
     padding: 4px 13px;
     letter-spacing: 0.08em;
     border: 1px solid #ffd84e;
-    background-color: #ffebcdcc;
+    background-color: #4CAF50;
     font-family: "Roboto";
   }
 }
@@ -3556,10 +3579,16 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #push-up {
-    color: #1a160d;
-    line-height: 0;
-    font-size: 1.45em;
-    padding-top: 25px;
+    color: white;
+    line-height: 2em;
+    font-size: 1.28em;
+    border: 0;
+    padding: 0;
+    margin: auto;
+    width: 180px;
+    width: 100vw;
+    text-align: center;
+    background-color: rgba(82, 85, 92, 0.69);
   }
 }
 
