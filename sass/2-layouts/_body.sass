@@ -148,18 +148,19 @@
     span, .par-title
       margin-top: 18px
       font-size: 1.49em
-      font-family: $font-stack-antic
+      font-family: $font-stack-Dancing-script
       letter-spacing: 0.02em
       color: #5f4725
       font-weight: bolder
       border-bottom: 1px dotted rgba(187, 166, 54, 0.37)
       line-height: 10px
-      margin: a
       @include phone-landscape
       @include tablet
+        font-family: $font-stack-antic
         font-size: 1.9em
         margin: auto
       @include desktop
+        font-family: $font-stack-antic
         font-size: 1.35em
 
     #pen-off
@@ -209,7 +210,7 @@
     padding-top: 12px
     margin: 0
     letter-spacing: 0.05em
-    color: #252121
+    color: #564d48
     text-align: center
     font-weight: bold
     font-size: 1.05em
@@ -232,7 +233,7 @@
   .ompa
     @include tablet
       justify-content: flex-start
-      color: #03A9F4
+      color: #4f4c49
 
   #grafix, #contact,
   .projects, .wagai-weh, #wagai, #main-gallery,
@@ -814,11 +815,11 @@
       padding-top: 33px
     @include desktop
       align-self: center
-      height: 68vh
+      height: 100%
       width: 90%
       flex-flow: column
       margin: 0
-      overflow: scroll
+      overflow: hidden
       flex-flow: row
       flex-wrap: wrap
 
@@ -1048,11 +1049,11 @@
           @include desktop
             width: 78%
         h4
-          color: #111111
+          color: #29343b
 
       h4
         align-self: center
-        font-size: 1.5em
+        font-size: 1.34em
         letter-spacing: 0
       a
         display: flex
@@ -1102,7 +1103,7 @@
       button
         width: auto
         height: auto
-        background-color: #f7f5f2
+        background-color: #52555c
         margin: auto
         justify-content: center
         border-radius: 6px
@@ -1136,7 +1137,7 @@
           @include desktop
             font-size: 1.01em
             line-height: 1.7em
-            color: gray
+            color: #faf8ce
 
   .readmore_text
     width: auto
@@ -1217,6 +1218,7 @@
     display: flex
     flex-wrap: wrap
     justify-content: space-around
+    margin-top: 24px
     @include phone-landscape
       display: none
     @include tablet

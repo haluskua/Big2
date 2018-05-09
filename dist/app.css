@@ -336,7 +336,7 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   #bulgeword {
     margin: 0 auto;
-    color: #00a307;
+    color: #8e705a;
     font-size: 1.8em;
     text-align: center;
     font-family: "Roboto";
@@ -363,6 +363,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #bulgeword {
     font-size: 2.32em;
+    color: #513d4c;
   }
 }
 
@@ -635,7 +636,6 @@ h4, h6 {
         -ms-flex-flow: row;
             flex-flow: row;
     background-image: none;
-    background-color: #29172b;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1583,18 +1583,18 @@ h4, h6 {
   .opening_statement span, .opening_statement .par-title {
     margin-top: 18px;
     font-size: 1.49em;
-    font-family: "Antic";
+    font-family: "Dancing Script";
     letter-spacing: 0.02em;
     color: #5f4725;
     font-weight: bolder;
     border-bottom: 1px dotted rgba(187, 166, 54, 0.37);
     line-height: 10px;
-    margin: a;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .opening_statement span, .opening_statement .par-title {
+    font-family: "Antic";
     font-size: 1.9em;
     margin: auto;
   }
@@ -1602,6 +1602,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .opening_statement span, .opening_statement .par-title {
+    font-family: "Antic";
     font-size: 1.35em;
   }
 }
@@ -1674,7 +1675,7 @@ h4, h6 {
     padding-top: 12px;
     margin: 0;
     letter-spacing: 0.05em;
-    color: #252121;
+    color: #564d48;
     text-align: center;
     font-weight: bold;
     font-size: 1.05em;
@@ -1708,7 +1709,7 @@ h4, h6 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    color: #03A9F4;
+    color: #4f4c49;
   }
 }
 
@@ -2634,14 +2635,14 @@ h4, h6 {
   .big-gallery {
     -ms-flex-item-align: center;
         align-self: center;
-    height: 68vh;
+    height: 100%;
     width: 90%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
     margin: 0;
-    overflow: scroll;
+    overflow: hidden;
     -ms-flex-flow: row;
         flex-flow: row;
     -ms-flex-wrap: wrap;
@@ -3074,12 +3075,12 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .blocks section #website_background2 h4, .blocks .one #website_background2 h4, .one section #website_background2 h4, .one .one #website_background2 h4 {
-    color: #111111;
+    color: #29343b;
   }
   .blocks section h4, .blocks .one h4, .one section h4, .one .one h4 {
     -ms-flex-item-align: center;
         align-self: center;
-    font-size: 1.5em;
+    font-size: 1.34em;
     letter-spacing: 0;
   }
   .blocks section a, .blocks .one a, .one section a, .one .one a {
@@ -3164,7 +3165,7 @@ h4, h6 {
   .blocks section button, .blocks .one button, .one section button, .one .one button {
     width: auto;
     height: auto;
-    background-color: #f7f5f2;
+    background-color: #52555c;
     margin: auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -3221,7 +3222,7 @@ h4, h6 {
   .blocks section button a, .blocks .one button a, .one section button a, .one .one button a {
     font-size: 1.01em;
     line-height: 1.7em;
-    color: gray;
+    color: #faf8ce;
   }
 }
 
@@ -3349,6 +3350,7 @@ h4, h6 {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    margin-top: 24px;
   }
 }
 
@@ -3558,29 +3560,29 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   #push-up {
     padding: 2px;
-    color: #352f1a;
-    line-height: 37px;
+    color: #ccc2a3;
+    line-height: 43px;
     padding-top: 12px;
     font-weight: bold;
     font-size: 1.02em;
-    padding: 4px 13px;
+    padding: 10px 13px;
     letter-spacing: 0.08em;
-    border: 1px solid #ffd84e;
-    background-color: #4CAF50;
+    border: 1px solid #7a7462;
+    background-color: #8e705a;
     font-family: "Roboto";
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #push-up {
-    font-size: 1.16em;
+    font-size: 1em;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #push-up {
-    color: white;
-    line-height: 2em;
+    color: #52555c;
+    line-height: 2.3em;
     font-size: 1.28em;
     border: 0;
     padding: 0;
@@ -3588,7 +3590,7 @@ h4, h6 {
     width: 180px;
     width: 100vw;
     text-align: center;
-    background-color: rgba(82, 85, 92, 0.69);
+    background-color: rgba(235, 237, 182, 0.76);
   }
 }
 
