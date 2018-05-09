@@ -3199,7 +3199,7 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .blocks section button a, .blocks .one button a, .one section button a, .one .one button a {
     font-family: "Antic";
-    color: #4d5656;
+    color: #faf8ce;
     text-align: justify;
     font-size: 1em;
     letter-spacing: 0.05em;
