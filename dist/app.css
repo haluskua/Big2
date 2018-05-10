@@ -2339,7 +2339,7 @@ h4, h6 {
     text-align: center;
     background-size: contain;
     background-position: center center;
-    background-color: rgba(1, 2, 5, 0.54);
+    background-color: rgba(1, 2, 5, 0.84);
     background-repeat: no-repeat;
     overflow: hidden;
     z-index: 999999;
@@ -3567,7 +3567,7 @@ h4, h6 {
     font-size: 1.02em;
     padding: 10px 13px;
     letter-spacing: 0.08em;
-    background-color: rgba(235, 237, 182, 0.76);
+    background-color: rgba(239, 229, 188, 0.76);
     font-family: "Roboto";
   }
 }
