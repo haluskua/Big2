@@ -1916,6 +1916,7 @@ h4, h6 {
     text-align: justify;
     color: #e0e4d2;
     text-align: center;
+    font-weight: lighter;
     padding: 21px;
     margin-bottom: 121px;
     line-height: 29px;
@@ -1932,6 +1933,8 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .contact-section #contact p {
+    font-size: 2.4em;
+    letter-spacing: 0.02em;
     margin-bottom: 0;
   }
 }
@@ -3370,6 +3373,31 @@ h4, h6 {
         -ms-flex-flow: column;
             flex-flow: column;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #quote {
+    font-size: 1.3em;
+    letter-spacing: 0.04em;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
+  #unkown {
+    font-family: "Roboto";
+    font-size: 0.77em;
+    font-weight: lighter;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #unkown {
+    margin-top: 10px;
+    font-size: 0.52em;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .outer-div {
     display: -webkit-box;
     display: -ms-flexbox;
