@@ -93,7 +93,7 @@
     color: black
     text-align: center
     font-weight: bold
-    font-size: 0.9em
+    font-size: 0.82em
     background-color: white
     justify-content: center
     letter-spacing: 0.05em
@@ -129,7 +129,7 @@
     color: #3c3937
     font-weight: normal
     font-family: $font-stack-open-sans
-    padding: 60px 20px 30px 26px
+    padding: 40px 20px 30px 26px
     @include phone-landscape
     @include tablet
       display: flex
@@ -164,12 +164,6 @@
         font-family: $font-stack-antic
         font-size: 1.35em
 
-    #pen-off
-      font-size: 0.95em
-      font-family: $font-stack-roboto
-      color: #755d33
-      font-weight: normal
-      padding-bottom: 10px
 
     .portrait
       max-width: 130px
@@ -254,13 +248,18 @@
     width: 100%
     margin: 0
     padding: 0
-
-      margin-bottom: 33px
     a
       display: flex
-      width: 100%
       justify-content: flex-start
       text-decoration: none
+
+  #external_link
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    text-decoration: none
+    margin-top: 0
 
   #content-holder
     width: 100vw
@@ -378,6 +377,16 @@
     justify-content: space-between
     list-style: none
 
+    #pen-off
+      margin-top: 20px
+      font-size: 0.95em
+      font-weight: bold
+      font-family: $font-stack-roboto
+      color: #968f3a
+      padding-bottom: 10px
+      letter-spacing: 0.02em
+      border-bottom: 1px solid #968f3a
+
   #address
     display: flex
     width: 61%
@@ -401,6 +410,12 @@
     @include tablet
       line-height: 33px
       font-size: 1.3em
+    @include desktop
+      font-size: 1.6em
+      line-height: 1.4em
+      letter-spacing: 0.04em
+      color: #968f3a
+      border-bottom: 1px solid #968f3a
 
   button.accordion
     cursor: pointer
@@ -1241,6 +1256,8 @@
     height: auto
     align-self: center
     margin: 4px
+    margin-top: 17px
+
 
   .inner-div1, .inner-div2, .inner-div3, .inner-div4,
   .inner-div5, .inner-div11, .inner-div12
@@ -1250,11 +1267,12 @@
     background-size: contain
     background-position: center
     background-repeat: no-repeat
+    text-decoration: none
     @include phone-landscape
     @include tablet
       background-repeat: no-repeat
       height: 36%
-      margin-bottom: -40px
+      margin-bottom: -10px
 
     @include desktop
       border: none

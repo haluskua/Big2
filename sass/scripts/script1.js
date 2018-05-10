@@ -88,7 +88,7 @@ $(document).ready(function(){
 
     var stickyNavTop = $('.nav-folders').offset().top;
     var headerHeight = 0;
-      $('.hamburger-menu, .logo-desc, .grafix').click(function(e) {
+      $('.hamburger-menu, .logo-desc, .grafix, .box').click(function(e) {
           var linkHref = $(this).attr('href');
           $('html, body').animate({
             scrollTop: $(linkHref).offset().top - headerHeight
@@ -100,7 +100,7 @@ $(document).ready(function(){
         if (jQuery(window).width() > 481) {
             var stickyNavTop = $('.nav-folders').offset().top;
             var headerHeight = 49;
-              $('.hamburger-menu, .logo-desc, #snaps').click(function(e) {
+              $('.hamburger-menu, .logo-desc, #snaps, .box').click(function(e) {
                   var linkHref = $(this).attr('href');
                   $('html, body').animate({
                     scrollTop: $(linkHref).offset().top - headerHeight
@@ -210,7 +210,7 @@ $(document).ready(function(){
             }
         }
 
-        // code of reamore_text Accordion
+        // code of readmore_text Accordion
         $(".set > a").on("click", function(){
           if($(this).hasClass('active')){
             $(this).removeClass("active");
@@ -271,82 +271,3 @@ $(document).ready(function(){
           });
         }
 });
-    // anime({
-    //   targets: '.inner-div4',
-    //   opacity: [
-    //       { value: 0, duration: 800, delay: 6000},
-    //       // {value: 1, duration: 2000, delay: 3000}
-    //   ],
-    //   loop: 4,
-    //   autoplay: true
-    // });
-    //
-    // anime({
-    //   targets: '.inner-div3',
-    //   opacity: [
-    //       { value: 0, duration: 800, delay: 8000},
-    //       // {value: 1, duration: 2000, delay: 3300}
-    //   ],
-    //   loop: 4,
-    //   autoplay: true
-    // });
-    //
-    // anime({
-    //   targets: '.inner-div2',
-    //   opacity: [
-    //       { value: 0, duration: 800, delay: 10000},
-    //       // {value: 1, duration: 2000, delay: 3600}
-    //   ],
-    //   loop: 4,
-    //   autoplay: true
-    // });
-    //
-    // anime({
-    //   targets: '.inner-div1',
-    //   opacity: [
-    //       { value: 0, duration: 800, delay: 12000},
-    //       // {value: 1, duration: 2000, delay: 3900}
-    //   ],
-    //   loop: 4,
-    //   autoplay: true
-    // });
-
-//////////////////////////////////////////////
-
-  // $(function() {
-  //
-  //     //settings for slider
-  //     var width = 720;
-  //     var animationSpeed = 5500;
-  //     var pause = 0;
-  //     var currentSlide = 1;
-  //
-  //     //cache DOM elements
-  //     var $slider = $('#slider');
-  //     var $slideContainer = $('.slides', $slider);
-  //     var $slides = $('.slide', $slider);
-  //
-  //     var interval;
-  //
-  //     function startSlider() {
-  //         interval = setInterval(function() {
-  //             $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
-  //                 if (++currentSlide === $slides.length) {
-  //                     currentSlide = 1;
-  //                     $slideContainer.css('margin-left', 0) ;
-  //                 }
-  //             });
-  //         }, pause);
-  //     }
-  //     function pauseSlider() {
-  //         clearInterval(interval);
-  //     }
-  //
-  //     $slideContainer
-  //         .on('mouseenter', pauseSlider)
-  //         .on('mouseleave', startSlider);
-  //
-  //     startSlider();
-  //
-  //
-  // });

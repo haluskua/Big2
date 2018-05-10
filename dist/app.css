@@ -1499,7 +1499,7 @@ h4, h6 {
     color: black;
     text-align: center;
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 0.82em;
     background-color: white;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1556,7 +1556,7 @@ h4, h6 {
     color: #3c3937;
     font-weight: normal;
     font-family: "Open Sans";
-    padding: 60px 20px 30px 26px;
+    padding: 40px 20px 30px 26px;
   }
 }
 
@@ -1613,13 +1613,6 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .opening_statement #pen-off {
-    font-size: 0.95em;
-    font-family: "Roboto";
-    color: #755d33;
-    font-weight: normal;
-    padding-bottom: 10px;
-  }
   .opening_statement .portrait {
     max-width: 130px;
     border: 1px solid gray;
@@ -1745,7 +1738,6 @@ h4, h6 {
     width: 100%;
     margin: 0;
     padding: 0;
-    padding-margin-bottom: 33px;
   }
   #grafix a, #contact a,
   .projects a, .wagai-weh a, #wagai a, #main-gallery a,
@@ -1754,11 +1746,27 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     text-decoration: none;
+  }
+  #external_link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    margin-top: 0;
   }
   #content-holder {
     width: 100vw;
@@ -1964,6 +1972,16 @@ h4, h6 {
             justify-content: space-between;
     list-style: none;
   }
+  #social-media #pen-off {
+    margin-top: 20px;
+    font-size: 0.95em;
+    font-weight: bold;
+    font-family: "Roboto";
+    color: #968f3a;
+    padding-bottom: 10px;
+    letter-spacing: 0.02em;
+    border-bottom: 1px solid #968f3a;
+  }
   #address {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2008,6 +2026,16 @@ h4, h6 {
   .myname {
     line-height: 33px;
     font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .myname {
+    font-size: 1.6em;
+    line-height: 1.4em;
+    letter-spacing: 0.04em;
+    color: #968f3a;
+    border-bottom: 1px solid #968f3a;
   }
 }
 
@@ -3389,6 +3417,7 @@ h4, h6 {
     -ms-flex-item-align: center;
         align-self: center;
     margin: 4px;
+    margin-top: 17px;
   }
   .inner-div1, .inner-div2, .inner-div3, .inner-div4,
   .inner-div5, .inner-div11, .inner-div12 {
@@ -3398,6 +3427,7 @@ h4, h6 {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    text-decoration: none;
   }
 }
 
@@ -3406,7 +3436,7 @@ h4, h6 {
   .inner-div5, .inner-div11, .inner-div12 {
     background-repeat: no-repeat;
     height: 36%;
-    margin-bottom: -40px;
+    margin-bottom: -10px;
   }
 }
 
