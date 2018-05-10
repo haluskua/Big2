@@ -19,7 +19,6 @@
         max-width: 100%
         overflow: hidden
         position: relative
-        margin-bottom: -12px
         flex-direction: column
         justify-content: flex-start
 
@@ -74,8 +73,10 @@
     display: flex !important
     flex-wrap: wrap
     @include phone-landscape
+
     @include tablet
       flex-wrap: wrap
+      justify-content: center
 
     @include desktop
       width: 100%
@@ -201,7 +202,14 @@
       font-family: $font-stack-open-sans
 
   .screen
+    width: 100vw
+    height: auto
     background-color:  rgba(187, 166, 54, 0.5)
+    background: url("../dist/pattern.jpg")
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+
   .skills-title
     display: flex
     justify-content: flex-start
@@ -246,9 +254,7 @@
     width: 100%
     margin: 0
     padding: 0
-    @include phone-landscape
-    @include tablet
-    @include desktop
+
       margin-bottom: 33px
     a
       display: flex
@@ -478,7 +484,7 @@
       display: none
       height: auto
       width: 59%
-      border: 1px solid #c19b1a
+      border: 1px solid #e9d8bc
       border-top: 0
       margin-bottom: 4px
       border-radius: 4px

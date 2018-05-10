@@ -1120,6 +1120,9 @@ h4, h6 {
     font-family: "Roboto";
     background-color: rgba(81, 28, 18, 0.439216);
   }
+  #nav {
+    border-top: 1.5px solid #f7eed3;
+  }
   .mobile-container {
     max-height: 100%;
     width: 100%;
@@ -1367,7 +1370,6 @@ h4, h6 {
     max-width: 100%;
     overflow: hidden;
     position: relative;
-    margin-bottom: -12px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1469,6 +1471,9 @@ h4, h6 {
   .columnsSplit {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1661,7 +1666,13 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .screen {
+    width: 100vw;
+    height: auto;
     background-color: rgba(187, 166, 54, 0.5);
+    background: url("../dist/pattern.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .skills-title {
     display: -webkit-box;
@@ -1734,19 +1745,8 @@ h4, h6 {
     width: 100%;
     margin: 0;
     padding: 0;
+    padding-margin-bottom: 33px;
   }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  #grafix, #contact,
-  .projects, .wagai-weh, #wagai, #main-gallery,
-  .main-gallery, #projects, #film-projects,
-  #gd-projects, #dm-projects, #t-projects, #about {
-    margin-bottom: 33px;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
   #grafix a, #contact a,
   .projects a, .wagai-weh a, #wagai a, #main-gallery a,
   .main-gallery a, #projects a, #film-projects a,
@@ -2124,7 +2124,7 @@ h4, h6 {
     display: none;
     height: auto;
     width: 59%;
-    border: 1px solid #c19b1a;
+    border: 1px solid #e9d8bc;
     border-top: 0;
     margin-bottom: 4px;
     border-radius: 4px;
@@ -3560,15 +3560,14 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   #push-up {
     padding: 2px;
-    color: #ccc2a3;
+    color: #39342c;
     line-height: 43px;
     padding-top: 12px;
     font-weight: bold;
     font-size: 1.02em;
     padding: 10px 13px;
     letter-spacing: 0.08em;
-    border: 1px solid #7a7462;
-    background-color: #8e705a;
+    background-color: rgba(235, 237, 182, 0.76);
     font-family: "Roboto";
   }
 }
@@ -3585,7 +3584,6 @@ h4, h6 {
     line-height: 2.3em;
     font-size: 1.28em;
     border: 0;
-    padding: 0;
     margin: auto;
     width: 180px;
     width: 100vw;
