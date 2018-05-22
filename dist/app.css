@@ -533,7 +533,7 @@ h4, h6 {
     height: 68px;
     width: 14vw;
     width-margin-top: 30px;
-    background-image: url("../dist/imgs/newlogo.png");
+    background-image: url("../dist/imgs/my-logo-black.jpg");
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -1173,7 +1173,7 @@ h4, h6 {
         -ms-flex-direction: column;
             flex-direction: column;
     top: 0;
-    height: 50px;
+    height: 55px;
     width: 100%;
     border: none;
     border-radius: 0;
@@ -1575,7 +1575,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .opening_statement {
-    width: 91%;
+    width: 75%;
     font-size: 1em;
     line-height: 1.7em;
     font-weight: 500;
@@ -2300,7 +2300,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #gd-folders li {
     border-bottom: 1px solid #e3e6e8;
-    background-color: #52555c;
+    background-color: #000000;
   }
   #gd-folders li:hover {
     background-color: #719385;
@@ -2463,7 +2463,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .fs-gal {
-    width: 89%;
+    width: 50%;
   }
 }
 
@@ -2498,15 +2498,14 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .img-split, .selfie {
-    width: 94%;
+    width: 56%;
     margin-top: 49px;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .img-split, .selfie {
-    width: 54%;
-    margin-top: 88px;
+    width: 45%;
   }
 }
 
@@ -2526,7 +2525,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .selfie {
-    width: 43% !important;
+    width: 45% !important;
   }
 }
 
@@ -3030,9 +3029,9 @@ h4, h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -3318,6 +3317,8 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 100%;
     padding: 8px;
     margin: -6px 0 11px 0px;
@@ -3327,22 +3328,29 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #project_title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 1px;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #project_title {
-    width: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 10px 0 33px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
     background-color: white;
-    margin: a;
+    margin: auto;
   }
 }
 
@@ -3483,19 +3491,19 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .inner-div1 {
-    background-image: url("../dist/imgs/slider1.png");
+    background-image: url("../dist/imgs/my-logo-black.jpg");
   }
   .inner-div2 {
-    background-image: url("../dist/imgs/slider2.png");
+    background-image: url("../dist/imgs/my-logo-black.jpg");
   }
   .inner-div3 {
-    background-image: url("../dist/imgs/slider3.png");
+    background-image: url("../dist/imgs/my-logo-black.jpg");
   }
   .inner-div4 {
-    background-image: url("../dist/imgs/slider4.png");
+    background-image: url("../dist/imgs/my-logo-black.jpg");
   }
   .inner-div5 {
-    background-image: url("../dist/imgs/slider5.png");
+    background-image: url("../dist/imgs/my-logo-black.jpg");
   }
   .inner-div11 {
     background-image: url("../dist/imgs/newlogo.png");
@@ -3640,15 +3648,18 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #push-up {
+    color: #f0f1c7;
     color: #52555c;
     line-height: 2.3em;
-    font-size: 1.28em;
+    letter-spacing: 0;
+    font-size: 1.1em;
+    font-weight: lighter;
     border: 0;
     margin: auto;
     width: 180px;
     width: 100vw;
     text-align: center;
-    background-color: rgba(235, 237, 182, 0.76);
+    background-color: #e9efa9;
   }
 }
 

@@ -139,7 +139,7 @@
       margin-right: 40px
       margin-bottom: 40px
     @include desktop
-      width: 91%
+      width: 75%
       font-size: 1em
       line-height: 1.7em
       font-weight: 500
@@ -588,7 +588,7 @@
         background-color: #fbfff0
       @include desktop
         border-bottom: 1px solid #e3e6e8
-        background-color: #52555c
+        background-color: #000000
         &:hover
           background-color: #719385
 
@@ -713,7 +713,7 @@
     float: left
     padding: 7px
     @include tablet
-      width: 89%
+      width: 50%
     @include desktop
       width: 66%
       margin: auto
@@ -728,16 +728,13 @@
     height: 20%
     width: 100%
     margin-top: 33px
-
     margin-bottom: 10px
     @include phone-landscape
     @include tablet
-      width: 94%
+      width: 56%
       margin-top: 49px
-
     @include desktop
-      width: 54%
-      margin-top: 88px
+      width: 45%
 
   .selfie
     height: 9%
@@ -746,7 +743,7 @@
     @include tablet
       width: 22% !important
     @include desktop
-      width: 43% !important
+      width: 45% !important
 
   // .img-split:hover
   //   @include desktop
@@ -1035,7 +1032,7 @@
         border-top: none
         display: flex
         flex-direction: column
-        align-items: flex-start
+        align-items: center
         justify-content: flex-start
         height: 100%
       div
@@ -1199,6 +1196,7 @@
 
   #project_title
     display: flex
+    flex-wrap: wrap
     width: 100%
     padding: 8px
     margin: -6px 0 11px 0px
@@ -1206,15 +1204,15 @@
     @include phone-landscape
 
     @include tablet
+      flex-direction: column
+      align-items: center
       margin-top: 1px
-
     @include desktop
-      width: 50%
-      display: flex
-      justify-content: center
-      margin: 10px 0 33px 0
+      flex-direction: column
+      align-items: center
+      width: 80%
       background-color: white
-      margin: a
+      margin: auto
 
     p
       @include phone-landscape
@@ -1295,19 +1293,19 @@
       width: 210px
       padding: 0 20px
   .inner-div1
-    background-image: url("../dist/imgs/slider1.png")
+    background-image: url("../dist/imgs/my-logo-black.jpg")
 
   .inner-div2
-    background-image: url("../dist/imgs/slider2.png")
+    background-image: url("../dist/imgs/my-logo-black.jpg")
 
   .inner-div3
-    background-image: url("../dist/imgs/slider3.png")
+    background-image: url("../dist/imgs/my-logo-black.jpg")
 
   .inner-div4
-    background-image: url("../dist/imgs/slider4.png")
+    background-image: url("../dist/imgs/my-logo-black.jpg")
 
   .inner-div5
-    background-image: url("../dist/imgs/slider5.png")
+    background-image: url("../dist/imgs/my-logo-black.jpg")
 
   .inner-div11
     background-image: url("../dist/imgs/newlogo.png")
