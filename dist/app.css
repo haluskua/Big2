@@ -654,7 +654,7 @@ h4, h6 {
         -ms-flex-flow: row;
             flex-flow: row;
     background-image: none;
-    background-color: #52555c;
+    background-color: #fcfeed;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -939,9 +939,9 @@ h4, h6 {
   .nav-archives {
     font-family: "Rajdhani", sans-serif;
     font-weight: bolder;
-    font-size: 1.24em;
+    font-size: 1em;
     letter-spacing: 0.07em;
-    color: #150d07;
+    color: #12191d;
   }
   .nav-archives:focus, .nav-archives:active, .nav-archives:hover, .nav-archivesvisited {
     text-align: center;
@@ -959,16 +959,16 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .nav-archives {
-    color: white;
+    color: #513d4c;
     text-align: center;
     z-index: 999;
-    z-index-font-size: 1.4em;
+    z-index-font-size: 1em;
     z-index-font-weight: bolder;
     z-index-padding-top: 9px;
   }
   .nav-archives:focus, .nav-archives:active, .nav-archives:hover, .nav-archivesvisited {
     text-align: center;
-    color: white;
+    color: gray;
   }
 }
 
