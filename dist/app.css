@@ -573,6 +573,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .logo-desc {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3648,18 +3649,21 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #push-up {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     color: #f0f1c7;
     color: #52555c;
-    line-height: 2.3em;
     letter-spacing: 0;
     font-size: 1.1em;
     font-weight: lighter;
+    text-transform: uppercase;
     border: 0;
     margin: auto;
     width: 180px;
     width: 100vw;
     text-align: center;
-    background-color: #e9efa9;
+    background-color: rgba(233, 239, 169, 0.62);
   }
 }
 
