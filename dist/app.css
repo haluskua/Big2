@@ -1703,9 +1703,9 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .skills-title {
     color: #2b2020;
-    font-size: 1.4em;
+    font-size: 1.1em;
     padding: 0;
-    line-height: 46.2px;
+    line-height: 44.2px;
     padding-left: 6%;
   }
 }
