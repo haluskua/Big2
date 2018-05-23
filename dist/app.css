@@ -3467,6 +3467,7 @@ h4, h6 {
     background-position: center;
     background-repeat: no-repeat;
     text-decoration: none;
+    background-size: cover;
   }
 }
 
@@ -3655,7 +3656,8 @@ h4, h6 {
     color: #f0f1c7;
     color: #52555c;
     letter-spacing: 0;
-    font-size: 1.1em;
+    font-family: "Cabin Sketch", Garamond;
+    font-size: 2.1em;
     font-weight: lighter;
     text-transform: uppercase;
     border: 0;
@@ -3663,6 +3665,9 @@ h4, h6 {
     width: 180px;
     width: 100vw;
     text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background-color: rgba(233, 239, 169, 0.62);
   }
 }
