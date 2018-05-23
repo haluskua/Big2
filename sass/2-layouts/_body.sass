@@ -196,13 +196,16 @@
       font-family: $font-stack-open-sans
 
   .screen
-    width: 100vw
-    height: auto
-    background-color:  rgba(187, 166, 54, 0.5)
-    background: url("../dist/pattern.jpg")
-    background-size: contain
-    background-repeat: no-repeat
-    background-position: center
+
+    @include desktop
+      width: 100%
+      height: auto
+      background-color:  rgba(187, 166, 54, 0.5)
+      background: url("../dist/imgs/pattern.jpg")
+      background-size: contain
+      background-repeat: repeat-x
+      background-position: center
+      z-index: 1
 
   .skills-title
     display: flex
@@ -248,6 +251,7 @@
     width: 100%
     margin: 0
     padding: 0
+
     a
       display: flex
       justify-content: flex-start
@@ -1292,6 +1296,7 @@
       height: 100px
       width: 210px
       padding: 0 20px
+      background-size: contain
   .inner-div1
     background-image: url("../dist/imgs/my-logo-black.jpg")
 
