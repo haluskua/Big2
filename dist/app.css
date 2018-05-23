@@ -2511,6 +2511,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .img-split, .selfie {
     width: 45%;
+    margin-top: 0;
   }
 }
 
@@ -2711,7 +2712,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .container, .talentpage {
     margin: auto;
-    padding-top: 33px;
+    padding-top: 33pxx;
     margin-top: 55px;
   }
 }
@@ -3356,6 +3357,7 @@ h4, h6 {
     width: 80%;
     background-color: white;
     margin: auto;
+    margin-top: 33px;
   }
 }
 
