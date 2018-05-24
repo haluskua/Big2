@@ -147,7 +147,7 @@
       padding: 60px 28px 30px 26px
 
     span, .par-title
-      margin-top: 18px
+      margin-top: 0px
       font-size: 1.49em
       font-family: $font-stack-Dancing-script
       letter-spacing: 0.02em
@@ -184,7 +184,7 @@
     @include desktop
       width: 56%
       text-align: justify
-      padding-top: 58px
+      padding-top: 0px
       margin-bottom: 33px
       font-size: 1em
       line-height: 1.7em
@@ -256,6 +256,16 @@
       display: flex
       justify-content: flex-start
       text-decoration: none
+
+  .wagai-weh
+    background-color: #fffefa
+    background: url("../dist/imgs/polygons.png")
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+    @include desktop
+      background-size: contain
+      background-repeat: repeat
 
   #external_link
     display: flex
@@ -749,6 +759,15 @@
     @include desktop
       width: 45% !important
 
+  .selfie2
+    margin-top: 30px
+    width: 38%
+    border-radius: 4.8px
+    border: 2px solid #adb4a0
+    @include desktop
+      margin-top: 0
+      width: 12%
+
   // .img-split:hover
   //   @include desktop
   //     width: 92%
@@ -1067,6 +1086,7 @@
         padding: 0
         @include desktop
           margin-top: 0
+          border: 8px solid rgb(247, 238, 211)
         img
           width: 100%
           height: auto
@@ -1257,6 +1277,10 @@
     flex-wrap: wrap
     justify-content: space-around
     margin-top: 24px
+    background: url('../dist/imgs/sky.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
     @include phone-landscape
       display: none
     @include tablet
