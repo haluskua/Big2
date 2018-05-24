@@ -326,7 +326,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #portfolio-header {
-    margin-top: 46px;
+    margin-top: 18px;
     margin-top-width: 100%;
     margin-top-justify-content: center;
   }
@@ -819,7 +819,7 @@ h4, h6 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 8px solid rgba(255, 255, 255, 0.82);
+    border: 6px solid #f7eed3;
     border-radius: 2px;
   }
 }
@@ -2518,6 +2518,7 @@ h4, h6 {
     width: 100%;
     margin-top: 33px;
     margin-bottom: 10px;
+    border: 6px solid #f7eed3;
   }
 }
 
@@ -2560,7 +2561,7 @@ h4, h6 {
     margin-top: 30px;
     width: 38%;
     border-radius: 4.8px;
-    border: 2px solid #adb4a0;
+    border: 6px solid #f7eed3;
   }
 }
 
@@ -3120,6 +3121,7 @@ h4, h6 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border: 6px solid #f7eed3;
     height: auto;
     width: 100%;
     margin: auto;
@@ -3465,6 +3467,7 @@ h4, h6 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    border: 6px solid #f7eed3;
   }
 }
 
@@ -3677,16 +3680,28 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #push-up {
-    padding: 2px;
     color: #39342c;
-    line-height: 43px;
+    line-height: 58px;
     padding-top: 12px;
     font-weight: bold;
     font-size: 1.02em;
     padding: 10px 13px;
     letter-spacing: 0.08em;
-    background-color: rgba(239, 229, 188, 0.76);
     font-family: "Roboto";
+    border: 6px solid #f7eed3;
+    margin: auto;
+    width: 180px;
+    width: 100vw;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: url("../dist/imgs/pattern.jpg");
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: center;
+    opacity: 0.5;
+    z-index: 99999;
   }
 }
 
@@ -3701,31 +3716,14 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #f0f1c7;
     color: #52555c;
     color: black;
     letter-spacing: 0;
-    font-family: "Antic";
-    font-size: 2.1em;
-    font-weight: normal;
+    border: 6px solid #f7eed3;
+    font-size: 1.75em;
+    font-weight: bold;
     text-transform: uppercase;
-    border: 0;
-    border-bottom: 5px solid gray;
-    margin: auto;
-    width: 180px;
-    width: 100vw;
-    text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-color: rgba(233, 239, 169, 0.62);
-    background-color: rgba(187, 166, 54, 0.5);
-    background: url("../dist/imgs/pattern.jpg");
     background-size: contain;
-    background-repeat: repeat-x;
-    background-position: center;
-    opacity: 0.5;
-    z-index: 99999;
   }
 }
 
