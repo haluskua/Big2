@@ -1565,7 +1565,7 @@ h4, h6 {
     text-align: justify;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    font-size: 0.98em;
+    font-size: 1.031em;
     line-height: 1.67em;
     color: #3c3937;
     font-weight: normal;
@@ -2236,7 +2236,7 @@ h4, h6 {
     margin: auto;
     margin-top: 10px;
     font-weight: 500;
-    font-size: 0.98em;
+    font-size: 1.031em;
     line-height: 1.67em;
     font-family: "Open Sans";
     color: #3c3937;
