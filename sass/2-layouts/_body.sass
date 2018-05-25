@@ -127,12 +127,14 @@
   .opening_statement
     text-align: justify
     flex-wrap: wrap
-    font-size: 1.031em
-    line-height: 1.67em
+    font-size: 0.99em
+    line-height: 1.45em
     color: #3c3937
+    color: #322221
     font-weight: normal
     font-family: $font-stack-open-sans
-    padding: 40px 20px 30px 26px
+    padding: 10px 20px 30px 20px
+    margin-bottom: 25px
     @include phone-landscape
     @include tablet
       display: flex
@@ -151,13 +153,12 @@
 
     span, .par-title
       margin-top: 0px
-      font-size: 1.49em
+      font-size: 1.35em
       font-family: $font-stack-Dancing-script
-      letter-spacing: 0.02em
       color: #5f4725
-      font-weight: bolder
       border-bottom: 1px dotted rgba(187, 166, 54, 0.37)
-      line-height: 10px
+      line-height: 36px
+      margin-top: 10px
       @include phone-landscape
       @include tablet
         font-family: $font-stack-antic
@@ -253,9 +254,12 @@
     flex-direction: column
     justify-content: space-between
     align-items: center
-    width: 100%
+    width: auto
     margin: 0
     padding: 0
+    border: 1.5px solid rgb(247, 238, 211)
+    border-top: 1px dotted rgb(247, 238, 211)
+    border-bottom: 0
 
     a
       display: flex
@@ -547,17 +551,15 @@
     margin: auto
     margin-top: 10px
     font-weight: 500
-    font-size: 1.031em
-    line-height: 1.67em
+    font-size: 0.99em
+    line-height: 1.43em
     font-family: $font-stack-open-sans
-    color: #3c3937
+    color: #322221
     text-align: center
-    padding: 0
-    padding-left: 26px
-    padding-right: 20px
-    text-align: justify
+    padding: 10px 20px 30px 20px
     margin-top: -3px
     margin-bottom: 33px
+    text-align: justify
     @include phone-landscape
     @include tablet
       font-size: 1.04em
@@ -746,8 +748,9 @@
   .img-split, .selfie
     height: 20%
     width: 97%
-    margin-top: 33px
-    margin-bottom: 10px
+    margin-top: 0px
+    margin-bottom: 6px
+    margin-top: -34px
     border: 6px solid rgb(247, 238, 211)
     @include phone-landscape
     @include tablet
@@ -880,8 +883,8 @@
     flex-wrap: wrap
     align-items: center
     overflow-y: scroll
-    padding-bottom: 33px
-    margin-top: 16px
+    margin-top: 42px
+    // margin-bottom: -49px
     border: 1px solid #e6dee2
     background-color: #f7efd66e
     // background-color: red
@@ -889,7 +892,7 @@
     @include phone-landscape
     @include tablet
       margin: auto
-      padding-top: 33pxx
+      padding-top: 33px
       margin-top: 55px
     @include desktop
       align-self: center
@@ -1010,17 +1013,18 @@
       width: 100%
       align-self: flex-start
     h2
-      color: #111111
+      color: #a85d52
       align-self: flex-start
-      font-weight: normal
-      font-size: 1.3em
+      font-size: 1.18em
+      letter-spacing: 0.04em
       display: flex
       padding: 11px
       margin-bottom: -26px
-      margin-top: -39px
+      margin-top: -16px
       width: 55%
-      margin-left: -18px
+      font-weight: bold
       padding-left: 23px
+      font-family: $font-stack-roboto
       border-bottom: 1px dotted rgba(187, 166, 54, 0.97)
       @include phone-landscape
       @include tablet
@@ -1088,9 +1092,9 @@
         background-size: cover
         background-position: center
         background-repeat: no-repeat
-        border: 6px solid rgb(247, 238, 211)
+        border: 6px 3px 6px 3px solid rgb(247, 238, 211)
         height: auto
-        width: 98%
+        width: auto
         margin: auto
         padding: 0
         // margin-left: -6px
@@ -1233,7 +1237,7 @@
     flex-wrap: wrap
     width: 100%
     padding: 8px
-    margin: -6px 0 11px 0px
+    margin: -6px 0 60px 0px
     background-color: rgba(202, 218, 215, 0.22)
     @include phone-landscape
 
