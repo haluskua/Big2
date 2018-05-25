@@ -82,9 +82,9 @@ h4, h6 {
     overflow: hidden;
     width: 100vw;
     background-size: cover;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: #253144;
     background: url("../dist/imgs/1920.png") top no-repeat;
     background-size: cover;
@@ -148,6 +148,12 @@ h4, h6 {
     height: 84%;
     margin: auto;
     padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .Colsplit-between {
+    height: 80%;
   }
 }
 
@@ -338,6 +344,7 @@ h4, h6 {
     color: #8e705a;
     font-size: 1.8em;
     text-align: center;
+    margin-top: -40px;
     font-family: "Roboto";
   }
 }
@@ -446,11 +453,11 @@ h4, h6 {
         -ms-flex-pack: center;
             justify-content: center;
     font-size: 1.02em;
-    color: #565047;
+    color: #000;
     font-weight: bold;
     margin-top: 2px;
     color: #5f4725;
-    font-weight: bolder;
+    font-weight: normal;
   }
 }
 
@@ -1510,6 +1517,8 @@ h4, h6 {
             justify-content: center;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    background-color: #f5f5dc;
+    border-radius: 3px;
     font-family: "Cabin Sketch", Garamond;
   }
 }
@@ -1682,7 +1691,7 @@ h4, h6 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    width: 100%;
+    width: 85%;
     padding: 17px;
     padding-top: 12px;
     margin: 0;
@@ -1703,6 +1712,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .skills-title {
     font-size: 1.66em;
+    width: 87%;
   }
 }
 
@@ -1713,6 +1723,7 @@ h4, h6 {
     padding: 0;
     line-height: 44.2px;
     padding-left: 6%;
+    width: 94%;
   }
 }
 
@@ -2479,10 +2490,11 @@ h4, h6 {
     font-family: "Rajdhani", sans-serif;
   }
   .fs-gal {
-    width: 100%;
+    width: 98%;
     height: auto;
     float: left;
     padding: 7px;
+    border: 6px solid #f7eed3;
   }
 }
 
@@ -2515,7 +2527,7 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .img-split, .selfie {
     height: 20%;
-    width: 100%;
+    width: 97%;
     margin-top: 33px;
     margin-bottom: 10px;
     border: 6px solid #f7eed3;
@@ -3096,19 +3108,11 @@ h4, h6 {
     background-position: center;
     background-repeat: no-repeat;
     height: auto;
-    width: 100%;
+    width: 95%;
     margin: auto;
     padding: 0;
+    border: 5px solid #f5f5dc;
   }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .blocks section div, .blocks .one div, .one section div, .one .one div {
-    background: none;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
   .blocks section #website_background2, .blocks .one #website_background2, .one section #website_background2, .one .one #website_background2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3123,7 +3127,7 @@ h4, h6 {
     background-repeat: no-repeat;
     border: 6px solid #f7eed3;
     height: auto;
-    width: 100%;
+    width: 98%;
     margin: auto;
     padding: 0;
   }
@@ -3138,7 +3142,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .blocks section #website_background2 img, .blocks .one #website_background2 img, .one section #website_background2 img, .one .one #website_background2 img {
-    width: 100%;
+    width: 92%;
     height: auto;
     margin: auto;
   }
@@ -3565,8 +3569,6 @@ h4, h6 {
     height: 94%;
     width: 100%;
     border: none;
-    margin-top: -27px;
-    margin-bottom: -24px;
   }
 }
 
@@ -3680,7 +3682,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #push-up {
-    color: #39342c;
+    color: #140c06;
     line-height: 58px;
     padding-top: 12px;
     font-weight: bold;
