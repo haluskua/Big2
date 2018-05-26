@@ -1571,7 +1571,7 @@ h4, h6 {
     color: #322221;
     font-weight: normal;
     font-family: "Open Sans";
-    padding: 10px 20px 30px 20px;
+    padding: 10px 16px 30px 16px;
     margin-bottom: 25px;
   }
 }
@@ -1669,6 +1669,23 @@ h4, h6 {
     color: #3c3937;
     font-weight: normal;
     font-family: "Open Sans";
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
+  .screen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100vw;
+    height: auto;
+    background: url("../dist/imgs/pattern.jpg");
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: center;
   }
 }
 
@@ -2245,7 +2262,7 @@ h4, h6 {
     font-family: "Open Sans";
     color: #322221;
     text-align: center;
-    padding: 10px 20px 30px 20px;
+    padding: 10px 16px 30px 16px;
     margin-top: -3px;
     margin-bottom: 33px;
     text-align: justify;
@@ -3686,8 +3703,8 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #push-up {
-    color: #140c06;
-    line-height: 58px;
+    color: #fdf8da;
+    line-height: 19px;
     padding-top: 12px;
     font-weight: bold;
     font-size: 1.02em;
@@ -3698,15 +3715,12 @@ h4, h6 {
     margin: auto;
     width: 180px;
     width: 100vw;
+    background-color: #967863;
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background: url("../dist/imgs/pattern.jpg");
-    background-size: cover;
-    background-repeat: repeat-x;
-    background-position: center;
-    opacity: 0.5;
+    opacity: 0.72;
     z-index: 99999;
   }
 }

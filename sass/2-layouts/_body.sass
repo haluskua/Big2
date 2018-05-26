@@ -133,7 +133,7 @@
     color: #322221
     font-weight: normal
     font-family: $font-stack-open-sans
-    padding: 10px 20px 30px 20px
+    padding: 10px 16px 30px 16px
     margin-bottom: 25px
     @include phone-landscape
     @include tablet
@@ -200,6 +200,15 @@
       font-family: $font-stack-open-sans
 
   .screen
+    display: flex
+    justify-content: center
+    width: 100vw
+    height: auto
+    background: url("../dist/imgs/pattern.jpg")
+    background-size: cover
+    background-repeat: repeat-x
+    background-position: center
+
 
     @include desktop
       width: 100%
@@ -556,7 +565,7 @@
     font-family: $font-stack-open-sans
     color: #322221
     text-align: center
-    padding: 10px 20px 30px 20px
+    padding: 10px 16px 30px 16px
     margin-top: -3px
     margin-bottom: 33px
     text-align: justify
