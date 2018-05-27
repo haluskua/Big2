@@ -1565,12 +1565,12 @@ h4, h6 {
     text-align: justify;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    font-size: 0.98em;
+    font-size: 1em;
     line-height: 1.55em;
     color: #3c3937;
     color: #322221;
     font-weight: normal;
-    font-family: "Open Sans";
+    font-family: Helvetica, Arial, sans-serif;
     padding: 10px 16px 30px 16px;
     margin-bottom: 25px;
   }
@@ -1641,7 +1641,8 @@ h4, h6 {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    font-family: "Open Sans";
+    font-size: 1em;
+    font-family: Helvetica, Arial, sans-serif;
   }
 }
 
@@ -2257,9 +2258,9 @@ h4, h6 {
     margin: auto;
     margin-top: 10px;
     font-weight: 500;
-    font-size: 0.98em;
+    font-size: 1em;
     line-height: 1.55em;
-    font-family: "Open Sans";
+    font-family: Helvetica, Arial, sans-serif;
     color: #322221;
     text-align: center;
     padding: 10px 16px 30px 16px;
