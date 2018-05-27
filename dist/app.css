@@ -1565,7 +1565,7 @@ h4, h6 {
     text-align: justify;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    font-size: 0.99em;
+    font-size: 0.98em;
     line-height: 1.55em;
     color: #3c3937;
     color: #322221;
@@ -2257,7 +2257,7 @@ h4, h6 {
     margin: auto;
     margin-top: 10px;
     font-weight: 500;
-    font-size: 0.99em;
+    font-size: 0.98em;
     line-height: 1.55em;
     font-family: "Open Sans";
     color: #322221;
@@ -3010,7 +3010,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .small-intro h2 {
-    color: #a85d52;
+    color: #ab7e67;
     -ms-flex-item-align: start;
         align-self: flex-start;
     font-size: 1.18em;
