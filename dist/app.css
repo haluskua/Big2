@@ -1566,7 +1566,7 @@ h4, h6 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     font-size: 1em;
-    line-height: 1.55em;
+    line-height: 1.53em;
     color: #3c3937;
     color: #322221;
     font-weight: normal;
@@ -1642,6 +1642,7 @@ h4, h6 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     font-size: 1em;
+    line-height: 1.53em;
     font-family: Helvetica, Arial, sans-serif;
   }
 }
@@ -2259,7 +2260,7 @@ h4, h6 {
     margin-top: 10px;
     font-weight: normal;
     font-size: 1em;
-    line-height: 1.55em;
+    line-height: 1.53em;
     font-family: Helvetica, Arial, sans-serif;
     color: #322221;
     text-align: center;
