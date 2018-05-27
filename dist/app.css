@@ -620,7 +620,6 @@ h4, h6 {
     background-position: center;
     background-repeat: no-repeat;
     height: 100%;
-    background: white;
     display: flex;
     flex-wrap: wrap;
     -ms-flex-pack: distribute;
