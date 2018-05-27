@@ -2257,7 +2257,7 @@ h4, h6 {
     display: none;
     margin: auto;
     margin-top: 10px;
-    font-weight: 500;
+    font-weight: normal;
     font-size: 1em;
     line-height: 1.55em;
     font-family: Helvetica, Arial, sans-serif;
