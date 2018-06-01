@@ -3011,7 +3011,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .small-intro h2 {
-    color: #ab7e67;
+    color: #6d6457;
     -ms-flex-item-align: start;
         align-self: flex-start;
     font-size: 1.18em;
@@ -3026,7 +3026,7 @@ h4, h6 {
     font-weight: bold;
     padding-left: 23px;
     font-family: "Roboto";
-    border-bottom: 1px dotted rgba(187, 166, 54, 0.97);
+    border-bottom: 1px dotted rgba(167, 151, 95, 0.97);
   }
 }
 
@@ -3039,9 +3039,11 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .small-intro h2 {
+    padding-left: 0;
     width: 19%;
-    color: #4c340e;
-    font-size: 1.55em;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    font-size: 1.5em;
   }
 }
 
@@ -3738,13 +3740,15 @@ h4, h6 {
     display: -ms-flexbox;
     display: flex;
     color: #52555c;
-    color: black;
+    color: #f7eed3;
     letter-spacing: 0;
     border: 6px solid #f7eed3;
-    font-size: 1.75em;
+    line-height: 0.6em;
+    font-size: 2.5em;
     font-weight: bold;
     text-transform: uppercase;
     background-size: contain;
+    font-family: "Cabin Sketch", Garamond;
   }
 }
 
