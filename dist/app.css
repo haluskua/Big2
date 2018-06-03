@@ -341,7 +341,7 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   #bulgeword {
     margin: 0 auto;
-    color: #8e705a;
+    color: #050200;
     font-size: 1.755em;
     text-align: center;
     margin-bottom: 20px;
@@ -375,7 +375,10 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  #bulgeword .ohk-logo {
+  #portfolio-color {
+    color: #ab3e2b;
+  }
+  #portfolio-color .ohk-logo {
     width: 33%;
     margin: auto;
     border: 1px solid;
@@ -415,10 +418,11 @@ h4, h6 {
   .intro, .nameohk {
     margin: auto;
     margin-top: 9px;
-    color: #6b6459;
+    color: #332f27;
     font-size: 0.99em;
     position: relative;
     text-align: justify;
+    letter-spacing: 0;
     font-family: "Open Sans";
   }
 }
@@ -1719,7 +1723,7 @@ h4, h6 {
     color: #564d48;
     text-align: center;
     font-weight: bold;
-    font-size: 1.05em;
+    font-size: 1.18em;
     text-transform: uppercase;
     height: 41px;
     line-height: 52.2px;
@@ -3135,7 +3139,7 @@ h4, h6 {
     width: 95%;
     margin: auto;
     padding: 0;
-    border: 5px solid #f5f5dc;
+    border: 3.5px solid #f5f5dc;
   }
   .blocks section #website_background2, .blocks .one #website_background2, .one section #website_background2, .one .one #website_background2 {
     display: -webkit-box;
@@ -3710,7 +3714,7 @@ h4, h6 {
     line-height: 19px;
     padding-top: 12px;
     font-weight: bold;
-    font-size: 1.02em;
+    font-size: 1.32em;
     padding: 10px 13px;
     letter-spacing: 0.08em;
     font-family: "Roboto";
