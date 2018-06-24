@@ -1621,6 +1621,7 @@ h4, h6 {
     border-bottom: 1px dotted rgba(187, 166, 54, 0.37);
     line-height: 36px;
     margin-top: 10px;
+    line-height: 2.3em;
   }
 }
 
@@ -1729,9 +1730,7 @@ h4, h6 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    width: 85%;
-    padding: 17px;
-    padding-top: 12px;
+    width: 100%;
     margin: 0;
     letter-spacing: 0.05em;
     color: #564d48;
@@ -1740,8 +1739,8 @@ h4, h6 {
     font-size: 1.18em;
     text-transform: normal;
     height: 41px;
-    line-height: 52.2px;
-    padding-left: 11%;
+    line-height: 45.2px;
+    padding-left: 7%;
     font-family: "Rajdhani", sans-serif;
     background-color: rgba(240, 224, 176, 0.56);
   }
@@ -1801,6 +1800,18 @@ h4, h6 {
     border-top: 1px dotted #f7eed3;
     border-bottom: 0;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #grafix, #contact,
+  .projects, .wagai-weh, #wagai, #main-gallery,
+  .main-gallery, #projects, #film-projects,
+  #gd-projects, #dm-projects, #t-projects, #about {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   #grafix a, #contact a,
   .projects a, .wagai-weh a, #wagai a, #main-gallery a,
   .main-gallery a, #projects a, #film-projects a,
@@ -1812,7 +1823,6 @@ h4, h6 {
         -ms-flex-pack: start;
             justify-content: flex-start;
     text-decoration: none;
-    width: 100%;
   }
   .wagai-weh {
     background-color: #fffefa;
@@ -2612,7 +2622,7 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .selfie2 {
     margin-top: 30px;
-    width: 38%;
+    width: 26%;
     border-radius: 4.8px;
     border: 6px solid #f7eed3;
   }
@@ -2965,10 +2975,11 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: -10px;
   }
   #skills-descClose, #gd-descClose, #dm-descClose, #t-descClose {
     display: none;
-    margin-top: 20px;
+    margin-top: -13px;
     background-color: rgba(202, 218, 215, 0.22);
   }
 }
@@ -3143,10 +3154,7 @@ h4, h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background: url("../dist/imgs/pattern.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: none;
     height: auto;
     width: 95%;
     margin: auto;
@@ -3295,9 +3303,9 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .blocks section button, .blocks .one button, .one section button, .one .one button {
-    width: auto;
+    width: 62%;
     height: auto;
-    background-color: #564d48;
+    background-color: white;
     margin: auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -3335,7 +3343,7 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .blocks section button a, .blocks .one button a, .one section button a, .one .one button a {
     font-family: "Antic";
-    color: #faf8ce;
+    color: #523724;
     text-align: justify;
     font-size: 1em;
     letter-spacing: 0.05em;
@@ -3519,9 +3527,9 @@ h4, h6 {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding: 11px;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin-top: 24px;
     background: url("../dist/imgs/sky.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -3569,8 +3577,8 @@ h4, h6 {
   }
   .inner-div1, .inner-div2, .inner-div3, .inner-div4,
   .inner-div5, .inner-div11, .inner-div12 {
-    height: 28%;
-    width: 138px;
+    height: 30%;
+    width: 100px;
     border: 1px dotted rgba(160, 168, 175, 0.42);
     background-size: contain;
     background-position: center;
@@ -3749,7 +3757,7 @@ h4, h6 {
     margin: auto;
     width: 180px;
     width: 100vw;
-    background-color: #967863;
+    background-color: #422d1e;
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;

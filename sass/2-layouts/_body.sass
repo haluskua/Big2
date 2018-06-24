@@ -168,6 +168,7 @@
       border-bottom: 1px dotted rgba(187, 166, 54, 0.37)
       line-height: 36px
       margin-top: 10px
+      line-height: 2.3em
       @include phone-landscape
       @include tablet
         font-family: $font-stack-antic
@@ -233,9 +234,7 @@
   .skills-title
     display: flex
     justify-content: flex-start
-    width: 85%
-    padding: 17px
-    padding-top: 12px
+    width: 100%
     margin: 0
     letter-spacing: 0.05em
     color: #564d48
@@ -244,8 +243,8 @@
     font-size: 1.18em
     text-transform: normal
     height: 41px
-    line-height: 52.2px
-    padding-left: 11%
+    line-height: 45.2px
+    padding-left: 7%
     font-family: $font-stack-rajdhani
     background-color: rgba(240, 224, 176, 0.56)
     @include phone-landscape
@@ -282,12 +281,12 @@
     border-top: 1px dotted rgb(247, 238, 211)
     border-bottom: 0
     @include desktop
+      width: 100%
 
     a
       display: flex
       justify-content: flex-start
       text-decoration: none
-      width: 100%
 
   .wagai-weh
     background-color: #fffefa
@@ -796,7 +795,7 @@
 
   .selfie2
     margin-top: 30px
-    width: 38%
+    width: 26%
     border-radius: 4.8px
     border: 6px solid rgb(247, 238, 211)
     @include desktop
@@ -1003,11 +1002,12 @@
 
   #skills-descOpen, #gd-descOpen, #dm-descOpen, #t-descOpen
     display: flex
+    margin-top: -10px
 
   #skills-descClose, #gd-descClose, #dm-descClose, #t-descClose
     display: none
     // width: 42%
-    margin-top: 20px
+    margin-top: -13px
     background-color: rgba(202, 218, 215, 0.22)
     @include phone-landscape
     @include tablet
@@ -1103,10 +1103,7 @@
       div
         display: flex
         flex-direction: column
-        background: url("../dist/imgs/pattern.jpg")
-        background-size: cover
-        background-position: center
-        background-repeat: no-repeat
+        background: none
         height: auto
         width: 95%
         margin: auto
@@ -1192,9 +1189,9 @@
           margin-bottom: 0
 
       button
-        width: auto
+        width: 62%
         height: auto
-        background-color: #564d48
+        background-color: white
         margin: auto
         justify-content: center
         border-radius: 6px
@@ -1215,7 +1212,7 @@
           background-color: white
         a
           font-family: $font-stack-antic
-          color: #faf8ce
+          color: #523724
           text-align: justify
           font-size: 1em
           letter-spacing: 0.05em
@@ -1322,8 +1319,8 @@
   .outer-div
     display: flex
     flex-wrap: wrap
+    padding: 11px
     justify-content: space-around
-    margin-top: 24px
     background: url('../dist/imgs/sky.jpg')
     background-size: cover
     background-repeat: no-repeat
@@ -1350,8 +1347,8 @@
 
   .inner-div1, .inner-div2, .inner-div3, .inner-div4,
   .inner-div5, .inner-div11, .inner-div12
-    height: 28%
-    width: 138px
+    height: 30%
+    width: 100px
     border: 1px dotted rgba(160, 168, 175, 0.42)
     background-size: contain
     background-position: center
