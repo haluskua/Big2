@@ -154,7 +154,7 @@
       width: 75%
       font-size: 0.85em
       line-height: 1.9em
-      font-weight: 500
+      // font-size: 1em
       color: #4c4947
       padding: 60px 50px 30px 6px
       display: flex
@@ -381,7 +381,7 @@
     background-position: center
     background-image: url('../dist/imgs/cone.jpg')
     @include desktop
-      background-position: bottom
+      background: none
       height: 100vh
       margin: 0 auto
 
@@ -410,6 +410,7 @@
           font-size: 2.4em
           letter-spacing: 0.02em
           margin-bottom: 0
+          color: #2b2320
 
   .sm-container
     display: flex
@@ -425,6 +426,8 @@
     width: 65%
     justify-content: space-between
     list-style: none
+    @include desktop
+      width: 52%
 
     #pen-off
       margin-top: 20px
@@ -460,11 +463,10 @@
       line-height: 33px
       font-size: 1.3em
     @include desktop
-      font-size: 1.6em
-      line-height: 1.4em
+      font-size: 1.2em
+      line-height: 1.3em
       letter-spacing: 0.04em
-      color: #968f3a
-      border-bottom: 1px solid #968f3a
+      color: #2b2320
 
   button.accordion
     cursor: pointer
@@ -564,8 +566,7 @@
         border: none
       @include desktop
         background-color: #e9efa9
-        width: 21%
-        position: fixed
+        width: 90%
         top: 50px
         left: 284px
         border: 1px solid #b4c883
@@ -791,7 +792,7 @@
     @include tablet
       width: 22% !important
     @include desktop
-      width: 45% !important
+      width: 26% !important
 
   .selfie2
     margin-top: 30px
@@ -923,6 +924,7 @@
       margin: 0
       overflow: hidden
       flex-wrap: wrap
+      margin-top: 80px
       margin-bottom: 50px
       padding-bottom: 40px
   .talentpage
@@ -1279,7 +1281,7 @@
       flex-direction: column
       align-items: center
       width: 80%
-      background-color: white
+      background-color: rgba(255, 255, 255, 0)
       margin: auto
       margin-top: 33px
 

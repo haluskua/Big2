@@ -1601,7 +1601,6 @@ h4, h6 {
     width: 75%;
     font-size: 0.85em;
     line-height: 1.9em;
-    font-weight: 500;
     color: #4c4947;
     padding: 60px 50px 30px 6px;
     display: -webkit-box;
@@ -1978,7 +1977,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .contact-section {
-    background-position: bottom;
+    background: none;
     height: 100vh;
     margin: 0 auto;
   }
@@ -2023,6 +2022,7 @@ h4, h6 {
     font-size: 2.4em;
     letter-spacing: 0.02em;
     margin-bottom: 0;
+    color: #2b2320;
   }
 }
 
@@ -2062,6 +2062,15 @@ h4, h6 {
             justify-content: space-between;
     list-style: none;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #social-media {
+    width: 52%;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   #social-media #pen-off {
     margin-top: 20px;
     font-size: 0.95em;
@@ -2121,11 +2130,10 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .myname {
-    font-size: 1.6em;
-    line-height: 1.4em;
+    font-size: 1.2em;
+    line-height: 1.3em;
     letter-spacing: 0.04em;
-    color: #968f3a;
-    border-bottom: 1px solid #968f3a;
+    color: #2b2320;
   }
 }
 
@@ -2272,8 +2280,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   div.panel {
     background-color: #e9efa9;
-    width: 21%;
-    position: fixed;
+    width: 90%;
     top: 50px;
     left: 284px;
     border: 1px solid #b4c883;
@@ -2615,7 +2622,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .selfie {
-    width: 45% !important;
+    width: 26% !important;
   }
 }
 
@@ -2829,6 +2836,7 @@ h4, h6 {
     overflow: hidden;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-top: 80px;
     margin-bottom: 50px;
     padding-bottom: 40px;
   }
@@ -3461,7 +3469,7 @@ h4, h6 {
         -ms-flex-align: center;
             align-items: center;
     width: 80%;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     margin: auto;
     margin-top: 33px;
   }
@@ -3755,7 +3763,6 @@ h4, h6 {
     font-family: "Roboto";
     border: 6px solid #f7eed3;
     margin: auto;
-    width: 180px;
     width: 100vw;
     background-color: #422d1e;
     text-align: center;
@@ -3783,12 +3790,14 @@ h4, h6 {
     border: 2px solid #f7eed3;
     border-radius: 0 0 30px 30px;
     background-color: rgba(229, 172, 97, 0);
+    background-color: #e9efa9;
     line-height: 0.6em;
     font-size: 1.3em;
     letter-spacing: 0.03em;
     font-weight: bold;
     text-transform: uppercase;
     background-size: contain;
+    opacity: 1;
   }
 }
 

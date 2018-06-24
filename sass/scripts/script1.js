@@ -71,7 +71,6 @@ $(document).ready(function(){
     }
 
 
-
   $(window).scroll(function() {
     var scrollTop = $(window).scrollTop();
     /*changing between classes */
@@ -99,7 +98,7 @@ $(document).ready(function(){
 // targeting tablet view because of menu top height change from mobile view
         if (jQuery(window).width() > 481) {
             var stickyNavTop = $('.nav-folders').offset().top;
-            var headerHeight = 49;
+            var headerHeight = 6;
               $('.hamburger-menu, .logo-desc, #snaps, .box').click(function(e) {
                   var linkHref = $(this).attr('href');
                   $('html, body').animate({
