@@ -86,7 +86,7 @@ h4, h6 {
         -ms-flex-align: start;
             align-items: flex-start;
     background-color: #253144;
-    background: url("../dist/imgs/1920.png") top no-repeat;
+    background: url("../dist/imgs/ohk_pattern.png") top no-repeat;
     background-size: cover;
   }
 }
@@ -474,6 +474,14 @@ h4, h6 {
   }
 }
 
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .nameohk {
+    font-size: 1.4em;
+    color: black;
+    font-weight: bolder;
+  }
+}
+
 @media (min-width: 1em), screen and (orientation: portrait) {
   #my-name {
     height: 42%;
@@ -826,11 +834,6 @@ h4, h6 {
     display: flex;
     height: 168px;
     margin-top: 30px;
-    background: url("../dist/imgs/sky.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 6px solid #f7eed3;
     border-radius: 2px;
   }
 }
