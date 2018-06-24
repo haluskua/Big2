@@ -1710,7 +1710,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .screen {
-    width: 74%;
+    width: 50%;
     margin: auto;
     height: auto;
     background-color: rgba(187, 166, 54, 0.5);
