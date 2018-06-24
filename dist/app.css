@@ -1599,8 +1599,6 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .opening_statement {
     width: 75%;
-    font-size: 0.85em;
-    line-height: 1.9em;
     color: #4c4947;
     padding: 60px 50px 30px 6px;
     display: -webkit-box;
