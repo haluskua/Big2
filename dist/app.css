@@ -2607,7 +2607,7 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .selfie {
     height: 9%;
-    width: 72% !important;
+    width: 52% !important;
     border-radius: 4.8px !important;
   }
 }
