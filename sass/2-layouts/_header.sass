@@ -5,11 +5,10 @@
 		display: flex
 		height: 100vh
 		overflow: hidden
-		width: 100vw
 		background-size: cover
 		align-items: flex-start
 		background-color: #253144
-		background: url('../dist/imgs/ohk_pattern.png') top no-repeat
+		background: url('../dist/imgs/polygons.png') top no-repeat
 		background-size: cover
 		@include phone-landscape
 
@@ -40,6 +39,7 @@
 			padding: 0
 		@include desktop
 			height: 80%
+			margin-left: 10%
 
 	#Colsplit-box1
 		height: 93%
@@ -141,7 +141,7 @@
 			font-size: 1.7em
 			color: #513d4c
 	#portfolio-color
-		color: #ab3e2b
+		color: #ff7608
 
   .ohk-logo
     width: 33%
@@ -188,6 +188,7 @@
 		@include desktop
 			font-size: 0.86em
 			letter-spacing: 0
+
 	.nameohk
 		display: flex
 		width: 100%
@@ -203,7 +204,7 @@
 			font-size: 1.5em
 			line-height: 68px
 		@include desktop
-			font-size: 1.4em
+			font-size: 0.85em
 			color: black
 			font-weight: bolder
 	#my-name
@@ -266,9 +267,10 @@
 			background-position: top
 			background-color: #cac1b4
 		@include desktop
-			margin: 0
-			width: 11vw
-			height: 51px
+			margin: 0 auto
+			width: 100%
+			height: 120px
+			position: relative
 			background-position: center
 			left: 0
 			top: 0
@@ -323,9 +325,9 @@
 
       width: 86vw
 			padding: 0
-			height: 46px
+			height: 82vh
 			display: flex
-			flex-flow: row
+			flex-flow: column
 			background-image: none
 			background-color: #fcfeed
 			justify-content: center
@@ -635,7 +637,11 @@
 		background-color: rgba(81, 28, 18, 0.4392156862745098)
 
 	#nav
-		border-top: 1.5px solid #f7eed3
+		@include desktop
+			border-top: 1.5px solid #f7eed3
+			width: 84%
+
+
 	.mobile-container
 		max-height: 100%
 		width: 100%
@@ -656,20 +662,33 @@
 			display: flex
 			z-index: 9999
 			position: fixed
+			background-color: #faf6e6
 			background-image: none
 			align-items: flex-start
 			justify-content: space-around
+
 		@include desktop
-			height: auto
 			flex-direction: column
 			top: 0
-			height: 55px
-			width: 100%
+			left: 0
+			width: 18%
+			height: 100vh
 			border: none
 			border-radius: 0
 			display: flex
+			flex-wrap: wrap
 			align-items: center
 			background-color: #eef1d5
+			background-color: black
+			background: url('../dist/imgs/brown_pattern.png')
+			background-size: contain
+			background-repeat: repeat
+			background-position: center
+			position: fixed
+			align-self: center
+			top: 0
+			background-color: gray
+
 
 	.mobile-container .sticky
 		z-index: 999999999999
@@ -726,22 +745,6 @@
 		font-family: $font-stack-roboto
 
 
-	#nav
-		@include tablet
-			// margin-left: 29px
-			width: 100%
-			display: flex
-			justify-content: center
-			background-color: #faf6e6
-		@include desktop
-			width: 62vw
-			height: 56px
-			display: flex
-			justify-content: space-around
-			position: fixed
-			align-self: center
-
-			top: 0
 
 	.navbar
 	  display: flex

@@ -80,13 +80,12 @@ h4, h6 {
     display: flex;
     height: 100vh;
     overflow: hidden;
-    width: 100vw;
     background-size: cover;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     background-color: #253144;
-    background: url("../dist/imgs/ohk_pattern.png") top no-repeat;
+    background: url("../dist/imgs/polygons.png") top no-repeat;
     background-size: cover;
   }
 }
@@ -154,6 +153,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .Colsplit-between {
     height: 80%;
+    margin-left: 10%;
   }
 }
 
@@ -376,7 +376,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #portfolio-color {
-    color: #ab3e2b;
+    color: #ff7608;
   }
   #portfolio-color .ohk-logo {
     width: 33%;
@@ -476,7 +476,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .nameohk {
-    font-size: 1.4em;
+    font-size: 0.85em;
     color: black;
     font-weight: bolder;
   }
@@ -580,9 +580,10 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #logo-space {
-    margin: 0;
-    width: 11vw;
-    height: 51px;
+    margin: 0 auto;
+    width: 100%;
+    height: 120px;
+    position: relative;
     background-position: center;
     left: 0;
     top: 0;
@@ -663,14 +664,14 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #folders-container {
     padding: 0;
-    height: 46px;
+    height: 82vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
+        -ms-flex-flow: column;
+            flex-flow: column;
     background-image: none;
     background-color: #fcfeed;
     -webkit-box-pack: center;
@@ -1138,9 +1139,16 @@ h4, h6 {
     font-family: "Roboto";
     background-color: rgba(81, 28, 18, 0.439216);
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #nav {
     border-top: 1.5px solid #f7eed3;
+    width: 84%;
   }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .mobile-container {
     max-height: 100%;
     width: 100%;
@@ -1174,6 +1182,7 @@ h4, h6 {
     display: flex;
     z-index: 9999;
     position: fixed;
+    background-color: #faf6e6;
     background-image: none;
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -1185,23 +1194,35 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .mobile-container {
-    height: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     top: 0;
-    height: 55px;
-    width: 100%;
+    left: 0;
+    width: 18%;
+    height: 100vh;
     border: none;
     border-radius: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     background-color: #eef1d5;
+    background-color: black;
+    background: url("../dist/imgs/brown_pattern.png");
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+    position: fixed;
+    -ms-flex-item-align: center;
+        align-self: center;
+    top: 0;
+    background-color: gray;
   }
 }
 
@@ -1308,38 +1329,6 @@ h4, h6 {
     letter-spacing: 0.08em;
     font-family: "Roboto";
   }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  #nav {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-color: #faf6e6;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  #nav {
-    width: 62vw;
-    height: 56px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    position: fixed;
-    -ms-flex-item-align: center;
-        align-self: center;
-    top: 0;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
   .navbar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1379,13 +1368,14 @@ h4, h6 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin-left: 20%;
   }
   body main section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     height: 100%;
-    max-width: 100%;
+    width: 100%;
     overflow: hidden;
     position: relative;
     -webkit-box-orient: vertical;
@@ -1405,6 +1395,7 @@ h4, h6 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
   }
 }
 
@@ -1524,7 +1515,6 @@ h4, h6 {
             justify-content: center;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    background-color: #f5f5dc;
     border-radius: 3px;
     font-family: "Cabin Sketch", Garamond;
   }
@@ -1532,7 +1522,10 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .animation-caption, .gallery-link {
-    font-size: 1.2em;
+    font-size: 0.85em;
+    width: 100%;
+    padding: 0;
+    margin-top: 80px;
   }
 }
 
@@ -1598,11 +1591,16 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .opening_statement {
     width: 75%;
-    font-size: 1em;
-    line-height: 1.6em;
+    font-size: 0.85em;
+    line-height: 1.9em;
     font-weight: 500;
     color: #4c4947;
-    padding: 60px 28px 30px 26px;
+    padding: 60px 50px 30px 6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 }
 
@@ -1628,8 +1626,16 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .opening_statement span, .opening_statement .par-title {
-    font-family: "Antic";
-    font-size: 1.35em;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 100%;
+    font-size: 2em;
   }
 }
 
@@ -1669,11 +1675,10 @@ h4, h6 {
     text-align: justify;
     padding-top: 0px;
     margin-bottom: 33px;
-    font-size: 1em;
-    line-height: 1.6em;
+    font-size: 0.85em;
+    line-height: 1.9em;
     font-weight: 500;
     color: #4c4947;
-    line-height: 1.67em;
     color: #3c3937;
     font-weight: normal;
     font-family: "Open Sans";
@@ -1699,14 +1704,12 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .screen {
-    width: 100%;
+    width: 74%;
+    margin: auto;
     height: auto;
     background-color: rgba(187, 166, 54, 0.5);
-    background: url("../dist/imgs/pattern.jpg");
-    background-size: contain;
-    background-repeat: repeat-x;
-    background-position: center;
     z-index: 1;
+    background: none;
   }
 }
 
@@ -1727,11 +1730,11 @@ h4, h6 {
     text-align: center;
     font-weight: bold;
     font-size: 1.18em;
-    text-transform: uppercase;
+    text-transform: normal;
     height: 41px;
     line-height: 52.2px;
     padding-left: 11%;
-    font-family: "Roboto";
+    font-family: "Rajdhani", sans-serif;
     background-color: rgba(240, 224, 176, 0.56);
   }
 }
@@ -1745,12 +1748,14 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .skills-title {
-    color: #2b2020;
-    font-size: 1.1em;
+    color: #ff7608;
+    font-size: 1.11em;
+    text-transform: uppercase;
     padding: 0;
     line-height: 44.2px;
-    padding-left: 6%;
+    padding-left: 1%;
     width: 94%;
+    background: none;
   }
 }
 
@@ -1781,7 +1786,7 @@ h4, h6 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: auto;
+    width: 100%;
     margin: 0;
     padding: 0;
     border: 1.5px solid #f7eed3;
@@ -1799,10 +1804,11 @@ h4, h6 {
         -ms-flex-pack: start;
             justify-content: flex-start;
     text-decoration: none;
+    width: 100%;
   }
   .wagai-weh {
     background-color: #fffefa;
-    background: url("../dist/imgs/polygons.png");
+    background: url("../dist/imgs/white_patterns.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -1813,6 +1819,7 @@ h4, h6 {
   .wagai-weh {
     background-size: contain;
     background-repeat: repeat;
+    width: 100%;
   }
 }
 
@@ -1856,14 +1863,9 @@ h4, h6 {
   #content-holder {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-flow: row-reverse;
-            flex-flow: row-reverse;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    width: 97vw;
-    background: url("../dist/imgs/1920.png") top center no-repeat;
+    width: 100%;
   }
 }
 
@@ -1960,6 +1962,7 @@ h4, h6 {
   .contact-section {
     background-position: bottom;
     height: 100vh;
+    margin: 0 auto;
   }
 }
 
@@ -2572,8 +2575,9 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .img-split, .selfie {
-    width: 45%;
+    width: 60%;
     margin-top: 0;
+    border: none;
   }
 }
 
@@ -2807,6 +2811,8 @@ h4, h6 {
     overflow: hidden;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-bottom: 50px;
+    padding-bottom: 40px;
   }
 }
 
@@ -3002,7 +3008,7 @@ h4, h6 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100vw;
+    width: 100%;
     margin-bottom: 12px;
   }
 }
@@ -3013,6 +3019,7 @@ h4, h6 {
     width: 100%;
     -ms-flex-item-align: start;
         align-self: flex-start;
+    margin-left: 30px;
   }
 }
 
@@ -3051,13 +3058,6 @@ h4, h6 {
     font-weight: 500;
     letter-spacing: 0.02em;
     font-size: 1.5em;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .suite {
-    width: 80%;
-    padding: 31px 0px 35px 38px;
   }
 }
 
@@ -3104,8 +3104,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .blocks section, .blocks .one, .one section, .one .one {
-    width: 45vw;
-    border: 1px solid rgba(255, 193, 7, 0.22);
+    width: 54vw;
     border-bottom: none;
     border-top: none;
     display: -webkit-box;
@@ -3122,6 +3121,8 @@ h4, h6 {
         -ms-flex-pack: start;
             justify-content: flex-start;
     height: 100%;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #ff7608;
   }
 }
 
@@ -3144,6 +3145,17 @@ h4, h6 {
     padding: 0;
     border: 3.5px solid #f5f5dc;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .blocks section div, .blocks .one div, .one section div, .one .one div {
+    background: none;
+    background-image: none;
+    border: none;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .blocks section #website_background2, .blocks .one #website_background2, .one section #website_background2, .one .one #website_background2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3167,7 +3179,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .blocks section #website_background2, .blocks .one #website_background2, .one section #website_background2, .one .one #website_background2 {
     margin-top: 0;
-    border: 8px solid #f7eed3;
+    background-image: none;
   }
 }
 
@@ -3181,7 +3193,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .blocks section #website_background2 img, .blocks .one #website_background2 img, .one section #website_background2 img, .one .one #website_background2 img {
-    width: 78%;
+    width: 100%;
   }
 }
 
@@ -3300,11 +3312,15 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .blocks section button, .blocks .one button, .one section button, .one .one button {
-    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 100%;
     height: auto;
     padding: 8px 38px;
-    margin-top: 53px;
-    margin-bottom: 36px;
+    background-color: white;
   }
 }
 
@@ -3334,7 +3350,7 @@ h4, h6 {
   .blocks section button a, .blocks .one button a, .one section button a, .one .one button a {
     font-size: 1.01em;
     line-height: 1.7em;
-    color: #faf8ce;
+    color: #564d48;
   }
 }
 
@@ -3570,7 +3586,7 @@ h4, h6 {
   .inner-div5, .inner-div11, .inner-div12 {
     border: none;
     height: 100px;
-    width: 180px;
+    width: 70px;
     padding: 0 30px;
     background-size: contain;
     border-radius: 8px;
@@ -3747,15 +3763,16 @@ h4, h6 {
     display: -ms-flexbox;
     display: flex;
     color: #52555c;
-    color: #f7eed3;
     letter-spacing: 0;
-    border: 6px solid #f7eed3;
+    border: 2px solid #f7eed3;
+    border-radius: 0 0 30px 30px;
+    background-color: rgba(229, 172, 97, 0);
     line-height: 0.6em;
-    font-size: 2.5em;
+    font-size: 1.3em;
+    letter-spacing: 0.03em;
     font-weight: bold;
     text-transform: uppercase;
     background-size: contain;
-    font-family: "Cabin Sketch", Garamond;
   }
 }
 

@@ -13,10 +13,11 @@
       background-color: #fff
       flex-direction: column
       justify-content: flex-start
+      margin-left: 20%
       section
         display: flex
         height: 100%
-        max-width: 100%
+        width: 100%
         overflow: hidden
         position: relative
         flex-direction: column
@@ -26,6 +27,7 @@
           border: none
           background-size: cover
           align-items: center
+          width: 100%
 
   #about
     width: 100vw
@@ -98,11 +100,14 @@
     justify-content: center
     letter-spacing: 0.05em
     text-transform: uppercase
-    background-color: #f5f5dc
+    // background-color: #f5f5dc
     border-radius: 3px
     font-family: $font-stack-character
     @include desktop
-      font-size: 1.2em
+      font-size: 0.85em
+      width: 100%
+      padding: 0
+      margin-top: 80px
 
 
   .gallery-link
@@ -145,11 +150,13 @@
       margin-bottom: 40px
     @include desktop
       width: 75%
-      font-size: 1em
-      line-height: 1.6em
+      font-size: 0.85em
+      line-height: 1.9em
       font-weight: 500
       color: #4c4947
-      padding: 60px 28px 30px 26px
+      padding: 60px 50px 30px 6px
+      display: flex
+      align-self: center
 
     span, .par-title
       margin-top: 0px
@@ -165,8 +172,13 @@
         font-size: 1.9em
         margin: auto
       @include desktop
-        font-family: $font-stack-antic
-        font-size: 1.35em
+        font-family: $font-stack-rajdhani
+        font-weight: bolder
+        text-transform: uppercase
+        display: flex
+        align-self: flex-start
+        width: 100%
+        font-size: 2em
 
     .portrait
       max-width: 130px
@@ -191,11 +203,10 @@
       text-align: justify
       padding-top: 0px
       margin-bottom: 33px
-      font-size: 1em
-      line-height: 1.6em
+      font-size: 0.85em
+      line-height: 1.9em
       font-weight: 500
       color: #4c4947
-      line-height: 1.67em
       color: #3c3937
       font-weight: normal
       font-family: $font-stack-open-sans
@@ -209,17 +220,13 @@
     background-size: cover
     background-repeat: repeat-x
     background-position: center
-
-
     @include desktop
-      width: 100%
+      width: 74%
+      margin: auto
       height: auto
       background-color:  rgba(187, 166, 54, 0.5)
-      background: url("../dist/imgs/pattern.jpg")
-      background-size: contain
-      background-repeat: repeat-x
-      background-position: center
       z-index: 1
+      background: none
 
   .skills-title
     display: flex
@@ -233,23 +240,25 @@
     text-align: center
     font-weight: bold
     font-size: 1.18em
-    text-transform: uppercase
+    text-transform: normal
     height: 41px
     line-height: 52.2px
     padding-left: 11%
-    font-family: $font-stack-roboto
+    font-family: $font-stack-rajdhani
     background-color: rgba(240, 224, 176, 0.56)
     @include phone-landscape
     @include tablet
       font-size: 1.66em
       width: 87%
     @include desktop
-      color: #2b2020
-      font-size: 1.1em
+      color: #ff7608
+      font-size: 1.11em
+      text-transform: uppercase
       padding: 0
       line-height: 44.2px
-      padding-left: 6%
+      padding-left: 1%
       width: 94%
+      background: none
 
   .ompa
     @include tablet
@@ -264,27 +273,30 @@
     flex-direction: column
     justify-content: space-between
     align-items: center
-    width: auto
+    width: 100%
     margin: 0
     padding: 0
     border: 1.5px solid rgb(247, 238, 211)
     border-top: 1px dotted rgb(247, 238, 211)
     border-bottom: 0
+    @include desktop
 
     a
       display: flex
       justify-content: flex-start
       text-decoration: none
+      width: 100%
 
   .wagai-weh
     background-color: #fffefa
-    background: url("../dist/imgs/polygons.png")
+    background: url("../dist/imgs/white_patterns.png")
     background-size: contain
     background-repeat: no-repeat
     background-position: center
     @include desktop
       background-size: contain
       background-repeat: repeat
+      width: 100%
 
   #external_link
     display: flex
@@ -302,10 +314,10 @@
     justify-content: center
     @include desktop
       flex-wrap: wrap
-      flex-flow: row-reverse
+      // flex-flow: row-reverse
       justify-content: space-around
-      width: 97vw
-      background: url('../dist/imgs/1920.png') top center no-repeat
+      width: 100%
+      // background: url('../dist/imgs/1920.png') top center no-repeat
     h1
       padding: 0 20px 0 20px
       font-size: 1.1em
@@ -370,6 +382,7 @@
     @include desktop
       background-position: bottom
       height: 100vh
+      margin: 0 auto
 
     #contact
       display: flex
@@ -766,8 +779,9 @@
       width: 56%
       margin-top: 49px
     @include desktop
-      width: 45%
+      width: 60%
       margin-top: 0
+      border: none
 
   .selfie
     height: 9%
@@ -908,6 +922,8 @@
       margin: 0
       overflow: hidden
       flex-wrap: wrap
+      margin-bottom: 50px
+      padding-bottom: 40px
   .talentpage
     @include desktop
       margin-top: 40px
@@ -1011,7 +1027,7 @@
     flex-flow: column
     justify-content: flex-start
     align-items: center
-    width: 100vw
+    width: 100%
     margin-bottom: 12px
     @include phone-landscape
     @include tablet
@@ -1019,6 +1035,8 @@
       margin: 0
       width: 100%
       align-self: flex-start
+      margin-left: 30px
+
     h2
       color: #6d6457
       align-self: flex-start
@@ -1046,8 +1064,8 @@
 
   .suite
     @include desktop
-      width: 80%
-      padding: 31px 0px 35px 38px
+      // width: 80%
+      // padding: 31px 0px 35px 38px
 
   .blocks, .one
     display: flex
@@ -1069,8 +1087,8 @@
       margin: auto
       margin: 0
       @include desktop
-        width: 45vw
-        border: 1px solid rgba(255, 193, 7, 0.22)
+        width: 54vw
+        // border: 1px solid rgba(255, 193, 7, 0.22)
         border-bottom: none
         border-top: none
         display: flex
@@ -1078,6 +1096,8 @@
         align-items: center
         justify-content: flex-start
         height: 100%
+        margin-bottom: 50px
+        border-bottom: 1px solid #ff7608
       div
         display: flex
         flex-direction: column
@@ -1091,7 +1111,9 @@
         padding: 0
         border: 3.5px solid #f5f5dc
         @include desktop
-          // background: none
+          background: none
+          background-image: none
+          border: none
 
 
       #website_background2
@@ -1106,16 +1128,15 @@
         width: auto
         margin: auto
         padding: 0
-        // margin-left: -6px
         @include desktop
           margin-top: 0
-          border: 8px solid rgb(247, 238, 211)
+          background-image: none
         img
           width: 92%
           height: auto
           margin: auto
           @include desktop
-            width: 78%
+            width: 100%
         h4
           color: #29343b
 
@@ -1180,16 +1201,16 @@
         border: 1px solid gainsboro
         @include phone-landscape
 
-
         @include tablet
           margin-bottom: 30px
           margin-top: 45px
         @include desktop
-          width: auto
+          display: flex
+          align-self: flex-start
+          width: 100%
           height: auto
           padding: 8px 38px
-          margin-top: 53px
-          margin-bottom: 36px
+          background-color: white
         a
           font-family: $font-stack-antic
           color: #faf8ce
@@ -1205,7 +1226,8 @@
           @include desktop
             font-size: 1.01em
             line-height: 1.7em
-            color: #faf8ce
+            color: #564d48
+
 
   .readmore_text
     width: auto
@@ -1343,7 +1365,7 @@
     @include desktop
       border: none
       height: 100px
-      width: 180px
+      width: 70px
       padding: 0 30px
       background-size: contain
       border-radius: 8px
