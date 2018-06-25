@@ -115,8 +115,11 @@ $(document).ready(function(){
                 }
 
         // targeting tablet view because of menu top height change from mobile view
+
                 if (jQuery(window).width() <800) {
-                  // accordion effect for website page
+
+    // ACCORDION text open and close panel
+
                   $(".open-caption").on("click", function() {
                     $("#skills-descOpen").css("display", "none");
                     $("#skills-descClose").css("display", "flex");
@@ -133,7 +136,6 @@ $(document).ready(function(){
                     $("#hide_h2").css("display", "none");
                   });
 
-                  // accordion effect for Graphic Design page
                   $(".gdReadmore").on("click", function() {
                     $("#gd-descOpen").css("display", "none");
                     $("#gd-descClose").css("display", "flex");
@@ -150,7 +152,6 @@ $(document).ready(function(){
                     $("#hide_h2_gd").css("display", "none");
                   });
 
-                  // accordion effect for Digital Media page
                   $(".tReadmore").on("click", function() {
                     $("#t-descOpen").css("display", "none");
                     $("#t-descClose").css("display", "flex");
@@ -167,7 +168,6 @@ $(document).ready(function(){
                     $("#hide_h2_t").css("display", "none");
                   });
 
-                  // accordion effect for Digital Media page
                   $(".dmReadmore").on("click", function() {
                     $("#dm-descOpen").css("display", "none");
                     $("#dm-descClose").css("display", "flex");
@@ -188,6 +188,26 @@ $(document).ready(function(){
                     $(".img-split").css("width", "92%");
 
                   });
+
+                // 88888888888888888888888888888888888888888888
+                  // DRY CODE TEST
+                  // $(".open-caption, .gdReadmore, .tReadmore, .dmReadmore").on("click", function() {
+                  //   $("#skills-descOpen, #gd-descOpen, #t-descOpen, #dm-descOpen").css("display", "none");
+                  //   $("#skills-descClose, #gd-descClose, #t-descClose, #dm-descClose").css("display", "flex");
+                  //   $(".close-caption, .gdClose, .tClose, .scpmt-dm").css("z-index", "999");
+                  //   $(".scpmt, .scpmt-gd, .scpmt-t, .dmClose").css("display", "flex");
+                  //   $("#hide_h2, #hide_h2_gd, #hide_h2_t, #hide_h2_dm").css("display", "flex");
+                  // });
+                  //
+                  // $(".close-caption, .gdClose, .tClose, .dmClose").on("click", function(){
+                  //   $("#skills-descOpen, #gd-descOpen, #t-descOpen, #dm-descOpen, .gdReadmore ").css("display", "flex");
+                  //   $("#skills-descClose, #t-descClose, #dm-descClose, .gdClose").css("display", "none");
+                  //   $(".open-caption, .scpmt-gd, .scpmt-t, .scpmt-dm").css("z-index", "999");
+                  //   $(".scpmt, .scpmt-gd, .tReadmore, .dmReadmore").css("display", "none");
+                  //   $("#hide_h2, #hide_h2_gd, #hide_h2_t, #hide_h2_dm").css("display", "none");
+                  // });
+
+                  // 88888888888888888888888888888888888888888888
                 }
 
 /////////////////////////////////////////////////////////////////////
