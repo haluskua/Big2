@@ -598,6 +598,11 @@
 
   .scpmt, .scpmt-gd, .scpmt-dm, .scpmt-t
     display: none
+    @include desktop
+      display: flex
+      width: 96%
+      margin-top: -61px
+      margin-left: -6px
 
   #gd-folders
     display: flex
@@ -954,17 +959,17 @@
     @include desktop
       margin: auto
 
-  .hold_in2_
-    margin-top: 15px
+  .hold_in2, .hold_in2_gd
+    // margin-top: 15px
     @include phone-landscape
     @include tablet
-      display: flex
-      justify-content: flex-start
-      width: 100%
+      // display: flex
+      // justify-content: flex-start
+      // width: 100%
     @include desktop
       display: flex
-      flex-flow: column
-      width: 100%
+      flex-direction: column
+      width: 78%
 
   #read-on
     justify-content: flex-start !important
@@ -1253,7 +1258,7 @@
     @include desktop
       display: flex
       margin-top: 45px
-      margin-bottom: 9px
+      margin-bottom: 60px
 
   .project_box
     display: flex

@@ -120,16 +120,16 @@ $(document).ready(function(){
                   $(".open-caption").on("click", function() {
                     $("#skills-descOpen").css("display", "none");
                     $("#skills-descClose").css("display", "flex");
-                    $(".scpmt").css("display", "flex");
                     $(".close-caption").css("z-index", "999");
+                    $(".scpmt").css("display", "flex");
                     $("#hide_h2").css("display", "flex");
                   });
 
                   $(".close-caption").on("click", function(){
                     $("#skills-descOpen").css("display", "flex");
                     $("#skills-descClose").css("display", "none");
-                    $(".scpmt").css("display", "none");
                     $(".open-caption").css("z-index", "999");
+                    $(".scpmt").css("display", "none");
                     $("#hide_h2").css("display", "none");
                   });
 
@@ -137,17 +137,34 @@ $(document).ready(function(){
                   $(".gdReadmore").on("click", function() {
                     $("#gd-descOpen").css("display", "none");
                     $("#gd-descClose").css("display", "flex");
-                    $(".scpmt-gd").css("display", "flex");
                     $(".gdClose").css("z-index", "999");
+                    $(".scpmt-gd").css("display", "flex");
                     $("#hide_h2_gd").css("display", "flex");
                   });
 
                   $(".gdClose").on("click", function(){
                     $("#gd-descOpen").css("display", "flex");
                     $("#gd-descClose").css("display", "none");
-                    $(".scpmt-gd").css("display", "none");
                     $(".gdReadmore").css("z-index", "999");
+                    $(".scpmt-gd").css("display", "none");
                     $("#hide_h2_gd").css("display", "none");
+                  });
+
+                  // accordion effect for Digital Media page
+                  $(".tReadmore").on("click", function() {
+                    $("#t-descOpen").css("display", "none");
+                    $("#t-descClose").css("display", "flex");
+                    $(".tClose").css("z-index", "999");
+                    $(".scpmt-t").css("display", "flex");
+                    $("#hide_h2_t").css("display", "flex");
+                  });
+
+                  $(".tClose").on("click", function(){
+                    $("#t-descOpen").css("display", "flex");
+                    $("#t-descClose").css("display", "none");
+                    $(".scpmt-t").css("display", "none");
+                    $(".tReadmore").css("z-index", "999");
+                    $("#hide_h2_t").css("display", "none");
                   });
 
                   // accordion effect for Digital Media page
@@ -165,23 +182,6 @@ $(document).ready(function(){
                     $(".scpmt-dm").css("display", "none");
                     $(".dmReadmore").css("z-index", "999");
                     $("#hide_h2_dm").css("display", "none");
-                  });
-
-                  // accordion effect for Digital Media page
-                  $(".tReadmore").on("click", function() {
-                    $("#t-descOpen").css("display", "none");
-                    $("#t-descClose").css("display", "flex");
-                    $(".scpmt-t").css("display", "flex");
-                    $(".tClose").css("z-index", "999");
-                    $("#hide_h2_t").css("display", "flex");
-                  });
-
-                  $(".tClose").on("click", function(){
-                    $("#t-descOpen").css("display", "flex");
-                    $("#t-descClose").css("display", "none");
-                    $(".scpmt-t").css("display", "none");
-                    $(".tReadmore").css("z-index", "999");
-                    $("#hide_h2_t").css("display", "none");
                   });
 
                   $("#open_pic").on("click", function(){
