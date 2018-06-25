@@ -96,3 +96,271 @@ $(window).resize(function() {
 
 // Kick off one resize to fix all videos on page load
 }).resize();
+
+
+
+
+
+// 00000000000000000000000000000000000000000000000000000000000000000
+
+//FOOTER HTML CANVAS
+
+var c = document.getElementById("myCanvas");
+
+var ctx = c.getContext("2d");
+
+ctx.beginPath();
+
+
+ctx.moveTo(797,0);
+
+ctx.lineTo(764,22);
+
+ctx.lineTo(764,22);
+
+ctx.lineTo(730,0);
+
+ctx.lineTo(695,22);
+
+ctx.lineTo(660,0);
+
+ctx.lineTo(625,22);
+
+ctx.lineTo(590,0);
+
+ctx.lineTo(555,22);
+
+ctx.lineTo(520,0);
+
+ctx.lineTo(485,22);
+
+ctx.lineTo(450,0);
+
+ctx.lineTo(415,22);
+
+ctx.lineTo(380,0);
+
+ctx.lineTo(345,22);
+
+ctx.lineTo(310,0);
+
+ctx.lineTo(275,22);
+
+ctx.lineTo(240,0);
+
+ctx.lineTo(205,22);
+
+ctx.lineTo(170,0);
+
+ctx.lineTo(135,22);
+
+ctx.lineTo(100,0);
+
+ctx.lineTo(65,22);
+
+ctx.lineTo(30,0);
+
+
+
+
+
+ctx.moveTo(790,24);
+
+ctx.lineTo(764,46);
+
+ctx.lineTo(730,24);
+
+ctx.lineTo(695,46);
+
+ctx.lineTo(660,24);
+
+ctx.lineTo(625,46);
+
+ctx.lineTo(590,24);
+
+ctx.lineTo(555,46);
+
+ctx.lineTo(520,24);
+
+ctx.lineTo(485,46);
+
+ctx.lineTo(450,24);
+
+ctx.lineTo(415,46);
+
+ctx.lineTo(380,24);
+
+ctx.lineTo(345,46);
+
+ctx.lineTo(310,24);
+
+ctx.lineTo(275,46);
+
+ctx.lineTo(240,24);
+
+ctx.lineTo(205,46);
+
+ctx.lineTo(170,24);
+
+ctx.lineTo(135,46);
+
+ctx.lineTo(100,24);
+
+ctx.lineTo(65,46);
+
+ctx.lineTo(30,24);
+
+
+
+ctx.moveTo(790,70);
+
+ctx.lineTo(764,46);
+
+ctx.lineTo(730,70);
+
+ctx.lineTo(695,46);
+
+ctx.lineTo(660,70);
+
+ctx.lineTo(625,46);
+
+ctx.lineTo(590,70);
+
+ctx.lineTo(555,46);
+
+ctx.lineTo(520,70);
+
+ctx.lineTo(485,46);
+
+ctx.lineTo(450,70);
+
+ctx.lineTo(415,46);
+
+ctx.lineTo(380,70);
+
+ctx.lineTo(345,46);
+
+ctx.lineTo(310,70);
+
+ctx.lineTo(275,46);
+
+ctx.lineTo(240,70);
+
+ctx.lineTo(205,46);
+
+ctx.lineTo(170,70);
+
+ctx.lineTo(135,46);
+
+ctx.lineTo(100,70);
+
+ctx.lineTo(65,46);
+
+ctx.lineTo(30,70);
+
+
+ctx.strokeStyle = "#aab5b4";
+
+ctx.stroke();
+
+
+// mobile canvas view
+
+var c = document.getElementById("myCanvas-mobile");
+
+var ctx = c.getContext("2d");
+
+ctx.beginPath();
+
+
+ctx.moveTo(50,0);
+
+ctx.lineTo(84,20);
+
+ctx.lineTo(84,59);
+
+ctx.lineTo(50,78);
+
+ctx.lineTo(16,59);
+
+ctx.lineTo(16,20);
+
+ctx.lineTo(50,0);
+
+ctx.lineTo(84,20);
+
+
+
+ctx.strokeStyle = "orange";
+
+ctx.font = "1.4em Arial";
+ctx.fillStyle = "orange";
+ctx.fillText("OHK",25,46);
+ctx.font = "0.74em Helvetica";
+ctx.fillStyle = "orange";
+ctx.fillText("OMPHALUS.H.KUA",-1,90);
+ctx.font = "0.84em Helvetica";
+ctx.fillStyle = "orange";
+ctx.fillText("haluskua.one@gmail.com",-1,110);
+// ctx.font = "0.84em Helvetica";
+ctx.fillStyle = "orange";
+ctx.fillText("0225732261",-1,130);
+
+
+ctx.arc(50,38,30,0,2*Math.PI);
+
+ctx.stroke();
+
+
+
+
+
+// ===========================================================
+
+
+// mobile canvas view
+
+var c = document.getElementById("myCanvas-menu");
+
+var ctx = c.getContext("2d");
+
+ctx.beginPath();
+
+
+ctx.moveTo(50,0);
+
+ctx.lineTo(84,20);
+
+ctx.lineTo(84,59);
+
+ctx.lineTo(50,78);
+
+ctx.lineTo(16,59);
+
+ctx.lineTo(16,20);
+
+ctx.lineTo(50,0);
+
+ctx.lineTo(84,20);
+
+
+
+ctx.strokeStyle = "orange";
+
+ctx.font = "1.4em Arial";
+ctx.fillStyle = "orange";
+ctx.fillText("OHK",25,46);
+ctx.font = "0.7em Helvetica";
+ctx.fillStyle = "#635d49";
+ctx.fillText("OMPHALUS.H.KUA",-1,90);
+ctx.font = "0.75em Helvetica";
+ctx.fillStyle = "#635d49";
+ctx.fillText("haluskua.one@gmail.com",-1,110);
+// ctx.font = "0.84em Helvetica";
+ctx.fillStyle = "#635d49";
+ctx.fillText("0225732261",-1,130);
+
+
+ctx.arc(50,38,30,0,2*Math.PI);
+
+ctx.stroke();

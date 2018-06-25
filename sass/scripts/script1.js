@@ -95,10 +95,10 @@ $(document).ready(function(){
           e.preventDefault();
         });
 
-// targeting tablet view because of menu top height change from mobile view
+// targeting tablet view because of menu top height change from mobile to tablet
         if (jQuery(window).width() > 481) {
             var stickyNavTop = $('.nav-folders').offset().top;
-            var headerHeight = 6;
+            var headerHeight = 62;
               $('.hamburger-menu, .logo-desc, #snaps, .box').click(function(e) {
                   var linkHref = $(this).attr('href');
                   $('html, body').animate({
@@ -108,6 +108,30 @@ $(document).ready(function(){
                 });
 
         }
+
+
+        // targeting tablet view because of menu top height change from tablet to desktop
+                if (jQuery(window).width() > 800) {
+                    var stickyNavTop = $('.nav-folders').offset().top;
+                    var headerHeight = 6;
+                      $('.hamburger-menu, .logo-desc, #snaps, .box').click(function(e) {
+                          var linkHref = $(this).attr('href');
+                          $('html, body').animate({
+                            scrollTop: $(linkHref).offset().top - headerHeight
+                          }, 800);
+                          e.preventDefault();
+                        });
+
+                }
+
+
+
+
+
+
+// 000000000000000000000000000
+
+
                 if(jQuery (window).width() >801){
                   $("#hide_h2, #hide_h2_gd, #hide_h2_dm, #hide_h2_t").css("display", "flex");
                   $("#t-descOpen, #t-descClose, #skills-descOpen, #skills-descClose, #gd-descClose, #gd-descOpen, #dm-descOpen, #dm-descClose").css("display", "none");
