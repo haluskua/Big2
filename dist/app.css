@@ -943,10 +943,10 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .fields {
     font-size: 0.8em;
-    color: white;
+    color: #a0925b;
   }
   .fields:hover {
-    color: white;
+    color: #443939;
     font-size: 1.06em;
     -webkit-transition: 0.26s ease-in;
     transition: 0.26s ease-in;
@@ -1103,7 +1103,7 @@ h4, h6 {
     background-color: rgba(240, 224, 176, 0.56);
   }
   .haus-menu {
-    color: #d0630c;
+    color: #1f1710;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1373,7 +1373,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   body main {
-    margin-left: 20%;
+    margin-left: 18%;
   }
 }
 
@@ -1641,7 +1641,7 @@ h4, h6 {
     -ms-flex-item-align: start;
         align-self: flex-start;
     width: 100%;
-    font-size: 2em;
+    font-size: 1.66em;
   }
 }
 
@@ -1715,7 +1715,7 @@ h4, h6 {
     height: auto;
     background-color: rgba(187, 166, 54, 0.5);
     z-index: 1;
-    background: none;
+    border-radius: 0 0 6px 6px;
   }
 }
 
@@ -2021,7 +2021,6 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .contact-section #contact p {
     font-size: 2.1em;
-    margin-bottom: 300px;
     line-height: 37px;
   }
 }
@@ -2071,6 +2070,14 @@ h4, h6 {
   }
 }
 
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  #myCanvas-mobile {
+    height: 242px;
+    margin-right: -94px;
+    padding: 0;
+  }
+}
+
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #myCanvas-mobile {
     padding-left: 87px;
@@ -2092,7 +2099,8 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #myCanvas-menu {
-    padding-left: 98px;
+    padding-left: 85px;
+    height: 131px;
   }
 }
 
@@ -2204,7 +2212,7 @@ h4, h6 {
     letter-spacing: 0.28em;
     font-family: "Rajdhani", sans-serif;
     background-color: #fcfeed;
-    background-color: rgba(205, 220, 57, 0.33);
+    background-color: rgba(255, 242, 209, 0.72);
     color: #09070b;
     margin-top: 0px;
     margin-bottom: 12px;
@@ -2248,6 +2256,7 @@ h4, h6 {
     padding: 0 8px;
     font-weight: bolder;
     font-family: 'orbitron', '$font-stack-open-sans';
+    background-color: #e9efa9  !important;
     color: #513d4c !important;
     font-size: 0.8em;
     letter-spacing: 0.2em;
@@ -2291,7 +2300,6 @@ h4, h6 {
     padding: 0 8px;
     font-weight: bolder;
     font-family: 'orbitron', '$font-stack-open-sans';
-    background-color: #e9efa9 !important;
     color: #513d4c !important;
     font-size: 0.8em;
     letter-spacing: 0.2em;
@@ -2300,7 +2308,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   div.panel {
-    background-color: rgba(240, 224, 176, 0.56);
+    background-color: rgba(255, 235, 161, 0.7);
     padding: 0 8px;
     display: none;
     height: auto;
@@ -2381,6 +2389,15 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .scpmt, .scpmt-gd, .scpmt-dm, .scpmt-t {
     display: none;
+    margin-top: -40px;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .scpmt, .scpmt-gd, .scpmt-dm, .scpmt-t {
+    margin: 0 auto;
+    padding: 0;
+    width: 83%;
   }
 }
 
@@ -2459,10 +2476,11 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #gd-folders li {
     border-bottom: 1px solid #e3e6e8;
-    background-color: #000000;
+    background-color: #fcfeed;
   }
   #gd-folders li:hover {
     background-color: #719385;
+    background-color: rgba(255, 235, 161, 0.78);
   }
 }
 
@@ -2702,6 +2720,12 @@ h4, h6 {
   }
 }
 
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .selfie2 {
+    width: 14%;
+  }
+}
+
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .selfie2 {
     margin-top: 0;
@@ -2906,6 +2930,7 @@ h4, h6 {
     margin-top: 80px;
     margin-bottom: 50px;
     padding-bottom: 40px;
+    border: none;
   }
 }
 
@@ -3000,6 +3025,7 @@ h4, h6 {
     color: #9d8b70;
     font-style: italic;
     width: 128px;
+    margin-left: -160px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -3043,9 +3069,9 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #skills-descClose, #gd-descClose, #dm-descClose, #t-descClose {
-    width: 23%;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    margin-top: 30px;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 }
 
@@ -3131,9 +3157,9 @@ h4, h6 {
   .small-intro h2 {
     padding-left: 0;
     width: 19%;
-    font-weight: 500;
+    font-weight: 300;
     letter-spacing: 0.02em;
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 }
 
@@ -3444,7 +3470,7 @@ h4, h6 {
   #hide_h2, #hide_h2_gd, #hide_h2_dm, #hide_h2_t {
     display: none;
     margin-top: -9px;
-    margin-bottom: 25px;
+    margin-bottom: 48px;
     margin-left: 12px;
   }
 }
@@ -3489,8 +3515,8 @@ h4, h6 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%;
-    padding: 8px;
-    margin: -6px 0 60px 0px;
+    padding: 10px;
+    margin: 0px 0 10px 0px;
     background-color: rgba(202, 218, 215, 0.22);
   }
 }
@@ -3521,6 +3547,7 @@ h4, h6 {
     background-color: rgba(255, 255, 255, 0);
     margin: auto;
     margin-top: 33px;
+    border: none;
   }
 }
 
@@ -3754,7 +3781,9 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #canvasbox {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -3907,18 +3936,19 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #push-up {
-    color: #fdf8da;
+    color: #50361a;
     line-height: 19px;
     padding-top: 12px;
     font-weight: bold;
-    font-size: 1.32em;
+    font-size: 1.33em;
     padding: 10px 13px;
+    text-transform: uppercase;
     letter-spacing: 0.08em;
     font-family: "Roboto";
-    border: 6px solid #f7eed3;
+    border: 6px solid #ffeaaa;
     margin: auto;
     width: 100vw;
-    background-color: #dc9020;
+    background-color: #e4d4a3;
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -3941,12 +3971,11 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #52555c;
+    color: #130a01;
     letter-spacing: 0;
-    border: 2px solid #f7eed3;
+    border: 1px solid #f7eed3;
     border-radius: 0 0 30px 30px;
-    background-color: rgba(229, 172, 97, 0);
-    background-color: rgba(233, 239, 169, 0.85);
+    background-color: rgba(233, 239, 169, 0.86);
     line-height: 0.6em;
     font-size: 1.3em;
     letter-spacing: 0.03em;

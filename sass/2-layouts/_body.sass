@@ -15,7 +15,7 @@
       justify-content: flex-start
       @include desktop
 
-        margin-left: 20%
+        margin-left: 18%
       section
         display: flex
         height: 100%
@@ -178,7 +178,7 @@
         display: flex
         align-self: flex-start
         width: 100%
-        font-size: 2em
+        font-size: 1.66em
 
     .portrait
       max-width: 130px
@@ -226,7 +226,7 @@
       height: auto
       background-color:  rgba(187, 166, 54, 0.5)
       z-index: 1
-      background: none
+      border-radius: 0 0 6px 6px
 
   .skills-title
     display: flex
@@ -402,7 +402,6 @@
         @include phone-landscape
         @include tablet
           font-size: 2.1em
-          margin-bottom: 300px
           line-height: 37px
         @include desktop
           font-size: 1.75em
@@ -423,6 +422,11 @@
     width: auto
     justify-content: center
     padding-left: 70px
+    @include tablet
+      height: 242px
+      margin-right: -94px
+      padding: 0
+
     @include desktop
       padding-left: 87px
 
@@ -432,7 +436,8 @@
     justify-content: center
     padding-left: 109px
     @include desktop
-      padding-left: 98px
+      padding-left: 85px
+      height: 131px
 
   #social-media
     display: flex
@@ -499,7 +504,7 @@
     letter-spacing: 0.28em
     font-family: $font-stack-rajdhani
     background-color: #fcfeed
-    background-color: rgba(205, 220, 57, 0.33)
+    background-color: rgba(255, 242, 209, 0.72)
     color: #09070b
     margin-top: 0px
     margin-bottom: 12px
@@ -528,7 +533,7 @@
       padding: 0 8px
       font-weight: bolder
       font-family: 'orbitron', '$font-stack-open-sans'
-      // background-color: #29172b !important
+      background-color: #e9efa9  !important
       color: #513d4c !important
       font-size: 0.8em
       letter-spacing: 0.2em
@@ -558,13 +563,13 @@
       padding: 0 8px
       font-weight: bolder
       font-family: 'orbitron', '$font-stack-open-sans'
-      background-color: rgb(233, 239, 169) !important
+      // background-color: rgb(233, 239, 169) !important
       color: #513d4c !important
       font-size: 0.8em
       letter-spacing: 0.2em
 
   div.panel
-      background-color: rgba(240, 224, 176, 0.56)
+      background-color: rgba(255, 235, 161, 0.7)
       padding: 0 8px
       display: none
       height: auto
@@ -620,6 +625,11 @@
 
   .scpmt, .scpmt-gd, .scpmt-dm, .scpmt-t
     display: none
+    margin-top: -40px
+    @include tablet
+      margin: 0 auto
+      padding: 0
+      width: 83%
     @include desktop
       display: flex
       width: 96%
@@ -657,9 +667,10 @@
         background-color: #fbfff0
       @include desktop
         border-bottom: 1px solid #e3e6e8
-        background-color: #000000
+        background-color: #fcfeed
         &:hover
           background-color: #719385
+          background-color: rgba(255, 235, 161, 0.78)
 
     #nav-folders:nth-child(4)
       margin-bottom: 50px
@@ -823,6 +834,8 @@
     width: 26%
     border-radius: 4.8px
     border: 6px solid rgb(247, 238, 211)
+    @include tablet
+      width: 14%
     @include desktop
       margin-top: 0
       width: 12%
@@ -951,6 +964,8 @@
       margin-top: 80px
       margin-bottom: 50px
       padding-bottom: 40px
+      border: none
+
   .talentpage
     @include desktop
       margin-top: 40px
@@ -1001,6 +1016,7 @@
     font-weight: lighter
     text-align: left
     width: 100%
+    // margin-left: -160px
     font-size: 0.96em
     letter-spacing: 0.048em
     font-family: $font-stack-rajdhani
@@ -1012,6 +1028,7 @@
       color: #9d8b70
       font-style: italic
       width: 128px
+      margin-left: -160px
       justify-content: space-between
       @include phone-landscape
       @include tablet
@@ -1037,8 +1054,8 @@
     background-color: rgba(202, 218, 215, 0.22)
     @include phone-landscape
     @include tablet
-      width: 23%
-      align-self: flex-start
+      margin-top: 30px
+      align-self: center
 
   .close-caption, .gdClose, .dmClose, .tClose
     color: #6b6a6a
@@ -1086,9 +1103,9 @@
       @include desktop
         padding-left: 0
         width: 19%
-        font-weight: 500
+        font-weight: 300
         letter-spacing: 0.02em
-        font-size: 1.5em
+        font-size: 1.25em
 
   .suite
     @include desktop
@@ -1270,7 +1287,7 @@
   #hide_h2, #hide_h2_gd, #hide_h2_dm, #hide_h2_t
     display: none
     margin-top: -9px
-    margin-bottom: 25px
+    margin-bottom: 48px
     margin-left: 12px
     @include phone-landscape
 
@@ -1292,8 +1309,8 @@
     display: flex
     flex-wrap: wrap
     width: 100%
-    padding: 8px
-    margin: -6px 0 60px 0px
+    padding: 10px
+    margin: 0px 0 10px 0px
     background-color: rgba(202, 218, 215, 0.22)
     @include phone-landscape
 
@@ -1308,6 +1325,7 @@
       background-color: rgba(255, 255, 255, 0)
       margin: auto
       margin-top: 33px
+      border: none
 
     p
       @include phone-landscape
@@ -1451,7 +1469,7 @@
     width: 100%
     height: auto
     @include tablet
-      display: none
+      display: flex
 
   #canvasboxMenu
     display: none
