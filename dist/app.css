@@ -551,7 +551,7 @@ h4, h6 {
     height: 68px;
     width: 14vw;
     width-margin-top: 30px;
-    background-image: url("../dist/imgs/my-logo-black.jpg");
+    background-image: url("../dist/imgs/newlogo.png");
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -2256,7 +2256,7 @@ h4, h6 {
     padding: 0 8px;
     font-weight: bolder;
     font-family: 'orbitron', '$font-stack-open-sans';
-    background-color: #e9efa9  !important;
+    background-color: rgba(233, 239, 169, 0);
     color: #513d4c !important;
     font-size: 0.8em;
     letter-spacing: 0.2em;
