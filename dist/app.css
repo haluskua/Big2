@@ -677,6 +677,7 @@ h4, h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    border: 2px solid lightgreen;
   }
 }
 
@@ -701,6 +702,16 @@ h4, h6 {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #folders-container li {
+    width: 78%;
+    border-radius: 0 10px;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .nav-folders {
     width: 63%;
     height: 30px;
@@ -745,7 +756,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .nav-folders {
-    width: 24%;
+    width: 78%;
     width-margin: 0;
     margin-bottom: 4px;
     display: -webkit-box;
@@ -758,6 +769,13 @@ h4, h6 {
   .nav-folders:focus, .nav-foldersactive, .nav-folders:hover, .nav-folders:visited {
     width: 24%;
     font-style: oblique;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .nav-folders:hover, .nav-folders:active, .nav-folders:visited {
+    background-color: lightgreen;
+    color: white;
   }
 }
 
@@ -964,7 +982,6 @@ h4, h6 {
   }
   .nav-archives:focus, .nav-archives:active, .nav-archives:hover, .nav-archivesvisited {
     text-align: center;
-    color: brown;
   }
 }
 
@@ -987,7 +1004,6 @@ h4, h6 {
   }
   .nav-archives:focus, .nav-archives:active, .nav-archives:hover, .nav-archivesvisited {
     text-align: center;
-    color: #b4c883;
   }
 }
 
@@ -1568,7 +1584,7 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .opening_statement {
+  .opening_statement, .mini_statement {
     text-align: justify;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1584,7 +1600,7 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  .opening_statement {
+  .opening_statement, .mini_statement {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1597,7 +1613,7 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .opening_statement {
+  .opening_statement, .mini_statement {
     width: 75%;
     color: #4c4947;
     padding: 60px 50px 30px 6px;
@@ -1610,7 +1626,7 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .opening_statement span, .opening_statement .par-title {
+  .opening_statement span, .opening_statement .par-title, .mini_statement span, .mini_statement .par-title {
     margin-top: 0px;
     font-size: 1.35em;
     font-family: "Dancing Script";
@@ -1623,7 +1639,7 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  .opening_statement span, .opening_statement .par-title {
+  .opening_statement span, .opening_statement .par-title, .mini_statement span, .mini_statement .par-title {
     font-family: "Antic";
     font-size: 1.9em;
     margin: auto;
@@ -1631,7 +1647,7 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .opening_statement span, .opening_statement .par-title {
+  .opening_statement span, .opening_statement .par-title, .mini_statement span, .mini_statement .par-title {
     font-family: "Rajdhani", sans-serif;
     font-weight: bolder;
     text-transform: uppercase;
@@ -1646,7 +1662,7 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .opening_statement .portrait {
+  .opening_statement .portrait, .mini_statement .portrait {
     max-width: 130px;
     border: 1px solid gray;
   }
@@ -1688,6 +1704,12 @@ h4, h6 {
     color: #3c3937;
     font-weight: normal;
     font-family: "Open Sans";
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .mini_statement {
+    width: 30%;
   }
 }
 
@@ -1759,6 +1781,7 @@ h4, h6 {
     line-height: 44.2px;
     padding-left: 1%;
     width: 94%;
+    border-bottom: 1px solid lightgreen;
     background: none;
   }
 }
@@ -1829,6 +1852,7 @@ h4, h6 {
   .main-gallery a, #projects a, #film-projects a,
   #gd-projects a, #dm-projects a, #t-projects a, #about a {
     width: 100%;
+    background-color: lightgreen;
   }
 }
 
@@ -2481,6 +2505,7 @@ h4, h6 {
   #gd-folders li:hover {
     background-color: #719385;
     background-color: rgba(255, 235, 161, 0.78);
+    background-color: lightgreen;
   }
 }
 
@@ -2933,6 +2958,13 @@ h4, h6 {
     border: none;
     background-color: rgba(247, 239, 214, 0);
     margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  iframe {
+    width: 600px;
+    height: 400px;
   }
 }
 
@@ -3418,7 +3450,7 @@ h4, h6 {
     display: flex;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    width: 100%;
+    width: 44%;
     height: auto;
     padding: 8px 38px;
     background-color: white;
