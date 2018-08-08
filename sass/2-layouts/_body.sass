@@ -75,6 +75,7 @@
   .columnsSplit
     display: flex !important
     flex-wrap: wrap
+    margin-top: 54px
     @include phone-landscape
 
     @include tablet
@@ -250,7 +251,7 @@
     @include phone-landscape
     @include tablet
       font-size: 1.66em
-      width: 87%
+      width: 93%
     @include desktop
       color: #ff7608
       font-size: 1.11em
@@ -1068,6 +1069,7 @@
     color: #6b6a6a
     display: flex
     width: 100%
+    padding: 18px
     text-align: center
     justify-content: center
     @include phone-landscape
@@ -1309,6 +1311,7 @@
   .project_box
     display: flex
     margin: auto
+    background-color: white
     @include desktop
       width: auto
 
@@ -1318,7 +1321,11 @@
     width: 100%
     padding: 10px
     margin: 0px 0 10px 0px
-    background-color: rgba(202, 218, 215, 0.22)
+    // background-color: rgba(202, 218, 215, 0.22)
+    background-image: url('../dist/imgs/x.png')
+    background-size: contain
+    background-position: center
+    background-repeat: repeat
     @include phone-landscape
 
     @include tablet
@@ -1329,7 +1336,7 @@
       flex-direction: column
       align-items: center
       width: 80%
-      background-color: rgba(255, 255, 255, 0)
+      // background-color: rgba(255, 255, 255, 0)
       margin: auto
       margin-top: 33px
       border: none
