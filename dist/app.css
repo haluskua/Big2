@@ -445,6 +445,7 @@ h4, h6 {
   .intro, .nameohk {
     font-size: 0.86em;
     letter-spacing: 0;
+    margin-top: 3px;
   }
 }
 
@@ -1852,7 +1853,7 @@ h4, h6 {
   .main-gallery a, #projects a, #film-projects a,
   #gd-projects a, #dm-projects a, #t-projects a, #about a {
     width: 100%;
-    background-color: lightgreen;
+    background-color: #f7eed3;
   }
 }
 
@@ -4010,6 +4011,7 @@ h4, h6 {
     border: 1px solid #f7eed3;
     border-radius: 0 0 30px 30px;
     background-color: rgba(233, 239, 169, 0.96);
+    background-color: #f7eed3;
     line-height: 0.6em;
     font-size: 1.3em;
     letter-spacing: 0.03em;
