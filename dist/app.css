@@ -3556,7 +3556,7 @@ h4, h6 {
     padding: 10px;
     margin: 0px 0 10px 0px;
     background-image: url("../dist/imgs/x.png");
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: repeat;
   }
