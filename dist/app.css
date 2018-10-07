@@ -343,9 +343,8 @@ h4, h6 {
   #bulgeword {
     margin: 0 auto;
     color: #050200;
-    font-size: 1.755em;
+    font-size: 1.8em;
     text-align: center;
-    margin-bottom: 20px;
     text-transform: uppercase;
     font-family: "Roboto";
   }
@@ -370,7 +369,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #bulgeword {
-    font-size: 5.2em;
+    font-size: 4.4em;
     letter-spacing: 0.01em;
     color: #513d4c;
     font-weight: 900;
@@ -446,10 +445,11 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .intro, .nameohk {
-    font-size: 1.6em;
+    font-size: 1.42em;
     padding-top: 5px;
     padding-bottom: 7px;
-    margin-top: -10px;
+    letter-spacing: 0em;
+    margin-top: 6px;
   }
 }
 
@@ -3756,7 +3756,7 @@ h4, h6 {
     background-image: url("../dist/imgs/newlogo.png");
     background-size: cover;
     padding: 0;
-    height: 94%;
+    height: 68%;
     width: 100%;
     border: none;
   }
