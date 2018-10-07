@@ -364,3 +364,57 @@ ctx.fillText("0225732261",-1,130);
 ctx.arc(50,38,30,0,2*Math.PI);
 
 ctx.stroke();
+
+
+
+
+
+// ===========================================================
+
+
+// header_desktop
+
+var c = document.getElementById("myCanvas-menu1");
+
+var ctx = c.getContext("2d");
+
+ctx.beginPath();
+
+
+ctx.moveTo(50,0);
+
+ctx.lineTo(84,20);
+
+ctx.lineTo(84,59);
+
+ctx.lineTo(50,78);
+
+ctx.lineTo(16,59);
+
+ctx.lineTo(16,20);
+
+ctx.lineTo(50,0);
+
+ctx.lineTo(84,20);
+
+
+
+// ctx.strokeStyle = "orange";
+//
+// ctx.font = "1.4em Arial";
+// ctx.fillStyle = "orange";
+// ctx.fillText("OHK",25,46);
+// ctx.font = "0.7em Helvetica";
+// ctx.fillStyle = "#635d49";
+// ctx.fillText("OMPHALUS.H.KUA",-1,90);
+// ctx.font = "0.75em Helvetica";
+// ctx.fillStyle = "#635d49";
+// ctx.fillText("haluskua.one@gmail.com",-1,110);
+// // ctx.font = "0.84em Helvetica";
+// ctx.fillStyle = "#635d49";
+// ctx.fillText("0225732261",-1,130);
+
+
+ctx.arc(50,38,30,0,2*Math.PI);
+
+ctx.stroke();

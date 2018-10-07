@@ -38,8 +38,8 @@
 			margin: auto
 			padding: 0
 		@include desktop
-			height: 86%
-			margin-top: -5em
+			height: 100%
+			// margin-top: -5em
 			margin-left: 10%
 
 	#Colsplit-box1
@@ -127,7 +127,7 @@
 		font-size: 1.8em
 		text-align: center
 		text-transform: uppercase
-		font-family: $font-stack-roboto
+		font-family: $font-stack-character
 		@include phone-landscape
 			color: #26061e
 			font-size: 1.87em
@@ -138,7 +138,7 @@
 			letter-spacing: 0.04em
 			font-family: $font-stack-roboto
 		@include desktop
-			font-size: 4.4em
+			font-size: 5.4em
 			letter-spacing: 0.01em
 			color: #513d4c
 			font-weight: 900
@@ -188,11 +188,12 @@
 			letter-spacing: 0.03em
 			font-family: $font-stack-character
 		@include desktop
-			font-size: 1.42em
-			padding-top: 5px
+			font-size: 1.14em
+			padding-top: 17px
 			padding-bottom: 7px
-			letter-spacing: 0em
+			letter-spacing: 0.1em
 			margin-top: 6px
+			text-transform: uppercase
 
 	.nameohk
 		display: flex
@@ -334,9 +335,9 @@
 			display: flex
 			flex-flow: column
 			background-image: none
-			background-color: #fcfeed
+			background-color: rgba(252, 254, 237, 0.34901960784313724)
 			justify-content: center
-			border: 2px solid lightgreen
+			border: 1px solid 2px solid rgba(244, 67, 54, 0.48)
 
   .reduced
 		display: flex
@@ -439,8 +440,9 @@
 		@include tablet
 			display: none
 		@include desktop
-			display: flex
-			height: 168px
+			display: none
+			// height: 168px
+			width: 40%
 			margin-top: 30px
 			// background: url('../dist/imgs/sky.jpg')
 			// background-position: center
