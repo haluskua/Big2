@@ -22,13 +22,17 @@
         width: 100%
         overflow: hidden
         position: relative
-        background-color: #eeffc3
+        // background-color: #eeffc3
+        background: url("../dist/imgs/1920.png")
+        background-size: contain
+        background-position: center
+        background-repeat: repeat-y
         flex-direction: column
         justify-content: flex-start
 
         @include desktop
           border: none
-          background-color: orange
+          background-color: #ff6700
           background-size: cover
           align-items: center
           width: 100%
@@ -137,13 +141,14 @@
   .opening_statement, .mini_statement
     text-align: justify
     flex-wrap: wrap
-    font-size: 1em
+    font-size: 0.92em
     line-height: 1.45em
     color: #3c3937
     color: #322221
     font-weight: normal
     font-family: $font-stack-sans-serif
     padding: 10px 16px 30px 16px
+    background-color: rgba(255, 251, 153, 0.55)
     margin-bottom: 25px
     @include phone-landscape
     @include tablet
@@ -157,9 +162,10 @@
       width: 75%
       color: #4c4947
       color: white
-      padding: 60px 50px 30px 6px
+      padding: 4px 50px 30px 6px
       display: flex
       align-self: center
+      font-size: 0.8em
 
     span, .par-title
       margin-top: 0px
@@ -194,8 +200,10 @@
   .opening_statement_desktop
     display: flex
     flex-wrap: wrap
-    font-size: 1em
+    font-size: 0.92em
     line-height: 1.45em
+    padding: 10px 16px 30px 16px
+    background-color: rgba(255, 251, 153, 0.55)
     font-family: $font-stack-sans-serif
     @include tablet
       padding: 57px 30px 0 16px
@@ -261,14 +269,14 @@
       font-size: 1.66em
       width: 93%
     @include desktop
-      color: #ff7608
-      font-size: 1.11em
+      color: #523a26
+      font-size: 1.1em
       text-transform: uppercase
       padding: 0
       line-height: 44.2px
       padding-left: 1%
       width: 94%
-      border-bottom: 1px solid rgba(233, 239, 169, 0.85)
+      border-bottom: 1px solid #b56334
       background: none
 
   .ompa
@@ -321,6 +329,8 @@
     align-items: center
     text-decoration: none
     margin-top: 0
+    background-color: #9eff2f
+    border-radius: 4px
 
   #content-holder
     width: 100vw
@@ -615,7 +625,7 @@
     margin: auto
     margin-top: 10px
     font-weight: normal
-    font-size: 1em
+    font-size: 0.92em
     line-height: 1.45em
     font-family: $font-stack-sans-serif
     color: #322221
@@ -1258,7 +1268,7 @@
           margin-bottom: 0
 
       button
-        width: 62%
+        width: 41%
         height: auto
         background-color: white
         margin: auto
@@ -1291,7 +1301,7 @@
           @include tablet
             padding: 7px
           @include desktop
-            font-size: 1.21em
+            font-size: 1em
             color: #020
             font-weight: 600
 
@@ -1468,7 +1478,7 @@
     background-image: url("../dist/imgs/newlogo.png")
     background-size: cover
     padding: 0
-    height: 68%
+    height: 60%
     width: 100%
     border: none
     // margin-top: -27px
