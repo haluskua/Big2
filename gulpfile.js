@@ -52,7 +52,7 @@ gulp.task('imageMin', function() {
 
 //COPY & minify HTML files
 gulp.task('copyHtml', function () {
- return gulp.src('./**.html')
+ return gulp.src('./dist/.html')
   //comment out the bottom-line to get normal html
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('dist'));
@@ -62,7 +62,8 @@ gulp.task('copyHtml', function () {
  gulp.task('watch', ['browser-sync', 'sass'], function(){
   gulp.watch('sass/**/*.sass', ['sass']);
   gulp.watch('sass/scripts/*.js', ['scripts']);
-   gulp.src('./*.html').on('change', reload);
+   // gulp.src('./*.html').on('change', reload);
+   gulp.watch("./*.html").on('change', browserSync.reload);
 });
 
   gulp.task('default', ['browser-sync', 'sass', 'scripts', 'imageMin', 'copyHtml', 'watch']);

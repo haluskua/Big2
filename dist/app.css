@@ -328,7 +328,7 @@ h4, h6 {
     -ms-flex-item-align: center;
         align-self: center;
     padding-top: 16px;
-    margin-bottom: 4px;
+    margin-bottom: -8px;
   }
 }
 
@@ -344,7 +344,7 @@ h4, h6 {
   #bulgeword {
     margin: 0 auto;
     color: #050200;
-    font-size: 1.8em;
+    font-size: 2.1em;
     text-align: center;
     text-transform: uppercase;
     font-family: "Cabin Sketch", Garamond;
@@ -451,7 +451,7 @@ h4, h6 {
     padding-bottom: 7px;
     letter-spacing: 0.1em;
     margin-top: 6px;
-    text-transform: uppercase;
+    text-transform: normal;
     color: #dac7d5;
   }
 }
@@ -1411,6 +1411,7 @@ h4, h6 {
     width: 100%;
     overflow: hidden;
     position: relative;
+    background-color: #eeffc3;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1424,6 +1425,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   body main section {
     border: none;
+    background-color: orange;
     background-size: cover;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -3671,7 +3673,7 @@ h4, h6 {
     padding: 11px;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    background: url("../dist/imgs/sky.jpg");
+    background: none;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -4049,16 +4051,15 @@ h4, h6 {
     display: flex;
     color: #130a01;
     letter-spacing: 0;
-    border: 1px solid #f7eed3;
     background-color: rgba(233, 239, 169, 0.65);
     background-color: rgba(249, 242, 223, 0.85);
-    line-height: 1.3em;
-    font-size: 2.17em;
+    font-size: 1.4em;
     letter-spacing: 0.03em;
     font-weight: bold;
     text-transform: uppercase;
     background-size: contain;
     opacity: 1;
+    width: 140px;
   }
 }
 
