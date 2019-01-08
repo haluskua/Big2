@@ -41,9 +41,13 @@
 			padding: 0
 		@include desktop
 			height: 100%
-			display: fex
+			margin-top: 0
 			justify-content: center
 			margin-left: 10%
+			background-image: url("../dist/imgs/hausman.jpg")
+			background-size: cover
+			background-position: left
+			background-repeat: no-repeat
 
 	#Colsplit-box1
 		height: 93%
@@ -120,14 +124,14 @@
 		@include phone-landscape
 		@include tablet
 		@include desktop
-			margin-top: 18px
+			margin-top: -238px
       width: 100%
       justify-content: center
 
 	#bulgeword
 		margin: 0 auto
 		color: #050200
-		font-size: 2.6em
+		font-size: 2.2em
 		text-align: center
 		text-transform: uppercase
 		font-family: $font-stack-character
@@ -141,7 +145,7 @@
 			letter-spacing: 0.04em
 			font-family: $font-stack-roboto
 		@include desktop
-			font-size: 5.4em
+			font-size: 4.8em
 			letter-spacing: 0.01em
 			color: #fbebf7
 			font-weight: 900
@@ -150,7 +154,8 @@
 		@include tablet
 			color: #ef5004
 		@include desktop
-			color: black
+			color: #ed8aa4
+			// font-size: 1em
 
   .ohk-logo
     width: 33%
@@ -184,7 +189,7 @@
 		letter-spacing: 0
 		font-family: $font-stack-open-sans-condensed
 		@include desktop
-			color: black
+			color: #efe3ed
 
 
 	.intro, .nameohk
@@ -208,7 +213,7 @@
 			letter-spacing: 0.03em
 			font-family: $font-stack-character
 		@include desktop
-			font-size: 1.14em
+			font-size: 1.65em
 			padding-top: 17px
 			padding-bottom: 7px
 			letter-spacing: 0.1em
@@ -349,7 +354,6 @@
 			// background-image: none
 			// border: none
 			// background: none
-
       width: 86vw
 			padding: 0
 			height: 82vh
@@ -360,6 +364,9 @@
 			background-color: rgba(249, 242, 223, 0.85)
 			justify-content: center
 			border: 1px solid 2px solid rgba(244, 67, 54, 0.48)
+			background-image: url("../dist/imgs/orange_pattern.png")
+			background-size: contain
+			background-repeat: repeat-y
 
   .reduced
 		display: flex
@@ -379,7 +386,7 @@
 			@include desktop
 				width: 78%
 				border-radius: 0 10px
-				background-color: #e85f8c
+				background-color: rgba(232, 95, 140, 0.66)
 
 	.nav-folders
 		width: 63%
@@ -512,10 +519,13 @@
 			height: 100%
 			line-height: 44px
 			color: #131426
-			font-size: 0.85em
+			font-size: 0.65em
 			background-color: none
 			border: none
 			justify-content: center
+			background-image: url("../dist/imgs/orange_pattern.png")
+			background-size: cover
+			background-repeat: no-repeat
 			&:focus
 				color: white
 				font-size: 0.93em
@@ -561,8 +571,6 @@
 		font-size: 1.25em
 		letter-spacing: 0.07em
 		color: #12191d
-		&:focus, &:active, &:hover, &visited
-			text-align: center
 
 		@include tablet
 			font-size: 1.1em
@@ -572,7 +580,7 @@
 			color: #ebf3ff
 			text-align: center
 			z-index: 999
-      font-size: 2.2em !important
+      font-size: 1.1em !important !important
       font-weight: bolder
       padding-top: 9px
 			letter-spacing: 0.01em
@@ -722,7 +730,7 @@
 			position: fixed
 			align-self: center
 			top: 0
-			background-color: #f06292
+			background-color: #eace8c
 
 
 	.mobile-container .sticky

@@ -297,13 +297,13 @@ ctx.font = "1.4em Arial";
 ctx.fillStyle = "orange";
 ctx.fillText("OHK",25,46);
 ctx.font = "0.74em Helvetica";
-ctx.fillStyle = "orange";
+ctx.fillStyle = "#292824";
 ctx.fillText("OMPHALUS.H.KUA",-1,90);
 ctx.font = "0.84em Helvetica";
 ctx.fillStyle = "orange";
 ctx.fillText("haluskua.one@gmail.com",-1,110);
 // ctx.font = "0.84em Helvetica";
-ctx.fillStyle = "orange";
+ctx.fillStyle = "#292824e";
 ctx.fillText("0225732261",-1,130);
 
 

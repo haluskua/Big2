@@ -155,11 +155,15 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .Colsplit-between {
     height: 100%;
-    display: fex;
+    margin-top: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin-left: 10%;
+    background-image: url("../dist/imgs/hausman.jpg");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
   }
 }
 
@@ -338,7 +342,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #portfolio-header {
-    margin-top: 18px;
+    margin-top: -238px;
     margin-top-width: 100%;
     margin-top-justify-content: center;
   }
@@ -348,7 +352,7 @@ h4, h6 {
   #bulgeword {
     margin: 0 auto;
     color: #050200;
-    font-size: 2.6em;
+    font-size: 2.2em;
     text-align: center;
     text-transform: uppercase;
     font-family: "Cabin Sketch", Garamond;
@@ -374,7 +378,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #bulgeword {
-    font-size: 5.4em;
+    font-size: 4.8em;
     letter-spacing: 0.01em;
     color: #fbebf7;
     font-weight: 900;
@@ -395,7 +399,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #portfolio-color {
-    color: black;
+    color: #ed8aa4;
   }
 }
 
@@ -451,7 +455,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .intro1 {
-    color: black;
+    color: #efe3ed;
   }
 }
 
@@ -485,7 +489,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .intro, .nameohk {
-    font-size: 1.14em;
+    font-size: 1.65em;
     padding-top: 17px;
     padding-bottom: 7px;
     letter-spacing: 0.1em;
@@ -726,6 +730,9 @@ h4, h6 {
         -ms-flex-pack: center;
             justify-content: center;
     border: 1px solid 2px solid rgba(244, 67, 54, 0.48);
+    background-image: url("../dist/imgs/orange_pattern.png");
+    background-size: contain;
+    background-repeat: repeat-y;
   }
 }
 
@@ -756,7 +763,7 @@ h4, h6 {
   #folders-container li {
     width: 78%;
     border-radius: 0 10px;
-    background-color: #e85f8c;
+    background-color: rgba(232, 95, 140, 0.66);
   }
 }
 
@@ -960,12 +967,15 @@ h4, h6 {
     height: 100%;
     line-height: 44px;
     color: #131426;
-    font-size: 0.85em;
+    font-size: 0.65em;
     background-color: none;
     border: none;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    background-image: url("../dist/imgs/orange_pattern.png");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .hamburger-menu:focus {
     color: white;
@@ -1028,9 +1038,6 @@ h4, h6 {
     letter-spacing: 0.07em;
     color: #12191d;
   }
-  .nav-archives:focus, .nav-archives:active, .nav-archives:hover, .nav-archivesvisited {
-    text-align: center;
-  }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
@@ -1046,7 +1053,7 @@ h4, h6 {
     color: #ebf3ff;
     text-align: center;
     z-index: 999;
-    z-index-font-size: 2.2em !important;
+    z-index-font-size: 1.1em !important !important;
     z-index-font-weight: bolder;
     z-index-padding-top: 9px;
     letter-spacing: 0.01em;
@@ -1288,7 +1295,7 @@ h4, h6 {
     -ms-flex-item-align: center;
         align-self: center;
     top: 0;
-    background-color: #f06292;
+    background-color: #eace8c;
   }
 }
 
@@ -1440,10 +1447,6 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   body main {
     margin-left: 18%;
-    background: url("../dist/imgs/1920.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: repeat-y;
   }
 }
 
@@ -1467,6 +1470,12 @@ h4, h6 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  body main section {
+    background: none;
   }
 }
 
@@ -1669,6 +1678,7 @@ h4, h6 {
     display: flex;
     font-size: 1.11em;
     margin-bottom: 0;
+    background: none;
   }
 }
 
@@ -1755,6 +1765,7 @@ h4, h6 {
     margin-left: 40px;
     margin-right: 40px;
     margin-bottom: 40px;
+    background: none;
   }
 }
 
@@ -1849,7 +1860,7 @@ h4, h6 {
     line-height: 44.2px;
     padding-left: 1%;
     width: 94%;
-    border-bottom: 1px solid #b56334;
+    border-bottom: 1px solid #f0e4cb;
     background: none;
   }
 }
@@ -2123,7 +2134,7 @@ h4, h6 {
     font-size: 1.75em;
     letter-spacing: 0.02em;
     margin-bottom: 0;
-    color: #ffdf80;
+    color: #292824;
   }
 }
 
@@ -2433,7 +2444,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   div.panel {
-    background-color: #e45d88;
+    background-color: #d7ba7d;
     width: 90%;
     top: 50px;
     left: 284px;
@@ -2466,6 +2477,7 @@ h4, h6 {
     letter-spacing: normal;
     margin: 0;
     width: 86%;
+    background: none;
   }
 }
 
@@ -2747,9 +2759,8 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .fs-gal {
-    width: 66%;
     margin: auto;
-    width: 39%;
+    width: 83%;
   }
 }
 
@@ -3195,7 +3206,7 @@ h4, h6 {
     width: 100%;
     line-height: 1.4em;
     border-radius: 9px;
-    border-bottom: 1px double;
+    border-bottom: 1px double gray;
     padding: 11px;
     text-align: center;
     -webkit-box-pack: center;
@@ -3213,7 +3224,10 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .close-caption, .gdClose, .dmClose, .tClose {
-    color: #163838;
+    color: #465553;
+    font-size: 1.15em;
+    letter-spacing: normal;
+    background: none;
   }
 }
 
@@ -3351,7 +3365,6 @@ h4, h6 {
             justify-content: flex-start;
     height: 100%;
     margin-bottom: 50px;
-    border-bottom: 1px dotted gray;
   }
 }
 
@@ -3693,7 +3706,6 @@ h4, h6 {
     overflow: auto;
     visibility: visible;
     padding: 40px 0px;
-    border-bottom: 1px solid #e5dcbc;
   }
 }
 
