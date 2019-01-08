@@ -383,7 +383,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #portfolio-color {
-    color: #ff7608;
+    color: black;
   }
   #portfolio-color .ohk-logo {
     width: 33%;
@@ -432,6 +432,15 @@ h4, h6 {
     letter-spacing: 0;
     font-family: "Open Sans";
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .intro1 {
+    color: black;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .intro, .nameohk {
     margin: auto;
     padding-top: 46px;
@@ -732,7 +741,7 @@ h4, h6 {
   #folders-container li {
     width: 78%;
     border-radius: 0 10px;
-    background-color: #fffcf8;
+    background-color: #e85f8c;
   }
 }
 
@@ -1019,7 +1028,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .nav-archives {
-    color: #253144;
+    color: #ebf3ff;
     text-align: center;
     z-index: 999;
     z-index-font-size: 2.2em !important;
@@ -1416,7 +1425,10 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   body main {
     margin-left: 18%;
-    background-color: #494f58;
+    background: url("../dist/imgs/1920.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat-y;
   }
 }
 
@@ -1446,7 +1458,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   body main section {
     border: none;
-    background-color: #ff6700;
+    background: none;
     background-size: contain;
     -webkit-box-align: center;
         -ms-flex-align: center;
