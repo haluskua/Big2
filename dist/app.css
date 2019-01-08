@@ -155,6 +155,10 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .Colsplit-between {
     height: 100%;
+    display: fex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-left: 10%;
   }
 }
@@ -1138,7 +1142,7 @@ h4, h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-color: rgba(240, 224, 176, 0.56);
+    background-color: rgba(255, 235, 59, 0.57);
   }
   .haus-menu {
     color: #1f1710;
@@ -1578,7 +1582,7 @@ h4, h6 {
     font-size: 0.85em;
     width: 100%;
     padding: 0;
-    margin-top: 80px;
+    margin-top: 100px;
     background-color: rgba(255, 255, 255, 0);
   }
 }
@@ -1636,11 +1640,8 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 57px 30px 0 16px;
-    font-size: 1.01em;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 40px;
+    font-size: 1.11em;
+    margin-bottom: 0;
   }
 }
 
@@ -1889,8 +1890,7 @@ h4, h6 {
   .projects a, .wagai-weh a, #wagai a, #main-gallery a,
   .main-gallery a, #projects a, #film-projects a,
   #gd-projects a, #dm-projects a, #t-projects a, #about a {
-    height: 60%;
-    width: 94%;
+    height: 28%;
     margin: 0 auto;
   }
 }
@@ -2054,7 +2054,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .contact-section {
     background: none;
-    height: 100vh;
+    height: 100%;
     margin: 0 auto;
   }
 }
@@ -2465,8 +2465,11 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .scpmt, .scpmt-gd, .scpmt-dm, .scpmt-t {
     margin: 0 auto;
+    color: #322221;
     padding: 0;
-    width: 83%;
+    width: 93%;
+    font-size: 1.17em;
+    padding: 12px;
   }
 }
 
@@ -2748,7 +2751,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .img-split, .selfie {
-    width: 56%;
+    width: 97%;
     margin-top: 49px;
   }
 }
@@ -3163,6 +3166,7 @@ h4, h6 {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
+    line-height: 1.4em;
     border-radius: 9px;
     border-bottom: 1px double;
     padding: 11px;
@@ -3175,8 +3179,8 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .close-caption, .gdClose, .dmClose, .tClose {
-    color: #f9f0f0;
-    font-size: 0.89em;
+    color: #0f1714;
+    font-size: 1em;
   }
 }
 
@@ -3368,6 +3372,12 @@ h4, h6 {
     width: auto;
     margin: auto;
     padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .blocks section #website_background2, .blocks .one #website_background2, .one section #website_background2, .one .one #website_background2 {
+    margin-top: 30px;
   }
 }
 
@@ -3735,6 +3745,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .outer-div {
+    margin-top: 31px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3844,6 +3855,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .inner-div11 {
+    display: none;
     height: 47%;
     width: 63%;
     margin-top: 0;
@@ -4062,10 +4074,10 @@ h4, h6 {
     text-transform: uppercase;
     letter-spacing: 0.08em;
     font-family: "Roboto";
-    border: 6px solid #ffeaaa;
+    border: 6px solid #FFC107;
     margin: auto;
     width: 100vw;
-    background-color: #e4d4a3;
+    background-color: #FFEB3B;
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -4088,18 +4100,17 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #130a01;
+    color: #fffcfa;
     letter-spacing: 0;
     border: 2px;
-    background-color: rgba(233, 239, 169, 0.65);
-    background-color: #ea5f8d;
+    background-color: rgba(233, 30, 99, 0.560784);
     font-size: 1.4em;
     letter-spacing: 0.03em;
     font-weight: bold;
     text-transform: uppercase;
     background-size: contain;
     opacity: 1;
-    width: 200px;
+    width: 98%;
   }
 }
 
