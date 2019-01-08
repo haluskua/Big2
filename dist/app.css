@@ -383,8 +383,23 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #portfolio-color {
+    color: #ef5004;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  #portfolio-color {
+    color: #ef5004;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #portfolio-color {
     color: black;
   }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   #portfolio-color .ohk-logo {
     width: 33%;
     margin: auto;
