@@ -113,7 +113,7 @@ h4, h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: #494f58;
+    background-color: #E91E63;
     background-image: none;
   }
 }
@@ -372,7 +372,7 @@ h4, h6 {
   #bulgeword {
     font-size: 5.4em;
     letter-spacing: 0.01em;
-    color: #dac7d5;
+    color: #fbebf7;
     font-weight: 900;
   }
 }
@@ -421,8 +421,8 @@ h4, h6 {
   .intro1 {
     margin: auto;
     margin-top: 6px;
-    color: #332f27;
-    font-size: 0.99em;
+    color: #352a12;
+    font-size: 1.1em;
     position: relative;
     text-align: justify;
     letter-spacing: 0;
@@ -728,6 +728,7 @@ h4, h6 {
   #folders-container li {
     width: 78%;
     border-radius: 0 10px;
+    background-color: #fffcf8;
   }
 }
 
@@ -794,7 +795,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .nav-folders:hover, .nav-folders:active, .nav-folders:visited {
-    background-color: lightgreen;
+    background-color: #ea5f8d;
     color: white;
   }
 }
@@ -945,7 +946,7 @@ h4, h6 {
   }
   .hamburger-menu:visited, .hamburger-menu:active {
     color: black;
-    background-color: #feffe0;
+    background-color: #ea5f8d;
   }
 }
 
@@ -1017,9 +1018,11 @@ h4, h6 {
     color: #253144;
     text-align: center;
     z-index: 999;
-    z-index-font-size: 2.33em !important;
+    z-index-font-size: 2.2em !important;
     z-index-font-weight: bolder;
     z-index-padding-top: 9px;
+    letter-spacing: 0.01em;
+    font-family: "Open Sans";
   }
   .nav-archives:focus, .nav-archives:active, .nav-archives:hover, .nav-archivesvisited {
     text-align: center;
@@ -1257,7 +1260,7 @@ h4, h6 {
     -ms-flex-item-align: center;
         align-self: center;
     top: 0;
-    background-color: #b8b3c3;
+    background-color: #f06292;
   }
 }
 
@@ -1440,7 +1443,7 @@ h4, h6 {
   body main section {
     border: none;
     background-color: #ff6700;
-    background-size: cover;
+    background-size: contain;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1644,15 +1647,15 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .opening_statement, .mini_statement {
     width: 75%;
-    color: #4c4947;
-    color: white;
+    color: #0c0802;
     padding: 4px 50px 30px 6px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-item-align: center;
         align-self: center;
-    font-size: 0.8em;
+    font-size: 1em;
+    background: none;
   }
 }
 
@@ -1688,8 +1691,8 @@ h4, h6 {
     -ms-flex-item-align: start;
         align-self: flex-start;
     width: 100%;
-    font-size: 1.66em;
-    color: #f9f9f9;
+    font-size: 1.33em;
+    color: #130802;
   }
 }
 
@@ -1729,15 +1732,15 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .opening_statement_desktop {
-    width: 56%;
+    width: 85%;
     text-align: justify;
     padding-top: 0px;
     margin-bottom: 33px;
-    font-size: 0.85em;
+    font-size: 1em;
     line-height: 1.9em;
     font-weight: 500;
-    color: #4c4947;
-    color: white;
+    background: none;
+    color: #0c0802;
     font-weight: normal;
     font-family: "Open Sans";
   }
@@ -1746,6 +1749,8 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .mini_statement {
     width: 30%;
+    background: none;
+    font-size: 1em;
   }
 }
 
@@ -1769,7 +1774,6 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .screen {
-    width: 100%;
     margin: auto;
     height: auto;
     background: url("../dist/imgs/pattern.jpg");
@@ -1886,6 +1890,7 @@ h4, h6 {
   .main-gallery a, #projects a, #film-projects a,
   #gd-projects a, #dm-projects a, #t-projects a, #about a {
     height: 60%;
+    width: 94%;
     margin: 0 auto;
   }
 }
@@ -2401,11 +2406,11 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   div.panel {
-    background-color: rgba(233, 239, 169, 0.85);
+    background-color: #e45d88;
     width: 90%;
     top: 50px;
     left: 284px;
-    border: 1px solid #b4c883;
+    border: 0px solid #b4c883;
   }
 }
 
@@ -2440,11 +2445,12 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .skills-caption, .gd-caption, .dm-caption, .t-caption {
     font-size: 1em;
-    color: white;
+    color: #0c0802;
     line-height: 1.6em;
     margin: 0;
     text-align: justify;
     width: 85%;
+    background: none;
     padding: 20px 0 0 0;
   }
 }
@@ -2544,7 +2550,7 @@ h4, h6 {
   #gd-folders li:hover {
     background-color: #719385;
     background-color: rgba(255, 235, 161, 0.78);
-    background-color: lightgreen;
+    background-color: #ea5f8d;
   }
 }
 
@@ -3176,7 +3182,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .close-caption, .gdClose, .dmClose, .tClose {
-    color: #afbdbd;
+    color: #163838;
   }
 }
 
@@ -3207,6 +3213,7 @@ h4, h6 {
     -ms-flex-item-align: start;
         align-self: flex-start;
     margin-left: 30px;
+    margin-bottom: 40px;
   }
 }
 
@@ -3242,10 +3249,10 @@ h4, h6 {
   .small-intro h2 {
     padding-left: 0;
     width: 19%;
-    font-weight: 300;
+    font-weight: bold;
     letter-spacing: 0.02em;
-    font-size: 1.25em;
-    color: #afbdbd;
+    font-size: 1.27em;
+    color: #f06292;
   }
 }
 
@@ -3837,7 +3844,8 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .inner-div11 {
-    height: 38%;
+    height: 47%;
+    width: 63%;
     margin-top: 0;
     margin-bottom: 0;
     background-size: contain;
@@ -4082,15 +4090,16 @@ h4, h6 {
     display: flex;
     color: #130a01;
     letter-spacing: 0;
+    border: 2px;
     background-color: rgba(233, 239, 169, 0.65);
-    background-color: rgba(249, 242, 223, 0.85);
+    background-color: #ea5f8d;
     font-size: 1.4em;
     letter-spacing: 0.03em;
     font-weight: bold;
     text-transform: uppercase;
     background-size: contain;
     opacity: 1;
-    width: 140px;
+    width: 200px;
   }
 }
 

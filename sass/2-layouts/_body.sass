@@ -33,7 +33,7 @@
         @include desktop
           border: none
           background-color: #ff6700
-          background-size: cover
+          background-size: contain
           align-items: center
           width: 100%
 
@@ -162,12 +162,12 @@
       margin-bottom: 40px
     @include desktop
       width: 75%
-      color: #4c4947
-      color: white
+      color: #0c0802
       padding: 4px 50px 30px 6px
       display: flex
       align-self: center
-      font-size: 0.8em
+      font-size: 1em
+      background: none
 
     span, .par-title
       margin-top: 0px
@@ -190,8 +190,8 @@
         display: flex
         align-self: flex-start
         width: 100%
-        font-size: 1.66em
-        color: #f9f9f9
+        font-size: 1.33em
+        color: #130802
 
     .portrait
       max-width: 130px
@@ -215,15 +215,15 @@
       margin-right: 40px
       margin-bottom: 40px
     @include desktop
-      width: 56%
+      width: 85%
       text-align: justify
       padding-top: 0px
       margin-bottom: 33px
-      font-size: 0.85em
+      font-size: 1em
       line-height: 1.9em
       font-weight: 500
-      color: #4c4947
-      color: white
+      background: none
+      color: #0c0802
       font-weight: normal
       font-family: $font-stack-open-sans
 
@@ -231,6 +231,8 @@
   .mini_statement
       @include desktop
         width: 30%
+        background: none
+        font-size: 1em
 
   .screen
     display: flex
@@ -243,7 +245,7 @@
     background-repeat: repeat-x
     background-position: center
     @include desktop
-      width: 100%
+      // width: 100%
       margin: auto
       height: auto
       background: url("../dist/imgs/pattern.jpg")
@@ -311,7 +313,7 @@
       text-decoration: none
       @include desktop
         height: 60%
-        // padding: 10px
+        width: 94%
         margin: 0 auto
         // background-color: #f7eed3
 
@@ -619,11 +621,11 @@
         background-color: #fffef2
         border: none
       @include desktop
-        background-color: rgba(233, 239, 169, 0.85)
+        background-color: rgb(228, 93, 136)
         width: 90%
         top: 50px
         left: 284px
-        border: 1px solid #b4c883
+        border: 0px solid #b4c883
 
   .skills-caption, .gd-caption, .dm-caption, .t-caption
     display: none
@@ -648,11 +650,12 @@
       width: 86%
     @include desktop
       font-size: 1em
-      color: white
+      color: #0c0802
       line-height: 1.6em
       margin: 0
       text-align: justify
       width: 85%
+      background: none
       padding: 20px 0 0 0
 
   .scpmt, .scpmt-gd, .scpmt-dm, .scpmt-t
@@ -703,7 +706,7 @@
         &:hover
           background-color: #719385
           background-color: rgba(255, 235, 161, 0.78)
-          background-color: lightgreen
+          background-color: rgb(234, 95, 141)
 
     #nav-folders:nth-child(4)
       margin-bottom: 50px
@@ -1108,7 +1111,7 @@
       color: #f9f0f0
       font-size: 0.89em
     @include desktop
-      color: #afbdbd
+      color: #163838
 
 
   .small-intro
@@ -1125,6 +1128,7 @@
       width: 100%
       align-self: flex-start
       margin-left: 30px
+      margin-bottom: 40px
 
     h2
       color: #2b251c
@@ -1147,10 +1151,10 @@
       @include desktop
         padding-left: 0
         width: 19%
-        font-weight: 300
+        font-weight: bold
         letter-spacing: 0.02em
-        font-size: 1.25em
-        color: #afbdbd
+        font-size: 1.27em
+        color: #f06292
   .tClose
     background-color: black
 
@@ -1500,7 +1504,8 @@
       height: 82%
       width: 32%
     @include desktop
-      height: 38%
+      height: 47%
+      width: 63%
       margin-top: 0
       margin-bottom: 0
       background-size: contain
