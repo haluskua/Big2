@@ -403,7 +403,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #portfolio-color {
-    color: #79b7dc;
+    color: #9acbd6;
   }
 }
 
@@ -1023,7 +1023,8 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .fields {
     font-size: 1em;
-    color: #161b21;
+    font-weight: bold;
+    color: #404852;
   }
   .fields:hover {
     color: #443939;
@@ -1038,7 +1039,7 @@ h4, h6 {
   .nav-archives {
     font-family: "Rajdhani", sans-serif;
     font-weight: bolder;
-    font-size: 1.25em;
+    font-size: 1.28em;
     letter-spacing: 0.07em;
     color: #12191d;
   }
@@ -1817,6 +1818,9 @@ h4, h6 {
     margin: auto;
     height: auto;
     background: url("../dist/imgs/pattern.jpg");
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
   }
 }
 
@@ -1979,7 +1983,6 @@ h4, h6 {
   .projects a, .wagai-weh a, #wagai a, #main-gallery a,
   .main-gallery a, #projects a, #film-projects a,
   #gd-projects a, #dm-projects a, #t-projects a, #about a {
-    height: 28%;
     margin: 0 auto;
   }
 }
@@ -2143,7 +2146,6 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .contact-section {
     background: none;
-    height: 100%;
     margin: 0 auto;
   }
 }
