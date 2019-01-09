@@ -351,7 +351,7 @@ ctx.font = "1.4em Arial";
 ctx.fillStyle = "orange";
 ctx.fillText("OHK",25,46);
 ctx.font = "0.7em Helvetica";
-ctx.fillStyle = "#635d49";
+ctx.fillStyle = "orange";
 ctx.fillText("OMPHALUS.H.KUA",-1,90);
 ctx.font = "0.75em Helvetica";
 ctx.fillStyle = "#635d49";
@@ -363,7 +363,7 @@ ctx.fillText("0225732261",-1,130);
 
 ctx.arc(50,38,30,0,2*Math.PI);
 
-ctx.stroke();
+ctx.stroke(); 
 
 
 

@@ -63,8 +63,7 @@ gulp.task('copyHtml', function () {
   gulp.watch('sass/**/*.sass', ['sass']);
   gulp.watch('sass/scripts/*.js', ['scripts']);
    // gulp.src('./*.html').on('change', reload);
-   gulp.watch("./**/.+(html|js)").on('change', browserSync.reload);
-
+   gulp.watch("./*.html").on('change', browserSync.reload);
 });
 
   gulp.task('default', ['browser-sync', 'sass', 'scripts', 'imageMin', 'copyHtml', 'watch']);

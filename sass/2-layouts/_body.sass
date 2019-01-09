@@ -88,7 +88,7 @@
   .columnsSplit
     display: flex !important
     flex-wrap: wrap
-    margin-top: 54px
+    margin-top: 0px
     margin-bottom: -12px
     @include phone-landscape
 
@@ -155,7 +155,7 @@
     color: #322221
     font-weight: normal
     font-family: $font-stack-sans-serif
-    padding: 17px 16px 30px 16px
+    padding: 17px 16px 0px 16px
     // background-color: #FFEB3B
     margin-bottom: 25px
     @include phone-landscape
@@ -242,13 +242,15 @@
   .screen
     display: flex
     justify-content: center
-    width: 98vw
+    width: 100vw
     border-radius: 4px
     height: auto
     background: url("../dist/imgs/pattern.jpg")
     background-size: cover
     background-repeat: repeat-x
     background-position: center
+    @include tablet
+      
     @include desktop
       // width: 100%
       margin: auto
@@ -626,8 +628,8 @@
         background-color: #fffef2
         border: none
       @include desktop
-        background-color: #d7ba7d
-        width: 90%
+        background-color: #ede1bf
+        width: 88%
         top: 50px
         left: 284px
         border: 0px solid #b4c883
@@ -853,7 +855,7 @@
     width: 97%
     margin-top: 0px
     margin-bottom: 6px
-    margin-top: -34px
+    margin-top: 0px
     border: 6px solid rgb(247, 238, 211)
     @include phone-landscape
     @include tablet
@@ -987,7 +989,7 @@
     flex-wrap: wrap
     align-items: center
     overflow-y: scroll
-    margin-top: 42px
+    margin-top: -8px
     border: 1px solid #e6dee2
     background-color: #f7efd66e
     justify-content: space-around
@@ -1084,7 +1086,8 @@
       font-family: $font-stack-antic
       display: flex
       justify-content: space-between
-      color: #381b06
+      margin-bottom: 28px
+      color: #997a3c
       width: 116px
       font-size: 1.15em
       border-bottom: 1px dotted
@@ -1105,13 +1108,14 @@
       align-self: center
 
   .close-caption, .gdClose, .dmClose, .tClose
-    color: #63503d
-    background-color: rgba(255, 245, 146, 0.66)
+    color: #636c6e
+    margin-top: 4px
+    margin-bottom: 23px
     display: flex
     width: 100%
     line-height: 1.4em
-    border-radius: 9px
-    border-bottom: 1px double gray
+    border-radius: 5px
+    border-bottom: 0.5px double gray
     padding: 11px
     text-align: center
     justify-content: center
@@ -1142,7 +1146,7 @@
       margin-bottom: 40px
 
     h2
-      color: #2b251c
+      color: #d6878a
       align-self: flex-start
       font-size: 1.4em
       letter-spacing: 0.04em
@@ -1152,7 +1156,7 @@
       margin-top: -2px
       width: 55%
       font-weight: bold
-      padding-left: 23px
+      padding-left: 0px
       font-family: $font-stack-roboto
       border-bottom: 1px dotted rgba(167, 151, 95, 0.97)
       @include phone-landscape
@@ -1300,6 +1304,7 @@
         background-color: #ffe290
         margin: auto
         justify-content: center
+        padding: 2px
         border-radius: 6px
         display: flex
         margin-bottom: 42px
@@ -1348,7 +1353,7 @@
 
   #hide_h2, #hide_h2_gd, #hide_h2_dm, #hide_h2_t
     display: none
-    margin-top: -9px
+    margin-top: -12px
     margin-bottom: 48px
     margin-left: 12px
     text-transform: none
@@ -1364,7 +1369,7 @@
 
   .project_box
     display: flex
-    width: 84%
+    width: 100%
     margin: auto
     margin-top: -6px
     background-color: rgba(251, 255, 240, 0.43)
@@ -1404,6 +1409,8 @@
       @include tablet
 
   .spacer
+    padding: 10px 0px
+    margin-top: -32px
     @include desktop
       height: 100%
       margin: auto
