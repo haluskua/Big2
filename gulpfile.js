@@ -58,7 +58,6 @@ gulp.task('copyHtml', function () {
     .pipe(gulp.dest('dist'));
 });
 
-
  gulp.task('watch', ['browser-sync', 'sass'], function(){
   gulp.watch('sass/**/*.sass', ['sass']);
   gulp.watch('sass/scripts/*.js', ['scripts']);
