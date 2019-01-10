@@ -767,7 +767,7 @@ h4, h6 {
   #folders-container li {
     width: 78%;
     border-radius: 0 10px;
-    background-color: #806846;
+    background-color: #fafafa;
   }
 }
 
@@ -1055,7 +1055,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .nav-archives {
-    color: #ebf3ff;
+    color: #5c7f33;
     text-align: center;
     z-index: 999;
     z-index-font-size: 1.1em !important !important;
@@ -2154,6 +2154,7 @@ h4, h6 {
   .contact-section {
     background: none;
     margin: 0 auto;
+    height: 100%;
   }
 }
 
