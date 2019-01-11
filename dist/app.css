@@ -747,7 +747,7 @@ h4, h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border: 4px solid rgba(104, 121, 85, 0.86);
+    border: 2px solid rgba(138, 181, 89, 0.86);
     background-image: url("../dist/imgs/orange_pattern.png");
     background-size: contain;
     background-repeat: repeat-y;
