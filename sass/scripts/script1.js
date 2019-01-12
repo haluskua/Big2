@@ -308,7 +308,7 @@ $(document).ready(function(){
             targets: '.animation-caption',
             translateY: [
               { value: +30, duration: 3810, dealy: 600},
-              { value: 0, duration: 3860, delay: 600}
+              { value: 0, duration: 3860, delay: 600},
             ],
 
           });

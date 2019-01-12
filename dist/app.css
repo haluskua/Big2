@@ -1631,9 +1631,10 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .animation-caption, .gallery-link {
-    font-size: 0.85em;
+    font-size: 1.05em;
     width: 100%;
     padding: 0;
+    color: #324c17;
     margin-top: 100px;
     background-color: rgba(255, 255, 255, 0);
   }
@@ -1831,7 +1832,6 @@ h4, h6 {
   .screen {
     margin: auto;
     height: auto;
-    border: 2px solid #CDDC39;
     background: url("../dist/imgs/pattern.jpg");
     background-size: contain;
     background-repeat: repeat;
@@ -1876,11 +1876,11 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #CDDC39;
+    color: #232120;
     letter-spacing: 0;
     line-height: 1.45em;
     border: 1px solid #CDDC39;
-    background-color: rgba(91, 106, 75, 0.86);
+    background-color: rgba(192, 214, 168, 0.86);
     font-size: 1.5em;
     letter-spacing: 0.45em;
     font-weight: bold;
@@ -3644,6 +3644,9 @@ h4, h6 {
     display: flex;
     -ms-flex-item-align: start;
         align-self: flex-start;
+    background: none;
+    border: 1px solid #8bc34a;
+    margin-top: 17px;
     height: auto;
   }
 }
@@ -3951,19 +3954,19 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .inner-div1 {
-    background-image: url("../dist/imgs/my-logo-black.jpg");
+    background-image: url("../dist/imgs/portfolio2.jpg");
   }
   .inner-div2 {
-    background-image: url("../dist/imgs/my-logo-black.jpg");
+    background-image: url("../dist/imgs/weave.jpg");
   }
   .inner-div3 {
-    background-image: url("../dist/imgs/my-logo-black.jpg");
+    background-image: url("../dist/imgs/mele_logo.jpg");
   }
   .inner-div4 {
-    background-image: url("../dist/imgs/my-logo-black.jpg");
+    background-image: url("../dist/imgs/goddaughter.jpg");
   }
   .inner-div5 {
-    background-image: url("../dist/imgs/my-logo-black.jpg");
+    background-image: url("../dist/imgs/Oilpainting.jpg");
   }
   .inner-div11 {
     background-image: url("../dist/imgs/newlogo.png");
