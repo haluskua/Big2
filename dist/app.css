@@ -1873,16 +1873,16 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #push-up {
+    font-family: "Cabin Sketch", Garamond;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #232120;
-    letter-spacing: 0;
-    line-height: 1.45em;
+    color: #244c34;
+    line-height: 0.89em;
     border: 1px solid #CDDC39;
     background-color: rgba(192, 214, 168, 0.86);
-    font-size: 1.5em;
-    letter-spacing: 0.45em;
+    font-size: 2em;
+    letter-spacing: 0.3em;
     font-weight: bold;
     text-transform: uppercase;
     background-size: contain;
