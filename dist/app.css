@@ -797,10 +797,16 @@ h4, h6 {
     margin-bottom: 11px;
     margin-top: 9px;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .nav-folders:active, .nav-folders:focus {
     width: 70%;
     background-color: white;
     background-color: rgba(155, 149, 130, 0.329);
+  }
+  .nav-folders:hover {
+    background-color: red;
   }
 }
 
@@ -2669,9 +2675,7 @@ h4, h6 {
     background: none;
   }
   #gd-folders li:hover {
-    background-color: #719385;
-    background-color: rgba(255, 235, 161, 0.78);
-    background-color: #ea5f8d;
+    background-color: #acbb27;
   }
 }
 
