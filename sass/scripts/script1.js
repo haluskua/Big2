@@ -109,7 +109,6 @@ $(document).ready(function(){
 
         }
 
-
         // targeting tablet view because of menu top height change from tablet to desktop
                 if (jQuery(window).width() > 800) {
                     var stickyNavTop = $('.nav-folders').offset().top;
@@ -123,8 +122,6 @@ $(document).ready(function(){
                         });
 
                 }
-
-
 
 
 

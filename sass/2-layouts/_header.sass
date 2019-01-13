@@ -5,13 +5,10 @@
 		display: flex
 		height: 100vh
 		overflow: hidden
-		background-size: cover
 		align-items: flex-start
 		background-color: #494f58
-		background: url('../dist/imgs/1920.png') top no-repeat
 		background-size: cover
-		@include phone-landscape
-
+		background: url('../dist/imgs/1920.png') top no-repeat
 		@include tablet
 			flex-grow: 1
 			height: 100vh
@@ -85,7 +82,6 @@
 	.hetpage-li
 		width: 100%
 		height: 65px
-    // margin: 0 auto
 		@include phone-landscape
       width: 100%
 		@include tablet
@@ -161,14 +157,12 @@
 			color: #ef5004
 		@include desktop
 			color: #e84822
-			// font-size: 1em
 
   .ohk-logo
     width: 33%
     margin: auto
     border: 1px solid
     height: 180px
-
 
 	#hetinfo
 		height: 40px
@@ -199,7 +193,6 @@
 			font-size: 1.3em
 		@include desktop
 			color: #CDDC39
-
 
 	.intro, .nameohk
 		margin: auto
@@ -312,7 +305,7 @@
 			height: 100px
 			position: relative
 			background-position: center
-			margin-top: 5px
+			margin-top: 0px
 			background-image: url('../dist/imgs/my-logo-black.jpg')
 			background-size: cover
 			background-position: bottom
@@ -348,7 +341,6 @@
 		background-repeat: no-repeat
 		@include phone-landscape
 		height: 100%
-		// background: white
 		@include tablet
 			width: 86vw
 			margin-left: 62px
@@ -370,14 +362,11 @@
       width: 86vw
 			padding: 0
 			height: 82vh
-			margin-left: -4px
 			display: flex
 			flex-flow: column
 			background-image: none
-			background-color: rgba(218, 199, 213, 0.46)
-			background-color: #0b0c0e
+			background-color: #21131d
 			justify-content: center
-			border: 2px solid rgba(138, 181, 89, 0.86)
 			background-image: url("../dist/imgs/orange_pattern.png")
 			background-size: contain
 			background-repeat: repeat-y
@@ -400,8 +389,9 @@
 			@include desktop
 				width: 78%
 				border-radius: 0 0 3.5px 3.5px
-				background-color: #fafafa
-				padding: 6px
+				background-color: rgb(33, 19, 28)
+				padding: 3px
+				border: 2px solid #776e5a
 
 	.nav-folders
 		width: 63%
@@ -465,6 +455,7 @@
 			width: 97%
 			font-size: 0.98em
 			@include desktop
+				font-size: 0.9em
 
 	.second-class
 		display: none
@@ -548,8 +539,6 @@
 				color: white
 				font-size: 0.93em
 				border-left: none
-        // background-color: rgba(32, 44, 53, 0.95)
-				// background-color: transparentize(yellow, 1)
 			&:visited, &:active,
 				color: black
 				background-color: #f2eeea
@@ -569,8 +558,8 @@
 			letter-spacing: 0em
 		@include desktop
 			font-size: 1em
-			font-weight: bold
-			color: #acbb27
+			font-weight: normal
+			color: #d0d491
 			background-color: rgba(0, 0, 0, 0.55)
 			&:hover
 				color: #443939
@@ -578,7 +567,6 @@
 				transition: 0.26s ease-in
 				font-style: normal
 				background-color: gainsboro
-
 
 	.nav-archives
 		font-family: $font-stack-rajdhani
@@ -592,7 +580,7 @@
 			text-align: center
 			background-color: none
 		@include desktop
-			color: #5c7f33
+			color: #ded089
 			text-align: center
 			z-index: 999
       font-size: 1.1em !important !important
@@ -609,7 +597,6 @@
 	.nav-archives:visited
 		@include desktop
 			font-style: oblique
-
 
 	.haus
 		bottom: 0
@@ -664,8 +651,6 @@
 				background-color: rgba(220, 191, 91, 0.63)
 				@include phone-landscape
 
-
-
 	.haus-menu
 		color: #1f1710
 		display: flex
@@ -698,7 +683,7 @@
 	#nav
 		@include desktop
 			width: 84%
-
+			border: 2px solid
 
 	.mobile-container
 		max-height: 100%
@@ -736,8 +721,6 @@
 			display: flex
 			flex-wrap: wrap
 			align-items: center
-			border-right: 2px solid #57585d
-			background-color: black
 			background: url('../dist/imgs/brown_pattern.png')
 			background-size: contain
 			background-repeat: repeat
@@ -745,8 +728,7 @@
 			position: fixed
 			align-self: center
 			top: 0
-			background-color: #44504c
-
+			background-color: rgb(31, 19, 31)
 
 	.mobile-container .sticky
 		z-index: 999999999999
@@ -801,8 +783,6 @@
 		text-decoration: none
 		letter-spacing: 0.08em
 		font-family: $font-stack-roboto
-
-
 
 	.navbar
 	  display: flex
