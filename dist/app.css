@@ -740,7 +740,7 @@ h4, h6 {
         -ms-flex-flow: column;
             flex-flow: column;
     background-image: none;
-    background-color: #21131d;
+    background-color: #eae5d9;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -777,9 +777,9 @@ h4, h6 {
   #folders-container li {
     width: 78%;
     border-radius: 0 0 3.5px 3.5px;
-    background-color: #21131c;
+    background-color: rgba(245, 242, 228, 0.94);
     padding: 3px;
-    border: 2px solid #776e5a;
+    border: 2px solid #a09680;
   }
 }
 
@@ -1042,8 +1042,8 @@ h4, h6 {
   .fields {
     font-size: 1em;
     font-weight: normal;
-    color: #d0d491;
-    background-color: rgba(0, 0, 0, 0.55);
+    color: #564521;
+    background-color: #f9f8f4;
   }
   .fields:hover {
     color: #443939;
@@ -1075,7 +1075,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .nav-archives {
-    color: #ded089;
+    color: #5d5632;
     text-align: center;
     z-index: 999;
     z-index-font-size: 1.1em !important !important;
@@ -1318,7 +1318,7 @@ h4, h6 {
     -ms-flex-item-align: center;
         align-self: center;
     top: 0;
-    background-color: #1f131f;
+    background-color: #b9b3b9;
   }
 }
 
@@ -1511,10 +1511,7 @@ h4, h6 {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    background: url("../dist/imgs/ohk_pattern.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: repeat-y;
+    background: none;
   }
 }
 
@@ -1613,6 +1610,7 @@ h4, h6 {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     margin: auto;
+    border: 1px solid gainsboro;
   }
 }
 
@@ -1843,7 +1841,8 @@ h4, h6 {
   .screen {
     margin: auto;
     height: auto;
-    background: url("../dist/imgs/pattern.jpg");
+    border: 1px solid #dee7c7;
+    background: url("../dist/imgs/orange_pattern.png");
     background-size: contain;
     background-repeat: repeat;
     background-position: center;
@@ -1888,11 +1887,11 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #ecf785;
+    color: #9e9373;
     line-height: 1.08em;
-    border: 1px solid #20131e;
+    border: 1px solid #afab99;
     border-left: none;
-    background-color: rgba(35, 12, 28, 0.86);
+    background-color: rgba(239, 233, 218, 0.81);
     font-size: 1.8em;
     letter-spacing: 0.3em;
     font-weight: bold;
@@ -2490,7 +2489,7 @@ h4, h6 {
     padding: 0 8px;
     font-weight: bolder;
     font-family: 'orbitron', '$font-stack-open-sans';
-    color: #8bc34a !important;
+    color: #7d7355 !important;
     font-size: 0.8em;
     letter-spacing: 0.2em;
   }
@@ -2760,7 +2759,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .fs-gal-view {
-    background-color: #FFEB3B;
+    background-color: #eae8d4;
     width: 100%;
   }
 }
@@ -3156,7 +3155,8 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .talentpage {
-    margin-top: 40px;
+    margin-top: 0px;
+    padding: 0px;
   }
 }
 
@@ -3330,6 +3330,7 @@ h4, h6 {
     font-size: 1.15em;
     letter-spacing: normal;
     background: none;
+    border: none;
   }
 }
 
@@ -3396,11 +3397,11 @@ h4, h6 {
   .small-intro h2 {
     padding-left: 0;
     width: 19%;
-    font-weight: bold;
+    font-weight: normal;
     letter-spacing: 0.02em;
     line-height: 1.1em;
-    font-size: 2.22em;
-    color: #8e4245;
+    font-size: 1.5em;
+    color: #b7a87d;
   }
 }
 
@@ -3468,6 +3469,7 @@ h4, h6 {
             justify-content: flex-start;
     height: 100%;
     margin-bottom: 50px;
+    border: 1px solid gainsboro;
   }
 }
 
@@ -3667,7 +3669,7 @@ h4, h6 {
     -ms-flex-item-align: start;
         align-self: flex-start;
     background: none;
-    border: 1px solid #8bc34a;
+    border: 1px solid #e2cf8d;
     margin-top: 17px;
     height: auto;
   }
