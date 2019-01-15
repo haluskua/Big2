@@ -357,7 +357,7 @@ h4, h6 {
     margin: 0 auto;
     padding-top: 30px;
     color: #fffef5;
-    font-size: 2.32em;
+    font-size: 2.72em;
     text-align: center;
     text-transform: uppercase;
     font-family: "Cabin Sketch", Garamond;
@@ -385,7 +385,7 @@ h4, h6 {
   #bulgeword {
     font-size: 5em;
     letter-spacing: 0.01em;
-    color: #CDDC39;
+    color: #fff1c4;
     font-weight: 900;
   }
 }
@@ -404,7 +404,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #portfolio-color {
-    color: #e84822;
+    color: #CDDC39;
   }
 }
 
@@ -467,7 +467,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .intro1 {
-    color: #CDDC39;
+    color: #f5eabe;
   }
 }
 
@@ -507,7 +507,7 @@ h4, h6 {
     letter-spacing: 0.1em;
     margin-top: 6px;
     text-transform: normal;
-    color: #8bc34a;
+    color: #cddc39;
   }
 }
 
@@ -646,6 +646,7 @@ h4, h6 {
     width: 100%;
     height: 100px;
     position: relative;
+    border-radius: 0 0px 4px 4px;
     background-position: center;
     margin-top: 0px;
     background-image: url("../dist/imgs/my-logo-black.jpg");
@@ -846,13 +847,12 @@ h4, h6 {
   }
   .nav-folders:focus, .nav-foldersactive, .nav-folders:hover, .nav-folders:visited {
     width: 24%;
-    font-style: oblique;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .nav-folders:hover, .nav-folders:active, .nav-folders:visited {
-    background-color: #ea5f8d;
+    background-color: gray;
     color: white;
   }
 }
@@ -982,15 +982,6 @@ h4, h6 {
     background-color: #fffef2;
     border-right: 1px solid #dedccd;
   }
-  .hamburger-menu:focus {
-    padding: 0;
-    color: green;
-    margin-left: 13px;
-    border-left: none;
-    background-color: #fffef2;
-    text-transform: lowercase;
-    border-left: 2px solid #ff1f3e;
-  }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
@@ -1015,7 +1006,7 @@ h4, h6 {
   }
   .hamburger-menu:visited, .hamburger-menu:active {
     color: black;
-    background-color: #f2eeea;
+    background-color: #fffcf4;
   }
 }
 
@@ -1042,16 +1033,16 @@ h4, h6 {
   .fields {
     font-size: 1em;
     font-weight: normal;
-    color: #564521;
-    background-color: #f9f8f4;
+    color: #fdfcfa;
+    border-radius: 3px;
+    background-color: #959689;
   }
   .fields:hover {
-    color: #443939;
-    font-size: 1.06em;
+    color: #f2f3e7;
     -webkit-transition: 0.26s ease-in;
     transition: 0.26s ease-in;
     font-style: normal;
-    background-color: gainsboro;
+    background-color: #a9ad77;
   }
 }
 
@@ -1091,12 +1082,6 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .nav-archives:active {
-    font-style: oblique;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .nav-archives:visited {
     font-style: oblique;
   }
 }
@@ -1318,7 +1303,7 @@ h4, h6 {
     -ms-flex-item-align: center;
         align-self: center;
     top: 0;
-    background-color: #b9b3b9;
+    background-color: #e8e2cd;
   }
 }
 
@@ -1841,7 +1826,8 @@ h4, h6 {
   .screen {
     margin: auto;
     height: auto;
-    border: 1px solid #dee7c7;
+    border: 3px solid #e2dcc7;
+    border-left: 0px;
     background: url("../dist/imgs/orange_pattern.png");
     background-size: contain;
     background-repeat: repeat;
@@ -1889,7 +1875,7 @@ h4, h6 {
     display: flex;
     color: #9e9373;
     line-height: 1.08em;
-    border: 1px solid #afab99;
+    border: 1px solid #e4dcce;
     border-left: none;
     background-color: rgba(239, 233, 218, 0.81);
     font-size: 1.8em;
@@ -2436,14 +2422,14 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 76%;
+    width: 80%;
     height: 36px;
     margin: 0;
     padding: 0 8px;
     font-weight: bolder;
     font-family: 'orbitron', '$font-stack-open-sans';
-    background-color: #21131e;
-    color: #c0c587;
+    background-color: #efe8d9;
+    color: #525049;
     font-size: 0.8em;
     letter-spacing: 0.2em;
   }
@@ -2681,7 +2667,7 @@ h4, h6 {
     border-bottom: none;
   }
   #gd-folders li:hover {
-    background-color: #acbb27;
+    background-color: #fbf1d6;
   }
 }
 
