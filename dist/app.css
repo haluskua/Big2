@@ -1624,7 +1624,7 @@ h4, h6 {
     width: 89vw;
     font-size: 0.92em;
     line-height: 1.45em;
-    padding: 10px 16px 30px 16px;
+    padding: 0px 16px;
     font-family: Helvetica, Arial, sans-serif;
   }
 }
@@ -2362,7 +2362,7 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .scpmt-gd, .scpmt-t {
     display: none;
-    margin-top: -40px;
+    margin-top: -27px;
   }
 }
 
@@ -3041,7 +3041,7 @@ h4, h6 {
     display: flex;
     padding: 11px;
     margin-bottom: -26px;
-    margin-top: -2px;
+    margin-top: -27px;
     width: 55%;
     font-weight: bold;
     padding-left: 0px;
@@ -3081,7 +3081,6 @@ h4, h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 30px;
   }
 }
 
@@ -3435,7 +3434,7 @@ h4, h6 {
         flex-wrap: wrap;
     width: 100%;
     padding: 10px;
-    margin: 0px 0 10px 0px;
+    margin: 0px;
   }
 }
 
