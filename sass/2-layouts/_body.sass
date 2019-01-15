@@ -1,4 +1,7 @@
 
+
+
+// Styling for body elements
 @include phone
 
   body
@@ -38,10 +41,6 @@
           align-items: center
           width: 100%
           background: none
-          // background: url("../dist/imgs/ohk_pattern.png")
-          // background-size: contain
-          // background-position: center
-          // background-repeat: repeat-y
 
   #about
     width: 100vw
@@ -145,6 +144,7 @@
       margin-bottom: -14px
       width: 100%
 
+  // Paragraph slot
   .opening_statement, .mini_statement
     text-align: justify
     flex-wrap: wrap
@@ -195,17 +195,16 @@
         font-weight: bolder
         text-transform: uppercase
         display: flex
+        margin-bottom: -5px
         align-self: flex-start
         width: 100%
         font-size: 1.33em
         color: #130802
 
-    .portrait
-      max-width: 130px
-      border: 1px solid gray
   .hide-desktop
     display: none
 
+  // Paragrap slot for the desktop view
   .opening_statement_desktop
     display: flex
     justify-content: center
@@ -263,6 +262,7 @@
       background-repeat: repeat
       background-position: center
 
+  // Horiontal bar with title on page
   #push-up
     color: #fcffff
     line-height: 19px
@@ -410,40 +410,6 @@
     overflow-y: scroll
     text-decoration: none
 
-  .tag-title
-    width: 100%
-    margin-top: 0
-    line-height: 28px
-    text-align: center
-    font-weight: 600
-    font-style: normal
-    font-size: 1.2em
-    color: white
-    background-color: #4e3e60
-    justify-content: center
-    padding-bottom: 0.7px
-    letter-spacing: 0.13em
-    text-transform: uppercase
-    background-color: #faf5ed
-    border-top: 2px solid #9c8c85
-    font-family: $font-stack-paragraph
-    border-bottom: 1.1px solid #341e25
-    &:hover
-
-    @include tablet
-      width: 82%
-      margin-top: 0
-      font-weight: normal
-      font-weight: bold
-      letter-spacing: 0.1em
-      line-height: 45px
-      font-size: 1.4em
-      border-top: 1px solid #607d8b
-      background-color: #fffef2
-      color: #129c00
-      @include desktop
-        width: 90%
-
   .contact-section
     display: flex
     justify-content: space-between
@@ -513,15 +479,6 @@
     @include desktop
       padding-left: 85px
       height: 131px
-
-  #social-media
-    display: flex
-    flex-wrap: wrap
-    width: 65%
-    justify-content: space-between
-    list-style: none
-    @include desktop
-      width: 52%
 
     #pen-off
       margin-top: 20px
@@ -670,7 +627,7 @@
         border: 0px solid #b4c883
         background: none
 
-  .skills-caption, .gd-caption, .dm-caption, .t-caption
+  .skills-caption, .gd-caption
     display: none
     margin: auto
     margin-top: 10px
@@ -701,7 +658,7 @@
       background: none
       padding: 20px 0 0 0
 
-  .scpmt, .scpmt-gd, .scpmt-dm, .scpmt-t
+  .scpmt-gd, .scpmt-t
     display: none
     margin-top: -40px
     @include tablet
@@ -774,6 +731,7 @@
         a
           width: 0%
 
+  // Gallery and black box styling
   #main-gallery
     width: 100%
     flex-direction: column
@@ -862,20 +820,6 @@
   .fs-gal:hover, .fs-gal-nav:hover, .fs-gal-close:hover
     cursor: pointer
 
-  .freelance
-    background-color: #fffcf4
-    align-self: center
-    text-align: center
-    font-weight: normal
-    font-size: 1em
-    width: 100%
-    color: #0e0907
-    margin: 0
-    border: 0
-    letter-spacing: 0.05em
-    border-top: none
-    font-family: $font-stack-rajdhani
-
   .fs-gal
     width: 98%
     height: auto
@@ -947,17 +891,6 @@
       font-size: 1.7rem
       font-style: oblique
 
-  .hide_inlarge
-    display: flex
-    font-family: $font-stack-antic
-    text-align: justify
-    color: #26061e
-    text-transform: uppercase
-    font-weight: bold
-    color: #060407
-    @include desktop
-      display: none
-
   .show_inlarge
     display: none !important
     @include desktop
@@ -969,29 +902,6 @@
     font-weight: bold
     color: #060407
 
-  .movie-gallery
-    @include desktop
-      flex-flow: row !important
-      width: 100vw !important
-      height: 100vh !important
-      flex-wrap: wrap !important
-      padding-bottom: 50px !important
-      height: 200px !important
-      margin-top: 81px !important
-
-  .gallery-title
-    font-size: 1em
-    letter-spacing: 0.02em
-    font-family: $font-stack-rajdhani
-    color: black
-    width: 100%
-    line-height: 2.51em
-    margin: 0 auto
-    text-align: center
-    @include tablet
-      font-size: 1.51em
-      letter-spacing: 0.02em
-      line-height: 2.1em
 
   .big-gallery
     height: 100%
@@ -1057,27 +967,6 @@
       margin-top: 0px
       padding: 0px
 
-  .container-movie
-    width: 93vw
-    display: flex
-    flex-wrap: wrap
-    align-items: center
-    padding-top: 30px
-    padding-bottom: 30px
-    overflow-y: scroll
-    border: 1px solid #e6dee2
-    background-color: #f7efd66e
-    justify-content: space-evenly
-    overflow: hidden
-    @include phone-landscape
-    @include tablet
-      margin: auto
-    @include desktop
-      align-self: flex-end
-      width: auto
-      flex-flow: column
-      margin: auto
-
   .iframe
     @include desktop
       margin: auto
@@ -1116,7 +1005,7 @@
       @include tablet
         justify-content: center
 
-    .open-caption, .gdReadmore, .dmReadmore, .tReadmore
+    .open-caption, .gdReadmore, .tReadmore
       font-family: $font-stack-antic
       display: flex
       justify-content: space-between
@@ -1127,11 +1016,11 @@
       border-bottom: 1px dotted
       letter-spacing: 0.05em
 
-  #skills-descOpen, #gd-descOpen, #dm-descOpen, #t-descOpen
+  #skills-descOpen, #gd-descOpen, #t-descOpen
     display: flex
     margin-top: -10px
 
-  #skills-descClose, #gd-descClose, #dm-descClose, #t-descClose
+  #skills-descClose, #gd-descClose, #t-descClose
     display: none
     margin-top: -13px
     background-color: rgba(202, 218, 215, 0.22)
@@ -1140,7 +1029,7 @@
       margin-top: 30px
       align-self: center
 
-  .close-caption, .gdClose, .dmClose, .tClose
+  .close-caption, .gdClose, .dmClose
     color: #636c6e
     margin-top: 4px
     margin-bottom: 23px
@@ -1205,11 +1094,6 @@
         line-height: 1.1em
         font-size: 1.5em
         color: #b7a87d
-  .tClose
-    background-color: black
-
-  .suite
-    @include desktop
 
   .blocks, .one
     display: flex
@@ -1385,7 +1269,7 @@
     height: auto
     display: none
 
-  #hide_h2, #hide_h2_gd, #hide_h2_dm, #hide_h2_t
+  #hide_h2, #hide_h2_gd, #hide_h2_t
     display: none
     margin-top: -12px
     margin-bottom: 48px
@@ -1582,19 +1466,6 @@
     @include tablet
       display: flex
 
-  #canvasboxMenu
-    display: none
-    @include tablet
-      display: none
-    @include desktop
-      display: flex
-      flex-direction: column
-      justify-content: center
-      width: 100%
-      height: auto
-      margin-top: -128px
-      padding-bottom: 48px
-
   #box-canvas1
     width: 300px
     height: auto
@@ -1602,12 +1473,6 @@
     margin: 20px auto
     display: flex
     justify-content: center
-
-  #box-canvasMenu
-    height: auto
-    display: flex
-    justify-content: center
-    margin-left: -33px
 
   #box-canvas
     margin-left: 20%

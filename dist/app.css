@@ -276,41 +276,6 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .home-desc {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0;
-    text-align: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    flex-direction-justify-content: space-around;
-    flex-direction-width: 80vw;
-  }
-}
-
-@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
-  .home-desc {
-    margin: 0;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .home-desc {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
   .bio {
     width: 100%;
     height: auto;
@@ -545,32 +510,6 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  #my-name {
-    height: 42%;
-    margin: auto;
-    display: none;
-    color: #3ba728;
-    font-size: 2.5em;
-    padding-top: 82px;
-    font-weight: lighter;
-    text-transform: capitalize;
-    font-family: "Audiowide";
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  #my-name {
-    padding: 0;
-    font-size: 2.77em;
-    position: relative;
-    font-family: "Audiowide";
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
-  #coa-menu {
-    display: none;
-  }
   .folders-container2 {
     display: none;
   }
@@ -881,68 +820,6 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .second-class {
-    display: none;
-  }
-}
-
-@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
-  .second-class {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  .second-class {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    flex-direction-flex-wrap: wrap;
-    flex-direction-justify-content: space-around;
-    flex-direction-width: 100%;
-    flex-direction-height: 305px;
-    margin: 88px 0 30px 0;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .second-class {
-    display: none;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
-  .desktop-class {
-    display: none;
-  }
-}
-
-@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
-  .desktop-class {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  .desktop-class {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .desktop-class {
-    display: none;
-    width: 40%;
-    margin-top: 30px;
-    border-radius: 2px;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
   .hamburger-menu {
     width: 100%;
     display: -webkit-box;
@@ -1035,7 +912,7 @@ h4, h6 {
     font-weight: normal;
     color: #a29b7f;
     border-radius: 3px;
-    background-color: #fff9ed;
+    background-color: #ffffff;
   }
   .fields:hover {
     color: #ffffff;
@@ -1410,22 +1287,6 @@ h4, h6 {
     letter-spacing: 0.08em;
     font-family: "Roboto";
   }
-  .navbar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  #navtabs {
-    margin: 0;
-    width: auto;
-    padding: 5px;
-    padding-display: flex;
-    padding-flex-wrap: wrap;
-    border-radius: 3px;
-    border-radius-background-size: cover;
-    border-radius-background-repeat: no-repeat;
-    background-image: url("../dist/imgs/hero.png");
-  }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
@@ -1739,6 +1600,7 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: -5px;
     -ms-flex-item-align: start;
         align-self: flex-start;
     width: 100%;
@@ -1748,10 +1610,6 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .opening_statement .portrait, .mini_statement .portrait {
-    max-width: 130px;
-    border: 1px solid gray;
-  }
   .hide-desktop {
     display: none;
   }
@@ -2097,51 +1955,6 @@ h4, h6 {
     overflow-y: scroll;
     text-decoration: none;
   }
-  .tag-title {
-    width: 100%;
-    margin-top: 0;
-    line-height: 28px;
-    text-align: center;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 1.2em;
-    color: white;
-    background-color: #4e3e60;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-bottom: 0.7px;
-    letter-spacing: 0.13em;
-    text-transform: uppercase;
-    background-color: #faf5ed;
-    border-top: 2px solid #9c8c85;
-    font-family: "Cutive Mono", monospace;
-    border-bottom: 1.1px solid #341e25;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  .tag-title {
-    width: 82%;
-    margin-top: 0;
-    font-weight: normal;
-    font-weight: bold;
-    letter-spacing: 0.1em;
-    line-height: 45px;
-    font-size: 1.4em;
-    border-top: 1px solid #607d8b;
-    background-color: #fffef2;
-    color: #129c00;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .tag-title {
-    width: 90%;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
   .contact-section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2279,28 +2092,7 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  #social-media {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 65%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    list-style: none;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  #social-media {
-    width: 52%;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
-  #social-media #pen-off {
+  #myCanvas-menu #pen-off {
     margin-top: 20px;
     font-size: 0.95em;
     font-weight: bold;
@@ -2526,7 +2318,7 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .skills-caption, .gd-caption, .dm-caption, .t-caption {
+  .skills-caption, .gd-caption {
     display: none;
     margin: auto;
     margin-top: 10px;
@@ -2544,7 +2336,7 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  .skills-caption, .gd-caption, .dm-caption, .t-caption {
+  .skills-caption, .gd-caption {
     font-size: 1.04em;
     letter-spacing: normal;
     margin: 0;
@@ -2554,7 +2346,7 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .skills-caption, .gd-caption, .dm-caption, .t-caption {
+  .skills-caption, .gd-caption {
     font-size: 1em;
     color: #0c0802;
     line-height: 1.6em;
@@ -2567,14 +2359,14 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .scpmt, .scpmt-gd, .scpmt-dm, .scpmt-t {
+  .scpmt-gd, .scpmt-t {
     display: none;
     margin-top: -40px;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  .scpmt, .scpmt-gd, .scpmt-dm, .scpmt-t {
+  .scpmt-gd, .scpmt-t {
     margin: 0 auto;
     color: #544c37;
     padding: 0;
@@ -2585,7 +2377,7 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .scpmt, .scpmt-gd, .scpmt-dm, .scpmt-t {
+  .scpmt-gd, .scpmt-t {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2814,21 +2606,6 @@ h4, h6 {
   .fs-gal:hover, .fs-gal-nav:hover, .fs-gal-close:hover {
     cursor: pointer;
   }
-  .freelance {
-    background-color: #fffcf4;
-    -ms-flex-item-align: center;
-        align-self: center;
-    text-align: center;
-    font-weight: normal;
-    font-size: 1em;
-    width: 100%;
-    color: #0e0907;
-    margin: 0;
-    border: 0;
-    letter-spacing: 0.05em;
-    border-top: none;
-    font-family: "Rajdhani", sans-serif;
-  }
   .fs-gal {
     width: 98%;
     height: auto;
@@ -2966,26 +2743,6 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .hide_inlarge {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-family: "Antic";
-    text-align: justify;
-    color: #26061e;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #060407;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .hide_inlarge {
-    display: none;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
   .show_inlarge {
     display: none !important;
     display: -webkit-box;
@@ -2998,46 +2755,6 @@ h4, h6 {
     font-weight: bold;
     color: #060407;
   }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .movie-gallery {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-flow: row !important;
-            flex-flow: row !important;
-    width: 100vw !important;
-    height: 100vh !important;
-    -ms-flex-wrap: wrap !important;
-        flex-wrap: wrap !important;
-    padding-bottom: 50px !important;
-    height: 200px !important;
-    margin-top: 81px !important;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
-  .gallery-title {
-    font-size: 1em;
-    letter-spacing: 0.02em;
-    font-family: "Rajdhani", sans-serif;
-    color: black;
-    width: 100%;
-    line-height: 2.51em;
-    margin: 0 auto;
-    text-align: center;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  .gallery-title {
-    font-size: 1.51em;
-    letter-spacing: 0.02em;
-    line-height: 2.1em;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
   .big-gallery {
     height: 100%;
     width: 100%;
@@ -3148,48 +2865,6 @@ h4, h6 {
   }
 }
 
-@media (min-width: 1em), screen and (orientation: portrait) {
-  .container-movie {
-    width: 93vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    overflow-y: scroll;
-    border: 1px solid #e6dee2;
-    background-color: #f7efd66e;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    overflow: hidden;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  .container-movie {
-    margin: auto;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .container-movie {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    width: auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-    margin: auto;
-  }
-}
-
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .iframe {
     margin: auto;
@@ -3249,7 +2924,7 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  #read-on .open-caption, #read-on .gdReadmore, #read-on .dmReadmore, #read-on .tReadmore {
+  #read-on .open-caption, #read-on .gdReadmore, #read-on .tReadmore {
     font-family: "Antic";
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3264,13 +2939,13 @@ h4, h6 {
     border-bottom: 1px dotted;
     letter-spacing: 0.05em;
   }
-  #skills-descOpen, #gd-descOpen, #dm-descOpen, #t-descOpen {
+  #skills-descOpen, #gd-descOpen, #t-descOpen {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-top: -10px;
   }
-  #skills-descClose, #gd-descClose, #dm-descClose, #t-descClose {
+  #skills-descClose, #gd-descClose, #t-descClose {
     display: none;
     margin-top: -13px;
     background-color: rgba(202, 218, 215, 0.22);
@@ -3278,7 +2953,7 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  #skills-descClose, #gd-descClose, #dm-descClose, #t-descClose {
+  #skills-descClose, #gd-descClose, #t-descClose {
     margin-top: 30px;
     -ms-flex-item-align: center;
         align-self: center;
@@ -3286,7 +2961,7 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .close-caption, .gdClose, .dmClose, .tClose {
+  .close-caption, .gdClose, .dmClose {
     color: #636c6e;
     margin-top: 4px;
     margin-bottom: 23px;
@@ -3306,14 +2981,14 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  .close-caption, .gdClose, .dmClose, .tClose {
+  .close-caption, .gdClose, .dmClose {
     color: #0f1714;
     font-size: 1em;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .close-caption, .gdClose, .dmClose, .tClose {
+  .close-caption, .gdClose, .dmClose {
     color: #465553;
     font-size: 1.15em;
     letter-spacing: normal;
@@ -3394,9 +3069,6 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .tClose {
-    background-color: black;
-  }
   .blocks, .one {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3707,7 +3379,7 @@ h4, h6 {
     height: auto;
     display: none;
   }
-  #hide_h2, #hide_h2_gd, #hide_h2_dm, #hide_h2_t {
+  #hide_h2, #hide_h2_gd, #hide_h2_t {
     display: none;
     margin-top: -12px;
     margin-bottom: 48px;
@@ -3717,14 +3389,14 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  #hide_h2, #hide_h2_gd, #hide_h2_dm, #hide_h2_t {
+  #hide_h2, #hide_h2_gd, #hide_h2_t {
     padding-right: 8px;
     margin-top: 40px;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  #hide_h2, #hide_h2_gd, #hide_h2_dm, #hide_h2_t {
+  #hide_h2, #hide_h2_gd, #hide_h2_t {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4061,37 +3733,6 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  #canvasboxMenu {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  #canvasboxMenu {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  #canvasboxMenu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-    height: auto;
-    margin-top: -128px;
-    padding-bottom: 48px;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
   #box-canvas1 {
     width: 300px;
     height: auto;
@@ -4103,16 +3744,6 @@ h4, h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  #box-canvasMenu {
-    height: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-left: -33px;
   }
   #box-canvas {
     margin-left: 20%;

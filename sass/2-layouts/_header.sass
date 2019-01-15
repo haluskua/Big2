@@ -1,4 +1,6 @@
 
+
+//styling for Header elements
 @include phone
 
 	.hetpage
@@ -92,22 +94,6 @@
 			width: 100%
 			margin-top: 4px
 
-	.home-desc
-		display: flex
-		margin: 0
-		text-align: center
-		flex-direction: column
-    justify-content: space-around
-    width: 80vw
-		@include phone-landscape
-      margin: 0
-		@include tablet
-
-		@include desktop
-			display: flex
-			justify-content: center
-			width: 100%
-			margin: 0 auto
 	.bio
 		width: 100%
 		height: auto
@@ -180,6 +166,7 @@
 			background-size: contain
 			border: none
 			margin: 0
+
 	.intro1
 		margin: auto
 		margin-top: 10px
@@ -241,24 +228,6 @@
 			font-size: 1.25em
 			color: #dac7d5
 			font-weight: bolder
-	#my-name
-		height: 42%
-		margin: auto
-		display: none
-		color: #3ba728
-		font-size: 2.5em
-		padding-top: 82px
-		font-weight: lighter
-		text-transform: capitalize
-		font-family: $font-stack-audio
-		@include tablet
-			padding: 0
-			font-size: 2.77em
-			position: relative
-			font-family: $font-stack-audio
-
-	#coa-menu
-		display: none
 
 	.folders-container2
 		display: none
@@ -456,39 +425,6 @@
 			@include desktop
 				font-size: 0.9em
 
-	.second-class
-		display: none
-		@include phone-landscape
-			display: none
-		@include tablet
-			display: flex
-			flex-direction: row
-	    flex-wrap: wrap
-	    justify-content: space-around
-	    width: 100%
-	    height: 305px
-			margin: 88px 0 30px 0
-		@include desktop
-			display: none
-
-	.desktop-class
-		display: none
-		@include phone-landscape
-			display: none
-		@include tablet
-			display: none
-		@include desktop
-			display: none
-			// height: 168px
-			width: 40%
-			margin-top: 30px
-			// background: url('../dist/imgs/sky.jpg')
-			// background-position: center
-			// background-repeat: no-repeat
-			// background-size: cover
-			// border: 2px solid rgb(247, 238, 211)
-			border-radius: 2px
-
 	.hamburger-menu
 		width: 100%
 		display: flex
@@ -515,14 +451,7 @@
 			letter-spacing: none
 			background-color: #fffef2
 			border-right: 1px solid #dedccd
-			// &:focus
-			// 	padding: 0
-			// 	color: green
-			// 	margin-left: 13px
-			// 	border-left: none
-			// 	background-color: #fffef2
-			// 	text-transform: lowercase
-			// 	border-left: 2px solid #ff1f3e
+
 		@include desktop
 			height: 100%
 			line-height: 44px
@@ -560,7 +489,7 @@
 			font-weight: normal
 			color: #a29b7f
 			border-radius: 3px
-			background-color: #fff9ed
+			background-color: #ffffff
 			&:hover
 				color: #ffffff
 				transition: 0.26s ease-in
@@ -781,17 +710,3 @@
 		text-decoration: none
 		letter-spacing: 0.08em
 		font-family: $font-stack-roboto
-
-	.navbar
-	  display: flex
-
-	#navtabs
-		margin: 0
-		width: auto
-		padding: 5px
-	  display: flex
-	  flex-wrap: wrap
-		border-radius: 3px
-	  background-size: cover
-	  background-repeat: no-repeat
-		background-image: url('../dist/imgs/hero.png')
