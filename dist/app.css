@@ -323,7 +323,7 @@ h4, h6 {
   #bulgeword {
     margin: 0 auto;
     padding-top: 30px;
-    color: #FFEB3B;
+    color: #f9f3e4;
     font-size: 3.1em;
     font-weight: bold;
     text-align: center;
@@ -349,7 +349,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #bulgeword {
-    color: #FFEB3B;
+    color: #f9f3e4;
     font-size: 5.05em;
     letter-spacing: 0em;
   }
@@ -1706,10 +1706,10 @@ h4, h6 {
     text-transform: uppercase;
     letter-spacing: 0.08em;
     font-family: "Roboto";
-    border: 5px solid #f9ca3c;
+    border: 5px solid #e8d27e;
     margin: auto;
     width: 100vw;
-    background-color: #d68c77;
+    background-color: #f9f3e4;
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
