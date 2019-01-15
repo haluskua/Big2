@@ -151,6 +151,7 @@ h4, h6 {
     height: 100%;
     margin: auto;
     padding: 0;
+    margin-top: 67px;
     background: none;
   }
 }
@@ -270,6 +271,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .hetpage-li {
     width: 100%;
+    margin-top: 4px;
   }
 }
 
@@ -356,11 +358,13 @@ h4, h6 {
   #bulgeword {
     margin: 0 auto;
     padding-top: 30px;
-    color: #fffef5;
-    font-size: 2.72em;
+    color: #FFEB3B;
+    font-size: 3.1em;
+    font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     font-family: "Cabin Sketch", Garamond;
+    font-family: Helvetica;
   }
 }
 
@@ -374,25 +378,21 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #bulgeword {
     color: #341e25;
-    font-weight: 600;
     font-size: 3.2em;
-    letter-spacing: 0.04em;
-    font-family: "Roboto";
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #bulgeword {
-    font-size: 5em;
-    letter-spacing: 0.01em;
-    color: #fff1c4;
-    font-weight: 900;
+    color: #FFEB3B;
+    font-size: 5.05em;
+    letter-spacing: 0em;
   }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #portfolio-color {
-    color: #f5c24f;
+    color: #CDDC39;
   }
 }
 
@@ -448,20 +448,20 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .intro1 {
     margin: auto;
-    margin-top: 6px;
+    margin-top: 10px;
     color: #efedde;
-    font-size: 1.1em;
+    font-size: 1.61em;
     position: relative;
     text-align: justify;
     letter-spacing: 0;
-    font-family: "Open Sans";
+    font-family: "Dancing Script";
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .intro1 {
     color: #8e8c8c;
-    font-size: 1.3em;
+    font-size: 2.3em;
   }
 }
 
@@ -474,14 +474,12 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .intro, .nameohk {
     margin: auto;
-    padding-top: 9px;
     margin-top: 6px;
     color: #8bc34a;
-    font-size: 1.2em;
+    font-size: 1.05em;
     position: relative;
     text-align: justify;
-    letter-spacing: 0.04em;
-    font-family: "Dancing Script";
+    font-family: Helvetica;
   }
 }
 
@@ -489,7 +487,7 @@ h4, h6 {
   .intro, .nameohk {
     height: 60px;
     color: #322e28;
-    margin-top: 32px;
+    margin-top: 4px;
     font-weight: normal;
     text-shadow: none;
     font-size: 1.38em;
@@ -501,10 +499,10 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .intro, .nameohk {
-    font-size: 1.65em;
-    padding-top: 17px;
+    font-size: 1.25em;
+    padding-top: 0px;
     padding-bottom: 7px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0em;
     margin-top: 6px;
     text-transform: normal;
     color: #cddc39;
@@ -533,6 +531,8 @@ h4, h6 {
     margin-top: 0;
     font-size: 1.5em;
     line-height: 68px;
+    color: #050200;
+    font-family: Helvetica;
   }
 }
 
@@ -741,7 +741,7 @@ h4, h6 {
         -ms-flex-flow: column;
             flex-flow: column;
     background-image: none;
-    background-color: #eae5d9;
+    background-color: #fffbee;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -780,7 +780,7 @@ h4, h6 {
     border-radius: 0 0 3.5px 3.5px;
     background-color: rgba(245, 242, 228, 0.94);
     padding: 3px;
-    border: 2px solid #a09680;
+    border: 1.3px solid #b9af90;
   }
 }
 
@@ -1033,16 +1033,16 @@ h4, h6 {
   .fields {
     font-size: 1em;
     font-weight: normal;
-    color: #fdfcfa;
+    color: #a29b7f;
     border-radius: 3px;
-    background-color: #959689;
+    background-color: #fff9ed;
   }
   .fields:hover {
-    color: #f2f3e7;
+    color: #ffffff;
     -webkit-transition: 0.26s ease-in;
     transition: 0.26s ease-in;
     font-style: normal;
-    background-color: #a9ad77;
+    background-color: #d4cec0;
   }
 }
 
@@ -1227,7 +1227,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #nav {
     width: 84%;
-    border: 2px solid;
+    border: 1.5px solid #b9ae92;
   }
 }
 
@@ -1303,7 +1303,7 @@ h4, h6 {
     -ms-flex-item-align: center;
         align-self: center;
     top: 0;
-    background-color: #e8e2cd;
+    background-color: #fbf7e5;
   }
 }
 
@@ -1595,7 +1595,7 @@ h4, h6 {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     margin: auto;
-    border: 1px solid gainsboro;
+    border: 1px solid #eee7d7;
   }
 }
 
@@ -1690,6 +1690,7 @@ h4, h6 {
     margin-bottom: 0;
     background: none;
     margin-bottom: 20px;
+    color: #544c37;
   }
 }
 
@@ -1774,6 +1775,7 @@ h4, h6 {
     padding: 57px 30px 0 16px;
     font-size: 1.01em;
     margin-left: 40px;
+    color: #544c37;
     margin-right: 40px;
     margin-bottom: 40px;
     background: none;
@@ -1826,7 +1828,7 @@ h4, h6 {
   .screen {
     margin: auto;
     height: auto;
-    border: 3px solid #e2dcc7;
+    border: 2 solid #e2dcc7;
     border-left: 0px;
     background: url("../dist/imgs/orange_pattern.png");
     background-size: contain;
@@ -1863,7 +1865,7 @@ h4, h6 {
   #push-up {
     font-size: 1.7em;
     color: #3e2e0a;
-    background-color: rgba(233, 239, 169, 0.85);
+    background-color: #ffe5b3;
   }
 }
 
@@ -1874,10 +1876,10 @@ h4, h6 {
     display: -ms-flexbox;
     display: flex;
     color: #9e9373;
-    line-height: 1.08em;
-    border: 1px solid #e4dcce;
+    line-height: 0.65em;
+    border: 1px solid rgba(218, 210, 175, 0.529412);
     border-left: none;
-    background-color: rgba(239, 233, 218, 0.81);
+    background-color: rgba(255, 250, 217, 0.51);
     font-size: 1.8em;
     letter-spacing: 0.3em;
     font-weight: bold;
@@ -2574,7 +2576,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .scpmt, .scpmt-gd, .scpmt-dm, .scpmt-t {
     margin: 0 auto;
-    color: #322221;
+    color: #544c37;
     padding: 0;
     width: 93%;
     font-size: 1.17em;
@@ -3455,7 +3457,7 @@ h4, h6 {
             justify-content: flex-start;
     height: 100%;
     margin-bottom: 50px;
-    border: 1px solid gainsboro;
+    border: 1px solid #eee7d7;
   }
 }
 

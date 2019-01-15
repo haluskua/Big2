@@ -39,6 +39,7 @@
 			height: 100%
 			margin: auto
 			padding: 0
+			margin-top: 67px
 			background: none
 		@include desktop
 			height: 100%
@@ -89,6 +90,7 @@
 			height: auto
 		@include desktop
 			width: 100%
+			margin-top: 4px
 
 	.home-desc
 		display: flex
@@ -132,27 +134,26 @@
 	#bulgeword
 		margin: 0 auto
 		padding-top: 30px
-		color: #fffef5
-		font-size: 2.72em
+		color: #FFEB3B
+		font-size: 3.1em
+		font-weight: bold
 		text-align: center
 		text-transform: uppercase
 		font-family: $font-stack-character
+		font-family: Helvetica
 		@include phone-landscape
 			color: #26061e
 			font-size: 1.87em
 		@include tablet
 			color: #341e25
-			font-weight: 600
 			font-size: 3.2em
-			letter-spacing: 0.04em
-			font-family: $font-stack-roboto
 		@include desktop
-			font-size: 5em
-			letter-spacing: 0.01em
-			color: #fff1c4
-			font-weight: 900
+			color: #FFEB3B
+			font-size: 5.05em
+			letter-spacing: 0em
+
 	#portfolio-color
-		color: #f5c24f
+		color: #CDDC39
 		@include tablet
 			color: #ef5004
 		@include desktop
@@ -181,32 +182,31 @@
 			margin: 0
 	.intro1
 		margin: auto
-		margin-top: 6px
+		margin-top: 10px
 		color: #efedde
-		font-size: 1.1em
+		font-size: 1.61em
 		position: relative
 		text-align: justify
 		letter-spacing: 0
-		font-family: $font-stack-open-sans-condensed
+		font-family: $font-stack-Dancing-script
 		@include tablet
 			color: #8e8c8c
-			font-size: 1.3em
+			font-size: 2.3em
 		@include desktop
 			color: #f5eabe
+
 	.intro, .nameohk
 		margin: auto
-		padding-top: 9px
 		margin-top: 6px
 		color: #8bc34a
-		font-size: 1.2em
+		font-size: 1.05em
 		position: relative
 		text-align: justify
-		letter-spacing: 0.04em
-		font-family: $font-stack-Dancing-script
+		font-family: Helvetica
 		@include tablet
 			height: 60px
 			color: #322e28
-			margin-top: 32px
+			margin-top: 4px
 			font-weight: normal
 			text-shadow: none
 			font-size: 1.38em
@@ -214,10 +214,10 @@
 			letter-spacing: 0.03em
 			font-family: $font-stack-character
 		@include desktop
-			font-size: 1.65em
-			padding-top: 17px
+			font-size: 1.25em
+			padding-top: 0px
 			padding-bottom: 7px
-			letter-spacing: 0.1em
+			letter-spacing: 0em
 			margin-top: 6px
 			text-transform: normal
 			color: #cddc39
@@ -235,6 +235,8 @@
 			margin-top: 0
 			font-size: 1.5em
 			line-height: 68px
+			color: #050200
+			font-family: Helvetica
 		@include desktop
 			font-size: 1.25em
 			color: #dac7d5
@@ -365,7 +367,7 @@
 			display: flex
 			flex-flow: column
 			background-image: none
-			background-color: rgb(234, 229, 217)
+			background-color: #fffbee
 			justify-content: center
 			background-image: url("../dist/imgs/orange_pattern.png")
 			background-size: contain
@@ -391,7 +393,7 @@
 				border-radius: 0 0 3.5px 3.5px
 				background-color: rgba(245, 242, 228, 0.94)
 				padding: 3px
-				border: 2px solid #a09680
+				border: 1.3px solid #b9af90
 
 	.nav-folders
 		width: 63%
@@ -556,14 +558,14 @@
 		@include desktop
 			font-size: 1em
 			font-weight: normal
-			color: #fdfcfa
+			color: #a29b7f
 			border-radius: 3px
-			background-color: rgb(149, 150, 137)
+			background-color: #fff9ed
 			&:hover
-				color: #f2f3e7
+				color: #ffffff
 				transition: 0.26s ease-in
 				font-style: normal
-				background-color: rgb(169, 173, 119)
+				background-color: #d4cec0
 
 	.nav-archives
 		font-family: $font-stack-rajdhani
@@ -680,7 +682,7 @@
 	#nav
 		@include desktop
 			width: 84%
-			border: 2px solid
+			border: 1.5px solid #b9ae92
 
 	.mobile-container
 		max-height: 100%
@@ -724,7 +726,7 @@
 			position: fixed
 			align-self: center
 			top: 0
-			background-color: #e8e2cd
+			background-color: #fbf7e5
 
 	.mobile-container .sticky
 		z-index: 999999999999
