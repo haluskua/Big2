@@ -305,9 +305,9 @@ h4, h6 {
     display-flex-direction: column;
     -ms-flex-item-align: center;
         align-self: center;
-    padding-top: 8px;
+    padding-top: 38%;
     margin-bottom: -4px;
-    margin-top: -2px;
+    margin-top: -11px;
   }
 }
 
@@ -316,6 +316,7 @@ h4, h6 {
     margin-top: -238px;
     margin-top-width: 100%;
     margin-top-justify-content: center;
+    padding: 0;
   }
 }
 
@@ -324,7 +325,7 @@ h4, h6 {
     margin: 0 auto;
     padding-top: 30px;
     color: #f9f3e4;
-    font-size: 3.1em;
+    font-size: 2.1em;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
@@ -350,7 +351,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #bulgeword {
     color: #f9f3e4;
-    font-size: 5.05em;
+    font-size: 3.8em;
     letter-spacing: 0em;
   }
 }
@@ -415,10 +416,10 @@ h4, h6 {
     margin: auto;
     margin-top: 10px;
     color: #efedde;
-    font-size: 1.61em;
+    font-size: 1.3em;
     position: relative;
     text-align: justify;
-    letter-spacing: 0;
+    letter-spacing: 0.05em;
     font-family: "Dancing Script";
   }
 }
@@ -439,9 +440,9 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .intro, .nameohk {
     margin: auto;
-    margin-top: 6px;
     color: #8bc34a;
     font-size: 1.05em;
+    letter-spacing: 0.2em;
     position: relative;
     text-align: justify;
     font-family: Helvetica;
@@ -455,7 +456,7 @@ h4, h6 {
     margin-top: 4px;
     font-weight: normal;
     text-shadow: none;
-    font-size: 1.38em;
+    font-size: 2em;
     position: relative;
     letter-spacing: 0.03em;
     font-family: "Cabin Sketch", Garamond;
@@ -464,11 +465,12 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .intro, .nameohk {
-    font-size: 1.25em;
+    font-size: 1.6em;
+    font-weight: bold;
     padding-top: 0px;
     padding-bottom: 7px;
-    letter-spacing: 0em;
-    margin-top: 6px;
+    letter-spacing: 0.24em;
+    margin-top: 0px;
     text-transform: normal;
     color: #cddc39;
   }
@@ -483,10 +485,10 @@ h4, h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    font-size: 1.02em;
-    font-weight: bold;
+    font-size: 0.88em;
     margin-top: 2px;
-    color: #dec39b;
+    color: #cddc39;
+    text-transform: uppercase;
     font-weight: normal;
   }
 }
@@ -717,7 +719,7 @@ h4, h6 {
   #folders-container li {
     width: 78%;
     border-radius: 0 0 3.5px 3.5px;
-    background-color: rgba(245, 242, 228, 0.94);
+    background-color: #f3f0d6;
     padding: 3px;
     border: 1.3px solid #b9af90;
   }
@@ -1707,7 +1709,7 @@ h4, h6 {
     text-transform: uppercase;
     letter-spacing: 0.08em;
     font-family: "Roboto";
-    border: 5px solid #e8d27e;
+    border: 8px solid rgba(232, 210, 126, 0.56);
     margin: auto;
     width: 100vw;
     background-color: #f9f3e4;
@@ -1807,7 +1809,7 @@ h4, h6 {
   #grafix, #contact,
   .projects, .wagai-weh, #wagai, #main-gallery,
   .main-gallery, #projects, #film-projects,
-  #gd-projects, #dm-projects, #t-projects, #about {
+  #gd-projects, #dm-projects, #t-projects, #about, #talent-projects {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1832,7 +1834,7 @@ h4, h6 {
   #grafix, #contact,
   .projects, .wagai-weh, #wagai, #main-gallery,
   .main-gallery, #projects, #film-projects,
-  #gd-projects, #dm-projects, #t-projects, #about {
+  #gd-projects, #dm-projects, #t-projects, #about, #talent-projects {
     width: 100%;
   }
 }
@@ -1841,7 +1843,7 @@ h4, h6 {
   #grafix a, #contact a,
   .projects a, .wagai-weh a, #wagai a, #main-gallery a,
   .main-gallery a, #projects a, #film-projects a,
-  #gd-projects a, #dm-projects a, #t-projects a, #about a {
+  #gd-projects a, #dm-projects a, #t-projects a, #about a, #talent-projects a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1856,7 +1858,7 @@ h4, h6 {
   #grafix a, #contact a,
   .projects a, .wagai-weh a, #wagai a, #main-gallery a,
   .main-gallery a, #projects a, #film-projects a,
-  #gd-projects a, #dm-projects a, #t-projects a, #about a {
+  #gd-projects a, #dm-projects a, #t-projects a, #about a, #talent-projects a {
     height: 100%;
     margin: 0 auto;
   }
@@ -2531,7 +2533,7 @@ h4, h6 {
     text-align: center;
     background-size: contain;
     background-position: center center;
-    background-color: #FFEB3B;
+    background-color: #f7efd6;
     background-repeat: no-repeat;
     overflow: hidden;
     z-index: 999999;
@@ -2770,7 +2772,7 @@ h4, h6 {
     overflow-y: scroll;
     padding-bottom: 33px;
     border: 1px solid #e6dee2;
-    background-color: #f7efd66e;
+    background-color: rgba(247, 239, 214, 0.46);
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -2962,7 +2964,7 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .close-caption, .gdClose, .dmClose {
+  .close-caption, .gdClose, .dmClose, .tClose {
     color: #636c6e;
     margin-top: 4px;
     margin-bottom: 23px;
@@ -2972,7 +2974,6 @@ h4, h6 {
     width: 100%;
     line-height: 1.4em;
     border-radius: 5px;
-    border-bottom: 0.5px double gray;
     padding: 11px;
     text-align: center;
     -webkit-box-pack: center;
@@ -2982,14 +2983,14 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  .close-caption, .gdClose, .dmClose {
+  .close-caption, .gdClose, .dmClose, .tClose {
     color: #0f1714;
     font-size: 1em;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .close-caption, .gdClose, .dmClose {
+  .close-caption, .gdClose, .dmClose, .tClose {
     color: #465553;
     font-size: 1.15em;
     letter-spacing: normal;
@@ -3168,10 +3169,10 @@ h4, h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background: url("../dist/imgs/1920.png");
-    background-size: cover;
+    background: url("../dist/imgs/white_pattern.png");
+    background-size: contain;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     border: 6px 3px 6px 3px solid #f7eed3;
     height: auto;
     width: auto;
@@ -3653,12 +3654,7 @@ h4, h6 {
     background-image: url("../dist/imgs/Oilpainting.jpg");
   }
   .inner-div11 {
-    background-image: url("../dist/imgs/newlogo.png");
-    background-size: cover;
-    padding: 0;
-    height: 53%;
-    width: 100%;
-    border: none;
+    display: none;
   }
 }
 
@@ -3666,6 +3662,21 @@ h4, h6 {
   .inner-div11 {
     height: 82%;
     width: 32%;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .inner-div11 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 45%;
+    background-image: url("../dist/imgs/newlogo.png");
+    background-size: cover;
+    padding: 0;
+    margin-top: 24px;
+    width: 100%;
+    border: none;
   }
 }
 

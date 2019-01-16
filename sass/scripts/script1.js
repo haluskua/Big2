@@ -43,7 +43,7 @@ $(document).ready(function(){
           }
         });
 
-        ///////////////////Animation for mobile view///////////////////
+///////////////////Animation for mobile view///////////////////
         anime({
           targets: '.box',
           translateY: [
@@ -65,9 +65,7 @@ $(document).ready(function(){
         // direction: 'reverse', // Play the animation in reverse
           delay: function(el, i, l){
             return i *2000}
-
         });
-
     }
 
 
@@ -84,7 +82,7 @@ $(document).ready(function(){
         $('#folders-container').removeClass('reduced');
       }
     });
-
+// moving body to fit under manu top bar by offseeting its height
     var stickyNavTop = $('.nav-folders').offset().top;
     var headerHeight = 0;
       $('.hamburger-menu, .logo-desc, .grafix, .box').click(function(e) {
@@ -96,42 +94,41 @@ $(document).ready(function(){
         });
 
 // targeting tablet view because of menu top height change from mobile to tablet
-        if (jQuery(window).width() > 481) {
-            var stickyNavTop = $('.nav-folders').offset().top;
-            var headerHeight = 62;
-              $('.hamburger-menu, .logo-desc, #snaps, .box').click(function(e) {
-                  var linkHref = $(this).attr('href');
-                  $('html, body').animate({
-                    scrollTop: $(linkHref).offset().top - headerHeight
-                  }, 800);
-                  e.preventDefault();
-                });
-
+  if (jQuery(window).width() > 481) {
+      var stickyNavTop = $('.nav-folders').offset().top;
+      var headerHeight = 62;
+        $('.hamburger-menu, .logo-desc, #snaps, .box').click(function(e) {
+            var linkHref = $(this).attr('href');
+            $('html, body').animate({
+              scrollTop: $(linkHref).offset().top - headerHeight
+            }, 800);
+            e.preventDefault();
+          });
         }
 
-        // targeting tablet view because of menu top height change from tablet to desktop
-                if (jQuery(window).width() > 800) {
-                    var stickyNavTop = $('.nav-folders').offset().top;
-                    var headerHeight = 0;
-                      $('.hamburger-menu, .logo-desc, #snaps, .box').click(function(e) {
-                          var linkHref = $(this).attr('href');
-                          $('html, body').animate({
-                            scrollTop: $(linkHref).offset().top - headerHeight
-                          }, 800);
-                          e.preventDefault();
-                        });
+  // targeting tablet view because of menu top height change from tablet to desktop
+          if (jQuery(window).width() > 800) {
+              var stickyNavTop = $('.nav-folders').offset().top;
+              var headerHeight = 0;
+                $('.hamburger-menu, .logo-desc, #snaps, .box').click(function(e) {
+                    var linkHref = $(this).attr('href');
+                    $('html, body').animate({
+                      scrollTop: $(linkHref).offset().top - headerHeight
+                    }, 800);
+                    e.preventDefault();
+                  });
 
-                }
+          }
 
 
 // 000000000000000000000000000
 
 
-                if(jQuery (window).width() >801){
-                  $("#hide_h2, #hide_h2_gd, #hide_h2_dm, #hide_h2_t").css("display", "flex");
-                  $("#t-descOpen, #t-descClose, #skills-descOpen, #skills-descClose, #gd-descClose, #gd-descOpen, #dm-descOpen, #dm-descClose").css("display", "none");
-                  $(".scpmt, .scpmt-gd, .scpmt-dm, .scpmt-t").css("display", "flex");
-                }
+            if(jQuery (window).width() >801){
+              $("#hide_h2, #hide_h2_gd, #hide_h2_dm, #hide_h2_t").css("display", "flex");
+              $("#t-descOpen, #t-descClose, #skills-descOpen, #skills-descClose, #gd-descClose, #gd-descOpen, #dm-descOpen, #dm-descClose").css("display", "none");
+              $(".scpmt, .scpmt-gd, .scpmt-dm, .scpmt-t").css("display", "flex");
+            }
 
         // targeting tablet view because of menu top height change from mobile view
 

@@ -57,9 +57,7 @@ $('document').ready(function() {
       $('.fs-gal-view .fs-gal-close').click(); //ESC
     }
   });
-
 });
-
 
 // Find all YouTube videos
 var $allVideos = $("iframe[src^='//www.youtube.com']"),
