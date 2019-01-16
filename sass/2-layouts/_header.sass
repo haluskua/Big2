@@ -15,7 +15,7 @@
 			flex-grow: 1
 			height: 100vh
 			max-width: 100vw
-			background-size: cover
+			background: none
 		@include desktop
 			display: flex
 			justify-content: center
@@ -95,6 +95,7 @@
 			margin-top: 4px
 
 	.bio
+		margin-top: -2px
 		width: 100%
 		height: auto
 		display: flex
@@ -107,7 +108,7 @@
 		display: flex
     flex-direction: column
 		align-self: center
-		padding-top: 38%
+		padding-top: 9%
 		margin-bottom: -4px
 		margin-top: -11px
 		@include phone-landscape
@@ -122,7 +123,7 @@
 		margin: 0 auto
 		padding-top: 30px
 		color: #f9f3e4
-		font-size: 2.1em
+		font-size: 2.8em
 		font-weight: bold
 		text-align: center
 		text-transform: uppercase
@@ -133,18 +134,18 @@
 			font-size: 1.87em
 		@include tablet
 			color: #341e25
-			font-size: 3.2em
+			font-size: 3.5em
 		@include desktop
 			color: #f9f3e4
 			font-size: 3.8em
 			letter-spacing: 0em
 
 	#portfolio-color
-		color: #CDDC39
+		color: #dbf107
 		@include tablet
 			color: #ef5004
 		@include desktop
-			color: #CDDC39
+			color: #dbf107
 
   .ohk-logo
     width: 33%
@@ -171,23 +172,24 @@
 	.intro1
 		margin: auto
 		margin-top: 10px
-		color: #efedde
-		font-size: 1.3em
+		color: #f5eabe
+		font-size: 1.26em
 		position: relative
 		text-align: justify
 		letter-spacing: 0.05em
 		font-family: $font-stack-Dancing-script
 		@include tablet
 			color: #8e8c8c
-			font-size: 2.3em
+			font-size: 3.3em
 		@include desktop
+			font-size: 1.7em
 			color: #f5eabe
 
 	.intro, .nameohk
 		margin: auto
-		color: #8bc34a
-		font-size: 1.05em
-		letter-spacing: 0.2em
+		color: #fffedb
+		font-size: 1.2em
+		letter-spacing: 0em
 		position: relative
 		text-align: justify
 		font-family: Helvetica
@@ -197,27 +199,25 @@
 			margin-top: 4px
 			font-weight: normal
 			text-shadow: none
-			font-size: 2em
+			font-size: 1.5em
 			position: relative
-			letter-spacing: 0.03em
-			font-family: $font-stack-character
 		@include desktop
-			font-size: 1.6em
-			font-weight: bold
+			font-size: 1.5em
+			font-weight: normal
 			padding-top: 0px
 			padding-bottom: 7px
-			letter-spacing: 0.24em
-			margin-top: 0px
+			letter-spacing: 0.04em
+			margin-top: -7px
 			text-transform: normal
-			color: #cddc39
+			color: #fffedb
 
 	.nameohk
 		display: flex
 		width: 100%
 		justify-content: center
-		font-size: 0.88em
+		font-size: 1em
 		margin-top: 2px
-		color: #cddc39
+		color: #f9f3e4
 		text-transform: uppercase
 		font-weight: normal
 		@include tablet
@@ -228,7 +228,8 @@
 			font-family: Helvetica
 		@include desktop
 			font-size: 1.25em
-			color: #dac7d5
+			color: #f9f3e4
+			margin-top: -2px
 			font-weight: bolder
 
 	.folders-container2
@@ -362,7 +363,7 @@
 			@include desktop
 				width: 78%
 				border-radius: 0 0 3.5px 3.5px
-				background-color: #f3f0d6
+				background-color: rgba(219, 241, 7, 0.19)
 				padding: 3px
 				border: 1.3px solid #b9af90
 
@@ -465,6 +466,8 @@
 			background-image: url("../dist/imgs/orange_pattern.png")
 			background-size: cover
 			background-repeat: no-repeat
+			&:hover
+				background-color: #ffffff
 			&:focus
 				color: white
 				font-size: 0.93em
@@ -485,13 +488,13 @@
 		@include tablet
 			font-size: 1em
 			color: #484747
-			letter-spacing: 0em
+			letter-spacing: 0em  
 		@include desktop
 			font-size: 1em
 			font-weight: normal
-			color: #a29b7f
+			color: #5d5632
 			border-radius: 3px
-			background-color: #ffffff
+			background-color: rgba(255, 255, 255, 0.76)
 			&:hover
 				color: #ffffff
 				transition: 0.26s ease-in
@@ -499,12 +502,10 @@
 				background-color: #d4cec0
 
 	.nav-archives
-		font-family: $font-stack-rajdhani
+		font-family: Helvetica
 		font-weight: bolder
-		font-size: 1.28em
-		letter-spacing: 0.07em
-		color: #12191d
-
+		font-size: 1.2em
+		color: #383d3e
 		@include tablet
 			font-size: 1.1em
 			text-align: center
@@ -578,7 +579,7 @@
 				align-items: center
 				flex-direction: column
 				justify-content: center
-				background-color: rgba(220, 191, 91, 0.63)
+				background-color: rgba(255, 245, 145, 0.33)
 				@include phone-landscape
 
 	.haus-menu

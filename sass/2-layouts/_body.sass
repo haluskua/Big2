@@ -159,8 +159,10 @@
     margin-bottom: 25px
     @include phone-landscape
     @include tablet
+      width: 85%
+      margin: 0 auto
       display: flex
-      font-size: 1.11em
+      font-size: 1.3em
       margin-bottom: 0
       background: none
       margin-bottom: 20px
@@ -216,7 +218,7 @@
     font-family: $font-stack-sans-serif
     @include tablet
       padding: 57px 30px 0 16px
-      font-size: 1.01em
+      font-size: 1.3em
       margin-left: 40px
       color: #544c37
       margin-right: 40px
@@ -537,8 +539,7 @@
     letter-spacing: 0.28em
     font-family: $font-stack-rajdhani
     background-color: #fcfeed
-    background-color: rgba(255, 242, 209, 0.72)
-    color: #09070b
+    background-color: rgba(219, 241, 7, 0.33)
     margin-top: 0px
     margin-bottom: 12px
     border: 0
@@ -847,7 +848,7 @@
     border: 6px solid rgb(247, 238, 211)
     @include phone-landscape
     @include tablet
-      width: 97%
+      width: 70%
       margin-top: 49px
     @include desktop
       width: 60%
@@ -1061,6 +1062,7 @@
     margin-bottom: 12px
     @include phone-landscape
     @include tablet
+      width: 80%
     @include desktop
       margin: 0
       width: 100%
@@ -1160,6 +1162,8 @@
           width: 92%
           height: auto
           margin: auto
+          @include tablet
+            width: 67%
           @include desktop
             width: 100%
         h4
@@ -1364,6 +1368,8 @@
     @include tablet
       display: flex
       padding: 20px
+      height: 200px
+      width: 84%
     @include desktop
       margin-top: 31px
       display: flex
@@ -1449,7 +1455,7 @@
     background-size: contain
     padding: 0
     height: 32px
-    width: 70%
+    width: 51%
     border: none
     margin: 0 auto
     @include tablet
