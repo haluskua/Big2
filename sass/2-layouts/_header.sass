@@ -9,18 +9,19 @@
 		overflow: hidden
 		align-items: flex-start
 		background-color: #494f58
-		background-size: cover
-		background: url('../dist/imgs/1920.png') top no-repeat
+		background-color: #1a8b96
 		@include tablet
 			flex-grow: 1
 			height: 100vh
 			max-width: 100vw
+			background-size: cover
+			background: url('../dist/imgs/1920.png') top no-repeat
 			background: none
 		@include desktop
 			display: flex
 			justify-content: center
 			flex-direction: column
-			background-color: #E91E63
+			background-color: #1a8b96
 			background-image: none
 
 	.Colsplit-between
@@ -34,7 +35,9 @@
 		background-size: cover
 		background-position: center
 		background-repeat: no-repeat
+		opacity: 0.94
 		@include phone-landscape
+			opacity: 0.9
 			height: 86%
 		@include tablet
 			width: 100vw
@@ -52,6 +55,7 @@
 			background-size: cover
 			background-position: left
 			background-repeat: no-repeat
+			opacity: 0.91
 
 	#Colsplit-box1
 		height: 93%
@@ -108,13 +112,13 @@
 		display: flex
     flex-direction: column
 		align-self: center
-		padding-top: 9%
+		padding-top: 2%
 		margin-bottom: -4px
-		margin-top: -11px
 		@include phone-landscape
 		@include tablet
+			padding-top: 5%
 		@include desktop
-			margin-top: -238px
+			margin-top: -22%
       width: 100%
       justify-content: center
 			padding: 0
@@ -122,13 +126,13 @@
 	#bulgeword
 		margin: 0 auto
 		padding-top: 30px
-		color: #f9f3e4
-		font-size: 2.8em
+		color: #01d8b2
+		font-size: 2.1em
 		font-weight: bold
 		text-align: center
 		text-transform: uppercase
 		font-family: $font-stack-character
-		font-family: Helvetica
+		// font-family: $font-stack-serif
 		@include phone-landscape
 			color: #26061e
 			font-size: 1.87em
@@ -136,16 +140,17 @@
 			color: #341e25
 			font-size: 3.5em
 		@include desktop
-			color: #f9f3e4
-			font-size: 3.8em
+			color: #01d8b2
+			font-size: 3.12em
 			letter-spacing: 0em
+			padding-top: 80px
 
 	#portfolio-color
-		color: #dbf107
+		color: #f0da92
 		@include tablet
 			color: #ef5004
 		@include desktop
-			color: #dbf107
+			color: #f0da92
 
   .ohk-logo
     width: 33%
@@ -171,43 +176,46 @@
 
 	.intro1
 		margin: auto
-		margin-top: 10px
+		margin-top: 16px
 		color: #f5eabe
-		font-size: 1.26em
+		font-size: 1.826em
 		position: relative
 		text-align: justify
-		letter-spacing: 0.05em
+		letter-spacing: 0em
 		font-family: $font-stack-Dancing-script
 		@include tablet
 			color: #8e8c8c
 			font-size: 3.3em
+			margin-top: 0
 		@include desktop
-			font-size: 1.7em
+			font-size: 2.26em
+			margin-top: 10px
 			color: #f5eabe
 
 	.intro, .nameohk
+		display: flex
 		margin: auto
+		margin-top: 3%
 		color: #fffedb
 		font-size: 1.2em
 		letter-spacing: 0em
 		position: relative
 		text-align: justify
-		font-family: Helvetica
+		font-family: $font-stack-serif
 		@include tablet
 			height: 60px
 			color: #322e28
-			margin-top: 4px
+			margin-top: 29px
 			font-weight: normal
 			text-shadow: none
-			font-size: 1.5em
+			font-size: 2.15em
 			position: relative
 		@include desktop
-			font-size: 1.5em
+			font-size: 1.28em
 			font-weight: normal
 			padding-top: 0px
 			padding-bottom: 7px
-			letter-spacing: 0.04em
-			margin-top: -7px
+			margin-top: 14px
 			text-transform: normal
 			color: #fffedb
 
@@ -224,10 +232,11 @@
 			margin-top: 0
 			font-size: 1.5em
 			line-height: 68px
-			color: #050200
-			font-family: Helvetica
+			letter-spacing: 0.02em
+			color: #807553
+			font-family: $font-stack-serif
 		@include desktop
-			font-size: 1.25em
+			font-size: 1.4em
 			color: #f9f3e4
 			margin-top: -2px
 			font-weight: bolder
@@ -269,21 +278,25 @@
 			left: -14px
 			margin: 0
 			height: 52px
-			width: 11vw
-			background-position: top
+			width: 13vw
 			background-color: #cac1b4
+			background-image: url('../dist/imgs/ve_logo4.png')
+			background-size: contain
+			background-position: bottom
+			background-repeat: no-repeat
 		@include desktop
 			margin: 0 auto
 			width: 100%
-			height: 100px
+			height: 88px
 			position: relative
 			border-radius: 0 0px 4px 4px
 			background-position: center
 			margin-top: 0px
-			background-image: url('../dist/imgs/my-logo-black.jpg')
-			background-size: cover
+			background-image: url('../dist/imgs/ve_logo4.png')
+			background-size: contain
 			background-position: bottom
 			background-repeat: no-repeat
+			background-color: #3b3b3d
 			left: 0
 			top: 0
 
@@ -339,7 +352,7 @@
 			display: flex
 			flex-flow: column
 			background-image: none
-			background-color: #fffbee
+			background-color: $contBg2
 			justify-content: center
 			background-image: url("../dist/imgs/orange_pattern.png")
 			background-size: contain
@@ -363,9 +376,9 @@
 			@include desktop
 				width: 78%
 				border-radius: 0 0 3.5px 3.5px
-				background-color: rgba(219, 241, 7, 0.19)
+				background-color: $tabBg
 				padding: 3px
-				border: 1.3px solid #b9af90
+				border: 1.3px solid $bocol
 
 	.nav-folders
 		width: 63%
@@ -467,14 +480,14 @@
 			background-size: cover
 			background-repeat: no-repeat
 			&:hover
-				background-color: #ffffff
+				background-color: $contBg
 			&:focus
 				color: white
-				font-size: 0.93em
-				border-left: none
+				font-size: 0.94em
+				background-color: $contBg
 			&:visited, &:active,
-				color: black
-				background-color: #fffcf4
+				color: white
+				background-color: $contBg
 
 	.fields
 		font-family: $font-stack-roboto
@@ -488,18 +501,18 @@
 		@include tablet
 			font-size: 1em
 			color: #484747
-			letter-spacing: 0em  
+			letter-spacing: 0em
 		@include desktop
 			font-size: 1em
 			font-weight: normal
 			color: #5d5632
 			border-radius: 3px
-			background-color: rgba(255, 255, 255, 0.76)
+			background-color: $contBg
 			&:hover
 				color: #ffffff
 				transition: 0.26s ease-in
 				font-style: normal
-				background-color: #d4cec0
+				background-color: #01d8b2
 
 	.nav-archives
 		font-family: Helvetica
@@ -510,8 +523,9 @@
 			font-size: 1.1em
 			text-align: center
 			background-color: none
+			font-weight: normal
 		@include desktop
-			color: #5d5632
+			color: $mencol
 			text-align: center
 			z-index: 999
       font-size: 1.1em !important !important
@@ -614,7 +628,7 @@
 	#nav
 		@include desktop
 			width: 84%
-			border: 1.5px solid #b9ae92
+			border: 1.5px solid $contBdr
 
 	.mobile-container
 		max-height: 100%
@@ -658,7 +672,7 @@
 			position: fixed
 			align-self: center
 			top: 0
-			background-color: #fbf7e5
+			background-color: $contBg
 
 	.mobile-container .sticky
 		z-index: 999999999999

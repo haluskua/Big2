@@ -84,8 +84,7 @@ h4, h6 {
         -ms-flex-align: start;
             align-items: flex-start;
     background-color: #494f58;
-    background-size: cover;
-    background: url("../dist/imgs/1920.png") top no-repeat;
+    background-color: #1a8b96;
   }
 }
 
@@ -96,6 +95,8 @@ h4, h6 {
             flex-grow: 1;
     height: 100vh;
     max-width: 100vw;
+    background-size: cover;
+    background: url("../dist/imgs/1920.png") top no-repeat;
     background: none;
   }
 }
@@ -112,7 +113,7 @@ h4, h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: #E91E63;
+    background-color: #1a8b96;
     background-image: none;
   }
 }
@@ -136,11 +137,13 @@ h4, h6 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    opacity: 0.94;
   }
 }
 
 @media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
   .Colsplit-between {
+    opacity: 0.9;
     height: 86%;
   }
 }
@@ -168,6 +171,7 @@ h4, h6 {
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
+    opacity: 0.91;
   }
 }
 
@@ -306,15 +310,20 @@ h4, h6 {
     display-flex-direction: column;
     -ms-flex-item-align: center;
         align-self: center;
-    padding-top: 9%;
+    padding-top: 2%;
     margin-bottom: -4px;
-    margin-top: -11px;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  #portfolio-header {
+    padding-top: 5%;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #portfolio-header {
-    margin-top: -238px;
+    margin-top: -22%;
     margin-top-width: 100%;
     margin-top-justify-content: center;
     padding: 0;
@@ -325,13 +334,12 @@ h4, h6 {
   #bulgeword {
     margin: 0 auto;
     padding-top: 30px;
-    color: #f9f3e4;
-    font-size: 2.8em;
+    color: #01d8b2;
+    font-size: 2.1em;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     font-family: "Cabin Sketch", Garamond;
-    font-family: Helvetica;
   }
 }
 
@@ -351,15 +359,16 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #bulgeword {
-    color: #f9f3e4;
-    font-size: 3.8em;
+    color: #01d8b2;
+    font-size: 3.12em;
     letter-spacing: 0em;
+    padding-top: 80px;
   }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #portfolio-color {
-    color: #dbf107;
+    color: #f0da92;
   }
 }
 
@@ -371,7 +380,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #portfolio-color {
-    color: #dbf107;
+    color: #f0da92;
   }
 }
 
@@ -415,12 +424,12 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .intro1 {
     margin: auto;
-    margin-top: 10px;
+    margin-top: 16px;
     color: #f5eabe;
-    font-size: 1.26em;
+    font-size: 1.826em;
     position: relative;
     text-align: justify;
-    letter-spacing: 0.05em;
+    letter-spacing: 0em;
     font-family: "Dancing Script";
   }
 }
@@ -429,25 +438,31 @@ h4, h6 {
   .intro1 {
     color: #8e8c8c;
     font-size: 3.3em;
+    margin-top: 0;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .intro1 {
-    font-size: 1.7em;
+    font-size: 2.26em;
+    margin-top: 10px;
     color: #f5eabe;
   }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .intro, .nameohk {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin: auto;
+    margin-top: 3%;
     color: #fffedb;
     font-size: 1.2em;
     letter-spacing: 0em;
     position: relative;
     text-align: justify;
-    font-family: Helvetica;
+    font-family: Georgia, Times, serif;
   }
 }
 
@@ -455,22 +470,21 @@ h4, h6 {
   .intro, .nameohk {
     height: 60px;
     color: #322e28;
-    margin-top: 4px;
+    margin-top: 29px;
     font-weight: normal;
     text-shadow: none;
-    font-size: 1.5em;
+    font-size: 2.15em;
     position: relative;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .intro, .nameohk {
-    font-size: 1.5em;
+    font-size: 1.28em;
     font-weight: normal;
     padding-top: 0px;
     padding-bottom: 7px;
-    letter-spacing: 0.04em;
-    margin-top: -7px;
+    margin-top: 14px;
     text-transform: normal;
     color: #fffedb;
   }
@@ -498,14 +512,15 @@ h4, h6 {
     margin-top: 0;
     font-size: 1.5em;
     line-height: 68px;
-    color: #050200;
-    font-family: Helvetica;
+    letter-spacing: 0.02em;
+    color: #807553;
+    font-family: Georgia, Times, serif;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .nameohk {
-    font-size: 1.25em;
+    font-size: 1.4em;
     color: #f9f3e4;
     margin-top: -2px;
     font-weight: bolder;
@@ -576,9 +591,12 @@ h4, h6 {
     left: -14px;
     margin: 0;
     height: 52px;
-    width: 11vw;
-    background-position: top;
+    width: 13vw;
     background-color: #cac1b4;
+    background-image: url("../dist/imgs/ve_logo4.png");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
   }
 }
 
@@ -586,15 +604,16 @@ h4, h6 {
   #logo-space {
     margin: 0 auto;
     width: 100%;
-    height: 100px;
+    height: 88px;
     position: relative;
     border-radius: 0 0px 4px 4px;
     background-position: center;
     margin-top: 0px;
-    background-image: url("../dist/imgs/my-logo-black.jpg");
-    background-size: cover;
+    background-image: url("../dist/imgs/ve_logo4.png");
+    background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
+    background-color: #3b3b3d;
     left: 0;
     top: 0;
   }
@@ -720,7 +739,7 @@ h4, h6 {
   #folders-container li {
     width: 78%;
     border-radius: 0 0 3.5px 3.5px;
-    background-color: rgba(219, 241, 7, 0.19);
+    background-color: rgba(1, 216, 178, 0.42);
     padding: 3px;
     border: 1.3px solid #b9af90;
   }
@@ -880,16 +899,16 @@ h4, h6 {
     background-repeat: no-repeat;
   }
   .hamburger-menu:hover {
-    background-color: #ffffff;
+    background-color: #fffee4;
   }
   .hamburger-menu:focus {
     color: white;
-    font-size: 0.93em;
-    border-left: none;
+    font-size: 0.94em;
+    background-color: #fffee4;
   }
   .hamburger-menu:visited, .hamburger-menu:active {
-    color: black;
-    background-color: #fffcf4;
+    color: white;
+    background-color: #fffee4;
   }
 }
 
@@ -918,14 +937,14 @@ h4, h6 {
     font-weight: normal;
     color: #5d5632;
     border-radius: 3px;
-    background-color: rgba(255, 255, 255, 0.76);
+    background-color: #fffee4;
   }
   .fields:hover {
     color: #ffffff;
     -webkit-transition: 0.26s ease-in;
     transition: 0.26s ease-in;
     font-style: normal;
-    background-color: #d4cec0;
+    background-color: #01d8b2;
   }
 }
 
@@ -943,6 +962,7 @@ h4, h6 {
     font-size: 1.1em;
     text-align: center;
     background-color: none;
+    font-weight: normal;
   }
 }
 
@@ -1185,7 +1205,7 @@ h4, h6 {
     -ms-flex-item-align: center;
         align-self: center;
     top: 0;
-    background-color: #fbf7e5;
+    background-color: #fffee4;
   }
 }
 
@@ -1458,6 +1478,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .columnsSplit {
     width: 100%;
+    padding: 8px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     margin: auto;
@@ -1564,7 +1585,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .opening_statement, .mini_statement {
-    width: 77%;
+    width: 63%;
     color: #0c0802;
     padding: 4px 30px 30px 8px;
     display: -webkit-box;
@@ -1572,7 +1593,8 @@ h4, h6 {
     display: flex;
     -ms-flex-item-align: center;
         align-self: center;
-    font-size: 1em;
+    font-size: 0.88em;
+    letter-spacing: 0.03em;
     line-height: 1.5em;
     background: none;
   }
@@ -1594,7 +1616,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .opening_statement span, .opening_statement .par-title, .mini_statement span, .mini_statement .par-title {
     font-family: "Antic";
-    font-size: 1.9em;
+    font-size: 1.4em;
     margin: auto;
     color: #19423e;
   }
@@ -1650,17 +1672,16 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .opening_statement_desktop {
-    width: 85%;
+    width: 67%;
     text-align: justify;
     padding-top: 0px;
     margin-bottom: 33px;
-    font-size: 1em;
+    font-size: 0.9em;
+    letter-spacing: 0.03em;
     line-height: 1.5em;
-    font-weight: 500;
     background: none;
     color: #0c0802;
     font-weight: normal;
-    font-family: "Open Sans";
   }
 }
 
@@ -1717,7 +1738,7 @@ h4, h6 {
     border: 8px solid rgba(232, 210, 126, 0.56);
     margin: auto;
     width: 100vw;
-    background-color: #f9f3e4;
+    background-color: #f5f0c5;
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1746,7 +1767,7 @@ h4, h6 {
     border: 1px solid rgba(218, 210, 175, 0.529412);
     border-left: none;
     background-color: rgba(255, 250, 217, 0.8);
-    font-size: 1.8em;
+    font-size: 1.6em;
     letter-spacing: 0.3em;
     font-weight: bold;
     text-transform: uppercase;
@@ -1789,9 +1810,8 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .skills-title {
-    color: #523a26;
+    color: #8BC34A;
     font-size: 1.1em;
-    text-transform: uppercase;
     padding: 0;
     line-height: 44.2px;
     padding-left: 1%;
@@ -2354,7 +2374,8 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .skills-caption, .gd-caption {
-    font-size: 1em;
+    font-size: 0.88em;
+    letter-spacing: 0.03em;
     color: #0c0802;
     line-height: 1.6em;
     margin: 0;
@@ -2996,7 +3017,10 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .close-caption, .gdClose, .dmClose, .tClose {
     color: #465553;
-    font-size: 1.15em;
+    font-size: 1em;
+    margin: 0 auto;
+    padding: 0px;
+    font-family: Georgia, Times, serif;
     letter-spacing: normal;
     background: none;
     border: none;
@@ -3076,7 +3100,8 @@ h4, h6 {
     letter-spacing: 0.02em;
     line-height: 1.1em;
     font-size: 1.5em;
-    color: #b7a87d;
+    color: #8BC34A;
+    font-family: Georgia, Times, serif;
   }
 }
 
@@ -3438,6 +3463,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .project_box {
     width: auto;
+    margin: 0 80px;
     background-color: rgba(255, 255, 255, 0.76);
   }
 }
@@ -3470,10 +3496,13 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #project_title {
-    -webkit-box-orient: vertical;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -3481,25 +3510,8 @@ h4, h6 {
     background: none;
     margin: auto;
     margin-top: 0px;
+    margin-bottom: 11px;
     border: none;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
-  .spacer {
-    padding: 10px 0px;
-    margin-top: -32px;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .spacer {
-    height: 100%;
-    margin: auto;
-    width: 83%;
-    overflow: auto;
-    visibility: visible;
-    padding: 40px 0px;
   }
 }
 
@@ -3580,7 +3592,8 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .outer-div {
-    margin-top: 31px;
+    height: 120px;
+    margin-bottom: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3672,7 +3685,12 @@ h4, h6 {
     background-image: url("../dist/imgs/Oilpainting.jpg");
   }
   .inner-div11 {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url("../dist/imgs/ve_logo4.png");
+    background-size: cover;
+    width: 50%;
   }
 }
 
@@ -3689,20 +3707,19 @@ h4, h6 {
     display: -ms-flexbox;
     display: flex;
     height: 45%;
-    background-image: url("../dist/imgs/newlogo.png");
     background-size: cover;
     padding: 0;
-    margin-top: 24px;
-    width: 100%;
     border: none;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .inner-div11 {
-    display: none;
-    height: 53%;
-    width: 63%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 20%;
+    width: 25%;
     margin-top: 0;
     margin-bottom: 0;
     background-size: contain;
