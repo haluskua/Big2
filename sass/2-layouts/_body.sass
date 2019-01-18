@@ -183,7 +183,7 @@
       margin-top: 0px
       font-size: 1.52em
       font-family: $font-stack-Dancing-script
-      color: #d6878a
+      color: #e8993a
       font-weight: bold
       line-height: 36px
       margin-top: 10px
@@ -268,7 +268,7 @@
 
   // Horiontal bar with title on page
   #push-up
-    color: #5a5643
+    color: #f5f5dc
     line-height: 19px
     padding-top: 12px
     font-weight: bold
@@ -277,10 +277,10 @@
     text-transform: uppercase
     letter-spacing: 0.08em
     font-family: $font-stack-roboto
-    border: 8px solid rgba(232, 210, 126, 0.56)
+    border: 2px solid #374f41
+    background-color: #277b6a
     margin: auto
     width: 100vw
-    background-color: #f5f0c5
     text-align: center
     justify-content: center
     opacity: 0.72
@@ -288,6 +288,7 @@
     @include tablet
       font-size: 1.7em
       color: #3e2e0a
+      border: 5px solid #ffb049
       background-color: rgb(255, 229, 179)
     @include desktop
       font-family: $font-stack-roboto
@@ -529,19 +530,20 @@
   button.accordion
     cursor: pointer
     height: 37px
-    font-size: 0.82em
+    color: #fefefe
+    font-size: 1.12em
     font-weight: bolder
     text-transform: uppercase
-    width: 64%
+    width: 67%
     text-align: center
     outline: none
     transition: 0.5s ease
     letter-spacing: 0.28em
     font-family: $font-stack-rajdhani
     background-color: #fcfeed
-    background-color: rgba(219, 241, 7, 0.33)
-    margin-top: 0px
-    margin-bottom: 12px
+    background-color: rgba(1, 110, 91, 0.75)
+    margin-top: 30px
+    margin-bottom: 24px
     border: 0
     margin-right: 0
     @include phone-landscape
@@ -573,12 +575,13 @@
       letter-spacing: 0.2em
 
   button.accordion.active, button.accordion:hover
-    width: 100%
+    width: 70%
     transition: 0.5s ease
     text-align: center
-    font-size: 0.9em
+    font-size: 1.05em
     background-color: rgba(31, 33, 30, 0) !important
-    color: #09070b !important
+    border-bottom: 2px solid greenyellow
+    color: greenyellow !important
     height: 35px
     border-bottom: none
     @include phone-landscape
@@ -603,7 +606,7 @@
       letter-spacing: 0.2em
 
   div.panel
-      background-color: rgba(255, 235, 161, 0.7)
+      background-color: rgba(1, 110, 91, 0.75)
       padding: 0 8px
       display: none
       height: auto
@@ -946,6 +949,7 @@
       margin: auto
       padding-top: 33px
       margin-top: 55px
+      background: none
     @include desktop
       align-self: center
       width: 86%
@@ -1013,7 +1017,7 @@
       display: flex
       justify-content: space-between
       margin-bottom: 28px
-      color: #997a3c
+      color: #227665
       width: 116px
       font-size: 1.15em
       border-bottom: 1px dotted
@@ -1075,7 +1079,7 @@
       margin-bottom: 40px
 
     h2
-      color: #d6878a
+      color: #2d8271
       align-self: flex-start
       font-size: 1.4em
       letter-spacing: 0.04em
@@ -1227,7 +1231,7 @@
       button
         width: 41%
         height: auto
-        background-color: #ffe290
+        background-color: #01d8b2
         margin: auto
         justify-content: center
         padding: 2px
@@ -1356,11 +1360,9 @@
     display: flex
     flex-wrap: wrap
     padding: 11px
+    margin-top: 24px
     justify-content: space-around
     background: none
-    background-size: cover
-    background-repeat: no-repeat
-    background-position: center
     @include phone-landscape
       display: none
     @include tablet
@@ -1432,6 +1434,7 @@
     background-image: url("../dist/imgs/ve_logo4.png")
     background-size: cover
     width: 50%
+    border: none
     @include phone-landscape
       height: 82%
       width: 32%

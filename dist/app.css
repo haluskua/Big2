@@ -133,11 +133,10 @@ h4, h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-image: url("../dist/imgs/hausman.jpg");
+    background-image: url("../dist/imgs/gentlemen1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.94;
   }
 }
 
@@ -163,15 +162,12 @@ h4, h6 {
   .Colsplit-between {
     height: 100%;
     margin-top: 0;
+    background-image: url("../dist/imgs/3d-modelling.jpg");
+    background-position: left;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin-left: 10%;
-    background-image: url("../dist/imgs/hausman.jpg");
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
-    opacity: 0.91;
   }
 }
 
@@ -456,13 +452,13 @@ h4, h6 {
     display: -ms-flexbox;
     display: flex;
     margin: auto;
-    margin-top: 3%;
-    color: #fffedb;
-    font-size: 1.2em;
+    margin-top: 64px;
+    color: black;
+    font-size: 2.12em;
     letter-spacing: 0em;
     position: relative;
     text-align: justify;
-    font-family: Georgia, Times, serif;
+    font-family: "Dancing Script";
   }
 }
 
@@ -501,7 +497,7 @@ h4, h6 {
             justify-content: center;
     font-size: 1em;
     margin-top: 2px;
-    color: #f9f3e4;
+    color: #01d8b2;
     text-transform: uppercase;
     font-weight: normal;
   }
@@ -570,7 +566,7 @@ h4, h6 {
     height: 68px;
     width: 14vw;
     width-margin-top: 30px;
-    background-image: url("../dist/imgs/newlogo.png");
+    background-image: url("../dist/imgs/ve_logo4.png");
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -657,7 +653,7 @@ h4, h6 {
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
-    background-image: url("../dist/imgs/1920.png");
+    background-image: url("../dist/imgs/gentlemen1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -753,8 +749,13 @@ h4, h6 {
     -ms-flex-item-align: center;
         align-self: center;
     padding: 3px;
-    margin-bottom: 11px;
-    margin-top: 9px;
+    margin-bottom: 20px;
+    margin-top: 22px;
+    border: 1px solid hotpink;
+    background-color: lemonchiffon;
+    width: 42%;
+    boder-radius: 2px;
+    border-radius: 4px;
   }
 }
 
@@ -1085,10 +1086,10 @@ h4, h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-color: rgba(255, 245, 145, 0.33);
+    background-color: rgba(1, 110, 91, 0.78);
   }
   .haus-menu {
-    color: #1f1710;
+    color: #f5f5dc;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1241,7 +1242,6 @@ h4, h6 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    border-radius: 35px 61px 37px 0;
     border: 1px solid #939393;
   }
 }
@@ -1288,6 +1288,7 @@ h4, h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    background-color: rgba(1, 110, 91, 0.75);
   }
 }
 
@@ -1605,7 +1606,7 @@ h4, h6 {
     margin-top: 0px;
     font-size: 1.52em;
     font-family: "Dancing Script";
-    color: #d6878a;
+    color: #e8993a;
     font-weight: bold;
     line-height: 36px;
     margin-top: 10px;
@@ -1726,7 +1727,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #push-up {
-    color: #5a5643;
+    color: #f5f5dc;
     line-height: 19px;
     padding-top: 12px;
     font-weight: bold;
@@ -1735,10 +1736,10 @@ h4, h6 {
     text-transform: uppercase;
     letter-spacing: 0.08em;
     font-family: "Roboto";
-    border: 8px solid rgba(232, 210, 126, 0.56);
+    border: 2px solid #374f41;
+    background-color: #277b6a;
     margin: auto;
     width: 100vw;
-    background-color: #f5f0c5;
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1752,6 +1753,7 @@ h4, h6 {
   #push-up {
     font-size: 1.7em;
     color: #3e2e0a;
+    border: 5px solid #ffb049;
     background-color: #ffe5b3;
   }
 }
@@ -2195,10 +2197,11 @@ h4, h6 {
   button.accordion {
     cursor: pointer;
     height: 37px;
-    font-size: 0.82em;
+    color: #fefefe;
+    font-size: 1.12em;
     font-weight: bolder;
     text-transform: uppercase;
-    width: 64%;
+    width: 67%;
     text-align: center;
     outline: none;
     -webkit-transition: 0.5s ease;
@@ -2206,9 +2209,9 @@ h4, h6 {
     letter-spacing: 0.28em;
     font-family: "Rajdhani", sans-serif;
     background-color: #fcfeed;
-    background-color: rgba(219, 241, 7, 0.33);
-    margin-top: 0px;
-    margin-bottom: 12px;
+    background-color: rgba(1, 110, 91, 0.75);
+    margin-top: 30px;
+    margin-bottom: 24px;
     border: 0;
     margin-right: 0;
   }
@@ -2258,13 +2261,14 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   button.accordion.active, button.accordion:hover {
-    width: 100%;
+    width: 70%;
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
     text-align: center;
-    font-size: 0.9em;
+    font-size: 1.05em;
     background-color: rgba(31, 33, 30, 0) !important;
-    color: #09070b !important;
+    border-bottom: 2px solid greenyellow;
+    color: greenyellow !important;
     height: 35px;
     border-bottom: none;
   }
@@ -2304,7 +2308,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   div.panel {
-    background-color: rgba(255, 235, 161, 0.7);
+    background-color: rgba(1, 110, 91, 0.75);
     padding: 0 8px;
     display: none;
     height: auto;
@@ -2854,6 +2858,7 @@ h4, h6 {
     margin: auto;
     padding-top: 33px;
     margin-top: 55px;
+    background: none;
   }
 }
 
@@ -2961,7 +2966,7 @@ h4, h6 {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-bottom: 28px;
-    color: #997a3c;
+    color: #227665;
     width: 116px;
     font-size: 1.15em;
     border-bottom: 1px dotted;
@@ -3066,7 +3071,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .small-intro h2 {
-    color: #d6878a;
+    color: #2d8271;
     -ms-flex-item-align: start;
         align-self: flex-start;
     font-size: 1.4em;
@@ -3341,7 +3346,7 @@ h4, h6 {
   .blocks section button, .blocks .one button, .one section button, .one .one button {
     width: 41%;
     height: auto;
-    background-color: #ffe290;
+    background-color: #01d8b2;
     margin: auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -3564,12 +3569,10 @@ h4, h6 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding: 11px;
+    margin-top: 24px;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     background: none;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
   }
 }
 
@@ -3691,6 +3694,7 @@ h4, h6 {
     background-image: url("../dist/imgs/ve_logo4.png");
     background-size: cover;
     width: 50%;
+    border: none;
   }
 }
 

@@ -31,11 +31,10 @@
 		position: relative
 		align-items: center
 		flex-direction: column
-		background-image: url("../dist/imgs/hausman.jpg")
+		background-image: url("../dist/imgs/gentlemen1.jpg")
 		background-size: cover
 		background-position: center
 		background-repeat: no-repeat
-		opacity: 0.94
 		@include phone-landscape
 			opacity: 0.9
 			height: 86%
@@ -49,13 +48,10 @@
 		@include desktop
 			height: 100%
 			margin-top: 0
+			background-image: url("../dist/imgs/3d-modelling.jpg")
+			background-position: left
 			justify-content: center
 			margin-left: 10%
-			background-image: url("../dist/imgs/hausman.jpg")
-			background-size: cover
-			background-position: left
-			background-repeat: no-repeat
-			opacity: 0.91
 
 	#Colsplit-box1
 		height: 93%
@@ -195,13 +191,13 @@
 	.intro, .nameohk
 		display: flex
 		margin: auto
-		margin-top: 3%
-		color: #fffedb
-		font-size: 1.2em
+		margin-top: 64px
+		color: black
+		font-size: 2.12em
 		letter-spacing: 0em
 		position: relative
 		text-align: justify
-		font-family: $font-stack-serif
+		font-family: $font-stack-Dancing-script
 		@include tablet
 			height: 60px
 			color: #322e28
@@ -225,7 +221,7 @@
 		justify-content: center
 		font-size: 1em
 		margin-top: 2px
-		color: #f9f3e4
+		color: #01d8b2
 		text-transform: uppercase
 		font-weight: normal
 		@include tablet
@@ -265,7 +261,7 @@
 		height: 68px
 		width: 14vw
     margin-top: 30px
-		background-image: url('../dist/imgs/newlogo.png')
+		background-image: url('../dist/imgs/ve_logo4.png')
 		background-size: cover
 		background-position: bottom
 		background-repeat: no-repeat
@@ -322,7 +318,7 @@
 		display: flex
 		border-radius: 4.5px 4.5px 0 0
 		justify-content: center !important
-		background-image: url('../dist/imgs/1920.png')
+		background-image: url('../dist/imgs/gentlemen1.jpg')
 		background-size: cover
 		background-position: center
 		background-repeat: no-repeat
@@ -386,8 +382,13 @@
 		display: none
 		align-self: center
 		padding: 3px
-		margin-bottom: 11px
-		margin-top: 9px
+		margin-bottom: 20px
+		margin-top: 22px
+		border: 1px solid hotpink
+		background-color: lemonchiffon
+		width: 42%
+		boder-radius: 2px
+		border-radius: 4px
 		@include desktop
 			&:active, &:focus
 				width: 70%
@@ -593,11 +594,11 @@
 				align-items: center
 				flex-direction: column
 				justify-content: center
-				background-color: rgba(255, 245, 145, 0.33)
+				background-color: rgba(1, 110, 91, 0.78)
 				@include phone-landscape
 
 	.haus-menu
-		color: #1f1710
+		color: #f5f5dc
 		display: flex
 		font-size: 1em
 		font-weight: bolder
@@ -690,7 +691,6 @@
 		display: flex
 		background-color: rgba(87, 85, 100, 0.30)
 		justify-content: flex-start
-		border-radius: 35px 61px 37px 0
 		border: 1px solid #939393
 		@include tablet
 			display: none
@@ -715,6 +715,7 @@
 		line-height: 37px
 		text-align: center
 		justify-content: center
+		background-color: rgba(1, 110, 91, 0.75)
 		@include phone-landscape
 			line-height: 22px
 		@include tablet
