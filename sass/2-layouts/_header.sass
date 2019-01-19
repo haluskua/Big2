@@ -48,7 +48,7 @@
 		@include desktop
 			height: 100%
 			margin-top: 0
-			background-image: url("../dist/imgs/3d-modelling.jpg")
+			background-image: url("../dist/imgs/gentlemen1.jpg")
 			background-position: left
 			justify-content: center
 			margin-left: 10%
@@ -137,16 +137,16 @@
 			font-size: 3.5em
 		@include desktop
 			color: #01d8b2
-			font-size: 3.12em
+			font-size: 4.5em
 			letter-spacing: 0em
-			padding-top: 80px
+			padding-top: 280pX
 
 	#portfolio-color
 		color: #f0da92
 		@include tablet
 			color: #ef5004
 		@include desktop
-			color: #f0da92
+			color: white
 
   .ohk-logo
     width: 33%
@@ -184,9 +184,9 @@
 			font-size: 3.3em
 			margin-top: 0
 		@include desktop
-			font-size: 2.26em
+			font-size: 3em
 			margin-top: 10px
-			color: #f5eabe
+			color: #000000
 
 	.intro, .nameohk
 		display: flex
@@ -207,11 +207,11 @@
 			font-size: 2.15em
 			position: relative
 		@include desktop
-			font-size: 1.28em
+			font-size: 1.7em
 			font-weight: normal
 			padding-top: 0px
 			padding-bottom: 7px
-			margin-top: 14px
+			margin-top: 50px
 			text-transform: normal
 			color: #fffedb
 
@@ -232,10 +232,11 @@
 			color: #807553
 			font-family: $font-stack-serif
 		@include desktop
-			font-size: 1.4em
+			font-size: 1.72em
 			color: #f9f3e4
 			margin-top: -2px
-			font-weight: bolder
+			font-weight: bold
+			font-family: $font-stack-roboto
 
 	.folders-container2
 		display: none
@@ -278,8 +279,6 @@
 			background-color: #cac1b4
 			background-image: url('../dist/imgs/ve_logo4.png')
 			background-size: contain
-			background-position: bottom
-			background-repeat: no-repeat
 		@include desktop
 			margin: 0 auto
 			width: 100%
@@ -290,9 +289,7 @@
 			margin-top: 0px
 			background-image: url('../dist/imgs/ve_logo4.png')
 			background-size: contain
-			background-position: bottom
-			background-repeat: no-repeat
-			background-color: #3b3b3d
+			background-color: #f7efc5
 			left: 0
 			top: 0
 
@@ -372,7 +369,7 @@
 			@include desktop
 				width: 78%
 				border-radius: 0 0 3.5px 3.5px
-				background-color: $tabBg
+				background-color: lemonchiffon
 				padding: 3px
 				border: 1.3px solid $bocol
 
@@ -393,8 +390,6 @@
 			&:active, &:focus
 				width: 70%
 				background-color: white
-				background-color: rgba(155, 149, 130, 0.329)
-			&:hover
 				background-color: red
 
 		@include phone-landscape
@@ -471,9 +466,10 @@
 
 		@include desktop
 			height: 100%
+			width: 100%
 			line-height: 44px
 			color: #131426
-			font-size: 0.65em
+			font-size: 0.75em
 			background-color: none
 			border: none
 			justify-content: center
@@ -481,7 +477,7 @@
 			background-size: cover
 			background-repeat: no-repeat
 			&:hover
-				background-color: $contBg
+				background-color: white
 			&:focus
 				color: white
 				font-size: 0.94em
@@ -506,9 +502,9 @@
 		@include desktop
 			font-size: 1em
 			font-weight: normal
-			color: #5d5632
+			color: white
 			border-radius: 3px
-			background-color: $contBg
+			background-color: $tabBg
 			&:hover
 				color: #ffffff
 				transition: 0.26s ease-in
@@ -534,15 +530,19 @@
       padding-top: 9px
 			letter-spacing: 0.01em
 			font-family: $font-stack-open-sans
-			&:focus, &:active, &:hover, &visited
-				text-align: center
+			// &:focus, &:active, &:hover, &visited
+			// 	text-align: center
+			// 	color: $tabBg
+			// 	background-color: $mencol
+			// 	width: 100%
+			// 	height: auto
+			// 	padding: 0
+
 
 	.nav-archives:active
-		@include desktop
 			font-style: oblique
 	.nav-archives:visited
-		@include desktop
-			// font-style: oblique
+			color: red
 
 	.haus
 		bottom: 0
