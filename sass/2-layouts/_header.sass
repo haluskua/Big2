@@ -2,21 +2,18 @@
 
 //styling for Header elements
 @include phone
-
 	.hetpage
 		display: flex
 		height: 100vh
 		overflow: hidden
 		align-items: flex-start
-		// background-color: #494f58
-		// background-color: #1a8b96
+		//mediaQuerie
 		@include tablet
 			flex-grow: 1
 			height: 100vh
 			max-width: 100vw
-			background-size: cover
-			background: url('../dist/imgs/1920.png') top no-repeat
 			background: none
+			//mediaQuerie
 		@include desktop
 			display: flex
 			justify-content: center
@@ -32,12 +29,12 @@
 		align-items: center
 		flex-direction: column
 		background-image: url("../dist/imgs/butterfly.jpg")
-		background-size: cover
-		background-position: center
-		background-repeat: no-repeat
+		//mixin for background image settings
+		@include bic
 		@include phone-landscape
 			opacity: 0.9
 			height: 86%
+			//mediaQuerie
 		@include tablet
 			width: 100vw
 			height: 100%
@@ -45,13 +42,13 @@
 			padding: 0
 			margin-top: 67px
 			background: none
+			//mediaQuerie
 		@include desktop
 			height: 100%
 			margin-top: 0
-			background-image: url("../dist/imgs/1920.png")
-			background-position: left
-			justify-content: center
 			margin-left: 10%
+			background-image: url("../dist/imgs/1920.png")
+			@include bic
 
 	#Colsplit-box1
 		height: 93%
@@ -59,12 +56,15 @@
 		position: relative
 		flex-direction: column
 		justify-content: space-between
+		//mediaQuerie
 		@include phone-landscape
 			margin-bottom: 0px
 			height: 100%
+			//mediaQuerie
 		@include tablet
 			height: 84%
 			margin-top: 156px
+			//mediaQuerie
 		@include desktop
 			height: 83%
 
@@ -74,22 +74,27 @@
 		justify-content: center
 		flex-direction: row
 		align-items: flex-end
+		//mediaQuerie
 		@include phone-landscape
 			align-items: flex-start
       margin-top: -43px
+			//mediaQuerie
 		@include tablet
 			margin: 0
+			//mediaQuerie
 		@include desktop
 			height: 63px
 
 	.hetpage-li
 		width: 100%
 		height: 65px
+		//mediaQuerie
 		@include phone-landscape
       width: 100%
 		@include tablet
 			width: 100%
 			height: auto
+			//mediaQuerie
 		@include desktop
 			width: 100%
 			margin-top: 4px
@@ -99,8 +104,10 @@
 		width: 100%
 		height: auto
 		display: flex
+		//mediaQuerie
 		@include phone-landscape
 			margin-bottom: 13px
+			//mediaQuerie
 		@include desktop
 			margin: 0
 
@@ -110,11 +117,14 @@
 		align-self: center
 		padding-top: 2%
 		margin-bottom: -4px
+		//mediaQuerie
 		@include phone-landscape
+			//mediaQuerie
 		@include tablet
 			padding-top: 5%
+			//mediaQuerie
 		@include desktop
-			margin-top: -22%
+			margin-top: -15%
       width: 100%
       justify-content: center
 			padding: 0
@@ -128,13 +138,15 @@
 		text-align: center
 		text-transform: uppercase
 		font-family: $font-stack-character
-		// font-family: $font-stack-serif
+		//mediaQuerie
 		@include phone-landscape
 			color: #26061e
 			font-size: 1.87em
+			//mediaQuerie
 		@include tablet
 			color: #341e25
 			font-size: 3.5em
+			//mediaQuerie
 		@include desktop
 			color: #01d8b2
 			font-size: 1.74em
@@ -144,8 +156,10 @@
 
 	#portfolio-color
 		color: #f0da92
+		//mediaQuerie
 		@include tablet
 			color: #ef5004
+			//mediaQuerie
 		@include desktop
 			color: #ffb000
 
@@ -157,14 +171,17 @@
 
 	#hetinfo
 		height: 40px
+		//mediaQuerie
 		@include phone-landscape
 			margin-bottom: 78px
 			margin-top: 3px
+			//mediaQuerie
 		@include tablet
 			width: 100%
 			height: 55px
 			line-height: 167px
 			background-size: contain
+			//mediaQuerie
 		@include desktop
 			height: 40px
 			background-size: contain
@@ -180,10 +197,12 @@
 		text-align: justify
 		letter-spacing: 0em
 		font-family: $font-stack-Dancing-script
+		//mediaQuerie
 		@include tablet
 			color: #8e8c8c
 			font-size: 3.3em
 			margin-top: 0
+			//mediaQuerie
 		@include desktop
 			font-size: 3.6em
 			letter-spacing: 0.05em
@@ -200,6 +219,7 @@
 		position: relative
 		text-align: justify
 		font-family: $font-stack-Dancing-script
+		//mediaQuerie
 		@include tablet
 			height: 60px
 			color: #322e28
@@ -208,6 +228,7 @@
 			text-shadow: none
 			font-size: 2.15em
 			position: relative
+			//mediaQuerie
 		@include desktop
 			font-size: 1.87em
 			font-weight: normal
@@ -226,6 +247,7 @@
 		color: black
 		font-weight: normal
 		font-family: $font-stack-roboto
+		//mediaQuerie
 		@include tablet
 			margin-top: 0
 			font-size: 1.5em
@@ -233,6 +255,7 @@
 			letter-spacing: 0.02em
 			color: #807553
 			font-family: $font-stack-serif
+			//mediaQuerie
 		@include desktop
 			font-size: 1.22em
 			letter-spacing: 0em
@@ -243,17 +266,16 @@
 
 	.folders-container2
 		display: none
+		//mediaQuerie
 		@include tablet
 			padding: 0
 			width: 74vw
 			height: 90px
 			display: flex
 			margin: 0 auto
-			background-size: cover
-			background-position: top
-			background-repeat: no-repeat
 			justify-content: space-around
 			background-image: url('../dist/imgs/1920.png')
+			@include bic
 			@include desktop
 				background-color: white
 
@@ -266,13 +288,12 @@
 		width: 14vw
     margin-top: 30px
 		background-image: url('../dist/imgs/ve_logo4.png')
-		background-size: cover
-		background-position: bottom
-		background-repeat: no-repeat
+		@include bic
 		@include phone-landscape
 			right: -16px
 			bottom: 0
       display: none
+			//mediaQuerie
 		@include tablet
 			top: 3px
 			left: -14px
@@ -282,6 +303,7 @@
 			background-color: #cac1b4
 			background-image: url('../dist/imgs/ve_logo4.png')
 			background-size: contain
+			//mediaQuerie
 		@include desktop
 			margin: 0 auto
 			width: 100%
@@ -313,17 +335,15 @@
 	#folders-container
 		padding: 0
 		width: 100%
-		height: auto
+		height: 100%
 		flex-wrap: wrap
 		display: flex
 		border-radius: 4.5px 4.5px 0 0
 		justify-content: center !important
 		background-image: url('../dist/imgs/gentlemen1.jpg')
-		background-size: cover
-		background-position: center
-		background-repeat: no-repeat
+		@include bic
 		@include phone-landscape
-		height: 100%
+			//@mediaQueries
 		@include tablet
 			width: 86vw
 			margin-left: 62px
@@ -333,6 +353,7 @@
 			flex-flow: row
 			background-image: none
 			justify-content: center
+			// @mediaQueries
 		@include desktop
 			// width: 66vw
 			// display: flex
@@ -359,22 +380,25 @@
 		flex-wrap: wrap
 		justify-content: space-around
 		margin: 0
+		//mediaQuerie
 		@include tablet
 			height: 61px
 			background-color: none
 			border: none
 			width: 86vw
+			//mediaQuerie
 		@include desktop
 			z-index: 999999
 
 		li
 			display: flex
+			//mediaQuerie
 			@include desktop
 				width: 78%
 				border-radius: 0 0 3.5px 3.5px
 				background-color: #ffec6f
 				padding: 3px
-				border: 1.3px solid $bocol
+				border: 1.3px solid #fffefb
 
 	.nav-folders
 		width: 63%
@@ -382,22 +406,24 @@
 		display: none
 		align-self: center
 		padding: 3px
-		margin-bottom: 20px
-		margin-top: 22px
+		margin-bottom: 11px
+		margin-top: 11px
 		border: 1px solid hotpink
 		background-color: lemonchiffon
 		width: 42%
 		boder-radius: 2px
 		border-radius: 4px
+		//mediaQuerie
 		@include desktop
 			&:active, &:focus
 				width: 70%
 				background-color: white
 				background-color: red
-
+				//mediaQuerie
 		@include phone-landscape
 			width: 19%
 			margin-top: 4px
+			//mediaQuerie
 		@include tablet
 			width: 100%
 			height: auto
@@ -408,6 +434,7 @@
 			background-color: #cac1b4
 			padding: 0
 			margin-bottom: 0
+			//mediaQuerie
 		@include desktop
 			width: 78%
       margin: 0
@@ -477,8 +504,7 @@
 			border: none
 			justify-content: center
 			background-image: url("../dist/imgs/orange_pattern.png")
-			background-size: cover
-			background-repeat: no-repeat
+			@include bic
 			&:hover
 				background-color: rgba(255, 233, 10, 0.56)
 			&:focus
@@ -496,12 +522,14 @@
 		letter-spacing: 0.07em
 		color: #231603
 		width: 100%
+		//mediaQuerie
 		@include phone-landscape
-
+		//mediaQuerie
 		@include tablet
 			font-size: 1em
 			color: #484747
 			letter-spacing: 0em
+			//mediaQuerie
 		@include desktop
 			font-size: 1em
 			font-weight: normal
@@ -519,11 +547,13 @@
 		font-weight: bolder
 		font-size: 1.2em
 		color: #383d3e
+		//mediaQuerie
 		@include tablet
 			font-size: 1.1em
 			text-align: center
 			background-color: none
 			font-weight: normal
+			//mediaQuerie
 		@include desktop
 			color: $mencol
 			text-align: center
@@ -558,21 +588,24 @@
 		background-size: contain
 		background-repeat: repeat
 		background-position: center
+		//mediaQuerie
 		@include phone-landscape
 			position: fixed
 			width: 34vw
 			top: 0
 			right: 0
-
+			//mediaQuerie
 		@include tablet
 			top: 0
 			left: 0
 			height: 60px
 			display: none
+			//mediaQuerie
 		@include desktop
 			display: none
 			height: 100px
 			border: 1px solid blue
+
 		ul
 			margin: 0
 			padding: 0
@@ -582,11 +615,13 @@
 			flex-flow: row-reverse
 			justify-content: space-between
 			background-color: rgba(179, 172, 151, 0.42)
+			//mediaQuerie
 			@include phone-landscape
 				width: 96%
-
+				//mediaQuerie
 			@include desktop
 				display: flex
+
 			li
 				width: 50%
 				height: 100%
@@ -597,6 +632,7 @@
 				flex-direction: column
 				justify-content: center
 				background-color: rgba(1, 110, 91, 0.78)
+				//mediaQuerie
 				@include phone-landscape
 
 	.haus-menu
@@ -626,9 +662,10 @@
 		letter-spacing: 0.05em
 		justify-content: center
 		font-family: $font-stack-roboto
-		background-color: rgba(81, 28, 18, 0.4392156862745098)
+		background-color: rgba(81, 28, 18, 0.43)
 
 	#nav
+		//mediaQuerie
 		@include desktop
 			width: 84%
 			border: 1.5px solid $contBdr
@@ -642,8 +679,10 @@
 		position: fixed
 		justify-content: space-around
 		border-radius: 18px 0 0 0
+		//mediaQuerie
 		@include phone-landscape
 			justify-content: flex-start
+			//mediaQuerie
 		@include tablet
 			height: 67px
 			top: 0
@@ -657,6 +696,7 @@
 			background-image: none
 			align-items: flex-start
 			justify-content: space-around
+			//mediaQuerie
 		@include desktop
 			flex-direction: column
 			top: 0
@@ -680,7 +720,9 @@
 	.mobile-container .sticky
 		z-index: 999999999999
 		@include tablet
+			//mediaQuerie
 			z-index: 99999999
+			//mediaQuerie
 		@include desktop
 			z-index: 99999999
 
@@ -718,8 +760,10 @@
 		text-align: center
 		justify-content: center
 		background-color: rgba(1, 110, 91, 0.75)
+		//mediaQuerie
 		@include phone-landscape
 			line-height: 22px
+			//mediaQuerie
 		@include tablet
 			display: none
 

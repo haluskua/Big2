@@ -93,8 +93,6 @@ h4, h6 {
             flex-grow: 1;
     height: 100vh;
     max-width: 100vw;
-    background-size: cover;
-    background: url("../dist/imgs/1920.png") top no-repeat;
     background: none;
   }
 }
@@ -132,8 +130,8 @@ h4, h6 {
         -ms-flex-direction: column;
             flex-direction: column;
     background-image: url("../dist/imgs/butterfly.jpg");
-    background-size: cover;
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 }
@@ -160,12 +158,11 @@ h4, h6 {
   .Colsplit-between {
     height: 100%;
     margin-top: 0;
-    background-image: url("../dist/imgs/1920.png");
-    background-position: left;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     margin-left: 10%;
+    background-image: url("../dist/imgs/1920.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
@@ -317,7 +314,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #portfolio-header {
-    margin-top: -22%;
+    margin-top: -15%;
     margin-top-width: 100%;
     margin-top-justify-content: center;
     padding: 0;
@@ -540,12 +537,12 @@ h4, h6 {
     display: -ms-flexbox;
     display: flex;
     margin: 0 auto;
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     background-image: url("../dist/imgs/1920.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
@@ -569,8 +566,8 @@ h4, h6 {
     width: 14vw;
     width-margin-top: 30px;
     background-image: url("../dist/imgs/ve_logo4.png");
+    background-position: center;
     background-size: cover;
-    background-position: bottom;
     background-repeat: no-repeat;
   }
 }
@@ -641,7 +638,7 @@ h4, h6 {
   #folders-container {
     padding: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     display: -webkit-box;
@@ -652,10 +649,9 @@ h4, h6 {
         -ms-flex-pack: center !important;
             justify-content: center !important;
     background-image: url("../dist/imgs/gentlemen1.jpg");
-    background-size: cover;
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
     display: flex;
     flex-wrap: wrap;
     -ms-flex-pack: distribute;
@@ -735,7 +731,7 @@ h4, h6 {
     border-radius: 0 0 3.5px 3.5px;
     background-color: #ffec6f;
     padding: 3px;
-    border: 1.3px solid #b9af90;
+    border: 1.3px solid #fffefb;
   }
 }
 
@@ -747,8 +743,8 @@ h4, h6 {
     -ms-flex-item-align: center;
         align-self: center;
     padding: 3px;
-    margin-bottom: 20px;
-    margin-top: 22px;
+    margin-bottom: 11px;
+    margin-top: 11px;
     border: 1px solid hotpink;
     background-color: lemonchiffon;
     width: 42%;
@@ -892,6 +888,7 @@ h4, h6 {
         -ms-flex-pack: center;
             justify-content: center;
     background-image: url("../dist/imgs/orange_pattern.png");
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -1113,7 +1110,7 @@ h4, h6 {
         -ms-flex-pack: center;
             justify-content: center;
     font-family: "Roboto";
-    background-color: rgba(81, 28, 18, 0.439216);
+    background-color: rgba(81, 28, 18, 0.43);
   }
 }
 
@@ -1717,16 +1714,16 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #push-up {
-    color: #f5f5dc;
+    color: #f7f0b8;
     line-height: 19px;
     padding-top: 12px;
     font-weight: bold;
-    font-size: 1.33em;
+    font-size: 1.23em;
     padding: 10px 13px;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     font-family: "Roboto";
-    border: 2px solid #374f41;
+    border: 2px solid rgba(84, 113, 96, 0.81);
     background-color: #277b6a;
     margin: auto;
     width: 100vw;
@@ -1802,7 +1799,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .skills-title {
-    color: #fbb923;
+    color: #368977;
     font-size: 1.1em;
     padding: 0;
     line-height: 44.2px;
@@ -3293,7 +3290,7 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .blocks section p, .blocks .one p, .one section p, .one .one p {
     font-size: 1em;
-    line-height: 1.7em;
+    line-height: 1.4em;
     text-align: justify;
     color: #3c3937;
     letter-spacing: 0;
@@ -3305,6 +3302,7 @@ h4, h6 {
     padding-left: 26px;
     padding-right: 20px;
     font-weight: 500;
+    margin: 0;
   }
 }
 
@@ -3336,12 +3334,12 @@ h4, h6 {
   .blocks section button, .blocks .one button, .one section button, .one .one button {
     width: 41%;
     height: auto;
-    background-color: #01d8b2;
+    background-color: #85d2c2;
     margin: auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 2px;
+    padding: 1px;
     border-radius: 6px;
     display: -webkit-box;
     display: -ms-flexbox;
