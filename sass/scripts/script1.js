@@ -68,7 +68,6 @@ $(document).ready(function(){
         });
     }
 
-
   $(window).scroll(function() {
     var scrollTop = $(window).scrollTop();
     /*changing between classes */
