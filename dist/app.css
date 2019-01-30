@@ -567,7 +567,7 @@ h4, h6 {
     border-radius: 4px;
     height: 68px;
     width: 14vw;
-    margin-top: 30px;
+    margin-top: 9px;
     margin-left: 20px;
     background-image: url("../dist/imgs/ve_logo9.png");
     background-position: center;
@@ -663,9 +663,13 @@ h4, h6 {
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0;
   }
 }
@@ -688,28 +692,6 @@ h4, h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  #folders-container {
-    padding: 0;
-    height: 82vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-    background-image: none;
-    background-color: #fffbee;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-image: url("../dist/imgs/orange_pattern.png");
-    background-size: contain;
-    background-repeat: repeat-y;
   }
 }
 
@@ -921,7 +903,7 @@ h4, h6 {
   .fields {
     font-family: "Roboto";
     font-weight: normal;
-    font-size: 1em;
+    font-size: 0.88em;
     letter-spacing: 0.07em;
     color: #231603;
     width: 100%;
@@ -938,7 +920,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .fields {
-    font-size: 1em;
+    font-size: 0.88em;
     font-weight: normal;
     color: white;
     border-radius: 3px;
@@ -2307,15 +2289,15 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   div.panel {
-    background-color: #6aa0b4;
     padding: 0 8px;
     display: none;
     height: auto;
-    width: 59%;
-    border: 1px solid #e9d8bc;
+    width: 45%;
+    border: 0.5px solid #bac6cb;
     border-top: 0;
     margin-bottom: 4px;
     border-radius: 4px;
+    background-color: #2a4650;
   }
 }
 
@@ -2467,7 +2449,7 @@ h4, h6 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 92%;
+    width: 85%;
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
     border-bottom: 1px solid #e6e6e0;
@@ -2488,6 +2470,7 @@ h4, h6 {
     border-bottom: 1px solid #e3e6e8;
     background-color: #4d4e44;
     border-radius: 5px;
+    width: 92%;
     background: none;
     border-bottom: none;
   }
