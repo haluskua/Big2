@@ -18,7 +18,7 @@
 			display: flex
 			justify-content: center
 			flex-direction: column
-			background-color: none
+			background-color: #93af9d
 			background-image: none
 
 	.Colsplit-between
@@ -47,10 +47,10 @@
 			height: 100%
 			margin-top: 0
 			margin-left: 10%
-			background-image: url("../dist/imgs/3d-modelling.jpg")
-			@include bic
-	
-	
+			background-image: url("../dist/imgs/ohk_pattern.png") 
+			@include bic 
+			// background-color: rgb(32, 113, 143, 0.6)
+		
 	#Colsplit-box1
 		height: 93%
 		display: flex
@@ -150,8 +150,9 @@
 			//mediaQuerie
 		@include desktop
 			color: white
-			font-size: 1.74em
-			letter-spacing: 0em
+			font-weight: bolder
+			font-size: 1.94em
+			letter-spacing: 0.05em
 			padding-top: 280pX
 			margin-bottom: 25px
 
@@ -162,7 +163,7 @@
 			color: #ef5004
 			//mediaQuerie
 		@include desktop
-			color: #6dbad6
+			color: #596263
 
   .ohk-logo
     width: 33%
@@ -357,28 +358,7 @@
 			background-image: none
 			background: none
 			justify-content: center
-		@include desktop
-			// width: 66vw
-			// display: flex
-			// flex-flow: row
-			// align-self: center
-			// padding-bottom: 0px
-			// background-image: none
-			// border: none
-			// background: none
-			// display: flex
-			// flex-direction: column
-			// align-items: center
-			// padding: 0
-			// height: 82vh
-			// display: flex
-			// background-image: none
-			// background-color: $contBg2
-			// justify-content: center
-			// background-image: url("../dist/imgs/orange_pattern.png")
-			// background-size: contain
-			// background-repeat: repeat-y
-
+		
   .reduced
 		display: flex
 		flex-direction: column
@@ -393,6 +373,8 @@
 			//mediaQuerie
 		@include desktop
 			z-index: 999999
+			background-color: beige
+			padding: 19px 0
 
 		li
 			display: flex
@@ -400,7 +382,7 @@
 			@include desktop
 				width: 78%
 				border-radius: 0 0 3.5px 3.5px
-				background-color: #e4f5fb
+				background-color: rgba(16, 102, 131, 0.8)
 				padding: 3px
 				border: 0.5px solid #95c7da
 
@@ -509,14 +491,14 @@
 			background-image: url("../dist/imgs/orange_pattern.png")
 			@include bic
 			&:hover
-				background-color: #ffffff
+				background-color: #000000
 			&:focus
 				color: white
 				font-size: 0.94em
-				background-color: $contBg
+				background-color: #0a2b38
 			&:visited, &:active,
 				color: white
-				background-color: $contBg
+				background-color: #4885a0
 
 
 	.fields
@@ -559,7 +541,7 @@
 			font-weight: normal
 		//mediaQuerie
 		@include desktop
-			color: $mencol
+			color: #ffffff
 			text-align: center
 			z-index: 999
       font-size: 1em !important !important

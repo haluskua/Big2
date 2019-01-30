@@ -109,7 +109,7 @@ h4, h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: none;
+    background-color: #93af9d;
     background-image: none;
   }
 }
@@ -159,7 +159,7 @@ h4, h6 {
     height: 100%;
     margin-top: 0;
     margin-left: 10%;
-    background-image: url("../dist/imgs/3d-modelling.jpg");
+    background-image: url("../dist/imgs/ohk_pattern.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -354,8 +354,9 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #bulgeword {
     color: white;
-    font-size: 1.74em;
-    letter-spacing: 0em;
+    font-weight: bolder;
+    font-size: 1.94em;
+    letter-spacing: 0.05em;
     padding-top: 280pX;
     margin-bottom: 25px;
   }
@@ -375,7 +376,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #portfolio-color {
-    color: #6dbad6;
+    color: #596263;
   }
 }
 
@@ -707,6 +708,8 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #folders-container {
     z-index: 999999;
+    background-color: beige;
+    padding: 19px 0;
   }
 }
 
@@ -722,7 +725,7 @@ h4, h6 {
   #folders-container li {
     width: 78%;
     border-radius: 0 0 3.5px 3.5px;
-    background-color: #e4f5fb;
+    background-color: rgba(16, 102, 131, 0.8);
     padding: 3px;
     border: 0.5px solid #95c7da;
   }
@@ -886,16 +889,16 @@ h4, h6 {
     background-repeat: no-repeat;
   }
   .hamburger-menu:hover {
-    background-color: #ffffff;
+    background-color: #000000;
   }
   .hamburger-menu:focus {
     color: white;
     font-size: 0.94em;
-    background-color: lemonchiffon;
+    background-color: #0a2b38;
   }
   .hamburger-menu:visited, .hamburger-menu:active {
     color: white;
-    background-color: lemonchiffon;
+    background-color: #4885a0;
   }
 }
 
@@ -955,7 +958,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .nav-archives {
-    color: #5d5632;
+    color: #ffffff;
     text-align: center;
     z-index: 999;
     z-index-font-size: 1em !important !important;
@@ -1744,11 +1747,11 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #584a2f;
+    color: #fcfcfd;
     line-height: 0.65em;
-    border: 1px solid rgba(218, 210, 175, 0.529412);
+    border: 3px solid #81abbd;
     border-left: none;
-    background-color: rgba(248, 242, 197, 0.89);
+    background-color: rgba(29, 115, 153, 0.7);
     font-size: 1.6em;
     letter-spacing: 0.3em;
     font-weight: bold;
