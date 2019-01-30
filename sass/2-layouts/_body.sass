@@ -146,7 +146,7 @@
       width: 100%
 
   // Paragraph slot
-  .opening_statement, .mini_statement
+  .opening_statement, .mini_statement, .block
     text-align: justify
     flex-wrap: wrap
     width: 92vw
@@ -175,7 +175,7 @@
       display: flex
       align-self: center
       font-size: 0.88em
-      letter-spacing: 0.03em
+      letter-spacing: 0em
       line-height: 1.5em
       background: none
 
@@ -196,15 +196,23 @@
         margin: auto
         color: #19423e
       @include desktop
-        font-family: $font-stack-rajdhani
         font-weight: bolder
-        text-transform: uppercase
+        text-transform: capitalize
         display: flex
         margin-bottom: -5px
         align-self: flex-start
         width: 100%
-        font-size: 1.33em
-        color: #130802
+        color: #20718f
+        font-family: helvetica
+        font-size: 1.2em
+        display: flex
+        justify-content: center
+        background-color: beige
+
+  .block
+    @include desktop
+      padding: 5px
+      width: 92%
 
   .hide-desktop
     display: none
@@ -615,7 +623,7 @@
       border-top: 0
       margin-bottom: 4px
       border-radius: 4px
-      background-color: #2a4650
+      background-color: rgba(98, 120, 128, 0.33)
       @include phone-landscape
         background-color: rgba(222, 231, 128, 0.68)
         width: 81%
@@ -656,7 +664,7 @@
       background: none
     @include desktop
       font-size: 0.88em
-      letter-spacing: 0.03em
+      letter-spacing: 0em
       color: #0c0802
       line-height: 1.6em
       margin: 0
@@ -708,7 +716,7 @@
       align-items: center
       width: 85%
       transition: 0.5s ease
-      border-bottom: 1px solid #e6e6e0
+      border-bottom: 0.5px solid #6f868e
       @include tablet
         margin-top: 12px
         padding: 7px 0px
@@ -1221,14 +1229,14 @@
           font-size: 1.01em
           margin: 40px
         @include desktop
-          margin-top: 30px
+          margin-top: -10px
           font-size: 0.89em
           letter-spacing: 0em
           line-height: 1.68em
-          width: 78%
+          width: 92%
           display: flex
           align-self: center
-          margin-bottom: 0
+          margin-bottom: 20px
 
       button
         width: 41%
