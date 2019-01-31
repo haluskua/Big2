@@ -87,7 +87,7 @@
   .columnsSplit
     display: flex !important
     flex-wrap: wrap
-    margin-top: 0px
+    margin-top: 17px
     margin-bottom: -12px
     @include phone-landscape
 
@@ -153,14 +153,14 @@
     font-size: 0.92em
     line-height: 1.45em
     color: #3c3937
-    color: #322221
+    // color: #322221
     font-weight: normal
     font-family: $font-stack-sans-serif
     padding: 17px 16px 0px 16px
     margin-bottom: 25px
     @include phone-landscape
     @include tablet
-      width: 85%
+      width: 93%
       margin: 0 auto
       display: flex
       font-size: 1.3em
@@ -194,7 +194,7 @@
         font-family: $font-stack-antic
         font-size: 1.4em
         margin: auto
-        color: #19423e
+        color: 56564f
       @include desktop
         font-weight: bolder
         text-transform: capitalize
@@ -277,24 +277,22 @@
     display: flex
     color: #ffffff
     line-height: 14px
-    font-weight: bold
     font-size: 0.85em
     list-style: none 
-    padding: 0 3px 3px 3px
     text-transform: uppercase
     letter-spacing: 0.05em
     font-family: $font-stack-roboto
-    background-color: rgba(121, 166, 183, 0.33)
     margin: auto
+    margin-left: 0   
     width: 100vw
     text-align: center
     justify-content: center
     z-index: 99999
+    background-color: rgba(121, 166, 183, 0.33)
     @include tablet
-      font-size: 1.7em
-      color: #3e2e0a
-      border: 5px solid #5594ab
-      background-color: rgb(255, 229, 179)
+      font-size: 1.4em
+      margin-bottom: 4px
+      background-color: rgba(121, 166, 183, 0.33)
     @include desktop
       display: flex
       justify-content: flex-start
@@ -309,11 +307,15 @@
       background-color: #85b0bf
       width: 49%
       padding: 4px
+      margin-bottom: 3px
+      @include tablet
+        padding: 10px
+        margin-bottom: 1px
       @include desktop
         display: flex
         justify-content: flex-end
         width: 16%
-        background-color: #85b0bf
+        background-color: #e29aba
       span, .pro-title
         @include desktop
           width: auto 
@@ -328,16 +330,19 @@
           padding: 3px 15px 3px 0px
 
   #pro-title
+    @include tablet
+      padding: 13px
     @include desktop
       display: flex
       width: 100% 
       padding: 5px
       background-color: #85b0bf
   .pro-title
-    color: #4c6c77
-    padding: 3px
+    color: #5c6362
+    padding: 6px
     @include desktop
       font-size: 1.08em
+      color: white
 
 
 
@@ -417,7 +422,7 @@
     align-items: center
     text-decoration: none
     margin-top: 0
-    background-color: #fdfaf0
+    background-color: #84afbe
     border-radius: 4px
 
   #content-holder
@@ -688,7 +693,7 @@
     font-size: 0.92em
     line-height: 1.45em
     font-family: $font-stack-sans-serif
-    color: #322221
+    color: #3c3937
     text-align: center
     padding: 14px 16px 30px 16px
     margin-top: -3px
@@ -696,7 +701,7 @@
     text-align: justify
     @include phone-landscape
     @include tablet
-      font-size: 1.04em
+      font-size: 1.3em
       letter-spacing: normal
       margin: 0
       width: 86%
@@ -1088,12 +1093,10 @@
   .close-caption, .gdClose, .dmClose, .tClose
     color: #636c6e
     margin-top: 4px
-    margin-bottom: 23px
     display: flex
     width: 100%
     line-height: 1.4em
-    border-radius: 5px
-    padding: 11px
+    padding: 9px
     text-align: center
     justify-content: center
     @include phone-landscape
@@ -1119,33 +1122,31 @@
     margin-bottom: 12px
     @include phone-landscape
     @include tablet
-      width: 80%
+      width: 89%
     @include desktop
       margin: 0
       width: 100%
       align-self: flex-start
       margin-left: 30px
       margin-bottom: 40px
-
+    
     h2
       color: #4286a0
       align-self: flex-start
-      font-size: 1.4em
-      letter-spacing: 0.04em
+      font-size: 1.37em
       display: flex
-      padding: 11px
+      padding: 7px
       margin-bottom: -26px
       margin-top: -27px
-      width: 55%
-      font-weight: bold
+      width: 38%
       padding-left: 0px
       font-family: $font-stack-roboto
-      border-bottom: 1px dotted rgba(167, 151, 95, 0.97)
+      border-bottom: 1px dotted rgb(113, 163, 181)
       @include phone-landscape
       @include tablet
         font-size: 1.65em
         color: #19384a
-      @include desktop
+      @include desktop 
         padding-left: 0
         width: 19%
         font-weight: normal
@@ -1185,13 +1186,15 @@
         margin-bottom: 50px
         border: 1px solid #eee7d7
 
-      div
+      div   
         display: flex
         flex-direction: column
         background: none
         height: auto
         width: 100%
         margin: auto
+        border: 2px solid #70a2b3
+        border-bottom: none
         @include desktop
           margin: 0
           width: 100%
@@ -1255,10 +1258,7 @@
         letter-spacing: 0
         font-weight: normal
         font-family: $font-stack-open-sans
-        padding: 10px
-        margin-bottom: 28px
-        padding-top: 12px
-        padding-right: 20px
+        padding: 15px
         font-weight: 500
         margin: 0
         @include phone-landscape
@@ -1290,6 +1290,7 @@
         @include phone-landscape
         //mediaQuerie
         @include tablet
+          width: 37%
           margin-bottom: 30px
           margin-top: 45px
         @include desktop
@@ -1302,7 +1303,7 @@
 
         a
           font-family: $font-stack-antic
-          color: #523724
+          color: #ffffff
           text-align: justify
           font-size: 1em
           letter-spacing: 0.05em
@@ -1311,10 +1312,10 @@
           height: 100%
           line-height: 2.5em
           @include tablet
-            padding: 7px
+            padding: 0px
+            font-size: 1.85em
           @include desktop
             font-size: 1em
-            color: #020
             font-weight: 600
 
   .readmore_text
@@ -1352,7 +1353,7 @@
     margin: auto
     margin-top: -6px
     background-color: rgba(251, 255, 240, 0.43)
-    border-radius: 29px
+    border-radius: 4px
     @include desktop
       width: auto
       margin: 0 80px

@@ -15,7 +15,7 @@
 			height: 100vh
 			max-width: 100vw
 			background: none
-			//mediaQuerie
+			background-color: #85b0bf
 		@include desktop
 			display: flex
 			justify-content: center
@@ -30,23 +30,17 @@
 		position: relative
 		align-items: center
 		flex-direction: column
-		background-image: url("../dist/imgs/promo3.png")
 		background-image: url("../dist/imgs/ohk_pattern.png") 
-
-		//mixin for background image settings
 		@include bic
 		@include phone-landscape
 			opacity: 0.9
 			height: 86%
-			//mediaQuerie
 		@include tablet
 			width: 100vw
 			height: 100%
 			margin: auto
 			padding: 0
 			margin-top: 67px
-			background-image: url("../dist/imgs/promo3.png")
-			//mediaQuerie
 		@include desktop
 			height: 100%
 			margin-top: 0
@@ -142,15 +136,10 @@
 		text-align: center
 		text-transform: uppercase
 		font-family: Helvetica, sans-serif
-		//mediaQuerie
 		@include phone-landscape
-			color: #26061e
 			font-size: 1.87em
-			//mediaQuerie
 		@include tablet
-			color: #f6c715
-			font-size: 3.5em
-			//mediaQuerie
+			font-size: 2.6em
 		@include desktop
 			color: white
 			font-weight: bolder
@@ -163,10 +152,11 @@
 		color: #465560
 		//mediaQuerie
 		@include tablet
-			color: #ef5004
+			color: #465560
 			//mediaQuerie
 		@include desktop
 			color: #596263
+			letter-spacing: 0
 
   .ohk-logo
     width: 33%
@@ -227,13 +217,11 @@
 		//mediaQuerie
 		@include tablet
 			height: 60px
-			color: #95c9dc
 			margin-top: 29px
 			font-weight: normal
 			text-shadow: none
 			font-size: 2.15em
 			position: relative
-			//mediaQuerie
 		@include desktop
 			font-size: 1.4em
 			font-weight: normal
@@ -299,7 +287,6 @@
 			right: -16px
 			bottom: 0
 			display: none
-			//mediaQuerie
 		@include tablet
 			top: 3px
 			left: -14px
@@ -345,7 +332,7 @@
 		width: 100%
 		height: 100%
 		flex-wrap: wrap
-		display: flex
+		display: flex  
 		border-radius: 4.5px 4.5px 0 0
 		justify-content: center !important
 		background-color: #85b0bf
@@ -365,13 +352,11 @@
 		flex-direction: column
 		align-items: center
 		margin: 0
-		//mediaQuerie
 		@include tablet
 			height: 61px
 			background-color: none
 			border: none
 			width: 86vw
-			//mediaQuerie
 		@include desktop
 			z-index: 999999
 			background-color: beige
@@ -411,11 +396,6 @@
 			display: flex
 			border: none
 			padding: 0
- 
-	.nav-folders:hover, .nav-folders:active, .nav-folders:visited
-		@include desktop
-			background-color: gray
-			color: white
 
 	.menu2
 		border-radius: 0 10px 0 0
@@ -463,7 +443,7 @@
 		@include desktop
 			height: 100%
 			width: 100%
-			line-height: 0px
+			line-height: 0px    
 			color: #131426
 			background-color: none
 			border: none
@@ -471,15 +451,14 @@
 			background-image: url("../dist/imgs/orange_pattern.png")
 			@include bic
 			&:hover
-				background-color: #000000
+				background-color: #20718f
 			&:focus
 				color: white
-				font-size: 0.94em
-				background-color: #0a2b38
+				font-size: 0.9em
+				background-color: #e29aba
 			&:visited, &:active,
 				color: white
 				background-color: #4885a0
-
 
 	.fields
 		font-family: $font-stack-roboto
@@ -488,14 +467,11 @@
 		letter-spacing: 0.07em
 		color: #e5e8d5
 		width: 100%
-		//mediaQuerie
 		@include phone-landscape
-		//mediaQuerie
 		@include tablet
 			font-size: 1em
 			color: #484747
 			letter-spacing: 0em
-		//mediaQuerie
 		@include desktop
 			font-size: 0.88em
 			font-weight: normal
@@ -537,7 +513,6 @@
 
 	.nav-archives:active
 			font-style: oblique
-	.nav-archives:visited
 
 	.haus
 		bottom: 0
