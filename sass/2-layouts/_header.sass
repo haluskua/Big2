@@ -7,6 +7,8 @@
 		height: 100vh
 		overflow: hidden
 		align-items: flex-start
+		background-color: #85b0bf
+
 		//mediaQuerie
 		@include tablet
 			flex-grow: 1
@@ -18,7 +20,7 @@
 			display: flex
 			justify-content: center
 			flex-direction: column
-			background-color: #93af9d
+			background-color: #85b0bf
 			background-image: none
 
 	.Colsplit-between
@@ -29,6 +31,8 @@
 		align-items: center
 		flex-direction: column
 		background-image: url("../dist/imgs/promo3.png")
+		background-image: url("../dist/imgs/ohk_pattern.png") 
+
 		//mixin for background image settings
 		@include bic
 		@include phone-landscape
@@ -49,7 +53,6 @@
 			margin-left: 10%
 			background-image: url("../dist/imgs/ohk_pattern.png") 
 			@include bic 
-			// background-color: rgb(32, 113, 143, 0.6)
 		
 	#Colsplit-box1
 		height: 93%
@@ -133,8 +136,8 @@
 	#bulgeword
 		margin: 0 auto
 		padding-top: 30px
-		color: #ffffff
-		font-size: 2.1em
+		color: #ddeef5
+		font-size: 2em
 		font-weight: bold
 		text-align: center
 		text-transform: uppercase
@@ -153,11 +156,11 @@
 			font-weight: bolder
 			font-size: 1.94em
 			letter-spacing: 0.05em
-			padding-top: 280pX
+			padding-top: 210pX
 			margin-bottom: 25px
 
 	#portfolio-color
-		color: #6dbad6
+		color: #465560
 		//mediaQuerie
 		@include tablet
 			color: #ef5004
@@ -215,7 +218,7 @@
 		display: flex
 		margin: auto
 		margin-top: 14px
-		color: #a6cedc
+		color: #e9f9ff
 		font-size: 1.57em
 		letter-spacing: 0em
 		position: relative
@@ -374,21 +377,12 @@
 			background-color: beige
 			padding: 19px 0
 
-		li
-			display: flex
-			//mediaQuerie
-			@include desktop
-				width: 78%
-				border-radius: 0 0 3.5px 3.5px
-				background-color: rgba(16, 102, 131, 0.8)
-				padding: 3px
-				border: 0.5px solid #95c7da
-
 	.nav-folders
 		height: 30px
 		display: none
 		align-self: center
 		padding: 3px
+		list-style: none
 		margin-bottom: 11px
 		margin-top: 11px
 		border: 1px solid #ffffff
@@ -396,17 +390,9 @@
 		width: 34%
 		boder-radius: 2px
 		border-radius: 4px
-		//mediaQuerie
-		@include desktop
-			&:active, &:focus
-				width: 70%
-				background-color: white
-				background-color: red
-				//mediaQuerie
 		@include phone-landscape
 			width: 19%
 			margin-top: 4px
-			//mediaQuerie
 		@include tablet
 			width: 100%
 			height: auto
@@ -414,21 +400,18 @@
 			border: none
 			margin: 0
 			justify-content: space-between
-			z-index: 999
 			background-color: #5594ab
 			padding: 0
 			margin-bottom: 0
 		@include desktop
-			width: 78%
+			width: 64%
 			margin: 0
+			background-color: #85b0bf
 			margin-bottom: 4px
 			display: flex
 			border: none
 			padding: 0
-			line-height: 1.8em
-			&:focus, &active, &:hover, &:visited
-				width: 24%
-
+ 
 	.nav-folders:hover, .nav-folders:active, .nav-folders:visited
 		@include desktop
 			background-color: gray
@@ -480,9 +463,8 @@
 		@include desktop
 			height: 100%
 			width: 100%
-			line-height: 44px
+			line-height: 0px
 			color: #131426
-			font-size: 0.75em
 			background-color: none
 			border: none
 			justify-content: center
@@ -542,10 +524,8 @@
 			color: #ffffff
 			text-align: center
 			z-index: 999
-      font-size: 1em !important !important
-      font-weight: bolder
-      padding-top: 9px
-			letter-spacing: 0.01em
+			font-size: 0.89em
+			letter-spacing: 0.15em
 			font-family: $font-stack-open-sans
 			// &:focus, &:active, &:hover, &visited
 			// 	text-align: center
@@ -614,7 +594,7 @@
 				align-items: center
 				flex-direction: column
 				justify-content: center
-				background-color: rgba(73, 139, 163, 0.69)
+				background-color: rgba(133, 176, 191, 0.76)
 
 	.haus-menu
 		color: #f5f5dc
@@ -643,13 +623,12 @@
 		letter-spacing: 0.05em
 		justify-content: center
 		font-family: $font-stack-roboto
-		background-color: rgba(81, 28, 18, 0.43)
+		background-color: #4f5852
 
 	#nav
-		//mediaQuerie
 		@include desktop
 			width: 84%
-			border: 1.5px solid $contBdr
+			border: 1.5px solid #bdc9b2
 
 	.mobile-container
 		max-height: 100%

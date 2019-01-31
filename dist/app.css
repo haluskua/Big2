@@ -83,6 +83,7 @@ h4, h6 {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    background-color: #85b0bf;
   }
 }
 
@@ -109,7 +110,7 @@ h4, h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: #93af9d;
+    background-color: #85b0bf;
     background-image: none;
   }
 }
@@ -130,6 +131,7 @@ h4, h6 {
         -ms-flex-direction: column;
             flex-direction: column;
     background-image: url("../dist/imgs/promo3.png");
+    background-image: url("../dist/imgs/ohk_pattern.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -328,8 +330,8 @@ h4, h6 {
   #bulgeword {
     margin: 0 auto;
     padding-top: 30px;
-    color: #ffffff;
-    font-size: 2.1em;
+    color: #ddeef5;
+    font-size: 2em;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
@@ -357,14 +359,14 @@ h4, h6 {
     font-weight: bolder;
     font-size: 1.94em;
     letter-spacing: 0.05em;
-    padding-top: 280pX;
+    padding-top: 210pX;
     margin-bottom: 25px;
   }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #portfolio-color {
-    color: #6dbad6;
+    color: #465560;
   }
 }
 
@@ -454,7 +456,7 @@ h4, h6 {
     display: flex;
     margin: auto;
     margin-top: 14px;
-    color: #a6cedc;
+    color: #e9f9ff;
     font-size: 1.57em;
     letter-spacing: 0em;
     position: relative;
@@ -711,30 +713,13 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  #folders-container li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  #folders-container li {
-    width: 78%;
-    border-radius: 0 0 3.5px 3.5px;
-    background-color: rgba(16, 102, 131, 0.8);
-    padding: 3px;
-    border: 0.5px solid #95c7da;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
   .nav-folders {
     height: 30px;
     display: none;
     -ms-flex-item-align: center;
         align-self: center;
     padding: 3px;
+    list-style: none;
     margin-bottom: 11px;
     margin-top: 11px;
     border: 1px solid #ffffff;
@@ -742,14 +727,6 @@ h4, h6 {
     width: 34%;
     boder-radius: 2px;
     border-radius: 4px;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .nav-folders:active, .nav-folders:focus {
-    width: 70%;
-    background-color: white;
-    background-color: red;
   }
 }
 
@@ -772,7 +749,6 @@ h4, h6 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    z-index: 999;
     background-color: #5594ab;
     padding: 0;
     margin-bottom: 0;
@@ -781,18 +757,15 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .nav-folders {
-    width: 78%;
+    width: 64%;
     margin: 0;
+    background-color: #85b0bf;
     margin-bottom: 4px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     border: none;
     padding: 0;
-    line-height: 1.8em;
-  }
-  .nav-folders:focus, .nav-foldersactive, .nav-folders:hover, .nav-folders:visited {
-    width: 24%;
   }
 }
 
@@ -872,9 +845,8 @@ h4, h6 {
   .hamburger-menu {
     height: 100%;
     width: 100%;
-    line-height: 44px;
+    line-height: 0px;
     color: #131426;
-    font-size: 0.75em;
     background-color: none;
     border: none;
     -webkit-box-pack: center;
@@ -958,10 +930,8 @@ h4, h6 {
     color: #ffffff;
     text-align: center;
     z-index: 999;
-    z-index-font-size: 1em !important !important;
-    z-index-font-weight: bolder;
-    z-index-padding-top: 9px;
-    letter-spacing: 0.01em;
+    font-size: 0.89em;
+    letter-spacing: 0.15em;
     font-family: "Open Sans";
   }
 }
@@ -1066,7 +1036,7 @@ h4, h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-color: rgba(73, 139, 163, 0.69);
+    background-color: rgba(133, 176, 191, 0.76);
   }
   .haus-menu {
     color: #f5f5dc;
@@ -1103,14 +1073,14 @@ h4, h6 {
         -ms-flex-pack: center;
             justify-content: center;
     font-family: "Roboto";
-    background-color: rgba(81, 28, 18, 0.43);
+    background-color: #4f5852;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #nav {
     width: 84%;
-    border: 1.5px solid #b9ae92;
+    border: 1.5px solid #bdc9b2;
   }
 }
 
@@ -1614,7 +1584,7 @@ h4, h6 {
     -ms-flex-item-align: start;
         align-self: flex-start;
     width: 100%;
-    color: #20718f;
+    color: #40474a;
     font-family: helvetica;
     font-size: 1.2em;
     display: flex;
@@ -1719,24 +1689,25 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #push-up {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     color: #ffffff;
-    line-height: 19px;
-    padding-top: 12px;
+    line-height: 14px;
     font-weight: bold;
-    font-size: 1.23em;
-    padding: 10px 13px;
+    font-size: 0.85em;
+    list-style: none;
+    padding: 0 3px 3px 3px;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.05em;
     font-family: "Roboto";
-    border: 2px solid rgba(84, 113, 96, 0.81);
-    background-color: #3e829c;
+    background-color: rgba(121, 166, 183, 0.33);
     margin: auto;
     width: 100vw;
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    opacity: 0.72;
     z-index: 99999;
   }
 }
@@ -1752,22 +1723,78 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #push-up {
-    font-family: "Roboto";
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #fcfcfd;
-    line-height: 0.65em;
-    border: 3px solid #81abbd;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    border: 3px solid #93a582;
     border-left: none;
-    background-color: rgba(29, 115, 153, 0.7);
-    font-size: 1.6em;
-    letter-spacing: 0.3em;
-    font-weight: bold;
-    text-transform: uppercase;
-    background-size: contain;
+    padding: 0;
+    background-color: rgba(121, 166, 183, 0.33);
     opacity: 1;
-    width: 98%;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
+  #push-up .bar {
+    background-color: #85b0bf;
+    width: 49%;
+    padding: 4px;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #push-up .bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 16%;
+    background-color: #85b0bf;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #push-up .bar span, #push-up .bar .pro-title {
+    width: auto;
+    height: auto;
+    line-height: 1em;
+    font-size: 0.88em;
+    font-family: "Roboto";
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.18em;
+    color: #fcfcfd;
+    padding: 3px 15px 3px 0px;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #pro-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    background-color: #85b0bf;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
+  .pro-title {
+    color: #4c6c77;
+    padding: 3px;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .pro-title {
+    font-size: 1.08em;
   }
 }
 
@@ -2233,20 +2260,33 @@ h4, h6 {
   button.accordion {
     -ms-flex-item-align: center;
         align-self: center;
-    margin: 0px 17px !important;
+    margin: 10px 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 80%;
-    height: 36px;
+    width: 70%;
+    height: 28px;
     margin: 0;
     padding: 0 8px;
-    font-weight: bolder;
-    font-family: 'orbitron', '$font-stack-open-sans';
+    font-family: '$font-stack-open-sans';
     background-color: #efe8d9;
     color: #525049;
-    font-size: 0.8em;
+    font-size: 0.78em;
     letter-spacing: 0.2em;
+    align-self: center;
+    margin: 8px 8px !important;
+    display: flex;
+    width: 72%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 28px;
+    margin: 11px 0;
+    padding: 0 8px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-size: 0.78em;
   }
 }
 
@@ -2280,21 +2320,18 @@ h4, h6 {
   button.accordion.active, button.accordion:hover {
     -ms-flex-item-align: center;
         align-self: center;
-    margin: 0px 17px !important;
+    margin: 10px 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 87%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 36px;
+    width: 70%;
+    height: 28px;
     margin: 0;
     padding: 0 8px;
-    font-weight: bolder;
-    font-family: 'orbitron', '$font-stack-open-sans';
-    color: #ffffff !important;
-    font-size: 0.8em;
+    font-family: '$font-stack-open-sans';
+    background-color: #efe8d9;
+    color: #525049;
+    font-size: 0.78em;
     letter-spacing: 0.2em;
   }
 }
@@ -2869,7 +2906,7 @@ h4, h6 {
     overflow: hidden;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-top: 80px;
+    margin-top: 0px;
     margin-bottom: 50px;
     padding-bottom: 40px;
     border: none;
@@ -3179,15 +3216,15 @@ h4, h6 {
             flex-direction: column;
     background: none;
     height: auto;
-    width: 95%;
+    width: 100%;
     margin: auto;
-    padding: 0;
-    border: 0.5px solid #4286a052;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .blocks section div, .blocks .one div, .one section div, .one .one div {
+    margin: 0;
+    width: 100%;
     background: none;
     background-image: none;
     border: none;
@@ -3207,11 +3244,11 @@ h4, h6 {
     background-size: contain;
     background-position: center;
     background-repeat: repeat;
-    border: 6px 3px 6px 3px solid #f7eed3;
     height: auto;
     width: auto;
     margin: auto;
     padding: 0;
+    margin-left: -4px;
   }
 }
 
@@ -3306,7 +3343,6 @@ h4, h6 {
     padding: 10px;
     margin-bottom: 28px;
     padding-top: 12px;
-    padding-left: 26px;
     padding-right: 20px;
     font-weight: 500;
     margin: 0;
@@ -3326,7 +3362,7 @@ h4, h6 {
     margin-top: -10px;
     font-size: 0.89em;
     letter-spacing: 0em;
-    line-height: 1.68em;
+    line-height: 1.48em;
     width: 92%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3495,9 +3531,9 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #project_title {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -3721,7 +3757,7 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 50%;
+    height: 57%;
     width: 40%;
     margin-bottom: 0;
     background-position: center;

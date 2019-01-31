@@ -202,7 +202,7 @@
         margin-bottom: -5px
         align-self: flex-start
         width: 100%
-        color: #20718f
+        color: #40474a
         font-family: helvetica
         font-size: 1.2em
         display: flex
@@ -262,8 +262,6 @@
     background-size: cover
     background-repeat: repeat-x
     background-position: center
-    @include tablet
-
     @include desktop
       margin: auto
       height: auto
@@ -276,22 +274,21 @@
 
   // Horiontal bar with title on page
   #push-up
+    display: flex
     color: #ffffff
-    line-height: 19px
-    padding-top: 12px
+    line-height: 14px
     font-weight: bold
-    font-size: 1.23em
-    padding: 10px 13px
+    font-size: 0.85em
+    list-style: none 
+    padding: 0 3px 3px 3px
     text-transform: uppercase
-    letter-spacing: 0.08em
+    letter-spacing: 0.05em
     font-family: $font-stack-roboto
-    border: 2px solid rgba(84, 113, 96, 0.81)
-    background-color: #3e829c
+    background-color: rgba(121, 166, 183, 0.33)
     margin: auto
     width: 100vw
     text-align: center
     justify-content: center
-    opacity: 0.72
     z-index: 99999
     @include tablet
       font-size: 1.7em
@@ -299,20 +296,50 @@
       border: 5px solid #5594ab
       background-color: rgb(255, 229, 179)
     @include desktop
-      font-family: $font-stack-roboto
       display: flex
-      color: #fcfcfd
-      line-height: 0.65em
-      border: 3px solid rgb(129, 171, 189)
+      justify-content: flex-start
+      border: 3px solid #93a582
       border-left: none
-      background-color: rgba(29, 115, 153, 0.7)
-      font-size: 1.6em
-      letter-spacing: 0.3em
-      font-weight: bold
-      text-transform: uppercase
-      background-size: contain
+      padding: 0
+      background-color: rgba(121, 166, 183, 0.33)
       opacity: 1
-      width: 98%
+      width: 100%
+
+    .bar
+      background-color: #85b0bf
+      width: 49%
+      padding: 4px
+      @include desktop
+        display: flex
+        justify-content: flex-end
+        width: 16%
+        background-color: #85b0bf
+      span, .pro-title
+        @include desktop
+          width: auto 
+          height: auto
+          line-height: 1em
+          font-size: 0.88em 
+          font-family: $font-stack-roboto
+          text-transform: uppercase
+          font-weight: bold
+          letter-spacing: 0.18em
+          color: #fcfcfd
+          padding: 3px 15px 3px 0px
+
+  #pro-title
+    @include desktop
+      display: flex
+      width: 100% 
+      padding: 5px
+      background-color: #85b0bf
+  .pro-title
+    color: #4c6c77
+    padding: 3px
+    @include desktop
+      font-size: 1.08em
+
+
 
   .skills-title
     display: flex
@@ -568,18 +595,31 @@
       border: none
     @include desktop
       align-self: center
-      margin: 0px 17px !important
+      margin: 10px 0px 
       display: flex
-      width: 80%
-      height: 36px
+      width: 70%
+      height: 28px
       margin: 0
       padding: 0 8px
-      font-weight: bolder
-      font-family: 'orbitron', '$font-stack-open-sans'
+      font-family: '$font-stack-open-sans'
       background-color: #efe8d9
       color: #525049
-      font-size: 0.8em
+      font-size: 0.78em
       letter-spacing: 0.2em
+      @include desktop
+      align-self: center
+      margin: 8px 8px !important
+      display: flex
+      width: 72%
+      justify-content: center
+      height: 28px
+      margin: 11px 0
+      padding: 0 8px
+      font-weight: bolder
+      font-family: Arial, Helvetica, sans-serif
+      color: gray
+      font-size: 0.78em
+      
 
   button.accordion.active, button.accordion:hover
     width: 70%
@@ -601,17 +641,16 @@
       background-color: rgb(248, 247, 246) !important
     @include desktop
       align-self: center
-      margin: 0px 17px !important
+      margin: 10px 0px 
       display: flex
-      width: 87%
-      justify-content: center
-      height: 36px
+      width: 70%
+      height: 28px
       margin: 0
       padding: 0 8px
-      font-weight: bolder
-      font-family: 'orbitron', '$font-stack-open-sans'
-      color: #ffffff !important
-      font-size: 0.8em
+      font-family: '$font-stack-open-sans'
+      background-color: #efe8d9
+      color: #525049
+      font-size: 0.78em
       letter-spacing: 0.2em
 
   div.panel
@@ -967,7 +1006,7 @@
       margin: 0
       overflow: hidden
       flex-wrap: wrap
-      margin-top: 80px
+      margin-top: 0px
       margin-bottom: 50px
       padding-bottom: 40px
       border: none
@@ -1151,11 +1190,11 @@
         flex-direction: column
         background: none
         height: auto
-        width: 95%
+        width: 100%
         margin: auto
-        padding: 0
-        border: 0.5px solid #4286a052
         @include desktop
+          margin: 0
+          width: 100%
           background: none
           background-image: none
           border: none
@@ -1167,11 +1206,11 @@
         background-size: contain
         background-position: center
         background-repeat: repeat
-        border: 6px 3px 6px 3px solid rgb(247, 238, 211)
         height: auto
         width: auto
         margin: auto
         padding: 0
+        margin-left: -4px
         @include tablet
           margin-top: 30px
         @include desktop
@@ -1219,7 +1258,6 @@
         padding: 10px
         margin-bottom: 28px
         padding-top: 12px
-        padding-left: 26px
         padding-right: 20px
         font-weight: 500
         margin: 0
@@ -1232,8 +1270,8 @@
           margin-top: -10px
           font-size: 0.89em
           letter-spacing: 0em
-          line-height: 1.68em
-          width: 92%
+          line-height: 1.48em
+          width: 92% 
           display: flex
           align-self: center
           margin-bottom: 20px
@@ -1333,7 +1371,7 @@
       align-items: center
       margin-top: 1px
     @include desktop
-      justify-content: flex-end
+      justify-content: center
       flex-direction: row
       align-items: center
       width: 92%
@@ -1459,7 +1497,7 @@
       border: none
     @include desktop
       display: flex
-      height: 50%
+      height: 57%
       width: 40%
       margin-bottom: 0
       @include bic
