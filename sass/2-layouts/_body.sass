@@ -202,12 +202,11 @@
         margin-bottom: -5px
         align-self: flex-start
         width: 100%
-        color: #40474a
+        color: #3a4443
         font-family: helvetica
         font-size: 1.2em
         display: flex
-        justify-content: center
-        background-color: beige
+        justify-content: flex-start
 
   .block
     @include desktop
@@ -296,9 +295,11 @@
     @include desktop
       display: flex
       justify-content: flex-start
-      border: 3px solid #93a582
+      border: 3px solid pink
       border-left: none
       padding: 0
+      line-height: 0
+      border-bottom: 1.8px solid #8cb0bb
       background-color: rgba(121, 166, 183, 0.33)
       opacity: 1
       width: 100%
@@ -316,6 +317,7 @@
         justify-content: flex-end
         width: 16%
         background-color: #e29aba
+        border-bottom: 1px solid #6e7a7d 
       span, .pro-title
         @include desktop
           width: auto 
@@ -711,9 +713,10 @@
       letter-spacing: 0em
       color: #0c0802
       line-height: 1.6em
-      margin: 0
+      margin-left: 10px
+      margin-top: -66px
       text-align: justify
-      width: 85%
+      width: 96%
       background: none
       padding: 20px 0 0 0
 
@@ -731,7 +734,6 @@
       display: flex
       width: 96%
       margin-top: -61px
-      margin-left: -6px
 
   #gd-folders
     display: flex
@@ -1039,7 +1041,8 @@
     @include desktop
       display: flex
       flex-direction: column
-      width: 78%
+      width: 66%
+      margin-left: -20px
 
   #read-on
     justify-content: flex-start !important
@@ -1127,7 +1130,7 @@
       margin: 0
       width: 100%
       align-self: flex-start
-      margin-left: 30px
+      margin-left: 15px
       margin-bottom: 40px
     
     h2
@@ -1148,7 +1151,7 @@
         color: #19384a
       @include desktop 
         padding-left: 0
-        width: 19%
+        width: 44%
         font-weight: normal
         letter-spacing: 0.02em
         line-height: 1.1em

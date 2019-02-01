@@ -1573,14 +1573,13 @@ h4, h6 {
     -ms-flex-item-align: start;
         align-self: flex-start;
     width: 100%;
-    color: #40474a;
+    color: #3a4443;
     font-family: helvetica;
     font-size: 1.2em;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-color: beige;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -1716,9 +1715,11 @@ h4, h6 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    border: 3px solid #93a582;
+    border: 3px solid pink;
     border-left: none;
     padding: 0;
+    line-height: 0;
+    border-bottom: 1.8px solid #8cb0bb;
     background-color: rgba(121, 166, 183, 0.33);
     opacity: 1;
     width: 100%;
@@ -1751,6 +1752,7 @@ h4, h6 {
             justify-content: flex-end;
     width: 16%;
     background-color: #e29aba;
+    border-bottom: 1px solid #6e7a7d;
   }
 }
 
@@ -2414,9 +2416,10 @@ h4, h6 {
     letter-spacing: 0em;
     color: #0c0802;
     line-height: 1.6em;
-    margin: 0;
+    margin-left: 10px;
+    margin-top: -66px;
     text-align: justify;
-    width: 85%;
+    width: 96%;
     background: none;
     padding: 20px 0 0 0;
   }
@@ -2447,7 +2450,6 @@ h4, h6 {
     display: flex;
     width: 96%;
     margin-top: -61px;
-    margin-left: -6px;
   }
 }
 
@@ -2946,7 +2948,8 @@ h4, h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 78%;
+    width: 66%;
+    margin-left: -20px;
   }
 }
 
@@ -3095,7 +3098,7 @@ h4, h6 {
     width: 100%;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    margin-left: 30px;
+    margin-left: 15px;
     margin-bottom: 40px;
   }
 }
@@ -3129,7 +3132,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .small-intro h2 {
     padding-left: 0;
-    width: 19%;
+    width: 44%;
     font-weight: normal;
     letter-spacing: 0.02em;
     line-height: 1.1em;
