@@ -100,7 +100,6 @@
       display: flex
       flex-wrap: wrap
       width: 100%
-      padding: 8px
       margin: auto
       border: 1px solid #eee7d7
       background-image: url('../dist/imgs/ohk_pattern.png')
@@ -156,14 +155,12 @@
     flex-wrap: wrap
     justify-content: flex-start   
     width: 92vw
-    margin-bottom: 25px
-    font-size: 1em
+    margin-bottom: 20px
     line-height: 1.44em
-    color: #0c0802
+    color: #3c3937
     font-weight: normal
     font-family: Rokkitt, serif 
-    background-color: white
-    padding: 9px
+    padding: 0px
     @include phone-landscape
     @include tablet
       width: 93%
@@ -173,64 +170,87 @@
       background: none
       margin-bottom: 20px
     @include desktop
-      width: 63%  
-      margin: 33px 0
+      width: 68%  
+      margin-bottom: 10px
       align-self: center
-      background-color: white
-      border-left: 0.5px solid #efe8d9
+      background-color: white    
+      padding: 14px 28px
+      // border-left: 0.5px solid #efe8d9
 
-    p, #about_text
+    p
       font-size: 1.1em
       line-height: 1.45em
-      color: #3c3937
-      padding: 5px
+      color: #0c0802
+      padding: 0 0 16px 0px
       margin-bottom: -8px
       font-weight: normal
       font-family: Rokkitt, serif 
       @include tablet 
         font-size: 1.23em
       @include desktop
-        padding-bottom: 10px
+        padding: 0px
+        margin: 0 auto  
         letter-spacing: 0em
-        font-size: 1em
+        font-size: 1.1em
         line-height: 1.4em
-        background: none    
+        background: none  
         font-family: Rokkitt, serif
 
     span, .par-title
       margin-top: 0px
       font-size: 1.5em
+      text-transform: uppercase
       font-family: 'Abhaya Libre', serif
-      color: #e8993a
-      line-height: 36px
+      color: #4e6067   
       margin-top: 10px
       line-height: 1.1em
+      text-align: center
+      width: 100%
+      padding: 18px 0
+      font-weight: bold
+      letter-spacing: 0.02em
       @include phone-landscape
 
       @include tablet
         font-family: $font-stack-antic
         font-size: 1.4em
         margin: auto
-        color: 56564f
+        color: #56564f   
       @include desktop
-        font-weight: bolder
-        text-transform: capitalize
+        font-weight: bold
         display: flex
-        margin-bottom: -5px
+        margin: 20px 0 18px 0
         align-self: flex-start
         width: 100%
-        color: #85b0bf
+        color: #4f7d8e
         font-family: 'Abhaya Libre', serif
-        font-size: 1.23em
+        font-size: 2.2em
         display: flex
-        justify-content: flex-start
+        justify-content: center
         
   #about_text
-    @include desktop   
+    font-size: 1.1em
+    line-height: 1.45em
+    color: #0c0802
+    padding: 0 15px 
+    margin-bottom: -8px
+    font-weight: normal
+    font-family: Rokkitt, serif 
+    @include tablet 
+      font-size: 1.23em
+    @include desktop
+      padding: 0px
+      margin: 0 auto  
+      letter-spacing: 0em
+      font-size: 1.1em
+      line-height: 1.4em
+      background: none  
+      font-family: Rokkitt, serif   
       width: 100%
       margin-top: 12px
 
   .block
+    width: 100vw
     @include desktop
       padding: 5px
       width: 92%
@@ -245,7 +265,7 @@
   .opening_statement_desktop
     display: flex
     justify-content: center
-    width: 94vw
+    width: 100vw
     font-size: 1.1em
     line-height: 1.45em
     padding: 0px 6px
@@ -270,6 +290,8 @@
       background: none
       color: #0c0802
       font-weight: normal
+    p
+      padding: 0 12px
 
   .mini_statement
       @include desktop
@@ -430,7 +452,12 @@
       @include desktop
         height: 100%
         margin: 0 auto
-
+                  
+  #film-projects
+    @include desktop
+      background-image: url('../dist/imgs/sunset.png')
+        @include bic
+   
   .wagai-weh
     background-color: #fffefa
     background: url("../dist/imgs/white_patterns.png")
@@ -451,6 +478,9 @@
     margin-top: 0
     background-color: #84afbe
     border-radius: 4px
+    @include desktop
+      &:hover
+        background-color: #e29aba
 
   #content-holder
     margin-top: 10px
@@ -594,9 +624,9 @@
       color: #2b2320
 
   button.accordion
-    cursor: pointer
     height: 37px
-    color: #fefefe
+    font-family: Rokkitt, serif
+    color: #696b64
     font-size: 1.12em
     font-weight: bolder
     text-transform: uppercase
@@ -605,17 +635,15 @@
     outline: none
     transition: 0.5s ease
     letter-spacing: 0.28em
-    font-family: $font-stack-rajdhani
-    background-color: rgb(106, 160, 180)
-    margin-top: 30px
+    font-family: Rokkitt, serif
+    margin: 30px 0px 0px 0px
     margin-bottom: 24px
     border: 0
-    margin-right: 0
     @include phone-landscape
       width: auto
       margin-top: 13px
-    @include tablet
-      width: auto
+    @include tablet             
+      width: auto   
       height: 36px
       color: #358876
       font-size: 1.21em
@@ -633,24 +661,11 @@
       margin: 0
       padding: 0 8px
       font-family: '$font-stack-open-sans'
-      background-color: #efe8d9
-      color: #525049
+      background-color: rgba(239, 232, 217, 0)
+      color: #90928c 
       font-size: 0.78em
       letter-spacing: 0.2em
-      @include desktop
-      align-self: center
-      margin: 8px 8px !important
-      display: flex
-      width: 72%
-      justify-content: center
-      height: 28px
-      margin: 11px 0
-      padding: 0 8px
-      font-weight: bolder
-      font-family: Arial, Helvetica, sans-serif
-      color: gray
-      font-size: 0.78em
-      
+   
 
   button.accordion.active, button.accordion:hover
     width: 43%
@@ -658,9 +673,9 @@
     text-align: center
     font-size: 1.05em
     font-weight: bolder
-    background-color: rgba(31, 33, 30, 0.5) !important
+    background-color: rgba(176, 196, 222, 0.5)
     border-bottom: 2px solid greenyellow
-    color: #edf2e1 !important 
+    color: #465560 !important 
     height: 35px
     border-bottom: none
     @include phone-landscape
@@ -668,19 +683,19 @@
       border: 1px solid rgba(155, 149, 130, 0.33)
       height: 36px
       margin: auto
-      color: #5594ab !important
-      background-color: rgb(248, 247, 246) !important
+      color: #5594ab 
+      background-color: rgb(248, 247, 246)
     @include desktop
       align-self: center
       margin: 10px 0px 
       display: flex
       width: 70%
-      height: 28px
+      height: 28px 
       margin: 0
       padding: 0 8px
       font-family: '$font-stack-open-sans'
-      background-color: #efe8d9
-      color: #525049
+      background-color: rgba(31, 33, 30, 0)   
+      color: #42443f !important
       font-size: 0.78em
       letter-spacing: 0.2em
 
@@ -693,7 +708,7 @@
       border-top: 0
       margin-bottom: 4px
       border-radius: 4px
-      background-color: rgba(98, 120, 128, 0.33)
+      background-color: rgba(176, 196, 222, 0.5)
       @include phone-landscape
         background-color: rgba(222, 231, 128, 0.68)
         width: 81%
@@ -734,12 +749,11 @@
       background: none
     @include desktop
       color: #0c0802
-      margin-left: 18px
-      margin-top: -47px
+      margin: 0
       text-align: justify
-      width: 96%
+      width: 100%
       background: none
-      padding: 20px 0 0 9px
+      padding: 0
       font-size: 1.1em
       letter-spacing: 0em
       line-height: 1.4em
@@ -748,7 +762,7 @@
 
   .scpmt-gd, .scpmt-t
     display: none
-    margin-top: -47px
+    margin-top: -30px
     @include tablet
       margin: 0 auto
       color: #544c37
@@ -758,14 +772,14 @@
       padding: 12px
     @include desktop
       display: flex
-      width: 94%
-      margin-top: -47px
+      width: 100%
+      margin-top: 0px
+      padding: 0
       font-size: 1.1em
       line-height: 1.4em
       font-family: Rokkitt, serif 
       // border-left: 0.5px solid #efe8d9
-      padding-left: 9px
-   
+ 
   #gd-folders
     display: flex
     justify-content: center
@@ -803,7 +817,7 @@
         border-bottom: 1px solid #e3e6e8
         background-color: #4d4e44
         border-radius: 5px
-        width: 83%
+        width: 77%
         background: none
         border-bottom: none
         &:hover
@@ -1072,8 +1086,7 @@
     @include desktop
       display: flex
       flex-direction: column
-      width: 67%
-      margin-left: -20px
+      width: 68%
 
   #read-on
     justify-content: flex-start !important
@@ -1151,7 +1164,6 @@
       background: none
       border: none
       width: auto
-      margin-left: -40px
   .close-caption
     color: #607D8B
     margin: 5px
@@ -1174,7 +1186,7 @@
       margin-left: 15px
       margin-bottom: 40px
     
-    .major-title   
+    .major-title     
       font-size: 1.37em
       font-weight: bolder
       display: flex
@@ -1183,7 +1195,7 @@
       padding: 7px
       margin-bottom: -6px
       margin-top: 0
-      width: 38%
+      width: 38%                    
       padding-left: 0px
       font-family: 'Abhaya Libre', serif
       border-bottom: 1px dotted rgb(113, 163, 181)
@@ -1193,8 +1205,10 @@
         color: #20718f
       @include desktop 
         padding-left: 0
-        width: 44%
-        margin-top: -9px
+        width: 44%   
+        margin-top: -9px 
+        margin-bottom: 10px  
+        padding-top: 22px 
         font-weight: bold 
         letter-spacing: 0.02em
         line-height: 1.1em
@@ -1259,7 +1273,7 @@
         width: auto
         margin: auto
         padding: 0
-        margin-left: -4px
+        margin: 0
         @include tablet
           margin-top: 30px
         @include desktop
@@ -1314,7 +1328,7 @@
           font-size: 1.35em
           margin: 26px
         @include desktop
-          font-size: 1.1em
+          font-size: 1.2em
           letter-spacing: 0em
           line-height: 1.4em
           width: 92% 
@@ -1382,7 +1396,7 @@
   #hide_h2, #hide_h2_gd, #hide_h2_t
     display: none
     margin-top: -23px
-    margin-bottom: 48px
+    margin-bottom: 22px
     margin-left: 12px
     text-transform: none
     line-height: 1.1em
@@ -1393,27 +1407,28 @@
 
     @include tablet
       padding-right: 8px
-      margin-top: 19px
-      margin-bottom: 19px
+      margin-top: 11px
+      margin-bottom: 10px
     @include desktop 
         padding-left: 0
         width: 44%
-        margin-top: -9px
-        font-weight: bold  
-        letter-spacing: 0.02em
+        text-transform: uppercase
+        margin: 54px 0px 8px 0
+        letter-spacing: 0.03em
         line-height: 1.1em
-        font-size: 1.7em
-        color: #4286a0
-        font-family: 'Abhaya Libre', serif
+        font-weight: bold
+        font-size: 1.4em 
+        color: #e29aba
+        font-family: Helvetica
 
   .project_box
     display: flex
-    width: 100%
+    width: 100%     
     margin: auto
     margin-top: -10px
     border-radius: 4px
     @include desktop
-      width: auto
+      width: 100%
       margin: 0
       background-color: rgba(255, 255, 255, 0.76)
                          
@@ -1540,7 +1555,7 @@
   .inner-div11
     display: flex
     background-image: url("../dist/imgs/ve_logo9.png")
-    @include bic
+    @include bic   
     margin-top: 5px
     width: 100%
     height: 50%

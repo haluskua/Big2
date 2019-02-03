@@ -1,5 +1,4 @@
 
-
 //styling for Header elements
 @include phone
 	.hetpage
@@ -8,12 +7,11 @@
 		overflow: hidden
 		align-items: flex-start
 		background-color: #85b0bf
-
-		//mediaQuerie
+		@include bic    
 		@include tablet
 			flex-grow: 1
-			height: 100vh
-			max-width: 100vw
+			height: 100vh   
+			max-width: 100vw   
 			background: none
 			background-color: #85b0bf
 		@include desktop
@@ -58,11 +56,11 @@
 		@include phone-landscape
 			margin-bottom: 0px
 			height: 100%
-			//mediaQuerie
+		//mediaQuerie
 		@include tablet
 			height: 84%
 			margin-top: 156px
-			//mediaQuerie
+		//mediaQuerie
 		@include desktop
 			height: 83%
 
@@ -75,11 +73,11 @@
 		//mediaQuerie
 		@include phone-landscape
 			align-items: flex-start
-      margin-top: -43px
-			//mediaQuerie
+			margin-top: -43px
+		//mediaQuerie
 		@include tablet
 			margin: 0
-			//mediaQuerie
+		//mediaQuerie
 		@include desktop
 			height: 63px
 
@@ -88,11 +86,11 @@
 		height: 65px
 		//mediaQuerie
 		@include phone-landscape
-      width: 100%
+		width: 100%
 		@include tablet
 			width: 100%
 			height: auto
-			//mediaQuerie
+		//mediaQuerie
 		@include desktop
 			width: 100%
 			margin-top: 4px
@@ -123,8 +121,8 @@
 			//mediaQuerie
 		@include desktop
 			margin-top: -15%
-      width: 100%
-      justify-content: center
+			width: 100%
+			justify-content: center
 			padding: 0
  
 	#bulgeword
@@ -153,7 +151,7 @@
 		//mediaQuerie
 		@include tablet
 			color: #465560
-			//mediaQuerie
+		//mediaQuerie
 		@include desktop
 			color: #596263
 			letter-spacing: 0
@@ -166,17 +164,14 @@
 
 	#hetinfo
 		height: 40px
-		//mediaQuerie
 		@include phone-landscape
 			margin-bottom: 78px
 			margin-top: 3px
-			//mediaQuerie
 		@include tablet
 			width: 100%
 			height: 55px
 			line-height: 167px
 			background-size: contain
-			//mediaQuerie
 		@include desktop
 			height: 40px
 			background-size: contain
@@ -192,12 +187,10 @@
 		text-align: justify
 		letter-spacing: 0em
 		font-family: $font-stack-Dancing-script
-		//mediaQuerie
 		@include tablet
 			color: #8e8c8c
 			font-size: 3.3em
 			margin-top: 0
-			//mediaQuerie
 		@include desktop
 			font-size: 3.6em
 			letter-spacing: 0.05em
@@ -214,7 +207,6 @@
 		position: relative
 		text-align: justify
 		font-family: $font-stack-Dancing-script
-		//mediaQuerie
 		@include tablet
 			height: 60px
 			margin-top: 29px
@@ -240,7 +232,6 @@
 		font-weight: normal
 		text-transform: uppercase
 		font-family: "helvetica"
-		//mediaQuerie
 		@include tablet
 			margin-top: 0
 			font-size: 1.5em
@@ -248,7 +239,6 @@
 			letter-spacing: 0.02em
 			color: #ffffff
 			font-family: $font-stack-serif
-			//mediaQuerie
 		@include desktop
 			font-size: 1.22em
 			letter-spacing: 0em
@@ -259,7 +249,6 @@
 
 	.folders-container2
 		display: none
-		//mediaQuerie
 		@include tablet
 			padding: 0
 			width: 74vw
@@ -281,7 +270,7 @@
 		width: 14vw
 		margin-top: 9px  
 		margin-left: 20px 
-		background-image: url('../dist/imgs/ve_logo9.png')
+		background-image: url('../dist/imgs/ve_logo10.png')
 		@include bic
 		@include phone-landscape
 			right: -16px
@@ -336,8 +325,10 @@
 		border-radius: 4.5px 4.5px 0 0
 		justify-content: center !important
 		background-color: #85b0bf
+		background-image: url('../dist/imgs/1920.png')
+		@include bic   
 		@include tablet   
-			width: 86vw
+			width: 86vw   
 			margin-left: 83px
 			padding: 0
 			height: auto
@@ -347,7 +338,7 @@
 			background: none
 			justify-content: center
 		
-  .reduced
+  .reduced    
 		display: flex
 		flex-direction: column
 		align-items: center
@@ -371,9 +362,8 @@
 		margin-bottom: 11px
 		margin-top: 11px
 		border: 1px solid #ffffff
-		background-color: #3f849e
+		background-color: #85b0bf
 		width: 34%
-		boder-radius: 2px
 		border-radius: 4px
 		@include phone-landscape
 			width: 19%
@@ -391,7 +381,7 @@
 		@include desktop
 			width: 64%
 			margin: 0
-			background-color: #5994a9   
+			background-color: rgba(89, 148, 169, 0.0)
 			margin-bottom: 4px
 			display: flex
 			border: none
@@ -399,7 +389,7 @@
 
 	.menu2
 		border-radius: 0 10px 0 0
-		background-color: #3f849e
+		background-color: #e6c9ea
 		padding: 0
 		border: 0.5px solid white
 		height: 35px
@@ -451,33 +441,28 @@
 			background-image: url("../dist/imgs/orange_pattern.png")
 			@include bic
 			&:hover
-				background-color: #20718f
-			&:focus
-				color: white
-				font-size: 0.9em
 				background-color: #e29aba
-			&:visited, &:active,
-				color: white
-				background-color: #4885a0
+			&:visited, &:active, &:focus, &:hover
+				background-color: #e29aba
+				font-size: 0.9em    
 
 	.fields
 		font-family: $font-stack-roboto
-		font-weight: normal
-		font-size: 0.88em
+		font-weight: bold
+		font-size: 0.82em
 		letter-spacing: 0.07em
-		color: #ffffff
+		color: #465560
 		width: 100%
-		@include phone-landscape
 		@include tablet
 			font-size: 1em
 			letter-spacing: 0em
 		@include desktop
-			font-size: 0.75em
+			font-size: 0.77em
 			font-weight: normal
 			color: white
-			border-radius: 3px
-			font-weight: bold
-			background-color: rgb(69, 136, 162)
+			border-radius: 3px    
+			line-height: 2.6em
+			background-color: #e29aba
 			&:hover
 				color: #ffffff
 				transition: 0.26s ease-in
@@ -488,21 +473,21 @@
 		font-family: Helvetica
 		font-weight: bolder
 		font-size: 1.2em
-		color: #ffffff
-		//mediaQuerie
+		color: #3a4044
 		@include tablet
 			font-size: 1.1em
 			text-align: center
-			background-color: none
+			background-color: none    
 			font-weight: normal
 		//mediaQuerie
 		@include desktop
-			color: #ffffff
+			color: #5d696b
 			text-align: center
 			z-index: 999
 			font-size: 0.89em
 			letter-spacing: 0.15em
 			font-family: $font-stack-open-sans
+			&:focus, &:hover
 			// &:focus, &:active, &:hover, &visited
 			// 	text-align: center
 			// 	color: $tabBg
@@ -511,8 +496,9 @@
 			// 	height: auto
 			// 	padding: 0
 
-	.nav-archives:active
+	.nav-archives:visited
 			font-style: oblique
+			color: red
 
 	.haus
 		bottom: 0
@@ -602,8 +588,10 @@
 
 	#nav
 		@include desktop
-			width: 84%
+			width: 84% 
 			border: 1.5px solid #bdc9b2
+			background-image: url('../dist/imgs/sunset.png')
+			@include bic
 
 	.mobile-container
 		max-height: 100%
@@ -654,10 +642,8 @@
 
 	.mobile-container .sticky
 		z-index: 999999999999
-		//mediaQuerie
 		@include tablet
 			z-index: 99999999
-		//mediaQuerie
 		@include desktop
 			z-index: 99999999
 
@@ -695,8 +681,9 @@
 		cursor: pointer
 		line-height: 37px
 		text-align: center
+		border-radius: 5px
 		justify-content: center
-		background-color: #3f849e
+		background-color: #a3c5d2
 		//mediaQuerie
 		@include phone-landscape
 			line-height: 22px
