@@ -14,6 +14,7 @@
 @import url("https://fonts.googleapis.com/css?family=Rajdhani");
 @import url("https://fonts.googleapis.com/css?family=Source+Serif+Pro");
 @import url("https://fonts.googleapis.com/css?family=Antic");
+@import url("https://fonts.googleapis.com/css?family=Abhaya+Libre|Rokkitt");
 @font-face {
   font-family: 'Orbitron';
   src: url(..Big2/fonts/Orbitron-Black.ttf);
@@ -769,9 +770,9 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .menu2 {
     border-radius: 0 10px 0 0;
-    background-color: #1d2b2d;
+    background-color: #3f849e;
     padding: 0;
-    border: 0;
+    border: 0.5px solid white;
     height: 35px;
     border-radius: 0 0 8px 8px;
   }
@@ -867,7 +868,7 @@ h4, h6 {
     font-weight: normal;
     font-size: 0.88em;
     letter-spacing: 0.07em;
-    color: #e5e8d5;
+    color: #ffffff;
     width: 100%;
   }
 }
@@ -1396,13 +1397,20 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .columnsSplit {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-top: 17px;
-    margin-bottom: -12px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 5px;
+    background-image: url("../dist/imgs/ohk_pattern.png");
+    background-image-background-position: center;
+    background-image-background-size: cover;
+    background-image-background-repeat: no-repeat;
+    border: 1px solid bisque;
   }
 }
 
@@ -1418,12 +1426,19 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .columnsSplit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 100%;
     padding: 8px;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
     margin: auto;
     border: 1px solid #eee7d7;
+    background-image: url("../dist/imgs/ohk_pattern.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
@@ -1495,16 +1510,23 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .opening_statement, .mini_statement, .block {
     text-align: justify;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     width: 92vw;
-    font-size: 0.92em;
-    line-height: 1.45em;
-    color: #3c3937;
-    font-weight: normal;
-    font-family: Helvetica, Arial, sans-serif;
-    padding: 17px 16px 0px 16px;
     margin-bottom: 25px;
+    font-size: 1em;
+    line-height: 1.44em;
+    color: #0c0802;
+    font-weight: normal;
+    font-family: Rokkitt, serif;
+    background-color: white;
+    padding: 9px;
   }
 }
 
@@ -1515,41 +1537,60 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 1.3em;
     margin-bottom: 0;
     background: none;
     margin-bottom: 20px;
-    color: #544c37;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .opening_statement, .mini_statement, .block {
     width: 63%;
-    color: #0c0802;
-    padding: 4px 30px 30px 8px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-item-align: center;
         align-self: center;
-    font-size: 0.88em;
+    background-color: white;
+    border-left: 0.5px solid #efe8d9;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
+  .opening_statement p, .opening_statement #about_text, .mini_statement p, .mini_statement #about_text, .block p, .block #about_text {
+    font-size: 1.1em;
+    line-height: 1.45em;
+    color: #3c3937;
+    padding: 5px;
+    margin-bottom: -8px;
+    font-weight: normal;
+    font-family: Rokkitt, serif;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .opening_statement p, .opening_statement #about_text, .mini_statement p, .mini_statement #about_text, .block p, .block #about_text {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .opening_statement p, .opening_statement #about_text, .mini_statement p, .mini_statement #about_text, .block p, .block #about_text {
+    padding-bottom: 10px;
+    font-size: 1.1em;
     letter-spacing: 0em;
-    line-height: 1.5em;
+    line-height: 1.4em;
     background: none;
+    font-family: Rokkitt, serif;
   }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .opening_statement span, .opening_statement .par-title, .mini_statement span, .mini_statement .par-title, .block span, .block .par-title {
     margin-top: 0px;
-    font-size: 1.52em;
-    font-family: "Dancing Script";
+    font-size: 1.5em;
+    font-family: 'Abhaya Libre', serif;
     color: #e8993a;
-    font-weight: bold;
     line-height: 36px;
     margin-top: 10px;
-    line-height: 2.3em;
+    line-height: 1.1em;
   }
 }
 
@@ -1573,9 +1614,9 @@ h4, h6 {
     -ms-flex-item-align: start;
         align-self: flex-start;
     width: 100%;
-    color: #3a4443;
-    font-family: helvetica;
-    font-size: 1.2em;
+    color: #85b0bf;
+    font-family: 'Abhaya Libre', serif;
+    font-size: 1.23em;
     display: flex;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1584,9 +1625,22 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #about_text {
+    width: 100%;
+    margin-top: 12px;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .block {
     padding: 5px;
     width: 92%;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .block p {
+    font-family: Rokkitt, serif;
   }
 }
 
@@ -1601,11 +1655,11 @@ h4, h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 89vw;
-    font-size: 0.92em;
+    width: 94vw;
+    font-size: 1.1em;
     line-height: 1.45em;
-    padding: 0px 16px;
-    font-family: Helvetica, Arial, sans-serif;
+    padding: 0px 6px;
+    font-family: Rokkitt, serif;
   }
 }
 
@@ -1623,13 +1677,13 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .opening_statement_desktop {
-    width: 67%;
+    width: 60%;
     text-align: justify;
     padding-top: 0px;
     margin-bottom: 33px;
-    font-size: 0.9em;
-    letter-spacing: 0.03em;
-    line-height: 1.5em;
+    font-size: 1.1em;
+    letter-spacing: 0em;
+    line-height: 1.4em;
     background: none;
     color: #0c0802;
     font-weight: normal;
@@ -1681,7 +1735,7 @@ h4, h6 {
     display: -ms-flexbox;
     display: flex;
     color: #ffffff;
-    line-height: 14px;
+    line-height: 1.5em;
     font-size: 0.85em;
     list-style: none;
     text-transform: uppercase;
@@ -1731,7 +1785,6 @@ h4, h6 {
     background-color: #85b0bf;
     width: 49%;
     padding: 4px;
-    margin-bottom: 3px;
   }
 }
 
@@ -2021,13 +2074,12 @@ h4, h6 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("../dist/imgs/cone.jpg");
+    background-image: url("../dist/imgs/1920.png");
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .contact-section {
-    background: none;
     margin: 0 auto;
     height: 100%;
   }
@@ -2050,7 +2102,7 @@ h4, h6 {
     font-family: "Dancing Script";
     font-size: 1.5em;
     text-align: justify;
-    color: #e0e4d2;
+    color: #4f5852;
     text-align: center;
     font-weight: lighter;
     padding: 21px;
@@ -2224,7 +2276,7 @@ h4, h6 {
     font-size: 1.12em;
     font-weight: bolder;
     text-transform: uppercase;
-    width: 67%;
+    width: 43%;
     text-align: center;
     outline: none;
     -webkit-transition: 0.5s ease;
@@ -2296,7 +2348,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   button.accordion.active, button.accordion:hover {
-    width: 70%;
+    width: 43%;
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
     text-align: center;
@@ -2388,13 +2440,13 @@ h4, h6 {
     margin: auto;
     margin-top: 10px;
     font-weight: normal;
-    font-size: 0.92em;
-    line-height: 1.45em;
-    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.44em;
+    font-family: Rokkitt, serif;
     color: #3c3937;
     text-align: center;
-    padding: 14px 16px 30px 16px;
-    margin-top: -3px;
+    padding: 16px 16px 30px 16px;
+    margin-top: -33px;
     margin-bottom: 33px;
     text-align: justify;
   }
@@ -2412,23 +2464,25 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .skills-caption, .gd-caption {
-    font-size: 0.88em;
-    letter-spacing: 0em;
     color: #0c0802;
-    line-height: 1.6em;
-    margin-left: 10px;
-    margin-top: -66px;
+    margin-left: 18px;
+    margin-top: -47px;
     text-align: justify;
     width: 96%;
     background: none;
-    padding: 20px 0 0 0;
+    padding: 20px 0 0 9px;
+    font-size: 1.1em;
+    letter-spacing: 0em;
+    line-height: 1.4em;
+    background: none;
+    font-family: Rokkitt, serif;
   }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .scpmt-gd, .scpmt-t {
     display: none;
-    margin-top: -27px;
+    margin-top: -47px;
   }
 }
 
@@ -2448,8 +2502,12 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 96%;
-    margin-top: -61px;
+    width: 94%;
+    margin-top: -47px;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    font-family: Rokkitt, serif;
+    padding-left: 9px;
   }
 }
 
@@ -2727,7 +2785,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .img-split, .selfie {
-    width: 60%;
+    width: 52%;
     margin-top: 0;
     border: none;
   }
@@ -2948,7 +3006,7 @@ h4, h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 66%;
+    width: 67%;
     margin-left: -20px;
   }
 }
@@ -3031,18 +3089,21 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .close-caption, .gdClose, .dmClose, .tClose {
-    color: #636c6e;
-    margin-top: 4px;
+    color: #7f7d79;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    line-height: 1.4em;
-    padding: 9px;
+    font-size: 0.92em;
+    line-height: 1.24em;
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 20px;
+    margin-top: -33px;
+    font-style: oblique;
+    font-family: Rokkitt, serif;
   }
 }
 
@@ -3055,18 +3116,24 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .close-caption, .gdClose, .dmClose, .tClose {
-    color: #465553;
-    font-size: 1em;
+    color: #222222;
+    font-size: 0.81em;
     margin: 0 auto;
     padding: 0px;
-    font-family: Georgia, Times, serif;
-    letter-spacing: normal;
+    font-family: Rokkitt, serfi;
+    font-style: oblique;
     background: none;
     border: none;
+    width: auto;
+    margin-left: -40px;
   }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
+  .close-caption {
+    color: #607D8B;
+    margin: 5px;
+  }
   .small-intro {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3104,41 +3171,43 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .small-intro h2 {
-    color: #4286a0;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+  .small-intro .major-title {
     font-size: 1.37em;
+    font-weight: bolder;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    color: #4286a0;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     padding: 7px;
-    margin-bottom: -26px;
-    margin-top: -27px;
+    margin-bottom: -6px;
+    margin-top: 0;
     width: 38%;
     padding-left: 0px;
-    font-family: "Roboto";
+    font-family: 'Abhaya Libre', serif;
     border-bottom: 1px dotted #71a3b5;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  .small-intro h2 {
+  .small-intro .major-title {
     font-size: 1.65em;
     color: #19384a;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .small-intro h2 {
+  .small-intro .major-title {
     padding-left: 0;
     width: 44%;
-    font-weight: normal;
+    margin-top: -9px;
+    font-weight: bold;
     letter-spacing: 0.02em;
     line-height: 1.1em;
-    font-size: 1.4em;
+    font-size: 1.7em;
     color: #4286a0;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Abhaya Libre', serif;
   }
 }
 
@@ -3184,7 +3253,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .blocks section, .blocks .one, .one section, .one .one {
-    width: 33vw;
+    width: 38vw;
     border-bottom: none;
     border-top: none;
     display: -webkit-box;
@@ -3336,16 +3405,16 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .blocks section p, .blocks .one p, .one section p, .one .one p {
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.4em;
     text-align: justify;
     color: #3c3937;
     letter-spacing: 0;
-    font-weight: normal;
-    font-family: "Open Sans";
     padding: 15px;
     font-weight: 500;
     margin: 0;
+    font-weight: normal;
+    font-family: Rokkitt, serfif;
   }
 }
 
@@ -3359,17 +3428,18 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .blocks section p, .blocks .one p, .one section p, .one .one p {
-    margin-top: -10px;
-    font-size: 0.89em;
+    font-size: 1.1em;
     letter-spacing: 0em;
-    line-height: 1.48em;
+    line-height: 1.4em;
     width: 92%;
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-item-align: center;
         align-self: center;
     margin-bottom: 20px;
+    font-family: Rokkitt, serfif;
   }
 }
 
@@ -3459,10 +3529,14 @@ h4, h6 {
   }
   #hide_h2, #hide_h2_gd, #hide_h2_t {
     display: none;
-    margin-top: -12px;
+    margin-top: -23px;
     margin-bottom: 48px;
     margin-left: 12px;
     text-transform: none;
+    line-height: 1.1em;
+    font-size: 1.3em;
+    color: #4286a0;
+    font-family: 'Abhaya Libre', serif;
   }
 }
 
@@ -3475,11 +3549,15 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #hide_h2, #hide_h2_gd, #hide_h2_t {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 45px;
-    margin-bottom: 60px;
+    padding-left: 0;
+    width: 44%;
+    margin-top: -9px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    line-height: 1.1em;
+    font-size: 1.7em;
+    color: #4286a0;
+    font-family: 'Abhaya Libre', serif;
   }
 }
 
@@ -3490,8 +3568,7 @@ h4, h6 {
     display: flex;
     width: 100%;
     margin: auto;
-    margin-top: -6px;
-    background-color: rgba(251, 255, 240, 0.43);
+    margin-top: -10px;
     border-radius: 4px;
   }
 }
@@ -3499,7 +3576,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .project_box {
     width: auto;
-    margin: 0 80px;
+    margin: 0;
     background-color: rgba(255, 255, 255, 0.76);
   }
 }

@@ -390,9 +390,3 @@ ctx.lineTo(50,0);
 
 ctx.lineTo(84,20);
 
-
-
-
-ctx.arc(50,38,30,0,2*Math.PI);
-
-ctx.stroke();
