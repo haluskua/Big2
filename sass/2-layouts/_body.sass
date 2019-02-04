@@ -188,41 +188,40 @@
         margin: 0 auto 
         letter-spacing: 0em
         font-size: 1.18em
-        line-height: 1.4em
+        line-height: 1.46em
         background: none  
         font-family: Rokkitt, serif
 
     span, .par-title
       font-size: 1.25em
       text-transform: uppercase
-      font-family: Helvetica
-      color: $blue1  
+      font-family: $font-stack-cinzel
+      color: $orange 
       line-height: 1.1em
       text-align: center
       width: 100%
       padding: 0
-      margin: 0
+      margin: 0   
       font-weight: bold
       letter-spacing: 0.02em
       @include phone-landscape
-
       @include tablet
         font-family: $font-stack-antic
         font-size: 1.66em
         margin: auto
       @include desktop
-        font-weight: bold   
+        font-weight: bold        
         text-transform: none
         display: flex
-        padding: 5px 0 14px 0
+        padding: 15px 0 16px 0
         margin: 0
         align-self: flex-start
         width: 100%
-        font-family: Helvetica
-        font-size: 1.88em 
+        font-family: $font-stack-character
+        font-size: 2.4em 
         display: flex
         
-  #about_text
+  #about_text  
     font-size: 1.1em
     line-height: 1.45em
     color: $black1
@@ -278,19 +277,19 @@
       text-align: justify
       padding-top: 0px
       margin-bottom: 33px
-      font-size: 1.1em
+      font-size: 1em
       letter-spacing: 0em
       line-height: 1.4em
       background: none
       font-weight: normal
     p
-      padding: 0 12px
+      padding: 0 17px
 
   .mini_statement
       @include desktop
         width: 30%
         background: none
-        font-size: 1em
+        font-size: 1em 
 
   .screen
     display: flex
@@ -383,6 +382,8 @@
   .pro-title
     color: $proBlack
     padding: 5px
+    @include desktop
+      color: white
   #title_name
     color: $blue1
     font-family: Helvetica 
@@ -960,7 +961,7 @@
       margin-top: 49px
     @include desktop
       width: 52%
-      margin-top: 0
+      margin-top: 20px
       border: none
 
   .selfie
@@ -974,6 +975,7 @@
 
   .selfie2
     margin-top: 30px
+    margin-bottom: 41px
     width: 26%
     border-radius: 4.8px
     border: 6px solid rgb(247, 238, 211)
@@ -1190,14 +1192,15 @@
       margin-bottom: 40px
     
     .major-title     
-      font-size: 1.13em
+      font-size: 1.5em
       display: flex
       color: $blue1
+      line-height: 1.5em
       align-self: flex-start
       padding: 7px
       margin-bottom: -18px
       margin-top: 0
-      width: 38%                    
+      width: 50%                    
       padding-left: 0px
       font-family: Helvetica
       @include phone-landscape
@@ -1209,11 +1212,11 @@
         margin-top: -9px 
         margin-bottom: 10px  
         padding-top: 22px 
-        font-weight: normal
-        line-height: 1.1em
-        font-size: 1.4em
         font-weight: bold
-        font-family: Helvetica
+        letter-spacing: 0.03em
+        line-height: 1.1em
+        font-size: 2.23em
+        font-family: "Rokkitt", serif
 
   .blocks, .one
     display: flex
@@ -1397,14 +1400,15 @@
     margin-top: -23px
     margin-bottom: 22px
     margin-left: 12px
+    padding-bottom: 8px
     text-transform: none
     line-height: 1.1em
-    font-size: 1.3em
+    font-size: 1.5em
     color: #4286a0
     font-family: Helvetica
     @include phone-landscape
 
-    @include tablet
+    @include tablet 
       padding-right: 8px
       margin-top: 11px
       margin-bottom: 10px
@@ -1413,10 +1417,11 @@
         width: 44%
         margin: 72px 0px 8px 0
         line-height: 1.1em
+        letter-spacing: 0.03em
         font-weight: bold
-        font-size: 1.4em 
+        font-size: 2.23em 
         color: $blue1
-        font-family: Helvetica
+        font-family: 'Rokkitt', serif
 
   .project_box
     display: flex
