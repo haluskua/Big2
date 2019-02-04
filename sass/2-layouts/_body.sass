@@ -89,9 +89,6 @@
     flex-wrap: wrap
     justify-content: center
     margin-bottom: 5px
-    background-image: url('../dist/imgs/ohk_pattern.png')
-      @include bic
-    border: 1px solid bisque
     @include phone-landscape
     @include tablet
       flex-wrap: wrap
@@ -100,10 +97,9 @@
       display: flex
       flex-wrap: wrap
       width: 100%
-      margin: auto
-      border: 1px solid #eee7d7
-      background-image: url('../dist/imgs/ohk_pattern.png')
-      @include bic
+      margin: 40px 0
+      border: none   
+      background-image: none
 
   .animation-caption, .gallery-link
     display: flex
@@ -163,7 +159,7 @@
     padding: 0px
     @include phone-landscape
     @include tablet
-      width: 93%
+      width: 94%
       margin: 0 auto
       display: flex
       margin-bottom: 0  
@@ -180,58 +176,56 @@
     p
       font-size: 1.1em
       line-height: 1.45em
-      color: #0c0802
+      color: $black1
       padding: 0 0 16px 0px
       margin-bottom: -8px
       font-weight: normal
       font-family: Rokkitt, serif 
       @include tablet 
-        font-size: 1.23em
+        font-size: 1.45em
       @include desktop
         padding: 0px
-        margin: 0 auto  
+        margin: 0 auto 
         letter-spacing: 0em
-        font-size: 1.1em
+        font-size: 1.18em
         line-height: 1.4em
         background: none  
         font-family: Rokkitt, serif
 
     span, .par-title
-      margin-top: 0px
-      font-size: 1.5em
+      font-size: 1.25em
       text-transform: uppercase
-      font-family: 'Abhaya Libre', serif
-      color: #4e6067   
-      margin-top: 10px
+      font-family: Helvetica
+      color: $blue1  
       line-height: 1.1em
       text-align: center
       width: 100%
-      padding: 18px 0
+      padding: 0
+      margin: 0
       font-weight: bold
       letter-spacing: 0.02em
       @include phone-landscape
 
       @include tablet
         font-family: $font-stack-antic
-        font-size: 1.4em
+        font-size: 1.66em
         margin: auto
-        color: #56564f   
       @include desktop
-        font-weight: bold
+        font-weight: bold   
+        text-transform: none
         display: flex
-        margin: 20px 0 18px 0
+        padding: 5px 0 14px 0
+        margin: 0
         align-self: flex-start
         width: 100%
-        color: #4f7d8e
-        font-family: 'Abhaya Libre', serif
-        font-size: 2.2em
+        font-family: Helvetica
+        font-size: 1.88em 
         display: flex
-        justify-content: center
         
   #about_text
     font-size: 1.1em
     line-height: 1.45em
-    color: #0c0802
+    color: $black1
     padding: 0 15px 
     margin-bottom: -8px
     font-weight: normal
@@ -264,6 +258,7 @@
   // Paragrap slot for the desktop view
   .opening_statement_desktop
     display: flex
+    color: $black1
     justify-content: center
     width: 100vw
     font-size: 1.1em
@@ -274,7 +269,6 @@
       padding: 57px 30px 0 16px
       font-size: 1.3em
       margin-left: 40px
-      color: #544c37
       width: 89%
       margin-right: 40px
       margin-bottom: 40px
@@ -288,7 +282,6 @@
       letter-spacing: 0em
       line-height: 1.4em
       background: none
-      color: #0c0802
       font-weight: normal
     p
       padding: 0 12px
@@ -365,7 +358,7 @@
         width: 16%
         background-color: #e29aba
         border-bottom: 1px solid #6e7a7d 
-      span, .pro-title
+      span
         @include desktop
           width: auto 
           height: auto
@@ -384,15 +377,27 @@
     @include desktop
       display: flex
       width: 100% 
-      padding: 5px
+      padding: 16px
+      margin: 0 0 4px 0
       background-color: #85b0bf
   .pro-title
-    color: #5c6362
-    padding: 6px
+    color: $proBlack
+    padding: 5px
+  #title_name
+    color: $blue1
+    font-family: Helvetica 
+    font-size: 1.3em
+    padding: 16px
+    text-align: center
+    font-weight: bold
+    @include tablet
+      font-size: 1.46em
     @include desktop
-      font-size: 1.08em
-      color: white
-
+      display: flex
+      width: 100%
+      font-weight: bold
+      font-size: 1.35em
+      padding-top: 45px
 
 
   .skills-title
@@ -455,8 +460,6 @@
                   
   #film-projects
     @include desktop
-      background-image: url('../dist/imgs/sunset.png')
-        @include bic
    
   .wagai-weh
     background-color: #fffefa
@@ -653,7 +656,8 @@
       margin-top: 22px
       border: none
     @include desktop
-      align-self: center
+      cursor: pointer
+      align-self: center  
       margin: 10px 0px 
       display: flex
       width: 70%
@@ -734,7 +738,7 @@
     font-size: 1.1em
     line-height: 1.44em
     font-family: Rokkitt, serif 
-    color: #3c3937
+    color: $black1
     text-align: center
     padding: 16px 16px 30px 16px
     margin-top: -33px
@@ -748,7 +752,6 @@
       width: 96%
       background: none
     @include desktop
-      color: #0c0802
       margin: 0
       text-align: justify
       width: 100%
@@ -765,10 +768,10 @@
     margin-top: -30px
     @include tablet
       margin: 0 auto
-      color: #544c37
+      color: $black1
       padding: 0
       width: 93%
-      font-size: 1.17em
+      font-size: 1.45em
       padding: 12px
     @include desktop
       display: flex
@@ -1187,34 +1190,30 @@
       margin-bottom: 40px
     
     .major-title     
-      font-size: 1.37em
-      font-weight: bolder
+      font-size: 1.13em
       display: flex
-      color: #4286a0
+      color: $blue1
       align-self: flex-start
       padding: 7px
-      margin-bottom: -6px
+      margin-bottom: -18px
       margin-top: 0
       width: 38%                    
       padding-left: 0px
-      font-family: 'Abhaya Libre', serif
-      border-bottom: 1px dotted rgb(113, 163, 181)
+      font-family: Helvetica
       @include phone-landscape
       @include tablet
         font-size: 1.65em
-        color: #20718f
       @include desktop 
-        padding-left: 0
+        padding: 22px 0 0 0
         width: 44%   
         margin-top: -9px 
         margin-bottom: 10px  
         padding-top: 22px 
-        font-weight: bold 
-        letter-spacing: 0.02em
+        font-weight: normal
         line-height: 1.1em
-        font-size: 1.7em
-        color: #4286a0
-        font-family: 'Abhaya Libre', serif
+        font-size: 1.4em
+        font-weight: bold
+        font-family: Helvetica
 
   .blocks, .one
     display: flex
@@ -1315,7 +1314,7 @@
         font-size: 1.1em
         line-height: 1.4em
         text-align: justify
-        color: #3c3937
+        color: $black1
         letter-spacing: 0
         padding: 15px
         font-weight: 500 
@@ -1325,7 +1324,7 @@
         @include phone-landscape
         @include tablet
           padding: 10px 30px
-          font-size: 1.35em
+          font-size: 1.5em
           margin: 26px
         @include desktop
           font-size: 1.2em
@@ -1402,7 +1401,7 @@
     line-height: 1.1em
     font-size: 1.3em
     color: #4286a0
-    font-family: 'Abhaya Libre', serif
+    font-family: Helvetica
     @include phone-landscape
 
     @include tablet
@@ -1412,13 +1411,11 @@
     @include desktop 
         padding-left: 0
         width: 44%
-        text-transform: uppercase
-        margin: 54px 0px 8px 0
-        letter-spacing: 0.03em
+        margin: 72px 0px 8px 0
         line-height: 1.1em
         font-weight: bold
         font-size: 1.4em 
-        color: #e29aba
+        color: $blue1
         font-family: Helvetica
 
   .project_box
@@ -1428,7 +1425,8 @@
     margin-top: -10px
     border-radius: 4px
     @include desktop
-      width: 100%
+      width: auto
+      padding: 10px
       margin: 0
       background-color: rgba(255, 255, 255, 0.76)
                          
@@ -1590,15 +1588,17 @@
       height: 83px
       width: 62%
     @include desktop
+      width: 80%
+      height: 66%
       background-repeat: no-repeat
       background-size: contain
 
   #canvasbox
     display: flex
-    flex-direction: column
+    flex-direction: column   
     justify-content: center
     width: 100%
-    height: auto
+    height: auto    
     @include tablet
       display: flex
 
