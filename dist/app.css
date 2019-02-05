@@ -1581,12 +1581,13 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .opening_statement span, .opening_statement .par-title, .mini_statement span, .mini_statement .par-title, .block span, .block .par-title {
-    font-size: 1.25em;
+    font-size: 1.4em;
+    font-weight: bold;
     text-transform: uppercase;
-    font-family: "Cinzel";
-    color: #F44336;
+    font-family: "Roboto";
+    color: #795548;
     line-height: 1.1em;
-    text-align: center;
+    text-align: left;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -1768,7 +1769,7 @@ h4, h6 {
     display: flex;
     color: #ffffff;
     line-height: 1.5em;
-    font-size: 0.85em;
+    font-size: 1.05em;
     list-style: none;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -1877,7 +1878,7 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .pro-title {
     color: #F44336;
-    font-size: 1.42em;
+    font-size: 1.2em;
     padding: 15px;
     font-weight: bold;
   }
