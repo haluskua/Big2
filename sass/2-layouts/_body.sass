@@ -174,8 +174,8 @@
       // border-left: 0.5px solid #efe8d9
 
     p
-      font-size: 1.1em
-      line-height: 1.45em
+      font-size: 1.24em
+      line-height: 1.5em
       color: $black1
       padding: 0 0 16px 0px
       margin-bottom: -8px
@@ -188,7 +188,7 @@
         margin: 0 auto 
         letter-spacing: 0em
         font-size: 1.18em
-        line-height: 1.46em
+        line-height: 1.6em
         background: none  
         font-family: Rokkitt, serif
 
@@ -221,8 +221,8 @@
         display: flex
           
   #about_text  
-    font-size: 1.1em
-    line-height: 1.45em
+    font-size: 1.24em
+    line-height: 1.5em
     color: $black1
     padding: 0 15px 
     margin-bottom: -8px
@@ -231,11 +231,11 @@
     @include tablet 
       font-size: 1.23em
     @include desktop
-      padding: 0px
+      padding: 0px 16px
       margin: 0 auto  
       letter-spacing: 0em
-      font-size: 1.1em
-      line-height: 1.4em
+      font-size: 1.18em
+      line-height: 1.6em
       background: none  
       font-family: Rokkitt, serif   
       width: 100%
@@ -259,10 +259,9 @@
     color: $black1
     justify-content: center
     width: 100vw
-    font-size: 1em
-    line-height: 1.45em
+    line-height: 1.5em
     padding: 0px 6px
-    font-family: Rokkitt, serif
+    font-family: Rokkitt, serif    
     @include tablet
       padding: 57px 30px 0 16px
       font-size: 1.3em
@@ -283,6 +282,7 @@
       font-weight: normal
     p
       padding: 0 17px
+      
 
   .mini_statement
       @include desktop
@@ -379,15 +379,17 @@
       margin: 0 0 4px 0
       background-color: #85b0bf
   .pro-title
-    color: $proBlack
-    padding: 5px
+    color: #F44336
+    font-size: 1.42em
+    padding: 15px
+    font-weight: bold
     @include desktop
       color: white
   #title_name
     color: $blue1
     font-family: 'Rokkitt', serif
-    font-size: 1.3em
-    padding: 16px
+    font-size: 1.75em
+    padding: 24px
     text-align: center
     font-weight: bold
     @include tablet
@@ -738,8 +740,8 @@
     margin: auto
     margin-top: 10px   
     font-weight: normal
-    font-size: 1.1em
-    line-height: 1.44em
+    font-size: 1.24em
+    line-height: 1.5em
     font-family: Rokkitt, serif 
     color: $black1
     text-align: center
@@ -749,7 +751,7 @@
     text-align: justify
     @include phone-landscape
     @include tablet
-      font-size: 1.3em
+      font-size: 1.3em  
       letter-spacing: normal
       margin: 0
       width: 96%
@@ -760,20 +762,21 @@
       width: 100%
       background: none
       padding: 0
-      font-size: 1.1em
+      font-size: 1.18em
       letter-spacing: 0em
-      line-height: 1.4em
+      line-height: 1.6em
       background: none
       font-family: Rokkitt, serif 
 
-  .scpmt-gd, .scpmt-t
-    font-size: 1.1em
+  .scpmt-gd, .scpmt-t2
+    font-size: 1.24em
     display: none
+    line-height: 1.5em
     margin-top: -30px
     @include tablet
       margin: 0 auto
       color: $black1
-      padding: 0
+      padding: 0                                 
       width: 93%
       font-size: 1.45em
       padding: 12px
@@ -782,8 +785,8 @@
       width: 100%
       margin-top: 0px
       padding: 0
-      font-size: 1.1em
-      line-height: 1.4em
+      font-size: 1.18em
+      line-height: 1.6em
       font-family: Rokkitt, serif 
       // border-left: 0.5px solid #efe8d9
  
@@ -1196,6 +1199,7 @@
       font-size: 1.5em
       display: flex
       color: $blue1
+      font-weight: bold
       line-height: 1.5em
       align-self: flex-start
       padding: 7px
@@ -1227,18 +1231,16 @@
     justify-content: center
     @include tablet
     @include desktop
-      margin-top: 33px
       flex-wrap: wrap
       justify-content: space-around
-
-    section, .one
+     
+    section, .one                                                  
       display: flex
       justify-content: center
       width: 100%
       height: auto
       margin: auto
-      margin: 0
-      @include desktop
+      @include desktop   
         width: 38vw
         border-bottom: none
         border-top: none
@@ -1248,6 +1250,7 @@
         justify-content: flex-start
         height: 100%
         margin-bottom: 50px
+        margin-top: 0
         border: 1px solid #eee7d7
 
       div   
@@ -1317,27 +1320,27 @@
         @include desktop
           width: 88%
       p  
-        font-size: 1.1em
-        line-height: 1.4em
+        font-size: 1.4em
+        line-height: 1.35em
         text-align: justify
-        color: $black1
+        color: $black1   
         letter-spacing: 0
-        padding: 15px
+        padding: 0 15px 15px 15px
         font-weight: 500 
         margin: 0
         font-weight: normal
-        font-family: Rokkitt, serfif
+        font-family: 'Rokkitt', serif
         @include phone-landscape
         @include tablet
-          padding: 10px 30px
-          font-size: 1.5em
+          padding: 10px 30px  
+          font-size: 1.42em
           margin: 26px
         @include desktop
-          font-size: 1.2em
+          font-size: 1.42em
           letter-spacing: 0em
           line-height: 1.4em
           width: 92% 
-          padding: 20px 0
+          padding: 20px 0  
           display: flex
           align-self: center
           margin-bottom: 20px
@@ -1400,14 +1403,15 @@
 
   #hide_h2, #hide_h2_gd, #hide_h2_t
     display: none
-    margin-top: -23px
+    margin-top: -23px                              
     margin-bottom: 22px
     margin-left: 12px
     padding-bottom: 8px
     text-transform: none
-    line-height: 1.1em
-    font-size: 1.5em
+    line-height: 1.4em
+    font-size: 1.5em                                      
     color: #4286a0
+    font-weight: bold
     font-family: Helvetica
     @include phone-landscape
 

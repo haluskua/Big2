@@ -311,15 +311,13 @@
 
 	#folders-container
 		padding: 0
-		width: 100%
+		width: 86%
 		height: 100%
-		flex-wrap: wrap
 		display: flex  
-		border-radius: 4.5px 4.5px 0 0
-		justify-content: center !important
+		flex-flow: column
+		align-items: center
+		border-radius: 4.5px 4.5px 0 0 
 		background-color: snow 
-		// background-image: url('../dist/imgs/1920.png')
-		// @include bic   
 		@include tablet                  
 			width: 86vw   
 			margin-left: 83px
@@ -330,7 +328,8 @@
 			background-image: none   
 			background: none
 			justify-content: center
-		@include desktop 
+		@include desktop    
+			width: 100%
 			background-color: snow
 		  
 	.reduced    
@@ -376,10 +375,11 @@
 			margin-bottom: 0
 		@include desktop
 			width: 64%
+			border-bottom: 0.66px solid #e29aba
+			border-bottom: 
 			background-color: rgba(89, 148, 169, 0.0)
 			margin: 10px 0
 			display: flex
-			border: none
 			padding: 0  
 
 	.menu2
@@ -462,7 +462,7 @@
 				color: #ffffff
 				transition: 0.26s ease-in
 				font-style: normal
-				background-color: #227391
+				background-color: #755f69
 
 	.nav-archives
 		font-family: Helvetica
@@ -479,7 +479,7 @@
 			color: #5d696b
 			text-align: center
 			z-index: 999
-			font-size: 0.89em
+			font-size: 1.1em
 			letter-spacing: 0.15em
 			font-family: $font-stack-open-sans
 			&:focus, &:hover
@@ -583,9 +583,7 @@
 
 	#nav
 		@include desktop
-			width: 84% 
-			// background-image: url('../dist/imgs/sunset.png')
-			// @include bic
+			width: 100%
 
 	.mobile-container
 		max-height: 100%

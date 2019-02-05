@@ -648,17 +648,19 @@ h4, h6 {
   }
   #folders-container {
     padding: 0;
-    width: 100%;
+    width: 86%;
     height: 100%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 4.5px 4.5px 0 0;
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
     background-color: snow;
   }
 }
@@ -686,6 +688,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #folders-container {
+    width: 100%;
     background-color: snow;
   }
 }
@@ -769,12 +772,12 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .nav-folders {
     width: 64%;
+    border-bottom: 0.66px solid #e29aba;
     background-color: rgba(89, 148, 169, 0);
     margin: 10px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    border: none;
     padding: 0;
   }
 }
@@ -901,7 +904,7 @@ h4, h6 {
     -webkit-transition: 0.26s ease-in;
     transition: 0.26s ease-in;
     font-style: normal;
-    background-color: #227391;
+    background-color: #755f69;
   }
 }
 
@@ -928,7 +931,7 @@ h4, h6 {
     color: #5d696b;
     text-align: center;
     z-index: 999;
-    font-size: 0.89em;
+    font-size: 1.1em;
     letter-spacing: 0.15em;
     font-family: "Open Sans";
   }
@@ -1078,7 +1081,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #nav {
-    width: 84%;
+    width: 100%;
   }
 }
 
@@ -1548,9 +1551,9 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .opening_statement p, .mini_statement p, .block p {
-    font-size: 1.1em;
-    line-height: 1.45em;
-    color: #4e5152;
+    font-size: 1.24em;
+    line-height: 1.5em;
+    color: #34383a;
     padding: 0 0 16px 0px;
     margin-bottom: -8px;
     font-weight: normal;
@@ -1570,7 +1573,7 @@ h4, h6 {
     margin: 0 auto;
     letter-spacing: 0em;
     font-size: 1.18em;
-    line-height: 1.46em;
+    line-height: 1.6em;
     background: none;
     font-family: Rokkitt, serif;
   }
@@ -1619,9 +1622,9 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #about_text {
-    font-size: 1.1em;
-    line-height: 1.45em;
-    color: #4e5152;
+    font-size: 1.24em;
+    line-height: 1.5em;
+    color: #34383a;
     padding: 0 15px;
     margin-bottom: -8px;
     font-weight: normal;
@@ -1637,11 +1640,11 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #about_text {
-    padding: 0px;
+    padding: 0px 16px;
     margin: 0 auto;
     letter-spacing: 0em;
-    font-size: 1.1em;
-    line-height: 1.4em;
+    font-size: 1.18em;
+    line-height: 1.6em;
     background: none;
     font-family: Rokkitt, serif;
     width: 100%;
@@ -1676,13 +1679,12 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #4e5152;
+    color: #34383a;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     width: 100vw;
-    font-size: 1em;
-    line-height: 1.45em;
+    line-height: 1.5em;
     padding: 0px 6px;
     font-family: Rokkitt, serif;
   }
@@ -1874,8 +1876,10 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .pro-title {
-    color: #10171b;
-    padding: 5px;
+    color: #F44336;
+    font-size: 1.42em;
+    padding: 15px;
+    font-weight: bold;
   }
 }
 
@@ -1889,8 +1893,8 @@ h4, h6 {
   #title_name {
     color: #4286a0;
     font-family: 'Rokkitt', serif;
-    font-size: 1.3em;
-    padding: 16px;
+    font-size: 1.75em;
+    padding: 24px;
     text-align: center;
     font-weight: bold;
   }
@@ -2496,10 +2500,10 @@ h4, h6 {
     margin: auto;
     margin-top: 10px;
     font-weight: normal;
-    font-size: 1.1em;
-    line-height: 1.44em;
+    font-size: 1.24em;
+    line-height: 1.5em;
     font-family: Rokkitt, serif;
-    color: #4e5152;
+    color: #34383a;
     text-align: center;
     padding: 16px 16px 30px 16px;
     margin-top: -33px;
@@ -2525,26 +2529,27 @@ h4, h6 {
     width: 100%;
     background: none;
     padding: 0;
-    font-size: 1.1em;
+    font-size: 1.18em;
     letter-spacing: 0em;
-    line-height: 1.4em;
+    line-height: 1.6em;
     background: none;
     font-family: Rokkitt, serif;
   }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .scpmt-gd, .scpmt-t {
-    font-size: 1.1em;
+  .scpmt-gd, .scpmt-t2 {
+    font-size: 1.24em;
     display: none;
+    line-height: 1.5em;
     margin-top: -30px;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  .scpmt-gd, .scpmt-t {
+  .scpmt-gd, .scpmt-t2 {
     margin: 0 auto;
-    color: #4e5152;
+    color: #34383a;
     padding: 0;
     width: 93%;
     font-size: 1.45em;
@@ -2553,15 +2558,15 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .scpmt-gd, .scpmt-t {
+  .scpmt-gd, .scpmt-t2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
     margin-top: 0px;
     padding: 0;
-    font-size: 1.1em;
-    line-height: 1.4em;
+    font-size: 1.18em;
+    line-height: 1.6em;
     font-family: Rokkitt, serif;
   }
 }
@@ -3232,6 +3237,7 @@ h4, h6 {
     display: -ms-flexbox;
     display: flex;
     color: #4286a0;
+    font-weight: bold;
     line-height: 1.5em;
     -ms-flex-item-align: start;
         align-self: flex-start;
@@ -3282,7 +3288,6 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .blocks, .one {
-    margin-top: 33px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
@@ -3301,7 +3306,6 @@ h4, h6 {
     width: 100%;
     height: auto;
     margin: auto;
-    margin: 0;
   }
 }
 
@@ -3325,6 +3329,7 @@ h4, h6 {
             justify-content: flex-start;
     height: 100%;
     margin-bottom: 50px;
+    margin-top: 0;
     border: 1px solid #eee7d7;
   }
 }
@@ -3461,30 +3466,30 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .blocks section p, .blocks .one p, .one section p, .one .one p {
-    font-size: 1.1em;
-    line-height: 1.4em;
+    font-size: 1.4em;
+    line-height: 1.35em;
     text-align: justify;
-    color: #4e5152;
+    color: #34383a;
     letter-spacing: 0;
-    padding: 15px;
+    padding: 0 15px 15px 15px;
     font-weight: 500;
     margin: 0;
     font-weight: normal;
-    font-family: Rokkitt, serfif;
+    font-family: 'Rokkitt', serif;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .blocks section p, .blocks .one p, .one section p, .one .one p {
     padding: 10px 30px;
-    font-size: 1.5em;
+    font-size: 1.42em;
     margin: 26px;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .blocks section p, .blocks .one p, .one section p, .one .one p {
-    font-size: 1.2em;
+    font-size: 1.42em;
     letter-spacing: 0em;
     line-height: 1.4em;
     width: 92%;
@@ -3590,9 +3595,10 @@ h4, h6 {
     margin-left: 12px;
     padding-bottom: 8px;
     text-transform: none;
-    line-height: 1.1em;
+    line-height: 1.4em;
     font-size: 1.5em;
     color: #4286a0;
+    font-weight: bold;
     font-family: Helvetica;
   }
 }
