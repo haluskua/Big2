@@ -206,21 +206,20 @@
       letter-spacing: 0.02em
       @include phone-landscape
       @include tablet
-        font-family: $font-stack-antic
         font-size: 1.66em
         margin: auto
       @include desktop
         font-weight: bold        
         text-transform: none
         display: flex
+        font-family: $font-stack-character
         padding: 15px 0 16px 0
         margin: 0
         align-self: flex-start
         width: 100%
-        font-family: $font-stack-character
         font-size: 2.4em 
         display: flex
-        
+          
   #about_text  
     font-size: 1.1em
     line-height: 1.45em
@@ -260,7 +259,7 @@
     color: $black1
     justify-content: center
     width: 100vw
-    font-size: 1.1em
+    font-size: 1em
     line-height: 1.45em
     padding: 0px 6px
     font-family: Rokkitt, serif
@@ -386,7 +385,7 @@
       color: white
   #title_name
     color: $blue1
-    font-family: Helvetica 
+    font-family: 'Rokkitt', serif
     font-size: 1.3em
     padding: 16px
     text-align: center
@@ -395,9 +394,12 @@
       font-size: 1.46em
     @include desktop
       display: flex
+      text-align: left
       width: 100%
-      font-weight: bold
-      font-size: 1.35em
+      letter-spacing: 0.02em
+      font-size: 1.75em
+      margin: 0
+      padding: 0
       padding-top: 45px
 
 
@@ -765,6 +767,7 @@
       font-family: Rokkitt, serif 
 
   .scpmt-gd, .scpmt-t
+    font-size: 1.1em
     display: none
     margin-top: -30px
     @include tablet
@@ -1048,7 +1051,6 @@
     overflow-y: scroll
     margin-top: -8px
     border: 1px solid #e6dee2
-    background-color: #f7efd66e
     justify-content: space-around
     @include phone-landscape
     @include tablet
@@ -1146,17 +1148,16 @@
     color: #7f7d79
     display: flex
     width: 100%
-    font-size: 0.92em  
+    font-size: 1.1em  
     line-height: 1.24em
     text-align: center   
     justify-content: center
-    margin-bottom: 20px
-    margin-top: -33px
-    font-style: oblique
+    margin-bottom: 20px 
+    padding-top: 10px
+    font-style: oblique   
     font-family: Rokkitt, serif
-    @include phone-landscape
     @include tablet
-      margin: 0
+      margin: 0   
       color: #0f1714
       font-size: 1.1em
     @include desktop
@@ -1172,7 +1173,7 @@
   .close-caption
     color: #607D8B
     margin: 5px
-      
+             
   .small-intro
     display: flex
     flex-flow: column
@@ -1207,17 +1208,17 @@
       @include tablet
         font-size: 1.65em
       @include desktop 
-        padding: 22px 0 0 0
-        width: 44%   
+        padding: 0
+        width: 44%                                                    
         margin-top: -9px 
         margin-bottom: 10px  
-        padding-top: 22px 
-        font-weight: bold
-        letter-spacing: 0.03em
-        line-height: 1.1em
-        font-size: 2.23em
-        font-family: "Rokkitt", serif
-
+        font-weight: 400
+        letter-spacing: 0.07em
+        line-height: 1.05em
+        font-weight: bold 
+        font-size: 1.8em   
+        font-family: 'Rokkitt', serif           
+                                              
   .blocks, .one
     display: flex
     height: 100%
@@ -1229,6 +1230,7 @@
       margin-top: 33px
       flex-wrap: wrap
       justify-content: space-around
+
     section, .one
       display: flex
       justify-content: center
@@ -1274,6 +1276,7 @@
         height: auto
         width: auto
         margin: auto
+        margin-top: 20px
         padding: 0
         margin: 0
         @include tablet
@@ -1313,7 +1316,7 @@
         align-self: center
         @include desktop
           width: 88%
-      p
+      p  
         font-size: 1.1em
         line-height: 1.4em
         text-align: justify
@@ -1415,11 +1418,11 @@
     @include desktop 
         padding-left: 0
         width: 44%
-        margin: 72px 0px 8px 0
+        margin: 72px 0px 0px 0
         line-height: 1.1em
-        letter-spacing: 0.03em
+        letter-spacing: 0.07em
         font-weight: bold
-        font-size: 2.23em 
+        font-size: 1.8em 
         color: $blue1
         font-family: 'Rokkitt', serif
 

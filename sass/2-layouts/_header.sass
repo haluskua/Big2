@@ -317,36 +317,39 @@
 		display: flex  
 		border-radius: 4.5px 4.5px 0 0
 		justify-content: center !important
-		background-color: #85b0bf
-		background-image: url('../dist/imgs/1920.png')
-		@include bic   
-		@include tablet   
+		background-color: snow 
+		// background-image: url('../dist/imgs/1920.png')
+		// @include bic   
+		@include tablet                  
 			width: 86vw   
 			margin-left: 83px
 			padding: 0
 			height: auto
 			display: flex
-			flex-flow: row
-			background-image: none
+			flex-flow: row         
+			background-image: none   
 			background: none
 			justify-content: center
-		
-  .reduced    
-		display: flex
-		flex-direction: column
-		align-items: center
-		margin: 0
-		@include tablet
-			height: 61px
-			background-color: none
-			border: none
-			width: 86vw
-		@include desktop
-			z-index: 999999
-			background-color: beige
-			padding: 19px 0
+		@include desktop 
+			background-color: snow
+		  
+	.reduced    
+			display: flex
+			flex-direction: column
+			align-items: center
+			margin: 0   
+			@include tablet
+				height: 61px
+				background-color: none  
+				border: none
+				width: 86vw
+			@include desktop
+				z-index: 999999
+				background-image: none
+				background-color: snow
+				padding: 19px 0     
 
-	.nav-folders
+	.nav-folders 
 		height: 30px
 		display: none
 		align-self: center
@@ -373,12 +376,11 @@
 			margin-bottom: 0
 		@include desktop
 			width: 64%
-			margin: 0
 			background-color: rgba(89, 148, 169, 0.0)
-			margin-bottom: 4px
+			margin: 10px 0
 			display: flex
 			border: none
-			padding: 0
+			padding: 0  
 
 	.menu2
 		border-radius: 0 10px 0 0
@@ -387,7 +389,7 @@
 		border: 0.5px solid white
 		height: 35px
 		border-radius: 0 0 8px 8px
-
+  
 		a
 			height: 100%
 			line-height: 35px
@@ -582,9 +584,8 @@
 	#nav
 		@include desktop
 			width: 84% 
-			border: 1.5px solid #bdc9b2
-			background-image: url('../dist/imgs/sunset.png')
-			@include bic
+			// background-image: url('../dist/imgs/sunset.png')
+			// @include bic
 
 	.mobile-container
 		max-height: 100%
@@ -608,7 +609,7 @@
 			display: flex
 			z-index: 99999999
 			position: fixed
-			background-color: #faf6e6
+			background-color: #fffdf4
 			background-image: none
 			align-items: flex-start
 			justify-content: space-around
@@ -623,13 +624,9 @@
 			display: flex
 			flex-wrap: wrap
 			align-items: center
-			background: url('../dist/imgs/brown_pattern.png')
-			background-size: contain
-			background-repeat: repeat
-			background-position: center
 			position: fixed
-			align-self: center
-			top: 0 
+			align-self: center 
+			top: 0   
 			background-color: white
 
 	.mobile-container .sticky

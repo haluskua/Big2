@@ -659,20 +659,7 @@ h4, h6 {
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
-    background-color: #85b0bf;
-    background-image: url("../dist/imgs/1920.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0;
+    background-color: snow;
   }
 }
 
@@ -697,8 +684,30 @@ h4, h6 {
   }
 }
 
-@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #folders-container {
+    background-color: snow;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
+  .reduced {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .reduced {
     height: 61px;
     background-color: none;
     border: none;
@@ -707,9 +716,10 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  #folders-container {
+  .reduced {
     z-index: 999999;
-    background-color: beige;
+    background-image: none;
+    background-color: snow;
     padding: 19px 0;
   }
 }
@@ -759,9 +769,8 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .nav-folders {
     width: 64%;
-    margin: 0;
     background-color: rgba(89, 148, 169, 0);
-    margin-bottom: 4px;
+    margin: 10px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1070,11 +1079,6 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #nav {
     width: 84%;
-    border: 1.5px solid #bdc9b2;
-    background-image: url("../dist/imgs/sunset.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
   }
 }
 
@@ -1112,7 +1116,7 @@ h4, h6 {
     display: flex;
     z-index: 99999999;
     position: fixed;
-    background-color: #faf6e6;
+    background-color: #fffdf4;
     background-image: none;
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -1141,10 +1145,6 @@ h4, h6 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background: url("../dist/imgs/brown_pattern.png");
-    background-size: contain;
-    background-repeat: repeat;
-    background-position: center;
     position: fixed;
     -ms-flex-item-align: center;
         align-self: center;
@@ -1594,7 +1594,6 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .opening_statement span, .opening_statement .par-title, .mini_statement span, .mini_statement .par-title, .block span, .block .par-title {
-    font-family: "Antic";
     font-size: 1.66em;
     margin: auto;
   }
@@ -1607,12 +1606,12 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    font-family: "Cabin Sketch", Garamond;
     padding: 15px 0 16px 0;
     margin: 0;
     -ms-flex-item-align: start;
         align-self: flex-start;
     width: 100%;
-    font-family: "Cabin Sketch", Garamond;
     font-size: 2.4em;
     display: flex;
   }
@@ -1682,7 +1681,7 @@ h4, h6 {
         -ms-flex-pack: center;
             justify-content: center;
     width: 100vw;
-    font-size: 1.1em;
+    font-size: 1em;
     line-height: 1.45em;
     padding: 0px 6px;
     font-family: Rokkitt, serif;
@@ -1889,7 +1888,7 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   #title_name {
     color: #4286a0;
-    font-family: Helvetica;
+    font-family: 'Rokkitt', serif;
     font-size: 1.3em;
     padding: 16px;
     text-align: center;
@@ -1908,9 +1907,12 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    text-align: left;
     width: 100%;
-    font-weight: bold;
-    font-size: 1.35em;
+    letter-spacing: 0.02em;
+    font-size: 1.75em;
+    margin: 0;
+    padding: 0;
     padding-top: 45px;
   }
 }
@@ -2533,6 +2535,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .scpmt-gd, .scpmt-t {
+    font-size: 1.1em;
     display: none;
     margin-top: -30px;
   }
@@ -2993,7 +2996,6 @@ h4, h6 {
     overflow-y: scroll;
     margin-top: -8px;
     border: 1px solid #e6dee2;
-    background-color: #f7efd66e;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -3146,14 +3148,14 @@ h4, h6 {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    font-size: 0.92em;
+    font-size: 1.1em;
     line-height: 1.24em;
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 20px;
-    margin-top: -33px;
+    padding-top: 10px;
     font-style: oblique;
     font-family: Rokkitt, serif;
   }
@@ -3250,16 +3252,16 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .small-intro .major-title {
-    padding: 22px 0 0 0;
+    padding: 0;
     width: 44%;
     margin-top: -9px;
     margin-bottom: 10px;
-    padding-top: 22px;
+    font-weight: 400;
+    letter-spacing: 0.07em;
+    line-height: 1.05em;
     font-weight: bold;
-    letter-spacing: 0.03em;
-    line-height: 1.1em;
-    font-size: 2.23em;
-    font-family: "Rokkitt", serif;
+    font-size: 1.8em;
+    font-family: 'Rokkitt', serif;
   }
 }
 
@@ -3371,6 +3373,7 @@ h4, h6 {
     height: auto;
     width: auto;
     margin: auto;
+    margin-top: 20px;
     padding: 0;
     margin: 0;
   }
@@ -3606,11 +3609,11 @@ h4, h6 {
   #hide_h2, #hide_h2_gd, #hide_h2_t {
     padding-left: 0;
     width: 44%;
-    margin: 72px 0px 8px 0;
+    margin: 72px 0px 0px 0;
     line-height: 1.1em;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.07em;
     font-weight: bold;
-    font-size: 2.23em;
+    font-size: 1.8em;
     color: #4286a0;
     font-family: 'Rokkitt', serif;
   }
