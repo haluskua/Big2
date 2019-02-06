@@ -567,9 +567,9 @@ h4, h6 {
             justify-content: center;
     border-radius: 4px;
     height: 68px;
-    width: 14vw;
+    width: 19vw;
     margin-top: 9px;
-    margin-left: 20px;
+    margin-left: 9px;
     background-image: url("../dist/imgs/ve_logo10.png");
     background-position: center;
     background-size: cover;
@@ -739,7 +739,7 @@ h4, h6 {
     margin-top: 11px;
     border: 1px solid #ffffff;
     background-color: #85b0bf;
-    width: 34%;
+    width: 46%;
     border-radius: 4px;
   }
 }
@@ -785,7 +785,7 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .menu2 {
     border-radius: 0 10px 0 0;
-    background-color: #e6c9ea;
+    background-color: #fffafa;
     padding: 0;
     border: 0.5px solid white;
     height: 35px;
@@ -1184,11 +1184,9 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: rgba(87, 85, 100, 0.3);
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    border: 1px solid #939393;
   }
 }
 
@@ -1231,7 +1229,7 @@ h4, h6 {
     cursor: pointer;
     line-height: 37px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 12px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1586,8 +1584,8 @@ h4, h6 {
     text-transform: uppercase;
     font-family: "Roboto";
     color: #795548;
-    line-height: 1.1em;
-    text-align: left;
+    line-height: 1.21em;
+    text-align: center;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -1770,9 +1768,10 @@ h4, h6 {
     color: #ffffff;
     line-height: 1.5em;
     font-size: 1.05em;
+    font-weight: bold;
     list-style: none;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
     font-family: "Roboto";
     margin: auto;
     margin-left: 0;
@@ -1877,7 +1876,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .pro-title {
-    color: #F44336;
+    color: #324148;
     font-size: 1.2em;
     padding: 15px;
     font-weight: bold;
@@ -3594,10 +3593,9 @@ h4, h6 {
     margin-top: -23px;
     margin-bottom: 22px;
     margin-left: 12px;
-    padding-bottom: 8px;
     text-transform: none;
     line-height: 1.4em;
-    font-size: 1.5em;
+    font-size: 1.6em;
     color: #4286a0;
     font-weight: bold;
     font-family: Helvetica;
