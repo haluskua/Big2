@@ -772,9 +772,9 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .nav-folders {
-    width: 64%;
-    border-bottom: 0.66px solid #e29aba;
-    background-color: rgba(89, 148, 169, 0);
+    width: 54%;
+    border-bottom: 0.66px solid #8cb0bb;
+    background-color: #e29aba;
     margin: 10px 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -870,6 +870,7 @@ h4, h6 {
   .hamburger-menu:visited, .hamburger-menu:active, .hamburger-menu:focus, .hamburger-menu:hover {
     background-color: #e29aba;
     font-size: 0.9em;
+    border-bottom: 1.3px solid #465c63;
   }
 }
 
@@ -898,14 +899,17 @@ h4, h6 {
     color: white;
     border-radius: 3px;
     line-height: 2.6em;
-    background-color: #e29aba;
+    background-color: #755f69;
+    padding: 0;
+    margin: 0;
+    width: 100%;
   }
   .fields:hover {
     color: #ffffff;
     -webkit-transition: 0.26s ease-in;
     transition: 0.26s ease-in;
     font-style: normal;
-    background-color: #755f69;
+    background-color: #e29aba;
   }
 }
 
@@ -929,7 +933,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .nav-archives {
-    color: #5d696b;
+    color: #ffffff;
     text-align: center;
     z-index: 999;
     font-size: 1.1em;
@@ -2638,11 +2642,12 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #gd-folders li {
     border-bottom: 1px solid #e3e6e8;
-    background-color: #4d4e44;
+    background-color: #fbf1d6;
     border-radius: 5px;
-    width: 77%;
+    width: 64%;
     background: none;
-    border-bottom: none;
+    border: none;
+    margin: 0;
   }
   #gd-folders li:hover {
     background-color: #fbf1d6;
