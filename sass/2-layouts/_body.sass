@@ -193,39 +193,37 @@
         font-family: Rokkitt, serif
 
     span, .par-title
-      font-size: 1.4em
+      font-size: 1.5em
       font-weight: bold
       text-transform: uppercase
       font-family: $font-stack-roboto
-      color: #795548 
+      color: #d67fa6
       line-height: 1.21em
-      text-align: center
+      text-align: left
       width: 100%
-      padding: 0                                  
-      margin: 0   
+      padding: 10px 0 0 0                                 
+      margin: 0 0 -11px 0   
       font-weight: bold
-      letter-spacing: 0.02em                
-      @include phone-landscape
+      @include phone-landscape  
       @include tablet
-        font-size: 1.66em
+        font-size: 1.66em                  
         margin: auto
       @include desktop
         font-weight: bold        
         text-transform: none
         display: flex
-        font-family: $font-stack-character
-        padding: 15px 0 16px 0
+        padding: 15px 0 14px 0
         margin: 0
         align-self: flex-start
         width: 100%
         font-size: 2.4em 
         display: flex
-          
-  #about_text  
+            
+  #about_text      
     font-size: 1.24em
     line-height: 1.5em
     color: $black1
-    padding: 0 15px 
+    padding: 0 15px                                         
     margin-bottom: -8px
     font-weight: normal
     font-family: Rokkitt, serif 
@@ -262,6 +260,7 @@
     width: 100vw
     line-height: 1.5em
     padding: 0px 6px
+    margin-bottom: 60px
     font-family: Rokkitt, serif    
     @include tablet
       padding: 57px 30px 0 16px
@@ -275,7 +274,7 @@
       width: 60%
       text-align: justify
       padding-top: 0px
-      margin-bottom: 33px
+      margin-bottom: 80px
       font-size: 1em
       letter-spacing: 0em
       line-height: 1.4em
@@ -374,11 +373,10 @@
   #pro-title
     @include tablet
       padding: 13px
-    @include desktop
+    @include desktop    
       display: flex
       width: 100% 
-      padding: 16px
-      margin: 0 0 4px 0
+      padding: 9px
       background-color: #85b0bf
   .pro-title
     color: #324148
@@ -1200,7 +1198,7 @@
     .major-title     
       font-size: 1.5em
       display: flex
-      color: $blue1
+      color: #d67fa6
       font-weight: bold
       line-height: 1.5em
       align-self: flex-start
@@ -1219,11 +1217,9 @@
         margin-top: -9px 
         margin-bottom: 10px  
         font-weight: 400
-        letter-spacing: 0.07em
         line-height: 1.05em
         font-weight: bold 
         font-size: 1.8em   
-        font-family: 'Rokkitt', serif           
                                               
   .blocks, .one
     display: flex
@@ -1322,31 +1318,31 @@
         @include desktop
           width: 88%
       p  
-        font-size: 1.4em
+        font-size: 1em
         line-height: 1.35em
         text-align: justify
+        font-style: italic
         color: $black1   
         letter-spacing: 0
-        padding: 0 15px 15px 15px
+        padding: 20px
         font-weight: 500 
         margin: 0
         font-weight: normal
-        font-family: 'Rokkitt', serif
+        font-family: $font-stack-roboto
         @include phone-landscape
         @include tablet
           padding: 10px 30px  
           font-size: 1.42em
           margin: 26px
         @include desktop
-          font-size: 1.42em
+          font-size: 1em
           letter-spacing: 0em
           line-height: 1.4em
           width: 92% 
-          padding: 20px 0  
+          padding: 20px   
           display: flex
           align-self: center
-          margin-bottom: 20px
-          font-family: Rokkitt, serfif
+          margin-bottom: 10px
 
       button
         width: 41%
@@ -1374,7 +1370,7 @@
           height: auto
 
         a
-          font-family: $font-stack-antic
+          font-family: $font-stack-roboto
           color: #ffffff
           text-align: justify
           font-size: 1em
@@ -1386,10 +1382,11 @@
           @include tablet
             padding: 0px
             font-size: 1.85em
-          @include desktop
+          @include desktop            
             font-size: 1em
-            font-weight: 600
-
+            font-weight: 400
+            letter-spacing: 0.03em
+            
   .readmore_text
     width: auto
     background-color: rgba(156, 140, 133, 0)
@@ -1411,7 +1408,7 @@
     text-transform: none
     line-height: 1.4em
     font-size: 1.6em                                      
-    color: #4286a0
+    color: #d67fa6
     font-weight: bold
     font-family: Helvetica
     @include phone-landscape
@@ -1425,11 +1422,9 @@
         width: 44%
         margin: 72px 0px 0px 0
         line-height: 1.1em
-        letter-spacing: 0.07em
         font-weight: bold
         font-size: 1.8em 
-        color: $blue1
-        font-family: 'Rokkitt', serif
+        color: #d67fa6
 
   .project_box
     display: flex

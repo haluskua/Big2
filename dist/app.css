@@ -618,6 +618,7 @@ h4, h6 {
     background-color: #20718f;
     left: 0;
     top: 0;
+    padding: 18px 0;
   }
 }
 
@@ -1579,18 +1580,17 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .opening_statement span, .opening_statement .par-title, .mini_statement span, .mini_statement .par-title, .block span, .block .par-title {
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-weight: bold;
     text-transform: uppercase;
     font-family: "Roboto";
-    color: #795548;
+    color: #d67fa6;
     line-height: 1.21em;
-    text-align: center;
+    text-align: left;
     width: 100%;
-    padding: 0;
-    margin: 0;
+    padding: 10px 0 0 0;
+    margin: 0 0 -11px 0;
     font-weight: bold;
-    letter-spacing: 0.02em;
   }
 }
 
@@ -1608,8 +1608,7 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-family: "Cabin Sketch", Garamond;
-    padding: 15px 0 16px 0;
+    padding: 15px 0 14px 0;
     margin: 0;
     -ms-flex-item-align: start;
         align-self: flex-start;
@@ -1685,6 +1684,7 @@ h4, h6 {
     width: 100vw;
     line-height: 1.5em;
     padding: 0px 6px;
+    margin-bottom: 60px;
     font-family: Rokkitt, serif;
   }
 }
@@ -1706,7 +1706,7 @@ h4, h6 {
     width: 60%;
     text-align: justify;
     padding-top: 0px;
-    margin-bottom: 33px;
+    margin-bottom: 80px;
     font-size: 1em;
     letter-spacing: 0em;
     line-height: 1.4em;
@@ -1868,8 +1868,7 @@ h4, h6 {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    padding: 16px;
-    margin: 0 0 4px 0;
+    padding: 9px;
     background-color: #85b0bf;
   }
 }
@@ -3236,7 +3235,7 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #4286a0;
+    color: #d67fa6;
     font-weight: bold;
     line-height: 1.5em;
     -ms-flex-item-align: start;
@@ -3263,11 +3262,9 @@ h4, h6 {
     margin-top: -9px;
     margin-bottom: 10px;
     font-weight: 400;
-    letter-spacing: 0.07em;
     line-height: 1.05em;
     font-weight: bold;
     font-size: 1.8em;
-    font-family: 'Rokkitt', serif;
   }
 }
 
@@ -3466,16 +3463,17 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .blocks section p, .blocks .one p, .one section p, .one .one p {
-    font-size: 1.4em;
+    font-size: 1em;
     line-height: 1.35em;
     text-align: justify;
+    font-style: italic;
     color: #34383a;
     letter-spacing: 0;
-    padding: 0 15px 15px 15px;
+    padding: 20px;
     font-weight: 500;
     margin: 0;
     font-weight: normal;
-    font-family: 'Rokkitt', serif;
+    font-family: "Roboto";
   }
 }
 
@@ -3489,18 +3487,17 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .blocks section p, .blocks .one p, .one section p, .one .one p {
-    font-size: 1.42em;
+    font-size: 1em;
     letter-spacing: 0em;
     line-height: 1.4em;
     width: 92%;
-    padding: 20px 0;
+    padding: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-item-align: center;
         align-self: center;
-    margin-bottom: 20px;
-    font-family: Rokkitt, serfif;
+    margin-bottom: 10px;
   }
 }
 
@@ -3546,7 +3543,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .blocks section button a, .blocks .one button a, .one section button a, .one .one button a {
-    font-family: "Antic";
+    font-family: "Roboto";
     color: #ffffff;
     text-align: justify;
     font-size: 1em;
@@ -3570,7 +3567,8 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .blocks section button a, .blocks .one button a, .one section button a, .one .one button a {
     font-size: 1em;
-    font-weight: 600;
+    font-weight: 400;
+    letter-spacing: 0.03em;
   }
 }
 
@@ -3596,7 +3594,7 @@ h4, h6 {
     text-transform: none;
     line-height: 1.4em;
     font-size: 1.6em;
-    color: #4286a0;
+    color: #d67fa6;
     font-weight: bold;
     font-family: Helvetica;
   }
@@ -3616,11 +3614,9 @@ h4, h6 {
     width: 44%;
     margin: 72px 0px 0px 0;
     line-height: 1.1em;
-    letter-spacing: 0.07em;
     font-weight: bold;
     font-size: 1.8em;
-    color: #4286a0;
-    font-family: 'Rokkitt', serif;
+    color: #d67fa6;
   }
 }
 
