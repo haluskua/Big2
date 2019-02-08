@@ -1584,15 +1584,15 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .opening_statement span, .opening_statement .par-title, .mini_statement span, .mini_statement .par-title, .block span, .block .par-title {
-    font-size: 1.5em;
+    font-size: 1.75em;
     font-weight: bold;
     text-transform: uppercase;
     font-family: "Roboto";
     color: #d67fa6;
     line-height: 1.21em;
-    text-align: left;
+    text-align: center;
     width: 100%;
-    padding: 10px 0 0 0;
+    padding: 10px 0 0 0px;
     margin: 0 0 -11px 0;
     font-weight: bold;
   }
@@ -3617,7 +3617,7 @@ h4, h6 {
   #hide_h2, #hide_h2_gd, #hide_h2_t {
     padding-left: 0;
     width: 44%;
-    margin: 72px 0px 0px 0;
+    margin: 72px 0px 8px 0;
     line-height: 1.1em;
     font-weight: bold;
     font-size: 1.8em;
