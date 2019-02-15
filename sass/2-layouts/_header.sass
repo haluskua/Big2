@@ -28,10 +28,10 @@
 		position: relative
 		align-items: center
 		flex-direction: column
-		background-image: url("../dist/imgs/ohk_pattern.png") 
-		@include bic
+		background-image: url("../dist/imgs/wainui_sunset.jpg") 
+		@include bic                           
 		@include phone-landscape
-			opacity: 0.9
+			opacity: 0.9              
 			height: 86%
 		@include tablet
 			width: 100vw
@@ -40,16 +40,17 @@
 			padding: 0
 			margin-top: 67px
 		@include desktop
-			height: 100%
-			margin-top: 0
-			margin-left: 10%
-			background-image: url("../dist/imgs/ohk_pattern.png") 
-			@include bic 
-		
-	#Colsplit-box1
-		height: 93%
+			height: 100%   
+			margin-top: 0                                        
+			margin-left: 10%                 
+			// background-image: url("../dist/imgs/ohk_pattern.png") 
+			background-image: url("../dist/imgs/wainui_sunset.jpg") 
+			@include bic                         
+		  
+	#Colsplit-box1                  
+		height: 93%   
 		display: flex
-		position: relative
+		position: relative                   
 		flex-direction: column
 		justify-content: space-between
 		//mediaQuerie
@@ -73,10 +74,10 @@
 		@include phone-landscape
 			align-items: flex-start
 			margin-top: -43px
-		@include tablet
-			margin: 0
+		@include tablet                
+			margin: 0                                                           
 		@include desktop
-			margin-top: -22px
+			margin-top: -10px   
 			height: 63px
 
 	.hetpage-li
@@ -99,7 +100,7 @@
 		@include phone-landscape
 			margin-bottom: 13px
 		@include desktop
-			margin: -20px 0 0 0
+			margin: 0
 
 	#portfolio-header
 		display: flex
@@ -122,12 +123,12 @@
 		margin: 0 auto
 		padding-top: 30px
 		color: #ddeef5
-		font-size: 2em
+		font-size: 1.3em
 		font-weight: bold
 		letter-spacing: 0
 		text-align: center
 		text-transform: uppercase
-		font-family: Helvetica, sans-serif
+		font-family: $font-stack-serif
 		@include phone-landscape
 			font-size: 1.87em
 		@include tablet
@@ -138,19 +139,20 @@
 			text-shadow: 4px solid gray
 			font-size: 3em
 			letter-spacing: 0em
-			padding-top: 178pX
+			padding-top: 100pX
 			margin-bottom: 5px
 
 	#portfolio-color                                        
-		color: #ffffff
-		font-weight: bolder                                                     
-		font-size: 2.1em
+		color: #161733
+		font-weight: bolder
+		font-size: 1em !important                                                
 		letter-spacing: 0
 		//mediaQuerie
 		@include tablet
 		//mediaQuerie           
 		@include desktop
-			letter-spacing: 0
+		font-size: 2.1em
+		letter-spacing: 0
 
   .ohk-logo
     width: 33%
@@ -210,13 +212,13 @@
 			font-size: 2.15em
 			position: relative
 		@include desktop
-			font-size: 2em
+			font-size: 1.8em
 			font-weight: normal             
 			padding: 0    
 			letter-spacing: 0                                                
 			margin-top: 0px
 			text-transform: normal
-			color: #ffffff
+			color: #14151f
 
 	.nameohk
 		display: flex
@@ -238,10 +240,10 @@
 		@include desktop
 			font-size: 1.22em
 			letter-spacing: 0em
-			color: #ffffff
+			color: #14151f
 			margin: 22px 0 -8px 0
 			text-transform: none
-			font-family: $font-stack-roboto
+			font-family: $font-stack-serif
 
 	.folders-container2
 		display: none
@@ -278,7 +280,7 @@
 			margin: 0
 			height: 52px
 			width: 13vw
-			background-color: #20718f
+			background-color: #161733
 			background-image: url('../dist/imgs/ve_logo9.png')
 			background-size: contain
 
@@ -294,7 +296,7 @@
 			margin-top: 0px
 			background-image: url('../dist/imgs/ve_logo9.png')
 			@include bic
-			background-color: #84afbe
+			background-color: #161733
 			left: 0
 			top: 0                          
 			padding: 18px 0                                      
@@ -384,7 +386,7 @@
 		@include desktop
 			width: 54%
 			border-bottom: 0.66px solid #8cb0bb
-			background-color: #85afbe
+			background-color: #161733
 			margin: 10px 0
 			display: flex
 			padding: 0  

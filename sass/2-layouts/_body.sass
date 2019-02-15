@@ -3,12 +3,12 @@
 
 // Styling for body elements
 @include phone
-
   body
     height: 100%
     width: 100%
     margin: 0 auto
-    main
+
+    main          
       height: auto
       display: flex
       max-width: 100%
@@ -97,7 +97,7 @@
       display: flex
       flex-wrap: wrap
       width: 100%
-      margin: 40px 0
+      margin: 10px 0
       border: none   
       background-image: none
 
@@ -166,13 +166,12 @@
       background: none
       margin-bottom: 20px
     @include desktop
-      width: 68%  
+      width: 84%  
       margin-bottom: 10px
       align-self: center
       background-color: white    
       padding: 14px 28px
-      // border-left: 0.5px solid #efe8d9
-
+                                                                            
     p
       font-size: 1.24em
       line-height: 1.5em
@@ -189,7 +188,7 @@
         letter-spacing: 0em
         font-size: 1.18em
         line-height: 1.5em
-        background: none  
+        background: none    
         font-family: Rokkitt, serif 
 
     span, .par-title
@@ -198,7 +197,7 @@
       text-transform: uppercase
       font-family: $font-stack-roboto
       font-family: 'Rokkitt' 
-      color: #84afbe
+      color: #161733
       line-height: 1.21em
       text-align: center
       width: 100%
@@ -273,6 +272,7 @@
       background: none
     @include desktop
       width: 60%
+      width: 84%
       text-align: justify
       padding-top: 0px
       margin-bottom: 80px
@@ -304,7 +304,7 @@
     @include desktop
       margin: auto
       height: auto
-      border: 2 solid #e2dcc7
+      border-top: 1px solid gray
       border-left: 0px
       background: url("../dist/imgs/pattern.jpg")
       background-size: contain
@@ -328,7 +328,6 @@
     text-align: center
     justify-content: center
     z-index: 99999
-    background-color: rgba(121, 166, 183, 0.33)
     @include tablet
       font-size: 1.4em
       margin-bottom: 4px
@@ -336,12 +335,10 @@
     @include desktop
       display: flex
       justify-content: flex-start
-      border: 3px solid pink
-      border-left: none
+      border-left: none                 
       padding: 0
       line-height: 0
-      border-bottom: 1.8px solid #8cb0bb
-      background-color: rgba(121, 166, 183, 0.33)
+      background-color: rgba(22, 23, 51, 0.77)
       opacity: 1
       width: 100%
 
@@ -356,36 +353,37 @@
         display: flex
         justify-content: center
         width: 16%
-        background-color: #84afbe
-        border-bottom: 1px solid #6e7a7d 
+        background-color: rgba(255, 222, 173, 0)
       span
         @include desktop
           width: auto 
           height: auto
           line-height: 1em
           font-size: 0.88em 
-          font-family: $font-stack-roboto
-          text-transform: uppercase
+          font-family: $font-stack-serif
+          text-transform: uppercase  
           font-weight: bold
           letter-spacing: 0.18em
-          color: #fcfcfd
+          color: #ffffff
           padding: 3px 15px 3px 0px
 
   #pro-title
     @include tablet
       padding: 13px
-    @include desktop    
+    @include desktop      
       display: flex
       width: 100% 
       padding: 9px
-      background-color: #85b0bf
+      background-color: white
+
   .pro-title
     color: #324148
     font-size: 1.2em
-    padding: 15px
+    padding: 8px
     font-weight: bold
     @include desktop
-      color: white
+    font-size: 1em
+      color: #595f61
   #title_name
     color: $blue1
     font-family: 'Rokkitt', serif
@@ -1102,7 +1100,7 @@
     @include desktop
       display: flex
       flex-direction: column
-      width: 68%
+      width: 84%
 
   #read-on
     justify-content: flex-start !important
@@ -1110,7 +1108,7 @@
     margin: 0
     padding: 0
     font-weight: lighter
-    text-align: left
+    text-align: left          
     width: 100%
     font-size: 0.96em
     letter-spacing: 0.048em
@@ -1138,7 +1136,7 @@
       width: 116px
       font-size: 1.15em
       border-bottom: 1px dotted
-      letter-spacing: 0.05em
+      letter-spacing: 0.05em  
 
   #skills-descOpen, #gd-descOpen, #t-descOpen
     display: flex
@@ -1204,7 +1202,7 @@
     .major-title     
       font-size: 1.5em
       display: flex
-      color: #84afbe
+      color: #161733
       font-weight: bold
       line-height: 1.5em
       align-self: flex-start
@@ -1218,11 +1216,11 @@
       @include tablet
         font-size: 1.65em
       @include desktop 
-        padding: 0
+        padding: 0  
         width: 44%                                                    
         margin-top: -9px 
         margin-bottom: 10px  
-        font-weight: 400
+        font-weight: 400              
         line-height: 1.05em 
         font-weight: bold 
         font-size: 1.8em   
@@ -1264,7 +1262,6 @@
         height: auto
         width: 100%
         margin: auto
-        border: 2px solid #70a2b3
         border-bottom: none
         @include desktop
           margin: 0
@@ -1328,7 +1325,7 @@
         line-height: 1.35em
         text-align: justify
         font-style: italic
-        color: $black1   
+        color: $black1      
         letter-spacing: 0
         padding: 20px
         font-weight: 500 
@@ -1414,7 +1411,7 @@
     text-transform: none
     line-height: 1.4em
     font-size: 1.6em                                      
-    color: #84afbe
+    color: #161733
     font-weight: bold
     font-family: Rokkitt, serif
     @include phone-landscape
@@ -1426,7 +1423,7 @@
     @include desktop 
         padding-left: 0
         width: 44%
-        margin: 72px 0px 8px 0
+        margin: 48px 0px 8px 0
         line-height: 1.1em
         font-weight: bold
         font-size: 1.8em 
@@ -1587,10 +1584,8 @@
       width: 33%
       margin-bottom: 0
       @include bic
-      background: none
       display: none
-
-   
+                                 
   .inner-div12
     background-image: url("../dist/imgs/native_pear.png")
     background-size: contain                            

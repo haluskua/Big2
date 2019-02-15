@@ -135,7 +135,7 @@ h4, h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-image: url("../dist/imgs/ohk_pattern.png");
+    background-image: url("../dist/imgs/wainui_sunset.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -164,7 +164,7 @@ h4, h6 {
     height: 100%;
     margin-top: 0;
     margin-left: 10%;
-    background-image: url("../dist/imgs/ohk_pattern.png");
+    background-image: url("../dist/imgs/wainui_sunset.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -244,7 +244,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .landing-page {
-    margin-top: -22px;
+    margin-top: -10px;
     height: 63px;
   }
 }
@@ -290,7 +290,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .bio {
-    margin: -20px 0 0 0;
+    margin: 0;
   }
 }
 
@@ -331,12 +331,12 @@ h4, h6 {
     margin: 0 auto;
     padding-top: 30px;
     color: #ddeef5;
-    font-size: 2em;
+    font-size: 1.3em;
     font-weight: bold;
     letter-spacing: 0;
     text-align: center;
     text-transform: uppercase;
-    font-family: Helvetica, sans-serif;
+    font-family: Georgia, Times, serif;
   }
 }
 
@@ -359,27 +359,20 @@ h4, h6 {
     text-shadow: 4px solid gray;
     font-size: 3em;
     letter-spacing: 0em;
-    padding-top: 178pX;
+    padding-top: 100pX;
     margin-bottom: 5px;
   }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #portfolio-color {
-    color: #ffffff;
+    color: #161733;
     font-weight: bolder;
+    font-size: 1em !important;
+    letter-spacing: 0;
     font-size: 2.1em;
     letter-spacing: 0;
   }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  #portfolio-color {
-    letter-spacing: 0;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
   #portfolio-color .ohk-logo {
     width: 33%;
     margin: auto;
@@ -474,13 +467,13 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .intro, .nameohk {
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: normal;
     padding: 0;
     letter-spacing: 0;
     margin-top: 0px;
     text-transform: normal;
-    color: #ffffff;
+    color: #14151f;
   }
 }
 
@@ -517,10 +510,10 @@ h4, h6 {
   .nameohk {
     font-size: 1.22em;
     letter-spacing: 0em;
-    color: #ffffff;
+    color: #14151f;
     margin: 22px 0 -8px 0;
     text-transform: none;
-    font-family: "Roboto";
+    font-family: Georgia, Times, serif;
   }
 }
 
@@ -590,7 +583,7 @@ h4, h6 {
     margin: 0;
     height: 52px;
     width: 13vw;
-    background-color: #20718f;
+    background-color: #161733;
     background-image: url("../dist/imgs/ve_logo9.png");
     background-size: contain;
   }
@@ -613,7 +606,7 @@ h4, h6 {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #84afbe;
+    background-color: #161733;
     left: 0;
     top: 0;
     padding: 18px 0;
@@ -778,7 +771,7 @@ h4, h6 {
   .nav-folders {
     width: 54%;
     border-bottom: 0.66px solid #8cb0bb;
-    background-color: #85afbe;
+    background-color: #161733;
     margin: 10px 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1444,7 +1437,7 @@ h4, h6 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%;
-    margin: 40px 0;
+    margin: 10px 0;
     border: none;
     background-image: none;
   }
@@ -1551,7 +1544,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .opening_statement, .mini_statement, .block {
-    width: 68%;
+    width: 84%;
     margin-bottom: 10px;
     -ms-flex-item-align: center;
         align-self: center;
@@ -1564,7 +1557,7 @@ h4, h6 {
   .opening_statement p, .mini_statement p, .block p {
     font-size: 1.24em;
     line-height: 1.5em;
-    color: #34383a;
+    color: #12121d;
     padding: 0 0 16px 0px;
     margin-bottom: -8px;
     font-weight: normal;
@@ -1597,7 +1590,7 @@ h4, h6 {
     text-transform: uppercase;
     font-family: "Roboto";
     font-family: 'Rokkitt';
-    color: #84afbe;
+    color: #161733;
     line-height: 1.21em;
     text-align: center;
     width: 100%;
@@ -1635,7 +1628,7 @@ h4, h6 {
   #about_text {
     font-size: 1.24em;
     line-height: 1.5em;
-    color: #34383a;
+    color: #12121d;
     padding: 0 15px;
     margin-bottom: -8px;
     font-weight: normal;
@@ -1690,7 +1683,7 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #34383a;
+    color: #12121d;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1717,6 +1710,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .opening_statement_desktop {
     width: 60%;
+    width: 84%;
     text-align: justify;
     padding-top: 0px;
     margin-bottom: 80px;
@@ -1764,7 +1758,7 @@ h4, h6 {
   .screen {
     margin: auto;
     height: auto;
-    border: 2 solid #e2dcc7;
+    border-top: 1px solid gray;
     border-left: 0px;
     background: url("../dist/imgs/pattern.jpg");
     background-size: contain;
@@ -1794,7 +1788,6 @@ h4, h6 {
         -ms-flex-pack: center;
             justify-content: center;
     z-index: 99999;
-    background-color: rgba(121, 166, 183, 0.33);
   }
 }
 
@@ -1814,12 +1807,10 @@ h4, h6 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    border: 3px solid pink;
     border-left: none;
     padding: 0;
     line-height: 0;
-    border-bottom: 1.8px solid #8cb0bb;
-    background-color: rgba(121, 166, 183, 0.33);
+    background-color: rgba(22, 23, 51, 0.77);
     opacity: 1;
     width: 100%;
   }
@@ -1849,8 +1840,7 @@ h4, h6 {
         -ms-flex-pack: center;
             justify-content: center;
     width: 16%;
-    background-color: #84afbe;
-    border-bottom: 1px solid #6e7a7d;
+    background-color: rgba(255, 222, 173, 0);
   }
 }
 
@@ -1860,11 +1850,11 @@ h4, h6 {
     height: auto;
     line-height: 1em;
     font-size: 0.88em;
-    font-family: "Roboto";
+    font-family: Georgia, Times, serif;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 0.18em;
-    color: #fcfcfd;
+    color: #ffffff;
     padding: 3px 15px 3px 0px;
   }
 }
@@ -1882,7 +1872,7 @@ h4, h6 {
     display: flex;
     width: 100%;
     padding: 9px;
-    background-color: #85b0bf;
+    background-color: white;
   }
 }
 
@@ -1890,18 +1880,11 @@ h4, h6 {
   .pro-title {
     color: #324148;
     font-size: 1.2em;
-    padding: 15px;
+    padding: 8px;
     font-weight: bold;
+    font-size: 1em;
+    font-size-color: #595f61;
   }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .pro-title {
-    color: white;
-  }
-}
-
-@media (min-width: 1em), screen and (orientation: portrait) {
   #title_name {
     color: #4286a0;
     font-family: 'Rokkitt', serif;
@@ -2515,7 +2498,7 @@ h4, h6 {
     font-size: 1.24em;
     line-height: 1.5em;
     font-family: Rokkitt, serif;
-    color: #34383a;
+    color: #12121d;
     text-align: center;
     padding: 16px 16px 30px 16px;
     margin-top: -33px;
@@ -2561,7 +2544,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .scpmt-gd, .scpmt-t2 {
     margin: 0 auto;
-    color: #34383a;
+    color: #12121d;
     padding: 0;
     width: 93%;
     font-size: 1.45em;
@@ -3080,7 +3063,7 @@ h4, h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 68%;
+    width: 84%;
   }
 }
 
@@ -3250,7 +3233,7 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #84afbe;
+    color: #161733;
     font-weight: bold;
     line-height: 1.5em;
     -ms-flex-item-align: start;
@@ -3359,7 +3342,6 @@ h4, h6 {
     height: auto;
     width: 100%;
     margin: auto;
-    border: 2px solid #70a2b3;
     border-bottom: none;
   }
 }
@@ -3482,7 +3464,7 @@ h4, h6 {
     line-height: 1.35em;
     text-align: justify;
     font-style: italic;
-    color: #34383a;
+    color: #12121d;
     letter-spacing: 0;
     padding: 20px;
     font-weight: 500;
@@ -3609,7 +3591,7 @@ h4, h6 {
     text-transform: none;
     line-height: 1.4em;
     font-size: 1.6em;
-    color: #84afbe;
+    color: #161733;
     font-weight: bold;
     font-family: Rokkitt, serif;
   }
@@ -3627,7 +3609,7 @@ h4, h6 {
   #hide_h2, #hide_h2_gd, #hide_h2_t {
     padding-left: 0;
     width: 44%;
-    margin: 72px 0px 8px 0;
+    margin: 48px 0px 8px 0;
     line-height: 1.1em;
     font-weight: bold;
     font-size: 1.8em;
@@ -3916,7 +3898,6 @@ h4, h6 {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background: none;
     display: none;
   }
 }
