@@ -21,7 +21,7 @@
 			background-color: #85b0bf
 			background-image: none
 
-	.Colsplit-between
+	.Colsplit-between               
 		width: 100%
 		height: 100%
 		display: flex
@@ -76,6 +76,7 @@
 		@include tablet
 			margin: 0
 		@include desktop
+			margin-top: -22px
 			height: 63px
 
 	.hetpage-li
@@ -88,8 +89,8 @@
 			height: auto
 		@include desktop
 			width: 100%
-			margin-top: 4px
-
+			margin-top: 60px            
+                      
 	.bio
 		margin-top: -2px
 		width: 100%
@@ -113,7 +114,6 @@
 			padding-top: 5%
 			//mediaQuerie
 		@include desktop
-			margin-top: -11%
 			width: 100%
 			justify-content: center
 			padding: 0
@@ -124,6 +124,7 @@
 		color: #ddeef5
 		font-size: 2em
 		font-weight: bold
+		letter-spacing: 0
 		text-align: center
 		text-transform: uppercase
 		font-family: Helvetica, sans-serif
@@ -134,19 +135,21 @@
 		@include desktop
 			color: white
 			font-weight: bolder
-			font-size: 1.94em
-			letter-spacing: 0.05em
-			padding-top: 210pX
-			margin-bottom: 25px
+			text-shadow: 4px solid gray
+			font-size: 3em
+			letter-spacing: 0em
+			padding-top: 178pX
+			margin-bottom: 5px
 
-	#portfolio-color
-		color: #465560
+	#portfolio-color                                        
+		color: #ffffff
+		font-weight: bolder                                                     
+		font-size: 2.1em
+		letter-spacing: 0
 		//mediaQuerie
 		@include tablet
-			color: #465560
-		//mediaQuerie
+		//mediaQuerie           
 		@include desktop
-			color: #596263
 			letter-spacing: 0
 
   .ohk-logo
@@ -185,8 +188,7 @@
 			font-size: 3.3em
 			margin-top: 0
 		@include desktop
-			font-size: 3.6em
-			letter-spacing: 0.05em
+			font-size: 3.2em
 			margin-top: 10px
 			color: #dbf0ff
 
@@ -196,10 +198,10 @@
 		margin-top: 14px
 		color: #e9f9ff
 		font-size: 1.57em
-		letter-spacing: 0em
+		letter-spacing: 0em                   
 		position: relative
 		text-align: justify
-		font-family: $font-stack-Dancing-script
+		font-family: $font-stack-serif
 		@include tablet
 			height: 60px
 			margin-top: 29px
@@ -208,21 +210,22 @@
 			font-size: 2.15em
 			position: relative
 		@include desktop
-			font-size: 1.25em
-			font-weight: normal
-			padding: 0
+			font-size: 2em
+			font-weight: normal             
+			padding: 0    
+			letter-spacing: 0                                                
 			margin-top: 0px
 			text-transform: normal
 			color: #ffffff
 
 	.nameohk
 		display: flex
-		width: 100%
-		justify-content: center
+		width: 100%                 
+		justify-content: center                                                        
 		font-size: 0.88em
-		margin-top: 2px
+		margin-top: 2px                                   
 		color: #ffffff
-		font-weight: normal
+		font-weight: normal              
 		text-transform: uppercase
 		font-family: "helvetica"
 		@include tablet
@@ -291,7 +294,7 @@
 			margin-top: 0px
 			background-image: url('../dist/imgs/ve_logo9.png')
 			@include bic
-			background-color: #20718f
+			background-color: #84afbe
 			left: 0
 			top: 0                          
 			padding: 18px 0                                      
@@ -317,7 +320,7 @@
 		display: flex  
 		flex-flow: column
 		align-items: center
-		border-radius: 4.5px 4.5px 0 0 
+		border-radius: 4.5px 4.5px 0 0
 		background-color: snow 
 		@include tablet                  
 			width: 86vw   
@@ -330,8 +333,12 @@
 			background: none
 			justify-content: center
 		@include desktop    
+			margin: 0
+			padding-top: 54px
 			width: 100%
 			background-color: snow
+			background-image: url(../dist/imgs/1920.png)
+			@include bic
 		  
 	.reduced    
 			display: flex
@@ -352,7 +359,7 @@
 	.nav-folders 
 		height: 30px
 		display: none
-		align-self: center
+		align-self: center  
 		padding: 3px
 		list-style: none   
 		margin-bottom: 11px
@@ -377,7 +384,7 @@
 		@include desktop
 			width: 54%
 			border-bottom: 0.66px solid #8cb0bb
-			background-color: #e29aba
+			background-color: #85afbe
 			margin: 10px 0
 			display: flex
 			padding: 0  
@@ -588,10 +595,12 @@
 	#nav
 		@include desktop
 			width: 100%
+			background-image: url('../dist/imgs/oragne_pattern.png')
+			@include bic
 
 	.mobile-container
 		max-height: 100%
-		width: 100%
+		width: 100%               
 		bottom: 0
 		display: none
 		z-index: 999999

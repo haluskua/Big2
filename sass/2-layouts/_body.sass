@@ -188,16 +188,17 @@
         margin: 0 auto 
         letter-spacing: 0em
         font-size: 1.18em
-        line-height: 1.6em
+        line-height: 1.5em
         background: none  
-        font-family: Rokkitt, serif
+        font-family: Rokkitt, serif 
 
     span, .par-title
-      font-size: 1.75em
+      font-size: 1.75em         
       font-weight: bold
       text-transform: uppercase
       font-family: $font-stack-roboto
-      color: #d67fa6
+      font-family: 'Rokkitt' 
+      color: #84afbe
       line-height: 1.21em
       text-align: center
       width: 100%
@@ -207,12 +208,12 @@
       @include phone-landscape  
       @include tablet
         font-size: 1.66em                  
-        margin: auto
+        margin: auto   
       @include desktop
         font-weight: bold        
         text-transform: none
-        display: flex
-        padding: 15px 0 14px 0
+        display: flex              
+        padding: 15px 0 14px 0                                                  
         margin: 0
         align-self: flex-start
         width: 100%
@@ -353,9 +354,9 @@
         margin-bottom: 1px
       @include desktop
         display: flex
-        justify-content: flex-end
+        justify-content: center
         width: 16%
-        background-color: #e29aba
+        background-color: #84afbe
         border-bottom: 1px solid #6e7a7d 
       span
         @include desktop
@@ -764,7 +765,7 @@
       padding: 0
       font-size: 1.18em
       letter-spacing: 0em
-      line-height: 1.6em
+      line-height: 1.5em
       background: none
       font-family: Rokkitt, serif 
 
@@ -772,11 +773,11 @@
     font-size: 1.24em
     display: none
     line-height: 1.5em
-    margin-top: -30px
+    margin-top: -30px            
     @include tablet
       margin: 0 auto
       color: $black1
-      padding: 0                                 
+      padding: 0                                                
       width: 93%
       font-size: 1.45em
       padding: 12px
@@ -824,16 +825,17 @@
         border-radius: none
         background-color: #5594ab
       @include desktop
+        padding: 6px 0
         border-bottom: 1px solid #e3e6e8
         background-color: #fbf1d6
         border-radius: 5px
         width: 64%
-        background: none
+        background: none                                                
         border: none
         margin: 0
-        &:hover
+        &:hover                        
           background-color: #fbf1d6
-
+ 
     #nav-folders:nth-child(4)
       margin-bottom: 50px
    
@@ -1202,7 +1204,7 @@
     .major-title     
       font-size: 1.5em
       display: flex
-      color: #d67fa6
+      color: #84afbe
       font-weight: bold
       line-height: 1.5em
       align-self: flex-start
@@ -1211,7 +1213,7 @@
       margin-top: 0
       width: 50%                    
       padding-left: 0px
-      font-family: Helvetica
+      font-family: Rokkitt, serif
       @include phone-landscape
       @include tablet
         font-size: 1.65em
@@ -1221,7 +1223,7 @@
         margin-top: -9px 
         margin-bottom: 10px  
         font-weight: 400
-        line-height: 1.05em
+        line-height: 1.05em 
         font-weight: bold 
         font-size: 1.8em   
                                               
@@ -1334,12 +1336,12 @@
         font-weight: normal
         font-family: $font-stack-roboto
         @include phone-landscape
-        @include tablet
+        @include tablet               
           padding: 10px 30px  
           font-size: 1.42em
           margin: 26px
         @include desktop
-          font-size: 1em
+          font-size: 0.85em
           letter-spacing: 0em
           line-height: 1.4em
           width: 92% 
@@ -1412,9 +1414,9 @@
     text-transform: none
     line-height: 1.4em
     font-size: 1.6em                                      
-    color: #d67fa6
+    color: #84afbe
     font-weight: bold
-    font-family: Helvetica
+    font-family: Rokkitt, serif
     @include phone-landscape
 
     @include tablet 
@@ -1428,7 +1430,6 @@
         line-height: 1.1em
         font-weight: bold
         font-size: 1.8em 
-        color: #d67fa6
 
   .project_box
     display: flex
@@ -1437,7 +1438,7 @@
     margin-top: -10px
     border-radius: 4px
     @include desktop
-      width: auto
+      width: auto                            
       padding: 10px
       margin: 0
       background-color: rgba(255, 255, 255, 0.76)
@@ -1547,7 +1548,7 @@
       background-size: contain
       border-radius: 30px
       margin-top: 77px
-  .inner-div1
+  .inner-div1                   
     background-image: url("../dist/imgs/portfolio2.jpg")
 
   .inner-div2
@@ -1580,16 +1581,19 @@
       padding: 0
       border: none
     @include desktop
+      margin-top: 34px
       display: flex
-      height: 57%
-      width: 40%
+      height: 44%             
+      width: 33%
       margin-bottom: 0
       @include bic
+      background: none
+      display: none
 
    
   .inner-div12
     background-image: url("../dist/imgs/native_pear.png")
-    background-size: contain
+    background-size: contain                            
     padding: 0
     height: 32px
     width: 67%

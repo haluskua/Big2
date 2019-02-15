@@ -244,6 +244,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .landing-page {
+    margin-top: -22px;
     height: 63px;
   }
 }
@@ -266,7 +267,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .hetpage-li {
     width: 100%;
-    margin-top: 4px;
+    margin-top: 60px;
   }
 }
 
@@ -317,7 +318,6 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #portfolio-header {
-    margin-top: -11%;
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -333,6 +333,7 @@ h4, h6 {
     color: #ddeef5;
     font-size: 2em;
     font-weight: bold;
+    letter-spacing: 0;
     text-align: center;
     text-transform: uppercase;
     font-family: Helvetica, sans-serif;
@@ -355,28 +356,25 @@ h4, h6 {
   #bulgeword {
     color: white;
     font-weight: bolder;
-    font-size: 1.94em;
-    letter-spacing: 0.05em;
-    padding-top: 210pX;
-    margin-bottom: 25px;
+    text-shadow: 4px solid gray;
+    font-size: 3em;
+    letter-spacing: 0em;
+    padding-top: 178pX;
+    margin-bottom: 5px;
   }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #portfolio-color {
-    color: #465560;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  #portfolio-color {
-    color: #465560;
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 2.1em;
+    letter-spacing: 0;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #portfolio-color {
-    color: #596263;
     letter-spacing: 0;
   }
 }
@@ -441,8 +439,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .intro1 {
-    font-size: 3.6em;
-    letter-spacing: 0.05em;
+    font-size: 3.2em;
     margin-top: 10px;
     color: #dbf0ff;
   }
@@ -460,7 +457,7 @@ h4, h6 {
     letter-spacing: 0em;
     position: relative;
     text-align: justify;
-    font-family: "Dancing Script";
+    font-family: Georgia, Times, serif;
   }
 }
 
@@ -477,9 +474,10 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .intro, .nameohk {
-    font-size: 1.25em;
+    font-size: 2em;
     font-weight: normal;
     padding: 0;
+    letter-spacing: 0;
     margin-top: 0px;
     text-transform: normal;
     color: #ffffff;
@@ -615,7 +613,7 @@ h4, h6 {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #20718f;
+    background-color: #84afbe;
     left: 0;
     top: 0;
     padding: 18px 0;
@@ -689,8 +687,14 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #folders-container {
+    margin: 0;
+    padding-top: 54px;
     width: 100%;
     background-color: snow;
+    background-image: url(../dist/imgs/1920.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
@@ -774,7 +778,7 @@ h4, h6 {
   .nav-folders {
     width: 54%;
     border-bottom: 0.66px solid #8cb0bb;
-    background-color: #e29aba;
+    background-color: #85afbe;
     margin: 10px 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1087,6 +1091,10 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #nav {
     width: 100%;
+    background-image: url("../dist/imgs/oragne_pattern.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
@@ -1576,7 +1584,7 @@ h4, h6 {
     margin: 0 auto;
     letter-spacing: 0em;
     font-size: 1.18em;
-    line-height: 1.6em;
+    line-height: 1.5em;
     background: none;
     font-family: Rokkitt, serif;
   }
@@ -1588,7 +1596,8 @@ h4, h6 {
     font-weight: bold;
     text-transform: uppercase;
     font-family: "Roboto";
-    color: #d67fa6;
+    font-family: 'Rokkitt';
+    color: #84afbe;
     line-height: 1.21em;
     text-align: center;
     width: 100%;
@@ -1836,11 +1845,11 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 16%;
-    background-color: #e29aba;
+    background-color: #84afbe;
     border-bottom: 1px solid #6e7a7d;
   }
 }
@@ -2534,7 +2543,7 @@ h4, h6 {
     padding: 0;
     font-size: 1.18em;
     letter-spacing: 0em;
-    line-height: 1.6em;
+    line-height: 1.5em;
     background: none;
     font-family: Rokkitt, serif;
   }
@@ -2641,6 +2650,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #gd-folders li {
+    padding: 6px 0;
     border-bottom: 1px solid #e3e6e8;
     background-color: #fbf1d6;
     border-radius: 5px;
@@ -3240,7 +3250,7 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #d67fa6;
+    color: #84afbe;
     font-weight: bold;
     line-height: 1.5em;
     -ms-flex-item-align: start;
@@ -3250,7 +3260,7 @@ h4, h6 {
     margin-top: 0;
     width: 50%;
     padding-left: 0px;
-    font-family: Helvetica;
+    font-family: Rokkitt, serif;
   }
 }
 
@@ -3492,7 +3502,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .blocks section p, .blocks .one p, .one section p, .one .one p {
-    font-size: 1em;
+    font-size: 0.85em;
     letter-spacing: 0em;
     line-height: 1.4em;
     width: 92%;
@@ -3599,9 +3609,9 @@ h4, h6 {
     text-transform: none;
     line-height: 1.4em;
     font-size: 1.6em;
-    color: #d67fa6;
+    color: #84afbe;
     font-weight: bold;
-    font-family: Helvetica;
+    font-family: Rokkitt, serif;
   }
 }
 
@@ -3621,7 +3631,6 @@ h4, h6 {
     line-height: 1.1em;
     font-weight: bold;
     font-size: 1.8em;
-    color: #d67fa6;
   }
 }
 
@@ -3897,15 +3906,18 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .inner-div11 {
+    margin-top: 34px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 57%;
-    width: 40%;
+    height: 44%;
+    width: 33%;
     margin-bottom: 0;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background: none;
+    display: none;
   }
 }
 
