@@ -166,11 +166,12 @@
       background: none
       margin-bottom: 20px
     @include desktop
-      width: 84%  
+      width: 80%  
       margin-bottom: 10px
       align-self: center
       background-color: white    
       padding: 14px 28px
+      margin-left: -100px
                                                                             
     p
       font-size: 1.24em
@@ -184,40 +185,40 @@
         font-size: 1.45em
       @include desktop
         padding: 0px
-        margin: 0 auto 
+        display: flex
+        align-self: flex-start
+        margin: 0
         letter-spacing: 0em
-        font-size: 1.18em
+        font-size: 1.25em
         line-height: 1.5em
+        width: 88%
         background: none    
-        font-family: Rokkitt, serif 
 
     span, .par-title
       font-size: 1.75em         
       font-weight: bold
       text-transform: uppercase
-      font-family: $font-stack-roboto
-      font-family: 'Rokkitt' 
-      color: #161733
+      font-family: $font-stack-character
+      color: #009688
       line-height: 1.21em
       text-align: center
       width: 100%
-      padding: 10px 0 0 0px                                 
-      margin: 0 0 -11px 0   
+      margin: 0 0 -2px 0   
       font-weight: bold
       @include phone-landscape  
       @include tablet
         font-size: 1.66em                  
         margin: auto   
       @include desktop
-        font-weight: bold        
-        text-transform: none
-        display: flex              
+        display: flex   
         padding: 15px 0 14px 0                                                  
         margin: 0
+        font-weight: bolder
         align-self: flex-start
         width: 100%
+        letter-spacing: 0.15px  
         font-size: 2.4em 
-        display: flex
+        display: flex   
             
   #about_text      
     font-size: 1.24em
@@ -233,10 +234,10 @@
       padding: 0px 16px
       margin: 0 auto  
       letter-spacing: 0em
-      font-size: 1.18em
+      font-size: 1.2em
       line-height: 1.6em
       background: none  
-      font-family: Rokkitt, serif   
+      font-style: normal
       width: 100%
       margin-top: 12px
 
@@ -245,6 +246,7 @@
     @include desktop
       padding: 5px
       width: 92%
+      margin: 0
     p 
       @include desktop
         font-family: Rokkitt, serif 
@@ -303,13 +305,16 @@
     background-position: center
     @include desktop
       margin: auto
-      height: auto
+      height: auto 
       border-top: 1px solid gray
       border-left: 0px
-      background: url("../dist/imgs/pattern.jpg")
+      background: url("../dist/imgs/orange_pattern.png")
       background-size: contain
       background-repeat: repeat
       background-position: center
+      border-radius: 0
+    li
+      list-style: none
 
   // Horiontal bar with title on page
   #push-up
@@ -334,39 +339,37 @@
       background-color: rgba(121, 166, 183, 0.33)
     @include desktop
       display: flex
+      padding: 6px
       justify-content: flex-start
       border-left: none                 
-      padding: 0
       line-height: 0
-      background-color: rgba(22, 23, 51, 0.77)
+      background-color: #181525
       opacity: 1
-      width: 100%
+      width: 100%   
 
     .bar
       background-color: #85b0bf
-      width: 49%
+      width: 49%   
       padding: 4px
       @include tablet
         padding: 10px                                          
         margin-bottom: 1px
       @include desktop
         display: flex
-        justify-content: center
-        width: 16%
+        width: 34%
         background-color: rgba(255, 222, 173, 0)
       span
         @include desktop
           width: auto 
           height: auto
-          line-height: 1em
-          font-size: 0.88em 
-          font-family: $font-stack-serif
-          text-transform: uppercase  
-          font-weight: bold
-          letter-spacing: 0.18em
+          line-height: 1em               
+          font-size: 1.2em    
+          text-transform: none
+          font-weight: normal                                               
+          letter-spacing: 0.05em  
           color: #ffffff
-          padding: 3px 15px 3px 0px
-
+          padding: 3px 15px 3px 18px
+   
   #pro-title
     @include tablet
       padding: 13px
@@ -386,7 +389,7 @@
       color: #595f61
   #title_name
     color: $blue1
-    font-family: 'Rokkitt', serif
+    font-family:  $font-stack-character
     font-size: 1.75em
     padding: 24px
     text-align: center
@@ -467,16 +470,14 @@
    
   .wagai-weh
     background-color: #fffefa
-    background: url("../dist/imgs/white_patterns.png")
-    background-size: contain
-    background-repeat: no-repeat
-    background-position: center
+    background: url("../dist/imgs/1920.png")
+    @include bic
     @include desktop
-      background-size: contain
-      background-repeat: repeat
+    background-size: contain
+    background-position: top
       width: 100%
 
-  #external_link
+  #external_link  
     display: flex
     flex-direction: column
     justify-content: space-between
@@ -498,6 +499,7 @@
     justify-content: center
     @include desktop
       flex-wrap: wrap
+      margin: 0
       justify-content: space-around
       width: 100%
     h1
@@ -758,12 +760,15 @@
     @include desktop
       margin: 0
       text-align: justify
-      width: 100%
+      width: 84%
+      display: flex
+      align-self: flex-start
       background: none
       padding: 0
-      font-size: 1.18em
+      font-size: 1.25em 
       letter-spacing: 0em
-      line-height: 1.5em
+      line-height: 1.5em    
+      margin-left: -30px   
       background: none
       font-family: Rokkitt, serif 
 
@@ -781,16 +786,15 @@
       padding: 12px
     @include desktop
       display: flex
-      width: 100%
+      width: 84%
       margin-top: 0px
       padding: 0
-      font-size: 1.18em
-      line-height: 1.6em
-      font-family: Rokkitt, serif 
-      // border-left: 0.5px solid #efe8d9
- 
+      font-size: 1.25em
+      line-height: 1.6em   
+      font-family: Rokkitt, serif   
+   
   #gd-folders
-    display: flex
+    display: flex   
     justify-content: center
     flex-wrap: wrap
     width: 100%
@@ -994,6 +998,8 @@
     @include desktop
       margin-top: 0
       width: 12%
+      display: flex
+      align-self: flex-start  
 
   .rgdp
     display: flex
@@ -1202,7 +1208,7 @@
     .major-title     
       font-size: 1.5em
       display: flex
-      color: #161733
+      color: #009688
       font-weight: bold
       line-height: 1.5em
       align-self: flex-start
@@ -1211,23 +1217,23 @@
       margin-top: 0
       width: 50%                    
       padding-left: 0px
-      font-family: Rokkitt, serif
+      font-family: $font-stack-character
       @include phone-landscape
       @include tablet
-        font-size: 1.65em
+        font-size: 1.35em
       @include desktop 
         padding: 0  
         width: 44%                                                    
         margin-top: -9px 
         margin-bottom: 10px  
-        font-weight: 400              
         line-height: 1.05em 
-        font-weight: bold 
-        font-size: 1.8em   
-                                              
+        font-weight: bold
+        text-transform: uppercase  
+        font-size: 1.45em   
+                                                  
   .blocks, .one
     display: flex
-    height: 100%
+    height: 100%  
     width: 100%
     flex-wrap: wrap
     justify-content: center
@@ -1331,7 +1337,7 @@
         font-weight: 500 
         margin: 0
         font-weight: normal
-        font-family: $font-stack-roboto
+        font-family: $font-stack-serif
         @include phone-landscape
         @include tablet               
           padding: 10px 30px  
@@ -1407,26 +1413,28 @@
     display: none
     margin-top: -23px                              
     margin-bottom: 22px
-    margin-left: 12px
     text-transform: none
     line-height: 1.4em
     font-size: 1.6em                                      
-    color: #161733
+    color: #009688
     font-weight: bold
-    font-family: Rokkitt, serif
+    text-transform: uppercase
+    font-style: italic
+    font-family: $font-stack-character
     @include phone-landscape
-
     @include tablet 
       padding-right: 8px
       margin-top: 11px
       margin-bottom: 10px
-    @include desktop 
+    @include desktop  
         padding-left: 0
         width: 44%
-        margin: 48px 0px 8px 0
-        line-height: 1.1em
-        font-weight: bold
-        font-size: 1.8em 
+        margin: 30px 0 0px -30px
+        line-height: 1.5em
+        font-weight: normal
+        letter-spacing: 0.04em
+        font-style: normal
+        font-size: 1.35em 
 
   .project_box
     display: flex
@@ -1506,6 +1514,9 @@
       display: flex
       flex-flow: row
       width: 100%
+      background-image: url('../dist/imgs/1920.png')
+      @include bic
+      background-repeat: repeat
 
   .box
     display: flex
@@ -1562,11 +1573,11 @@
 
   .inner-div11
     display: flex
-    background-image: url("../dist/imgs/ve_logo9.png")
+    background-image: url("../dist/imgs/ve_logo10.png")
     @include bic   
     margin-top: 5px
     width: 100%
-    height: 50%
+    height: 46%
     border: none
     @include phone-landscape
       height: 82%
@@ -1583,7 +1594,6 @@
       height: 44%             
       width: 33%
       margin-bottom: 0
-      @include bic
       display: none
                                  
   .inner-div12

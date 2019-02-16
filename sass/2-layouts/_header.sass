@@ -123,7 +123,6 @@
 		margin: 0 auto
 		padding-top: 30px
 		color: #ddeef5
-		font-size: 1.3em
 		font-weight: bold
 		letter-spacing: 0
 		text-align: center
@@ -135,30 +134,29 @@
 			font-size: 2.6em
 		@include desktop
 			color: white
-			font-weight: bolder
-			text-shadow: 4px solid gray
-			font-size: 3em
+			font-size: 2.5em
 			letter-spacing: 0em
-			padding-top: 100pX
-			margin-bottom: 5px
+			padding-top: 40px 
+			margin-bottom: 1px
 
 	#portfolio-color                                        
-		color: #161733
-		font-weight: bolder
-		font-size: 1em !important                                                
+		color: #26253c                                                 
+		font-size: 1em                                               
 		letter-spacing: 0
-		//mediaQuerie
-		@include tablet
+		font-family: Arial, Helvetica, sans-serif
+		//mediaQuerie  
+		@include tablet    
 		//mediaQuerie           
 		@include desktop
-		font-size: 2.1em
-		letter-spacing: 0
-
+		font-weight: bolder
+		font-size: 2.66em     
+		letter-spacing: 0.01em 
+               
   .ohk-logo
-    width: 33%
+    width: 33%   
     margin: auto
     border: 1px solid
-    height: 180px
+    height: 180px    
 
 	#hetinfo
 		height: 40px
@@ -205,14 +203,14 @@
 		text-align: justify
 		font-family: $font-stack-serif
 		@include tablet
-			height: 60px
+			height: 60px  
 			margin-top: 29px
 			font-weight: normal
 			text-shadow: none
 			font-size: 2.15em
 			position: relative
 		@include desktop
-			font-size: 1.8em
+			font-size: 2.1em
 			font-weight: normal             
 			padding: 0    
 			letter-spacing: 0                                                
@@ -280,10 +278,8 @@
 			margin: 0
 			height: 52px
 			width: 13vw
-			background-color: #161733
 			background-image: url('../dist/imgs/ve_logo9.png')
-			background-size: contain
-
+			background-size: contai
 		@include desktop
 			display: flex
 			margin: 0 auto
@@ -294,9 +290,8 @@
 			border-radius: 0 0px 4px 4px
 			background-position: center
 			margin-top: 0px
-			background-image: url('../dist/imgs/ve_logo9.png')
+			background-image: url('../dist/imgs/ve_logo10.png')
 			@include bic
-			background-color: #161733
 			left: 0
 			top: 0                          
 			padding: 18px 0                                      
@@ -338,15 +333,13 @@
 			margin: 0
 			padding-top: 54px
 			width: 100%
-			background-color: snow
-			background-image: url(../dist/imgs/1920.png)
-			@include bic
-		  
+			background-color: rgba(255, 255, 255, 0)
+
 	.reduced    
-			display: flex
+			display: flex    
 			flex-direction: column
 			align-items: center
-			margin: 0   
+			margin: 0      
 			@include tablet
 				height: 61px
 				background-color: none  
@@ -445,9 +438,9 @@
 			background-image: url("../dist/imgs/orange_pattern.png")
 			@include bic
 			&:hover
-				background-color: #e29aba
+				background-color: #090617
 			&:visited, &:active, &:focus, &:hover
-				background-color: #e29aba
+				background-color: #090617
 				font-size: 0.9em  
 				border-bottom: 1.3px solid #465c63  
 
@@ -640,11 +633,11 @@
 			position: fixed
 			align-self: center 
 			top: 0   
-			background-color: white
+			background-color: #181525
 
-	.mobile-container .sticky
-		z-index: 999999999999
-		@include tablet
+	.mobile-container .sticky    
+		z-index: 999999999999 
+		@include tablet 
 			z-index: 99999999
 		@include desktop
 			z-index: 99999999
