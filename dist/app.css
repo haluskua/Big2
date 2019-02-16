@@ -1860,7 +1860,6 @@ h4, h6 {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    padding: 9px;
     background-color: white;
   }
 }
@@ -1872,8 +1871,9 @@ h4, h6 {
     padding: 11px;
     font-weight: normal;
     letter-spacing: 0.03em;
+    color: #090a0c;
+    font-weight: bold;
     font-size: 1em;
-    font-size-color: #595f61;
   }
   #title_name {
     color: #4286a0;
