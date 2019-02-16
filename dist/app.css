@@ -356,7 +356,7 @@ h4, h6 {
     color: white;
     font-size: 2.5em;
     letter-spacing: 0em;
-    padding-top: 40px;
+    padding-top: 60px;
     margin-bottom: 1px;
   }
 }
@@ -464,7 +464,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .intro, .nameohk {
-    font-size: 2.2em;
+    font-size: 2em;
     font-weight: normal;
     padding: 0;
     letter-spacing: 0;
@@ -1866,15 +1866,23 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .pro-title {
-    color: #f2e7da;
-    font-size: 1.32em;
+    color: #ffffff;
+    font-size: 1.2em;
     padding: 11px;
     font-weight: normal;
     letter-spacing: 0.03em;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .pro-title {
     color: #090a0c;
     font-weight: bold;
     font-size: 1em;
   }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   #title_name {
     color: #4286a0;
     font-family: "Cabin Sketch", Garamond;
@@ -3169,7 +3177,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .close-caption {
-    color: #181525;
+    color: #cecfd1;
     font-size: 1em;
     margin: 5px;
   }
@@ -3439,7 +3447,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .blocks section p, .blocks .one p, .one section p, .one .one p {
-    font-size: 1em;
+    font-size: 0.89em;
     line-height: 1.35em;
     text-align: justify;
     font-style: italic;
