@@ -31,18 +31,15 @@
         background-repeat: repeat-y
         flex-direction: column
         justify-content: flex-start
+        background-color: #181525
         @include tablet
-          background: none
-
         @include desktop
           border: none
-          background: none
           background-size: contain
           align-items: center
           width: 100%
-          background: none
-
-  #about
+          
+  #about   
     width: 100vw
     height: auto
     @include desktop
@@ -115,14 +112,15 @@
     justify-content: center
     letter-spacing: 0.05em
     text-transform: uppercase
-    border-radius: 3px
-    font-family: $font-stack-character
+    border-radius: 1.5px
+    font-family: $font-stack-serif 
     @include desktop
       font-size: 1.05em
       width: 100%
       padding: 0
-      color: #324c17
+      color: white
       margin-top: 100px
+      padding-top: 10px
       background-color: rgba(255,255,255,0)
 
   .gallery-link
@@ -154,6 +152,7 @@
     margin-bottom: 20px
     line-height: 1.44em
     color: #3c3937
+    color: white
     font-weight: normal
     font-family: Rokkitt, serif 
     padding: 0px
@@ -169,7 +168,6 @@
       width: 80%  
       margin-bottom: 10px
       align-self: center
-      background-color: white    
       padding: 14px 28px
       margin-left: -100px
                                                                             
@@ -194,11 +192,11 @@
         width: 88%
         background: none    
 
-    span, .par-title
+    span, .par-title     
       font-size: 1.75em         
       font-weight: bold
       text-transform: uppercase
-      font-family: $font-stack-character
+      font-family: $font-stack-character   
       color: #009688
       line-height: 1.21em
       text-align: center
@@ -299,8 +297,8 @@
     width: 100vw
     border-radius: 4px
     height: auto
-    background: url("../dist/imgs/pattern.jpg")
-    background-size: cover
+    background: url("../dist/imgs/orange_pattern.png")
+    background-size: contain
     background-repeat: repeat-x
     background-position: center
     @include desktop
@@ -344,6 +342,7 @@
       border-left: none                 
       line-height: 0
       background-color: #181525
+      background-color: rgba(24, 21, 37, 0.24)
       opacity: 1
       width: 100%   
 
@@ -380,17 +379,18 @@
       background-color: white
 
   .pro-title
-    color: #324148
-    font-size: 1.2em
-    padding: 8px
-    font-weight: bold
+    color: #f2e7da
+    font-size: 1.32em
+    padding: 11px
+    font-weight: normal
+    letter-spacing: 0.03em
     @include desktop
     font-size: 1em
       color: #595f61
   #title_name
     color: $blue1
     font-family:  $font-stack-character
-    font-size: 1.75em
+    font-size: 1.75em 
     padding: 24px
     text-align: center
     font-weight: bold
@@ -468,10 +468,7 @@
   #film-projects
     @include desktop
    
-  .wagai-weh
-    background-color: #fffefa
-    background: url("../dist/imgs/1920.png")
-    @include bic
+  .wagai-we
     @include desktop
     background-size: contain
     background-position: top
@@ -484,12 +481,12 @@
     align-items: center
     text-decoration: none
     margin-top: 0
-    background-color: #84afbe
+    background-color: #302e42
     border-radius: 4px
     @include desktop
       &:hover
         background-color: #e29aba
-
+ 
   #content-holder
     margin-top: 10px
     width: 100vw
@@ -525,11 +522,7 @@
     justify-content: space-between
     text-decoration: none
     width: 100%
-    height: 100vh
-    background-size: cover
-    background-repeat: no-repeat
-    background-position: center
-    background-image: url('../dist/imgs/1920.png')
+    height: 100vhs
     @include desktop
       margin: 0 auto
       height: 100%
@@ -544,7 +537,7 @@
         font-family: $font-stack-Dancing-script
         font-size: 1.5em
         text-align: justify
-        color: #4f5852
+        color: $black1
         text-align: center
         font-weight: lighter
         padding: 21px
@@ -556,12 +549,11 @@
         @include desktop
           font-size: 1.75em
           letter-spacing: 0.02em
-          margin-bottom: 0
-          color: #292824
+          margin-bottom: 0  
 
   .sm-container
-    display: flex
-    align-items: flex-end
+    display: flex 
+    align-items: flex-end   
     justify-content: space-between
     width: 80%
     @include desktop
@@ -683,9 +675,8 @@
     text-align: center
     font-size: 1.05em
     font-weight: bolder
-    background-color: rgba(176, 196, 222, 0.5)
     border-bottom: 2px solid greenyellow
-    color: #465560 !important 
+    color: #000000 !important 
     height: 35px
     border-bottom: none
     @include phone-landscape
@@ -883,12 +874,11 @@
     text-align: center
     background-size: contain
     background-position: center center
-    background-color: rgba(247, 239, 214, 1)
+    background-color: #181524
     background-repeat: no-repeat
     overflow: hidden
     z-index: 999999
     @include desktop
-      background-color: #eae8d4
       width: 100%
 
   .fs-gal-view h1
@@ -950,7 +940,7 @@
     height: auto
     float: left
     padding: 7px
-    border: 4px solid rgb(247, 238, 211)
+    border: 1px solid #2e2c41
     @include tablet
       width: 50%
     @include desktop
@@ -968,7 +958,6 @@
     margin-top: 0px
     margin-bottom: 6px
     margin-top: 0px
-    border: 6px solid rgb(247, 238, 211)
     @include phone-landscape
     @include tablet
       width: 70%
@@ -999,6 +988,7 @@
       margin-top: 0
       width: 12%
       display: flex
+      margin-top: 50px
       align-self: flex-start  
 
   .rgdp
@@ -1183,14 +1173,16 @@
       background: none
       border: none
       width: auto
+
   .close-caption
-    color: #607D8B
+    color: #181525
+    font-size: 1em
     margin: 5px
              
   .small-intro
     display: flex
     flex-flow: column
-    justify-content: flex-start
+    justify-content: flex-start   
     align-items: center
     width: 100%
     margin-bottom: 12px
@@ -1247,6 +1239,7 @@
       justify-content: center
       width: 100%
       height: auto
+      margin-bottom: 10px
       margin: auto
       @include desktop   
         width: 38vw
@@ -1259,8 +1252,7 @@
         height: 100%
         margin-bottom: 50px
         margin-top: 0
-        border: 1px solid #eee7d7
-
+        
       div   
         display: flex
         flex-direction: column
@@ -1279,10 +1271,6 @@
       #website_background2
         display: flex
         flex-direction: column
-        background: url("../dist/imgs/white_pattern.png")
-        background-size: contain
-        background-position: center
-        background-repeat: repeat
         height: auto
         width: auto
         margin: auto
@@ -1291,11 +1279,11 @@
         margin: 0
         @include tablet
           margin-top: 30px
-        @include desktop
-          margin-top: 0
+        @include desktop 
+          margin-top: 0    
           background-image: none
         img
-          width: 92%
+          width: 92%                          
           height: auto
           margin: auto
           @include tablet
@@ -1413,6 +1401,7 @@
     display: none
     margin-top: -23px                              
     margin-bottom: 22px
+    margin-left: 12px
     text-transform: none
     line-height: 1.4em
     font-size: 1.6em                                      
@@ -1514,9 +1503,6 @@
       display: flex
       flex-flow: row
       width: 100%
-      background-image: url('../dist/imgs/1920.png')
-      @include bic
-      background-repeat: repeat
 
   .box
     display: flex
