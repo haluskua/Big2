@@ -364,12 +364,20 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   #portfolio-color {
     color: #181525;
-    font-size: 1em;
+    font-weight: bolder;
+    font-size: 2.4em;
     letter-spacing: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #portfolio-color {
     font-size: 2.6em;
   }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   #portfolio-color .ohk-logo {
     width: 33%;
     margin: auto;
@@ -443,7 +451,7 @@ h4, h6 {
     margin: auto;
     margin-top: 14px;
     color: #e9f9ff;
-    font-size: 1.57em;
+    font-size: 1.5em;
     letter-spacing: 0em;
     position: relative;
     text-align: justify;
@@ -558,7 +566,7 @@ h4, h6 {
     width: 19vw;
     margin-top: 9px;
     margin-left: 9px;
-    background-image: url("../dist/imgs/ve_logo10.png");
+    background-image: url("../dist/imgs/newlogo.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -580,8 +588,10 @@ h4, h6 {
     margin: 0;
     height: 52px;
     width: 13vw;
-    background-image: url("../dist/imgs/ve_logo9.png");
-    background-size: contai;
+    background-image: url("../dist/imgs/newlogo.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
@@ -598,7 +608,7 @@ h4, h6 {
     border-radius: 0 0px 4px 4px;
     background-position: center;
     margin-top: 0px;
-    background-image: url("../dist/imgs/ve_logo10.png");
+    background-image: url("../dist/imgs/newlogo.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -782,9 +792,10 @@ h4, h6 {
   }
   .menu2 a {
     height: 100%;
-    line-height: 35px;
+    line-height: 28px;
     width: 97%;
     font-size: 0.98em;
+    border-radius: 4px;
   }
 }
 
@@ -2433,11 +2444,10 @@ h4, h6 {
     display: none;
     height: auto;
     width: 45%;
-    border: 0.5px solid #bac6cb;
     border-top: 0;
     margin-bottom: 4px;
     border-radius: 4px;
-    background-color: rgba(176, 196, 222, 0.5);
+    background-color: #3b3a49;
   }
 }
 
@@ -2619,17 +2629,17 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #gd-folders li {
-    padding: 6px 0;
+    margin: 6px 0;
     border-bottom: 1px solid #e3e6e8;
     background-color: #fbf1d6;
     border-radius: 5px;
     width: 64%;
     background: none;
     border: none;
-    margin: 0;
   }
   #gd-folders li:hover {
     background-color: #fbf1d6;
+    border: none;
   }
 }
 
@@ -3847,7 +3857,7 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-image: url("../dist/imgs/ve_logo10.png");
+    background-image: url("../dist/imgs/newlogo.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
