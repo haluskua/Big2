@@ -5,47 +5,43 @@
 		display: flex
 		height: 100vh
 		overflow: hidden
-		align-items: flex-start
-		background-color: #85b0bf
+		align-items: center
+		background-color: #000000
 		@include bic    
 		@include tablet
 			flex-grow: 1
 			height: 100vh   
 			max-width: 100vw   
-			background: none
-			background-color: #85b0bf
 		@include desktop
-			display: flex
-			justify-content: center
-			flex-direction: column
-			background-color: #85b0bf
-			background-image: none
+			// display: flex
+			// justify-content: center
+			// flex-direction: column
+			// background-image: none
+			// margin-left: 18%     
 
 	.Colsplit-between               
 		width: 100%
-		height: 100%
-		display: flex
+		height: auto
+		display: flex   
 		position: relative
 		align-items: center
 		flex-direction: column
-		background-image: url("../dist/imgs/wainui_sunset.jpg") 
-		@include bic                           
+		background-image: url("../dist/imgs/ohk_pattern.png")
+		background-size: contain
 		@include phone-landscape
 			opacity: 0.9              
 			height: 86%
 		@include tablet
 			width: 100vw
 			height: 100%
-			margin: auto
+			margin-top: 41%
 			padding: 0
-			margin-top: 67px
 		@include desktop
 			height: 100%   
-			margin-top: 0                                        
-			margin-left: 10%                 
-			// background-image: url("../dist/imgs/ohk_pattern.png") 
-			background-image: url("../dist/imgs/wainui_sunset.jpg") 
-			@include bic                         
+			margin-left: 10%    
+			margin: auto              
+			background-image: url("../dist/imgs/ohk_pattern.png") 
+			@include bic 
 		  
 	#Colsplit-box1                  
 		height: 93%   
@@ -118,44 +114,49 @@
 			width: 100%
 			justify-content: center
 			padding: 0
+			margin-top: 10%
  
 	#bulgeword
 		margin: 0 auto
 		padding-top: 30px
 		color: #ddeef5
+		font-size: 1.4em  
 		font-weight: bold
 		letter-spacing: 0
-		text-align: center
-		text-transform: uppercase
-		font-family: $font-stack-serif
+		font-family: $font-stack-Raleway
 		@include phone-landscape
 			font-size: 1.87em
 		@include tablet
 			font-size: 2.6em
 		@include desktop                                                     
-			color: white
+			color: #ffffff
 			font-size: 2.5em
+			line-height: 1.1em
+			font-weight: 500
 			letter-spacing: 0em
 			padding-top: 60px 
-			margin-bottom: 1px
+			margin-bottom: 26px    
 
-	#portfolio-color                                        
-		color: #181525  
-		font-weight: bolder                                    
-		font-size: 2.4em                                               
+	#portfolio -color                                                                 
+		color: #ffffff
+		font-size: 1.1em                                                  
 		letter-spacing: 0
-		font-family: Arial, Helvetica, sans-serif
-		//mediaQuerie  
+		text-transform: none
+		font-family: $font-stack-open-sans
+		//mediaQuerie     
 		@include tablet       
-		//mediaQuerie           
+		//mediaQuerie             
 		@include desktop                
-			font-size: 2.6em       
-               
-  .ohk-logo
-    width: 33%   
-    margin: auto     
-    border: 1px solid 
-    height: 180px    
+			font-size: 0.86em   
+			font-weight: normal 
+	#myName
+		color: pink   
+							
+	.ohk-logo          
+		width: 33%   
+		margin: auto     
+		border: 1px solid   
+		height: 180px    
 
 	#hetinfo
 		height: 40px
@@ -164,13 +165,13 @@
 			margin-top: 3px
 		@include tablet
 			width: 100%
-			height: 55px
+			height: 55px    
 			line-height: 167px
 			background-size: contain
 		@include desktop
 			height: 40px
 			background-size: contain
-			border: none
+			border: none  
 			margin: 0
 
 	.intro1
@@ -194,13 +195,13 @@
 	.intro, .nameohk
 		display: flex
 		margin: auto
-		margin-top: 14px
-		color: #e9f9ff
-		font-size: 1.5em
+		margin-top: 30px
+		color: #ffc0cb
+		font-size: 1.35em             
 		letter-spacing: 0em                   
 		position: relative
 		text-align: justify
-		font-family: $font-stack-serif
+		font-family: $font-stack-Raleway 
 		@include tablet
 			height: 60px  
 			margin-top: 29px
@@ -209,7 +210,7 @@
 			font-size: 2.15em
 			position: relative
 		@include desktop
-			font-size: 2em
+			font-size: 1.2em
 			font-weight: normal             
 			padding: 0    
 			letter-spacing: 0                                                
@@ -257,43 +258,7 @@
 				background-color: white
  
 	#logo-space                               
-		position: fixed
-		display: flex
-		justify-content: center
-		border-radius: 4px
-		height: 68px
-		width: 19vw                                  
-		margin-top: 9px  
-		margin-left: 9px 
-		background-image: url('../dist/imgs/newlogo.png')
-		@include bic
-		@include phone-landscape
-			right: -16px
-			bottom: 0
-			display: none
-		@include tablet
-			top: 3px
-			left: -14px
-			margin: 0
-			height: 52px
-			width: 13vw
-			background-image: url('../dist/imgs/newlogo.png')
-			@include bic
-		@include desktop
-			display: flex
-			margin: 0 auto
-			width: 100%
-			height: 88px
-			position: relative
-			padding: 10px 0 
-			border-radius: 0 0px 4px 4px
-			background-position: center
-			margin-top: 0px
-			background-image: url('../dist/imgs/newlogo.png')
-			@include bic
-			left: 0
-			top: 0                          
-			padding: 18px 0                                      
+		display: none
 
 	.logo-desc
 		width: 100%
@@ -310,17 +275,17 @@
 			letter-spacing: 0.06em
 
 	#folders-container
-		padding: 0
-		width: 86%
+		padding: 18px 0
+		margin: 0
+		width: 100%
 		height: 100%
 		display: flex  
 		flex-flow: column
 		align-items: center
 		border-radius: 4.5px 4.5px 0 0
-		background-color: #0b0825
+		background-color: #060410
 		@include tablet                  
 			width: 86vw   
-			margin-left: 83px
 			padding: 0
 			height: auto
 			display: flex
@@ -329,12 +294,13 @@
 			background: none
 			justify-content: center
 		@include desktop    
-			margin: 0
-			padding-top: 54px
-			width: 100%
-			background-color: rgba(255, 255, 255, 0)
-
-	.reduced    
+			display: flex 
+			flex-flow: row 
+			width: 90vw
+			padding: 0
+			justify-content: center
+                                      
+	.reduced        
 			display: flex    
 			flex-direction: column
 			align-items: center
@@ -353,17 +319,14 @@
 	.nav-folders 
 		height: 30px
 		display: none
-		align-self: center  
+		display: flex
+		align-self: flex-start  
 		padding: 3px
 		list-style: none   
-		margin-bottom: 11px
-		margin-top: 11px
-		border: 1px solid #ffffff
-		background-color: #005d7f
+		margin-bottom: 8px
 		width: 46%
-		border-radius: 4px
 		@include phone-landscape
-			width: 19%
+			width: 19%          
 			margin-top: 4px
 		@include tablet
 			width: 100%
@@ -376,9 +339,7 @@
 			padding: 0
 			margin-bottom: 0
 		@include desktop
-			width: 54%
-			border-bottom: 0.66px solid #8cb0bb
-			background-color: #161733
+			width: 73%
 			margin: 10px 0
 			display: flex
 			padding: 0  
@@ -435,12 +396,10 @@
 			background-color: none
 			border: none
 			justify-content: center
-			background-image: url("../dist/imgs/orange_pattern.png")
-			@include bic
 			&:hover
-				background-color: #090617
+				background-color: $blue1
 			&:visited, &:active, &:focus, &:hover
-				background-color: #090617
+				background-color: $blue1
 				font-size: 0.9em  
 				border-bottom: 1.3px solid #465c63  
 
@@ -468,16 +427,21 @@
 				transition: 0.06s ease-in     
 				font-style: normal
 
-	.nav-archives
-		font-family: Helvetica
-		font-weight: bolder 
+	.nav-archives     
+		display: flex
+		align-self: flex-start
+		font-family: $font-stack-Raleway                    
+		font-weight: bolder  
+		padding-left: 30px
 		font-size: 1.2em
 		color: $proWhite
 		@include tablet
 			font-size: 1.1em
 			text-align: center
 			background-color: none    
-			font-weight: normal
+			font-weight: normal 
+			padding: 8px 12px 
+			width: auto 
 		@include desktop
 			color: #ffffff
 			text-align: center
@@ -492,14 +456,13 @@
 			// 	background-color: $mencol
 			// 	width: 100%
 			// 	height: auto
-			// 	padding: 0
 
 	.nav-archives:visited
 			font-style: oblique
 			color: red
 
 	.haus
-		bottom: 0
+		top: 0
 		width: 100%
 		height: 40px
 		display: flex
@@ -536,14 +499,15 @@
 			position: relative
 			flex-flow: row-reverse
 			justify-content: space-between
-			background-color: rgba(0, 93, 127, 0.77)
+			background-color: #181525
+			border-bottom: 1px solid pink
 			//mediaQuerie
 			@include phone-landscape
 				width: 96%
 			//mediaQuerie
 			@include desktop
 				display: flex
-
+ 
 			li
 				width: 50%
 				height: 100%
@@ -551,14 +515,13 @@
 				cursor: pointer
 				position: relative
 				align-items: center
-				flex-direction: column
+				flex-direction: column   
 				justify-content: center
-				background-color: rgba(133, 176, 191, 0.76)
 
 	.haus-menu
-		color: #f5f5dc
+		color: #f5f5dc                                                         
 		display: flex
-		font-size: 1em
+		font-size: 1em   
 		font-weight: bolder
 		line-height: 24px
 		letter-spacing: 0.08em
@@ -585,68 +548,82 @@
 		background-color: #4f5852
 
 	#nav
+		@include tablet
+			display: flex
+			align-self: center
 		@include desktop
-			width: 100%
-			background-image: url('../dist/imgs/oragne_pattern.png')
-			@include bic
+			display: flex
+			align-self: center
 
 	.mobile-container
 		max-height: 100%
 		width: 100%               
-		bottom: 0
+		top: 0
 		display: none
 		z-index: 999999
 		position: fixed
 		justify-content: space-around
 		border-radius: 18px 0 0 0
+		background-color: #84afbe
 		//mediaQuerie
 		@include phone-landscape
 			justify-content: flex-start
 		//mediaQuerie
 		@include tablet
+			display: flex 
+			flex-direction: column
+			justify-content: space-around
 			height: 67px
 			top: 0
 			left: 0
 			width: 100%
 			border: none
-			display: flex
 			z-index: 99999999
 			position: fixed
-			background-color: #fffdf4
 			background-image: none
 			align-items: flex-start
-			justify-content: space-around
+			justify-content: space-around    
 		//mediaQuerie
 		@include desktop
-			flex-direction: column
-			left: 0
-			width: 18%
-			height: 100vh
-			border: none
-			border-radius: 0
 			display: flex
-			flex-wrap: wrap
-			align-items: center
-			position: fixed
-			align-self: center 
-			top: 0   
-			background-color: #181525
+			flex-direction: column
+			justify-content: space-around
+			height: 67px
+			top: 0
+			left: 0
+			width: 100%
+			border: none
+			border-radius: 4px   
+			// flex-direction: column
+			// left: 0
+			// width: 18%
+			// height: 100vh
+			// border: none
+			// border-radius: 0
+			// display: flex
+			// flex-wrap: wrap
+			// align-items: center
+			// position: fixed
+			// align-self: center 
+			// flex-flow: row
+			// top: 0      
+			// background-color: black
 
 	.mobile-container .sticky    
 		z-index: 999999999999 
-		@include tablet 
+		@include tablet  
 			z-index: 99999999
 		@include desktop
 			z-index: 99999999
 
 	#menu-buttons
 		position: fixed
-		left: 8px
-		bottom: 8px
+		right: 8px
+		top: 8px
 		width: 8%
 		height: 6%
 		display: flex
-		justify-content: flex-start
+		justify-content: flex-start   
 		//mediaQuerie
 		@include tablet
 			display: none
@@ -671,7 +648,7 @@
 		cursor: pointer
 		line-height: 37px
 		text-align: center
-		border-radius: 12px
+		border-radius: 4px
 		justify-content: center
 		background-color: #a3c5d2
 		//mediaQuerie

@@ -83,7 +83,7 @@ $(document).ready(function(){
     });
 // moving body to fit under manu top bar by offseeting its height
     var stickyNavTop = $('.nav-folders').offset().top;
-    var headerHeight = 0;
+    var headerHeight = 40;
       $('.hamburger-menu, .logo-desc, .grafix, .box').click(function(e) {
           var linkHref = $(this).attr('href');
           $('html, body').animate({
@@ -121,7 +121,6 @@ $(document).ready(function(){
 
 
 // -------------------------------
-
 
             if(jQuery (window).width() >801){
               $("#hide_h2, #hide_h2_gd, #hide_h2_dm, #hide_h2_t").css("display", "flex");
@@ -204,25 +203,6 @@ $(document).ready(function(){
 
                   });
 
-                // 88888888888888888888888888888888888888888888
-                  // DRY CODE TEST
-                  // $(".open-caption, .gdReadmore, .tReadmore, .dmReadmore").on("click", function() {
-                  //   $("#skills-descOpen, #gd-descOpen, #t-descOpen, #dm-descOpen").css("display", "none");
-                  //   $("#skills-descClose, #gd-descClose, #t-descClose, #dm-descClose").css("display", "flex");
-                  //   $(".close-caption, .gdClose, .tClose, .scpmt-dm").css("z-index", "999");
-                  //   $(".scpmt, .scpmt-gd, .scpmt-t, .dmClose").css("display", "flex");
-                  //   $("#hide_h2, #hide_h2_gd, #hide_h2_t, #hide_h2_dm").css("display", "flex");
-                  // });
-                  //
-                  // $(".close-caption, .gdClose, .tClose, .dmClose").on("click", function(){
-                  //   $("#skills-descOpen, #gd-descOpen, #t-descOpen, #dm-descOpen, .gdReadmore ").css("display", "flex");
-                  //   $("#skills-descClose, #t-descClose, #dm-descClose, .gdClose").css("display", "none");
-                  //   $(".open-caption, .scpmt-gd, .scpmt-t, .scpmt-dm").css("z-index", "999");
-                  //   $(".scpmt, .scpmt-gd, .tReadmore, .dmReadmore").css("display", "none");
-                  //   $("#hide_h2, #hide_h2_gd, #hide_h2_t, #hide_h2_dm").css("display", "none");
-                  // });
-
-                  // 88888888888888888888888888888888888888888888
                 }
 
 /////////////////////////////////////////////////////////////////////

@@ -7,7 +7,7 @@
     height: 100%
     width: 100%
     margin: 0 auto
-
+       
     main          
       height: auto
       display: flex
@@ -17,7 +17,7 @@
       flex-direction: column
       justify-content: flex-start
       @include desktop
-        margin-left: 18%
+
 
       section
         display: flex
@@ -25,22 +25,17 @@
         width: 100%
         overflow: hidden
         position: relative
-        background: url("../dist/imgs/ohk_pattern.png")
-        background-size: contain
-        background-position: center
-        background-repeat: repeat-y
         flex-direction: column
         justify-content: flex-start
         background-color: #181525
+        background-color: #ffffff
         @include tablet
         @include desktop
           border: none
-          background-size: contain
-          align-items: center
-          width: 100%
+          display: flex
           
   #about   
-    width: 100vw
+    width: 100vw  
     height: auto
     @include desktop
 
@@ -52,10 +47,11 @@
     visibility: visible
     align-items: center
     flex-direction: column
-    padding: 0 22px 0 22px
+    padding: 0
     justify-content: flex-start
     @include desktop
       margin-bottom: 33px
+      align-items: flex-start
 
   .main-paragraph
     margin: auto
@@ -100,28 +96,34 @@
 
   .animation-caption, .gallery-link
     display: flex
-    width: 60%
-    padding: 8px
-    margin-top: 8px
-    margin: 0 auto
-    color: black
+    width: auto
+    margin: 0
+    color: #181525
     text-align: center
     font-weight: bold
-    font-size: 0.82em
-    background-color: white
+    font-size: 0.86em
+    padding: 11px
     justify-content: center
     letter-spacing: 0.05em
     text-transform: uppercase
-    border-radius: 1.5px
-    font-family: $font-stack-serif 
+    font-family: $font-stack-Raleway-bold
     @include desktop
-      font-size: 1.05em
+      font-size: 1.05em 
       width: 100%
       padding: 0
       color: white
-      margin-top: 100px
+      margin-top: 30px
       padding-top: 10px
-      background-color: rgba(255,255,255,0)
+      
+  .spec
+    font-family: $font-stack-Raleway  
+    font-size: 0.88em
+    width: 100%   
+    color: white  
+    padding: 0 
+    margin-top: 12px    
+    @include desktop 
+      padding: 10px             
 
   .gallery-link
     height: auto
@@ -165,67 +167,66 @@
       background: none
       margin-bottom: 20px
     @include desktop
-      width: 80%  
+      justify-content: center
+      width: 100%  
       margin-bottom: 10px
       align-self: center
-      padding: 14px 28px
-      margin-left: -100px
+      padding: 14px 0px
                                                                             
     p
-      font-size: 1.24em
-      line-height: 1.5em
+      font-size: 11pt
+      line-height: 18pt
       color: $black1
       padding: 0 0 16px 0px
       margin-bottom: -8px
       font-weight: normal
-      font-family: Rokkitt, serif 
+      max-height: 85%
+      font-family: $font-stack-Raleway
       @include tablet 
-        font-size: 1.45em
+        font-size: 13pt
+        line-height: 20pt
       @include desktop
         padding: 0px
-        display: flex
-        align-self: flex-start
-        margin: 0
+        display: flex  
+        align-self: flex-start    
         letter-spacing: 0em
-        font-size: 1.25em
-        line-height: 1.5em
-        width: 88%
+        font-size: 15pt
+        line-height: 24pt
+        width: 88%      
         background: none    
-
+                 
     span, .par-title     
-      font-size: 1.75em         
+      font-size: 1.42em                      
       font-weight: bold
-      text-transform: uppercase
-      font-family: $font-stack-character   
-      color: #009688
-      line-height: 1.21em
+      font-family: $font-stack-Raleway   
+      color: #04C2C9
+      line-height: 2.1em
       text-align: center
       width: 100%
-      margin: 0 0 -2px 0   
       font-weight: bold
       @include phone-landscape  
       @include tablet
         font-size: 1.66em                  
-        margin: auto   
+        margin: auto                         
       @include desktop
         display: flex   
         padding: 15px 0 14px 0                                                  
         margin: 0
         font-weight: bolder
         align-self: flex-start
-        width: 100%
+        width: auto
         letter-spacing: 0.15px  
-        font-size: 2.4em 
+        font-size: 1.6em 
         display: flex   
             
   #about_text      
-    font-size: 1.24em
-    line-height: 1.5em
+    font-size: 12pt
+    line-height: 17pt
     color: $black1
     padding: 0 15px                                         
     margin-bottom: -8px
     font-weight: normal
-    font-family: Rokkitt, serif 
+    font-family: $font-stack-Raleway
     @include tablet 
       font-size: 1.23em
     @include desktop
@@ -251,17 +252,17 @@
 
   .hide-desktop
     display: none
-
   // Paragrap slot for the desktop view
   .opening_statement_desktop
     display: flex
     color: $black1
     justify-content: center
+    text-align: center
     width: 100vw
-    line-height: 1.5em
+    line-height: 1.5pt
     padding: 0px 6px
-    margin-bottom: 60px
-    font-family: Rokkitt, serif    
+    margin-bottom: 60px                                     
+    font-family: $font-stack-Raleway    
     @include tablet
       padding: 57px 30px 0 16px
       font-size: 1.3em
@@ -278,38 +279,40 @@
       margin-bottom: 80px
       font-size: 1em
       letter-spacing: 0em
-      line-height: 1.4em
+      line-height: 1.4em            
       background: none
       font-weight: normal
     p
       padding: 0 17px
-      
-
-  .mini_statement
+      font-size: 15pt
+      color: #444649
+      line-height: 24pt      
+      margin: 0
+      font-family: $font-stack-Raleway
+      @include tablet 
+        font-size: 13pt
+        line-height: 20pt 
       @include desktop
-        width: 30%
+        text-align: center
+
+
+  .mini_statement             
+      @include desktop
         background: none
-        font-size: 1em 
+        font-size: 1em                  
 
   .screen
-    display: flex
+    display: flex                          
     justify-content: center
     width: 100vw
+    height: 52px
     border-radius: 4px
     height: auto
-    background: url("../dist/imgs/orange_pattern.png")
-    background-size: contain
-    background-repeat: repeat-x
-    background-position: center
     @include desktop
       margin: auto
       height: auto 
       border-top: 1px solid gray
       border-left: 0px
-      background: url("../dist/imgs/orange_pattern.png")
-      background-size: contain
-      background-repeat: repeat
-      background-position: center
       border-radius: 0
     li
       list-style: none
@@ -317,59 +320,54 @@
   // Horiontal bar with title on page
   #push-up
     display: flex
-    color: #ffffff
-    line-height: 1.5em
-    font-size: 1.05em
-    font-weight: bold
+    color: #181525  
+    font-size: 2.2em           
+    font-weight: 600
     list-style: none 
     text-transform: uppercase
-    letter-spacing: 0.08em
-    font-family: $font-stack-roboto
-    margin: auto
+    letter-spacing: 0.02em
+    font-family: $font-stack-Raleway-bold
     margin-left: 0                                      
-    width: 100vw
-    text-align: center
+    width: auto
+    text-align: center                                              
     justify-content: center
     z-index: 99999
     @include tablet
-      font-size: 1.4em
+      width: 100%
+      font-size: 30pt
       margin-bottom: 4px
-      background-color: rgba(121, 166, 183, 0.33)
     @include desktop
       display: flex
-      padding: 6px
-      justify-content: flex-start
-      border-left: none                 
-      line-height: 0
-      background-color: #181525
-      background-color: rgba(24, 21, 37, 0.24)
-      opacity: 1
-      width: 100%   
+      margin-bottom: 2%
 
-    .bar
-      background-color: #85b0bf
-      width: 49%   
-      padding: 4px
+    .bar            
+      width: auto  
+      padding: 18px 0
+      margin-top: 20px
       @include tablet
         padding: 10px                                          
-        margin-bottom: 1px
-      @include desktop
-        display: flex
-        width: 34%
-        background-color: rgba(255, 222, 173, 0)
+        margin-bottom: 1px         
+      @include desktop  
+
       span
         @include desktop
           width: auto 
-          height: auto
-          line-height: 1em               
-          font-size: 1.2em    
+          height: auto                          
+          line-height: 0.5em               
+          font-size: 1.4em    
           text-transform: none
-          font-weight: normal                                               
-          letter-spacing: 0.05em  
-          color: #ffffff
+          font-weight: bold                                                    
+          color: #000000
+          font-family: $font-stack-Raleway-bold
           padding: 3px 15px 3px 18px
+
+    #bottom-line
+      width: 58%     
+      color: #000000
+      border: 1px solid   
+      margin-top: 12px
    
-  #pro-title
+  #pro-title                                     
     @include tablet
       padding: 13px
     @include desktop      
@@ -444,7 +442,7 @@
 
   #grafix, #contact,
   .projects, .wagai-weh, #wagai, #main-gallery,
-  .main-gallery, #projects, #film-projects,
+  .main-gallery, #projects, #film-projects,#portfolio
   #gd-projects, #dm-projects, #t-projects, #about, #talent-projects
     display: flex
     flex-direction: column
@@ -461,18 +459,18 @@
       display: flex
       justify-content: flex-start
       text-decoration: none
+      border: 0
       @include desktop
         height: 100%
-        margin: 0 auto
+        margin: 0 auto   
                   
   #film-projects
     @include desktop
    
-  .wagai-we
-    @include desktop
-    background-size: contain
-    background-position: top
-      width: 100%
+  .wagai-weh
+    @include tablet 
+      height: 100vh
+
 
   #external_link  
     display: flex
@@ -480,8 +478,8 @@
     justify-content: space-between
     align-items: center
     text-decoration: none
-    margin-top: 0
-    background-color: #302e42
+    margin: 0
+    background-color: #ffffff
     border-radius: 4px
     @include desktop
       &:hover
@@ -522,10 +520,12 @@
     justify-content: space-between
     text-decoration: none
     width: 100%
-    height: 100vhs
+    height: 100vh
+    background-image: url('../dist/imgs/1920.png')
+    @include bic
     @include desktop
       margin: 0 auto
-      height: 100%
+      height: 100%   
 
     #contact
       display: flex
@@ -740,13 +740,19 @@
     margin-top: -33px
     margin-bottom: 33px
     text-align: justify
+    font-size: 12pt
+    line-height: 18pt
+    color: $black1
+    font-weight: normal
+    max-height: 85%
+    font-family: $font-stack-Raleway
     @include phone-landscape
     @include tablet
       font-size: 1.3em  
       letter-spacing: normal
       margin: 0
       width: 96%
-      background: none
+      background: none   
     @include desktop
       margin: 0
       text-align: justify
@@ -763,25 +769,27 @@
       font-family: Rokkitt, serif 
 
   .scpmt-gd, .scpmt-t2
-    font-size: 1.24em
+    font-size: 11pt
+    line-height: 18pt
+    color: $black1
     display: none
-    line-height: 1.5em
     margin-top: -30px            
     @include tablet
       margin: 0 auto
       color: $black1
       padding: 0                                                
       width: 93%
-      font-size: 1.45em
+      font-size: 13pt
+      line-height: 20pt
       padding: 12px
     @include desktop
       display: flex
       width: 84%
       margin-top: 0px
       padding: 0
-      font-size: 1.25em
-      line-height: 1.6em   
-      font-family: Rokkitt, serif   
+      font-size: 15pt
+      line-height: 24pt   
+      font-family: $font-stack-Raleway  
    
   #gd-folders
     display: flex   
@@ -857,9 +865,13 @@
       padding-bottom: 54px
     @include desktop
       height: auto
+      display: flex
       
     a
       align-items: center
+      @include desktop
+        display: flex
+        width: 100%
 
   .fs-gal-view
     display: none
@@ -959,7 +971,7 @@
     margin-top: 0px
     @include phone-landscape
     @include tablet
-      width: 70%
+      width: 96%
       margin-top: 49px
     @include desktop
       width: 52%
@@ -976,9 +988,9 @@
       width: 26% !important
 
   .selfie2
-    margin-top: 30px
-    margin-bottom: 41px
-    width: 26%
+    margin-top: 41px
+    margin-bottom: 20px
+    width: 52%
     border-radius: 4.8px
     border: 6px solid rgb(247, 238, 211)
     @include tablet
@@ -988,12 +1000,12 @@
       width: 12%
       display: flex
       margin-top: 50px
-      align-self: flex-start  
+      align-self: center
 
   .rgdp
-    display: flex
+    display: flex    
     justify-content: center
-    color: #faf6e6
+    color: #faf6e6                   
     color: #3e290c
     font-weight: bold
     font-size: 1.4em
@@ -1039,16 +1051,17 @@
       align-self: center
       height: 100%
       width: 90%
+      margin-left: 38px
       flex-flow: column
       margin: 0
       overflow: hidden
       flex-flow: row
       flex-wrap: wrap
-
+                           
   .container, .talentpage
-    width: 100%
+    width: 100%   
     display: flex
-    flex-wrap: wrap
+    flex-wrap: wrap   
     align-items: center
     overflow-y: scroll
     margin-top: -8px
@@ -1147,7 +1160,7 @@
       align-self: center
 
   .close-caption, .gdClose, .dmClose, .tClose
-    color: #7f7d79
+    color: #43d1d6
     display: flex
     width: 100%
     font-size: 1.1em  
@@ -1157,6 +1170,7 @@
     margin-bottom: 20px 
     padding-top: 10px
     font-style: oblique   
+    border-bottom: 1px solid #43d1d6
     font-family: Rokkitt, serif
     @include tablet
       margin: 0   
@@ -1174,11 +1188,11 @@
       width: auto
 
   .close-caption
-    color: #cecfd1
+    color: #43d1d6
     font-size: 1em
     margin: 5px
              
-  .small-intro
+  .small-intro                                     
     display: flex
     flex-flow: column
     justify-content: flex-start   
@@ -1199,7 +1213,7 @@
     .major-title     
       font-size: 1.5em
       display: flex
-      color: #009688
+      color: #43d1d6
       font-weight: bold
       line-height: 1.5em
       align-self: flex-start
@@ -1260,6 +1274,7 @@
         width: 100%
         margin: auto
         border-bottom: none
+        display: none
         @include desktop
           margin: 0
           width: 100%
@@ -1286,8 +1301,8 @@
           height: auto
           margin: auto
           @include tablet
-            width: 67%
-          @include desktop
+            width: 83%
+          @include desktop v    
             width: 92%
             padding-bottom: 10px
         h4
@@ -1314,22 +1329,23 @@
         @include desktop
           width: 88%
       p  
-        font-size: 0.89em
-        line-height: 1.35em
+        font-size: 1em
+        line-height: 1.2em
         text-align: justify
-        font-style: italic
         color: $black1      
         letter-spacing: 0
-        padding: 20px
-        font-weight: 500 
+        padding: 20px 
+        padding-bottom: 6px   
+        font-weight: 900
         margin: 0
-        font-weight: normal
-        font-family: $font-stack-serif
+        text-transform: capitalize
+        font-family: $font-stack-Raleway-bold
         @include phone-landscape
         @include tablet               
           padding: 10px 30px  
           font-size: 1.42em
           margin: 26px
+          margin-bottom: 0
         @include desktop
           font-size: 0.85em
           letter-spacing: 0em
@@ -1349,14 +1365,14 @@
         border-radius: 6px
         display: flex
         margin-bottom: 42px
-        border: 1px solid #4286a0
+        margin-top: 10px
+        border: 1px solid #04c2c9
         //mediaQuerie
         @include phone-landscape
         //mediaQuerie
         @include tablet
           width: 37%
           margin-bottom: 30px
-          margin-top: 45px
         @include desktop
           display: flex
           align-self: flex-start
@@ -1367,14 +1383,14 @@
 
         a
           font-family: $font-stack-roboto
-          color: #ffffff
+          color: $black1
           text-align: justify
           font-size: 1em
           letter-spacing: 0.05em
           justify-content: center
           width: 100%
           height: 100%
-          line-height: 2.5em
+          line-height: 2.15em
           @include tablet
             padding: 0px
             font-size: 1.85em
@@ -1382,14 +1398,53 @@
             font-size: 1em
             font-weight: 400
             letter-spacing: 0.03em
-            
-  .readmore_text
-    width: auto
+  .date
+    text-transform: uppercase
+    font-size: 7.5pt
+  .box-spec                    
+    width: auto                                  
+    font-family: $font-stack-Raleway-bold
+    font-weight: 600
+    letter-spacing: 0
+    font-size: 10pt
+    width: 88%
+    color: $black1
+    display: flex
+    text-align: justify
+    align-self: center
+    padding-top: 10px    
+    line-height: 1.5em
+    @include tablet
+      font-size: 12pt
+      width: 84%
+    p 
+      display: none
+
+  .blue_line
+    margin-bottom: 0
+
+  .blue_line1 
+    display: flex    
+    align-self: flex-start                 
+    width: 35%
+    margin: -3px 0 -3px 20px
+    padding: 0
+    border: 1px solid $blue1
+    @include tablet
+      width: 30%
+      margin-left: 55px
+  
+  .gdesign
+    @include tablet 
+      height: 100vh   
+       
+  .readmore_text          
+    width: auto       
     background-color: rgba(156, 140, 133, 0)
     border: 0
     height: auto
-
-  .close_text
+         
+  .close_text      
     width: auto
     background-color: rgba(156, 140, 133, 0)
     border: 0
@@ -1403,38 +1458,24 @@
     margin-left: 12px
     text-transform: none
     line-height: 1.4em
-    font-size: 1.6em                                      
-    color: #009688
+    font-size: 1.3em                                      
+    color: #43d1d6
     font-weight: bold
-    text-transform: uppercase
-    font-style: italic
-    font-family: $font-stack-character
+    font-family: $font-stack-Raleway-bold
     @include phone-landscape
     @include tablet 
       padding-right: 8px
       margin-top: 11px
       margin-bottom: 10px
     @include desktop  
-        padding-left: 0
+        padding-left: 0   
         width: 44%
         margin: 30px 0 0px -30px
         line-height: 1.5em
-        font-weight: normal
+        font-weight: normal                                       
         letter-spacing: 0.04em
         font-style: normal
         font-size: 1.35em 
-
-  .project_box
-    display: flex
-    width: 100%     
-    margin: auto
-    margin-top: -10px
-    border-radius: 4px
-    @include desktop
-      width: auto                            
-      padding: 10px
-      margin: 0
-      background-color: rgba(255, 255, 255, 0.76)
                          
   #project_title
     display: flex
@@ -1458,9 +1499,29 @@
       margin-bottom: 11px
       border: none
 
-    p
-      @include phone-landscape
-      @include tablet
+  .project_box
+    display: flex
+    flex-wrap: wrap
+    width: 100%     
+    margin: auto
+    margin-top: -10px
+    border-radius: 4px
+    @include tablet 
+      flex-wrap: nowrap
+      width: 91%
+    @include desktop
+      width: auto                            
+      padding: 10px
+      margin: 0
+      background-color: rgba(255, 255, 255, 0.76)
+    p 
+      width: 100%
+      padding-bottom: 0
+      margin-bottom: 0
+
+      span 
+        font-family: $font-stack-Raleway-bold
+        color: $blue1       
 
   #quote
     font-size: 1em
@@ -1486,7 +1547,6 @@
     display: flex
     flex-wrap: wrap
     padding: 11px
-    margin-top: 24px
     justify-content: space-around
     background: none
     @include phone-landscape
@@ -1495,13 +1555,21 @@
       display: flex
       padding: 20px
       height: 200px
-      width: 84%
+      width: 96%
     @include desktop
-      height: 120px
       margin-bottom: 40px
       display: flex
       flex-flow: row
-      width: 100%
+      width: 100%  
+      padding: 0
+      position: relative          
+    div
+      background-color: #04C2C9
+      margin: 10px 0
+      width: 190px
+      @include desktop 
+        width: 240px  
+        height: 200px 
 
   .box
     display: flex
@@ -1509,10 +1577,11 @@
     justify-content: space-around
     position: relative
     width: 100%
-    height: auto
+    height: auto                
     align-self: center
     margin: 4px
     margin-top: 17px
+    padding: 16px
     @include desktop
       padding: 10px
 
@@ -1520,7 +1589,6 @@
   .inner-div5, .inner-div11, .inner-div12
     height: 30%
     width: 100px
-    border: 1px dotted rgba(160, 168, 175, 0.42)
     background-size: contain
     background-position: center
     background-repeat: no-repeat
@@ -1534,59 +1602,36 @@
 
     @include desktop
       border: none
-      height: 10px
-      width: 40px
-      padding: 2px 30px
+      height: auto
+      width: 90%                  
+      padding: 20px 0                 
       border: 1px solid lemonchiffon
+      background-color: $blue1
       background-size: contain
-      border-radius: 30px
-      margin-top: 77px
-  .inner-div1                   
-    background-image: url("../dist/imgs/portfolio2.jpg")
+      border-radius: 8px
+      margin: 20px          
+  // .inner-div1                     
+  //   background-image: url("../dist/imgs/portfolio2.jpg")
 
-  .inner-div2
-    background-image: url("../dist/imgs/weave.jpg")
+  // .inner-div2
+  //   background-image: url("../dist/imgs/weave.jpg")
 
-  .inner-div3
-    background-image: url("../dist/imgs/mele_logo.jpg")
+  // .inner-div3
+  //   background-image: url("../dist/imgs/mele_logo.jpg")
 
-  .inner-div4
-    background-image: url("../dist/imgs/goddaughter.jpg")
+  // .inner-div4
+  //   background-image: url("../dist/imgs/goddaughter.jpg")
 
-  .inner-div5
-    background-image: url("../dist/imgs/Oilpainting.jpg")
+  // .inner-div5
+  //   background-image: url("../dist/imgs/Oilpainting.jpg")
 
   .inner-div11
-    display: flex
-    background-image: url("../dist/imgs/newlogo.png")
-    @include bic   
-    margin-top: 5px
-    width: 100%
-    height: 46%
-    border: none
-    @include phone-landscape
-      height: 82%
-      width: 32%
-    @include tablet                
-      display: flex
-      height: 45%
-      background-size: cover
-      padding: 0
-      border: none
-    @include desktop
-      margin-top: 34px
-      display: flex
-      height: 44%             
-      width: 33%
-      margin-bottom: 0
-      display: none
+    display: none
                                  
-  .inner-div12
-    background-image: url("../dist/imgs/native_pear.png")
-    background-size: contain                            
+  .inner-div12                         
     padding: 0
-    height: 32px
-    width: 67%
+    height: 52px
+    width: 72%
     border: none
     margin: 0 auto
     @include tablet
@@ -1594,11 +1639,8 @@
       height: 83px
       width: 62%
     @include desktop
-      width: 80%
-      height: 66%
-      background-repeat: no-repeat
-      background-size: contain
-
+      display: none
+    
   #canvasbox
     display: flex
     flex-direction: column   
@@ -1609,7 +1651,7 @@
       display: flex
 
   #box-canvas1
-    width: 300px
+    width: 100vw
     height: auto
     display: block
     margin: 20px auto
