@@ -669,7 +669,8 @@ h4, h6 {
     padding: 3px;
     list-style: none;
     margin-bottom: 8px;
-    width: 46%;
+    width: auto;
+    border-bottom: 0.5px solid pink;
   }
 }
 
@@ -876,6 +877,10 @@ h4, h6 {
     font-style: oblique;
     color: red;
   }
+  .fas {
+    font-size: 1.6em;
+    color: #f5f5dc;
+  }
   .haus {
     top: 0;
     width: 100%;
@@ -956,7 +961,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .haus ul li {
-    width: 50%;
+    width: 30%;
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1124,8 +1129,8 @@ h4, h6 {
   #menu-buttons {
     position: fixed;
     right: 8px;
-    top: 8px;
-    width: 8%;
+    top: 9px;
+    width: 29%;
     height: 6%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1133,6 +1138,7 @@ h4, h6 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    border-bottom: 1px solid pink;
   }
 }
 
@@ -1179,7 +1185,6 @@ h4, h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-color: #a3c5d2;
   }
 }
 
@@ -1375,11 +1380,10 @@ h4, h6 {
     color: #181525;
     text-align: center;
     font-weight: bold;
-    font-size: 0.86em;
-    padding: 11px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    font-size: 1em;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     font-family: "Raleway:700", sans-serif;
@@ -1668,9 +1672,9 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .opening_statement_desktop p {
     padding: 0 17px;
-    font-size: 15pt;
+    font-size: 8pt;
     color: #444649;
-    line-height: 24pt;
+    line-height: 15pt;
     margin: 0;
     font-family: "Raleway", sans-serif;
   }
@@ -1991,7 +1995,7 @@ h4, h6 {
             align-items: center;
     text-decoration: none;
     margin: 0;
-    background-color: #ffffff;
+    background-color: #04C2C9;
     border-radius: 4px;
   }
 }
@@ -2070,10 +2074,6 @@ h4, h6 {
     text-decoration: none;
     width: 100%;
     height: 100vh;
-    background-image: url("../dist/imgs/1920.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
   }
 }
 
@@ -2747,7 +2747,7 @@ h4, h6 {
     height: auto;
     float: left;
     padding: 7px;
-    border: 1px solid #2e2c41;
+    border: 1px solid #ecdac9;
   }
 }
 
@@ -2910,8 +2910,6 @@ h4, h6 {
             align-items: center;
     overflow-y: scroll;
     padding-bottom: 33px;
-    border: 1px solid #e6dee2;
-    background-color: rgba(247, 239, 214, 0.46);
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -3470,7 +3468,6 @@ h4, h6 {
     display: flex;
     margin-bottom: 42px;
     margin-top: 10px;
-    border: 1px solid #04c2c9;
   }
 }
 
@@ -3498,7 +3495,7 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .blocks section button a, .blocks .one button a, .one section button a, .one .one button a {
     font-family: "Roboto";
-    color: #444649;
+    color: #ffffff;
     text-align: justify;
     font-size: 1em;
     letter-spacing: 0.05em;
@@ -3530,13 +3527,14 @@ h4, h6 {
   .date {
     text-transform: uppercase;
     font-size: 7.5pt;
+    font-weight: normal;
   }
   .box-spec {
     width: auto;
-    font-family: "Raleway:700", sans-serif;
-    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
     letter-spacing: 0;
-    font-size: 10pt;
+    font-size: 9pt;
     width: 88%;
     color: #444649;
     display: -webkit-box;
@@ -3546,7 +3544,8 @@ h4, h6 {
     -ms-flex-item-align: center;
         align-self: center;
     padding-top: 10px;
-    line-height: 1.5em;
+    line-height: 13pt;
+    max-height: 85%;
   }
 }
 
@@ -3722,10 +3721,13 @@ h4, h6 {
     width: 100%;
     padding-bottom: 0;
     margin-bottom: 0;
+    color: #04C2C9;
+    font-family: "Raleway:700", sans-serif;
+    font-size: 10pt;
   }
   .project_box p span {
     font-family: "Raleway:700", sans-serif;
-    color: #04C2C9;
+    color: #7b827f;
   }
   #quote {
     font-size: 1em;
@@ -3757,6 +3759,7 @@ h4, h6 {
     font-family: "Roboto";
     font-size: 0.77em;
     font-weight: lighter;
+    margin-top: 20px;
   }
 }
 
@@ -3774,7 +3777,7 @@ h4, h6 {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 11px;
+    padding: 6px;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     background: none;
@@ -3817,8 +3820,8 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .outer-div div {
     background-color: #04C2C9;
-    margin: 10px 0;
-    width: 190px;
+    margin: 6px 0;
+    width: 80%;
   }
 }
 

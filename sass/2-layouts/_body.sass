@@ -101,9 +101,8 @@
     color: #181525
     text-align: center
     font-weight: bold
-    font-size: 0.86em
-    padding: 11px
-    justify-content: center
+    font-size: 1em
+    justify-content: flex-start
     letter-spacing: 0.05em
     text-transform: uppercase
     font-family: $font-stack-Raleway-bold
@@ -284,9 +283,9 @@
       font-weight: normal
     p
       padding: 0 17px
-      font-size: 15pt
+      font-size: 8pt
       color: #444649
-      line-height: 24pt      
+      line-height: 15pt      
       margin: 0
       font-family: $font-stack-Raleway
       @include tablet 
@@ -479,7 +478,7 @@
     align-items: center
     text-decoration: none
     margin: 0
-    background-color: #ffffff
+    background-color: #04C2C9
     border-radius: 4px
     @include desktop
       &:hover
@@ -521,8 +520,6 @@
     text-decoration: none
     width: 100%
     height: 100vh
-    background-image: url('../dist/imgs/1920.png')
-    @include bic
     @include desktop
       margin: 0 auto
       height: 100%   
@@ -951,7 +948,7 @@
     height: auto
     float: left
     padding: 7px
-    border: 1px solid #2e2c41
+    border: 1px solid #ecdac9
     @include tablet
       width: 50%
     @include desktop
@@ -1031,7 +1028,6 @@
     font-weight: bold
     color: #060407
 
-
   .big-gallery
     height: 100%
     width: 100%
@@ -1040,8 +1036,6 @@
     align-items: center
     overflow-y: scroll
     padding-bottom: 33px
-    border: 1px solid #e6dee2
-    background-color: rgba(247, 239, 214, 0.46)
     justify-content: space-around
     @include phone-landscape
     @include tablet
@@ -1366,7 +1360,6 @@
         display: flex
         margin-bottom: 42px
         margin-top: 10px
-        border: 1px solid #04c2c9
         //mediaQuerie
         @include phone-landscape
         //mediaQuerie
@@ -1383,7 +1376,7 @@
 
         a
           font-family: $font-stack-roboto
-          color: $black1
+          color: #ffffff
           text-align: justify
           font-size: 1em
           letter-spacing: 0.05em
@@ -1401,19 +1394,22 @@
   .date
     text-transform: uppercase
     font-size: 7.5pt
+    font-weight: normal
+
   .box-spec                    
     width: auto                                  
-    font-family: $font-stack-Raleway-bold
-    font-weight: 600
+    font-family: $font-stack-Raleway
+    font-weight: 400
     letter-spacing: 0
-    font-size: 10pt
+    font-size: 9pt
     width: 88%
     color: $black1
     display: flex
     text-align: justify
     align-self: center
     padding-top: 10px    
-    line-height: 1.5em
+    line-height: 13pt
+    max-height: 85%
     @include tablet
       font-size: 12pt
       width: 84%
@@ -1518,10 +1514,13 @@
       width: 100%
       padding-bottom: 0
       margin-bottom: 0
+      color: $blue1
+      font-family: $font-stack-Raleway-bold
+      font-size: 10pt          
 
       span 
         font-family: $font-stack-Raleway-bold
-        color: $blue1       
+        color: #7b827f      
 
   #quote
     font-size: 1em
@@ -1539,14 +1538,15 @@
     font-family: $font-stack-roboto
     font-size: 0.77em
     font-weight: lighter
+    margin-top: 20px
     @include desktop
       margin-top: 10px
-      font-size: 0.52em
+      font-size: 0.52em   
 
   .outer-div
     display: flex
     flex-wrap: wrap
-    padding: 11px
+    padding: 6px
     justify-content: space-around
     background: none
     @include phone-landscape
@@ -1565,8 +1565,8 @@
       position: relative          
     div
       background-color: #04C2C9
-      margin: 10px 0
-      width: 190px
+      margin: 6px 0
+      width: 80%
       @include desktop 
         width: 240px  
         height: 200px 

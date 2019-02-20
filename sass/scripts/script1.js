@@ -22,7 +22,7 @@ $(document).ready(function(){
         });
 
         //show menu bar onclick on main logo
-        $(".haus-menu, #hetinfo").click(function(){
+        $(".fas, #hetinfo").click(function(){
           $(".mobile-container").show(500);
           $(".nav-folders").show(480);
           $(".haus").hide(500);
