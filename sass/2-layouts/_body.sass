@@ -152,8 +152,9 @@
     display: flex
     flex-wrap: wrap
     justify-content: flex-start   
-    width: 92vw
+    width: 91vw
     margin-bottom: 20px
+    margin-left: 14px
     line-height: 1.44em
     color: #3c3937
     color: white
@@ -166,7 +167,7 @@
       margin: 0 auto
       display: flex
       margin-bottom: 0  
-      background: none
+      background: none    
       margin-bottom: 20px
     @include desktop
       justify-content: center
@@ -270,7 +271,7 @@
     margin-bottom: 60px                                     
     font-family: $font-stack-Raleway    
     @include tablet
-      padding: 57px 30px 0 16px
+      padding: 0
       font-size: 1.3em
       margin-left: 40px
       width: 89%
@@ -514,6 +515,8 @@
         font-size: 1.3em
   #bio
     display: flex
+    @include tablet 
+      width: 76%
     @include desktop 
       display: flex 
       padding-bottom: 60px
@@ -552,6 +555,7 @@
         line-height: 29px
         @include phone-landscape
         @include tablet
+          width: 100%
           font-size: 2.1em
           line-height: 37px 
         @include desktop
@@ -565,6 +569,8 @@
     align-items: flex-end   
     justify-content: space-between
     width: 80%
+    @include tablet
+      width: 100vw
     @include desktop
       align-items: center
       width: 100%
@@ -785,6 +791,7 @@
     display: none
     margin-top: -30px            
     @include tablet
+      display: flex
       margin: 0 auto
       color: $black1
       padding: 0                                                
@@ -796,6 +803,7 @@
       display: flex
       width: 56%
       margin-top: 0px
+      margin-left: 23px
       padding: 0
       font-size: 12.8pt                   
       line-height: 20pt 
@@ -1108,6 +1116,7 @@
       margin: auto
 
   .hold_in2, .hold_in2_gd
+    // display: flex
     @include phone-landscape
     @include tablet
 
@@ -1135,10 +1144,10 @@
       color: #9d8b70
       font-style: italic
       width: 128px
-      margin-left: -160px
-      justify-content: space-between
+      margin: 0
+      justify-content: space-between                 
       @include phone-landscape
-      @include tablet
+      @include tablet  
         justify-content: center
 
     .open-caption, .gdReadmore, .tReadmore
@@ -1155,10 +1164,12 @@
   #skills-descOpen, #gd-descOpen, #t-descOpen
     display: flex
     margin-top: -10px
+    @include tablet 
+      display: none
 
   #skills-descClose, #gd-descClose, #t-descClose
     display: none
-    margin-top: -13px
+    margin-top: -13px     
     background-color: rgba(202, 218, 215, 0.22)
     @include phone-landscape
     @include tablet
@@ -1212,7 +1223,7 @@
     @include desktop
       display: flex
       margin: 0
-      width: 100%
+      width: 94%
       flex-wrap: wrap
       flex-flow: row
     
@@ -1220,7 +1231,7 @@
       font-size: 1.5em
       display: flex
       color: #43d1d6
-      font-weight: bold
+      font-weight: bold   
       line-height: 1.5em
       align-self: flex-start
       padding: 7px
@@ -1567,8 +1578,8 @@
     @include tablet
       display: flex
       padding: 20px
-      height: 200px
-      width: 96%
+      height: 700px
+      width: 69%
     @include desktop
       margin-bottom: 40px
       display: flex
@@ -1581,6 +1592,8 @@
       background-color: #04C2C9
       margin: 6px 0
       width: 80%
+      @include tablet 
+        height: 80px
       @include desktop 
         width: 240px 
         padding-left: 10px 

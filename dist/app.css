@@ -1479,8 +1479,9 @@ h4, h6 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    width: 92vw;
+    width: 91vw;
     margin-bottom: 20px;
+    margin-left: 14px;
     line-height: 1.44em;
     color: #3c3937;
     color: white;
@@ -1670,7 +1671,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .opening_statement_desktop {
-    padding: 57px 30px 0 16px;
+    padding: 0;
     font-size: 1.3em;
     margin-left: 40px;
     width: 89%;
@@ -2082,6 +2083,12 @@ h4, h6 {
   }
 }
 
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  #bio {
+    width: 76%;
+  }
+}
+
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #bio {
     display: -webkit-box;
@@ -2149,6 +2156,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .contact-section #contact p {
+    width: 100%;
     font-size: 2.1em;
     line-height: 37px;
   }
@@ -2175,6 +2183,12 @@ h4, h6 {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .sm-container {
+    width: 100vw;
   }
 }
 
@@ -2523,6 +2537,9 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .scpmt-gd, .scpmt-t2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin: 0 auto;
     color: #444649;
     padding: 0;
@@ -2540,6 +2557,7 @@ h4, h6 {
     display: flex;
     width: 56%;
     margin-top: 0px;
+    margin-left: 23px;
     padding: 0;
     font-size: 12.8pt;
     line-height: 20pt;
@@ -3090,7 +3108,7 @@ h4, h6 {
     color: #9d8b70;
     font-style: italic;
     width: 128px;
-    margin-left: -160px;
+    margin: 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -3127,6 +3145,15 @@ h4, h6 {
     display: flex;
     margin-top: -10px;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  #skills-descOpen, #gd-descOpen, #t-descOpen {
+    display: none;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   #skills-descClose, #gd-descClose, #t-descClose {
     display: none;
     margin-top: -13px;
@@ -3223,7 +3250,7 @@ h4, h6 {
     display: -ms-flexbox;
     display: flex;
     margin: 0;
-    width: 100%;
+    width: 94%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-orient: horizontal;
@@ -3843,8 +3870,8 @@ h4, h6 {
     display: -ms-flexbox;
     display: flex;
     padding: 20px;
-    height: 200px;
-    width: 96%;
+    height: 700px;
+    width: 69%;
   }
 }
 
@@ -3871,6 +3898,12 @@ h4, h6 {
     background-color: #04C2C9;
     margin: 6px 0;
     width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .outer-div div {
+    height: 80px;
   }
 }
 
