@@ -1,5 +1,7 @@
 
-//styling for Header elements
+
+	/* STYLING FOR HEADER ELEMENTS*/
+
 @include phone
 	.hetpage
 		display: flex
@@ -259,6 +261,9 @@
  
 	#logo-space                               
 		display: none
+	.fa-bars 
+		color: #ffffff
+		
 
 	.logo-desc
 		width: 100%
@@ -322,9 +327,9 @@
 		display: flex
 		align-self: flex-start  
 		padding: 3px
-		list-style: none   
+		list-style: none                         
 		margin-bottom: 8px
-		width: auto 
+		width: 96px 
 		border-bottom: 0.5px solid pink
 		@include phone-landscape
 			width: 19%          
@@ -426,16 +431,17 @@
 			&:hover   
 				color: #ffffff
 				transition: 0.06s ease-in     
-				font-style: normal
-
-	.nav-archives     
+				font-style: normal                                                                              
+     
+	.nav-archives       
 		display: flex
-		align-self: flex-start
+		align-self: flex-end
+		padding-right: 4px
 		font-family: $font-stack-Raleway                    
 		font-weight: bolder  
-		padding-left: 30px
+		padding-left: 22px
 		font-size: 1.2em
-		color: $proWhite
+		color: $proWhite    
 		@include tablet
 			font-size: 1.1em
 			text-align: center
@@ -443,7 +449,7 @@
 			font-weight: normal 
 			padding: 8px 12px 
 			width: auto 
-		@include desktop
+		@include desktop   
 			color: #ffffff
 			text-align: center
 			z-index: 999
@@ -461,11 +467,7 @@
 	.nav-archives:visited
 			font-style: oblique
 			color: red
-	
-	.fas 
-		font-size: 1.6em
-		color: #f5f5dc 
-
+      
 	.haus
 		top: 0
 		width: 100%
@@ -521,18 +523,7 @@
 				position: relative
 				align-items: center
 				flex-direction: column   
-				justify-content: center
-
-	.haus-menu
-		color: #f5f5dc                                                         
-		display: flex
-		font-size: 1em   
-		font-weight: bolder
-		line-height: 24px
-		letter-spacing: 0.08em
-		border-bottom: 1px dotted
-		text-transform: capitalize
-		font-family: $font-stack-roboto
+				justify-content: center    
 
 	.main-menu
 		left: 0px
@@ -625,7 +616,7 @@
 		right: 8px
 		top: 9px
 		width: 29%
-		height: 6%
+		height: 4%
 		display: flex
 		justify-content: flex-start  
 		border-bottom: 1px solid pink 

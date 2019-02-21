@@ -1688,7 +1688,7 @@
 
   #box-canvas
     margin-left: 20%
-    width: 100%
+    width: 92vw
     height: auto
     display: block
     margin: 20px auto
@@ -1699,3 +1699,50 @@
       width: auto
       display: flex
       justify-content: center
+                                              
+  #up-arrow
+    display: flex
+    @include desktop
+      display: flex
+
+  .fa-angle-double-up
+    display: flex 
+    align-self: center
+    position: absolute  
+    background-color: $blue1
+    z-index: 5
+    justify-content: center
+    padding: 4px 16px
+    border-radius: 2px
+    width: auto 
+    height: auto  
+    @include desktop 
+      padding: 8px 20px
+      border-radius: 4px            
+                       
+  footer 
+    background-color: #060410
+  .footnote 
+    display: flex  
+    justify-content: center
+    width: 100%
+    font-size: 6pt
+    line-height: 2em
+    color: #cccccc  
+    @include desktop
+      display: flex     s
+      justify-content: center  
+      margin: 15px 0
+      width: 100%       
+      height: auto
+      font-size: 8pt
+      line-height: 2em
+      color: #cccccc
+      font-family: $font-stack-Raleway-bold     
+  .highlight
+    display: flex 
+    color: pink                             
+      
+
+
+
