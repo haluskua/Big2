@@ -254,7 +254,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .bio {
-    margin-top: 9px;
+    margin-top: 8%;
     width: 100%;
     height: auto;
     display: -webkit-box;
@@ -392,7 +392,7 @@ h4, h6 {
   #myName {
     padding: 10px 0;
     line-height: 67pt;
-    font-size: 5em;
+    font-size: 4.25em;
   }
 }
 
@@ -486,7 +486,7 @@ h4, h6 {
     font-family: "Raleway", sans-serif;
     width: auto;
     padding: 8px 12px;
-    border: 1px solid #04C2C9;
+    border-right: 1px solid #04C2C9;
   }
 }
 
@@ -513,6 +513,18 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
+  .intro span, .nameohk span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
   .viewwork {
     cursor: pointer;
   }
@@ -635,7 +647,7 @@ h4, h6 {
         -ms-flex-align: center;
             align-items: center;
     border-radius: 4.5px 4.5px 0 0;
-    background-color: #060410;
+    background-color: #000000;
   }
 }
 
@@ -723,7 +735,7 @@ h4, h6 {
     list-style: none;
     margin: 0 0 8px 14px;
     width: 96px;
-    border-bottom: 0.3px solid #04C2C9;
+    border-bottom: 0.5px solid #282d2d;
   }
 }
 
@@ -897,6 +909,7 @@ h4, h6 {
         align-self: flex-start;
     font-family: "Raleway", sans-serif;
     font-size: 1.2em;
+    letter-spacing: 0.1em;
     color: #d8f9ff;
   }
 }
@@ -990,7 +1003,7 @@ h4, h6 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background-color: #181525;
+    background-color: #000000;
     border-bottom: 1px solid pink;
   }
 }
@@ -4141,6 +4154,7 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    z-index: 10;
   }
 }
 
@@ -4153,6 +4167,14 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
+  .fa-arrow-down {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: white;
+    padding: 4px;
+    font-size: 2.1em;
+  }
   .fa-angle-double-up {
     display: -webkit-box;
     display: -ms-flexbox;
