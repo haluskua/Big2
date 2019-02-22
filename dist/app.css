@@ -260,6 +260,9 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -272,7 +275,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .bio {
     margin: 0;
-    width: 70%;
+    width: 100%;
   }
 }
 
@@ -290,14 +293,13 @@ h4, h6 {
             flex-direction: column;
     -ms-flex-item-align: center;
         align-self: center;
-    padding-top: 2%;
-    margin-bottom: -4px;
+    margin-top: -26%;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #portfolio-header {
-    padding-top: 5%;
+    padding-top: 18%;
   }
 }
 
@@ -316,11 +318,13 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   #bulgeword {
     margin: 0 auto;
-    color: #ccc37f;
-    font-size: 1.13em;
-    letter-spacing: 0;
+    color: #bbe3e5;
+    font-size: 1em;
+    letter-spacing: 0.03em;
     line-height: 15pt;
+    text-transform: uppercase;
     font-family: "Raleway", sans-serif;
+    max-height: 85%;
   }
 }
 
@@ -348,10 +352,9 @@ h4, h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    font-size: 1.5em;
+    font-size: 1.1em;
     line-height: 1.1em;
     font-weight: 500;
-    letter-spacing: 0em;
     padding-top: 60px;
     margin-bottom: 32px;
   }
@@ -379,12 +382,14 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #04C2C9;
+    color: #d0fdff;
     width: 85vw;
     font-weight: lighter;
     font-family: "Raleway", sans-serif;
     font-weight: 600;
-    font-size: 1em;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    letter-spacing: 0.03em;
   }
 }
 
@@ -401,8 +406,9 @@ h4, h6 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    font-size: 1.13em;
-    line-height: 27pt;
+    font-size: 1.66em;
+    text-transform: none;
+    line-height: 1em;
   }
 }
 
@@ -478,15 +484,16 @@ h4, h6 {
     display: -ms-flexbox;
     display: flex;
     margin: 0;
-    color: #07ecf5;
+    color: #04C2C9;
     font-size: 1.44em;
     letter-spacing: 0.05em;
     position: relative;
     text-align: justify;
     font-family: "Raleway", sans-serif;
     width: auto;
-    padding: 8px 0px;
-    border-right: 1px solid #04C2C9;
+    padding: 8px 8px 0 8px;
+    border-radius: 4px;
+    border: 1px solid #00BCD4;
   }
 }
 
@@ -502,11 +509,11 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .intro, .nameohk {
-    font-size: 2.1em;
-    font-weight: normal;
+    font-size: 2.35em;
+    font-weight: 600;
     padding: 0 10px;
     line-height: 3em;
-    letter-spacing: 0;
+    letter-spacing: 0.03em;
     margin-top: 0px;
     text-transform: normal;
   }
@@ -605,7 +612,7 @@ h4, h6 {
     font-size: 1.3em;
   }
   .fa-bars {
-    color: #d8f9ff;
+    color: #F44336;
   }
   .logo-desc {
     width: 100%;
@@ -735,7 +742,7 @@ h4, h6 {
     list-style: none;
     margin: 0 0 8px 14px;
     width: 96px;
-    border-bottom: 0.5px solid #ccc37f;
+    border-bottom: 0.5px solid #F44336;
   }
 }
 
@@ -1099,7 +1106,7 @@ h4, h6 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     border-radius: 18px 0 0 0;
-    background-color: #84afbe;
+    background-color: #04C2C9;
   }
 }
 
@@ -1274,7 +1281,6 @@ h4, h6 {
     display: flex;
     max-width: 100%;
     position: relative;
-    background-color: #fff;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1428,8 +1434,8 @@ h4, h6 {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 100%;
-    margin: 10px 0;
+    width: 35%;
+    margin: 10px 20px;
     border: none;
     background-image: none;
   }
@@ -1582,7 +1588,7 @@ h4, h6 {
   .opening_statement p, .mini_statement p, .block p {
     font-size: 11pt;
     line-height: 18pt;
-    color: #444649;
+    color: #000000;
     padding: 0 0 16px 0px;
     margin-bottom: -8px;
     font-weight: normal;
@@ -1607,7 +1613,7 @@ h4, h6 {
     -ms-flex-item-align: start;
         align-self: flex-start;
     letter-spacing: 0em;
-    font-size: 12.8pt;
+    font-size: 11pt;
     line-height: 20pt;
     width: 56%;
     background: none;
@@ -1619,11 +1625,12 @@ h4, h6 {
     font-size: 1.42em;
     font-weight: bold;
     font-family: "Raleway", sans-serif;
-    color: #04C2C9;
+    color: #000000;
     line-height: 2.1em;
     text-align: center;
     width: 100%;
     font-weight: bold;
+    text-transform: uppercase;
   }
 }
 
@@ -1639,7 +1646,7 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 15px 0 14px 0;
+    padding: 0px 0 14px 0;
     margin: 0;
     font-weight: bolder;
     -ms-flex-item-align: start;
@@ -1744,7 +1751,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .opening_statement_desktop {
-    width: 50%;
+    width: 60%;
     text-align: justify;
     padding-top: 0px;
     margin-bottom: 80px;
@@ -1760,7 +1767,7 @@ h4, h6 {
   .opening_statement_desktop p {
     padding: 0 17px;
     font-size: 10pt;
-    color: #444649;
+    color: #000000;
     line-height: 15pt;
     margin: 0;
     font-family: "Raleway", sans-serif;
@@ -1769,11 +1776,16 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .opening_statement_desktop p {
+    font-size: 14pt;
+    line-height: 19pt;
+    text-align: justify;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .opening_statement_desktop p {
     font-size: 13pt;
     line-height: 20pt;
-    font-size: 12pt;
-    line-height: 18pt;
-    text-align: justify;
   }
 }
 
@@ -1796,6 +1808,7 @@ h4, h6 {
     height: 52px;
     border-radius: 4px;
     height: auto;
+    border-top: 1px solid #f3d09e;
   }
 }
 
@@ -1846,7 +1859,7 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 5%;
+    margin-bottom: 3.4%;
   }
 }
 
@@ -1870,10 +1883,11 @@ h4, h6 {
     width: auto;
     height: auto;
     line-height: 0.5em;
-    font-size: 1.4em;
+    font-size: 1.34em;
     text-transform: none;
     font-weight: bold;
     color: #000000;
+    text-transform: uppercase;
     font-family: "Raleway:700", sans-serif;
     padding: 3px 15px 3px 18px;
   }
@@ -2604,7 +2618,7 @@ h4, h6 {
   .scpmt-gd, .scpmt-t2 {
     font-size: 11pt;
     line-height: 18pt;
-    color: #444649;
+    color: #000000;
     display: none;
     margin-top: -30px;
   }
@@ -2633,7 +2647,7 @@ h4, h6 {
     width: 56%;
     margin-top: 0px;
     padding: 0;
-    font-size: 12.8pt;
+    font-size: 11pt;
     line-height: 20pt;
     -ms-flex-item-align: center;
         align-self: center;
@@ -3128,7 +3142,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   iframe {
     width: 600px;
-    height: 400px;
+    height: 210px;
   }
 }
 
@@ -3323,14 +3337,17 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0;
     width: 94%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row;
             flex-flow: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -3390,6 +3407,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .blocks, .one {
+    width: 88%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
@@ -3414,7 +3432,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .blocks section, .blocks .one, .one section, .one .one {
-    width: 38vw;
+    width: 35vw;
     border-bottom: none;
     border-top: none;
     display: -webkit-box;
@@ -3431,7 +3449,7 @@ h4, h6 {
         -ms-flex-pack: start;
             justify-content: flex-start;
     height: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
     margin-top: 0;
   }
 }
@@ -3679,11 +3697,12 @@ h4, h6 {
   }
   .box-spec {
     width: auto;
-    font-family: "Raleway", sans-serif;
-    font-weight: 400;
+    font-family: "Raleway:700", sans-serif;
+    font-weight: 600;
     letter-spacing: 0;
     font-size: 9pt;
     width: 88%;
+    text-transform: uppercase;
     color: #444649;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3704,6 +3723,12 @@ h4, h6 {
   }
 }
 
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .box-spec {
+    font-size: 13px;
+  }
+}
+
 @media (min-width: 1em), screen and (orientation: portrait) {
   .box-spec p {
     display: none;
@@ -3720,7 +3745,8 @@ h4, h6 {
     width: 35%;
     margin: -3px 0 -3px 20px;
     padding: 0;
-    border: 1px solid #04C2C9;
+    border: 1px solid #F44336;
+    color: #F44336;
   }
 }
 
@@ -3814,9 +3840,9 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #project_title {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -3873,6 +3899,16 @@ h4, h6 {
     font-family: "Raleway:700", sans-serif;
     font-size: 10pt;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .project_box p {
+    margin: 0;
+    font-size: 11pt;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .project_box p span {
     font-family: "Raleway:700", sans-serif;
     color: #7b827f;
@@ -4174,6 +4210,7 @@ h4, h6 {
     color: white;
     padding: 4px;
     font-size: 2.1em;
+    color: #FF5722;
   }
   .fa-angle-double-up {
     display: -webkit-box;
@@ -4188,6 +4225,7 @@ h4, h6 {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 4px 16px;
+    font-size: 2em;
     border-radius: 2px;
     width: auto;
     height: auto;
@@ -4227,7 +4265,7 @@ h4, h6 {
     width: 100%;
     font-size: 6pt;
     line-height: 2em;
-    margin-top: 8px;
+    margin-top: 23px;
     color: #cccccc;
   }
 }

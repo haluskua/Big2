@@ -95,53 +95,54 @@
 		width: 100%
 		height: auto
 		display: flex
+		justify-content: center
 		@include phone-landscape
 			margin-bottom: 13px
 		@include desktop
 			margin: 0
-			width: 70%
-		a 
+			width: 100%
+		a    
 			border: none
 
 	#portfolio-header
 		display: flex
 		flex-direction: column
 		align-self: center
-		padding-top: 2%
-		margin-bottom: -4px
+		margin-top: -26%
 			// mediaQuerie
-		@include phone-landscape
+		@include phone-landscape                          
 			//mediaQuerie
 		@include tablet
-			padding-top: 5%
+			padding-top: 18%
 			//mediaQuerie
 		@include desktop
 			width: 71%
 			justify-content: center
 			padding: 0 
-			margin-top: 10% 
+			margin-top: 10%    
 			margin-bottom: 3%               
                           
 	#bulgeword
 		margin: 0 auto
-		color: #ccc37f
-		font-size: 1.13em  
-		letter-spacing: 0
+		color: #bbe3e5
+		font-size: 1em  
+		letter-spacing: 0.03em
 		line-height: 15pt
+		text-transform: uppercase
 		font-family: $font-stack-Raleway
-		@include phone-landscape
-			font-size: 1.87em
+		max-height: 85%
+		@include phone-landscape     
+			font-size: 1.87em   
 		@include tablet
 			font-size: 1.6em
 		@include desktop    
 			display: flex 
 			align-items: flex-start
 			flex-direction: column                                                 
-			font-size: 1.5em   
-			line-height: 1.1em
-			font-weight: 500
-			letter-spacing: 0em
-			padding-top: 60px 
+			font-size: 1.1em   
+			line-height: 1.1em   
+			font-weight: 500                            
+			padding-top: 60px  
 			margin-bottom: 32px    
 
 	#portfolio -color                                                                 
@@ -158,21 +159,24 @@
 			font-weight: normal 
 	#myName
 		display: flex
-		color: #04C2C9
+		color: #d0fdff
 		width: 85vw   
 		font-weight: lighter
 		font-family: $font-stack-Raleway
 		font-weight: 600 
-		font-size: 1em  
+		text-transform: uppercase
+		font-size: 1.3em  
+		letter-spacing: 0.03em
 		@include tablet 
 			padding: 10px 0
 			line-height: 67pt
 			font-size: 4.25em
 		@include desktop   
 			justify-content: flex-start
-			font-size: 1.13em
-			line-height: 27pt    
-					     		  
+			font-size: 1.66em
+			text-transform: none
+			line-height: 1em     
+			           
 	.ohk-logo          
 		width: 33%   
 		margin: auto     
@@ -216,27 +220,28 @@
 	.intro, .nameohk
 		display: flex
 		margin: 0
-		color: #07ecf5
+		color: #04C2C9
 		font-size: 1.44em             
 		letter-spacing: 0.05em 
 		position: relative   
 		text-align: justify
 		font-family: $font-stack-Raleway 
 		width: auto 
-		padding: 8px 0px
-		border-right: 1px solid $blue1
+		padding: 8px 8px 0 8px
+		border-radius: 4px
+		border: 1px solid #00BCD4
 		@include tablet   
-			margin-top: 41px
-			font-weight: normal
+			margin-top: 41px                      
+			font-weight: normal   
 			text-shadow: none
 			font-size: 2.15em
 			position: relative
 		@include desktop
-			font-size: 2.1em
-			font-weight: normal             
-			padding: 0 10px  
-			line-height: 3em
-			letter-spacing: 0                                                
+			font-size: 2.35em
+			font-weight: 600            
+			padding: 0 10px                         
+			line-height: 3em   
+			letter-spacing: 0.03em                                                
 			margin-top: 0px
 			text-transform: normal
 		span 
@@ -291,7 +296,7 @@
 	.fas
 		font-size: 1.3em
 	.fa-bars 
-		color: #d8f9ff   
+		color: #F44336   
                                                                                                              
 	.logo-desc
 		width: 100%
@@ -358,11 +363,11 @@
 		list-style: none                         
 		margin: 0 0 8px 14px
 		width: 96px 
-		border-bottom: 0.5px solid #ccc37f
+		border-bottom: 0.5px solid #F44336
 		@include phone-landscape
 			width: 19%          
 			margin-top: 4px
-		@include tablet
+		@include tablet  
 			width: 100%
 			height: auto
 			display: flex
@@ -436,8 +441,8 @@
 				background-color: $blue1
 				font-size: 0.9em  
 				border-bottom: 1.3px solid #465c63  
-
-	.fields
+                           
+	.fields               
 		font-family: $font-stack-roboto
 		font-weight: bold
 		font-size: 0.82em
@@ -447,7 +452,7 @@
 		@include tablet
 			font-size: 1em
 			letter-spacing: 0em
-		@include desktop
+		@include desktop   
 			font-size: 0.77em
 			font-weight: normal
 			color: white
@@ -587,7 +592,7 @@
 		position: fixed
 		justify-content: space-around
 		border-radius: 18px 0 0 0
-		background-color: #84afbe
+		background-color: #04C2C9
 		//mediaQuerie
 		@include phone-landscape
 			justify-content: flex-start
