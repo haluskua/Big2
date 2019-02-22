@@ -254,7 +254,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .bio {
-    margin-top: -2px;
+    margin-top: 9px;
     width: 100%;
     height: auto;
     display: -webkit-box;
@@ -272,10 +272,14 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .bio {
     margin: 0;
+    width: 70%;
   }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
+  .bio a {
+    border: none;
+  }
   #portfolio-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -299,23 +303,23 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #portfolio-header {
-    width: 100%;
+    width: 71%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     padding: 0;
     margin-top: 10%;
+    margin-bottom: 3%;
   }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #bulgeword {
     margin: 0 auto;
-    padding-top: 30px;
-    color: #ddeef5;
-    font-size: 1.4em;
-    font-weight: bold;
+    color: #d8f9ff;
+    font-size: 1.13em;
     letter-spacing: 0;
+    line-height: 15pt;
     font-family: "Raleway", sans-serif;
   }
 }
@@ -328,19 +332,28 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #bulgeword {
-    font-size: 2.6em;
+    font-size: 1.6em;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #bulgeword {
-    color: #ffffff;
-    font-size: 2.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 1.5em;
     line-height: 1.1em;
     font-weight: 500;
     letter-spacing: 0em;
     padding-top: 60px;
-    margin-bottom: 26px;
+    margin-bottom: 32px;
   }
 }
 
@@ -363,8 +376,37 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #myName {
-    color: pink;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #04C2C9;
+    width: 85vw;
+    font-weight: lighter;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 1em;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  #myName {
+    padding: 10px 0;
+    line-height: 67pt;
+    font-size: 5em;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #myName {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    font-size: 1.13em;
+    line-height: 27pt;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .ohk-logo {
     width: 33%;
     margin: auto;
@@ -436,20 +478,21 @@ h4, h6 {
     display: -ms-flexbox;
     display: flex;
     margin: auto;
-    margin-top: 30px;
-    color: #ffc0cb;
-    font-size: 1.35em;
+    color: #07ecf5;
+    font-size: 1.02em;
     letter-spacing: 0em;
     position: relative;
     text-align: justify;
     font-family: "Raleway", sans-serif;
+    width: auto;
+    padding: 8px 12px;
+    border: 1px solid #04C2C9;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .intro, .nameohk {
-    height: 60px;
-    margin-top: 29px;
+    margin-top: 41px;
     font-weight: normal;
     text-shadow: none;
     font-size: 2.15em;
@@ -459,17 +502,20 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .intro, .nameohk {
-    font-size: 1.2em;
+    font-size: 2.1em;
     font-weight: normal;
-    padding: 0;
+    padding: 0 10px;
+    line-height: 3em;
     letter-spacing: 0;
     margin-top: 0px;
     text-transform: normal;
-    color: #f0f7e0;
   }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
+  .viewwork {
+    cursor: pointer;
+  }
   .nameohk {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -542,6 +588,9 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   #logo-space {
     display: none;
+  }
+  .fas {
+    font-size: 1.3em;
   }
   .fa-bars {
     color: #ffffff;
@@ -697,7 +746,7 @@ h4, h6 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background-color: #5594ab;
+    background-color: #05213c;
     padding: 0;
     margin-bottom: 0;
   }
@@ -846,10 +895,8 @@ h4, h6 {
     display: flex;
     -ms-flex-item-align: end;
         align-self: flex-end;
-    padding-right: 4px;
     font-family: "Raleway", sans-serif;
     font-weight: bolder;
-    padding-left: 22px;
     font-size: 1.2em;
     color: #fbfdff;
   }
@@ -858,10 +905,12 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .nav-archives {
     font-size: 1.1em;
+    padding: 2px 18px;
     text-align: center;
     background-color: none;
     font-weight: normal;
-    padding: 8px 12px;
+    -ms-flex-item-align: center;
+        align-self: center;
     width: auto;
   }
 }
@@ -870,6 +919,8 @@ h4, h6 {
   .nav-archives {
     color: #ffffff;
     text-align: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     z-index: 999;
     font-size: 1.1em;
     letter-spacing: 0.15em;
@@ -1457,6 +1508,18 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
+  .bio-intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .opening_statement, .mini_statement, .block {
     text-align: justify;
     display: -webkit-box;
@@ -1467,9 +1530,8 @@ h4, h6 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    width: 91vw;
+    width: 91%;
     margin-bottom: 20px;
-    margin-left: 14px;
     line-height: 1.44em;
     color: #3c3937;
     color: white;
@@ -1686,7 +1748,7 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .opening_statement_desktop p {
     padding: 0 17px;
-    font-size: 9pt;
+    font-size: 10pt;
     color: #444649;
     line-height: 15pt;
     margin: 0;
@@ -1743,7 +1805,7 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #181525;
+    color: #05213c;
     font-size: 2.2em;
     font-weight: 600;
     list-style: none;
@@ -1773,7 +1835,7 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
   }
 }
 
@@ -1982,6 +2044,21 @@ h4, h6 {
   }
 }
 
+@media (min-width: 1em), screen and (orientation: portrait) {
+  #gd-projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .wagai-weh {
     height: 100vh;
@@ -2130,14 +2207,13 @@ h4, h6 {
     width: 100%;
   }
   .contact-section #contact p {
-    width: 75%;
+    width: 100%;
     font-family: "Dancing Script";
-    font-size: 1.5em;
+    font-size: 1.1em;
     text-align: justify;
     color: #444649;
     text-align: center;
     font-weight: lighter;
-    padding: 21px;
     line-height: 29px;
   }
 }
@@ -2198,7 +2274,7 @@ h4, h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-left: 70px;
+    padding-left: 84px;
   }
 }
 
@@ -2545,7 +2621,6 @@ h4, h6 {
     display: flex;
     width: 56%;
     margin-top: 0px;
-    margin-left: 23px;
     padding: 0;
     font-size: 12.8pt;
     line-height: 20pt;
@@ -3818,17 +3893,18 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #unkown {
-    font-family: "Roboto";
-    font-size: 0.77em;
+    font-family: "Raleway", sans-serif;
+    font-size: 8pt;
     font-weight: lighter;
-    margin-top: 20px;
+    font-style: italic;
+    margin-top: 7px;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #unkown {
     margin-top: 10px;
-    font-size: 0.52em;
+    font-size: 9pt;
   }
 }
 
@@ -4026,6 +4102,7 @@ h4, h6 {
     height: auto;
     display: block;
     margin: 20px auto;
+    margin-bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4035,10 +4112,10 @@ h4, h6 {
   }
   #box-canvas {
     margin-left: 20%;
-    width: 92vw;
+    width: 90vw;
     height: auto;
     display: block;
-    margin: 20px auto;
+    margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4099,14 +4176,26 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .fa-angle-double-up {
-    padding: 8px 20px;
+    font-size: 2em;
+    padding: 10px 24px;
     border-radius: 4px;
   }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background-color: #060410;
+    height: 60px;
   }
   .footnote {
     display: -webkit-box;
@@ -4118,6 +4207,7 @@ h4, h6 {
     width: 100%;
     font-size: 6pt;
     line-height: 2em;
+    margin-top: 8px;
     color: #cccccc;
   }
 }

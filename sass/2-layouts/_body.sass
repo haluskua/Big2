@@ -146,16 +146,20 @@
       margin-bottom: -14px
       width: 100%
 
+  .bio-intro
+    display: flex
+    flex-direction: column
+    align-items: center 
+
   // Paragraph slot
   .opening_statement, .mini_statement, .block
     text-align: justify
     display: flex
     flex-wrap: wrap
     justify-content: flex-start   
-    width: 91vw
+    width: 91%
     margin-bottom: 20px
-    margin-left: 14px
-    line-height: 1.44em
+    line-height: 1.44em   
     color: #3c3937
     color: white
     font-weight: normal
@@ -290,7 +294,7 @@
       font-weight: normal
     p
       padding: 0 17px
-      font-size: 9pt
+      font-size: 10pt
       color: #444649
       line-height: 15pt      
       margin: 0
@@ -326,7 +330,7 @@
   // Horiontal bar with title on page
   #push-up
     display: flex
-    color: #181525  
+    color: #05213c 
     font-size: 2.2em           
     font-weight: 600
     list-style: none 
@@ -344,7 +348,7 @@
       margin-bottom: 4px
     @include desktop
       display: flex
-      margin-bottom: 2%
+      margin-bottom: 5%
 
     .bar            
       width: auto  
@@ -468,7 +472,12 @@
       border: 0
       @include desktop
         height: 100%
-        margin: 0 auto   
+        margin: 0 auto 
+  #gd-projects
+    display: flex 
+    flex-direction: column
+    align-items: center 
+
                   
   #film-projects
     @include desktop
@@ -544,14 +553,13 @@
       height: 100%
       width: 100%
       p
-        width: 75%
+        width: 100%
         font-family: $font-stack-Dancing-script
-        font-size: 1.5em
+        font-size: 1.1em
         text-align: justify
         color: $black1
         text-align: center
         font-weight: lighter
-        padding: 21px
         line-height: 29px
         @include phone-landscape
         @include tablet
@@ -579,7 +587,7 @@
     display: flex
     width: auto
     justify-content: center
-    padding-left: 70px
+    padding-left: 84px
     @include tablet
       height: 242px
       margin-right: -94px
@@ -803,7 +811,6 @@
       display: flex
       width: 56%
       margin-top: 0px
-      margin-left: 23px
       padding: 0
       font-size: 12.8pt                   
       line-height: 20pt 
@@ -1559,13 +1566,14 @@
       letter-spacing: 0.04em
 
   #unkown
-    font-family: $font-stack-roboto
-    font-size: 0.77em
+    font-family: $font-stack-Raleway
+    font-size: 8pt
     font-weight: lighter
-    margin-top: 20px
+    font-style: italic
+    margin-top: 7px
     @include desktop
       margin-top: 10px
-      font-size: 0.52em   
+      font-size: 9pt   
 
   .outer-div
     display: flex
@@ -1683,16 +1691,17 @@
     height: auto
     display: block
     margin: 20px auto
+    margin-bottom: 0
     display: flex
     justify-content: center
 
   #box-canvas
     margin-left: 20%
-    width: 92vw
+    width: 90vw
     height: auto
     display: block
-    margin: 20px auto
-    display: flex
+    margin: 0
+    display: flex   
     justify-content: center
     @include desktop
       height: auto
@@ -1717,18 +1726,25 @@
     width: auto 
     height: auto  
     @include desktop 
-      padding: 8px 20px
-      border-radius: 4px            
+      font-size: 2em
+      padding: 10px 24px
+      border-radius: 4px              
                        
   footer 
+    display: flex
+    flex-direction: column
+    justify-content: center
     background-color: #060410
+    height: 60px
+
   .footnote 
     display: flex  
     justify-content: center
-    width: 100%
+    width: 100%    
     font-size: 6pt
     line-height: 2em
-    color: #cccccc  
+    margin-top: 8px
+    color: #cccccc    
     @include desktop
       display: flex     s
       justify-content: center  
