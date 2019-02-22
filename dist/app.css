@@ -593,7 +593,7 @@ h4, h6 {
     font-size: 1.3em;
   }
   .fa-bars {
-    color: #ffffff;
+    color: #d8f9ff;
   }
   .logo-desc {
     width: 100%;
@@ -721,9 +721,9 @@ h4, h6 {
         align-self: flex-start;
     padding: 3px;
     list-style: none;
-    margin-bottom: 8px;
+    margin: 0 0 8px 14px;
     width: 96px;
-    border-bottom: 0.5px solid pink;
+    border-bottom: 0.3px solid #04C2C9;
   }
 }
 
@@ -893,12 +893,11 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     font-family: "Raleway", sans-serif;
-    font-weight: bolder;
     font-size: 1.2em;
-    color: #fbfdff;
+    color: #d8f9ff;
   }
 }
 
@@ -917,7 +916,6 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .nav-archives {
-    color: #ffffff;
     text-align: center;
     -ms-flex-item-align: center;
         align-self: center;
