@@ -17,6 +17,7 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display+SC|Rokkitt");
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 @import url("https://fonts.googleapis.com/css?family=Raleway:700");
+@import url("https://fonts.googleapis.com/css?family=NTR");
 @font-face {
   font-family: 'Orbitron';
   src: url(..Big2/fonts/Orbitron-Black.ttf);
@@ -914,7 +915,7 @@ h4, h6 {
     display: flex;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    font-family: "Raleway", sans-serif;
+    font-family: "NTR", sans-seriff;
     font-size: 1.2em;
     letter-spacing: 0.1em;
     color: #d8f9ff;
@@ -940,8 +941,9 @@ h4, h6 {
     -ms-flex-item-align: center;
         align-self: center;
     z-index: 999;
-    font-size: 1.1em;
-    letter-spacing: 0.15em;
+    font-weight: bold;
+    font-size: 1.16em;
+    letter-spacing: 0.2em;
     font-family: "Open Sans";
   }
 }
@@ -1319,7 +1321,7 @@ h4, h6 {
         -ms-flex-pack: start;
             justify-content: flex-start;
     background-color: #181525;
-    background-color: #ffffff;
+    background-color: #000000;
   }
 }
 
@@ -1550,7 +1552,6 @@ h4, h6 {
     width: 91%;
     margin-bottom: 20px;
     line-height: 1.44em;
-    color: #3c3937;
     color: white;
     font-weight: normal;
     font-family: Rokkitt, serif;
@@ -1586,21 +1587,22 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .opening_statement p, .mini_statement p, .block p {
-    font-size: 11pt;
-    line-height: 18pt;
-    color: #000000;
+    font-size: 14pt;
+    line-height: 19pt;
+    letter-spacing: 0.02em;
+    color: white;
     padding: 0 0 16px 0px;
     margin-bottom: -8px;
     font-weight: normal;
     max-height: 85%;
-    font-family: "Raleway", sans-serif;
+    font-family: "NTR", sans-seriff;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .opening_statement p, .mini_statement p, .block p {
-    font-size: 13pt;
-    line-height: 20pt;
+    font-size: 14pt;
+    line-height: 18pt;
   }
 }
 
@@ -1613,8 +1615,8 @@ h4, h6 {
     -ms-flex-item-align: start;
         align-self: flex-start;
     letter-spacing: 0em;
-    font-size: 11pt;
-    line-height: 20pt;
+    font-size: 14pt;
+    line-height: 18pt;
     width: 56%;
     background: none;
   }
@@ -1668,7 +1670,7 @@ h4, h6 {
   #about_text {
     font-size: 12pt;
     line-height: 17pt;
-    color: #444649;
+    color: white;
     padding: 0 15px;
     margin-bottom: -8px;
     font-weight: normal;
@@ -1724,7 +1726,7 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #444649;
+    color: white;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1733,7 +1735,7 @@ h4, h6 {
     line-height: 1.5pt;
     padding: 0px 6px;
     margin-bottom: 60px;
-    font-family: "Raleway", sans-serif;
+    font-family: "NTR", sans-seriff;
   }
 }
 
@@ -1767,10 +1769,10 @@ h4, h6 {
   .opening_statement_desktop p {
     padding: 0 17px;
     font-size: 10pt;
-    color: #000000;
+    color: white;
     line-height: 15pt;
     margin: 0;
-    font-family: "Raleway", sans-serif;
+    font-family: "NTR", sans-seriff;
   }
 }
 
@@ -1784,8 +1786,10 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .opening_statement_desktop p {
-    font-size: 13pt;
-    line-height: 20pt;
+    width: 54%;
+    font-size: 14pt;
+    line-height: 18pt;
+    padding-top: 20px;
   }
 }
 
@@ -1829,7 +1833,7 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #05213c;
+    color: white;
     font-size: 2.2em;
     font-weight: 600;
     list-style: none;
@@ -1883,12 +1887,12 @@ h4, h6 {
     width: auto;
     height: auto;
     line-height: 0.5em;
-    font-size: 1.34em;
+    font-size: 1.6em;
     text-transform: none;
     font-weight: bold;
-    color: #000000;
+    color: white;
     text-transform: uppercase;
-    font-family: "Raleway:700", sans-serif;
+    font-family: "NTR", sans-seriff;
     padding: 3px 15px 3px 18px;
   }
 }
@@ -2234,9 +2238,9 @@ h4, h6 {
   .contact-section #contact p {
     width: 100%;
     font-family: "Dancing Script";
-    font-size: 1.1em;
+    font-size: 1.5em;
     text-align: justify;
-    color: #444649;
+    color: white;
     text-align: center;
     font-weight: lighter;
     line-height: 29px;
@@ -2567,7 +2571,7 @@ h4, h6 {
     font-size: 1.24em;
     line-height: 1.5em;
     font-family: Rokkitt, serif;
-    color: #444649;
+    color: white;
     text-align: center;
     padding: 16px 16px 30px 16px;
     margin-top: -33px;
@@ -2575,7 +2579,7 @@ h4, h6 {
     text-align: justify;
     font-size: 12pt;
     line-height: 18pt;
-    color: #444649;
+    color: white;
     font-weight: normal;
     max-height: 85%;
     font-family: "Raleway", sans-serif;
@@ -2616,11 +2620,13 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .scpmt-gd, .scpmt-t2 {
-    font-size: 11pt;
-    line-height: 18pt;
-    color: #000000;
+    font-size: 14pt;
+    line-height: 19pt;
+    letter-spacing: 0.02em;
+    color: white;
     display: none;
     margin-top: -30px;
+    font-family: "NTR", sans-seriff;
   }
 }
 
@@ -2630,7 +2636,6 @@ h4, h6 {
     display: -ms-flexbox;
     display: flex;
     margin: 0 auto;
-    color: #444649;
     padding: 0;
     width: 93%;
     font-size: 13pt;
@@ -2647,11 +2652,10 @@ h4, h6 {
     width: 56%;
     margin-top: 0px;
     padding: 0;
-    font-size: 11pt;
-    line-height: 20pt;
+    font-size: 14pt;
+    line-height: 18pt;
     -ms-flex-item-align: center;
         align-self: center;
-    font-family: "Raleway", sans-serif;
   }
 }
 
@@ -2988,13 +2992,15 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .selfie2 {
     margin-top: 0;
-    width: 12%;
+    margin-bottom: 10px;
+    width: 16%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-top: 50px;
     -ms-flex-item-align: center;
         align-self: center;
+    border: none;
   }
 }
 
@@ -3221,7 +3227,7 @@ h4, h6 {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-bottom: 28px;
-    color: #4287a0;
+    color: #d8f9ff;
     width: 116px;
     font-size: 1.15em;
     border-bottom: 1px dotted;
@@ -3434,7 +3440,6 @@ h4, h6 {
   .blocks section, .blocks .one, .one section, .one .one {
     width: 35vw;
     border-bottom: none;
-    border-top: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3450,7 +3455,6 @@ h4, h6 {
             justify-content: flex-start;
     height: 100%;
     margin-bottom: 35px;
-    margin-top: 0;
   }
 }
 
@@ -3582,7 +3586,7 @@ h4, h6 {
     font-size: 1em;
     line-height: 1.2em;
     text-align: justify;
-    color: #444649;
+    color: #00BCD4;
     letter-spacing: 0;
     padding: 20px;
     padding-bottom: 6px;
@@ -3699,11 +3703,11 @@ h4, h6 {
     width: auto;
     font-family: "Raleway:700", sans-serif;
     font-weight: 600;
-    letter-spacing: 0;
+    letter-spacing: 0.1em;
     font-size: 9pt;
     width: 88%;
     text-transform: uppercase;
-    color: #444649;
+    color: white;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3735,6 +3739,8 @@ h4, h6 {
   }
   .blue_line {
     margin-bottom: 0;
+    color: #F44336;
+    border: 1px solid;
   }
   .blue_line1 {
     display: -webkit-box;
@@ -3886,7 +3892,6 @@ h4, h6 {
     width: auto;
     padding: 10px;
     margin: 0;
-    background-color: rgba(255, 255, 255, 0.76);
   }
 }
 
@@ -3895,9 +3900,8 @@ h4, h6 {
     width: 100%;
     padding-bottom: 0;
     margin-bottom: 0;
-    color: #04C2C9;
+    color: #ffffff;
     font-family: "Raleway:700", sans-serif;
-    font-size: 10pt;
   }
 }
 
@@ -3911,7 +3915,9 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .project_box p span {
     font-family: "Raleway:700", sans-serif;
-    color: #7b827f;
+    color: #00BCD4;
+    font-weight: bold;
+    font-size: 10pt;
   }
   #quote {
     font-size: 1em;

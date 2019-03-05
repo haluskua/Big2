@@ -27,7 +27,7 @@
         flex-direction: column
         justify-content: flex-start
         background-color: #181525
-        background-color: #ffffff
+        background-color: #000000
         @include tablet
         @include desktop
           border: none
@@ -158,7 +158,6 @@
     width: 91%
     margin-bottom: 20px
     line-height: 1.44em   
-    color: #3c3937
     color: white
     font-weight: normal
     font-family: Rokkitt, serif 
@@ -179,29 +178,30 @@
       padding: 14px 0px
                                                                             
     p
-      font-size: 11pt
-      line-height: 18pt
-      color: #000000
+      font-size: 14pt
+      line-height: 19pt
+      letter-spacing: 0.02em
+      color: white
       padding: 0 0 16px 0px
       margin-bottom: -8px
-      font-weight: normal
+      font-weight: normal   
       max-height: 85%
-      font-family: $font-stack-Raleway
+      font-family: $font-stack-ntr
       @include tablet 
-        font-size: 13pt
-        line-height: 20pt
+        font-size: 14pt
+        line-height: 18pt
       @include desktop
         padding: 0px
         display: flex  
         align-self: flex-start                     
         letter-spacing: 0em
-        font-size: 11pt
-        line-height: 20pt  
-        width: 56%      
-        background: none      
+        font-size: 14pt
+        line-height: 18pt  
+        width: 56%        
+        background: none        
                  
-    span, .par-title     
-      font-size: 1.42em                      
+    span, .par-title       
+      font-size: 1.42em                        
       font-weight: bold
       font-family: $font-stack-Raleway   
       color: #000000
@@ -210,7 +210,7 @@
       width: 100%
       font-weight: bold
       text-transform: uppercase
-      @include phone-landscape  
+      @include phone-landscape   
       @include tablet
         font-size: 1.66em                  
         margin: auto                         
@@ -272,7 +272,7 @@
     line-height: 1.5pt
     padding: 0px 6px
     margin-bottom: 60px                                     
-    font-family: $font-stack-Raleway    
+    font-family: $font-stack-ntr
     @include tablet                                         
       padding: 0
       font-size: 1.3em
@@ -291,21 +291,22 @@
       line-height: 1.4em            
       background: none
       font-weight: normal
-    p
+    p 
       padding: 0 17px
       font-size: 10pt
-      color: #000000   
+      color: white   
       line-height: 15pt      
       margin: 0
-      font-family: $font-stack-Raleway
+      font-family: $font-stack-ntr
       @include tablet 
         font-size: 14pt
         line-height: 19pt
         text-align: justify
       @include desktop 
-        font-size: 13pt 
-        line-height: 20pt 
-      
+        width: 54%
+        font-size: 14pt 
+        line-height: 18pt 
+        padding-top: 20px
 
   .mini_statement             
       @include desktop
@@ -313,8 +314,8 @@
         font-size: 1em                  
 
   .screen
-    display: flex                          
-    justify-content: center
+    display: flex                            
+    justify-content: center 
     width: 100vw
     height: 52px
     border-radius: 4px
@@ -332,7 +333,7 @@
   // Horiontal bar with title on page
   #push-up
     display: flex
-    color: #05213c 
+    color: white
     font-size: 2.2em           
     font-weight: 600
     list-style: none 
@@ -366,12 +367,12 @@
           width: auto 
           height: auto                          
           line-height: 0.5em               
-          font-size: 1.34em    
+          font-size: 1.6em    
           text-transform: none
           font-weight: bold                                                    
-          color: #000000
+          color: white
           text-transform: uppercase
-          font-family: $font-stack-Raleway-bold
+          font-family: $font-stack-ntr
           padding: 3px 15px 3px 18px
 
     #bottom-line
@@ -558,7 +559,7 @@
       p
         width: 100%
         font-family: $font-stack-Dancing-script
-        font-size: 1.1em
+        font-size: 1.5em
         text-align: justify
         color: $black1
         text-align: center
@@ -566,7 +567,7 @@
         line-height: 29px
         @include phone-landscape
         @include tablet
-          width: 100%
+          width: 100%  
           font-size: 2.1em
           line-height: 37px 
         @include desktop
@@ -796,18 +797,19 @@
       font-family: Rokkitt, serif 
 
   .scpmt-gd, .scpmt-t2
-    font-size: 11pt
-    line-height: 18pt
-    color: #000000
+    font-size: 14pt
+    line-height: 19pt
+    letter-spacing: 0.02em
+    color: white
     display: none
-    margin-top: -30px            
+    margin-top: -30px   
+    font-family: $font-stack-ntr
     @include tablet
       display: flex
       margin: 0 auto
-      color: $black1
       padding: 0                                                
       width: 93%
-      font-size: 13pt
+      font-size: 13pt  
       line-height: 20pt
       padding: 12px
     @include desktop
@@ -815,10 +817,9 @@
       width: 56%
       margin-top: 0px
       padding: 0
-      font-size: 11pt                   
-      line-height: 20pt 
+      font-size: 14pt                   
+      line-height: 18pt 
       align-self: center  
-      font-family: $font-stack-Raleway  
    
   #gd-folders
     display: flex   
@@ -1025,10 +1026,12 @@
       width: 14%
     @include desktop
       margin-top: 0
-      width: 12%
-      display: flex
+      margin-bottom: 10px
+      width: 16%  
+      display: flex     
       margin-top: 50px
       align-self: center
+      border: none
 
   .rgdp
     display: flex    
@@ -1165,18 +1168,18 @@
       display: flex
       justify-content: space-between
       margin-bottom: 28px
-      color: #4287a0
+      color: #d8f9ff
       width: 116px
       font-size: 1.15em
       border-bottom: 1px dotted
-      letter-spacing: 0.05em  
+      letter-spacing: 0.05em    
 
   #skills-descOpen, #gd-descOpen, #t-descOpen
     display: flex
     margin-top: -10px
     @include tablet 
       display: none
-
+                           
   #skills-descClose, #gd-descClose, #t-descClose
     display: none
     margin-top: -13px     
@@ -1286,17 +1289,15 @@
       @include desktop   
         width: 35vw
         border-bottom: none
-        border-top: none
         display: flex
         flex-direction: column
         align-items: center
         justify-content: flex-start
         height: 100%
-        margin-bottom: 35px
-        margin-top: 0
-        
+        margin-bottom: 35px     
+          
       div   
-        display: flex
+        display: flex  
         flex-direction: column
         background: none
         height: auto
@@ -1361,7 +1362,7 @@
         font-size: 1em
         line-height: 1.2em
         text-align: justify
-        color: $black1      
+        color: #00BCD4   
         letter-spacing: 0
         padding: 20px 
         padding-bottom: 6px   
@@ -1436,18 +1437,18 @@
     width: auto                                  
     font-family: $font-stack-Raleway-bold
     font-weight: 600
-    letter-spacing: 0
+    letter-spacing: 0.1em
     font-size: 9pt
     width: 88%
     text-transform: uppercase
-    color: $black1
+    color: white
     display: flex
     text-align: justify
     align-self: center
     padding-top: 10px    
     line-height: 13pt
-    max-height: 85%
-    @include tablet
+    max-height: 85%  
+    @include tablet  
       font-size: 12pt
       width: 84%
     @include desktop 
@@ -1456,17 +1457,19 @@
       display: none
 
   .blue_line
-    margin-bottom: 0    
+    margin-bottom: 0 
+    color: #F44336
+    border: 1px solid
 
   .blue_line1 
     display: flex    
-    align-self: flex-start                 
+    align-self: flex-start                     
     width: 35%
     margin: -3px 0 -3px 20px
     padding: 0
     border: 1px solid #F44336
     color: #F44336
-    @include tablet
+    @include tablet   
       width: 30%
       margin-left: 55px
   
@@ -1549,24 +1552,24 @@
       width: auto                            
       padding: 10px
       margin: 0
-      background-color: rgba(255, 255, 255, 0.76)
     p 
       width: 100%
       padding-bottom: 0
       margin-bottom: 0
-      color: $blue1
+      color: #ffffff
       font-family: $font-stack-Raleway-bold
-      font-size: 10pt  
       @include desktop 
         margin: 0 
         font-size: 11pt         
   
       span 
         font-family: $font-stack-Raleway-bold
-        color: #7b827f      
+        color: #00BCD4
+        font-weight: bold  
+        font-size: 10pt
 
   #quote
-    font-size: 1em
+    font-size: 1em   
     font-family: $font-stack-antic
     color: green
     width: 100%
