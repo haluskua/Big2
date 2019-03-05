@@ -1422,7 +1422,7 @@ h4, h6 {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 5px;
-    background-color: beige;
+    background-color: #fdfdf4;
   }
 }
 
@@ -1597,7 +1597,6 @@ h4, h6 {
   .opening_statement p, .mini_statement p, .block p {
     font-size: 14pt;
     line-height: 19pt;
-    letter-spacing: 0.02em;
     color: white;
     padding: 0 0 16px 0px;
     margin-bottom: -8px;
@@ -2654,7 +2653,6 @@ h4, h6 {
   .scpmt-gd, .scpmt-t2 {
     font-size: 14pt;
     line-height: 19pt;
-    letter-spacing: 0.02em;
     color: white;
     display: none;
     margin-top: -30px;
@@ -2803,7 +2801,7 @@ h4, h6 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #e4e3dc;
+    background-color: #fdfdf4;
   }
 }
 
@@ -3475,7 +3473,7 @@ h4, h6 {
     margin-bottom: 10px;
     padding-top: 10px;
     margin: auto;
-    background-color: beige;
+    background-color: #fdfdf4;
   }
 }
 
@@ -3629,7 +3627,7 @@ h4, h6 {
     font-size: 1em;
     line-height: 1.2em;
     text-align: justify;
-    color: #00BCD4;
+    color: #607D8B;
     letter-spacing: 0;
     padding: 20px;
     padding-bottom: 6px;
