@@ -1323,16 +1323,11 @@ h4, h6 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    background-image: url("../dist/imgs/orange_pattern.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: repeat;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   body main section {
-    background: none;
     border: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1848,16 +1843,11 @@ h4, h6 {
     display: flex;
     color: white;
     width: 100%;
-    font-size: 2.2em;
+    font-size: 2em;
     font-weight: 600;
     list-style: none;
     text-transform: uppercase;
     letter-spacing: 0.02em;
-    background-image: url("../dist/imgs/orange_pattern.png");
-    background-size: contain;
-    background-repeat: repeat;
-    background-position: center;
-    background-color: rgba(240, 128, 128, 0.86);
     font-family: "Raleway:700", sans-serif;
     margin-left: 0;
     margin-bottom: -10px;
@@ -1866,6 +1856,7 @@ h4, h6 {
         -ms-flex-pack: center;
             justify-content: center;
     z-index: 99999;
+    background-color: black;
   }
 }
 
@@ -1906,7 +1897,7 @@ h4, h6 {
     width: auto;
     height: auto;
     line-height: 0.5em;
-    font-size: 1.6em;
+    font-size: 1.86em;
     text-transform: none;
     font-weight: bold;
     color: white;
