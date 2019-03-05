@@ -1117,6 +1117,7 @@ h4, h6 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    border-radius: 0 0 0 0;
   }
 }
 
@@ -1138,6 +1139,7 @@ h4, h6 {
     border: none;
     z-index: 99999999;
     position: fixed;
+    border-radius: 0;
     background-image: none;
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -1290,6 +1292,7 @@ h4, h6 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    background-color: #000000;
   }
 }
 
@@ -1320,13 +1323,16 @@ h4, h6 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    background-color: #181525;
-    background-color: #000000;
+    background-image: url("../dist/imgs/orange_pattern.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   body main section {
+    background: none;
     border: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1355,6 +1361,8 @@ h4, h6 {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -1364,7 +1372,10 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #wagai {
     width: 100%;
+    height: 57vh;
     margin-bottom: 33px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -1416,11 +1427,13 @@ h4, h6 {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 5px;
+    background-color: beige;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .columnsSplit {
+    width: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
@@ -1834,14 +1847,20 @@ h4, h6 {
     display: -ms-flexbox;
     display: flex;
     color: white;
+    width: 100%;
     font-size: 2.2em;
     font-weight: 600;
     list-style: none;
     text-transform: uppercase;
     letter-spacing: 0.02em;
+    background-image: url("../dist/imgs/orange_pattern.png");
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+    background-color: rgba(240, 128, 128, 0.86);
     font-family: "Raleway:700", sans-serif;
     margin-left: 0;
-    width: auto;
+    margin-bottom: -10px;
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1852,7 +1871,6 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #push-up {
-    width: 100%;
     font-size: 30pt;
     margin-bottom: 4px;
   }
@@ -1860,6 +1878,8 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #push-up {
+    background: none;
+    padding: 20px 0 8px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1870,7 +1890,6 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   #push-up .bar {
     width: auto;
-    padding: 18px 0;
     margin-top: 20px;
   }
 }
@@ -2034,13 +2053,13 @@ h4, h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     border-bottom: 0;
@@ -2049,7 +2068,10 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #gd-projects, #dm-projects, #t-projects, #about, #talent-projects {
-    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -2089,6 +2111,14 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  #gd-projects {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .wagai-weh {
     height: 100vh;
   }
@@ -2124,7 +2154,6 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #content-holder {
-    margin-top: 10px;
     width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2174,17 +2203,21 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 9px;
+    background-color: rgba(214, 80, 149, 0.8);
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #bio {
-    width: 76%;
+    width: 78%;
+    margin-top: 10%;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #bio {
+    margin-top: -46px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2216,6 +2249,13 @@ h4, h6 {
   }
 }
 
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .contact-section {
+    height: 100%;
+    padding-bottom: 10px;
+  }
+}
+
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .contact-section {
     margin: 0 auto;
@@ -2244,6 +2284,7 @@ h4, h6 {
     text-align: center;
     font-weight: lighter;
     line-height: 29px;
+    margin-top: 60px;
   }
 }
 
@@ -2771,6 +2812,7 @@ h4, h6 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background-color: #e4e3dc;
   }
 }
 
@@ -2783,6 +2825,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #main-gallery {
+    background: none;
     height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2900,7 +2943,7 @@ h4, h6 {
     height: auto;
     float: left;
     padding: 7px;
-    border: 1px solid #ecdac9;
+    border: 1px solid #cec8c3;
   }
 }
 
@@ -3108,7 +3151,7 @@ h4, h6 {
         -ms-flex-align: center;
             align-items: center;
     overflow-y: scroll;
-    margin-top: -8px;
+    padding-top: 16px;
     border: 1px solid #e6dee2;
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -3156,6 +3199,13 @@ h4, h6 {
   .talentpage {
     margin-top: 0px;
     padding: 0px;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .iframe {
+    width: 83%;
+    height: 100%;
   }
 }
 
@@ -3265,7 +3315,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .close-caption, .gdClose, .dmClose, .tClose {
-    color: #43d1d6;
+    color: #fffefe;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3279,7 +3329,7 @@ h4, h6 {
     margin-bottom: 20px;
     padding-top: 10px;
     font-style: oblique;
-    border-bottom: 1px solid #43d1d6;
+    border-bottom: 1px solid #fffefe;
     font-family: Rokkitt, serif;
   }
 }
@@ -3313,6 +3363,7 @@ h4, h6 {
     margin: 5px;
   }
   .small-intro {
+    padding-top: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3327,7 +3378,6 @@ h4, h6 {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    margin-bottom: 12px;
   }
 }
 
@@ -3432,7 +3482,9 @@ h4, h6 {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
+    padding-top: 10px;
     margin: auto;
+    background-color: beige;
   }
 }
 
@@ -3698,16 +3750,16 @@ h4, h6 {
     text-transform: uppercase;
     font-size: 7.5pt;
     font-weight: normal;
+    color: #00BCD4;
   }
   .box-spec {
     width: auto;
     font-family: "Raleway:700", sans-serif;
     font-weight: 600;
-    letter-spacing: 0.1em;
     font-size: 9pt;
     width: 88%;
     text-transform: uppercase;
-    color: white;
+    color: #696461;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3900,7 +3952,7 @@ h4, h6 {
     width: 100%;
     padding-bottom: 0;
     margin-bottom: 0;
-    color: #ffffff;
+    color: #44535a;
     font-family: "Raleway:700", sans-serif;
   }
 }
@@ -3913,11 +3965,12 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .project_box p span {
+  .project_box .toolName {
     font-family: "Raleway:700", sans-serif;
     color: #00BCD4;
     font-weight: bold;
     font-size: 10pt;
+    letter-spacing: 0.03em;
   }
   #quote {
     font-size: 1em;
@@ -4015,6 +4068,7 @@ h4, h6 {
     background-color: #04C2C9;
     margin: 6px 0;
     width: 80%;
+    height: 64px;
   }
 }
 
