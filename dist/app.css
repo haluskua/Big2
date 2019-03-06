@@ -353,11 +353,11 @@ h4, h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    font-size: 1.1em;
+    font-size: 1em;
     line-height: 1.1em;
     font-weight: 500;
-    padding-top: 60px;
-    margin-bottom: 32px;
+    padding-top: 70px;
+    margin-bottom: 34px;
   }
 }
 
@@ -407,7 +407,8 @@ h4, h6 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    font-size: 1.66em;
+    font-size: 2.2em;
+    margin-bottom: 4px;
     text-transform: none;
     line-height: 1em;
   }
@@ -510,10 +511,10 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .intro, .nameohk {
-    font-size: 2.35em;
+    font-size: 2.2em;
     font-weight: 600;
     padding: 0 10px;
-    line-height: 3em;
+    line-height: 2.2em;
     letter-spacing: 0.03em;
     margin-top: 0px;
     text-transform: normal;
@@ -1444,7 +1445,7 @@ h4, h6 {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 35%;
+    width: 39%;
     margin: 10px 20px;
     border: none;
     background-image: none;
@@ -1623,8 +1624,8 @@ h4, h6 {
         align-self: flex-start;
     letter-spacing: 0em;
     font-size: 14pt;
-    line-height: 18pt;
-    width: 56%;
+    line-height: 19pt;
+    width: 50%;
     background: none;
   }
 }
@@ -1829,6 +1830,7 @@ h4, h6 {
     height: auto;
     border-left: 0px;
     border-radius: 0;
+    border: none;
   }
 }
 
@@ -1896,12 +1898,11 @@ h4, h6 {
     width: auto;
     height: auto;
     line-height: 0.5em;
-    font-size: 1.86em;
+    font-size: 1.6em;
     text-transform: none;
     font-weight: bold;
     color: white;
     text-transform: uppercase;
-    font-family: "NTR", sans-seriff;
     padding: 3px 15px 3px 18px;
   }
 }
@@ -1912,6 +1913,12 @@ h4, h6 {
     color: #000000;
     border: 1px solid;
     margin-top: 12px;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #push-up #bottom-line {
+    color: #fff6f6;
   }
 }
 
@@ -2169,6 +2176,7 @@ h4, h6 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     width: 100%;
+    margin-bottom: 50px;
   }
 }
 
@@ -2194,7 +2202,6 @@ h4, h6 {
     display: -ms-flexbox;
     display: flex;
     margin-top: 9px;
-    background-color: rgba(214, 80, 149, 0.8);
   }
 }
 
@@ -2679,11 +2686,11 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 56%;
+    width: 50%;
     margin-top: 0px;
     padding: 0;
     font-size: 14pt;
-    line-height: 18pt;
+    line-height: 19pt;
     -ms-flex-item-align: center;
         align-self: center;
   }
@@ -3023,9 +3030,8 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .selfie2 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    width: 16%;
+    margin-bottom: 20px;
+    width: 12%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3770,7 +3776,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .box-spec {
-    font-size: 13px;
+    font-size: 11px;
   }
 }
 
