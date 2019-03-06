@@ -79,7 +79,7 @@ h4, h6 {
 /* LAYOUT */
 /* STYLING FOR HEADER ELEMENTS*/
 @media (min-width: 1em), screen and (orientation: portrait) {
-  .hetpage {
+  #hetpage {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -96,7 +96,7 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  .hetpage {
+  #hetpage {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
