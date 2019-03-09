@@ -254,7 +254,7 @@ ctx.lineTo(65,46);
 ctx.lineTo(30,70);
 
 
-ctx.strokeStyle = "#aab5b4";
+ctx.strokeStyle = "#04C2C9";
 
 ctx.stroke();
 
@@ -286,7 +286,7 @@ ctx.lineTo(84,20);
 
 
 
-ctx.strokeStyle = "orange";
+ctx.strokeStyle = "#04C2C9";
 
 ctx.font = "1.4em Arial";
 ctx.fillStyle = "orange";
@@ -349,10 +349,10 @@ ctx.font = "0.7em Helvetica";
 ctx.fillStyle = "orange";
 ctx.fillText("OMPHALUS.H.KUA",-1,90);
 ctx.font = "0.75em Helvetica";
-ctx.fillStyle = "#635d49";
+ctx.fillStyle = "#04C2C9";
 ctx.fillText("haluskua.one@gmail.com",-1,110);
 // ctx.font = "0.84em Helvetica";
-ctx.fillStyle = "#635d49";
+ctx.fillStyle = "#04C2C9";
 ctx.fillText("0225732261",-1,130);
 
 

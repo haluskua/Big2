@@ -16,10 +16,11 @@ $(document).ready(function(){
  //// Script targeting mainly mobile menus
 
     if (jQuery(window).width() <= 480) {
-        $(".exit-menu, .hamburger-menu, .logo-desc").on("click", function(){
-          $(".mobile-container").hide(300);
-          $(".haus").show(300);
+        $(".exit-menu, .hamburger-menu, .logo-desc, .menu, #wagai").on("click", function(){
+          $(".sticky, .mobile-container").hide(0);
+          $(".haus").show(100);
         });
+
 
         //show menu bar onclick on main logo
         $(".fas, #hetinfo").click(function(){
