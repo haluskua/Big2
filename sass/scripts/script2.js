@@ -289,15 +289,15 @@ ctx.lineTo(84,20);
 ctx.strokeStyle = "#04C2C9";
 
 ctx.font = "1.4em Arial";
-ctx.fillStyle = "orange";
+ctx.fillStyle = "#607d8b";
 ctx.fillText("OHK",25,46);
-ctx.font = "0.74em Helvetica";
-// ctx.fillStyle = "#292824";
-// ctx.fillText("OMPHALUS.H.KUA",-1,90);
-// ctx.font = "0.84em Helvetica";
-// ctx.fillStyle = "orange";
-// ctx.fillText("haluskua.one@gmail.com",-1,110);
-// // ctx.font = "0.84em Helvetica";
+ctx.font = "0.74em NTR";
+ctx.fillStyle = "#292824";
+ctx.fillText("OMPHALUS.H.KUA",-1,90);
+ctx.font = "0.84em NTR";
+ctx.fillStyle = "#607d8b";
+ctx.fillText("haluskua.one@gmail.com",-1,110);
+ctx.font = "0.84em NTR";
 // ctx.fillStyle = "#292824e";
 // ctx.fillText("0225732261",-1,130);
 

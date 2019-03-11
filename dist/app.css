@@ -397,8 +397,8 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #myName {
     padding: 10px 0;
-    line-height: 67pt;
-    font-size: 4.25em;
+    line-height: 57pt;
+    font-size: 3em;
   }
 }
 
@@ -1301,7 +1301,7 @@ h4, h6 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    background-color: #000000;
+    background-color: #e8f0f7;
   }
 }
 
@@ -1377,7 +1377,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #wagai {
     width: 100%;
-    height: 57vh;
+    height: 100%;
     margin-bottom: 33px;
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -1468,7 +1468,7 @@ h4, h6 {
     display: flex;
     width: auto;
     margin: 0;
-    color: #181525;
+    color: #ffffff;
     text-align: center;
     font-weight: bold;
     font-size: 1em;
@@ -1608,7 +1608,7 @@ h4, h6 {
   .opening_statement p, .mini_statement p, .block p {
     font-size: 14pt;
     line-height: 19pt;
-    color: white;
+    color: #455152;
     padding: 0 0 16px 0px;
     margin-bottom: -8px;
     font-weight: normal;
@@ -1633,7 +1633,7 @@ h4, h6 {
     -ms-flex-item-align: start;
         align-self: flex-start;
     letter-spacing: 0em;
-    font-size: 14pt;
+    font-size: 13.5pt;
     line-height: 19pt;
     width: 50%;
     background: none;
@@ -1830,6 +1830,7 @@ h4, h6 {
     height: 52px;
     border-radius: 4px;
     height: auto;
+    background-color: steelblue;
     border-top: 1px solid #f3d09e;
   }
 }
@@ -1866,7 +1867,6 @@ h4, h6 {
         -ms-flex-pack: center;
             justify-content: center;
     z-index: 99999;
-    background-color: black;
   }
 }
 
@@ -1884,7 +1884,6 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 3.4%;
   }
 }
 
@@ -1907,7 +1906,7 @@ h4, h6 {
     width: auto;
     height: auto;
     line-height: 0.5em;
-    font-size: 1.6em;
+    font-size: 1.4em;
     text-transform: none;
     font-weight: bold;
     color: white;
@@ -2286,7 +2285,7 @@ h4, h6 {
     font-family: "Dancing Script";
     font-size: 1.5em;
     text-align: justify;
-    color: white;
+    color: #607d8b;
     text-align: center;
     font-weight: lighter;
     line-height: 29px;
@@ -2305,7 +2304,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .contact-section #contact p {
     width: 100%;
-    font-size: 1.75em;
+    font-size: 1.65em;
     letter-spacing: 0.02em;
     margin-bottom: 0;
   }
@@ -2669,7 +2668,7 @@ h4, h6 {
   .scpmt-gd, .scpmt-t2 {
     font-size: 14pt;
     line-height: 19pt;
-    color: white;
+    color: #455152;
     display: none;
     margin-top: -30px;
     font-family: "NTR", sans-seriff;
@@ -2698,7 +2697,7 @@ h4, h6 {
     width: 50%;
     margin-top: 0px;
     padding: 0;
-    font-size: 14pt;
+    font-size: 13.5pt;
     line-height: 19pt;
     -ms-flex-item-align: center;
         align-self: center;
@@ -3964,7 +3963,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .project_box p {
     margin: 0;
-    font-size: 11pt;
+    font-size: 15pt;
   }
 }
 
@@ -3973,9 +3972,18 @@ h4, h6 {
     font-family: "Raleway:700", sans-serif;
     color: #00BCD4;
     font-weight: bold;
-    font-size: 10pt;
+    font-size: 12pt;
     letter-spacing: 0.03em;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .project_box .toolName {
+    font-size: 16pt;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   #quote {
     font-size: 1em;
     font-family: "Antic";
@@ -4059,8 +4067,9 @@ h4, h6 {
     -webkit-box-direction: normal;
         -ms-flex-flow: row;
             flex-flow: row;
-    width: 80%;
+    width: 90%;
     padding: 0;
+    margin: 8% 0;
     position: relative;
     -ms-flex-item-align: center;
         align-self: center;
