@@ -3280,7 +3280,8 @@ h4, h6 {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-bottom: 28px;
-    color: #d8f9ff;
+    margin-top: 12px;
+    color: #607D8B;
     width: 116px;
     font-size: 1.15em;
     border-bottom: 1px dotted;
@@ -3318,7 +3319,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .close-caption, .gdClose, .dmClose, .tClose {
-    color: #fffefe;
+    color: #607D8B;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3973,13 +3974,14 @@ h4, h6 {
     color: #00BCD4;
     font-weight: bold;
     font-size: 12pt;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.05em;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .project_box .toolName {
     font-size: 16pt;
+    letter-spacing: 0;
   }
 }
 

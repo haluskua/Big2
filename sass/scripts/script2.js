@@ -367,26 +367,26 @@ ctx.stroke();
 
 // header_desktop
 
-var c = document.getElementById("myCanvas-menu1");
+// var c = document.getElementById("myCanvas-menu1");
 
-var ctx = c.getContext("2d");
+// var ctx = c.getContext("2d");
 
-ctx.beginPath();
+// ctx.beginPath();
 
 
-ctx.moveTo(50,0);
+// ctx.moveTo(50,0);
 
-ctx.lineTo(84,20);
+// ctx.lineTo(84,20);
 
-ctx.lineTo(84,59);
+// ctx.lineTo(84,59);
 
-ctx.lineTo(50,78);
+// ctx.lineTo(50,78);
 
-ctx.lineTo(16,59);
+// ctx.lineTo(16,59);
 
-ctx.lineTo(16,20);
+// ctx.lineTo(16,20);
 
-ctx.lineTo(50,0);
+// ctx.lineTo(50,0);
 
-ctx.lineTo(84,20);
+// ctx.lineTo(84,20);
 
