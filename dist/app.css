@@ -89,8 +89,9 @@ h4, h6 {
         -ms-flex-align: center;
             align-items: center;
     background-color: #000000;
-    background-position: center;
+    background-image: url("../dist/imgs/3d-modelling.jpg");
     background-size: cover;
+    background-position: right;
     background-repeat: no-repeat;
   }
 }
@@ -276,7 +277,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .bio {
     margin: 0;
-    width: 100%;
+    width: auto;
   }
 }
 
@@ -486,7 +487,7 @@ h4, h6 {
     display: -ms-flexbox;
     display: flex;
     margin: 0;
-    color: #04C2C9;
+    color: #d8f7ff;
     font-size: 1.44em;
     letter-spacing: 0.05em;
     position: relative;
@@ -495,7 +496,7 @@ h4, h6 {
     width: auto;
     padding: 8px 8px 0 8px;
     border-radius: 4px;
-    border: 1px solid #00BCD4;
+    border: 1px solid #d8f7ff;
   }
 }
 
@@ -864,6 +865,7 @@ h4, h6 {
             justify-content: center;
   }
   .hamburger-menu:hover {
+    border-radius: 5px;
     background-color: #04C2C9;
   }
   .hamburger-menu:visited, .hamburger-menu:active, .hamburger-menu:focus, .hamburger-menu:hover {
@@ -918,7 +920,7 @@ h4, h6 {
     -ms-flex-item-align: start;
         align-self: flex-start;
     font-family: "NTR", sans-seriff;
-    font-size: 1.2em;
+    font-size: 1.3em;
     letter-spacing: 0.1em;
     color: #d8f9ff;
   }
@@ -1007,10 +1009,6 @@ h4, h6 {
     display: -ms-flexbox;
     display: flex;
     position: relative;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-flow: row-reverse;
-            flex-flow: row-reverse;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1192,9 +1190,7 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   #menu-buttons {
     position: fixed;
-    right: 8px;
-    top: 9px;
-    width: 29%;
+    width: 25.8%;
     height: 29px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1207,6 +1203,9 @@ h4, h6 {
         -ms-flex-direction: column;
             flex-direction: column;
     background-color: #000000;
+    margin-top: 3px;
+    padding: 3px;
+    border-radius: 4px;
     border-bottom: 1px solid #ccc37f;
   }
 }
@@ -1606,7 +1605,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .opening_statement p, .mini_statement p, .block p {
-    font-size: 14pt;
+    font-size: 14.5pt;
     line-height: 19pt;
     color: #455152;
     padding: 0 0 16px 0px;
@@ -2666,7 +2665,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .scpmt-gd, .scpmt-t2 {
-    font-size: 14pt;
+    font-size: 14.5pt;
     line-height: 19pt;
     color: #455152;
     display: none;
