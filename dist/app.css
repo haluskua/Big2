@@ -122,6 +122,8 @@ h4, h6 {
         -ms-flex-direction: column;
             flex-direction: column;
     background-image: url("../dist/imgs/ohk_pattern.png");
+    background-color: rgba(113, 193, 195, 0.47);
+    Padding-top: 22px;
   }
 }
 
@@ -147,9 +149,10 @@ h4, h6 {
     margin-left: 10%;
     margin: auto;
     background-image: url("../dist/imgs/ohk_pattern.png");
+    background-size: contain;
+    background-repeat: repeat;
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: rgba(113, 193, 195, 0.2);
   }
 }
 
@@ -1614,7 +1617,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .opening_statement p, .mini_statement p, .block p {
-    font-size: 14.5pt;
+    font-size: 15.5pt;
     line-height: 19pt;
     color: #455152;
     padding: 0 0 16px 0px;
@@ -1641,10 +1644,11 @@ h4, h6 {
     -ms-flex-item-align: start;
         align-self: flex-start;
     letter-spacing: 0em;
-    font-size: 13.5pt;
-    line-height: 19pt;
+    font-size: 15.5pt;
+    line-height: 20pt;
     width: 50%;
     background: none;
+    padding-bottom: 50px;
   }
 }
 
@@ -1892,6 +1896,7 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    font-size: 1.1em;
   }
 }
 
@@ -2674,7 +2679,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .scpmt-gd, .scpmt-t2 {
-    font-size: 14.5pt;
+    font-size: 15.5pt;
     line-height: 19pt;
     color: #455152;
     display: none;
@@ -2691,7 +2696,7 @@ h4, h6 {
     margin: 0 auto;
     padding: 0;
     width: 93%;
-    font-size: 13pt;
+    font-size: 14pt;
     line-height: 20pt;
     padding: 12px;
   }
@@ -2705,8 +2710,8 @@ h4, h6 {
     width: 50%;
     margin-top: 0px;
     padding: 0;
-    font-size: 13.5pt;
-    line-height: 19pt;
+    font-size: 15.5pt;
+    line-height: 20pt;
     -ms-flex-item-align: center;
         align-self: center;
   }
