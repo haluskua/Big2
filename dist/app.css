@@ -515,27 +515,25 @@ h4, h6 {
     margin-top: 41px;
     font-weight: normal;
     text-shadow: none;
-    font-size: 2.15em;
+    font-size: 2em;
     position: relative;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .intro, .nameohk {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 600;
-    padding: 0 10px;
-    line-height: 2.2em;
+    line-height: 2em;
     letter-spacing: 0.03em;
     margin-top: 0px;
-    border-bottom: 1px;
+    padding: 8px 16px 0 16px;
     border-radius: 11px;
     text-transform: normal;
   }
   .intro:visited, .intro:active, .intro:focus, .intro:hover, .nameohk:visited, .nameohk:active, .nameohk:focus, .nameohk:hover {
-    border: 0;
-    font-size: 1.6em;
     background-color: red;
+    border-radius: 0 11px;
   }
 }
 
@@ -714,6 +712,7 @@ h4, h6 {
         -ms-flex-pack: center;
             justify-content: center;
     border-radius: 3px 11px;
+    background-color: rgba(68, 94, 107, 0.98);
   }
 }
 
@@ -746,7 +745,6 @@ h4, h6 {
   .reduced {
     z-index: 999999;
     background-image: none;
-    background-color: snow;
     padding: 19px 0;
   }
 }
@@ -886,17 +884,14 @@ h4, h6 {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .hamburger-menu:hover {
-    border-radius: 5px;
-    background-color: none;
-  }
-  .hamburger-menu:visited, .hamburger-menu:active, .hamburger-menu:focus, .hamburger-menu:hover {
-    background-color: none;
+  .hamburger-menu:active, .hamburger-menu:focus, .hamburger-menu:hover {
+    background-color: red;
     font-size: 0.9em;
     border: none;
-    border-bottom: 2.3px solid white;
-    background-color: rgba(255, 0, 0, 0.96);
     border-radius: 0 11px;
+  }
+  .hamburger-menu:visited, .hamburger-menu:focus {
+    border-bottom: 2px solid white;
   }
 }
 
@@ -1191,8 +1186,7 @@ h4, h6 {
     width: 100%;
     border: none;
     border-radius: 4px;
-    background-color: red;
-    opacity: 0.8;
+    background-color: #34424a;
   }
 }
 
@@ -1623,7 +1617,7 @@ h4, h6 {
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
-    margin-bottom: 10px;
+    margin: -40px 0 20px 0;
     -ms-flex-item-align: center;
         align-self: center;
     padding: 14px 0px;
@@ -1653,17 +1647,17 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .opening_statement p, .mini_statement p, .block p {
     padding: 0px;
+    margin-top: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-item-align: start;
         align-self: flex-start;
     letter-spacing: 0em;
-    font-size: 15.5pt;
+    font-size: 15pt;
     line-height: 20pt;
     width: 50%;
     background: none;
-    padding-bottom: 50px;
   }
 }
 
@@ -1863,13 +1857,14 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .screen {
-    margin: auto;
+    margin: 0;
     height: auto;
+    width: 160px;
     border-left: 0px;
     border-radius: 0;
     border: none;
     border-top: 1px solid red;
-    background: rgba(15, 24, 28, 0.91);
+    background: rgba(68, 94, 107, 0.98);
   }
 }
 
@@ -1935,7 +1930,7 @@ h4, h6 {
     width: auto;
     height: auto;
     line-height: 0.5em;
-    font-size: 1.4em;
+    font-size: 1.14em;
     text-transform: none;
     font-weight: bold;
     color: #e8f0f7;
@@ -2079,7 +2074,7 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  #gd-projects, #dm-projects, #t-projects, #about, #talent-projects {
+  #grafix, .projects, .wagai-weh, #wagai, #projects, #portfolio, #gd-projects, #dm-projects, #film-projects, #t-projects, #about, #talent-projects {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2101,16 +2096,20 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  #gd-projects, #dm-projects, #t-projects, #about, #talent-projects {
+  #grafix, .projects, .wagai-weh, #wagai, #projects, #portfolio, #gd-projects, #dm-projects, #film-projects, #t-projects, #about, #talent-projects {
     height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    border-top: 1px solid gray;
+    margin: 0;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  #gd-projects a, #dm-projects a, #t-projects a, #about a, #talent-projects a {
+  #grafix a, .projects a, .wagai-weh a, #wagai a, #projects a, #portfolio a, #gd-projects a, #dm-projects a, #film-projects a, #t-projects a, #about a, #talent-projects a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2123,9 +2122,9 @@ h4, h6 {
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  #gd-projects a, #dm-projects a, #t-projects a, #about a, #talent-projects a {
-    height: 100%;
-    margin: 0 auto;
+  #grafix a, .projects a, .wagai-weh a, #wagai a, #projects a, #portfolio a, #gd-projects a, #dm-projects a, #film-projects a, #t-projects a, #about a, #talent-projects a {
+    width: 100%;
+    margin: 0;
   }
 }
 
@@ -2149,6 +2148,35 @@ h4, h6 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #film-projects, #contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    with: 100%;
+    -ms-flex-item-align: center;
+        align-self: center;
+    border-top: 1px solid gray;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) and (min-width: 769px) and (orientation: landscape) {
+  #film-projects a, #contact a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #main-gallery {
+    border-top: 1px solid gray;
   }
 }
 
@@ -2251,7 +2279,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #bio {
-    margin-top: -46px;
+    margin-top: -92px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2726,7 +2754,7 @@ h4, h6 {
     width: 50%;
     margin-top: 0px;
     padding: 0;
-    font-size: 15.5pt;
+    font-size: 15pt;
     line-height: 20pt;
     -ms-flex-item-align: center;
         align-self: center;
@@ -2879,7 +2907,6 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
   }
 }
 
@@ -3067,12 +3094,11 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .selfie2 {
-    margin-bottom: 20px;
-    width: 12%;
+    margin: 25px;
+    width: 35%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 50px;
     -ms-flex-item-align: center;
         align-self: center;
     border: none;
@@ -3523,7 +3549,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .blocks section, .blocks .one, .one section, .one .one {
-    width: 35vw;
+    width: 28vw;
     border-bottom: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3539,7 +3565,7 @@ h4, h6 {
         -ms-flex-pack: start;
             justify-content: flex-start;
     height: 100%;
-    margin-bottom: 35px;
+    margin: 0 auto;
   }
 }
 
@@ -4099,7 +4125,7 @@ h4, h6 {
             flex-flow: row;
     width: 90%;
     padding: 0;
-    margin: 8% 0;
+    margin: 2% 0;
     position: relative;
     -ms-flex-item-align: center;
         align-self: center;

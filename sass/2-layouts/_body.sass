@@ -180,7 +180,7 @@
     @include desktop
       justify-content: center
       width: 100%  
-      margin-bottom: 10px
+      margin: -40px 0 20px 0
       align-self: center
       padding: 14px 0px
                                                                             
@@ -196,16 +196,16 @@
       @include tablet 
         font-size: 14pt
         line-height: 18pt    
-      @include desktop
+      @include desktop   
         padding: 0px
+        margin-top: 50px
         display: flex  
         align-self: flex-start                     
         letter-spacing: 0em
-        font-size: 15.5pt
+        font-size: 15pt
         line-height: 20pt  
         width: 50%        
         background: none   
-        padding-bottom: 50px     
                  
     span, .par-title       
       font-size: 1.42em                        
@@ -330,13 +330,14 @@
     height: auto
     background-color: black
     @include desktop
-      margin: auto
+      margin: 0
       height: auto 
+      width: 160px
       border-left: 0px
       border-radius: 0
       border: none
       border-top: 1px solid red
-      background: rgba(15, 24, 28, 0.91)
+      background: rgba(68, 94, 107, 0.98)
       
     li
       list-style: none
@@ -378,7 +379,7 @@
           width: auto 
           height: auto                          
           line-height: 0.5em               
-          font-size: 1.4em    
+          font-size: 1.14em    
           text-transform: none
           font-weight: bold                                                    
           color: #e8f0f7
@@ -386,7 +387,7 @@
           padding: 3px 15px 3px 18px
    
     #bottom-line
-      width: 58%     
+      width: 58%        
       color: red   
       border: 1px solid   
       margin-top: 12px
@@ -467,11 +468,8 @@
       justify-content: flex-start
       color: #4f4c49
 
-  #grafix, #contact,
-  .projects, .wagai-weh, #wagai, #main-gallery,
-  .main-gallery, #projects, #film-projects,#portfolio
-  #gd-projects, #dm-projects, #t-projects, #about, #talent-projects
-    display: flex
+  #grafix, .projects, .wagai-weh, #wagai, #projects, #portfolio, #gd-projects, #dm-projects, #film-projects, #t-projects, #about, #talent-projects
+    display: flex    
     flex-direction: column
     justify-content: space-around
     align-items: center
@@ -479,34 +477,48 @@
     height: 100%
     margin: 0
     padding: 0
-    border-bottom: 0
+    border-bottom: 0     
     @include desktop
       height: auto    
-      display: flex
-
+      display: flex  
+      border-top: 1px solid gray 
+      margin: 0
+      align-self: flex-start
     a
-      display: flex
+      display: flex  
       justify-content: flex-start
       text-decoration: none
       border: 0
       @include desktop
-        height: 100%
-        margin: 0 auto 
+        width: 100%
+        margin: 0 
+         
   #gd-projects
     display: flex 
     flex-direction: column
     align-items: center 
     @include tablet 
       justify-content: flex-start
-
                   
-  #film-projects
+  #film-projects, #contact
     @include desktop
+      display: flex
+      with: 100%
+      align-self: center
+      border-top: 1px solid gray
+      a
+        @include desktop
+          display: flex
+          justify-content: center
+
+
+  #main-gallery
+    @include desktop 
+      border-top: 1px solid gray
    
   .wagai-weh
     @include tablet 
       height: 100vh
-
 
   #external_link  
     display: flex
@@ -550,7 +562,7 @@
       width: 78%
       margin-top: 10%
     @include desktop   
-      margin-top: -46px
+      margin-top: -92px
       display: flex 
       padding-bottom: 60px
    
@@ -840,7 +852,7 @@
       width: 50%
       margin-top: 0px
       padding: 0                                           
-      font-size: 15.5pt                   
+      font-size: 15pt                   
       line-height: 20pt     
       align-self: center  
    
@@ -926,8 +938,7 @@
       align-items: center
       @include desktop
         display: flex
-        width: 100%
-
+  
   .fs-gal-view
     display: none
     height: 100%
@@ -1031,7 +1042,7 @@
     @include desktop
       margin-top: 20px
       border: none
-
+    
   .selfie
     height: 9%
     width: 52% !important
@@ -1042,7 +1053,7 @@
       width: 26% !important
 
   .selfie2
-    margin-top: 41px
+    margin-top: 41px    
     margin-bottom: 20px
     width: 52%
     border-radius: 4.8px
@@ -1050,12 +1061,11 @@
     @include tablet
       width: 14%
     @include desktop
-      margin-bottom: 20px
-      width: 12%  
+      margin: 25px
+      width: 35%      
       display: flex     
-      margin-top: 50px
       align-self: center
-      border: none
+      border: none  
 
   .rgdp
     display: flex    
@@ -1317,14 +1327,14 @@
       margin: auto
       background-color: #fdfdf4
       @include desktop   
-        width: 35vw
+        width: 28vw
         border-bottom: none
         display: flex
         flex-direction: column
         align-items: center
         justify-content: flex-start
         height: 100%
-        margin-bottom: 35px     
+        margin: 0 auto 
           
       div   
         display: flex  
@@ -1642,7 +1652,7 @@
       flex-flow: row
       width: 90%  
       padding: 0
-      margin: 8% 0
+      margin: 2% 0
       position: relative
       align-self: center           
     div

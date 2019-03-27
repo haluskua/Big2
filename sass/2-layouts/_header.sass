@@ -247,25 +247,23 @@
 			margin-top: 41px                      
 			font-weight: normal   
 			text-shadow: none
-			font-size: 2.15em
+			font-size: 2em
 			position: relative
 		@include desktop
-			font-size: 2em
+			font-size: 1.5em
 			font-weight: 600            
-			padding: 0 10px                         
-			line-height: 2.2em     
+			line-height: 2em     
 			letter-spacing: 0.03em                                                
 			margin-top: 0px
-			border-bottom: 1px 
+			padding: 8px 16px 0 16px
 			border-radius: 11px
 			text-transform: normal
 			// background: rgba(47, 79, 79, 0.28)   
-			&:visited, &:active, &:focus, &:hover
-				border: 0
-				font-size: 1.6em   
+			&:visited, &:active, &:focus, &:hover 
 				background-color: red
+				border-radius: 0 11px
 
-		span    
+		span          
 			display: flex 
 			flex-flow: column
 			align-items: flex-end
@@ -360,22 +358,22 @@
 			padding: 0
 			justify-content: center   
 			border-radius: 3px 11px
+			background-color: rgba(68, 94, 107, 0.98)
                                                                                                  
 	.reduced        
-			display: flex    
-			flex-direction: column
-			align-items: center
-			margin: 0      
-			@include tablet
-				height: 61px
-				background-color: none  
-				border: none
-				width: 86vw
-			@include desktop
-				z-index: 999999
-				background-image: none
-				background-color: snow
-				padding: 19px 0     
+		display: flex    
+		flex-direction: column
+		align-items: center
+		margin: 0      
+		@include tablet
+			height: 61px
+			background-color: none  
+			border: none
+			width: 86vw
+		@include desktop
+			z-index: 999999
+			background-image: none
+			padding: 19px 0   
 
 	.nav-folders 
 		height: 30px
@@ -459,16 +457,14 @@
 			background-color: none
 			border: none
 			justify-content: center
-			&:hover
-				border-radius: 5px
-				background-color: none
-			&:visited, &:active, &:focus, &:hover   
-				background-color: none
+			&:active, &:focus, &:hover   
+				background-color: red
 				font-size: 0.9em  
 				border: none
-				border-bottom: 2.3px solid white
-				background-color: rgba(255, 0, 0, 0.96)
+				// border-bottom: 2px solid white
 				border-radius: 0 11px
+			&:visited, &:focus
+				border-bottom: 2px solid white
                             
 	.fields                 
 		font-family: $font-stack-roboto
@@ -652,18 +648,19 @@
 			width: 100%
 			border: none
 			border-radius: 4px   
-			// background-image: url('../dist/imgs/pattern.jpg')
-			// background-size: contain
+			// background-image: url('../dist/imgs/kerewa.jpg')
+			// background-image: url('../dist/imgs/1920.png')
+			// background-size: cover
+			// background-position: left
 			// background-repeat: repeat   
-			background-color: red
-			opacity: 0.8
-
+			background-color: #34424a
+   
 			// flex-direction: column  
 			// left: 0   
 			// width: 18%
 			// height: 100vh  
 			// border: none
-			// border-radius: 0
+			// border-radius: 0  
 			// display: flex                   
 			// flex-wrap: wrap
 			// align-items: center
