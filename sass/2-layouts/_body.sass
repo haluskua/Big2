@@ -14,7 +14,7 @@
       position: relative
       flex-direction: column
       justify-content: flex-start
-      background-color: #e8f0f7
+      background-color: #232c2f
       @include desktop
         display: flex
         justify-content: center
@@ -24,7 +24,7 @@
         height: 100%
         width: 100%
         margin-bottom: -5px
-        overflow: hidden
+        overflow: hidden  
         position: relative
         flex-direction: column
         justify-content: flex-start
@@ -187,7 +187,7 @@
     p
       font-size: 15.5pt
       line-height: 19pt
-      color: #455152
+      color: #adcdd8
       padding: 0 0 16px 0px
       margin-bottom: -8px
       font-weight: normal   
@@ -328,14 +328,16 @@
     height: 52px
     border-radius: 4px
     height: auto
-    background-color: steelblue
-    border-top: 1px solid #f3d09e
+    background-color: black
     @include desktop
       margin: auto
       height: auto 
       border-left: 0px
       border-radius: 0
       border: none
+      border-top: 1px solid red
+      background: rgba(15, 24, 28, 0.91)
+      
     li
       list-style: none
 
@@ -344,7 +346,7 @@
     display: flex
     color: white  
     width: 100%
-    font-size: 2em           
+    font-size: 1.6em           
     font-weight: 600   
     list-style: none 
     text-transform: uppercase
@@ -359,10 +361,10 @@
       margin-bottom: 4px     
     @include desktop
       background: none
-      padding: 20px 0 8px 0
+      padding: 8px 0 8px 0
       display: flex
       font-size: 1.1em
-
+  
     .bar            
       width: auto  
       margin-top: 20px
@@ -379,18 +381,19 @@
           font-size: 1.4em    
           text-transform: none
           font-weight: bold                                                    
-          color: white
+          color: #e8f0f7
           text-transform: uppercase
           padding: 3px 15px 3px 18px
-
+   
     #bottom-line
       width: 58%     
-      color: #04c2c9   
+      color: red   
       border: 1px solid   
       margin-top: 12px
       @include desktop
-        color: #fff6f6
-   
+        color: #fa3031
+        
+      
   #pro-title                                     
     @include tablet
       padding: 13px
@@ -581,7 +584,7 @@
         font-family: $font-stack-Dancing-script
         font-size: 1.5em
         text-align: justify
-        color: #607d8b
+        color: #bedfef
         text-align: center
         font-weight: lighter
         line-height: 29px
@@ -820,7 +823,7 @@
   .scpmt-gd, .scpmt-t2
     font-size: 15.5pt
     line-height: 19pt
-    color: #455152
+    color: #adcdd8
     display: none
     margin-top: -30px   
     font-family: $font-stack-ntr
@@ -1404,10 +1407,9 @@
           margin: 26px
           margin-bottom: 0
         @include desktop
-          font-size: 0.85em
           letter-spacing: 0em
           line-height: 1.4em
-          width: 92% 
+          width: 88% 
           padding: 20px 
           padding-bottom: 0  
           display: flex
