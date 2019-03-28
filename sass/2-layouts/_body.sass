@@ -88,6 +88,7 @@
     margin-bottom: 5px
     background-color: #fdfdf4
     @include phone-landscape
+      width: 74%
     @include tablet
       width: 100%
       flex-wrap: wrap
@@ -193,6 +194,8 @@
       font-weight: normal   
       max-height: 85%
       font-family: $font-stack-ntr
+      @include phone-landscape
+        font-size: 14pt
       @include tablet 
         font-size: 14pt
         line-height: 18pt    
@@ -432,7 +435,6 @@
       padding: 0
       padding-top: 45px
 
-
   .skills-title
     display: flex
     justify-content: flex-start
@@ -510,7 +512,6 @@
         @include desktop
           display: flex
           justify-content: center
-
 
   #main-gallery
     @include desktop 
@@ -833,16 +834,19 @@
       font-family: Rokkitt, serif 
 
   .scpmt-gd, .scpmt-t2
-    font-size: 15.5pt
+    font-size: 15.5pt        
     line-height: 19pt
     color: #adcdd8
     display: none
     margin-top: -30px   
     font-family: $font-stack-ntr
-    @include tablet
-      display: flex
-      margin: 0 auto
-      padding: 0                                          
+    @include phone-landscape
+      font-size: 14pt
+      width: 90%
+    @include tablet   
+      display: flex      
+      margin: 0 auto   
+      padding: 0                                       
       width: 93%
       font-size: 14pt  
       line-height: 20pt
@@ -1370,6 +1374,8 @@
           width: 92%                          
           height: auto
           margin: auto
+          @include phone-landscape
+            width: 74%   
           @include tablet
             width: 83%
           @include desktop v    

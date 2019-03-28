@@ -299,6 +299,12 @@ h4, h6 {
   }
 }
 
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  #portfolio-header {
+    margin-top: 69px;
+  }
+}
+
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   #portfolio-header {
     padding-top: 18%;
@@ -338,7 +344,7 @@ h4, h6 {
 
 @media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
   #bulgeword {
-    font-size: 1.87em;
+    font-size: 1.07em;
   }
 }
 
@@ -769,7 +775,7 @@ h4, h6 {
 @media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
   .nav-folders {
     width: 19%;
-    margin-top: 4px;
+    margin: 2px 0 1px 9px;
   }
 }
 
@@ -999,7 +1005,7 @@ h4, h6 {
     position: fixed;
     width: 34vw;
     top: 0;
-    right: 0;
+    left: 0;
   }
 }
 
@@ -1025,6 +1031,7 @@ h4, h6 {
     margin: 0;
     padding: 0;
     width: 100%;
+    z-index: 9999;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1058,6 +1065,7 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    z-index: 999;
     cursor: pointer;
     position: relative;
     -webkit-box-align: center;
@@ -1071,6 +1079,15 @@ h4, h6 {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  .haus ul li {
+    z-index: 99;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .main-menu {
     left: 0px;
     bottom: 0px;
@@ -1139,6 +1156,7 @@ h4, h6 {
         -ms-flex-pack: start;
             justify-content: flex-start;
     border-radius: 0 0 0 0;
+    width: 30%;
   }
 }
 
@@ -1456,6 +1474,12 @@ h4, h6 {
   }
 }
 
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  .columnsSplit {
+    width: 74%;
+  }
+}
+
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .columnsSplit {
     width: 100%;
@@ -1634,6 +1658,12 @@ h4, h6 {
     font-weight: normal;
     max-height: 85%;
     font-family: "NTR", sans-seriff;
+  }
+}
+
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  .opening_statement p, .mini_statement p, .block p {
+    font-size: 14pt;
   }
 }
 
@@ -2732,6 +2762,13 @@ h4, h6 {
   }
 }
 
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  .scpmt-gd, .scpmt-t2 {
+    font-size: 14pt;
+    width: 90%;
+  }
+}
+
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .scpmt-gd, .scpmt-t2 {
     display: -webkit-box;
@@ -3633,6 +3670,12 @@ h4, h6 {
     width: 92%;
     height: auto;
     margin: auto;
+  }
+}
+
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  .blocks section #website_background2 img, .blocks .one #website_background2 img, .one section #website_background2 img, .one .one #website_background2 img {
+    width: 74%;
   }
 }
 
