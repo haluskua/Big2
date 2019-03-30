@@ -15,20 +15,18 @@ $(document).ready(function(){
 
  //// Script targeting mainly mobile menus
 
-    if (jQuery(window).width() <= 480) {
+    if (jQuery(window).width() <= 640) {
         $(".exit-menu, .hamburger-menu, .logo-desc, .menu, #wagai").on("click", function(){
           $(".sticky, .mobile-container").hide(0);
-          $(".haus").show(100);
+          $(".haus").show();
         });
 
-
         //show menu bar onclick on main logo
-        $(".fas, #hetinfo").click(function(){
+        $(".fas, #hetinfo, .haus").click(function(){
           $(".mobile-container").show(500);
-          $(".nav-folders").show(480);
+          // $(".nav-folders").show(480);
           $(".haus").hide(500);
           $(".exit-menu").show(700);
-
         });
 
         //readmore_text onclick function
@@ -36,11 +34,11 @@ $(document).ready(function(){
           $("#open_read").hide(300);
         });
 
-        // Undisplaying the mobie menu-bar
+        // Undisplaying the mobie menu-bar   
         jQuery(window).resize(function () {
           if (jQuery(window).width() > 642) {
             $("#folders-container").show(300);
-              jQuery(".haus").css("display", "none");
+              jQuery(".hamlines").css("display", "none");
           }
         });
 
