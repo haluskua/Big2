@@ -96,7 +96,7 @@
     @include desktop  
       display: flex
       flex-wrap: wrap
-      width: 39%
+      width: 45%
       margin: 10px 20px
       border: none   
       background-image: none
@@ -335,9 +335,9 @@
     @include desktop
       margin: 0
       height: auto 
-      width: 160px
+      width: 100vw
       border-left: 0px
-      border-radius: 0
+      border-radius: 3px
       border: none
       border-top: 1px solid red
       background: rgba(68, 94, 107, 0.98)
@@ -367,7 +367,7 @@
       background: none
       padding: 8px 0 8px 0
       display: flex
-      font-size: 1.1em
+      font-size: 1em
   
     .bar            
       width: auto  
@@ -494,13 +494,14 @@
       @include desktop
         width: 100%
         margin: 0 
-         
+             
   #gd-projects
     display: flex 
     flex-direction: column
     align-items: center 
     @include tablet 
       justify-content: flex-start
+    @include desktop
                   
   #film-projects, #contact
     @include desktop
@@ -563,7 +564,6 @@
       width: 78%
       margin-top: 10%
     @include desktop   
-      margin-top: -92px
       display: flex 
       padding-bottom: 60px
    
@@ -586,7 +586,8 @@
     @include desktop
       margin: 0 auto
       height: 100%   
-
+      margin-bottom: 30px
+     
     #contact  
       display: flex
       flex-direction: column
@@ -665,32 +666,32 @@
     flex-flow: row
     line-height: 50px
     margin-bottom: -65px
+    z-index: 9999999999
     justify-content: space-around
     @include phone-landscape
+      padding-top: 0
 
     @include tablet
       flex-flow: row
     @include desktop
       width: 48%
-    a         
-      cursor: pointer
-              
-  .myname
-    color: #fff6e8
-    font-family: $font-stack-antic
-    font-size: 0.95em
-    line-height: 25px
-    letter-spacing: 0.05em
-    @include phone-landscape
-    @include tablet
-      line-height: 33px
-      font-size: 1.3em
-    @include desktop
-      font-size: 1.2em
-      line-height: 1.3em
-      letter-spacing: 0.04em
-      color: #2b2320
 
+    button
+      background-color: snow
+      border-radius: 4px
+      border: none
+      
+      @include phone-landscape
+   
+      a         
+        backround: none     
+        z-index: 999999
+        color: tan
+        @include desktop
+          background: none
+          cursor: pointer        
+          z-index: 999999
+                 
   button.accordion
     height: 37px
     font-family: Rokkitt, serif
@@ -1062,7 +1063,7 @@
   .selfie2
     margin-top: 41px    
     margin-bottom: 20px
-    width: 52%
+    width: 85%
     border-radius: 4.8px
     border: 6px solid rgb(247, 238, 211)
     @include tablet
@@ -1119,7 +1120,7 @@
     @include desktop
       align-self: center
       height: 100%
-      width: 70%
+      width: 90%
       margin-left: 38px
       flex-flow: column
       margin: 0
@@ -1158,7 +1159,7 @@
   iframe
     @include desktop
       width: 600px
-      height: 210px
+      height: 270px
 
   .talentpage
     @include desktop
@@ -1275,14 +1276,17 @@
     align-items: center 
     width: 100%
     @include phone-landscape
+      flex-wrap: wrap
+      justify-content: space-around
+
     @include tablet
       width: 89%
       margin: 14.922px
     @include desktop
       display: flex
       justify-content: center
-      margin: 0
-      width: 94%
+      margin: 0   
+      width: 100%
       flex-flow: row 
       flex-wrap: wrap
     
@@ -1320,28 +1324,29 @@
     justify-content: center
     @include tablet
     @include desktop
-      width: 88%
+      width: 100%
       flex-wrap: wrap
+      align-items: center
       justify-content: space-around
      
-    section, .one                                                  
+    section, .one                                       
       display: flex
       justify-content: center
       width: 100%
       height: auto
       margin-bottom: 10px
-      padding-top: 10px
+      padding-top: 10px      
       margin: auto
       background-color: #fdfdf4
       @include desktop   
-        width: 28vw
+        width: 45%
         border-bottom: none
         display: flex
         flex-direction: column
         align-items: center
         justify-content: flex-start
         height: 100%
-        margin: 0 auto 
+        margin: 0 20px
           
       div   
         display: flex  
@@ -1649,7 +1654,6 @@
     justify-content: space-around
     background: none
     @include phone-landscape
-      display: none
     @include tablet
       display: flex
       padding: 20px

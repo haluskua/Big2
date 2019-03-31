@@ -718,7 +718,7 @@ h4, h6 {
         -ms-flex-pack: center;
             justify-content: center;
     border-radius: 3px 11px;
-    background-color: rgba(68, 94, 107, 0.98);
+    background-color: #46758a;
   }
 }
 
@@ -805,6 +805,7 @@ h4, h6 {
     display: -ms-flexbox;
     display: flex;
     padding: 0;
+    background-color: #46758a;
   }
   .nav-folders:visited, .nav-folders:active, .nav-folders:focus, .nav-folders:hover {
     background-color: red;
@@ -1500,7 +1501,7 @@ h4, h6 {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 39%;
+    width: 45%;
     margin: 10px 20px;
     border: none;
     background-image: none;
@@ -1891,9 +1892,9 @@ h4, h6 {
   .screen {
     margin: 0;
     height: auto;
-    width: 160px;
+    width: 100vw;
     border-left: 0px;
-    border-radius: 0;
+    border-radius: 3px;
     border: none;
     border-top: 1px solid red;
     background: rgba(68, 94, 107, 0.98);
@@ -1939,7 +1940,7 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 1.1em;
+    font-size: 1em;
   }
 }
 
@@ -2311,7 +2312,6 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #bio {
-    margin-top: -92px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2354,6 +2354,7 @@ h4, h6 {
   .contact-section {
     margin: 0 auto;
     height: 100%;
+    margin-bottom: 30px;
   }
 }
 
@@ -2502,8 +2503,15 @@ h4, h6 {
             flex-flow: row;
     line-height: 50px;
     margin-bottom: -65px;
+    z-index: 9999999999;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+}
+
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  #address {
+    padding-top: 0;
   }
 }
 
@@ -2523,31 +2531,23 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
-  #address a {
-    cursor: pointer;
+  #address button {
+    background-color: snow;
+    border-radius: 4px;
+    border: none;
   }
-  .myname {
-    color: #fff6e8;
-    font-family: "Antic";
-    font-size: 0.95em;
-    line-height: 25px;
-    letter-spacing: 0.05em;
-  }
-}
-
-@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
-  .myname {
-    line-height: 33px;
-    font-size: 1.3em;
+  #address button a {
+    backround: none;
+    z-index: 999999;
+    color: tan;
   }
 }
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
-  .myname {
-    font-size: 1.2em;
-    line-height: 1.3em;
-    letter-spacing: 0.04em;
-    color: #2b2320;
+  #address button a {
+    background: none;
+    cursor: pointer;
+    z-index: 999999;
   }
 }
 
@@ -3122,7 +3122,7 @@ h4, h6 {
   .selfie2 {
     margin-top: 41px;
     margin-bottom: 20px;
-    width: 52%;
+    width: 85%;
     border-radius: 4.8px;
     border: 6px solid #f7eed3;
   }
@@ -3224,7 +3224,7 @@ h4, h6 {
     -ms-flex-item-align: center;
         align-self: center;
     height: 100%;
-    width: 70%;
+    width: 90%;
     margin-left: 38px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3291,7 +3291,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   iframe {
     width: 600px;
-    height: 210px;
+    height: 270px;
   }
 }
 
@@ -3482,6 +3482,15 @@ h4, h6 {
   }
 }
 
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  .small-intro {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .small-intro {
     width: 89%;
@@ -3498,7 +3507,7 @@ h4, h6 {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 0;
-    width: 94%;
+    width: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row;
@@ -3564,9 +3573,12 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .blocks, .one {
-    width: 88%;
+    width: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -3591,7 +3603,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .blocks section, .blocks .one, .one section, .one .one {
-    width: 28vw;
+    width: 45%;
     border-bottom: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3607,7 +3619,7 @@ h4, h6 {
         -ms-flex-pack: start;
             justify-content: flex-start;
     height: 100%;
-    margin: 0 auto;
+    margin: 0 20px;
   }
 }
 
@@ -4141,12 +4153,6 @@ h4, h6 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     background: none;
-  }
-}
-
-@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
-  .outer-div {
-    display: none;
   }
 }
 

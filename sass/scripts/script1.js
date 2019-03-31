@@ -36,9 +36,9 @@ $(document).ready(function(){
 
         // Undisplaying the mobie menu-bar   
         jQuery(window).resize(function () {
-          if (jQuery(window).width() > 642) {
+          if (jQuery(window).width() > 641) {
             $("#folders-container").show(300);
-              jQuery(".hamlines").css("display", "none");
+              jQuery(".haus").css("display", "none");
           }
         });
 
@@ -65,7 +65,7 @@ $(document).ready(function(){
           delay: function(el, i, l){
             return i *2000}
         });
-    }
+    }                      
 
   $(window).scroll(function() {
     var scrollTop = $(window).scrollTop();
@@ -74,7 +74,7 @@ $(document).ready(function(){
         $('.mobile-container').addClass('sticky');
         $('#folders-container').addClass('reduced');
         }
-        else {
+        else {   
           /*restoring back to normal */
         $('.mobile-container').removeClass('sticky');
         $('#folders-container').removeClass('reduced');
@@ -83,7 +83,7 @@ $(document).ready(function(){
 // moving body to fit under manu top bar by offseeting its height
     var stickyNavTop = $('.nav-folders').offset().top;
     var headerHeight = 40;
-      $('.hamburger-menu, .logo-desc, .grafix, .box').click(function(e) {
+      $('.hamburger-menu, .logo-desc, #hetpage, .grafix, .box').click(function(e) {
           var linkHref = $(this).attr('href');
           $('html, body').animate({
             scrollTop: $(linkHref).offset().top - headerHeight
