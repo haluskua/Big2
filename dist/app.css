@@ -712,13 +712,12 @@ h4, h6 {
     -webkit-box-direction: normal;
         -ms-flex-flow: row;
             flex-flow: row;
-    width: 90vw;
+    width: 100vw;
     padding: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     border-radius: 3px 11px;
-    background-color: #46758a;
   }
 }
 
@@ -767,7 +766,6 @@ h4, h6 {
     padding: 4px 0 0 0;
     list-style: none;
     margin: 0 0 8px 12px;
-    border-bottom: 0.5px solid #F44336;
     background-color: darkmagenta;
   }
 }
@@ -800,15 +798,14 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .nav-folders {
     width: 73%;
-    margin: 10px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 0;
-    background-color: #46758a;
+    padding: 10px;
+    background-color: black;
   }
   .nav-folders:visited, .nav-folders:active, .nav-folders:focus, .nav-folders:hover {
-    background-color: red;
+    background-color: #8BC34A;
     border-radius: 0 11px;
   }
 }
@@ -892,13 +889,13 @@ h4, h6 {
             justify-content: center;
   }
   .hamburger-menu:active, .hamburger-menu:focus, .hamburger-menu:hover {
-    background-color: red;
+    background-color: #445d6a;
     font-size: 0.9em;
     border: none;
     border-radius: 0 11px;
   }
   .hamburger-menu:visited, .hamburger-menu:focus {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #8bc34a;
   }
 }
 
@@ -973,9 +970,7 @@ h4, h6 {
     -ms-flex-item-align: center;
         align-self: center;
     z-index: 999;
-    font-weight: bold;
-    font-size: 1.16em;
-    letter-spacing: 0.2em;
+    font-size: 1.22em;
     font-family: "Open Sans";
   }
 }
@@ -1201,13 +1196,12 @@ h4, h6 {
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    height: 67px;
     top: 0;
     left: 0;
     width: 100%;
     border: none;
     border-radius: 4px;
-    background-color: #34424a;
+    background-color: #8bc34a;
   }
 }
 
@@ -1897,7 +1891,7 @@ h4, h6 {
     border-radius: 3px;
     border: none;
     border-top: 1px solid red;
-    background: rgba(68, 94, 107, 0.98);
+    background: #090000;
   }
 }
 
