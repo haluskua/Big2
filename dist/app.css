@@ -90,10 +90,6 @@ h4, h6 {
         -ms-flex-align: center;
             align-items: center;
     background-color: #000000;
-    background-image: url("../dist/imgs/1920.png");
-    background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
   }
 }
 
@@ -332,11 +328,11 @@ h4, h6 {
             flex-direction: column;
     margin: 0;
     text-align: right;
-    color: #103032;
+    color: #5c9ca0;
     text-align: right;
     font-size: 1em;
-    letter-spacing: 0.03em;
-    line-height: 15pt;
+    letter-spacing: 0.3em;
+    line-height: 21pt;
     text-transform: uppercase;
     font-family: "Raleway", sans-serif;
     max-height: 85%;
@@ -401,14 +397,14 @@ h4, h6 {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    color: #36515f;
+    color: #f5a1a1;
     width: 100%;
     font-weight: lighter;
     font-family: 'Anton', sans-serif;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 1.6em;
-    letter-spacing: 0.13em;
+    letter-spacing: 0.33em;
   }
 }
 
@@ -630,12 +626,46 @@ h4, h6 {
   #logo-space {
     display: none;
   }
-  .fas {
-    font-size: 1.3em;
+}
+
+@media only screen and (min-width: 1em) and (min-width: 1020px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 1020px) and (orientation: landscape) {
+  .fa {
+    display: none;
   }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .fa-bars {
     color: #F44336;
   }
+  @inlude desktop-large {
+    .fa-bars {
+      display: none !important;
+      background-color: orange;
+      padding: 12px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 1020px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 1020px) and (orientation: landscape) {
+  .fas {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 1020px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 1020px) and (orientation: landscape) {
+  .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 1020px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 1020px) and (orientation: landscape) {
+  .ham-lines {
+    display: none;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .logo-desc {
     width: 100%;
     display: -webkit-box;
@@ -1047,6 +1077,12 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 1020px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 1020px) and (orientation: landscape) {
+  .haus ul {
+    display: none;
   }
 }
 
@@ -2837,6 +2873,9 @@ h4, h6 {
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
+  #address button a {
+    background: none;
+  }
   .fs-gal-view {
     display: none;
     height: 100%;
