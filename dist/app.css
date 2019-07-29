@@ -636,14 +636,29 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .fa-bars {
-    color: #F44336;
+    color: white;
   }
-  @inlude desktop-large {
-    .fa-bars {
-      display: none !important;
-      background-color: orange;
-      padding: 12px;
-    }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .fa-bars {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .fa-bars {
+    color: lightseagreen;
+    height: 0px;
+    line-height: 0px;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 1020px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 1020px) and (orientation: landscape) {
+  .fa-bars {
+    display: none !important;
+    background-color: orange;
+    padding: 12px;
   }
 }
 
