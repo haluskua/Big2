@@ -14,7 +14,7 @@
       position: relative
       flex-direction: column
       justify-content: flex-start
-      background-color: #232c2f
+      background-color: #090000
       @include desktop
         display: flex
         justify-content: center
@@ -205,7 +205,7 @@
         display: flex  
         align-self: flex-start                     
         letter-spacing: 0em
-        font-size: 15pt
+        font-size: 0.84em
         line-height: 20pt  
         width: 50%        
         background: none   
@@ -481,9 +481,8 @@
     padding: 0
     border-bottom: 0     
     @include desktop
-      height: auto    
+      height: 100%   
       display: flex  
-      border-top: 1px solid gray 
       margin: 0
       align-self: flex-start
     a
@@ -521,6 +520,8 @@
   .wagai-weh
     @include tablet 
       height: 100vh
+      @include desktop 
+        height: 100vh
 
   #external_link  
     display: flex
@@ -860,7 +861,7 @@
       width: 50%
       margin-top: 0px
       padding: 0                                           
-      font-size: 15pt                   
+      font-size: 0.84em                   
       line-height: 20pt     
       align-self: center  
    
@@ -1346,7 +1347,7 @@
         align-items: center
         justify-content: flex-start
         height: 100%
-        margin: 0 20px
+        margin: 20px
           
       div   
         display: flex  
@@ -1663,9 +1664,9 @@
       margin-bottom: 40px
       display: flex
       flex-flow: row
-      width: 90%  
-      padding: 0
-      margin: 2% 0
+      width: 84%
+      padding: 0 12px
+      margin: 8% 0
       position: relative
       align-self: center           
     div
