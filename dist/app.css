@@ -423,6 +423,7 @@ h4, h6 {
             justify-content: flex-start;
     font-size: 1.7em;
     margin-bottom: 4px;
+    color: white;
     text-transform: none;
     line-height: 1em;
   }
@@ -3541,7 +3542,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .blocks section, .blocks .one, .one section, .one .one {
-    width: 45%;
+    width: 68%;
     border-bottom: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4016,7 +4017,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .project_box p {
     margin: 0;
-    font-size: 15pt;
+    font-size: 11pt;
   }
 }
 
@@ -4032,7 +4033,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .project_box .toolName {
-    font-size: 16pt;
+    font-size: 12pt;
     letter-spacing: 0;
   }
 }
