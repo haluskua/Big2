@@ -314,12 +314,15 @@
 			display: none
 	.fa-bars 
 		color: white
+		font-size: 1.7em
+		padding: 8px
 		@include tablet 
 			display: none
 		@include desktop
 			color: lightseagreen
 			height: 0px
 			line-height: 0px
+
 
 		@include desktop-large
 			display: none !important
@@ -404,7 +407,7 @@
 		padding: 4px 0 0 0
 		list-style: none                         
 		margin: 0 0 8px 12px
-		background-color: darkmagenta
+		border-bottom: 1px solid gray
 		@include phone-landscape
 			width: 81%        
 			margin: 2px 0 1px 9px
@@ -682,6 +685,7 @@
 	#menu-buttons
 		position: fixed                        
 		width: 25.8%
+		width: 30px
 		height: 29px
 		display: flex
 		justify-content: center
@@ -718,7 +722,10 @@
 		text-align: center
 		border-radius: 4px
 		justify-content: center
-		//mediaQuerie
+		height: 28px;
+		width: 40px;
+		padding: 8px;
+		font-size: 2em;
 		@include phone-landscape
 			line-height: 22px
 		//mediaQuerie
