@@ -422,7 +422,7 @@ h4, h6 {
         -ms-flex-pack: start;
             justify-content: flex-start;
     font-size: 1.7em;
-    margin-bottom: 4px;
+    margin: 9px 0;
     color: white;
     text-transform: none;
     line-height: 1em;
@@ -527,7 +527,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .intro, .nameohk {
-    font-size: 1em;
+    font-size: 2em;
     font-weight: 600;
     line-height: 2em;
     letter-spacing: 0.03em;
@@ -1620,7 +1620,6 @@ h4, h6 {
     -ms-flex-item-align: start;
         align-self: flex-start;
     letter-spacing: 0em;
-    font-size: 0.84em;
     line-height: 20pt;
     width: 50%;
     background: none;
@@ -1829,7 +1828,6 @@ h4, h6 {
     border-left: 0px;
     border-radius: 3px;
     border: none;
-    border-top: 1px solid red;
     background: #090000;
   }
 }
@@ -2734,7 +2732,6 @@ h4, h6 {
     width: 50%;
     margin-top: 0px;
     padding: 0;
-    font-size: 0.84em;
     line-height: 20pt;
     -ms-flex-item-align: center;
         align-self: center;
