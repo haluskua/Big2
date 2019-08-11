@@ -1464,14 +1464,13 @@
         @include phone-landscape
         //mediaQuerie
         @include tablet
-          width: 37%
+          width: 33%
           margin-bottom: 30px
         @include desktop
           display: flex
           align-self: flex-start
+          border: none
           background: none
-          border: 1px solid #e2cf8d
-          margin-top: 17px
           height: auto
 
         a
@@ -1487,10 +1486,12 @@
           @include tablet
             padding: 0px
             font-size: 1.85em
-          @include desktop            
-            font-size: 1em
+          @include desktop     
+            letter-spacing: 0       
+            font-size: 2.2em
+            line-height: 55px
+            height: 60px
             font-weight: 400
-            letter-spacing: 0.03em
   .date
     text-transform: uppercase
     font-size: 7.5pt
@@ -1632,7 +1633,7 @@
       font-size: 12pt
       letter-spacing: 0.05em
       @include desktop
-        font-size: 12pt
+        font-size: 2em
         letter-spacing: 0
 
   #quote
