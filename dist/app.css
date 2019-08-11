@@ -1891,6 +1891,9 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     font-size: 1em;
     background-color: rgba(58, 201, 206, 0.25);
   }
