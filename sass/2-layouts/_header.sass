@@ -133,7 +133,7 @@
 		color: #5c9ca0
 		text-align: right                       
 		font-size: 1em  
-		letter-spacing: 0.3em
+		letter-spacing: 0.13em
 		line-height: 21pt
 		text-transform: uppercase
 		font-family: $font-stack-Raleway
@@ -250,6 +250,7 @@
 			font-weight: normal   
 			text-shadow: none
 			font-size: 2em
+			padding: 14px
 			position: relative
 		@include desktop
 			font-size: 2em
@@ -333,6 +334,8 @@
 			padding: 12px
 
 	.fas 
+		@include tablet 
+			display: none !important
 		@include desktop-large 
 			display: none
 
@@ -669,6 +672,7 @@
 			background-image: none
 			align-items: flex-start
 			justify-content: space-around    
+			background-color: slategray
 		//mediaQuerie
 		@include desktop
 			display: flex
@@ -680,6 +684,8 @@
 			border: none
 			border-radius: 4px   
 			background-color: lightseagreen
+
+		
 
    
 	
@@ -737,9 +743,8 @@
 		font-size: 2em;
 		@include phone-landscape
 			line-height: 22px
-		//mediaQuerie
 		@include tablet
-			display: none
+			display: none 
 		@include desktop 
 			display: none
 
