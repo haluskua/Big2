@@ -2324,6 +2324,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .contact-section {
+    background-color: #060410;
     margin: 0 auto;
     height: 100%;
     margin-bottom: 30px;
@@ -2928,6 +2929,15 @@ h4, h6 {
   #address button a {
     background: none;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  #address button a {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .fs-gal-view {
     display: none;
     height: 100%;
