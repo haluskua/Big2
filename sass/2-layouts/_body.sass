@@ -30,7 +30,7 @@
         @include desktop
           border: none
           display: flex
-          background-color: darkgray
+          background-color: #ebf5e9
           
   #about   
     width: 100vw  
@@ -99,6 +99,7 @@
       margin: 10px 20px
       border: none   
       background-image: none
+      box-shadow: -6px 10px 7px 10px gainsboro
 
   .animation-caption, .gallery-link
     display: flex
@@ -335,10 +336,16 @@
       margin: 0
       height: auto 
       width: 100vw
-      border-left: 0px
+      border: 0px
       border-radius: 3px
       border: none
-      background: white
+      background: rgba(63, 87, 95, 0.72);
+      background-image: url(../dist/imgs/ohk_pattern.png)
+      background-size: contain
+      background-repeat: repeat
+      background-position: center
+      background: repeating-linear-gradient(45deg, #04c2c9, transparent 100px)
+
       
     li
       list-style: none
@@ -381,25 +388,31 @@
         @include desktop
           width: auto 
           height: auto                          
-          line-height: 0.5em               
+          line-height: 0.5em    
+          letter-spacing: 0           
           font-size: 1.14em    
           text-transform: none
           font-weight: bold                                                    
           color: #e8f0f7
           text-transform: uppercase
-          padding: 3px 15px 3px 18px
+          padding: 3px 15px 6px 18px
           @include desktop 
-          color: #262e31
-          font-size: 23px
+          color: white
+          font-size: 30px
+          font-weight: 600
+          text-transform: capitalize
+          letter-spacing: 0px
 
    
     #bottom-line
-      width: 58%        
+      width: 88%        
       color: red   
       border: 1px solid   
       margin-top: 12px
       @include desktop
         color: #fa3031
+        color: white
+        display: none
         
       
   #pro-title                                     
@@ -1504,10 +1517,10 @@
             font-size: 1.85em
           @include desktop     
             letter-spacing: 0       
-            font-size: 2.2em
-            line-height: 55px
+            font-size: 1.6em
             height: 60px
             font-weight: 400
+            line-height: 3em
   .date
     text-transform: uppercase
     font-size: 7.5pt

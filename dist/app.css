@@ -385,6 +385,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .title1, .title3 {
+    font-family: sans-serif;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -453,11 +454,10 @@ h4, h6 {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    font-size: 5.5em;
+    font-size: 4.5em;
     text-transform: uppercase;
-    margin: 9px 0;
-    color: #263238;
-    letter-spacing: 0.2em;
+    color: #240c27;
+    letter-spacing: 0.13em;
     line-height: 1em;
   }
 }
@@ -567,9 +567,8 @@ h4, h6 {
     letter-spacing: 0.03em;
     margin-top: 0px;
     border-radius: 11px;
-    color: #20b2aa;
+    color: white;
     text-transform: normal;
-    background-color: #e0efef;
   }
 }
 
@@ -805,7 +804,7 @@ h4, h6 {
         -ms-flex-pack: center;
             justify-content: center;
     border-radius: 3px 11px;
-    height: 38px;
+    height: 44px;
     padding-top: 6px;
     padding-bottom: 2px;
   }
@@ -887,7 +886,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .nav-folders {
-    width: 8%;
+    width: 12%;
     height: 26px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -896,10 +895,10 @@ h4, h6 {
     margin-bottom: 3px;
     border-bottom: none;
     border-radius: 4px;
-    background-color: rgba(156, 201, 184, 0.37);
   }
   .nav-folders:visited, .nav-folders:active, .nav-folders:focus, .nav-folders:hover {
     background-color: #04C2C9;
+    background: none;
   }
 }
 
@@ -980,11 +979,19 @@ h4, h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    border-radius: 4px;
+    -webkit-box-shadow: .2px .3px 2px .3px gray;
+            box-shadow: .2px .3px 2px .3px gray;
+    padding: 3px;
+    margin-bottom: 4px;
   }
-  .hamburger-menu:active, .hamburger-menu:focus, .hamburger-menu:hover {
+  .hamburger-menu:active, .hamburger-menu:focus {
     border: none;
-    border-bottom: 2px solid white;
-    border-radius: 0 11px;
+    border-radius: 4px;
+    -webkit-box-shadow: 3px .6px #240c27;
+            box-shadow: 3px .6px #240c27;
+    padding: 3px;
+    background-color: rgba(70, 43, 84, 0.48);
   }
 }
 
@@ -1059,7 +1066,8 @@ h4, h6 {
     -ms-flex-item-align: center;
         align-self: center;
     z-index: 999;
-    font-size: 0.85em;
+    font-weight: bold;
+    font-size: 1.29em;
     font-family: "Open Sans";
   }
 }
@@ -1298,7 +1306,7 @@ h4, h6 {
     width: 100%;
     border: none;
     border-radius: 4px;
-    background-color: #3c474c;
+    background-color: #673a6d;
   }
 }
 
@@ -1363,7 +1371,7 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: darkgray;
+    background-color: #ebf5e9;
   }
 }
 
@@ -1486,6 +1494,8 @@ h4, h6 {
     margin: 10px 20px;
     border: none;
     background-image: none;
+    -webkit-box-shadow: -6px 10px 7px 10px gainsboro;
+            box-shadow: -6px 10px 7px 10px gainsboro;
   }
 }
 
@@ -1874,10 +1884,15 @@ h4, h6 {
     margin: 0;
     height: auto;
     width: 100vw;
-    border-left: 0px;
+    border: 0px;
     border-radius: 3px;
     border: none;
-    background: white;
+    background: rgba(63, 87, 95, 0.72);
+    background-image: url(../dist/imgs/ohk_pattern.png);
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+    background: repeating-linear-gradient(45deg, #04c2c9, transparent 100px);
   }
 }
 
@@ -1947,20 +1962,24 @@ h4, h6 {
     width: auto;
     height: auto;
     line-height: 0.5em;
+    letter-spacing: 0;
     font-size: 1.14em;
     text-transform: none;
     font-weight: bold;
     color: #e8f0f7;
     text-transform: uppercase;
-    padding: 3px 15px 3px 18px;
-    color: #262e31;
-    font-size: 23px;
+    padding: 3px 15px 6px 18px;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0px;
   }
 }
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   #push-up #bottom-line {
-    width: 58%;
+    width: 88%;
     color: red;
     border: 1px solid;
     margin-top: 12px;
@@ -1970,6 +1989,8 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #push-up #bottom-line {
     color: #fa3031;
+    color: white;
+    display: none;
   }
 }
 
@@ -3882,10 +3903,10 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .blocks section button a, .blocks .one button a, .one section button a, .one .one button a {
     letter-spacing: 0;
-    font-size: 2.2em;
-    line-height: 55px;
+    font-size: 1.6em;
     height: 60px;
     font-weight: 400;
+    line-height: 3em;
   }
 }
 
