@@ -3078,7 +3078,7 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .img-split, .selfie {
-    margin-top: 20px;
+    margin-top: 44px;
     border: none;
   }
 }
@@ -3494,6 +3494,7 @@ h4, h6 {
             justify-content: center;
     margin: 0;
     width: 100%;
+    padding-top: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row;
@@ -3567,6 +3568,7 @@ h4, h6 {
             align-items: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    background-color: #ebf5e9;
   }
 }
 
@@ -3606,6 +3608,8 @@ h4, h6 {
             justify-content: flex-start;
     height: 100%;
     margin: 20px;
+    -webkit-box-shadow: 1px 6px 1px 8px #dcebf3;
+            box-shadow: 1px 6px 1px 8px #dcebf3;
   }
 }
 
@@ -3665,6 +3669,14 @@ h4, h6 {
   .blocks section #website_background2, .blocks .one #website_background2, .one section #website_background2, .one .one #website_background2 {
     margin-top: 0;
     background-image: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
   }
 }
 
@@ -3766,15 +3778,19 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .blocks section p, .blocks .one p, .one section p, .one .one p {
     letter-spacing: 0em;
-    line-height: 1.4em;
+    line-height: 1.14em;
+    font-size: 1.3em;
     width: 88%;
-    padding: 20px;
+    padding: 11px;
     padding-bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-item-align: center;
         align-self: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom: 10px;
   }
 }
@@ -3857,6 +3873,15 @@ h4, h6 {
     font-weight: normal;
     color: #00BCD4;
   }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .date {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .box-spec {
     width: auto;
     font-family: "Raleway:700", sans-serif;
@@ -3886,7 +3911,12 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .box-spec {
-    font-size: 11px;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 1.25em;
+    line-height: 1.4em;
   }
 }
 
@@ -3917,6 +3947,12 @@ h4, h6 {
   .blue_line1 {
     width: 30%;
     margin-left: 55px;
+  }
+}
+
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .blue_line1 {
+    border: none;
   }
 }
 

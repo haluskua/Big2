@@ -1061,7 +1061,7 @@
       width: 96%
       margin-top: 49px
     @include desktop
-      margin-top: 20px
+      margin-top: 44px
       border: none
     
   .selfie
@@ -1301,6 +1301,7 @@
       justify-content: center
       margin: 0   
       width: 100%
+      padding-top: 0
       flex-flow: row 
       flex-wrap: wrap
     
@@ -1342,6 +1343,7 @@
       flex-wrap: wrap
       align-items: center
       justify-content: space-around
+      background-color: #ebf5e9
      
     section, .one                                       
       display: flex
@@ -1361,6 +1363,7 @@
         justify-content: flex-start
         height: 100%
         margin: 20px
+        box-shadow: 1px 6px 1px 8px #dcebf3
           
       div   
         display: flex  
@@ -1392,6 +1395,9 @@
         @include desktop 
           margin-top: 0    
           background-image: none
+          flex-flow: column-reverse
+          align-items: center
+          width: 100%
         img
           width: 92%                          
           height: auto
@@ -1446,12 +1452,14 @@
           margin-bottom: 0
         @include desktop
           letter-spacing: 0em
-          line-height: 1.4em
+          line-height: 1.14em
+          font-size: 1.3em
           width: 88% 
-          padding: 20px 
+          padding: 11px 
           padding-bottom: 0  
           display: flex
           align-self: center
+          justify-content: center
           margin-bottom: 10px
 
       button
@@ -1501,6 +1509,8 @@
     font-size: 7.5pt
     font-weight: normal
     color: #00BCD4
+    @include desktop 
+      font-size: 1em
 
   .box-spec                    
     width: auto                                  
@@ -1520,7 +1530,10 @@
       font-size: 12pt
       width: 84%
     @include desktop 
-      font-size: 11px
+      width: 100%
+      justify-content: center
+      font-size: 1.25em
+      line-height: 1.4em
     p 
       display: none
 
@@ -1528,6 +1541,7 @@
     margin-bottom: 0 
     color: #F44336
     border: 1px solid
+    @include desktop
 
   .blue_line1 
     display: flex    
@@ -1540,6 +1554,8 @@
     @include tablet   
       width: 30%
       margin-left: 55px
+    @include desktop
+      border: none
   
   .gdesign
     @include tablet 
