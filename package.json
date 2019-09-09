@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/haluskua/sass#readme",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.2",
     "breakpoint-sass": "^2.7.1",
     "breakpoint-slicer": "^2.0.0",
     "browser-sync": "^2.26.3",

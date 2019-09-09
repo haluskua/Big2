@@ -30,9 +30,10 @@
         @include desktop
           border: none
           display: flex
-          background-color: #ebf5e9
+          background-color: #673a6d
+     
           
-  #about   
+  #about     
     width: 100vw  
     height: auto
     @include desktop
@@ -95,11 +96,12 @@
     @include desktop  
       display: flex
       flex-wrap: wrap
-      width: 45%
+      width: 38%
       margin: 10px 20px
       border: none   
+      broder-radius: 5px
       background-image: none
-      box-shadow: -6px 10px 7px 10px gainsboro
+      box-shadow: -6px 10px 7px 10px #670973
 
   .animation-caption, .gallery-link
     display: flex
@@ -344,7 +346,7 @@
       background-size: contain
       background-repeat: repeat
       background-position: center
-      background: repeating-linear-gradient(45deg, #04c2c9, transparent 100px)
+      background: repeating-linear-gradient(45deg, #673a6d, transparent 100px)
 
       
     li
@@ -374,7 +376,13 @@
       display: flex
       justify-content: flex-start
       font-size: 1em
-      background-color: rgba(58, 201, 206, 0.25)
+      background-color: rgba(103, 58, 109, 0.27)
+      background-color: #673a6d
+      width: 44%
+      display: flex
+      justify-content: center
+      box-shadow: 1px 6px 1px 8px #670973
+
   
     .bar            
       width: auto  
@@ -383,6 +391,8 @@
         padding: 10px                                          
         margin-bottom: 1px            
       @include desktop  
+        margin: 15px
+        display: flex
 
       span
         @include desktop
@@ -402,8 +412,10 @@
           font-weight: 600
           text-transform: capitalize
           letter-spacing: 0px
+      .fa-anchor 
+        @include desktop 
+          font-size: 1.5em
 
-   
     #bottom-line
       width: 88%        
       color: red   
@@ -413,7 +425,6 @@
         color: #fa3031
         color: white
         display: none
-        
       
   #pro-title                                     
     @include tablet
@@ -568,7 +579,6 @@
       margin: 0
       justify-content: space-around
       width: 100%
-      margin-bottom: 50px
 
     h1
       padding: 0 20px 0 20px
@@ -1078,7 +1088,7 @@
       width: 96%
       margin-top: 49px
     @include desktop
-      margin-top: 44px
+      margin-top: 21px
       border: none
     
   .selfie
@@ -1321,6 +1331,7 @@
       padding-top: 0
       flex-flow: row 
       flex-wrap: wrap
+      background-color: #673a6d
     
     .major-title     
       font-size: 1.5em
@@ -1353,14 +1364,14 @@
     height: 100%  
     width: 100%
     flex-wrap: wrap
-    justify-content: center
+    justify-content: center  
     @include tablet
     @include desktop
       width: 100%
       flex-wrap: wrap
       align-items: center
       justify-content: space-around
-      background-color: #ebf5e9
+      background-color: rgba(103, 58, 109, 0.86)
      
     section, .one                                       
       display: flex
@@ -1380,7 +1391,7 @@
         justify-content: flex-start
         height: 100%
         margin: 20px
-        box-shadow: 1px 6px 1px 8px #dcebf3
+        box-shadow: 1px 6px 1px 8px #670973
           
       div   
         display: flex  
@@ -1849,7 +1860,7 @@
     display: flex 
     align-self: center
     position: absolute  
-    background-color: $blue1
+    background-color: #673a6d
     z-index: 5
     justify-content: center
     padding: 4px 16px
