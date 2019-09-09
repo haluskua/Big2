@@ -12,7 +12,9 @@
       position: relative
       flex-direction: column
       justify-content: flex-start
-      background-color: #090000
+      background-color: #200325
+      @include tablet
+        background: #3a1a40
       @include desktop
         display: flex
         justify-content: center
@@ -86,11 +88,11 @@
     flex-wrap: wrap
     justify-content: center
     margin-bottom: 5px
-    background-color: #fdfdf4
     @include phone-landscape
       width: 74%
     @include tablet
       width: 100%
+      background: gainsboro
       flex-wrap: wrap
       justify-content: center    
     @include desktop  
@@ -180,6 +182,7 @@
       margin-bottom: 0  
       background: none    
       margin-bottom: 20px
+      justify-content: center
     @include desktop
       justify-content: center
       width: 100%  
@@ -200,7 +203,8 @@
         font-size: 14pt
       @include tablet 
         font-size: 14pt
-        line-height: 18pt    
+        line-height: 18pt   
+        width: 91%
       @include desktop   
         padding: 0px
         margin-top: 50px
@@ -334,6 +338,9 @@
     border-radius: 4px
     height: auto
     background-color: black
+    @include tablet 
+      background: repeating-linear-gradient(45deg, #673a6d, transparent 100px)
+
     @include desktop
       margin-top: 20px
       margin: 50px 0
@@ -366,7 +373,6 @@
     z-index: 99999
     @include tablet
       font-size: 30pt
-      margin-bottom: 4px     
     @include desktop
       background: none
       border-radius: 4px
@@ -418,6 +424,9 @@
       color: red   
       border: 1px solid   
       margin-top: 12px
+      @include tablet 
+        color: white
+        width: 100%
       @include desktop
         color: #fa3031
         color: white
@@ -537,11 +546,8 @@
         @include desktop
           display: flex
           justify-content: center
+  
 
-  #main-gallery
-    @include desktop 
-      border-top: 1px solid gray
-   
   .wagai-weh
     @include tablet 
       height: 100vh
@@ -613,7 +619,6 @@
       background-color: #060410
       margin: 0 auto
       height: 100%   
-      margin-bottom: 30px
      
     #contact  
       display: flex
@@ -964,9 +969,11 @@
     @include tablet
       height: auto
       padding-bottom: 54px
+      background: #36083e
     @include desktop
       background: none
       height: auto
+      border-top: 1px solid gray
       display: flex
       
     a
@@ -1374,7 +1381,9 @@
       margin-bottom: 10px
       padding-top: 10px      
       margin: auto
-      background-color: #fdfdf4
+      background-color: #2b282b
+      @include tablet 
+        background: gainsboro
       @include desktop   
         width: 68%
         border-bottom: none
@@ -1457,7 +1466,7 @@
         font-size: 1em
         line-height: 1.2em
         text-align: justify
-        color: #607D8B 
+        color: #cce2ec
         letter-spacing: 0
         padding: 20px 
         padding-bottom: 6px   
@@ -1540,7 +1549,7 @@
     font-size: 9pt
     width: 88%
     text-transform: uppercase
-    color: #696461
+    color: #d8d0cb
     display: flex
     text-align: justify
     align-self: center   
@@ -1580,7 +1589,6 @@
   
   .gdesign
     @include tablet 
-      height: 100vh   
        
   .readmore_text          
     width: auto       
@@ -1650,6 +1658,7 @@
     margin: auto
     margin-top: -10px
     border-radius: 4px
+    color: #dfeaef
     @include tablet 
       flex-wrap: nowrap
       width: 91%
@@ -1661,7 +1670,7 @@
       width: 100%
       padding-bottom: 0
       margin-bottom: 0
-      color: #44535a
+      color: #b9b9b9
       font-family: $font-stack-Raleway-bold
       @include desktop 
         margin: 0 
@@ -1847,7 +1856,7 @@
     color: white
     padding: 4px 
     font-size: 2.1em
-    color: #FF5722
+    color: #03A9F4
 
   .fa-angle-double-up
     display: flex 
