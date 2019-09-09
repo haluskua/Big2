@@ -1496,8 +1496,8 @@ h4, h6 {
     border: none;
     broder-radius: 5px;
     background-image: none;
-    -webkit-box-shadow: -6px 10px 7px 10px #670973;
-            box-shadow: -6px 10px 7px 10px #670973;
+    -webkit-box-shadow: 1px 1px 1px 4px #670973;
+            box-shadow: 1px 1px 1px 4px #670973;
   }
 }
 
@@ -1682,7 +1682,7 @@ h4, h6 {
     letter-spacing: 0em;
     line-height: 20pt;
     width: 50%;
-    color: #455A64;
+    color: #f8f8f8;
     background: none;
   }
 }
@@ -1883,18 +1883,14 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .screen {
-    margin: 0;
+    margin-top: 20px;
+    margin: 50px 0;
     height: auto;
     width: 100vw;
     border: 0px;
     border-radius: 3px;
     border: none;
-    background: rgba(63, 87, 95, 0.72);
-    background-image: url(../dist/imgs/ohk_pattern.png);
-    background-size: contain;
-    background-repeat: repeat;
-    background-position: center;
-    background: repeating-linear-gradient(45deg, #673a6d, transparent 100px);
+    background: #683a6e;
   }
 }
 
@@ -1933,6 +1929,7 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #push-up {
     background: none;
+    border-radius: 4px;
     padding: 5px 0 5px 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1941,15 +1938,14 @@ h4, h6 {
         -ms-flex-pack: start;
             justify-content: flex-start;
     font-size: 1em;
-    background-color: rgba(103, 58, 109, 0.27);
     background-color: #673a6d;
     width: 44%;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-shadow: 1px 6px 1px 8px #670973;
-            box-shadow: 1px 6px 1px 8px #670973;
+    -webkit-box-shadow: 1px 1px 1px 4px #670973;
+            box-shadow: 1px 1px 1px 4px #670973;
   }
 }
 
@@ -2169,10 +2165,6 @@ h4, h6 {
     margin: 0;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    background-image: url("../dist/imgs/1920.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: repeat-y;
   }
 }
 
@@ -2837,7 +2829,7 @@ h4, h6 {
     width: 50%;
     margin-top: 0px;
     padding: 0;
-    color: #455A64;
+    color: #f8f8f8;
     line-height: 20pt;
     -ms-flex-item-align: center;
         align-self: center;
@@ -3677,8 +3669,8 @@ h4, h6 {
             justify-content: flex-start;
     height: 100%;
     margin: 20px;
-    -webkit-box-shadow: 1px 6px 1px 8px #670973;
-            box-shadow: 1px 6px 1px 8px #670973;
+    -webkit-box-shadow: 1px 1px 1px 4px #670973;
+            box-shadow: 1px 1px 1px 4px #670973;
   }
 }
 
