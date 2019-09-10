@@ -344,7 +344,7 @@ h4, h6 {
     text-align: right;
     font-size: 1em;
     letter-spacing: 0.03em;
-    line-height: 21pt;
+    line-height: 15pt;
     text-transform: uppercase;
     font-family: "Raleway", sans-serif;
     max-height: 85%;
@@ -441,6 +441,7 @@ h4, h6 {
             justify-content: flex-end;
     color: #fffdfd;
     width: 100%;
+    line-height: 1.4em;
     font-weight: lighter;
     font-family: 'Anton', sans-serif;
     font-weight: 600;
