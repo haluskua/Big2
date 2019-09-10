@@ -15,8 +15,9 @@
 			max-width: 100vw   
 		@include desktop
 			background-image: url('../dist/imgs/1920.png')
-			background-size: cover
-			background-position: center
+			background-image: url('../dist/imgs/ve_logo8.png')
+			background-size: contain
+			background-position: right
 			background-repeat: no-repeat
 
 
@@ -45,6 +46,8 @@
 			background-image: url("../dist/imgs/ohk_pattern.png") 
 			background-size: contain 
 			background-repeat: repeat 
+			width: 29%
+			margin: 0
 			background-position: center
 			background-color: rgba(195, 113, 193, 0.2)
 		  
@@ -164,9 +167,11 @@
 		justify-content: flex-end
 		text-transform: capitalize
 		@include desktop 
-			font-size: 0.9em
-			color: #21161d
+			font-size: 0.79em
+			color: #f2e3f2
 			letter-space: 0
+			font-weigth: lighter
+			justify-content: flex-start
 
 
 	#portfolio -color                                                                 
@@ -198,12 +203,13 @@
 			font-size: 3em   
 			color: #9C27B0  
 		@include desktop   
-			justify-content: flex-end
-			font-size: 4.5em
+			justify-content: flex-start
+			font-size: 2.5em
 			text-transform: uppercase
-			color: #240c27
+			color: #4eb7ff
 			letter-spacing: 0.13em
-			line-height: 1em       
+			line-height: 1.3em     
+			padding: 8px  
 			               
 	.ohk-logo          
 		width: 33%   
@@ -404,8 +410,8 @@
 			justify-content: center   
 			border-radius: 3px 11px
 			height: 44px
-			padding-top: 6px
-			padding-bottom: 2px
+			padding-bottom: 5px
+			padding-top: 2px
                                                                                                    
 	.reduced        
 		display: flex    
@@ -505,18 +511,19 @@
 			background-color: none
 			border: none
 			justify-content: center
-			border-radius: 4px
-			box-shadow: .2px .3px 2px .3px gray
-			padding: 3px
-			margin-bottom: 4px
-			background-color: rgb(129, 97, 134)
+			border-radius: 1.5px
+			box-shadow: 0px .3px 1px .3px #4f2e54
+			padding: 5px
+			border-left: 0.5px solid #4f2e54
+			//background-color: rgb(129, 97, 134)
 			&:active, &:focus
 				border: none
 				border-radius: 4px
 				box-shadow: 3px .6px #240c27
-				padding: 3px
+				padding: 5px
+				border-left: 0.5px solid #04c2c9
 				background-color: rgba(70, 43, 84, 0.48)
-				box-shadow: 0px 1px 1px 1px rgba(4, 194, 201, 0.36)       
+				//box-shadow: 0px 1px 1px 1px rgba(4, 194, 201, 0.36)       
                             
 	.fields                 
 		font-family: $font-stack-roboto

@@ -106,8 +106,9 @@ h4, h6 {
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #hetpage {
     background-image: url("../dist/imgs/1920.png");
-    background-size: cover;
-    background-position: center;
+    background-image: url("../dist/imgs/ve_logo8.png");
+    background-size: contain;
+    background-position: right;
     background-repeat: no-repeat;
   }
 }
@@ -155,6 +156,8 @@ h4, h6 {
     background-image: url("../dist/imgs/ohk_pattern.png");
     background-size: contain;
     background-repeat: repeat;
+    width: 29%;
+    margin: 0;
     background-position: center;
     background-color: rgba(195, 113, 193, 0.2);
   }
@@ -401,9 +404,13 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .title1, .title3 {
-    font-size: 0.9em;
-    color: #21161d;
+    font-size: 0.79em;
+    color: #f2e3f2;
     letter-space: 0;
+    font-weigth: lighter;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -454,14 +461,15 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   #myName {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    font-size: 4.5em;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    font-size: 2.5em;
     text-transform: uppercase;
-    color: #240c27;
+    color: #4eb7ff;
     letter-spacing: 0.13em;
-    line-height: 1em;
+    line-height: 1.3em;
+    padding: 8px;
   }
 }
 
@@ -809,8 +817,8 @@ h4, h6 {
             justify-content: center;
     border-radius: 3px 11px;
     height: 44px;
-    padding-top: 6px;
-    padding-bottom: 2px;
+    padding-bottom: 5px;
+    padding-top: 2px;
   }
 }
 
@@ -982,22 +990,20 @@ h4, h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border-radius: 4px;
-    -webkit-box-shadow: .2px .3px 2px .3px gray;
-            box-shadow: .2px .3px 2px .3px gray;
-    padding: 3px;
-    margin-bottom: 4px;
-    background-color: #816186;
+    border-radius: 1.5px;
+    -webkit-box-shadow: 0px .3px 1px .3px #4f2e54;
+            box-shadow: 0px .3px 1px .3px #4f2e54;
+    padding: 5px;
+    border-left: 0.5px solid #4f2e54;
   }
   .hamburger-menu:active, .hamburger-menu:focus {
     border: none;
     border-radius: 4px;
     -webkit-box-shadow: 3px .6px #240c27;
             box-shadow: 3px .6px #240c27;
-    padding: 3px;
+    padding: 5px;
+    border-left: 0.5px solid #04c2c9;
     background-color: rgba(70, 43, 84, 0.48);
-    -webkit-box-shadow: 0px 1px 1px 1px rgba(4, 194, 201, 0.36);
-            box-shadow: 0px 1px 1px 1px rgba(4, 194, 201, 0.36);
   }
 }
 
@@ -1385,7 +1391,7 @@ h4, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: #673a6d;
+    background-color: #240529;
   }
 }
 
@@ -1656,7 +1662,7 @@ h4, h6 {
     margin: -40px 0 20px 0;
     -ms-flex-item-align: center;
         align-self: center;
-    padding: 14px 0px;
+    padding: 33px 0 20px 0;
   }
 }
 
@@ -1968,7 +1974,7 @@ h4, h6 {
         -ms-flex-pack: center;
             justify-content: center;
     border-radius: 6px;
-    border-bottom: 2px solid #59325e;
+    border-bottom: 2px solid #04c2c9;
     -webkit-box-shadow: 0px 7px 40px -18px #04c2c9;
             box-shadow: 0px 7px 40px -18px #04c2c9;
   }
@@ -3593,7 +3599,7 @@ h4, h6 {
             flex-flow: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    background-color: #673a6d;
+    background-color: #240529;
   }
 }
 
@@ -3661,7 +3667,7 @@ h4, h6 {
             align-items: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    background-color: rgba(103, 58, 109, 0.86);
+    background-color: #240529;
   }
 }
 
@@ -3891,7 +3897,7 @@ h4, h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
   }
 }
 
@@ -3930,6 +3936,7 @@ h4, h6 {
     border: none;
     background: none;
     height: auto;
+    margin: 40px auto;
   }
 }
 
