@@ -987,6 +987,7 @@ h4, h6 {
             box-shadow: .2px .3px 2px .3px gray;
     padding: 3px;
     margin-bottom: 4px;
+    background-color: #816186;
   }
   .hamburger-menu:active, .hamburger-menu:focus {
     border: none;
@@ -995,6 +996,8 @@ h4, h6 {
             box-shadow: 3px .6px #240c27;
     padding: 3px;
     background-color: rgba(70, 43, 84, 0.48);
+    -webkit-box-shadow: 0px 1px 1px 1px rgba(4, 194, 201, 0.36);
+            box-shadow: 0px 1px 1px 1px rgba(4, 194, 201, 0.36);
   }
 }
 
@@ -1235,6 +1238,8 @@ h4, h6 {
     display: flex;
     -ms-flex-item-align: center;
         align-self: center;
+    -webkit-box-shadow: 0px 3px 12px 3px #3a1c42;
+            box-shadow: 0px 3px 12px 3px #3a1c42;
     background-color: 3c474c;
   }
 }
@@ -1504,8 +1509,8 @@ h4, h6 {
     border: none;
     broder-radius: 5px;
     background-image: none;
-    -webkit-box-shadow: 1px 1px 1px 4px #670973;
-            box-shadow: 1px 1px 1px 4px #670973;
+    -webkit-box-shadow: 0px 1px 3px 3px #603067;
+            box-shadow: 0px 1px 3px 3px #603067;
   }
 }
 
@@ -1901,14 +1906,15 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .screen {
-    margin-top: 20px;
-    margin: 50px 0;
     height: auto;
     width: 100vw;
     border: 0px;
     border-radius: 3px;
     border: none;
     background: #683a6e;
+    -webkit-box-shadow: 0px 3px 12px 3px #3a1c42;
+            box-shadow: 0px 3px 12px 3px #3a1c42;
+    background: repeating-linear-gradient(45deg, #673a6d8f, #0000002e 100px);
   }
 }
 
@@ -1955,14 +1961,16 @@ h4, h6 {
         -ms-flex-pack: start;
             justify-content: flex-start;
     font-size: 1em;
-    background-color: #673a6d;
+    background-color: #3a1c42;
     width: 44%;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-shadow: 1px 1px 1px 4px #670973;
-            box-shadow: 1px 1px 1px 4px #670973;
+    border-radius: 6px;
+    border-bottom: 2px solid #59325e;
+    -webkit-box-shadow: 0px 7px 40px -18px #04c2c9;
+            box-shadow: 0px 7px 40px -18px #04c2c9;
   }
 }
 
@@ -2243,7 +2251,7 @@ h4, h6 {
     with: 100%;
     -ms-flex-item-align: center;
         align-self: center;
-    border-top: 1px solid gray;
+    border-top: 4px solid #6f3d75;
   }
 }
 
@@ -2325,6 +2333,7 @@ h4, h6 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     width: 100%;
+    margin-top: 30px;
   }
 }
 
@@ -2981,7 +2990,7 @@ h4, h6 {
   #main-gallery {
     background: none;
     height: auto;
-    border-top: 1px solid gray;
+    border-top: 2px solid #6f3d75;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3123,6 +3132,10 @@ h4, h6 {
   .fs-gal {
     margin: auto;
     width: 49%;
+    margin: 8px;
+    border: 3px solid #4b1852;
+    -webkit-box-shadow: 0px 1px 27px 1px rgba(0, 0, 0, 0.36);
+            box-shadow: 0px 1px 27px 1px rgba(0, 0, 0, 0.36);
   }
 }
 
@@ -3694,8 +3707,9 @@ h4, h6 {
             justify-content: flex-start;
     height: 100%;
     margin: 20px;
-    -webkit-box-shadow: 1px 1px 1px 4px #670973;
-            box-shadow: 1px 1px 1px 4px #670973;
+    -webkit-box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.36);
+            box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.36);
+    background-color: #59325e;
   }
 }
 

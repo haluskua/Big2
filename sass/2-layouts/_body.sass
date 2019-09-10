@@ -103,7 +103,7 @@
       border: none   
       broder-radius: 5px
       background-image: none
-      box-shadow: 1px 1px 1px 4px #670973
+      box-shadow: 0px 1px 3px 3px rgb(96, 48, 103)
 
   .animation-caption, .gallery-link
     display: flex
@@ -342,15 +342,14 @@
       background: repeating-linear-gradient(45deg, #673a6d, transparent 100px)
 
     @include desktop
-      margin-top: 20px
-      margin: 50px 0
       height: auto 
       width: 100vw
       border: 0px
       border-radius: 3px
       border: none
       background: #683a6e
-      //background: repeating-linear-gradient(45deg, #673a6d, transparent 100px)
+      box-shadow: 0px 3px 12px 3px #3a1c42
+      background: repeating-linear-gradient(45deg, #673a6d8f, #0000002e 100px)
 
       
     li
@@ -380,11 +379,13 @@
       display: flex
       justify-content: flex-start
       font-size: 1em
-      background-color: #673a6d
+      background-color: #3a1c42
       width: 44%
       display: flex
       justify-content: center
-      box-shadow: 1px 1px 1px 4px #670973
+      border-radius: 6px
+      border-bottom: 2px solid #59325e
+      box-shadow: 0px 7px 40px -18px #04c2c9
 
   
     .bar            
@@ -541,7 +542,7 @@
       display: flex
       with: 100%
       align-self: center
-      border-top: 1px solid gray
+      border-top: 4px solid #6f3d75
       a
         @include desktop
           display: flex
@@ -578,6 +579,7 @@
       margin: 0
       justify-content: space-around
       width: 100%
+      margin-top: 30px
 
     h1
       padding: 0 20px 0 20px
@@ -973,7 +975,7 @@
     @include desktop
       background: none
       height: auto
-      border-top: 1px solid gray
+      border-top: 2px solid #6f3d75
       display: flex
       
     a
@@ -1070,7 +1072,10 @@
       width: 50%
     @include desktop
       margin: auto
-      width: 49%                    
+      width: 49%   
+      margin: 8px
+      border: 3px solid #4b1852
+      box-shadow: 0px 1px 27px 1px rgba(0, 0, 0, 0.36)             
 
   .static-image
     width: 26%
@@ -1393,7 +1398,8 @@
         justify-content: flex-start
         height: 100%
         margin: 20px
-        box-shadow: 1px 1px 1px 4px #670973
+        box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.36)
+        background-color: #59325e
           
       div   
         display: flex  
