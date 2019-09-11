@@ -103,7 +103,7 @@
       border: none   
       broder-radius: 5px
       background-image: none
-      box-shadow: 0px 1px 3px 3px rgb(96, 48, 103)
+      box-shadow: 0px 1px 50px 3px #160219
 
   .animation-caption, .gallery-link
     display: flex
@@ -189,6 +189,8 @@
       margin: -40px 0 20px 0
       align-self: center
       padding: 33px 0 20px 0
+      box-shadow: 153px -4px 96px #3a1c42;
+      padding: 30px 0;
                                                                             
     p
       font-size: 15.5pt
@@ -579,7 +581,7 @@
       margin: 0
       justify-content: space-around
       width: 100%
-      margin-top: 30px
+      margin: 30px 0
 
     h1
       padding: 0 20px 0 20px
@@ -1080,7 +1082,10 @@
   .static-image
     width: 26%
     @include desktop
-      width: 14%              
+      width: 14%  
+  .img-split 
+    @include desktop
+      margin-bottom: 82px            
 
   .img-split, .selfie
     height: 20%
@@ -1095,6 +1100,7 @@
     @include desktop
       margin-top: 21px
       border: none
+      margin-bottom: 82px
     
   .selfie
     height: 9%
@@ -1120,6 +1126,7 @@
       display: flex     
       align-self: center
       border: none  
+      z-index: 4
 
   .rgdp
     display: flex    
@@ -1228,6 +1235,9 @@
       display: flex
       flex-direction: column
       width: 100%
+      width: 100%
+      box-shadow: 153px -4px 96px
+      padding: 30px 0
 
   #read-on
     justify-content: flex-start !important
@@ -1375,7 +1385,7 @@
       flex-wrap: wrap
       align-items: center
       justify-content: space-around
-      background-color: rgb(36, 5, 41)
+      background-color: #240529
 
     section, .one                                       
       display: flex
@@ -1397,8 +1407,10 @@
         justify-content: flex-start
         height: 100%
         margin: 20px
+        margin-top: 8px
         box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.36)
-        background-color: #59325e
+        background-color: #3a1c42
+        padding-bottom: 50px
           
       div   
         display: flex  
@@ -1441,9 +1453,9 @@
             width: 74%   
           @include tablet
             width: 83%
-          @include desktop v    
-            width: 92%
-            padding-bottom: 10px
+          @include desktop  
+            width: 80%
+            box-shadow: 3px 4px 4px 3px #240529
         h4
           color: #29343b
 
@@ -1496,6 +1508,7 @@
           align-self: center
           justify-content: center
           margin-bottom: 40px
+          padding: 10px;
 
       button
         width: 41%
@@ -1566,10 +1579,11 @@
       font-size: 12pt
       width: 84%
     @include desktop 
-      width: 100%
       justify-content: center
       font-size: 1.25em
       line-height: 1.4em
+      width: 76%;
+      
     p 
       display: none
 

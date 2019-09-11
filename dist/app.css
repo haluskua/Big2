@@ -402,6 +402,12 @@ h4, h6 {
   }
 }
 
+@media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
+  .title1, .title3 {
+    line-height: 1.1em;
+  }
+}
+
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .title1, .title3 {
     font-size: 0.79em;
@@ -455,8 +461,12 @@ h4, h6 {
   #myName {
     padding: 10px 0;
     line-height: 65pt;
-    font-size: 3em;
     color: #9C27B0;
+    padding: 10px 0;
+    line-height: 65pt;
+    font-size: 2.52em;
+    color: #9C27B0;
+    letter-spacing: 0.2em;
   }
 }
 
@@ -1516,8 +1526,8 @@ h4, h6 {
     border: none;
     broder-radius: 5px;
     background-image: none;
-    -webkit-box-shadow: 0px 1px 3px 3px #603067;
-            box-shadow: 0px 1px 3px 3px #603067;
+    -webkit-box-shadow: 0px 1px 50px 3px #160219;
+            box-shadow: 0px 1px 50px 3px #160219;
   }
 }
 
@@ -1664,6 +1674,9 @@ h4, h6 {
     -ms-flex-item-align: center;
         align-self: center;
     padding: 33px 0 20px 0;
+    -webkit-box-shadow: 153px -4px 96px #3a1c42;
+            box-shadow: 153px -4px 96px #3a1c42;
+    padding: 30px 0;
   }
 }
 
@@ -2340,7 +2353,7 @@ h4, h6 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     width: 100%;
-    margin-top: 30px;
+    margin: 30px 0;
   }
 }
 
@@ -3158,6 +3171,12 @@ h4, h6 {
   }
 }
 
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .img-split {
+    margin-bottom: 82px;
+  }
+}
+
 @media (min-width: 1em), screen and (orientation: portrait) {
   .img-split, .selfie {
     height: 20%;
@@ -3179,6 +3198,7 @@ h4, h6 {
   .img-split, .selfie {
     margin-top: 21px;
     border: none;
+    margin-bottom: 82px;
   }
 }
 
@@ -3229,6 +3249,7 @@ h4, h6 {
     -ms-flex-item-align: center;
         align-self: center;
     border: none;
+    z-index: 4;
   }
 }
 
@@ -3410,6 +3431,10 @@ h4, h6 {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+    width: 100%;
+    -webkit-box-shadow: 153px -4px 96px;
+            box-shadow: 153px -4px 96px;
+    padding: 30px 0;
   }
 }
 
@@ -3714,9 +3739,11 @@ h4, h6 {
             justify-content: flex-start;
     height: 100%;
     margin: 20px;
+    margin-top: 8px;
     -webkit-box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.36);
             box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.36);
-    background-color: #59325e;
+    background-color: #3a1c42;
+    padding-bottom: 50px;
   }
 }
 
@@ -3807,11 +3834,15 @@ h4, h6 {
   }
 }
 
-@media (min-width: 1em), screen and (orientation: portrait) {
-  .blocks section #website_background2 img v, .blocks .one #website_background2 img v, .one section #website_background2 img v, .one .one #website_background2 img v {
-    width: 92%;
-    padding-bottom: 10px;
+@media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
+  .blocks section #website_background2 img, .blocks .one #website_background2 img, .one section #website_background2 img, .one .one #website_background2 img {
+    width: 80%;
+    -webkit-box-shadow: 3px 4px 4px 3px #240529;
+            box-shadow: 3px 4px 4px 3px #240529;
   }
+}
+
+@media (min-width: 1em), screen and (orientation: portrait) {
   .blocks section #website_background2 h4, .blocks .one #website_background2 h4, .one section #website_background2 h4, .one .one #website_background2 h4 {
     color: #29343b;
   }
@@ -3899,6 +3930,7 @@ h4, h6 {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 40px;
+    padding: 10px;
   }
 }
 
@@ -4019,12 +4051,12 @@ h4, h6 {
 
 @media only screen and (min-width: 1em) and (min-width: 769px) and (orientation: landscape), only screen and (orientation: portrait) and (min-width: 769px) and (orientation: landscape) {
   .box-spec {
-    width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     font-size: 1.25em;
     line-height: 1.4em;
+    width: 76%;
   }
 }
 

@@ -166,12 +166,15 @@
 		width: 100%
 		justify-content: flex-end
 		text-transform: capitalize
+		@include tablet 
+			line-height: 1.1em
 		@include desktop 
 			font-size: 0.79em
 			color: #f2e3f2
 			letter-space: 0
 			font-weigth: lighter
 			justify-content: flex-start
+		
 
 
 	#portfolio -color                                                                 
@@ -201,8 +204,12 @@
 		@include tablet 
 			padding: 10px 0     
 			line-height: 65pt
-			font-size: 3em   
 			color: #9C27B0  
+			padding: 10px 0;
+			line-height: 65pt;
+			font-size: 2.52em;
+			color: #9C27B0;
+			letter-spacing: 0.2em
 		@include desktop   
 			justify-content: flex-start
 			font-size: 2.5em
