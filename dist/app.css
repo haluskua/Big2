@@ -1716,10 +1716,11 @@ h4, h6 {
     display: flex;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    letter-spacing: 0em;
+    letter-spacing: 0.02em;
     line-height: 20pt;
     width: 50%;
     color: #f8f8f8;
+    font-size: 19px;
     background: none;
   }
 }
@@ -2827,7 +2828,7 @@ h4, h6 {
     padding: 0;
     font-size: 1.25em;
     letter-spacing: 0em;
-    line-height: 1.5em;
+    line-height: 1.53em;
     margin-left: -30px;
     margin-left: 0;
     background: none;
@@ -2879,6 +2880,8 @@ h4, h6 {
     line-height: 20pt;
     -ms-flex-item-align: center;
         align-self: center;
+    font-size: 19px;
+    letter-spacing: 0.03em;
   }
 }
 
