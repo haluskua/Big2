@@ -413,7 +413,7 @@ h4, h6 {
     font-size: 0.79em;
     color: #f2e3f2;
     letter-space: 0;
-    font-weigth: lighter;
+    font-weight: lighter;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -1284,6 +1284,10 @@ h4, h6 {
             justify-content: flex-start;
     border-radius: 0 0 0 0;
     width: 30%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
   }
 }
 
@@ -1915,7 +1919,7 @@ h4, h6 {
     height: 52px;
     border-radius: 4px;
     height: auto;
-    background-color: black;
+    background-color: #4b0b54;
   }
 }
 
@@ -3061,7 +3065,7 @@ h4, h6 {
     text-align: center;
     background-size: contain;
     background-position: center center;
-    background-color: #181524;
+    background-color: #200325;
     background-repeat: no-repeat;
     overflow: hidden;
     z-index: 999999;

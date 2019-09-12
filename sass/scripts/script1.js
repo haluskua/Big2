@@ -1,18 +1,6 @@
 
 $(document).ready(function(){
 
-      // Anime.js code
-    // anime({
-    //   targets: '#hetinfo',
-    //   duration: 7500,
-    //   delay: 7000,
-    //   rotate: '1turn',
-    //   loop: true, // Play the animation 3 times
-    //   // direction: 'reverse', // Play the animation in reverse
-    //   autoplay: true // Animation paused by default
-    // });
-
-
  //// Script targeting mainly mobile menus
 
     if (jQuery(window).width() <= 640) {
