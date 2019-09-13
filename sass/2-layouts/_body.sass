@@ -346,6 +346,8 @@
     box-shadow: 3px 2px 216px 0px lightcyan
     margin-bottom: 2%
     z-index: 99
+    @include phone-landscape
+      height: 48px
     @include tablet 
       background: repeating-linear-gradient(45deg, #673a6d, transparent 100px)
 
@@ -378,6 +380,8 @@
     text-align: center                                              
     justify-content: center
     z-index: 99999
+    @include phone-landscape
+      font-size: 1.16em
     @include tablet
       font-size: 30pt
     @include desktop
@@ -433,6 +437,8 @@
       color: #5c3663
       border: 1px solid   
       margin-top: 12px
+      @include phone-landscape
+        display: none
       @include tablet 
         color: white
         width: 100%

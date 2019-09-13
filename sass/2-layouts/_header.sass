@@ -352,6 +352,8 @@
 		color: #04c2c9
 		font-size: 1.7em
 		padding: 8px
+		@include phone-landscape
+			display: none !important
 		@include tablet 
 			display: none
 		@include desktop
@@ -366,6 +368,8 @@
 			padding: 12px
 
 	.fas 
+		@include phone-landscape
+			display: none
 	
 		@include tablet 
 			display: none !important
@@ -405,6 +409,9 @@
 		border-radius: 4.5px 4.5px 0 0
 		border-radius: 0 22px 0 0 0
 		background-color: #120115
+		@include phone-landscape
+			padding: 7px 0
+			flex-direction: row
 		@include tablet                  
 			width: 86vw   
 			padding: 0
@@ -452,7 +459,8 @@
 		border-bottom: 1px solid gray
 		@include phone-landscape
 			width: 81%        
-			margin: 2px 0 1px 9px
+			margin: 2px 9px
+
 		@include tablet  
 			width: 100%
 			height: auto
@@ -701,7 +709,8 @@
 		@include phone-landscape
 			justify-content: flex-start
 			border-radius: 0 0 0 0
-			width: 30%
+			display: flex
+			width: 100%
 			flex-flow: column-reverse
 		@include tablet           
 			display: flex 

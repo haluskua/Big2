@@ -704,6 +704,12 @@ h4, h6 {
   }
 }
 
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  .fa-bars {
+    display: none !important;
+  }
+}
+
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .fa-bars {
     display: none;
@@ -723,6 +729,12 @@ h4, h6 {
     display: none !important;
     background-color: orange;
     padding: 12px;
+  }
+}
+
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  .fas {
+    display: none;
   }
 }
 
@@ -793,6 +805,16 @@ h4, h6 {
     border-radius: 4.5px 4.5px 0 0;
     border-radius: 0 22px 0 0 0;
     background-color: #120115;
+  }
+}
+
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  #folders-container {
+    padding: 7px 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -890,7 +912,7 @@ h4, h6 {
 @media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
   .nav-folders {
     width: 81%;
-    margin: 2px 0 1px 9px;
+    margin: 2px 9px;
   }
 }
 
@@ -1293,7 +1315,10 @@ h4, h6 {
         -ms-flex-pack: start;
             justify-content: flex-start;
     border-radius: 0 0 0 0;
-    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-flow: column-reverse;
@@ -1937,6 +1962,12 @@ h4, h6 {
   }
 }
 
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  .screen {
+    height: 48px;
+  }
+}
+
 @media only screen and (min-width: 1em) and (min-width: 481px) and (orientation: portrait), only screen and (orientation: portrait) and (min-width: 481px) and (orientation: portrait) {
   .screen {
     background: repeating-linear-gradient(45deg, #673a6d, transparent 100px);
@@ -1979,6 +2010,12 @@ h4, h6 {
         -ms-flex-pack: center;
             justify-content: center;
     z-index: 99999;
+  }
+}
+
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  #push-up {
+    font-size: 1.16em;
   }
 }
 
@@ -2068,6 +2105,12 @@ h4, h6 {
     color: #5c3663;
     border: 1px solid;
     margin-top: 12px;
+  }
+}
+
+@media (min-width: 1em) and (device-width: 1em), screen and (orientation: portrait) and (device-width: 1em), screen and (min-width: 1em) and (orientation: landscape), screen and (orientation: portrait) and (orientation: landscape) {
+  #push-up #bottom-line {
+    display: none;
   }
 }
 
