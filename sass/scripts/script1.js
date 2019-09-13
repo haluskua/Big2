@@ -5,7 +5,7 @@ $(document).ready(function() {
     $(".exit-menu, .hamburger-menu, .logo-desc, .menu, #wagai").on(
       "click",
       function() {
-        $(".sticky, .mobile-container").show(0);
+        $(".sticky, .mobile-container").hide(0);
         $(".haus").show();
       }
     );
