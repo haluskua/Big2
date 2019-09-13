@@ -268,7 +268,7 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   .bio {
     margin-top: 8%;
-    width: 100%;
+    width: 64%;
     height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -571,8 +571,6 @@ h4, h6 {
     width: auto;
     padding: 8px 8px 0 8px;
     border-radius: 4px;
-    border: 1px solid #d8f7ff;
-    background-color: rgba(0, 0, 0, 0.69);
   }
 }
 
@@ -700,7 +698,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .fa-bars {
-    color: white;
+    color: #04c2c9;
     font-size: 1.7em;
     padding: 8px;
   }
@@ -794,7 +792,7 @@ h4, h6 {
             align-items: center;
     border-radius: 4.5px 4.5px 0 0;
     border-radius: 0 22px 0 0 0;
-    background-color: #000000;
+    background-color: #120115;
   }
 }
 
@@ -875,7 +873,7 @@ h4, h6 {
 
 @media (min-width: 1em), screen and (orientation: portrait) {
   .nav-folders {
-    height: 30px;
+    height: 39px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -963,7 +961,7 @@ h4, h6 {
     display: flex;
     color: white;
     cursor: pointer;
-    line-height: 32px;
+    line-height: 38px;
     font-size: 0.7em;
     text-align: center;
     font-weight: normal;
@@ -979,6 +977,8 @@ h4, h6 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-shadow: 0px 1px 7px 0px #4f1856;
+            box-shadow: 0px 1px 7px 0px #4f1856;
   }
 }
 
@@ -1166,7 +1166,7 @@ h4, h6 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background-color: #000000;
+    background-color: #200325;
     border-bottom: 1px solid #ccc37f;
   }
 }
@@ -1282,7 +1282,7 @@ h4, h6 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     border-radius: 18px 0 0 0;
-    background-color: #04C2C9;
+    background-color: #1d0221;
     border: 1px solid #605c3c;
   }
 }
@@ -1929,7 +1929,11 @@ h4, h6 {
     height: 52px;
     border-radius: 4px;
     height: auto;
-    background-color: #4b0b54;
+    background-color: #37133c;
+    -webkit-box-shadow: 3px 2px 216px 0px lightcyan;
+            box-shadow: 3px 2px 216px 0px lightcyan;
+    margin-bottom: 2%;
+    z-index: 99;
   }
 }
 
@@ -2061,7 +2065,7 @@ h4, h6 {
 @media (min-width: 1em), screen and (orientation: portrait) {
   #push-up #bottom-line {
     width: 88%;
-    color: red;
+    color: #5c3663;
     border: 1px solid;
     margin-top: 12px;
   }
@@ -3011,7 +3015,7 @@ h4, h6 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #fdfdf4;
+    background: none;
   }
 }
 
@@ -3529,7 +3533,6 @@ h4, h6 {
   #skills-descClose, #gd-descClose, #t-descClose {
     display: none;
     margin-top: -13px;
-    background-color: rgba(202, 218, 215, 0.22);
   }
 }
 
@@ -3727,7 +3730,7 @@ h4, h6 {
     margin-bottom: 10px;
     padding-top: 10px;
     margin: auto;
-    background-color: #2b282b;
+    background-color: #200325;
   }
 }
 
