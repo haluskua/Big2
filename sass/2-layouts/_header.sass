@@ -49,7 +49,7 @@
 			width: 29%
 			margin: 0
 			background-position: center
-			background-color: rgba(195, 113, 193, 0.2)
+			background-color: #241027
 			box-shadow: 3px 3px 23px #19011d
 		  
 	#Colsplit-box1                  
@@ -111,8 +111,8 @@
 		a       
 			border: none    
 			border-radius: 16px
-			box-shadow: 3px 3px 80px 3px #24072b  
-			background: #37133c              
+			//box-shadow: 3px 3px 80px 3px #24072b  
+			//background: #37133c              
 
 	#portfolio-header
 		display: flex
@@ -173,9 +173,9 @@
 		@include tablet 
 			line-height: 1.1em
 		@include desktop 
-			font-size: 0.79em
+			font-size: 0.58em
 			color: #f2e3f2
-			letter-space: 0
+			letter-spacing: 0.14em
 			font-weight: lighter
 			justify-content: flex-start
 		
@@ -216,10 +216,12 @@
 			letter-spacing: 0.2em
 		@include desktop   
 			justify-content: flex-start
-			font-size: 2.5em
+			font-size: 2.1em
 			text-transform: uppercase
-			color: #4eb7ff
-			letter-spacing: 0.13em
+			color: white
+			font-width: lighter  
+			font-family: sans-serif
+			letter-spacing: 0em
 			line-height: 1.3em     
 			padding: 8px  
 			               
@@ -284,15 +286,16 @@
 			padding: 14px
 			position: relative
 		@include desktop
-			font-size: 2em
+			font-size: 1.3em
 			font-weight: 600            
-			line-height: 2em     
+			line-height: 2em 
+			width: auto 
 			letter-spacing: 0.03em                                                
 			margin-top: 0px
 			border-radius: 5px
 			color: white
+			padding: 0 30px
 			border: none
-			background-color: #673a6d !important
 
 			text-transform: normal
 			&:visited, &:active, &:focus, &:hover 
@@ -429,7 +432,7 @@
 			padding: 0
 			justify-content: center   
 			border-radius: 3px 11px
-			height: 44px
+			height: auto
 			padding-bottom: 5px
 			padding-top: 2px
                                                                                                    
@@ -471,8 +474,8 @@
 			padding: 0
 			margin-bottom: 0
 		@include desktop   
-			width: 12%
-			height: 30px
+			width: 10%
+			height: 24px
 			display: flex  
 			padding: 3px 0
 			margin-bottom: 3px
@@ -535,19 +538,22 @@
 			justify-content: center
 			border-radius: 1.5px
 			box-shadow: 0px .3px 1px .3px #4f2e54
-			padding: 5px
-			border-left: 0.5px solid #4f2e54
-			background-color: #3a1c42
-			//box-shadow: 0px 1px 1px 1px rgba(4, 194, 201, 0.36)   
+			padding: 2px
+			//border-left: 0.5px solid #4f2e54
+			//background-color: #3a1c42
+			//box-shadow: 0px 1px 1px 1px rgba(4, 194, 201, 0.36)  
+			&:hover
+				background-color: #3a1c42 
 			&:active, &:focus
 				border: none
 				border-radius: 4px
 				box-shadow: 3px .6px #240c27
 				padding: 5px
 				border-left: 0.5px solid #04c2c9
-				background-color: #2c5579
+				background-color: #04c2c9
 				//box-shadow: 0px 1px 1px 1px rgba(4, 194, 201, 0.36)  
 				box-shadow: 0px 0px 23px -8px #04c2c9  
+			
 				   
                             
 	.fields                 
