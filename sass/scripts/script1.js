@@ -34,7 +34,10 @@ $(document).ready(function() {
     ///////////////////Animation for mobile view///////////////////
     anime({
       targets: ".box",
-      translateY: [{ value: -5, duration: 1100 }, { value: 0, duration: 1100 }],
+      translateY: [
+        { value: -5, duration: 1100 },
+        { value: 0, duration: 1100 }
+      ],
       rotate: {
         value: "-0.02turn",
         duration: 3500,
@@ -83,7 +86,7 @@ $(document).ready(function() {
   // targeting tablet view because of menu top height change from mobile to tablet
   if (jQuery(window).width() > 481) {
     var stickyNavTop = $(".nav-folders").offset().top;
-    var headerHeight = 52;
+    var headerHeight = 55;
     $(".hamburger-menu, .logo-desc, #snaps, .box").click(function(e) {
       var linkHref = $(this).attr("href");
       $("html, body").animate(
@@ -99,7 +102,7 @@ $(document).ready(function() {
   // targeting tablet view because of menu top height change from tablet to desktop
   if (jQuery(window).width() > 800) {
     var stickyNavTop = $(".nav-folders").offset().top;
-    var headerHeight = 50;
+    var headerHeight = 33;
     $(".hamburger-menu, .logo-desc, #snaps, .box").click(function(e) {
       var linkHref = $(this).attr("href");
       $("html, body").animate(
